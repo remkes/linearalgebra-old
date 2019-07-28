@@ -26,14 +26,14 @@
   <example>
     <statement>
       <p>
-        We can define a function <m>f: \RR^3 \rightarrow \RR^3</m> by <m>f\begin{pmatrix}3\\x\\y\\z \end{pmatrix} = \begin{pmatrix}3\\x^2\\y^2\\z^2 \end{pmatrix}</m>.
+        We can define a function <m>f: \RR^3 \rightarrow \RR^3</m> by <m>f\begin{pmatrix}x\\y\\z \end{pmatrix} = \begin{pmatrix}x^2\\y^2\\z^2 \end{pmatrix}</m>.
       </p>
     </statement>
   </example>
   <example>
     <statement>
       <p>
-        Another function <m>f: \RR^3 \rightarrow \RR^2</m> could be <m>f\begin{pmatrix}3\\x\\y\\z \end{pmatrix} = \begin{pmatrix}2\\x-y\\z-y \end{pmatrix}</m>.
+        Another function <m>f: \RR^3 \rightarrow \RR^2</m> could be <m>f\begin{pmatrix}x\\y\\z \end{pmatrix} = \begin{pmatrix}x-y\\z-y \end{pmatrix}</m>.
       </p>
     </statement>
   </example>

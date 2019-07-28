@@ -11,7 +11,7 @@
         with variables <m>w</m>, <m>x</m>, <m>y</m>,
         and <m>z</m>, where <m>y</m> and <m>z</m> are free variables.
         <me>
-          \begin{pmatrix}4\\w\\x\\y\\z\end{pmatrix} = \begin{pmatrix}4\\1\\-4\\0\\0\end{pmatrix} + y \begin{pmatrix}4\\1\\-2\\1\\0\end{pmatrix} + z \begin{pmatrix}4\\-2\\-3\\0\\1\end{pmatrix}
+          \begin{pmatrix}w\\x\\y\\z\end{pmatrix} = \begin{pmatrix}1\\-4\\0\\0\end{pmatrix} + y \begin{pmatrix}1\\-2\\1\\0\end{pmatrix} + z \begin{pmatrix}-2\\-3\\0\\1\end{pmatrix}
         </me>
       </p>
       <p>

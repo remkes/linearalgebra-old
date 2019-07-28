@@ -16,7 +16,7 @@
         or <term>scalar product</term>
         of two vectors <m>u</m> and <m>v</m> is given by the following formula.
         <me>
-          u \cdot v = \begin{pmatrix}4\\u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot \begin{pmatrix}4\\v_1\\v_2\\\vdots\\v_n\end{pmatrix} = u_1 v_1 + u_2 v_2 + \ldots + u_n v_n
+          u \cdot v = \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} = u_1 v_1 + u_2 v_2 + \ldots + u_n v_n
         </me>
       </p>
     </statement>

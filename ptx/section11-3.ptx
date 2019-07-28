@@ -17,7 +17,7 @@
         therefore, the first vector is redundant in the spane.
         Therefore, we should be able to find number <m>a</m> and <m>b</m> in the following equation.
         <me>
-          \begin{pmatrix}3\\-4\\-4\\7\end{pmatrix} = a \begin{pmatrix}3\\-2\\1\\-1\end{pmatrix} + b \begin{pmatrix}3\\0\\-2\\3\end{pmatrix}
+          \begin{pmatrix}-4\\-4\\7\end{pmatrix} = a \begin{pmatrix}-2\\1\\-1\end{pmatrix} + b \begin{pmatrix}0\\-2\\3\end{pmatrix}
         </me>
       </p>
       <p>
@@ -36,7 +36,7 @@
         In this case,
         the linear system is solved by <m>a = 2</m> and <m>b=3</m>.
         <me>
-          \begin{pmatrix}3\\-4\\-4\\7\end{pmatrix} = 2 \begin{pmatrix}3\\-2\\1\\-1\end{pmatrix} + 3 \begin{pmatrix}3\\0\\-2\\3\end{pmatrix}
+          \begin{pmatrix}-4\\-4\\7\end{pmatrix} = 2 \begin{pmatrix}-2\\1\\-1\end{pmatrix} + 3 \begin{pmatrix}0\\-2\\3\end{pmatrix}
         </me>
       </p>
     </statement>
@@ -64,7 +64,7 @@
         We are looking for constants <m>a</m>,
         <m>b</m> and <m>c</m> that solve this vector equation.
         <me>
-          \begin{pmatrix}3\\1\\1\\2\end{pmatrix} = a \begin{pmatrix}3\\4\\-1\\-1\end{pmatrix} + b \begin{pmatrix}3\\-2\\0\\-3\end{pmatrix} + c \begin{pmatrix}3\\0\\2\\7\end{pmatrix}
+          \begin{pmatrix}1\\1\\2\end{pmatrix} = a \begin{pmatrix}4\\-1\\-1\end{pmatrix} + b \begin{pmatrix}-2\\0\\-3\end{pmatrix} + c \begin{pmatrix}0\\2\\7\end{pmatrix}
         </me>
       </p>
       <p>
@@ -90,7 +90,7 @@
       <p>
         We read that <m>a=0</m>, <m>b=\frac{1}{2}</m> and <m>c = \frac{1}{2}</m>.
         <me>
-          \begin{pmatrix}3\\1\\1\\2\end{pmatrix} = 0 \begin{pmatrix}3\\3\\-1\\-1\end{pmatrix} + \frac{1}{2} \begin{pmatrix}3\\-2\\0\\-3\end{pmatrix} + \frac{1}{2} \begin{pmatrix}3\\0\\2\\7\end{pmatrix} = \frac{1}{2} \begin{pmatrix}3\\-2\\0\\-3\end{pmatrix} + \frac{1}{2} \begin{pmatrix}3\\0\\2\\7\end{pmatrix}
+          \begin{pmatrix}1\\1\\2\end{pmatrix} = 0 \begin{pmatrix}3\\-1\\-1\end{pmatrix} + \frac{1}{2} \begin{pmatrix}-2\\0\\-3\end{pmatrix} + \frac{1}{2} \begin{pmatrix}0\\2\\7\end{pmatrix} = \frac{1}{2} \begin{pmatrix}-2\\0\\-3\end{pmatrix} + \frac{1}{2} \begin{pmatrix}0\\2\\7\end{pmatrix}
         </me>
       </p>
     </statement>

@@ -9,7 +9,7 @@
     Then we can find the equation of the plane by taking the dot product
     <m>p \cdot (u \times v)</m> to find the constant <m>c</m>.
     <men>
-      \begin{pmatrix}3\\x\\y\\z\end{pmatrix} \cdot (u \times v) = c
+      \begin{pmatrix}x\\y\\z\end{pmatrix} \cdot (u \times v) = c
     </men>
   </p>
   <p>

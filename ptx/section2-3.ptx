@@ -15,7 +15,7 @@
       <p>
         The <term>sum</term> of two vectors <m>u</m> and <m>v</m> in <m>\RR^n</m> is the sum taken componentwise.
         <me>
-          u + v = \begin{pmatrix}4\\u_1\\u_2\\\vdots\\u_n\end{pmatrix} + \begin{pmatrix}4\\v_1\\v_2\\\vdots\\v_n\end{pmatrix} = \begin{pmatrix}4\\u_1 + v_1\\u_2 + v_2\\\vdots\\u_n + v_n\end{pmatrix}
+          u + v = \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} + \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} = \begin{pmatrix}u_1 + v_1\\u_2 + v_2\\\vdots\\u_n + v_n\end{pmatrix}
         </me>
       </p>
     </statement>
@@ -39,7 +39,7 @@
         By convention,
         scalar multiplication is written with the scalar on the left of the vector.
         <me>
-          au = a \begin{pmatrix}4\\u_1\\u_2\\\vdots\\u_n\end{pmatrix} = \begin{pmatrix}4\\au_1\\au_2\\\vdots\\au_n\end{pmatrix}
+          au = a \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} = \begin{pmatrix}au_1\\au_2\\\vdots\\au_n\end{pmatrix}
         </me>
       </p>
     </statement>
@@ -62,7 +62,7 @@
         defined using addition and scalar multiplication.
         This works out to be componentwise subtraction.
         <me>
-          u - v = u + (-1) v= \begin{pmatrix}4\\u_1\\u_2\\\vdots\\u_n\end{pmatrix} + (-1) \begin{pmatrix}4\\v_1\\v_2\\\vdots\\v_n\end{pmatrix} = \begin{pmatrix}4\\u_1 - v_1\\u_2 - v_2\\\vdots\\u_n - v_n\end{pmatrix}
+          u - v = u + (-1) v= \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} + (-1) \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} = \begin{pmatrix}u_1 - v_1\\u_2 - v_2\\\vdots\\u_n - v_n\end{pmatrix}
         </me>
       </p>
     </statement>

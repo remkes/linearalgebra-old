@@ -16,7 +16,7 @@
     the vector <m>a</m> is constant.
     Then we can re-write the linear equation using these two vectors.
     <me>
-      a_1 u_1 + a_2 u_2 + \ldots + a_n u_n = \begin{pmatrix}4\\a_1\\a_2\\\vdots\\a_n\end{pmatrix} \cdot \begin{pmatrix}4\\u_1\\u_2\\\vdots\\u_n\end{pmatrix} = a \cdot u = c
+      a_1 u_1 + a_2 u_2 + \ldots + a_n u_n = \begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix} \cdot \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} = a \cdot u = c
     </me>
   </p>
   <p>
@@ -34,7 +34,7 @@
         <term>normal to the plane</term>.
         Let <m>H</m> be a hyperplane in <m>\RR^n</m> determined by the equivalent equation in <m>\RR^n</m>.
         <men>
-          u \cdot a = \begin{pmatrix}4\\u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot \begin{pmatrix}4\\a_1\\a_2\\\vdots\\a_n\end{pmatrix} = c
+          u \cdot a = \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot \begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix} = c
         </men>
       </p>
       <p>

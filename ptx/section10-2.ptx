@@ -128,7 +128,7 @@
         This makes it clear that <m>z</m> is a free variable,
         since we can write the solution as follows:
         <me>
-          \begin{pmatrix}4\\w\\x\\y\\z\end{pmatrix} = \begin{pmatrix}4\\-3\\-2\\8\\0\end{pmatrix} + z \begin{pmatrix}4\\-2\\1\\1\\1\end{pmatrix}
+          \begin{pmatrix}w\\x\\y\\z\end{pmatrix} = \begin{pmatrix}-3\\-2\\8\\0\end{pmatrix} + z \begin{pmatrix}-2\\1\\1\\1\end{pmatrix}
         </me>
       </p>
       <p>
@@ -164,7 +164,7 @@
           <mrow>z \amp  = z</mrow>
         </md>
         <me>
-          \begin{pmatrix}4\\w\\x\\y\\z\end{pmatrix} = \begin{pmatrix}4\\-3\\2\\0\\0\end{pmatrix} + y \begin{pmatrix}4\\-3\\1\\1\\0\end{pmatrix} + z \begin{pmatrix}4\\-2\\1\\0\\1\end{pmatrix}
+          \begin{pmatrix}w\\x\\y\\z\end{pmatrix} = \begin{pmatrix}-3\\2\\0\\0\end{pmatrix} + y \begin{pmatrix}-3\\1\\1\\0\end{pmatrix} + z \begin{pmatrix}-2\\1\\0\\1\end{pmatrix}
         </me>
       </p>
       <p>

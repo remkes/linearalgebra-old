@@ -41,13 +41,13 @@
   <p>
     The rows of this matrix are the following three vectors.
     <men>
-      \begin{pmatrix}2\\5\\6\end{pmatrix} \hspace{1cm} \begin{pmatrix}2\\-4\\-4\end{pmatrix} \hspace{1cm} \begin{pmatrix}2\\0\\-3\end{pmatrix}
+      \begin{pmatrix}5\\6\end{pmatrix} \hspace{1cm} \begin{pmatrix}-4\\-4\end{pmatrix} \hspace{1cm} \begin{pmatrix}0\\-3\end{pmatrix}
     </men>
   </p>
   <p>
     The columns of this matrix are the following two vectors.
     <men>
-      \begin{pmatrix}3\\5\\-4\\0\end{pmatrix} \hspace{1cm} \begin{pmatrix}3\\6\\-4\\-3\end{pmatrix}
+      \begin{pmatrix}5\\-4\\0\end{pmatrix} \hspace{1cm} \begin{pmatrix}6\\-4\\-3\end{pmatrix}
     </men>
   </p>
   <p>

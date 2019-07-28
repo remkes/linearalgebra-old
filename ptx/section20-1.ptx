@@ -59,38 +59,29 @@
         <md>
           <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
           <mrow>0 \amp  b \amp  0</mrow>
-          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3</mrow>
-          <mrow>1</mrow>
+          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}1</mrow>
           <mrow>0</mrow>
-          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
-          <mrow>a</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}a</mrow>
           <mrow>0</mrow>
-          <mrow>0\end{pmatrix} = a \begin{pmatrix}3</mrow>
-          <mrow>1</mrow>
+          <mrow>0\end{pmatrix} = a \begin{pmatrix}1</mrow>
           <mrow>0</mrow>
           <mrow>0\end{pmatrix}</mrow>
           <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
           <mrow>0 \amp  b \amp  0</mrow>
-          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3</mrow>
-          <mrow>0</mrow>
+          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}0</mrow>
           <mrow>1</mrow>
-          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
-          <mrow>0</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}0</mrow>
           <mrow>b</mrow>
-          <mrow>0\end{pmatrix} = b \begin{pmatrix}3</mrow>
-          <mrow>0</mrow>
+          <mrow>0\end{pmatrix} = b \begin{pmatrix}0</mrow>
           <mrow>1</mrow>
           <mrow>0\end{pmatrix}</mrow>
           <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
           <mrow>0 \amp  b \amp  0</mrow>
-          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3</mrow>
+          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}0</mrow>
           <mrow>0</mrow>
+          <mrow>1\end{pmatrix} \amp  = \begin{pmatrix}0</mrow>
           <mrow>0</mrow>
-          <mrow>1\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
-          <mrow>0</mrow>
-          <mrow>0</mrow>
-          <mrow>c\end{pmatrix} = c \begin{pmatrix}3</mrow>
-          <mrow>0</mrow>
+          <mrow>c\end{pmatrix} = c \begin{pmatrix}0</mrow>
           <mrow>0</mrow>
           <mrow>1\end{pmatrix}</mrow>
         </md>
@@ -140,9 +131,9 @@
       <p>
         Finally, consider projections in <m>\RR^2</m>.
         Projection onto the <m>x</m>-axis preserves the <m>x</m> axis,
-        so any vector <m>\begin{pmatrix}2\\a\\0 \end{pmatrix}</m> is an eigenvector with eigenvalue one.
+        so any vector <m>\begin{pmatrix}a\\0 \end{pmatrix}</m> is an eigenvector with eigenvalue one.
         However, it sends the <m>y</m>-axis direction to the origin,
-        so any vector <m>\begin{pmatrix}2\\0\\b \end{pmatrix}</m> is an eigenvector with eigenvalue zero.
+        so any vector <m>\begin{pmatrix}0\\b \end{pmatrix}</m> is an eigenvector with eigenvalue zero.
       </p>
     </statement>
   </example>

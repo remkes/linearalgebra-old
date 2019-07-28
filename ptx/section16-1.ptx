@@ -47,29 +47,23 @@
         <md>
           <mrow>\left( \begin{matrix} -2 \amp  -2 \amp  0</mrow>
           <mrow>7 \amp  -3 \amp  2</mrow>
-          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}3</mrow>
-          <mrow>1</mrow>
+          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}1</mrow>
           <mrow>0</mrow>
-          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
-          <mrow>-2</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}-2</mrow>
           <mrow>7</mrow>
           <mrow>-4\end{pmatrix}</mrow>
           <mrow>\left( \begin{matrix} -2 \amp  -2 \amp  0</mrow>
           <mrow>7 \amp  -3 \amp  2</mrow>
-          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}3</mrow>
-          <mrow>0</mrow>
+          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}0</mrow>
           <mrow>1</mrow>
-          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
-          <mrow>-2</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}-2</mrow>
           <mrow>-3</mrow>
           <mrow>-1\end{pmatrix}</mrow>
           <mrow>\left( \begin{matrix} -2 \amp  -2 \amp  0</mrow>
           <mrow>7 \amp  -3 \amp  2</mrow>
-          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}3</mrow>
+          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}0</mrow>
           <mrow>0</mrow>
-          <mrow>0</mrow>
-          <mrow>1\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
-          <mrow>0</mrow>
+          <mrow>1\end{pmatrix} \amp  = \begin{pmatrix}0</mrow>
           <mrow>2</mrow>
           <mrow>2\end{pmatrix}</mrow>
         </md>
@@ -111,7 +105,7 @@
       <p>
         We can look at <m>\RR^2</m> to build our intuition.
         <me>
-          \left( \begin{matrix} a \amp  b \\ c \amp  d \end{matrix} \right) \begin{pmatrix}2\\x\\y\end{pmatrix} = \begin{pmatrix}2\\x_0\\y_0\end{pmatrix}
+          \left( \begin{matrix} a \amp  b \\ c \amp  d \end{matrix} \right) \begin{pmatrix}x\\y\end{pmatrix} = \begin{pmatrix}x_0\\y_0\end{pmatrix}
         </me>
       </p>
       <p>

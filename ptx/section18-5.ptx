@@ -66,56 +66,43 @@
   <example>
     <statement>
       <md>
-        <mrow>\amp  \Span \left\{ \begin{pmatrix}3</mrow>
+        <mrow>\amp  \Span \left\{ \begin{pmatrix}1</mrow>
         <mrow>1</mrow>
-        <mrow>1</mrow>
-        <mrow>3\end{pmatrix}, \begin{pmatrix}3</mrow>
-        <mrow>0</mrow>
+        <mrow>3\end{pmatrix}, \begin{pmatrix}0</mrow>
         <mrow>2</mrow>
         <mrow>2\end{pmatrix}
         \right\}</mrow>
-        <mrow>u_1 \amp  = \begin{pmatrix}3</mrow>
-        <mrow>1</mrow>
+        <mrow>u_1 \amp  = \begin{pmatrix}1</mrow>
         <mrow>1</mrow>
         <mrow>3\end{pmatrix}</mrow>
-        <mrow>u_2 \amp  = \begin{pmatrix}3</mrow>
-        <mrow>0</mrow>
+        <mrow>u_2 \amp  = \begin{pmatrix}0</mrow>
         <mrow>2</mrow>
-        <mrow>2\end{pmatrix} - \frac{\begin{pmatrix}3</mrow>
-        <mrow>0</mrow>
+        <mrow>2\end{pmatrix} - \frac{\begin{pmatrix}0</mrow>
         <mrow>2</mrow>
         <mrow>2\end{pmatrix} \cdot
-        \begin{pmatrix}3</mrow>
+        \begin{pmatrix}1</mrow>
         <mrow>1</mrow>
-        <mrow>1</mrow>
-        <mrow>3\end{pmatrix} }{ \left| \begin{pmatrix}3</mrow>
-        <mrow>1</mrow>
+        <mrow>3\end{pmatrix} }{ \left| \begin{pmatrix}1</mrow>
         <mrow>1</mrow>
         <mrow>3\end{pmatrix} \right|^2}
-        \begin{pmatrix}3</mrow>
-        <mrow>1</mrow>
+        \begin{pmatrix}1</mrow>
         <mrow>1</mrow>
         <mrow>3\end{pmatrix}</mrow>
-        <mrow>\amp  = \begin{pmatrix}3</mrow>
-        <mrow>0</mrow>
+        <mrow>\amp  = \begin{pmatrix}0</mrow>
         <mrow>2</mrow>
-        <mrow>2\end{pmatrix} - \frac{8}{11} \begin{pmatrix}3</mrow>
-        <mrow>1</mrow>
+        <mrow>2\end{pmatrix} - \frac{8}{11} \begin{pmatrix}1</mrow>
         <mrow>1</mrow>
         <mrow>3\end{pmatrix}</mrow>
-        <mrow>\amp  = \frac{1}{11} \begin{pmatrix}3</mrow>
-        <mrow>-8</mrow>
+        <mrow>\amp  = \frac{1}{11} \begin{pmatrix}-8</mrow>
         <mrow>14</mrow>
         <mrow>-2\end{pmatrix}</mrow>
         <mrow>|u_1| \amp  = \sqrt{11}</mrow>
-        <mrow>\frac{u_1}{|u_1|} \amp  = \frac{1}{\sqrt{11}} \begin{pmatrix}3</mrow>
-        <mrow>1</mrow>
+        <mrow>\frac{u_1}{|u_1|} \amp  = \frac{1}{\sqrt{11}} \begin{pmatrix}1</mrow>
         <mrow>1</mrow>
         <mrow>3\end{pmatrix}</mrow>
         <mrow>|u_2| \amp  = \frac{1}{11} \sqrt{264}</mrow>
         <mrow>\frac{u_2}{|u_2|} \amp  = \frac{1}{\sqrt{264}}
-        \begin{pmatrix}3</mrow>
-        <mrow>-8</mrow>
+        \begin{pmatrix}-8</mrow>
         <mrow>14</mrow>
         <mrow>-2\end{pmatrix}</mrow>
       </md>
@@ -127,7 +114,7 @@
         Sometimes, not all the work is required.
         Say we are asked to find an orthonormal basis for the following linearly independent set.
         <me>
-          \left\{ \begin{pmatrix}4\\3\\1\\-2\\-2\end{pmatrix}, \begin{pmatrix}4\\-3\\0\\0\\1\end{pmatrix}, \begin{pmatrix}4\\2\\0\\2\\0\end{pmatrix}, \begin{pmatrix}4\\0\\3\\1\\1\end{pmatrix} \right\}
+          \left\{ \begin{pmatrix}3\\1\\-2\\-2\end{pmatrix}, \begin{pmatrix}-3\\0\\0\\1\end{pmatrix}, \begin{pmatrix}2\\0\\2\\0\end{pmatrix}, \begin{pmatrix}0\\3\\1\\1\end{pmatrix} \right\}
         </me>
       </p>
       <p>
