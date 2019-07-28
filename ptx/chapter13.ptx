@@ -16,7 +16,7 @@
           written <m>Av</m>, which defines a new vector in <m>\RR^m</m>.
           That action is given in the following formula.
           <men>
-            \left( \begin{matrix} a_{11} \amp  a_{12} \amp  \cdots \amp  a_{1n} \\ a_{21} \amp  a_{22} \amp  \cdots \amp  a_{2n} \\ \vdots \amp  \vdots \amp  \vdots \amp  \vdots \\ a_{n1} \amp  a_{n2} \amp  \cdots \amp  a_{nn} \end{matrix} \right) \begin{pmatrix}4\\v_1\\v_2\\\vdots\\v_n\end{pmatrix} = \colvec{4} {a_{11}v_1 + a_{12}v_2 + \ldots + a_{1n}v_n} {a_{21}v_1 + a_{22}v_2 + \ldots + a_{2n}v_n} {\vdots} {a_{n1}v_1 + a_{n2}v_2 + \ldots + a_{nn}v_n}
+            \left( \begin{matrix} a_{11} \amp  a_{12} \amp  \cdots \amp  a_{1n} \\ a_{21} \amp  a_{22} \amp  \cdots \amp  a_{2n} \\ \vdots \amp  \vdots \amp  \vdots \amp  \vdots \\ a_{n1} \amp  a_{n2} \amp  \cdots \amp  a_{nn} \end{matrix} \right) \begin{pmatrix}4\\v_1\\v_2\\\vdots\\v_n\end{pmatrix} = \begin{pmatrix}4\end{pmatrix} {a_{11}v_1 + a_{12}v_2 + \ldots + a_{1n}v_n} {a_{21}v_1 + a_{22}v_2 + \ldots + a_{2n}v_n} {\vdots} {a_{n1}v_1 + a_{n2}v_2 + \ldots + a_{nn}v_n}
           </men>
         </p>
         <p>
@@ -34,7 +34,10 @@
             <mrow>g \amp  h \amp  i \end{matrix} \right) \begin{pmatrix}3</mrow>
             <mrow>x</mrow>
             <mrow>y</mrow>
-            <mrow>z\end{pmatrix} \amp  = \colvec{3} {ax + by + cz}{dx + ey + fz}{gx + hy + iz}</mrow>
+            <mrow>z\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
+            <mrow>ax + by + cz</mrow>
+            <mrow>dx + ey + fz</mrow>
+            <mrow>gx + hy + iz\end{pmatrix}</mrow>
           </md>
         </p>
         <p>
@@ -76,7 +79,7 @@
           First, we had the zero matrix:
           all coefficient are zero.
           <men>
-            \left( \begin{matrix} 0 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \colvec{3} {0x + 0y + 0z}{0x + 0y + 0z}{0x + 0y + 0z} = \begin{pmatrix}3\\0\\0\\0\end{pmatrix}
+            \left( \begin{matrix} 0 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \begin{pmatrix}3\\0x + 0y + 0z\\0x + 0y + 0z\\0x + 0y + 0z\end{pmatrix} = \begin{pmatrix}3\\0\\0\\0\end{pmatrix}
           </men>
         </p>
         <p>
@@ -90,7 +93,7 @@
           We also had the identity matrix:
           ones on the diagonal and zeros elsewhere.
           <men>
-            \left( \begin{matrix} 1 \amp  0 \amp  0 \\ 0 \amp  1 \amp  0 \\ 0 \amp  0 \amp  1 \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \colvec{3} {1x + 0y + 0z}{0x + 1y + 0z}{0x + 0y + 1z} = \begin{pmatrix}3\\x\\y\\z\end{pmatrix}
+            \left( \begin{matrix} 1 \amp  0 \amp  0 \\ 0 \amp  1 \amp  0 \\ 0 \amp  0 \amp  1 \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \begin{pmatrix}3\\1x + 0y + 0z\\0x + 1y + 0z\\0x + 0y + 1z\end{pmatrix} = \begin{pmatrix}3\\x\\y\\z\end{pmatrix}
           </men>
         </p>
         <p>
@@ -104,7 +107,7 @@
         <p>
           Diagonal matrices only have non-zero entires on the diagonal.
           <men>
-            \left( \begin{matrix} a \amp  0 \amp  0 \\ 0 \amp  b \amp  0 \\ 0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \colvec{3} {ax + 0y + 0z}{0x + by + 0z}{0x + 0y + cz} = \begin{pmatrix}3\\ax\\by\\cz\end{pmatrix}
+            \left( \begin{matrix} a \amp  0 \amp  0 \\ 0 \amp  b \amp  0 \\ 0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \begin{pmatrix}3\\ax + 0y + 0z\\0x + by + 0z\\0x + 0y + cz\end{pmatrix} = \begin{pmatrix}3\\ax\\by\\cz\end{pmatrix}
           </men>
         </p>
         <p>

@@ -22,7 +22,7 @@
     a_{n+1}</m>.
     Then the recurrence relation is given by a matrix equation.
     <me>
-      \colvec{4}{a_{n+k}}{a_{n+k-1}}{\vdots}{a_{n+1}} = \left( \begin{matrix} c_1 \amp  c_2 \amp  \ldots c_{k-1} \amp  \amp  c_k \\ 1 \amp  0 \amp  \ldots \amp  0 \amp  0 \\ 0 \amp  1 \amp  \ldots \amp  0 \amp  0 \\ \vdots \amp  \vdots \amp  \ddots \amp  \vdots \\ 0 \amp  0 \amp  \ldots 1 \amp  0 \end{matrix} \right) \colvec{4}{a_{n+k-1}}{a_{n+k-2}}{\vdots}{a_{n}}
+      \begin{pmatrix}4\end{pmatrix}{a_{n+k}}{a_{n+k-1}}{\vdots}{a_{n+1}} = \left( \begin{matrix} c_1 \amp  c_2 \amp  \ldots c_{k-1} \amp  \amp  c_k \\ 1 \amp  0 \amp  \ldots \amp  0 \amp  0 \\ 0 \amp  1 \amp  \ldots \amp  0 \amp  0 \\ \vdots \amp  \vdots \amp  \ddots \amp  \vdots \\ 0 \amp  0 \amp  \ldots 1 \amp  0 \end{matrix} \right) \begin{pmatrix}4\end{pmatrix}{a_{n+k-1}}{a_{n+k-2}}{\vdots}{a_{n}}
     </me>
   </p>
   <p>

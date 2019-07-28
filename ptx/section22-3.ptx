@@ -8,7 +8,7 @@
     If we use coordinates <m>w,x,y,z</m> in <m>\RR^4</m>,
     we can write the matrix equation for this dynamical system.
     <me>
-      \colvec{4}{w_{k+1}}{x_{k+1}}{y_{k+1}}{z_{k+1}} = \left( \begin{matrix} f_1 \amp  f_2 \amp  f_3 \amp  f_4 \\ s_1 \amp  0 \amp  0 \amp  0 \\ 0 \amp s_2 \amp  0 \amp  0 \\ 0 \amp  0 \amp  s_3 \amp  0 \end{matrix} \right) \begin{pmatrix}4\\w_k\\x_k\\y_k\\z_k\end{pmatrix}
+      \begin{pmatrix}4\end{pmatrix}{w_{k+1}}{x_{k+1}}{y_{k+1}}{z_{k+1}} = \left( \begin{matrix} f_1 \amp  f_2 \amp  f_3 \amp  f_4 \\ s_1 \amp  0 \amp  0 \amp  0 \\ 0 \amp s_2 \amp  0 \amp  0 \\ 0 \amp  0 \amp  s_3 \amp  0 \end{matrix} \right) \begin{pmatrix}4\\w_k\\x_k\\y_k\\z_k\end{pmatrix}
     </me>
   </p>
   <p>
