@@ -1,0 +1,5 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Normals to Planes and Hyperplanes</title>
+  <xi:include  href="section8-1.ptx" />
+  <xi:include  href="section8-2.ptx" />
+</chapter>

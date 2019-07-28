@@ -1,0 +1,8 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Orthogonality and Symmetry</title>
+  <xi:include  href="section18-1.ptx" />
+  <xi:include  href="section18-2.ptx" />
+  <xi:include  href="section18-3.ptx" />
+  <xi:include  href="section18-4.ptx" />
+  <xi:include  href="section18-5.ptx" />
+</chapter>

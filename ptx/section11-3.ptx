@@ -1,0 +1,98 @@
+<section>
+  <title>Bases for Spans</title>
+  <p>
+    If <m>\Span\{v_1, v_2, v_3\}</m> has dimension two and the first two vectors form a basis,
+    then <m>v_3</m> is a redundant part of the span.
+    This means that we can write <m>v_3</m> as a linear combination of the first two vectors.
+    That is, there are two constants,
+    <m>a</m> and <m>b</m>, such that <m>v_3 = av_1 + bv_2</m>.
+    We would like to be able to determine these constants.
+    Matrices and row-reduction is again the tool we turn turn.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Let's work by example and consider <m>\Span</m><img src="MISSINGFILE"  width="400" /> . If we make these rows of a matrix and row-reduce,
+        we find only the first two rows have leading one;
+        therefore, the first vector is redundant in the spane.
+        Therefore, we should be able to find number <m>a</m> and <m>b</m> in the following equation.
+        <me>
+          \begin{pmatrix}-4\\-4\\7\end{pmatrix} = a \begin{pmatrix}-2\\1\\-1\end{pmatrix} + b \begin{pmatrix}0\\-2\\3\end{pmatrix}
+        </me>
+      </p>
+      <p>
+        Let's write each components of this vector equation seperately.
+        <md>
+          <mrow>-4 \amp  = -2a + 0b</mrow>
+          <mrow>-4 \amp  = a + (-2)b</mrow>
+          <mrow>7 \amp  = -1a + 3b</mrow>
+        </md>
+      </p>
+      <p>
+        This is a just a new linear system,
+        with three equations and two variables, <m>a</m> and <m>b</m>.
+        We can solve it as we did before,
+        either directly or using a matrix and row reduction.
+        In this case,
+        the linear system is solved by <m>a = 2</m> and <m>b=3</m>.
+        <me>
+          \begin{pmatrix}-4\\-4\\7\end{pmatrix} = 2 \begin{pmatrix}-2\\1\\-1\end{pmatrix} + 3 \begin{pmatrix}0\\-2\\3\end{pmatrix}
+        </me>
+      </p>
+    </statement>
+  </example>
+  <p>
+    This example can be generalized.
+    Any time some vector <m>u \in \dollarRR^n</m> is in <m>\Span\{v_1, v_2, \ldots,
+    v_k\}</m>,
+    there are constants <m>a_i</m> such that <m>u = a_1v_1 + a_2v_2 + \ldots + a_kv_k</m>.
+    Writing each component of the vector equation seperately gives a system of <m>n</m> different linear equation,
+    which we solve as before.
+  </p>
+  <p>
+    This gives a general algorithm for expressing vector in terms of a new basis.
+    As we discussed before, there are many different bases for linear spaces.
+    The standard basis for <m>\RR^3</m> is are the axis vectors <m>e_1</m>,
+    <m>e_2</m> and <m>e_3</m>.
+    However, sometimes we might want to use a different basis.
+    Any three linearly independent vectors in <m>\RR^3</m> form a basis.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Take the basis <img src="MISSINGFILE"  width="400" /> . Let's express the vector <img src="MISSINGFILE"  width="400" /> in terms of this basis.
+        We are looking for constants <m>a</m>,
+        <m>b</m> and <m>c</m> that solve this vector equation.
+        <me>
+          \begin{pmatrix}1\\1\\2\end{pmatrix} = a \begin{pmatrix}4\\-1\\-1\end{pmatrix} + b \begin{pmatrix}-2\\0\\-3\end{pmatrix} + c \begin{pmatrix}0\\2\\7\end{pmatrix}
+        </me>
+      </p>
+      <p>
+        Writen in components, this gives the following linear system.
+        <md>
+          <mrow>3a - 2b + 0c \amp  = 1</mrow>
+          <mrow>-a + 0b + 2c \amp  = 1</mrow>
+          <mrow>-a + 3b + 7c \amp  = 2</mrow>
+        </md>
+      </p>
+      <p>
+        We translate this into a matrix.
+        <me>
+          \left( \begin{array}{ccc|c} 3 \amp  -2 \amp  0 \amp  1 \\ -1 \amp  0 \amp  2 \amp  1 \\ -1 \amp  3 \amp  7 \amp  2 \end{array} \right)
+        </me>
+      </p>
+      <p>
+        We row reduce this matrix to get the reduced row-echelon form.
+        <me>
+          \left( \begin{array}{ccc|c} 1 \amp  0 \amp  0 \amp  0 \\ 0 \amp  1 \amp  0 \amp  \frac{1}{2} \\ 0 \amp  0 \amp  1 \amp  \frac{1}{2} \end{array} \right)
+        </me>
+      </p>
+      <p>
+        We read that <m>a=0</m>, <m>b=\frac{1}{2}</m> and <m>c = \frac{1}{2}</m>.
+        <me>
+          \begin{pmatrix}1\\1\\2\end{pmatrix} = 0 \begin{pmatrix}3\\-1\\-1\end{pmatrix} + \frac{1}{2} \begin{pmatrix}-2\\0\\-3\end{pmatrix} + \frac{1}{2} \begin{pmatrix}0\\2\\7\end{pmatrix} = \frac{1}{2} \begin{pmatrix}-2\\0\\-3\end{pmatrix} + \frac{1}{2} \begin{pmatrix}0\\2\\7\end{pmatrix}
+        </me>
+      </p>
+    </statement>
+  </example>
+</section>

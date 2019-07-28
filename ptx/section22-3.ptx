@@ -1,0 +1,46 @@
+<section>
+  <title>Leslie Matrices</title>
+  <p>
+    Let's conisder a population broken down into finitely many age categories.
+    Leslie matrices are a dynamical system which model the age structure of this population.
+    To demonstrate, we'll assume there are four age categories,
+    so the state vector <m>v_k</m> is in <m>\RR^4</m> and the matrix <m>C</m> is a <m>4 \times 4</m> matrix.
+    If we use coordinates <m>w,x,y,z</m> in <m>\RR^4</m>,
+    we can write the matrix equation for this dynamical system.
+    <me>
+      \colvec{4}{w_{k+1}}{x_{k+1}}{y_{k+1}}{z_{k+1}} = \left( \begin{matrix} f_1 \amp  f_2 \amp  f_3 \amp  f_4 \\ s_1 \amp  0 \amp  0 \amp  0 \\ 0 \amp s_2 \amp  0 \amp  0 \\ 0 \amp  0 \amp  s_3 \amp  0 \end{matrix} \right) \begin{pmatrix}w_k\\x_k\\y_k\\z_k\end{pmatrix}
+    </me>
+  </p>
+  <p>
+    Nine of the entries are set to zero intentionally,
+    but we can interpret the remaining entries.
+    The first row outputs to the first category,
+    representing the creation of new members of the population.
+    Each <m>f_i</m> is the <em>fecundity</em>
+    of each population state:
+    its rate of producing offspring.
+    Of course, some of these might be zero,
+    if only certain age categories produce offspring.
+    The <m>s_i</m>, on the other hand,
+    are transitions from one age category to the next.
+    These are <em>survival rates</em>:
+    <m>s_1</m> is the rate of survival from cateogry <m>1</m> to category <m>2</m>,
+    <m>s_2</m> from category <m>2</m> to <m>3</m> and <m>s_3</m> from category <m>3</m> to <m>4</m>.
+    The remaining elemnets of the second,
+    third and fourth rows are zero since they represent unnatural jumps in age categories:
+    i.e., no one goes from the third back down to the second age category.
+  </p>
+  <p>
+    These Leslie matrices are irreducible
+    (recall that ireeducible meant that each state connects to the other;
+    by survival and fertility,
+    it is possible to pass from any age category to another over several years).
+    This means that there is a unique largest eigenvalue <m>\lambda</m> with a positive eigenvector.
+    This is the value we care about:
+    in the long run,
+    the largest eigenvalue dominates and its eigenvector gives the stable age distribution.
+    If <m>\lambda = 1</m>, we expect a stable population.
+    If <m>\lambda > 1</m>, we expect exponential growth,
+    and if <m>\lambda \lt 1</m> we expect exponential decay.
+  </p>
+</section>

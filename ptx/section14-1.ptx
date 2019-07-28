@@ -1,0 +1,27 @@
+<section>
+  <title>Inverse Transforms</title>
+  <p>
+    When we defined Dihedral Groups,
+    we already talked briefly about inverse linear transformation.
+    Let's give a general definition.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>T: \RR^n \rightarrow \RR^n</m>.
+        The inverse transformation of <m>T</m> is a transformation
+        <m>S: \RR^n \rightarrow \RR^n</m> which undoes what <m>T</m> did.
+        Equivalent, it is a transformation <m>S</m> such that the compositions
+        <m>T \circ S</m> and <m>S \circ T</m> are the identity.
+        For an arbitrary transformation,
+        there is no guarantee that an inverse exists;
+        if it does, it is written <m>T^{-1}</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    This is the geometric definition.
+    Now that we've encoded transformations as matrices,
+    we can use matrices and ask for an algebriac definition of the inverse as well.
+  </p>
+</section>

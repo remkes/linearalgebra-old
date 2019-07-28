@@ -1,0 +1,9 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Themes of the Course</title>
+  <xi:include  href="section1-1.ptx" />
+  <xi:include  href="section1-2.ptx" />
+  <xi:include  href="section1-3.ptx" />
+  <xi:include  href="section1-4.ptx" />
+  <xi:include  href="section1-5.ptx" />
+  <xi:include  href="section1-6.ptx" />
+</chapter>

@@ -1,0 +1,115 @@
+<section>
+  <title>Dihedral Groups</title>
+  <p>
+    The case of regular polygons,
+    such as the hexagon, is a very useful place for us to start.
+    Transformations which do not preserve flat objects may not going to preserve the edges of the polygons.
+    Therefore, we want to know which linear transformations preserve the regular polygons.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A <term>Dihedral Group</term> is the group of linear symmetries of a regular polygon.
+        If the polygon has <m>n</m> edges,
+        then we write <m>D_n</m> for the associated dihedral group.
+        Thus, <m>D_3</m> is the group of symmetries of the triangle,
+        <m>D_4</m> is the group of symmetries of the square,
+        <m>D_5</m> is the group of symmetries of the pentagon,
+        and so on.
+        (Some texts use <m>D_{2n}</m> instead of <m>D_n</m>.)
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        Let's first consider the square.
+        For all the polygons we are considering,
+        we assume the origin is at the centre of the polygon.
+        We can assume the square has vertices <m>(1,1)</m>, <m>(1,-1)</m>,
+        <m>(-1,-1)</m> and <m>(-1,1)</m>.
+        Conveniently, the vertices are all we need to think about:
+        since linear transformations preserve lines,
+        if we know where the vertices go,
+        then we know that the lines connecting them are preserved and hence the shape is preseved.
+        Which transformations preserve the vertices?
+      </p>
+      <p>
+        There are two relatively obvious classes that might occur to us.
+        First, there are rotation about the origin.
+        If we rotate by <m>\pi/2</m> radians (a quarter turn),
+        the vertices are preserved.
+        Likewise for rotations by <m>\pi</m> and <m>3\pi/2</m> radians.
+        If we are really paying attention,
+        we might also think of rotation by <m>2\pi</m> radians,
+        a full turn.
+        This might seem silly, but the identity transformation
+        (the transformation that leaves everything fixed)
+        is a very important transformation and should be included in the list.
+        So, for now, we have the identity and three rotations.
+      </p>
+      <p>
+        We might also think about reflections.
+        Looking at the square, we can find four lines of reflection:
+        the <m>x</m>-axs, the <m>y</m>-axis,
+        the line <m>x=y</m> and the line <m>x=-y</m>.
+        That brings the total number of transformation to eight:
+        the identity, three rotations, and four reflections.
+        These eight are, in face, the complete group.
+      </p>
+    </statement>
+  </example>
+  <p>
+    You may have noticed that we used the work <sq>group</sq> instead of <sq>set</sq> to describe this collection.
+    <sq>Group</sq> is a technical word in mathematics,
+    refering to a set with some extra properties.
+    We won't go into the formal details,
+    but we'll use the dihedral groups as archetypical examples.
+    There are three properties of the dihedral groups which hold for all groups.
+    <ul>
+      <li>
+        <p>
+          The composition of two elements of the group is still in the group.
+        </p>
+      </li>
+      <li>
+        <p>
+          The identity transformation is in the group.
+        </p>
+      </li>
+      <li>
+        <p>
+          The inverse operation of any group element is still a group element.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    Though we haven't formally defined inverses,
+    the third property is not to hard to see for the dihedral groups.
+    For the reflections,
+    if we perform the reflection again we get back to where we started.
+    The reflections are their own inverses.
+    For rotations,
+    we add another rotation so that we have completed a full turn.
+    The inverse of rotation by <m>\pi/2</m> radians is rotation by <m>3\pi/2</m> radians.
+    Equivalently, the inverse is rotation by <m>-\pi/2</m> radians.
+  </p>
+  <p>
+    The first property is a little trickier.
+    We leave it to you to try out some compositions of rotations and reflections to see how the result is still one of the eight symmetries.
+    Likewise, we leave it to you to extend this analysis of <m>D_4</m> to other diheadral groups:
+    <m>D_3</m>, <m>D_5</m>, <m>D_6</m> and so on.
+  </p>
+  <p>
+    All dihedral groups are composed of the identity,
+    some rotations, and some reflections.
+    <m>D_4</m> is a useful enough example that we should fix notation.
+    I or <m>\Id</m> is the identity transformation,
+    <m>R_1</m> is rotation by <m>\pi/2</m> radians,
+    <m>R_2</m> is rotation by <m>\pi</m>radians and <m>R_3</m> is rotation by <m>3\pi/2</m> radians.
+    <m>F_1</m> is reflection over the <m>x</m> axis,
+    <m>F_2</m> over <m>x=y</m>,
+    <m>F_3</m> over the <m>y</m> axis and <m>F_4</m> over <m>y=-x</m>.
+  </p>
+</section>

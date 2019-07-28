@@ -1,0 +1,50 @@
+<section>
+  <title>Linear Transformations of <m>\RR^3</m></title>
+  <p>
+    We can also specialize to transformations of <m>\RR^3</m>,
+    though it is not as easy to give a complete account of the basic types.
+    However, all of the types listed for <m>\RR^2</m> generalize.
+    <ul>
+      <li>
+        <p>
+          Rotations in <m>\RR^3</m> are no longer about the origin.
+          Instead, we have to choose an axis.
+          Any line through the origin will do for an axis of rotation.
+          Any rotation in <m>\RR^3</m> is determined by an axis of rotation and an angle of rotation about that axis.
+        </p>
+      </li>
+      <li>
+        <p>
+          Reflections are also altered:
+          instead of reflecting over a line,
+          we have to reflect over a plane through the origin.
+          Any plane through the origin determines a reflection.
+        </p>
+      </li>
+      <li>
+        <p>
+          Skews are similarly defined:
+          one or two directions are fixed and the remaining directions are tilted.
+        </p>
+      </li>
+      <li>
+        <p>
+          Dialations are also similar,
+          though we have three possible axis directions in which to stretch or compress.
+        </p>
+      </li>
+      <li>
+        <p>
+          Like <m>\RR^2</m>, we can project onto the origin,
+          sending everything to zero, or onto a line,
+          sending every point to the closest point on a line.
+          Examples include projection onto the axes.
+          However, we can also project onto planes.
+          Sending <m>(a,b,c)</m> to <m>(a,b,0)</m>, for example,
+          removes the <m>z</m> coordinate;
+          this is projection onto the <m>xy</m> plane.
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

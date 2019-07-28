@@ -1,0 +1,24 @@
+<section>
+  <title>Composition</title>
+  <p>
+    Once we understood functions of real numbers,
+    we learned to compose them.
+    We do the same for linear transformations.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>f : \RR^n \rightarrow \RR^m</m> and
+        <m>g: \RR^m \rightarrow \RR^l</m> be linear transformations.
+        Then <m>g \circ f : \RR^n \rightarrow \RR^l</m> is the linear transformation formed by first applying <m>f</m> and then <m>g</m>.
+        Note that the <m>\RR^m</m> has to match:
+        <m>f</m> outputs to <m>\RR^m</m>,
+        which is the input for <m>g</m>.
+        Also note that the notation is written right-to-left: In <m>g \circ f</m>,
+        the transformation <m>f</m> happens first, followed by <m>g</m>.
+        This new transformation is called the <term>composition</term>
+        of <m>f</m> and <m>g</m>.
+      </p>
+    </statement>
+  </definition>
+</section>

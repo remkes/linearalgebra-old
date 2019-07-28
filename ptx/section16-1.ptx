@@ -1,0 +1,141 @@
+<section>
+  <title>Row and Column Spaces</title>
+  <definition>
+    <statement>
+      <p>
+        Let <m>M</m> be a <m>m \times n</m> matrix.
+        The <term>rowspace</term> of the matrix is the span of the row of the matrix,
+        thought of as vectors in <m>\RR^n</m>.
+        It is a subspace of <m>\RR^n</m>.
+        The <term>columnspace</term> of the matrix is the span of the columns of the matrix,
+        thought of as vectors in <m>\RR^m</m>.
+        It is a subspace of <m>\RR^m</m>.
+      </p>
+    </statement>
+  </definition>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>M</m> be a <m>m \times n</m> matrix.
+        The columnspace and the row spaces of <m>M</m> are linear subspaces
+        (of <m>\RR^m</m> and <m>\RR^n</m>, respectively)
+        with dimension equal to the rank of <m>M</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proposition>
+    <statement>
+      <p>
+        The image of a matrix <m>M</m> is the same as its columnspace.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      The image is the set of all outputs of <m>M</m>,
+      acting on the whole space <m>\RR^n</m>.
+      We can think of <m>\RR^n</m> as the span of its standard basis <m>e_1, e_2, \ldots e_n</m>.
+      The image, then, is the span of <m>Me_1, Me_2, \ldots Me_n</m>.
+      These vectors are precisely the columns of the matrix,
+      so the their span is the columnspace.
+    </p>
+  </proof>
+  <example>
+    <statement>
+      <p>
+        Look at a <m>3 \times 3</m> vector acting on the standard basis of <m>\RR^3</m> to see how the images of the basis vectors are the columns of the matrix.
+        <md>
+          <mrow>\left( \begin{matrix} -2 \amp  -2 \amp  0</mrow>
+          <mrow>7 \amp  -3 \amp  2</mrow>
+          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}1</mrow>
+          <mrow>0</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}-2</mrow>
+          <mrow>7</mrow>
+          <mrow>-4\end{pmatrix}</mrow>
+          <mrow>\left( \begin{matrix} -2 \amp  -2 \amp  0</mrow>
+          <mrow>7 \amp  -3 \amp  2</mrow>
+          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}0</mrow>
+          <mrow>1</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}-2</mrow>
+          <mrow>-3</mrow>
+          <mrow>-1\end{pmatrix}</mrow>
+          <mrow>\left( \begin{matrix} -2 \amp  -2 \amp  0</mrow>
+          <mrow>7 \amp  -3 \amp  2</mrow>
+          <mrow>-4 \amp  -1 \amp  2 \end{matrix} \right) \begin{pmatrix}0</mrow>
+          <mrow>0</mrow>
+          <mrow>1\end{pmatrix} \amp  = \begin{pmatrix}0</mrow>
+          <mrow>2</mrow>
+          <mrow>2\end{pmatrix}</mrow>
+        </md>
+      </p>
+    </statement>
+  </example>
+  <definition>
+    <statement>
+      <p>
+        Let <m>M</m> be a <m>m \times n</m> matrix representing a transformation <m>\RR^n \rightarrow \RR^m</m>.
+        For any <m>u \in \RR^m</m>,
+        the <term>preimage</term> of <m>u</m> is the set of all vectors in <m>\RR^m</m> which are mapped to <m>u</m> by <m>M</m>.
+        It is writtem <m>M^{-1}\{u\}</m>.
+        The <term>kernel</term> or <term>nullspace</term>
+        of <m>M</m> is all vectors in <m>\RR^n</m> which are sent to the zero vector under the transformation associated to <m>M</m>,
+        i.e., the preimage of the origin.
+      </p>
+    </statement>
+  </definition>
+  <proposition>
+    <statement>
+      <p>
+        The preimage of <m>u</m> is the solution space of the system of equations associated to the extended matrix <m>(M|u)</m> where we add the vector <m>u</m> as a column to the matrix <m>M</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      The preimage is all vectors <m>v</m> in <m>\RR^n</m> that are sent to <m>u</m>.
+      If we write <m>v</m> in coordinates
+      <m>x_1, \ldots,
+      x_n</m>, and apply the matrix action,
+      we get a system of <m>m</m> equations with the entries of <m>u</m> as the constants.
+      The matrix encoding of this system is precisely the extended matrix <m>(M|u)</m>.
+    </p>
+  </proof>
+  <example>
+    <statement>
+      <p>
+        We can look at <m>\RR^2</m> to build our intuition.
+        <me>
+          \left( \begin{matrix} a \amp  b \\ c \amp  d \end{matrix} \right) \begin{pmatrix}x\\y\end{pmatrix} = \begin{pmatrix}x_0\\y_0\end{pmatrix}
+        </me>
+      </p>
+      <p>
+        If we write this out in terms of coordinates, we get
+        <md>
+          <mrow>ax + by \amp  = x_0</mrow>
+          <mrow>cd + dy \amp  = y_0</mrow>
+        </md>
+      </p>
+      <p>
+        This is the system associated to the extended matrix with <img src="MISSINGFILE" width="400" /> as constants.
+      </p>
+    </statement>
+  </example>
+  <p>
+    The connection between kernels,
+    preimages and solutions spaces is a deep and important connection between the two pieces of this course so far:
+    vector geometry and solving linear system.
+    When we started with a linear system,
+    we wrote it as an extended matrix.
+    The solution space of that extended matrix (<m>(M|u)</m>,
+    where <m>u</m> is the column vector as constants) is the same as the vectors
+    <m>v \in \RR^n</m> such that <m>Mv = u</m>.
+    Solutions spaces are preimages and preimages are solutions spaces.
+  </p>
+  <p>
+    Specifically,
+    the kernel is the linear space of all vector <m>v</m> with <m>Mv = 0</m>.
+    This is a solution space for the linear system with matrix <m>(M|0)</m>,
+    where the column after the dividing line is all zeroes.
+    This gives us a way of calcluation kernels and expressing them as spans.
+  </p>
+</section>

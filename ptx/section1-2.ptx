@@ -1,0 +1,28 @@
+<section>
+  <title>Abstraction</title>
+  <p>
+    The definition of algebra just stated is an immensely abstract definition.
+    I haven't specified what sets or what structures I'm talking about. (I could say that we are looking at
+    <em>algebraic structures</em>,
+    but that doesn't actually add any insight;
+    it just delays the question.) The definition is very broad,
+    applies to a huge variety of sets and structures.
+    Abstraction is built into the very nature of algebra.
+  </p>
+  <p>
+    In the calculus courses, I often motivate the material by its applications.
+    (The two most often used motivations are the Newtonian physics and percentage growth in ecology or finance.)
+    In this sense, I'm treating the calculus as applied mathematics:
+    mathematics driven by and designed for the solving of certain extra-mathematical problems.
+    This is a reasonable approach for calculus,
+    both for historical and pedagogical reasons.
+  </p>
+  <p>
+    In this course,
+    there will be points where I emphasize the practical applications of linear algebra,
+    of which there are many.
+    However, my primary motivation for the course will be intrinsic and abstract: I want to study sets and their structure simply for the mathematical joy of it.
+    This is the one course at King's which is most suited to presenting the goals and ideas of abstract mathematics,
+    in and of themselves.
+  </p>
+</section>

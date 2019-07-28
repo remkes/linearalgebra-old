@@ -1,0 +1,178 @@
+<section>
+  <title>Properties of Determinants</title>
+  <p>
+    Algebra considers sets with structre.
+    On the sets <m>M_n(\RR)</m> of <m>n \times n</m> matrices,
+    the determinant is a new algebraic structre.
+    We would like to investigate how it interacts with existing structures,
+    starting with matrix multiplication.
+  </p>
+  <p>
+    To compose two transformations, we multiply the matrices.
+    In this composition, the effects on size should compound.
+    If the first transformation doubles size and the second triples it,
+    the composition should multiply size by a factor of <m>6</m>.
+    Similarly with orientation:
+    if both preserve orientation,
+    the composition should as well.
+    If both reverse orientation,
+    reversing twice should return us to the normal orientation.
+    So, two positive or two negatives should result in a positive,
+    and one positive and one negative should result in a negative.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be two <m>n \times n</m> matrices.
+        Then <m>\det (AB) = \det (A) \det (B)</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proposition>
+    <statement>
+      <p>
+        If <m>A</m> is an invertible <m>n \times n</m> matrix,
+        then <m>\det A^{-1} = \frac{1}{\det A}</m>.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    In particular,
+    <m>A</m> invertible means that <m>\det A</m> must be non-zero.
+    For <m>A</m> to be invertible,
+    it must have a non-zero determinant.
+    It turns out this property is sufficient as well as necessary.
+    A non-zero determinant preserves the dimension:
+    it may increase or decrease size but it doesn't entirely destroy it.
+    Therefore, there is always a way to go back, to reverse the process.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        A <m>n \times n</m> matrix <m>A</m> is invertible if and only if <m>\det A \neq 0</m>.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    We can make a list of criteria for invertibility,
+    including this new determinant condition.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> be an <m>n \times n</m> matrix.
+        All of the following properties are equivalent.
+        <ul>
+          <li>
+            <p>
+              <m>A</m> is invertible.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A</m> has rank <m>n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A</m> row reduces to the identity matrix.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\Ker(A) = \{0\}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\Image(A) = \RR^n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The columnspace of <m>A</m> is <m>\RR^n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The columns of <m>A</m> are linearly independent.
+            </p>
+          </li>
+          <li>
+            <p>
+              The rowspace of <m>A</m> is <m>\RR^n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The rows of <m>A</m> are linearly independent.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>Au = v</m> has a unique solution <m>u</m> for any choice of <m>v \in \RR^n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\det A \neq 0</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    Here are two more properties of determinants.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be
+        <m>n \times n</m> matrices and let <m>\alpha \in \RR</m> be a scalar.
+        <md>
+          <mrow>\det (AB) \amp  = \det (BA)</mrow>
+          <mrow>\det \alpha A \amp  = \alpha^n \det A</mrow>
+        </md>
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    Row reduction is an important operations on matrices.
+    It is convenient to know how the determinant changes under row operations.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> be a <m>n \times n</m> matrix.
+        If we exchange two rows of <m>A</m>,
+        the determinant changes sign
+        (positive to negative, negative to positive).
+        If we multiply a row by a constant <m>\alpha</m>,
+        the determinant is multiplied by the same constant <m>\alpha</m>.
+        If we add a multiple of one row to another,
+        the determinant is unchanged.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    This last property is perhaps surprising:
+    adding one row to another,
+    even with a multiple, doesn't change the determinant.
+    This also gives us another algorithm for calculating determinants:
+    we can row reduce the matrix to a triangular matrix and calculate the determinant of the triangular matrix by multiplying the diagonal elements.
+    If we kept track of the multiplication by constants and the row exchanges,
+    we can use these rules to calculate the determinant of the original matrix.
+  </p>
+  <p>
+    All of the properties of determinant listed so far have been multiplicative.
+    The situation for matrix addition and determinants is less elegant:
+    <m>\det (A + B)</m> has no pleasant identity.
+    This is an interesting contrast from many of the thing in this course:
+    determinants are not linear functions
+    <m>M_n(\RR) \rightarrow \RR</m> since they do not act nicely with addition.
+    Instead, they act nicely with multiplication.
+    On sets with various algebraic structure,
+    it is common for an operation to interact well with one structure but poorly with the others.
+  </p>
+</section>

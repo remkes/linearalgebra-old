@@ -1,0 +1,90 @@
+<section>
+  <title>The Cross Product</title>
+  <p>
+    The dot product is an operation which can be performed on any two vectors in <m>\RR^n</m> for any <m>n \geq 1</m>.
+    There are no other conventional products that work in all dimensions.
+    However, there is a special product that works in three dimensions.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>u</m> = <img src="MISSINGFILE"  width="400" /> and <m>v</m> = <img src="MISSINGFILE"  width="400" /> be two vectors in <m>\RR^3</m>.
+        The <term>cross product</term> of <m>u</m> and <m>v</m> is written
+        <m>u \times v</m> and defined by the following formula.
+        <me>
+          u \times v = \begin{pmatrix}u_2v_3 - u_3v_2\\u_3v_1 - u_1v_3\\u_1v_2 - u_2v_1\end{pmatrix}
+        </me>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    The cross product differs from the dot product in several important ways.
+    First, it produces a new vector in <m>\RR^3</m>, not a scalar.
+    For this reason, when working in <m>\RR^3</m>,
+    the dot product is often refered to as the <em>scalar product</em>
+    and the cross product as the <em>vector product</em>.
+    Second, the dot product measures,
+    in some sense, the similarity of two vectors.
+    The cross product measures, in some sense,
+    the difference between two vectors.
+    The cross product has greater magnitude if the vectors are closer to being perpendicular.
+    If <m>\theta</m> is the angle between <m>u</m> and <m>v</m>,
+    the dot product was expressed in terms of <m>\cos \theta</m>.
+    This measures similarity, since <m>\cos 0 = 1</m>.
+    There is a similar identity for the cross product:
+    <me>
+      |u \times v| = |u||v| \sin \theta
+    </me>
+  </p>
+  <p>
+    This identity tells us that the cross product measures difference in direction,
+    since <m>\sin 0 = 0</m>.
+    In particular, this tells us that <m>|u \times u| = 0</m>,
+    implying that <m>u \times u = 0</m>
+    (the zero vector is the only vector which has zero length).
+    This is another new and strange property:
+    in this particular multiplication,
+    everything squares to zero.
+    The cross product is obviously very different from multiplication of scalars,
+    where <m>a^2 = 0</m> cannot happen unless <m>a=0</m>.
+  </p>
+  <p>
+    Also consider the relationship between <m>u</m> and
+    <m>u \times v</m> as calculated through the dot product.
+    <md>
+      <mrow>u \cdot (u \times v) \amp  = \begin{pmatrix}u_1</mrow>
+      <mrow>u_2</mrow>
+      <mrow>u_3\end{pmatrix} \cdot \begin{pmatrix}u_2v_3 - u_3v_2</mrow>
+      <mrow>u_3v_1 - u_1v_3</mrow>
+      <mrow>u_1v_2 - u_2v_1\end{pmatrix}</mrow>
+      <mrow>\amp  = u_1u_2v_3 - u_1u_3v_2 + u_2u_3v_1 - u_2u_1v_3 + u_3u_1v_2 - u_3u_2v_1 = 0</mrow>
+    </md>
+  </p>
+  <p>
+    A similar calculation shows that <m>v \cdot (u \times v) = 0</m>.
+    Since a dot product of two vectors is zero if and only if the vectors are perpendicular,
+    the vector <m>v \times u</m> is perpendicular to both <m>u</m> and <m>v</m>.
+    This turns out to be a very useful property of the cross product.
+  </p>
+  <p>
+    Finally, a calculation from the definition shows that <m>u \times v = -(v \times u)</m>.
+    So far, multiplication of scalars and the dot product of vectors have not depended on order.
+    The cross product is one of many products in mathematics which depends on order.
+    If we change the order of the cross product,
+    we introduce a negative sign.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Products which do not depend on the order of the factors,
+        such as multiplication of scalars and the dot product of vectors,
+        are called <term>commutative products</term>.
+        Products where changing the order of the factors introduces a negative sign are caled
+        <term>anti-commutative products</term>.
+        The cross product is an anti-commutative product.
+        Other products which have neither of these properties are called
+        <term>non-commutative products</term>.
+      </p>
+    </statement>
+  </definition>
+</section>

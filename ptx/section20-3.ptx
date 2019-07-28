@@ -1,0 +1,38 @@
+<section>
+  <title>Symmetric Matrices</title>
+  <p>
+    We defined the transpose of a matrix in the chapter on orthogonal matrices.
+    The transpose leads to a new definition in this chapter.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A <m>n \times n</m> matrix <m>A</m> is
+        <term>symmetric</term> if <m>A = A^T</m>.
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        Here are two symmetric matrices.
+        <men>
+          \left( \begin{matrix} 5 \amp  1 \amp  -3 \\ 1 \amp  2 \amp  0 \\ -3 \amp  0 \amp  4 \end{matrix} \right) \hspace{2cm} \left( \begin{matrix} 1 \amp  4 \amp  -2 \amp  -9 \\ 4 \amp  -4 \amp  3 \amp  3 \\ -2 \amp  3 \amp  8 \amp  -1 \\ -9 \amp  3 \amp  -1 \amp  7 \end{matrix} \right)
+        </men>
+      </p>
+    </statement>
+  </example>
+  <p>
+    We define symmetric matrices in this section because they behave very well with respect to eigenvalue and eigenvectors.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        A symmetric <m>n \times n</m> matrix always has <m>n</m> real eigenvalues,
+        counted with multiplicity.
+        Moreover, the eigenspaces all have the maximum dimension,
+        which is the multiplicity of the eigenvalue.
+      </p>
+    </statement>
+  </proposition>
+</section>

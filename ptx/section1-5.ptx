@@ -1,0 +1,16 @@
+<section>
+  <title>Symmetry</title>
+  <p>
+    Other than flatness, our other major geometric theme is symmetry.
+    Many of the definitions and propositions produced in this course can be stated in terms of some kind of symmetry.
+    Speaking broadly, I want to thing of symmetry as preservation:
+    the symmetry of a shape is some kind of operation which keeps the shape intact,
+    preserves it.
+    Throughout linear algebra,
+    we will be talking about the preservation of various kinds of shapes and flat objects.
+  </p>
+  <p>
+    With the interplay between algebra and geometry mentioned above,
+    we will also translate this idea of symmetry back to algebra to give a understanding of algebraic symmetry.
+  </p>
+</section>

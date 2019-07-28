@@ -1,0 +1,29 @@
+<section>
+  <title>Cross-Polytopes</title>
+  <p>
+    Another family of regular solids which extends to all dimensions is the cross-polytopes.
+    <ul>
+      <li>
+        <p>
+          In <m>\RR^2</m>,
+          the cross-polytope is the diamond with vertices <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , and <img src="MISSINGFILE" width="400" /> . In each dimension,
+          two vertices are added at <m>\pm 1</m> in the new axis direction,
+          and edges are added connecting the two new vertices to each existing vertex (but the two new vertices are not connected to each other)..
+        </p>
+      </li>
+      <li>
+        <p>
+          In <m>\RR^3</m>, the cross-polytope is the octahedron,
+          with vertices <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , and <img src="MISSINGFILE" width="400" /> .
+        </p>
+      </li>
+      <li>
+        <p>
+          In higher dimensions,
+          the vertices are all vectors with <m>\pm 1</m> in one component and zero in all other components.
+          Each vertex is connected to all other vertices except its opposite.
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

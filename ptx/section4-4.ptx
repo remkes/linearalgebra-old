@@ -1,0 +1,54 @@
+<section>
+  <title>Projections</title>
+  <figure xml:id="Projections">
+    <caption>Projection and Perpendicular Vectors</caption>
+    <image width="800%" source="images/figure9.png" />
+  </figure>
+  <definition>
+    <statement>
+      <p>
+        Let <m>u</m> and <m>v</m> be two vectors in <m>\RR^n</m>.
+        The <term>projection</term> of <m>u</m> onto <m>v</m> is a scalar multiple of the vector <m>v</m> given by the following formula.
+        <me>
+          \Proj_v u = \left( \frac{u \cdot v}{|v|^2} \right) v
+        </me>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Note that the bracketed term involves the dot product and the norm,
+    so it is a scalar.
+    Therefore, the result is a multiple of the vector <m>v</m>.
+    Projection is best visualized as the shadow of the vector <m>u</m> on the the vector <m>v</m>.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>u</m> and <m>v</m> be two vectors in <m>\RR^n</m>.
+        The part of <m>u</m> which is <term>perpendicular</term>
+        to <m>v</m> is given by the following formula.
+        <me>
+          \Perp_v u = u - \Proj_v u
+        </me>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    We can rearrange the previous definition to solve for the original vector <m>u</m>.
+    <me>
+      u = \Proj_v u + \Perp_v u
+    </me>
+  </p>
+  <p>
+    For any vector <m>v</m>,
+    every vector <m>u</m> can be decomposed into a sum of two unique vectors:
+    one in the direction of <m>v</m> and one perpendicular to <m>v</m>.
+    If <m>u</m> and <m>v</m> are already perpendicular,
+    then the projection term is the zero vector.
+    If <m>u</m> is a multple of <m>v</m>,
+    then the perpendicular term is the zero vector.
+    We think of this decomposition as capturing two pieces of the vector <m>u</m>:
+    the part that aligns with the direction of <m>v</m> and the part that has nothing to do with the direction of <m>v</m>.
+    A vectors with its projection and perpendicular onto another vector is shows in <xref ref="Projections">Figure</xref>.
+  </p>
+</section>

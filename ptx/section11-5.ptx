@@ -1,0 +1,31 @@
+<section>
+  <title>Bases for Loci</title>
+  <p>
+    If we have a solution space for a linear system expressed in free variables,
+    we can write it as a vector sum using those free variables.
+  </p>
+  <example>
+    <statement>
+      <p>
+        The following is an example of a solution space in <m>\RR^4</m>,
+        with variables <m>w</m>, <m>x</m>, <m>y</m>,
+        and <m>z</m>, where <m>y</m> and <m>z</m> are free variables.
+        <me>
+          \begin{pmatrix}w\\x\\y\\z\end{pmatrix} = \begin{pmatrix}1\\-4\\0\\0\end{pmatrix} + y \begin{pmatrix}1\\-2\\1\\0\end{pmatrix} + z \begin{pmatrix}-2\\-3\\0\\1\end{pmatrix}
+        </me>
+      </p>
+      <p>
+        This is an offset span.
+        The span is all combinations of the vectors <img src="MISSINGFILE" width="400" /> and <img src="MISSINGFILE" width="400" /> . Therefore,
+        those two vectors are the basis for the span.
+        An offset space itself doesn't have a basis,
+        since basis is only defined for linear subspaces.
+      </p>
+      <p>
+        This gives us a way to describe the basis for any locus:
+        write it as a system,
+        find the solution space by free parameter and idenfity the basis of the linear part.
+      </p>
+    </statement>
+  </example>
+</section>

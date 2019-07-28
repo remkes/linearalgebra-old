@@ -1,0 +1,18 @@
+<section>
+  <title>Triangular Matrices</title>
+  <p>
+    The following defintion will be used in the activity associated to this lecture.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        An <term>upper triangular</term> matrix is a matrix where all entries below the diagonal are zero.
+        A <term>lower triangular</term> matrix is a matrix where all entries above the diagonal are zero.
+        Below are two examples of upper triangular matrices.
+        <men>
+          \left( \begin{matrix} -1 \amp  3 \amp  5 \\ 0 \amp  2 \amp  -9 \\ 0 \amp  0 \amp  1 \end{matrix} \right) \hspace{2cm} \left( \begin{matrix} 0 \amp  0 \amp  2 \amp  2 \\ 0 \amp  -7 \amp  4 \amp  0 \\ 0 \amp  0 \amp  9 \amp  -4 \\ 0 \amp  0 \amp  0 \amp  -4 \end{matrix} \right)
+        </men>
+      </p>
+    </statement>
+  </definition>
+</section>

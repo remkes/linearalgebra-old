@@ -1,0 +1,25 @@
+<section>
+  <title>Geometry</title>
+  <p>
+    Though the subjet is called <sq>algebra</sq>,
+    linear algebra is a very geometric discpline.
+    Given my background as a geometer,
+    my approach to the course will be heavily geometric.
+    We will start with vectors,
+    which is a geometric discpline,
+    though it has rich algebraic structre.
+    Throughout the course,
+    we will play the geometry and algebra against each other and use each to understand the other better.
+    This interplay drives the discpline.
+    In many ways,
+    this will be a geomety course hiding under the title of an algebra course.
+  </p>
+  <p>
+    In addition,
+    we will not restrict ourselves for conventional two and three dimensional geometry.
+    The definitions of this course are very general,
+    so we will try to do geometry in any (finite) dimension.
+    A major challenge of the course is going from familiar,
+    visible three dimensions to un-visualizable higher dimensional geometry.
+  </p>
+</section>

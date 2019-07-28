@@ -1,0 +1,5 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Conjugation</title>
+  <xi:include  href="section19-1.ptx" />
+  <xi:include  href="section19-2.ptx" />
+</chapter>

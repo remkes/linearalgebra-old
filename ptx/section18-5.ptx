@@ -1,0 +1,130 @@
+<section>
+  <title>Orthogonal Bases and the Gram-Schmidt Process</title>
+  <definition>
+    <statement>
+      <p>
+        A set of linearly independent non-zero vectors
+        <m>\{ v_1, \ldots,
+        v_k\}</m> is called an <term>orthogonal set</term>
+        if <m>v_i \cdot v_j = 0</m> whenever <m>i \neq j</m>.
+        The set is called an <term>orthonormal set</term>
+        if <m>v_i \cdot v_j = \delta_{ij}</m>.
+        If the set is a basis for a linear subspace,
+        we use the terms <term>orthogonal basis</term>
+        and <term>orthonormal basis</term>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    In many ways,
+    an orthonomal basis is the best kind of basis for a linear subspace:
+    all the vectors are perpendicular to each other and all the vectors are unit vectors.
+    The standard basis <m>\{e_1, \ldots,
+    e_n\}</m> of <m>\RR^n</m> is the classic example of a orthonormal basis;
+    all other orthonomal bases are trying to mimic the standard basis.
+  </p>
+  <p>
+    Given a set of linearly independent vectors <m>\{v_1, \ldots,
+    v_k\}</m>
+    (usually a basis for a linear subspace),
+    there is a general algorithm for adjusting them into an orthogonal or orthonomal basis.
+    This algorithm is called the Gram-Schmidt algorithm.
+    We define new vectors <m>u_i</m> as follows.
+    <md>
+      <mrow>u_1 \amp  = v_1</mrow>
+      <mrow>u_2 \amp  = v_2 - \Proj_{u_1} v_2</mrow>
+      <mrow>u_3 \amp  = v_3 - \Proj_{u_1} v_3 - \Proj_{u_2} v_3</mrow>
+      <mrow>u_4 \amp  = v_4 - \Proj_{u_1} v_4 - \Proj_{u_2} v_4 - \Proj_{u_2} v_4</mrow>
+      <mrow>\vdots \amp  \vdots</mrow>
+      <mrow>u_k \amp  = v_k - \Proj_{u_1} v_k - \Proj_{u_2} v_k - \ldots - \Proj_{u_{k-1}} v_4</mrow>
+    </md>
+  </p>
+  <p>
+    Conceptually,
+    this algorithm takes the first vector <m>v_1</m> as the first direction.
+    Then in the second step,
+    we take <m>v_2</m> and subtract any portion with lies in the <m>u_1</m> direction.
+    Removing that commonality gives a perpendicular vector.
+    In the third step,
+    we take <m>v_3</m> and remove the projection onto the first two pieces.
+    This again removes any commonality that we had so far,
+    giving a perpendicular direction.
+    We proceed in the same way through the list.
+    The result is an orthogonal basis <m>\{u_1, \ldots, u_k\}</m>.
+  </p>
+  <p>
+    The result is not, however, orthonormal.
+    To get an orthonormal set, we divide each <m>u_i</m> by its length.
+    <me>
+      \left\{ \frac{u_1}{|u_i|}, \frac{u_2}{|u_2|}, \ldots, \frac{u_k}{|u_k|} \right\}
+    </me>
+  </p>
+  <p>
+    In this way,
+    we can take any basis and turn it into an orthogonal or othonormal basis.
+  </p>
+  <example>
+    <statement>
+      <md>
+        <mrow>\amp  \Span \left\{ \begin{pmatrix}1</mrow>
+        <mrow>1</mrow>
+        <mrow>3\end{pmatrix}, \begin{pmatrix}0</mrow>
+        <mrow>2</mrow>
+        <mrow>2\end{pmatrix}
+        \right\}</mrow>
+        <mrow>u_1 \amp  = \begin{pmatrix}1</mrow>
+        <mrow>1</mrow>
+        <mrow>3\end{pmatrix}</mrow>
+        <mrow>u_2 \amp  = \begin{pmatrix}0</mrow>
+        <mrow>2</mrow>
+        <mrow>2\end{pmatrix} - \frac{\begin{pmatrix}0</mrow>
+        <mrow>2</mrow>
+        <mrow>2\end{pmatrix} \cdot
+        \begin{pmatrix}1</mrow>
+        <mrow>1</mrow>
+        <mrow>3\end{pmatrix} }{ \left| \begin{pmatrix}1</mrow>
+        <mrow>1</mrow>
+        <mrow>3\end{pmatrix} \right|^2}
+        \begin{pmatrix}1</mrow>
+        <mrow>1</mrow>
+        <mrow>3\end{pmatrix}</mrow>
+        <mrow>\amp  = \begin{pmatrix}0</mrow>
+        <mrow>2</mrow>
+        <mrow>2\end{pmatrix} - \frac{8}{11} \begin{pmatrix}1</mrow>
+        <mrow>1</mrow>
+        <mrow>3\end{pmatrix}</mrow>
+        <mrow>\amp  = \frac{1}{11} \begin{pmatrix}-8</mrow>
+        <mrow>14</mrow>
+        <mrow>-2\end{pmatrix}</mrow>
+        <mrow>|u_1| \amp  = \sqrt{11}</mrow>
+        <mrow>\frac{u_1}{|u_1|} \amp  = \frac{1}{\sqrt{11}} \begin{pmatrix}1</mrow>
+        <mrow>1</mrow>
+        <mrow>3\end{pmatrix}</mrow>
+        <mrow>|u_2| \amp  = \frac{1}{11} \sqrt{264}</mrow>
+        <mrow>\frac{u_2}{|u_2|} \amp  = \frac{1}{\sqrt{264}}
+        \begin{pmatrix}-8</mrow>
+        <mrow>14</mrow>
+        <mrow>-2\end{pmatrix}</mrow>
+      </md>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Sometimes, not all the work is required.
+        Say we are asked to find an orthonormal basis for the following linearly independent set.
+        <me>
+          \left\{ \begin{pmatrix}3\\1\\-2\\-2\end{pmatrix}, \begin{pmatrix}-3\\0\\0\\1\end{pmatrix}, \begin{pmatrix}2\\0\\2\\0\end{pmatrix}, \begin{pmatrix}0\\3\\1\\1\end{pmatrix} \right\}
+        </me>
+      </p>
+      <p>
+        We could go through the whole process,
+        but since these are four linearly independent vectors in <m>\RR^4</m>,
+        they must span the whole space.
+        Therefore, we can take <m>e_1, e_2, e_3</m> and <m>e_4</m>,
+        the standard basis, as the orthonormal basis.
+        No calculation was required.
+      </p>
+    </statement>
+  </example>
+</section>

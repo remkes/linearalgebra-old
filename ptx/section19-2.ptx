@@ -1,0 +1,31 @@
+<section>
+  <title>Properties of Conjugation</title>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be
+        <m>n \times n</m> matrices with <m>B</m> invertible.
+        Conjugation preserves determinants:
+        <m>\det A = \det B^{-1}AB</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be invertible
+        <m>n \times n</m> matrices in a finite matrix group <m>G</m>.
+        Then the order of <m>A</m> is the same as the order of <m>B^{-1}AB</m>.
+      </p>
+    </statement>
+  </proposition>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be
+        <m>n \times n</m> matrices with <m>B</m> invertible.
+        The number of fixed points of <m>A</m> is the same as the number of fixed points of <m>B^{-1}AB</m>.
+      </p>
+    </statement>
+  </proposition>
+</section>
