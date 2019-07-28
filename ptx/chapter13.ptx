@@ -1,0 +1,120 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Matrix Representation of Linear Transformations</title>
+  <introduction>
+    <p>
+      Now we come to the second eajor application of matrices.
+      In addition to succintly encoding linear systems,
+      matrices can also be used very efficiently to encode linear transformations.
+      This is done by defining how a matrix can act on a vector.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A = a_{ij}</m> be a
+          <m>m \times n</m> matrix and let <m>v</m> be a vector in <m>\RR^n</m>.
+          There is an action of <m>A</m> on <m>v</m>,
+          written <m>Av</m>, which defines a new vector in <m>\RR^m</m>.
+          That action is given in the following formula.
+          <men>
+            \left( \begin{matrix} a_{11} \amp  a_{12} \amp  \cdots \amp  a_{1n} \\ a_{21} \amp  a_{22} \amp  \cdots \amp  a_{2n} \\ \vdots \amp  \vdots \amp  \vdots \amp  \vdots \\ a_{n1} \amp  a_{n2} \amp  \cdots \amp  a_{nn} \end{matrix} \right) \begin{pmatrix}4\\v_1\\v_2\\\vdots\\v_n\end{pmatrix} = \colvec{4} {a_{11}v_1 + a_{12}v_2 + \ldots + a_{1n}v_n} {a_{21}v_1 + a_{22}v_2 + \ldots + a_{2n}v_n} {\vdots} {a_{n1}v_1 + a_{n2}v_2 + \ldots + a_{nn}v_n}
+          </men>
+        </p>
+        <p>
+          This is a bit troubling to work out in general.
+          Let's see what it looks like slightly more concretely in <m>\RR^2</m> and <m>\RR^3</m>.
+          <md>
+            <mrow>\left( \begin{matrix} a \amp  b</mrow>
+            <mrow>c \amp  d \end{matrix} \right) \begin{pmatrix}2</mrow>
+            <mrow>x</mrow>
+            <mrow>y\end{pmatrix} \amp  = \begin{pmatrix}2</mrow>
+            <mrow>ax + yb</mrow>
+            <mrow>cx + dy\end{pmatrix}</mrow>
+            <mrow>\left( \begin{matrix} a \amp  b \amp  c</mrow>
+            <mrow>d \amp  e \amp  f</mrow>
+            <mrow>g \amp  h \amp  i \end{matrix} \right) \begin{pmatrix}3</mrow>
+            <mrow>x</mrow>
+            <mrow>y</mrow>
+            <mrow>z\end{pmatrix} \amp  = \colvec{3} {ax + by + cz}{dx + ey + fz}{gx + hy + iz}</mrow>
+          </md>
+        </p>
+        <p>
+          In this way,
+          all <m>m \times n</m> matrices determine a method of sending vectors in <m>\RR^n</m> to <m>\RR^m</m>:
+          a function <m>\RR^n \rightarrow \RR^m</m>.
+          It is not at all obvious from the definition,
+          but matrices completely describe all linear transformations.
+        </p>
+      </statement>
+    </definition>
+    <proposition>
+      <statement>
+        <p>
+          If <m>A</m> is a <m>m \times n</m> matrix,
+          then the associated function defined by the matrix action is a linear function <m>\RR^n \rightarrow \RR^m</m>.
+          Moreover, all linear functions
+          <m>\RR^n \rightarrow \RR^m</m> can be encoded this way.
+          Finally, each linear function is encoded uniquely,
+          i.e., each <m>m \times n</m> matrix corresponds to a different transformation.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      In this way,
+      the set of linear transformation <m>\RR^n \rightarrow \RR^m</m> is <em>exactly</em>
+      the same as the set of <m>m \times n</m> matrices.
+      This is a very powerful result:
+      in order to understand linear transformations of Euclidean space,
+      we only have to understand matrices and their properties.
+    </p>
+    <p>
+      Let's see what certain special matrices mean as transformations.
+      We'll look at <m>3 \times 3</m> matrices for these examples.
+    </p>
+    <example>
+      <statement>
+        <p>
+          First, we had the zero matrix:
+          all coefficient are zero.
+          <men>
+            \left( \begin{matrix} 0 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \\ 0 \amp  0 \amp  0 \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \colvec{3} {0x + 0y + 0z}{0x + 0y + 0z}{0x + 0y + 0z} = \begin{pmatrix}3\\0\\0\\0\end{pmatrix}
+          </men>
+        </p>
+        <p>
+          The zero matrix corresponds to the projection that sends all vectors to the origin.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          We also had the identity matrix:
+          ones on the diagonal and zeros elsewhere.
+          <men>
+            \left( \begin{matrix} 1 \amp  0 \amp  0 \\ 0 \amp  1 \amp  0 \\ 0 \amp  0 \amp  1 \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \colvec{3} {1x + 0y + 0z}{0x + 1y + 0z}{0x + 0y + 1z} = \begin{pmatrix}3\\x\\y\\z\end{pmatrix}
+          </men>
+        </p>
+        <p>
+          The identity matrix corresponds to the transformation which doesn't change anything.
+          Appropriately, we called this the identity transformation.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Diagonal matrices only have non-zero entires on the diagonal.
+          <men>
+            \left( \begin{matrix} a \amp  0 \amp  0 \\ 0 \amp  b \amp  0 \\ 0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3\\x\\y\\z\end{pmatrix} = \colvec{3} {ax + 0y + 0z}{0x + by + 0z}{0x + 0y + cz} = \begin{pmatrix}3\\ax\\by\\cz\end{pmatrix}
+          </men>
+        </p>
+        <p>
+          This is a dialation:
+          the <m>x</m> direction is stretched by the factor <m>a</m>,
+          the <m>y</m> direction by the factor <m>b</m> and the <m>z</m> direction by the factor <m>c</m>.
+          Diagonal matrices are dialations.
+        </p>
+      </statement>
+    </example>
+  </introduction>
+  <xi:include  href="section13-1.ptx" />
+</chapter>

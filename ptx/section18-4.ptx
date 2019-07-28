@@ -1,0 +1,169 @@
+<section>
+  <title>Orthogonal and Special Orthogonal Matrices</title>
+  <definition>
+    <statement>
+      <p>
+        An <m>n \times n</m> matrix <m>A</m> is called
+        <term>orthogonal</term> if it preserves lengths.
+        That is, for all <m>v \in \RR^n</m>, <m>|v| = |Av|</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Preservation of lengths is not the only way to define orthogonal matrices.
+    The following proposition shows the rich structure of this group of matrices.
+    Before stating the proposition,
+    here is a useful definition.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>i,j</m> be two indices which range from 1 to <m>n</m>.
+        The <term>Kronecker delta</term> is a twice-indexed set of numbers
+        <m>\delta_{ij}</m> which evaluates to <m>0</m> whenever
+        <m>i \neq j</m> and <m>1</m> whenever <m>i=j</m>.
+        <me>
+          \delta_{ij} = \left\{ \begin{matrix} 0 \amp  i \neq j \\ 1 \amp  i = j \end{matrix} \right.
+        </me>
+      </p>
+    </statement>
+  </definition>
+  <proposition>
+    <statement>
+      <p>
+        Let <m>A</m> be an <m>n \times n</m> matrix.
+        Write <m>A = (a_1, a_2, \ldots,
+        a_n)</m> where the <m>a_i</m> are column vectors.
+        Then the following seven statements are all equivalent and all can be taken as the definition of an orthogonal matrix.
+        <ol>
+          <li>
+            <p>
+              <m>A</m> preserves lengths:
+              <m>|v| = |Av|</m> for all <m>v \in \RR^n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A</m> preserves dot products:
+              <m>u\cdot v = (Au) \cdot (Av)</m> for all <m>u</m>, <m>v \in \RR^n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A^T = A^{-1}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A^TA = \Id_n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>a_i \perp a_j</m> for all
+              <m>i \neq j</m> and <m>|a_i| = 1</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>a_i \cdot a_j = \delta_{ij}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A</m> preserves angles
+              (the angle between <m>u</m> and <m>v</m> is the same as the angle between <m>Au</m> and <m>Av</m> for all <m>u</m>,
+              <m>v \in \RR^n</m>)
+              <em>amd</em> <m>\det A = \pm 1</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    There are several very surprising statements here.
+    First, preserving angles and preserving lengths are nearly equivalent
+    (preserving angles needs the additional determinant condition).
+    This is a little odd;
+    there isn't a strong intuition that exactly the same transformations should preserve both properties.
+    Second, we have a convenient algebraic method of identifying orthogonal matrices in property d).
+    We can multiply by the transpose:
+    if we get the identity, we have an orthogonal matrix.
+    The equivalence of property d) and property f) is seen in simply calculating the matrix multiplication;
+    it involves the dot products of all the columns,
+    which must evaluate to <m>0</m> or <m>1</m> exactly matching the Kronecker delta.
+  </p>
+  <p>
+    Orthogonal matrices can be though of as rigid-body transformations.
+    Since they preserve both lengths and angles,
+    they preserve the shape of anything formed of vertices and lines:
+    any polygon, polyhedron, of higher dimensional analogue.
+    They may not preserve the position
+    (they may be moved around, rotated, reflected, etc)
+    but they will preserve the shape.
+    This makes orthogonal matrices extremely useful,
+    since many applications want to use transformations that don't destroy polygons or polyhedra.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        Here are some other properties of orthogonal matrices.
+        <ul>
+          <li>
+            <p>
+              In <m>\RR^2</m>,
+              the only orthogonal transformations are the identity,
+              the rotations and the reflections.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is orthogonal, so if <m>A^{-1}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              All orthogonal matrices have determinant <m>\pm 1</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>B</m> are orthogonal,
+              then so are <m>AB</m> and <m>BA</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    Even in <m>\RR^3</m>,
+    orthogonality already gets a bit trickier than just the rotations/reflection of <m>\RR^2</m>.
+    Consider the following matrix.
+    <me>
+      \left( \begin{matrix} -1 \amp  0 \amp  0 \\ 0 \amp  -1 \amp  0 \\ 0 \amp  0 \amp  -1 \end{matrix} \right)
+    </me>
+  </p>
+  <p>
+    This matrix is orthogonal,
+    but it isn't a rotation or relection in <m>\RR^3</m>.
+    It is some kind of <sq>reflection through the origin</sq> where every point is sent to the opposite point with respect to the origin. (The equivalent in <m>\RR^2</m> is rotation by <m>\pi</m> radians).
+    It isn't even a physical transformation:
+    it's not something we can do with a physical object without destroying it.
+    However, it satisfies the condition of orthogonality.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        The group of orthogonal <m>n \times n</m> matrices is called the
+        <term>Orthogonal Group</term>
+        and is written <m>O_n(\RR)</m> or <m>O(n)</m>.
+        The group of orthogonal matrices which also preserve orientation
+        (have determinant one)
+        is called the <term>Special Orthogonal Group</term>
+        and is written <m>SO_n(\RR)</m> or <m>SO(n)</m>.
+      </p>
+    </statement>
+  </definition>
+</section>

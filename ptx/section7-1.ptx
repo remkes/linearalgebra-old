@@ -1,0 +1,75 @@
+<section>
+  <title>Definitions</title>
+  <p>
+    In addition to presenting the second description of linear subspaces,
+    this chapter also introduces linear combinations,
+    span and linear (in)dependence.
+    These are some of the most important and central definition in linear algebra.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A <term>linear combination</term>
+        of a set of vectors <m>\{v_1, v_2, \ldots,
+        v_k\}</m> is a sum of the form
+        <m>a_1 v_1 + a_2 v_2 + \ldots a_k v_k</m> where the <m>a_i \in \RR</m>.
+      </p>
+    </statement>
+  </definition>
+  <definition>
+    <statement>
+      <p>
+        The <term>span</term> of a set of vectors
+        <m>\{v_1, v_2, \ldots,
+        v_k\}</m>, written <m>\Span \{v_1, v_2, \ldots, v_k\}</m>,
+        is the set of <term>all</term> linear combinations of the vectors.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    After loci, spans are the second way of defining linear subspaces.
+    Span are never affine:
+    since linear combinations allow for all the coefficients <m>a_i</m> to be zero,
+    spans always include the origin.
+    To use spans to define affine subspaces,
+    we have to add an offset vector.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        An <term>offset span</term> is an affine subspace formed by adding a fixed vector <m>u</m>,
+        called the <term>offset vector</term>,
+        to the span of some set of vectors.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Loci are built top-down,
+    by starting with the ambient space and reducing the number of points by imposing restrictions in the form of linear equations.
+    Their dimension, at least ideally,
+    is the dimension of the ambient space minus the number of equations or restrictions.
+    Spans, on the other hand, are built bottom-up.
+    They start with a number of vectors and take all linear combinations:
+    more starting vectors leads to more independent directions and a larger dimension.
+  </p>
+  <p>
+    In particular, the span of one non-zero vector is the line
+    (through the origin)
+    consisting of all multiples of that vector.
+    Similarly, we expect the span of two vectors to be a plane.
+    However, here we have the same problem as we had with loci:
+    we may have redundant information.
+    For example, in <m>\RR^2</m>,
+    we could consider the span <m>\Span</m><img src="MISSINGFILE" width="400" /> . We would hope the span of two vectors would be the entire plane,
+    but this is just the line in the direction <img src="MISSINGFILE" width="400" /> . The vector <img src="MISSINGFILE" width="400" /> , since it is already a multiple of <img src="MISSINGFILE" width="400" /> , is redundant.
+  </p>
+  <p>
+    The problem is magnified in higher dimensions.
+    If we have the span of a large number of vectors in <m>\RR^n</m>,
+    it is nearly impossible to tell,
+    at a glance, whether any of the vectors are redundant.
+    We would like to have tools to determine this redundancy.
+    As with the tools for dimensions of loci,
+    we have to wait until a later section of these notes.
+  </p>
+</section>

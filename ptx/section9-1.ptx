@@ -1,0 +1,99 @@
+<section>
+  <title>Definitions</title>
+  <p>
+    The previous eight chapters introduced the geometric side of this course.
+    This chapter changes perspective to look at the algebraic side of linear algebra.
+    A major problem in algebra is solving systems of equations:
+    given several equations in several variables,
+    can we find values for each variable which satisfy all the equations?
+    In general, algegra considers any kind of equation.
+  </p>
+  <example>
+    <statement>
+      <md>
+        <mrow>x^2 + y^2 + z^2 \amp  = 3</mrow>
+        <mrow>xy + 2xz - 3yz \amp  = 0</mrow>
+        <mrow>x+y+z \amp  = 3</mrow>
+      </md>
+      <p>
+        This system is solved by <img src="MISSINGFILE" width="400" /> . When substitued in the equations,
+        these values satisfy all three.
+        No other triples satisfies, so this is a unique solution.
+      </p>
+    </statement>
+  </example>
+  <p>
+    Solving arbitrary systems of equations is a very difficult problem.
+    There are two initial techniques,
+    which are usually taught in high-school mathematics:
+    isolating and replacing variables;
+    or performing arithmetic with the equations themselves.
+    Both are useful techniques.
+    However, when the equations become quite complicated, both methods can fail.
+    In that case,
+    solutions to systerms can only be approached with approximation methods.
+    The methodology of these approximations is a whole branch of mathematics in itself.
+  </p>
+  <p>
+    We are going to restrict ourselves to a class of systems which is more approchable:
+    systems of linear equations.
+    Recall the definition of a linear equation.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>a_i</m>,
+        for <m>i \in \{1, \ldots n\}</m> and <m>c</m> be real numbers.
+        A <term>linear equation</term> in the variables
+        <m>x_1, x_2 \ldots,
+        x_n</m> is a equation of the following form.
+        <me>
+          a_1 x_1 + a_2 x_2 + \ldots + a_n x_n = c
+        </me>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Given a fixed set of variables
+    <m>x_1, x_2, \ldots,
+    x_n</m>, we want to consider systems of linear equations
+    (and only linear equations)
+    in those variables.
+    While much simpler than the general case,
+    linear systems are a common and useful type of system to consider.
+    Such systems also work well with arithmetic solution techniques,
+    since we can add two linear equations together and still have a linear equation.
+  </p>
+  <p>
+    This turns out to be the key idea:
+    we can do arithmetic with linear equations.
+    Specifically,
+    there are three things we can do with a system of linear equation.
+    These three techniques <em>preserve the solutions</em>, that is,
+    they don't alter the values of the variables that solve the system.
+    <ul>
+      <li>
+        <p>
+          Multiple a single equation by a (non-zero) constant. (Multiplying both sides of the equation,
+          of course).
+        </p>
+      </li>
+      <li>
+        <p>
+          Change the order of the equations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Add one equation to another.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    If we combine the first and third,
+    we could restate the third as:
+    add a multiple of one equation to another.
+    In practice, we often think of the third operation this way.
+  </p>
+</section>

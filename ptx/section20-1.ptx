@@ -1,0 +1,149 @@
+<section>
+  <title>Definitions</title>
+  <definition>
+    <statement>
+      <p>
+        Let <m>A</m> be an <m>n \times n</m> matrix.
+        A non-zero vector <m>v \in \RR^n</m> is an <term>eigenvector</term>
+        for <m>A</m> with <term>eigenvalue</term>
+        <m>\lambda</m> if <m>Av = \lambda v</m>.
+        The set of all eigenvalues for the matrix <m>A</m> is called the
+        <term>spectrum</term> of <m>A</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Eigenvectors for a matrix are vectors which do not change direction.
+    They may be dialated by a factor <m>\lambda</m>
+    (including a flip if <m>\lambda</m> is negative),
+    but they still point in the same direction.
+    Projections are also included,
+    since we allow <m>\lambda = 0</m>;
+    such an eigenvector would represent a direction sent entirely to zero under the transformation.
+    Note that if <m>v</m> is an eigenvector,
+    then so is <m>\alpha v</m> for any
+    <m>\alpha \neq 0</m>, <m>\alpha \in \RR</m>.
+  </p>
+  <p>
+    At first glance, this definintion may seem insignificant;
+    interesting, perhaps, but not necessarily central.
+    It turns out that eigenvectors and eigenvalues are one of the most useful and important definitions in linear algebra.
+    Many problems in applied mathematics depend upon finding the eigenvalues of a particular matrix.
+  </p>
+  <p>
+    Before we learn how to calculate eigenvectors and eigenvalues,
+    we can look at some obvious examples.
+  </p>
+  <example>
+    <statement>
+      <p>
+        The identity is the easiest:
+        for any vector <m>v</m> we have <m>\Id v = v</m>.
+        Therefore, all vectors are eigenvectors of the identity with eigenvalue <m>\lambda = 1</m>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        The zero matrix is similarly easy:
+        it sends all vectors to the origin.
+        All vectors are eigenvectors with eigenvalue <m>\lambda = 0</m>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Consider a dialation matrix in <m>\RR^3</m>:
+        <md>
+          <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
+          <mrow>0 \amp  b \amp  0</mrow>
+          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3</mrow>
+          <mrow>1</mrow>
+          <mrow>0</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
+          <mrow>a</mrow>
+          <mrow>0</mrow>
+          <mrow>0\end{pmatrix} = a \begin{pmatrix}3</mrow>
+          <mrow>1</mrow>
+          <mrow>0</mrow>
+          <mrow>0\end{pmatrix}</mrow>
+          <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
+          <mrow>0 \amp  b \amp  0</mrow>
+          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3</mrow>
+          <mrow>0</mrow>
+          <mrow>1</mrow>
+          <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
+          <mrow>0</mrow>
+          <mrow>b</mrow>
+          <mrow>0\end{pmatrix} = b \begin{pmatrix}3</mrow>
+          <mrow>0</mrow>
+          <mrow>1</mrow>
+          <mrow>0\end{pmatrix}</mrow>
+          <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
+          <mrow>0 \amp  b \amp  0</mrow>
+          <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}3</mrow>
+          <mrow>0</mrow>
+          <mrow>0</mrow>
+          <mrow>1\end{pmatrix} \amp  = \begin{pmatrix}3</mrow>
+          <mrow>0</mrow>
+          <mrow>0</mrow>
+          <mrow>c\end{pmatrix} = c \begin{pmatrix}3</mrow>
+          <mrow>0</mrow>
+          <mrow>0</mrow>
+          <mrow>1\end{pmatrix}</mrow>
+        </md>
+      </p>
+      <p>
+        Here, all three of the standard basis vectors are eigenvectors.
+        <m>e_1</m> has eigenvalue <m>a</m>,
+        <m>e_2</m> has eigenvalue <m>b</m> and <m>e_3</m> has eigenvalue <m>c</m>.
+        If <m>a</m>, <m>b</m> and <m>c</m> are all distinct numbers,
+        there are no other eigenvectors
+        (up to scale).
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Consider a rotation in <m>\RR^2</m>.
+        Assuming the rotation is not trivial (<m>\theta \neq 0</m>),
+        then there are no preserved directions.
+        This rotation has no eigenvectors.
+        However, if we had a rotation in <m>\RR^3</m>,
+        we have to choose an axis.
+        The axis direction is fixed,
+        so a vector in that direction would be an eigenvector with eigenvalue one.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Consider a reflection in <m>\RR^2</m>.
+        A vector along the line of reflection is unchanged,
+        so it would be an eigenvector with eigenvalue one.
+        A vector perpendicular to the line of reflection is fliped exactly,
+        so it would be an eigenvector with eigenvalue <m>-1</m>.
+        In <m>\RR^3</m>, we reflect over a plane through the origin.
+        Any vector in the plane of reflection is unchanged,
+        so that vector is an eigenvectors with eigenvalue one.
+        Any vector perpendicular to the plane of reflection is precisely fliped,
+        so that vector is an eigenvector with eigenvalue <m>-1</m>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Finally, consider projections in <m>\RR^2</m>.
+        Projection onto the <m>x</m>-axis preserves the <m>x</m> axis,
+        so any vector <m>\begin{pmatrix}2\\a\\0 \end{pmatrix}</m> is an eigenvector with eigenvalue one.
+        However, it sends the <m>y</m>-axis direction to the origin,
+        so any vector <m>\begin{pmatrix}2\\0\\b \end{pmatrix}</m> is an eigenvector with eigenvalue zero.
+      </p>
+    </statement>
+  </example>
+</section>

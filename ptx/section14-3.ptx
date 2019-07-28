@@ -1,0 +1,46 @@
+<section>
+  <title>Calculating Inverse Matrices</title>
+  <p>
+    The definition is good,
+    but we are left with the problem of determining which matrices have inverses and calculating those inverses.
+    It turns out there is a convenient algorithm using techniques we already know.
+    We write an extended matrix <m>(M|I_n)</m> with our original matrix and the identity next to each other,
+    separated by a vertical line.
+    Then we row reduce,
+    treating the conglomeration as one matrix with long rows.
+    If our row reduction of <m>M</m> results in the identity on the left,
+    then the matrix has the form <m>(I|M^{-1})</m>;
+    the right hand side will be the inverse.
+  </p>
+  <p>
+    This algorithm gives us two observations.
+    First, obviously, it is a way to calculate inverses.
+    But it also is a condition:
+    an <m>n \times n</m> matrix is invertible, in this algorithm,
+    only if we get the identity matrix on the left after row reduction.
+    This is part of a general result,
+    which is the first of several conditions for intertible matrices.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        A <m>n \times n</m> matrix is invertible if and only if it row reduces to the identity matrix <m>I_n</m>.
+        Since the identity has <m>n</m> leading ones,
+        this is equivalent to the matrix having rank <m>n</m>.
+      </p>
+    </statement>
+  </proposition>
+  <definition>
+    <statement>
+      <p>
+        The set of all intervible <m>n \times n</m> matrices with real coefficient forms a group.
+        It is called the <term>General Linear Group</term>
+        and written <m>GL_n(\RR)</m>.
+        If we wanted to change the coefficients to another set of scalars <m>S</m>,
+        we would write <m>GL_n(S)</m>.
+        When the coefficients are understood,
+        we sometime write <m>GL_n</m> or <m>GL(n)</m>.
+      </p>
+    </statement>
+  </definition>
+</section>

@@ -1,0 +1,5 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Transformations of Spans and Loci</title>
+  <xi:include  href="section15-1.ptx" />
+  <xi:include  href="section15-2.ptx" />
+</chapter>

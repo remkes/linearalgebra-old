@@ -1,0 +1,37 @@
+<section>
+  <title>Algebra</title>
+  <p>
+    Linear <em>algebra</em> is, as expected, an algebra course.
+    (It is the only strictly algebra course taught at King's, though elsewhere,
+    it would be the first of a sequence of algebra courses.)
+  </p>
+  <p>
+    The word <sq>algebra</sq> does not mean the same thing in university mathematics as it did in high-school mathematics.
+    Previously, the world <sq>algebra</sq> usually signaled the use of variables:
+    <m>3+5 = 8</m> is arithmetic,
+    but <m>3 + x = 8 \implies x = 5</m> is algebra.
+    From that point, algebra became the manipulation of equations
+    (and inequalities)
+    with variables,
+    particularly focusing on solving polynomials and rational functions.
+  </p>
+  <p>
+    In academic mathematics, algebra has a much broader and deeper sense.
+    It is a whole branch of mathematics, with many subdisciplines:
+    linear algebra, abstract algebra, homological algebra, etc.
+    One of the goals of this course will be to build as sense of what we mean by the term <sq>algebra</sq>.
+    I'll give a definition right now,
+    at the start, but it's a difficult definition to understand;
+    hopefully the course will provide the necessary elaboration.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        <term>Algebra</term> is the study of sets with structure.
+        It investigates possible structures on sets,
+        the rules obeyed by those structures,
+        and the interaction of various structures.
+      </p>
+    </statement>
+  </definition>
+</section>

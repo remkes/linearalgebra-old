@@ -1,0 +1,69 @@
+<section>
+  <title>Angular Motion</title>
+  <p>
+    An important application of the cross product is found in describing rotational motion.
+    Linear mechanics describes the motion of an object through space but rotational mechanics describes the rotation of an object independent of its movement through space.
+    A force on an object can cause both kinds of movement,
+    obviously.
+    The following table summarizes the parallel questions of linear motion and rotational motion in <m>\RR^3</m>.
+  </p>
+  <tabular>
+    <row>
+      <cell>Linear Motion</cell>
+      <cell>Rotational Motion</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Straight line in a vacuum</cell>
+      <cell>Continual spinning in a vacuum</cell>
+    </row>
+    <row>
+      <cell>Direction of motion</cell>
+      <cell>Axis of spin</cell>
+    </row>
+    <row>
+      <cell>Force</cell>
+      <cell>Torque</cell>
+    </row>
+    <row>
+      <cell>Momentum</cell>
+      <cell>Angular Momentum</cell>
+    </row>
+    <row>
+      <cell>Mass (resistance to motion)</cell>
+      <cell>Moment of Intertia (resistance
+        to spin)</cell>
+    </row>
+    <row>
+      <cell>Velocity</cell>
+      <cell>Frequency (Angular Velocity)</cell>
+    </row>
+    <row>
+      <cell>Acceleration</cell>
+      <cell>Angular Acceleration</cell>
+    </row>
+  </tabular>
+  <p>
+    How do we describe torque?
+    If there is a linear force applied to an object which can only rotate around an axis,
+    and if the linear force is applied at a distance <m>r</m> from the axis,
+    we can think of the force <m>F</m> and the distance <m>r</m> as vectors.
+    The torque is then <m>\tau = r \times F</m>.
+    Notice that <m>|\tau| = |r||F| \sin \theta</m>,
+    indicating that linear force perpendicular to the radius gives the greatest angular acceleration.
+    That makes sense.
+    If <m>F</m> and <m>r</m> share a direction,
+    then we are pushing directly along the axis and no rotation can occur.
+  </p>
+  <p>
+    The use of cross products in rotational dynamics is extended in many interesting ways.
+    In fluid dynamics,
+    local rotational products of the fluid result in turbulence,
+    vortices and similar effects.
+    Tornadoes and hurricanes are particularly extreme examples of vortices in the fluid which is our atmosphere.
+    All the descriptions of the force and motion of these vortices involve cross products in the vectors describing the fluid.
+  </p>
+</section>

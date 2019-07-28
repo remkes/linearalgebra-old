@@ -1,0 +1,73 @@
+<section>
+  <title>Definitions</title>
+  <p>
+    In addition to vectors,
+    we want to consider various geometric objects that live in <m>\RR^n</m>.
+    Since this is linear algebra,
+    we will be restricting ourselves to flat objects.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A <term>linear subspace</term> of <m>\RR^n</m> is a non-empty set of vectors <m>L</m> which satisfies the following two properties.
+        <ul>
+          <li>
+            <p>
+              If <m>u,v \in L</m> then <m>u+v \in L</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>u \in L</m> and <m>a \in \RR</m> then <m>av \in L</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    There are two basic operations on <m>\RR^n</m>:
+    we can add vectors and we can multiply by scalars.
+    Linear subspaces are just subsets where we can still perform both operations and remain in the subset.
+  </p>
+  <p>
+    Geometrically,
+    vector addition and scalar multiplication produce flat objects:
+    lines, planes, and their higher-dimensions analogues.
+    Also, since we can take <m>a=0</m>,
+    we must have <m>0 \in L</m>.
+    So linear subspaces can be informally defined as flat subsets which include the origin.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        An <term>affine subspace</term> of <m>\RR^n</m> is a non-empty set of vectors <m>A</m> which can be described as a sum <m>v+u</m> where <m>v</m> is a fixed vector and <m>u</m> is any vector in some fixed linear subspace <m>L</m>.
+        With some abuse of notation,
+        we write this as a sum of a fixed vector and a linear subspace.
+        <me>
+          A = v + L
+        </me>
+      </p>
+      <p>
+        We think of affine subspaces as flat spaces that may be offset from the origin.
+        The vector <m>v</m> is called the
+        <term>offset vector</term>.
+        Affine spaces include linear spaces,
+        since we can also take <m>u</m> to be the zero vector and have <m>A=L</m>.
+        Affine objects are the lines,
+        planes and higher dimensional flat objects that may or may not pass through the origin.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Notice that we defined both affine and linear subspaces to be non-empty.
+    The empty set <m>\emptyset</m> is <em>not</em>
+    a linear or affine subspace.
+    The smallest linear subspace if <m>\{0\}</m>: just the origin.
+    The smallest affine subspace is any isolated point.
+  </p>
+  <p>
+    We need ways to algebraically describe linear and affine substapces.
+    There are two main approaches: loci and spans.
+  </p>
+</section>

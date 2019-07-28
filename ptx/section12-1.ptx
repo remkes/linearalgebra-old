@@ -1,0 +1,116 @@
+<section>
+  <title>Definitions</title>
+  <p>
+    After a good definition of the environment (<m>\RR^n</m>) and its objects (lines,
+    planes, hyperplanes, etc),
+    the next mathematical step is to understand the functions that live in the environment and affect its objects.
+    First, we need to generalize the simple notion of a function to linear spaces.
+    In algebra and calculus, we worked with functions of real numbers.
+    These functions are rules <m>f: A \rightarrow B</m> which go between subsets of real numbers.
+    The function <m>f</m> assigns to each <em>number</em>
+    in <m>A</m> a unique <em>number</em> in <m>B</m>.
+    They include the very familiar <m>f(x) = x^2</m>,
+    <m>f(x) = \sin (x)</m>, <m>f(x) = e^x</m> and many others.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>A</m> and <m>B</m> be subsets of <m>\RR^n</m> and <m>\RR^m</m>,
+        respectively.
+        A <term>function</term> between linear spaces is a rule
+        <m>f: A \rightarrow B</m> which assigns to each <term>vector</term>
+        in A a unique <term>vector</term> in <m>B</m>.
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        We can define a function <m>f: \RR^3 \rightarrow \RR^3</m> by <m>f\begin{pmatrix}3\\x\\y\\z \end{pmatrix} = \begin{pmatrix}3\\x^2\\y^2\\z^2 \end{pmatrix}</m>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Another function <m>f: \RR^3 \rightarrow \RR^2</m> could be <m>f\begin{pmatrix}3\\x\\y\\z \end{pmatrix} = \begin{pmatrix}2\\x-y\\z-y \end{pmatrix}</m>.
+      </p>
+    </statement>
+  </example>
+  <definition>
+    <statement>
+      <p>
+        A <term>linear function</term> or
+        <term>linear transformation</term>
+        from <m>\RR^n</m> to <m>\RR^m</m> is a function
+        <m>f: \RR^n \rightarrow \RR^m</m> such that for two vectors
+        <m>u,v \in \RR^n</m> and any scalar <m>a \in \RR</m>,
+        the function must obey two rules.
+        <md>
+          <mrow>f(u+v) \amp  = f(u) + f(v)</mrow>
+          <mrow>f(au) \amp  = af(u)</mrow>
+        </md>
+      </p>
+      <p>
+        Informally, we say that the function <term>respects</term>
+        the two main operations on linear spaces:
+        addition of vectors and multiplication by scalars.
+        If we perform addition before or after the function, we get the same result.
+        Likewise for scalar multiplication.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    By inspection and testing,
+    one could determined that the first example above fails these two rules,
+    but the second example satisfies them.
+  </p>
+  <p>
+    This definition creates to the restrictive but important class of linear functions.
+    We could easily define linear algebra as a study of these transformations.
+    There is an alternative and equivalent definition of linear transformation.
+  </p>
+  <proposition>
+    <statement>
+      <p>
+        A function <m>f: \RR^n \rightarrow \RR^m</m> is linear if and only if it sends linear objects to linear objects.
+      </p>
+    </statement>
+  </proposition>
+  <p>
+    Under a linear transformation points, lines,
+    planes are changed to other points, lines, planes, etc.
+    A line can't be bent into an arc or broken into two different lines.
+    Hopefully, some of the major ideas of the course are starting to fit together:
+    the two basic operations of addition and scalar multiplication give rise to spans,
+    which are flat objects.
+    Linear transformation preserve those operations,
+    so they preserve flat objects.
+    Exactly <em>how</em> they change these objects can be tricky to determine.
+  </p>
+  <p>
+    Lastly, because of scalar multiplication,
+    if we take <m>a = 0</m> we get that <m>f(0) = 0</m>.
+    Under a linear transformation,
+    the origin is always sent to the origin.
+    So, in addition to preserving flat objects,
+    linear transformation can't move the origin.
+    We could drop this condition of preserving the origin to get another class of functions.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A <term>affine transformation</term>
+        from <m>\RR^n</m> to <m>\RR^m</m> is a transformation that preserves affine subspaces.
+        These transformations preserve flat objects but may move the origin.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Though they are interesting,
+    we don't spend much time with affine transformations.
+    They can always be realized as a linear transformation combined with a shift or displacement of the entire space by a fixed vector.
+    Since shifts are relatively simple,
+    we can usually reduce problems of affine transformations to problems of linear transformations.
+  </p>
+</section>

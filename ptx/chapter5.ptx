@@ -1,0 +1,23 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Polyhedra in <m>\RR^n</m></title>
+  <introduction>
+    <p>
+      Now that we have defined vectors,
+      we want to investigate more complicated objects in <m>\RR^n</m>.
+      The major objects for the course work
+      (linear and affine subspaces)
+      will be defined in the coming lectures.
+      In this lecture, however,
+      we take a short detour to discover how familiar shapes and solids extend into higher dimensions.
+      I'll use the standard term <em>polyhedron</em>
+      (plural polyhedra)
+      to refer to a straight-edged objects in any <m>\RR^n</m>.
+      First, however, we start with a familiar without straight edges.
+    </p>
+  </introduction>
+  <xi:include  href="section5-1.ptx" />
+  <xi:include  href="section5-2.ptx" />
+  <xi:include  href="section5-3.ptx" />
+  <xi:include  href="section5-4.ptx" />
+  <xi:include  href="section5-5.ptx" />
+</chapter>
