@@ -30,20 +30,20 @@
 \setlength{\parsep}{3pt}}
 {\end{enumerate}}
 
-\newcount\colveccount
-\newcommand*\colvec[1]{
-        \global\colveccount#1
-        \begin{pmatrix}
-        \colvecnext
-}
-\def\colvecnext#1{
-        #1
-        \global\advance\colveccount-1
-        \ifnum\colveccount>0
-                \\
-                \expandafter\colvecnext
-        \else
-                \end{pmatrix}
-        \fi
-}
+%\newcount\colveccount
+%\newcommand*\colvec[1]{
+%        \global\colveccount#1
+%        \begin{pmatrix}
+%        \colvecnext
+%}
+%\def\colvecnext#1{
+%        #1
+%        \global\advance\colveccount-1
+%        \ifnum\colveccount>0
+%                \\
+%                \expandafter\colvecnext
+%        \else
+%                \end{pmatrix}
+%        \fi
+%}
 

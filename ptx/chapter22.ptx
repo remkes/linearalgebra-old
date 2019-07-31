@@ -1,7 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Linear Dynamical Systems</title>
-  <xi:include  href="section22-1.ptx" />
-  <xi:include  href="section22-2.ptx" />
-  <xi:include  href="section22-3.ptx" />
-  <xi:include  href="section22-4.ptx" />
-</chapter>

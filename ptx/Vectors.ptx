@@ -1,6 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Vectors">
-  <title>Vectors</title>
-  <xi:include  href="section2-1.ptx" />
-  <xi:include  href="section2-2.ptx" />
-  <xi:include  href="section2-3.ptx" />
-</chapter>
