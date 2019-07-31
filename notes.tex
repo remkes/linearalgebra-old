@@ -10,20 +10,18 @@
 \date{\today}
 \maketitle
 
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \numberwithin{thm}{section}
 
-\renewcommand{\chaptername}{Lecture}
-\renewcommand{\abstractname}{License}
-
-\begin{abstract}
-This work is licensed under the Creative Commons
-Attribution-ShareAlike 4.0 International License.
-\end{abstract}
-
-\chapter*{Welcome to the Course}
+\chapter{Welcome to the Course}
 \label{welcome}
+
+\section{Introduction}
+\label{introduction}
+
+\subsection{Pedagogical Model}
+\label{model}
 
 This courses uses a pedagogical model known either as blended
 learning or the flipped classroom. In this model, the majority of the
@@ -53,7 +51,8 @@ various lectures happen over the term. Please use this
 schedule to ensure you watch the appropriate videos before
 class and bring the appropriate sections of the notes. 
 
-\section*{Other Resources}
+\subsection{Other Resources}
+\label{resources}
 
 In addition to the notes associated to each lecture, there are
 a number of other resources which are distributed via
@@ -77,7 +76,8 @@ you want to know whether a definition, topic or type of
 problem might show up on the exam, consult this sheet. 
 \end{itemize}
 
-\section*{Perspectives and Philosophy}
+\subsection{Perspectives and Philosophy}
+\label{philosophy}
 
 In addition to the strictly mathematical material of the
 course, I will try to share some ideas which give perspective
@@ -90,10 +90,10 @@ abstract thinking. Therefore, I use this course as a venue for
 talking about abstraction in the context of perspectives and
 philosophy.
 
-\chapter{Themes of the Course}
+\section{Themes of the Course}
 \label{themes}
 
-\section{Algebra}
+\subsection{Algebra}
 
 Linear \emph{algebra} is, as expected, an algebra course. (It
 is the only strictly algebra course taught at King's, though
@@ -123,7 +123,8 @@ investigates possible structures on sets, the rules obeyed by
 those structures, and the interaction of various structures. 
 \end{defn}
 
-\section{Abstraction}
+\subsection{Abstraction}
+\label{abstraction}
 
 The definition of algebra just stated is an immensely
 abstract definition. I haven't specified what sets or what
@@ -150,7 +151,8 @@ structure simply for the mathematical joy of it. This is the
 one course at King's which is most suited to presenting the
 goals and ideas of abstract mathematics, in and of themselves. 
 
-\section{Geometry}
+\subsection{Geometry}
+\label{geometry-theme}
 
 Though the subjet is called `algebra', linear algebra is a
 very geometric discpline. Given my background as a geometer,
@@ -169,7 +171,8 @@ course are very general, so we will try to do geometry in any
 from familiar, visible three dimensions to un-visualizable
 higher dimensional geometry.
 
-\section{Flatness}
+\subsection{Flatness}
+\label{flatness}
 
 While a geometry course, the geometry we are considering will
 be very restricted. The `linear' in linear algebra refers to
@@ -187,7 +190,8 @@ complicated and difficult subject. By restricting to flat
 objects, we can produce a wide range of accessible
 mathematical results. 
 
-\section{Symmetry}
+\subsection{Symmetry}
+\label{symmetry}
 
 Other than flatness, our other major geometric theme is
 symmetry. Many of the definitions and propositions produced in
@@ -202,7 +206,8 @@ With the interplay between algebra and geometry mentioned
 above, we will also translate this idea of symmetry back to
 algebra to give a understanding of algebraic symmetry. 
 
-\section{Proof}
+\subsection{Proof}
+\label{proof}
 
 Proofs are another major difference between the grade-school
 understanding of algebra and the academic sense of the word.
@@ -215,10 +220,14 @@ we'll introduce the idea of conjectures, propositions,
 theorems and proofs. We'll do a small amount of proving on the
 assignments to build a flavour for proof-based mathematics.
 
-\chapter{Vectors}
-\label{Vectors}
+\chapter{Geometry}
+\label{geometry}
 
-\section{Definitions}
+\section{Vectors}
+\label{vectors}
+
+\subsection{Definitions}
+\label{vector-definitions}
 
 \begin{defn}
 In linear algebra, ordinary numbers (intergers, rational
@@ -276,7 +285,7 @@ considered the centre point of Cartesian space.
 \centering
 \includegraphics[width=8cm]{figure1.eps}
 \caption{Points in the Cartesian Plane $\RR^2$}
-\label{Points in the Cartesian Plane}
+\label{points-in-the-cartesian-plane}
 \end{figure}
 
 Cartesian space, particularly the Cartesian plane, is a familiar
@@ -287,14 +296,14 @@ In this visualization, the vector
 \scalebox{0.7}{$\colvec{2}{a}{b}$} corresponds to the
 unique point we get moving $a$ units in the direction of the $x$
 axis and $b$ units in the direction of the $y$ axis.
-Figure \ref{Points in the Cartesian Plane} shows the location
+Figure \ref{points-in-the-cartesian-plane} shows the location
 of several points in $\RR^2$.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=7cm]{figure2.eps}
 \caption{Points in Cartesian three-space $\RR^3$}
-\label{Points in Cartesian three-space}
+\label{points-in-cartesian-three-space}
 \end{figure}
 
 As with $\RR^2$, the point
@@ -306,7 +315,7 @@ the $x$ axis horizontally, with a positive direction to the
 right, and the $y$ axis vertically, with a positive direction
 upwards. For $\RR^3$, the $x$ and $y$ axes form a flat plane
 and the $z$ axis extend vertically from that plan, as shown in
-Figure \ref{Points in Cartesian three-space}. Notice, in both
+Figure \ref{points-in-cartesian-three-space}. Notice, in both
 cases, we needed to choose directions for the axes.
 
 \begin{defn}
@@ -333,23 +342,25 @@ Likewise, $\RR^n$ is the space with $n$ independent directions.
 \centering
 \includegraphics[width=8cm]{figure3.eps}
 \caption{Vectors as Points and Directions}
-\label{Points and Directions}
+\label{points-and-directions}
 \end{figure}
 
-\section{Points or Directions?}
+\subsection{Points or Directions?}
+\label{point-or-directions}
 
 We can think of a element of $\RR^2$, say
 \scalebox{0.7}{$\colvec{2}{1}{4}$}, as both the point located
 at \scalebox{0.7}{$\colvec{2}{1}{4}$} and the vector drawn
 from the origin to the point
 \scalebox{0.7}{$\colvec{2}{1}{4}$}, as shown in Figure
-\ref{Points and Directions}. Though these two ideas are
+\ref{points-and-directions}. Though these two ideas are
 distinct, we will frequently change perspective between them.
 Part of becoming proficient in vector geometry is becoming
 accustomed to the switch between the perspectives of points
 and directions.
 
-\section{Linear Operations}
+\subsection{Linear Operations}
+\label{linear-operations}
 
 The environment for linear algebra is $\RR^n$. Algebra is
 concerned with operations on sets, so we want to know what
@@ -359,7 +370,7 @@ operations we can perform on $\RR^n$. There are several.
 \centering
 \includegraphics[width=8cm]{figure4.eps}
 \caption{Visualizing Vector Addition}
-\label{Visualizing Vector Addition}
+\label{visualizing-vector-addition}
 \end{figure}
 
 \begin{defn}
@@ -373,16 +384,16 @@ u + v = \colvec{4}{u_1}{u_2}{\vdots}{u_n} +
 \end{defn}
 
 The sum is visuzliazed by placing the start of the second
-vector at the end of the first, as in Figure \ref{Visualizing
-Vector Addition}. Note that we can only add two vectors in
-the same dimension. We can't add a vector in $\RR^2$ to a
-vector in $\RR^3$.
+vector at the end of the first, as in Figure 
+\ref{visualizing-vector-addition}. Note that we can only add
+two vectors in the same dimension. We can't add a vector in
+$\RR^2$ to a vector in $\RR^3$.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=8cm]{figure5.eps}
 \caption{Visualizing Scalar Multiplication}
-\label{Visualizing Scalar Multiplication}
+\label{visualizing-scalar-multiplication}
 \end{figure}
 
 \begin{defn}
@@ -403,7 +414,7 @@ way reminiscent of numbers. Instead, we can only multiply by
 scalars. Scalar multiplication is visualizing by scaling the
 vector by the value of the scalar. (Hence the term `scalar'!)
 If the scalar is negative, the direction is also reversed, as
-in Figure \ref{Visualizing Scalar Multiplication}.
+in Figure \ref{visualizing-scalar-multiplication}.
  
 Scalar multiplication also lets us define the difference
 between vectors. 
@@ -432,7 +443,7 @@ allow for addition and scalar multiplication.
 \centering
 \includegraphics[width=8cm]{figure6.eps}
 \caption{Visualizing Distance Between Vectors}
-\label{Difference and Length}
+\label{difference-and-length}
 \end{figure}
 
 \begin{defn}
@@ -472,8 +483,8 @@ You can check from the definition that $|u-v| = |v-u|$, so
 distance doesn't depend on which comes first. If $|\cdot|$ were
 absolute value in $\RR$, this definition would match the notion
 of distance between numbers on the number line. 
-Difference and length are visualized in Figure \ref{Difference
-and Length}. 
+Difference and length are visualized in Figure 
+\ref{difference-and-length}. 
 
 \begin{prop}
 We briefly state two properties of vector lenghts without proof.
@@ -490,10 +501,11 @@ that they have the same notation is frustrating, but these
 notations are common. (Some text use double bars for the
 length of a vector, $||v||$, to avoid this particular issue). 
 
-\chapter{The Dot Product}
-\label{dot_product}
+\section{The Dot Product}
+\label{dot-product}
 
-\section{Definition}
+\subsection{Definition}
+\label{dot-product-definition}
 
 Earlier we said that we can't multiply two vectors together.
 That's mostly true, in the sense that there is no general
@@ -544,7 +556,8 @@ Two vectors $u$ and $v$ in $\RR^n$ are called \emph{orthogonal}
 or \emph{perpendicular} or \emph{normal} if $u \cdot v = 0$. 
 \end{defn}
 
-\section{Properties of the Dot Product}
+\subsection{Properties of the Dot Product}
+\label{dot-product-properties}
 
 There are many pairs of orthogonal vectors. Thinking of the
 dot product as a multiplication, we have uncovered a serious
@@ -595,7 +608,7 @@ In $\RR^2$, norms and dot products allow us to recreate some
 well-known geometric constructions. For example, now that we
 have lengths and angles, we can state the cosine law in terms
 of vectors. The visualization of the vector relationships of
-the cosine law is shown in Figure \ref{The Cosine Law}.
+the cosine law is shown in Figure \ref{the-cosine-law}.
 
 \begin{prop}[The Cosine Law]
 Let $u$ and $v$ be vectors in $\RR^n$.
@@ -609,13 +622,14 @@ Let $u$ and $v$ be vectors in $\RR^n$.
 \centering
 \includegraphics[width=8cm]{figure7.eps}
 \caption{The Cosine Law}
-\label{The Cosine Law}
+\label{the-cosine-law}
 \end{figure}
 
-\chapter{More Vector Structures}
-\label{vector_structures}
+\section{More Vector Structures}
+\label{vector-structures}
 
-\section{The Cross Product}
+\subsection{The Cross Product}
+\label{cross-product}
 
 The dot product is an operation which can be performed on any
 two vectors in $\RR^n$ for any $n \geq 1$. There are no other
@@ -691,7 +705,9 @@ product is an anti-commutative product. Other products which
 have neither of these properties are called
 \emph{non-commutative products}. 
 \end{defn}
-\section{Angular Motion}
+
+\subsection{Angular Motion}
+\label{angular-motion}
 
 An important application of the cross product is found in describing
 rotational motion. Linear mechanics describes the motion of
@@ -734,7 +750,8 @@ in the fluid which is our atmosphere. All the
 descriptions of the force and motion of these vortices involve
 cross products in the vectors describing the fluid. 
 
-\section{Local Direction Vectors}
+\subsection{Local Direction Vectors}
+\label{local-direction-vectors}
 
 We've already spoken about the distinction between elements of
 $\RR^n$ as points and vectors. There is another important
@@ -747,15 +764,15 @@ in $\RR^n$. We call these local direction vectors.
 \centering
 \includegraphics[width=8cm]{figure8.eps}
 \caption{Local Direction Vectors}
-\label{Local Direction Vectors}
+\label{local-direction-vectors-diagram}
 \end{figure}
 
-For example, as pictured in Figure \ref{Local Direction
-Vectors}, at the point \scalebox{0.7}{$\colvec{2}{2}{2}$} in $\RR^2$,
-we could think of the local directions
-\scalebox{0.7}{$\colvec{2}{1}{0}$} or
-\scalebox{0.7}{$\colvec{2}{0}{1}$}. These
-are not directions starting from the origin, but starting from
+For example, as pictured in Figure 
+\ref{local-direction-vectors}, at the point
+\scalebox{0.7}{$\colvec{2}{2}{2}$} in $\RR^2$, we could think
+of the local directions \scalebox{0.7}{$\colvec{2}{1}{0}$} or
+\scalebox{0.7}{$\colvec{2}{0}{1}$}. These are not directions
+starting from the origin, but starting from
 \scalebox{0.7}{$\colvec{2}{2}{2}$} \emph{as if that were the
 origin}. 
 
@@ -774,13 +791,14 @@ local direction vectors; often, the difference is implied and
 it is up to the reader/student to figure out how the vectors
 are being used. 
 
-\section{Projections}
+\subsection{Projections}
+\label{projections}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=8cm]{figure9.eps}
 \caption{Projection and Perpendicular Vectors}
-\label{Projections} 
+\label{projections-diagram} 
 \end{figure}
 
 \begin{defn}
@@ -823,9 +841,9 @@ pieces of the vector $u$: the part that aligns with the
 direction of $v$ and the part that has nothing to do with the
 direction of $v$. A vectors with its projection and
 perpendicular onto another vector is shows in Figure
-\ref{Projections}. 
+\ref{projections}. 
 
-\chapter{Polyhedra in $\RR^n$}
+\section{Polyhedra in $\RR^n$}
 \label{polyhedra}
 
 Now that we have defined vectors, we want to investigate
@@ -838,7 +856,8 @@ higher dimensions. I'll use the standard term
 straight-edged objects in any $\RR^n$. First, however, we
 start with a familiar without straight edges.
 
-\section{Spheres}
+\subsection{Spheres}
+\label{spheres}
 
 Spheres are, in some way, the easiest objects to generalize.
 Spheres are all things in $\RR^n$ which are exactly one unit
@@ -858,7 +877,8 @@ slices. Any slice of a sphere produces a circle. Likewise, any
 slice of a 3-sphere produces a 2-sphere.
 \clearpage
 
-\section{Simplicies}
+\subsection{Simplicies}
+\label{simplices}
 
 The simplex is the simplest straight-line polyhedra.
 I'll define them without specifying their vector definition in
@@ -880,7 +900,8 @@ all previous vertices, such that all edges have the same
 length. 
 \end{smallitemize}
 
-\section{Cross-Polytopes}
+\subsection{Cross-Polytopes}
+\label{cross-polytopes}
 
 Another family of regular solids which extends to all
 dimensions is the cross-polytopes. 
@@ -908,7 +929,8 @@ Each vertex is connected to all other vertices except its
 opposite.
 \end{smallitemize}
 
-\section{Cubes}
+\subsection{Cubes}
+\label{cubes}
 
 Finally, we have the family of cubes.
 \begin{smallitemize}
@@ -943,7 +965,8 @@ can be constructed by joining two copies of a lower
 dimensional $(n-1)$-cube with edges between matching vertices.
 \end{smallitemize}
 
-\section{Other Platonic Solics}
+\subsection{Other Platonic Solics}
+\label{other-solids}
 
 A regular polyhedron is one where all edges, faces, cells,
 n-cells are the same size/shape and, in addition, the angles
@@ -982,10 +1005,11 @@ other than the three families. Neither the icosahedron nor the
 dodecahedron extend, and there are no other erratic special
 polyhedra found in any higher dimension.
 
-\chapter{Linear and Affine Subspaces}
+\section{Linear and Affine Subspaces}
 \label{subspaces}
 
-\section{Definitions}
+\subsection{Definitions}
+\label{subspace-definitions}
 
 In addition to vectors, we want to consider various geometric
 objects that live in $\RR^n$. Since this is linear algebra,
@@ -1038,7 +1062,8 @@ point.
 We need ways to algebraically describe linear and affine
 substapces. There are two main approaches: loci and spans.
 
-\section{Loci}
+\subsection{Loci}
+\label{loci}
 
 \begin{defn}
 Consider any set of linear equations in the variables
@@ -1145,7 +1170,8 @@ glance, whether any of the equations are redundant. We need
 methods to calculate dimension. Unfortunately, those methods
 will have to wait until later in these notes. 
 
-\section{Intersection}
+\subsection{Intersection}
+\label{intersection}
 
 \begin{defn}
 If $A$ and $B$ are sets, their intersection $A \cap B$
@@ -1166,10 +1192,11 @@ loci. Similarly, all loci are the intersection of the planes or
 hyperplanes defined by each individual linear equation.
 \end{example}
 
-\chapter{Spans}
+\section{Spans}
 \label{spans}
 
-\section{Definitions}
+\subsection{Definitions}
+\label{span_definitions}
 
 In addition to presenting the second description of linear
 subspaces, this chapter also introduces linear combinations,
@@ -1229,7 +1256,8 @@ vectors are redundant. We would like to have tools to determine
 this redundancy. As with the tools for dimensions of loci, we
 have to wait until a later section of these notes.
 
-\section{Dimension and Basis}
+\subsection{Dimension and Basis}
+\label{dimension-and-basis}
 
 \begin{defn}
 A set of vectors $\{v_1, v_2, \ldots, v_k\}$ in $\RR^n$ is
@@ -1317,10 +1345,11 @@ component and zeroes in all other components. $e_i$
 is the unit vector in the positive $i$th axis direction.
 \end{defn}
 
-\chapter{Normals to Planes and Hyperplanes}
+\section{Normals to Planes and Hyperplanes}
 \label{normals}
 
-\section{Dot Products and Loci} 
+\subsection{Dot Products and Loci} 
+\label{dot-product-and-loci}
 
 Having discussed spans, let's return to loci. By re-examing
 the linear equations, we can define loci via dot products. Consider,
@@ -1375,7 +1404,8 @@ point as a local origin, the normal points in a direction
 perpendicular to all the \emph{local direction} vectors which
 lie on the plane. 
 
-\section{An Algorithm for Equations of Planes}
+\subsection{An Algorithm for Equations of Planes}
+\label{planes-algorithm}
 
 Now we can build a general process for finding the
 equation of a plane in $\RR^3$. Any time we have a point $p$
@@ -1394,10 +1424,14 @@ direction vectors as $q-p$ and $r-p$. The normal is $(q-p)
 plane given three points or a single point and two local
 directions.
 
-\chapter{Systems of Linear Equations}
+\chapter{Systems and Dimensions}
+\label{systems-and-dimensions}
+
+\section{Systems of Linear Equations}
 \label{systems}
 
-\section{Definitions}
+\subsection{Definitions}
+\label{systems_definition}
 
 The previous eight chapters introduced the geometric side of
 this course. This chapter changes perspective to look at the
@@ -1466,7 +1500,8 @@ If we combine the first and third, we could restate the third
 as: add a multiple of one equation to another. In practice, we
 often think of the third operation this way.
 
-\section{Matrices}
+\subsection{Matrices}
+\label{matrices}
 
 If we worked with the equations directly, we would find, with
 careful application of the three techniques, we could always
@@ -1682,7 +1717,8 @@ scalars to some other number set $S$, we would write
 $M_{n,m}(S)$ or $M_n(S)$.
 \end{defn}
 
-\section{Matrix Represetation of Systems of Linear Equations}
+\subsection{Matrix Represetation of Systems of Linear Equations}
+\label{matrix-representation-of-systems}
 
 Consider a general system with $m$ equations in the variables
 $x_1, x_2, \ldots, x_n$, where $a_{ij}$ and $c_i$ are real
@@ -1781,10 +1817,11 @@ that the first column is the $x$ column, the second is the $y$
 column, the third if the $z$ column, and the column after the
 vertical line is the column of constants.
 
-\chapter{Solving by Row Reduction}
-\label{row_reduction}
+\section{Solving by Row Reduction}
+\label{row-reduction}
 
-\section{Row Operations and Gaussian Elimination}
+\subsection{Row Operations and Gaussian Elimination}
+\label{row-operations}
 
 We defined three operations on systems of equations.
 Now that we have encoded systems as matrices, we need to
@@ -1877,7 +1914,8 @@ skipped. Any row which is all zeros is also left alone.
 \end{smallitemize}
 \end{defn}
 
-\section{Solution Spaces and Free Parameters}
+\subsection{Solution Spaces and Free Parameters}
+\label{solutions-spaces}
 
 \begin{defn}
 If we have a system of equations in the variables $x_1, x_2,
@@ -2097,17 +2135,19 @@ The dimension of a solution space of a linear system of
 equations is the number of free variables.
 \end{prop}
 
-\chapter{Dimensions of Spans and Loci}
+\section{Dimensions of Spans and Loci}
 \label{dimensions}
 
-\section{Rank} 
+\subsection{Rank} 
+\label{rank}
 
 \begin{defn}
 Let $A$ be a $m \times n$ matrix. The \emph{rank} of $A$ is the
 number of leading ones in its reduced row-echelon form.
 \end{defn}
 
-\section{Dimensions of Spans}
+\subsection{Dimensions of Spans}
+\label{dimensions-of-spans}
 
 We can now define the desired techniques to solve the
 dimension problems that we presented earlier. For loci and
@@ -2134,7 +2174,8 @@ redundant vector in the span. The set is linearly independent
 if and only if the rank of $A$ is $k$.
 \end{prop}
 
-\section{Bases for Spans}
+\subsection{Bases for Spans}
+\label{bases-for-spans}
 
 If $\Span\{v_1, v_2, v_3\}$ has dimension two and the first
 two vectors form a basis, then $v_3$ is a redundant part of
@@ -2233,7 +2274,8 @@ We read that $a=0$, $b=\frac{1}{2}$ and $c = \frac{1}{2}$.
 \end{equation*} 
 \end{example}
 
-\section{Dimensions of Loci}
+\subsection{Dimensions of Loci}
+\label{dimensions-of-loci}
 
 Similarly, we can use row-reduction of matrices to find the
 dimensions of a locus. In particular, we will be able to
@@ -2305,7 +2347,8 @@ corresponds to a real restriction on the locus, dropping the
 dimensions by one. In either case, the question of calculating
 dimension boils down to the rank of an associated matrix.
 
-\section{Bases for Loci}
+\subsection{Bases for Loci}
+\label{bases-for-loci}
 
 If we have a solution space for a linear system expressed in
 free variables, we can write it as a vector sum using those
@@ -2332,9 +2375,13 @@ idenfity the basis of the linear part.
 \end{example}
 
 \chapter{Linear Transformations}
-\label{linear_transformations}
+\label{linear-transformations}
 
-\section{Definitions}
+\section{Definitions and Examples}
+\label{linear-transformations-defintions-and-examples}
+
+\subsection{Defitions}
+\label{linear-transformations-defintions}
 
 After a good definition of the environment ($\RR^n$) and its
 objects (lines, planes, hyperplanes, etc), the next
@@ -2426,7 +2473,8 @@ entire space by a fixed vector. Since shifts are relatively
 simple, we can usually reduce problems of affine
 transformations to problems of linear transformations.
 
-\section{Composition}
+\subsection{Composition}
+\label{composition}
 
 Once we understood functions of real numbers, we learned to
 compose them. We do the same for linear transformations.
@@ -2442,7 +2490,8 @@ transformation $f$ happens first, followed by $g$. This new
 transformation is called the \emph{composition} of $f$ and $g$.
 \end{defn}
 
-\section{Linear Transformations of $\RR^2$}
+\subsection{Linear Transformations of $\RR^2$}
+\label{transformations-r2}
 
 It is useful for us to specialize to transformations $\RR^2
 \rightarrow \RR^2$, in order to build experience and intuition.
@@ -2494,7 +2543,8 @@ All linear transformation of $\RR^2$ are generated by
 composition of transformations of the previous five types.
 \end{thm}
 
-\section{Linear Transformations of $\RR^3$}
+\subsection{Linear Transformations of $\RR^3$}
+\label{transformations-r3}
 
 We can also specialize to transformations of $\RR^3$, though it
 is not as easy to give a complete account of the basic types.
@@ -2521,7 +2571,8 @@ Sending $(a,b,c)$ to $(a,b,0)$, for example, removes the $z$
 coordinate; this is projection onto the $xy$ plane.
 \end{itemize}
 
-\section{Symmetry}
+\subsection{Symmetry}
+\label{transformations-symmetry}
 
 Notice that we've defined linear functions by the objects
 and/or properties they preserve. This is a very general
@@ -2542,7 +2593,8 @@ we start with a transformation and talk about the shape as a
 symmetry of the transformation: the hexagon is a symmetry of
 rotation by one sixth of a full turn.
 
-\section{Dihedral Groups}
+\subsection{Dihedral Groups}
+\label{dihedral-groups}
 
 The case of regular polygons, such as the hexagon, is a very
 useful place for us to start. Transformations which do not
@@ -2629,8 +2681,11 @@ $R_2$ is rotation by $\pi $radians and $R_3$ is rotation by
 $3\pi/2$ radians. $F_1$ is reflection over the $x$ axis, $F_2$
 over $x=y$, $F_3$ over the $y$ axis and $F_4$ over $y=-x$.
 
-\chapter{Matrix Representation of Linear Transformations}
-\label{matrix_representation}
+\section{Matrices and Transformations}
+\label{matrices-and-transformations}
+
+\subsection{Matrix Representation of Linear Transformations}
+\label{matrix-representation}
 
 Now we come to the second eajor application of matrices. In
 addition to succintly encoding linear systems, matrices can
@@ -2777,7 +2832,8 @@ factor $a$, the $y$ direction by the factor $b$ and the $z$
 direction by the factor $c$. Diagonal matrices are dialations.
 \end{example}
 
-\section{Composition and Matrix Multiplication}
+\subsection{Composition and Matrix Multiplication}
+\label{matrix-multiplication}
 
 We previously defined the composition of linear
 transformation. Compositon allows us to combine
@@ -2879,10 +2935,11 @@ sometimes that multiplication doesn't even make sense as an
 operation. Matrix multiplication is a very important example
 of a non-commutative product.
 
-\chapter{Inverse Linear Transforms and Matrix Inversion}
+\section{Inverse Linear Transforms and Matrix Inversion}
 \label{inversion}
 
-\section{Inverse Transforms}
+\subsection{Inverse Transforms}
+\label{inverse-transforms}
 
 When we defined Dihedral Groups, we already talked briefly
 about inverse linear transformation. Let's give a general
@@ -2902,7 +2959,8 @@ This is the geometric definition. Now that we've encoded
 transformations as matrices, we can use matrices and ask for
 an algebriac definition of the inverse as well.
 
-\section{Inverse Matrices}
+\subsection{Inverse Matrices}
+\label{inverse-matrices}
 
 The identity property: $AI_l = I_k A = A$ reminds us of
 multiplication by one in $\RR$. This is the multiplication
@@ -2935,7 +2993,8 @@ non-commutative. In general, these two orders could result in
 different products. In this case, we insist that both orders
 get us back to the identity.
 
-\section{Calculating Inverse Matrices}
+\subsection{Calculating Inverse Matrices}
+\label{calculation-inverse-matrices}
 
 The definition is good, but we are left with the problem of
 determining which matrices have inverses and calculating those
@@ -2971,10 +3030,11 @@ $GL_n(S)$. When the coefficients are understood, we sometime
 write $GL_n$ or $GL(n)$.
 \end{defn}
 
-\chapter{Transformations of Spans and Loci}
-\label{transformations_of_spans}
+\section{Transformations of Spans and Loci}
+\label{transformations-of-spans-and-loci}
 
-\section{Transformations of Spans}
+\subsection{Transformations of Spans}
+\label{transformations-of-spans}
 
 Now that we have matrices to describe transformations, we want
 to know how transformations affect to linear subspaces. We know
@@ -3037,7 +3097,8 @@ span. Even if the $v_i$ are linearly independent and form a
 basis for the span, the vectors $Mv_i$ need not be linearly
 independent. The dimension of the new span might be smaller.
 
-\section{Transformation of Loci}
+\subsection{Transformation of Loci}
+\label{transformations-of-loci}
 
 For loci, the picture is much more complicated. Equations do
 not transform nearly as pleasantly as spans. Planes in $\RR^3$
@@ -3048,10 +3109,11 @@ happen. To determine the image of a locus, the best solution
 is to describe the locus as a span or offset span find the
 image of the that span.
 
-\chapter{Kernels and Images}
-\label{kernels_and_images}
+\section{Kernels and Images}
+\label{kernels-and-images}
 
-\section{Row and Column Spaces}
+\subsection{Row and Column Spaces}
+\label{row-and-column-spaces}
 
 \begin{defn}
 Let $M$ be a $m \times n$ matrix. The \emph{rowspace} of the
@@ -3067,6 +3129,9 @@ Let $M$ be a $m \times n$ matrix. The columnspace and the row
 spaces of $M$ are linear subspaces (of $\RR^m$ and $\RR^n$,
 respectively) with dimension equal to the rank of $M$.
 \end{prop}
+
+\subsection{Images}
+\label{images}
 
 \begin{prop}
 The image of a matrix $M$ is the same as its columnspace.
@@ -3107,6 +3172,9 @@ columns of the matrix.
 \colvec{3}{0}{0}{1} & = \colvec{3}{0}{2}{2} \\
 \end{align*}
 \end{example}
+
+\subsection{Kernels}
+\label{kernels}
 
 \begin{defn}
 Let $M$ be a $m \times n$ matrix representing a transformation
@@ -3166,7 +3234,8 @@ expressing them as spans.
 \chapter{Determinants}
 \label{determinants}
 
-\section{Definition}
+\section{Definitions}
+\label{determinants-definition}
 
 Linear transformations are defined by their symmetries: they
 preserve linear subspaces and linear operations. We use
@@ -3234,7 +3303,36 @@ That definition is all well and good, but we need to show
 that such a thing can be constructed. The next section
 gives an algorithm for building determinants.
 
+The following defintion will be used in the activity
+associated to this lecture.
+
+\begin{defn}
+An \emph{upper triangular} matrix is a matrix where all entries
+below the diagonal are zero. A \emph{lower triangular} matrix
+is a matrix where all entries above the diagonal are zero.
+Below are two examples of upper triangular matrices.
+\begin{displaymath}
+\left(
+\begin{matrix}
+-1 & 3 & 5 \\
+0 & 2 & -9 \\
+0 & 0 & 1 
+\end{matrix}
+\right)
+\hspace{2cm}
+\left(
+\begin{matrix}
+0 & 0 & 2 & 2 \\
+0 & -7 & 4 & 0 \\
+0 & 0 & 9 & -4 \\
+0 & 0 & 0 & -4 
+\end{matrix}
+\right)
+\end{displaymath}
+\end{defn}
+
 \section{Cofactor Expansion}
+\label{cofactor}
 
 The determinant of a (square) matrix is constructed
 recursively, starting with $2 \times 2$ matrices. 
@@ -3339,37 +3437,8 @@ matrix, each with $n$ coefficient, for $n! (n-1)$
 multiplications. This is computationally terrifying, making
 determinants of large matrices computationally very difficult.
 
-\section{Triangular Matrices}
-
-The following defintion will be used in the activity
-associated to this lecture.
-
-\begin{defn}
-An \emph{upper triangular} matrix is a matrix where all entries
-below the diagonal are zero. A \emph{lower triangular} matrix
-is a matrix where all entries above the diagonal are zero.
-Below are two examples of upper triangular matrices.
-\begin{displaymath}
-\left(
-\begin{matrix}
--1 & 3 & 5 \\
-0 & 2 & -9 \\
-0 & 0 & 1 
-\end{matrix}
-\right)
-\hspace{2cm}
-\left(
-\begin{matrix}
-0 & 0 & 2 & 2 \\
-0 & -7 & 4 & 0 \\
-0 & 0 & 9 & -4 \\
-0 & 0 & 0 & -4 
-\end{matrix}
-\right)
-\end{displaymath}
-\end{defn}
-
 \section{Properties of Determinants}
+\label{properties-of-determinants}
 
 Algebra considers sets with structre. On the sets $M_n(\RR)$
 of $n \times n$ matrices, the determinant is a new algebraic
@@ -3476,10 +3545,14 @@ sets with various algebraic structure, it is common for an
 operation to interact well with one structure but poorly with
 the others.
 
-\chapter{Orthogonality and Symmetry}
+\chapter{Using Matrices to Investigate Linear Transformations}
+\label{investigating-transformations}
+
+\section{Orthogonality and Symmetry}
 \label{orthogonality}
 
-\section{Symmetry, Again}
+\subsection{Symmetry, Again}
+\label{symmetry-again}
 
 Throughout the course, we've talked about symmetry and defined
 types of transformation by their symmetries, that is, by what they
@@ -3506,7 +3579,8 @@ $M_n(\RR)$.
 linear group and written $GL_n(\RR)$ or $GL(n)$.
 \end{smallitemize}
 
-\section{Matrices of Determinant One}
+\subsection{Matrices of Determinant One}
+\label{determinant-one}
 
 Determinants measure two geometric properites: size and
 orientation. These are both symmetries. If we have matrices
@@ -3521,7 +3595,8 @@ coefficients is called the \emph{Special Linear Group} and is
 written $SL_n(\RR)$ or $SL(n)$.
 \end{defn}
 
-\section{Transposes}
+\subsection{Transposes}
+\label{transpose}
 
 The following definition will be useful in this chapter.
 
@@ -3572,7 +3647,9 @@ A^T =
 \right)
 \end{align*}
 \end{defn}
-\section{Orthogonal and Special Orthogonal Matrices}
+
+\subsection{Orthogonal and Special Orthogonal Matrices}
+\label{orthogonal-matrices}
 
 \begin{defn}
 An $n \times n$ matrix $A$ is called \emph{orthogonal} if it
@@ -3680,7 +3757,8 @@ determinant one) is called the \emph{Special
 Orthogonal Group} and is written $SO_n(\RR)$ or $SO(n)$.
 \end{defn}
 
-\section{Orthogonal Bases and the Gram-Schmidt Process}
+\subsection{Orthogonal Bases and the Gram-Schmidt Process}
+\label{orthogonal-bases}
 
 \begin{defn}
 A set of linearly independent non-zero vectors $\{ v_1,
@@ -3765,10 +3843,11 @@ $e_4$, the standard basis, as the orthonormal basis. No
 calculation was required. 
 \end{example}
 
-\chapter{Conjugation}
+\section{Conjugation}
 \label{conjugation}
 
-\section{Definitions}
+\subsection{Definitions}
+\label{conjugation-definition}
 
 \begin{defn}
 Let $A$ be an $n \times n$ matrix. The \emph{order} of $A$ is the
@@ -3806,7 +3885,8 @@ The \emph{conjugacy class} of $A$ is the set of all matrices
 which are conjugates of $A$ by any other $B \in G$.
 \end{defn}
 
-\section{Properties of Conjugation}
+\subsection{Properties of Conjugation}
+\label{conjugation-properties}
 
 \begin{prop}
 Let $A$ and $B$ be $n \times n$ matrices with $B$ invertible.
@@ -3826,10 +3906,11 @@ The number of fixed points of $A$ is the same as the number of
 fixed points of $B^{-1}AB$. 
 \end{prop}
 
-\chapter{Eigenvectors, Eigenvalues and Spectra}
+\section{Eigenvectors, Eigenvalues and Spectra}
 \label{eigenvectors}
 
-\section{Definitions}
+\subsection{Definitions}
+\label{eigenvectors-definitions}
 
 \begin{defn}
 Let $A$ be an $n \times n$ matrix. A non-zero vector $v \in
@@ -3925,7 +4006,8 @@ vector $\colvec{2}{0}{b}$ is an eigenvector with eigenvalue
 zero.
 \end{example}
 
-\section{Calculation of Eigenvalue and Eigenvectors}
+\subsection{Calculation of Eigenvalue and Eigenvectors}
+\label{eigenvectors-calculation}
 
 We would like to have an algorithm for finding eigenvectors
 and eigenvalues. Remember the definition: $v$ is an
@@ -4081,7 +4163,8 @@ axis vectors as eigenvectors and diagonal entries as
 eigenvalues. 
 \end{example}
 
-\section{Symmetric Matrices}
+\subsection{Symmetric Matrices}
+\label{symmetric-matrices}
 
 We defined the transpose of a matrix in the chapter on
 orthogonal matrices. The transpose leads to a new definition
@@ -4123,7 +4206,7 @@ the maximum dimension, which is the multiplicity of the
 eigenvalue.
 \end{prop}
 
-\chapter{Diagonalization}
+\section{Diagonalization}
 \label{diagonalization}
 
 \begin{defn}
@@ -4245,9 +4328,10 @@ A = \left(
 \end{example}
 
 \chapter{Linear Dynamical Systems}
-\label{dynamical_systems}
+\label{dynamical-systems}
 
-\section{General Theory}
+\section{Theory of Dynamical Systems}
+\label{dynamical-systems-theory}
 
 Let's consider an applied mathematics problem where a vector
 $v \in \RR^n$ somehow represents the state of the situation
@@ -4362,6 +4446,7 @@ below by the largest and the smallest of the $|r_i|$.
 \end{thm} 
 
 \section{Linear Recurrence Relations}
+\label{recurrence}
 
 The first use of iterated processes is understanding linear
 recurrence relations.
@@ -4373,7 +4458,6 @@ for $a_i$ in terms of the previous $k$ terms. The
 number $k$ is called the \emph{order} of the
 recurrence relation. The first $k$ terms must be explicitly
 given.
-
 \end{defn}
 
 If we write $a_n = c_1a_{n-1} + c_2 a_{n-2} + \ldots + c_k
@@ -4430,6 +4514,7 @@ the first coefficient of the vector will give the desired closed
 form expression. 
 
 \section{Leslie Matrices}
+\label{leslie}
 
 Let's conisder a population broken down into finitely many age
 categories. Leslie matrices are a dynamical system which
@@ -4472,6 +4557,7 @@ exponential growth, and if $\lambda < 1$ we expect
 exponential decay. 
 
 \section{Stochastic Matrices and Markov Chains}
+\label{stochastic}
 
 Markov chains are probabalistic linear dynamical systems.
 Like all dynamical systems, we have a state vector $v \in
