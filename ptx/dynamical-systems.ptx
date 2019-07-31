@@ -1,0 +1,7 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="dynamical-systems">
+  <title>Linear Dynamical Systems</title>
+  <xi:include  href="dynamical-systems-theory.ptx" />
+  <xi:include  href="recurrence.ptx" />
+  <xi:include  href="leslie.ptx" />
+  <xi:include  href="stochastic.ptx" />
+</chapter>

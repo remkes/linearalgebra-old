@@ -1,0 +1,395 @@
+<section xml:id="orthogonality">
+  <title>Orthogonality and Symmetry</title>
+  <subsection xml:id="symmetry-again">
+    <title>Symmetry, Again</title>
+    <p>
+      Throughout the course,
+      we've talked about symmetry and defined types of transformation by their symmetries,
+      that is, by what they preserve.
+      We started the entire section of transformation with a symmetry property:
+      linear transformations have the symmetry of preserving flat object
+      (linear subspaces).
+      We defined the dihedral groups as the linear transformation which preserved certain polygons.
+    </p>
+    <p>
+      This persepctive is only strengthened as we get further into the discipline of linear algebra.
+      Our classification of matrices,
+      at least geometrically, is almost always a question of symmetry.
+      In this section,
+      we're going to define some new classes of matrices in terms of their symmetries.
+    </p>
+    <p>
+      Recall the notation we're already established for matrix sets and groups
+      (with real coefficients).
+      <ul>
+        <li>
+          <p>
+            The set of <m>n \times m</m> matrices is written <m>M_{n,m}(\RR)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The set of square (<m>n \times n</m>) matrices is written <m>M_n(\RR)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The group of invertible matrices is called the general linear group and written <m>GL_n(\RR)</m> or <m>GL(n)</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml:id="determinant-one">
+    <title>Matrices of Determinant One</title>
+    <p>
+      Determinants measure two geometric properites:
+      size and orientation.
+      These are both symmetries.
+      If we have matrices of determinant <m>\pm 1</m>,
+      we know that they preserve size.
+      If we have matrices of positive determinant,
+      we know that they preserve orientation.
+      If we have matrices of determinant one, they preserve both.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          The group of matrices of determinant one with real coefficients is called the
+          <term>Special Linear Group</term>
+          and is written <m>SL_n(\RR)</m> or <m>SL(n)</m>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="transpose">
+    <title>Transposes</title>
+    <p>
+      The following definition will be useful in this chapter.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          The <term>transpose</term> of a matrix is the matrix formed by switching the rows and columns.
+          Alternatively, it is the mirror of the matrix over the diagonal.
+          If <m>A = a_{ij}</m> is a matrix expressed in indices,
+          then the transpose is written <m>A^T</m> and has entries <m>a_{ji}</m> with indices switched.
+          <md>
+            <mrow>A \amp  = \left( \begin{matrix} 3 \amp  0 \amp  6 \amp  -1</mrow>
+            <mrow>4 \amp  -2 \amp  -7 \amp  0</mrow>
+            <mrow>6 \amp  -6 \amp  -1 \amp  -2 \end{matrix} \right) \hspace{2cm} A^T = \left( \begin{matrix} 3 \amp  4 \amp  6</mrow>
+            <mrow>0 \amp  -2 \amp  -6</mrow>
+            <mrow>6 \amp  -7 \amp  -1</mrow>
+            <mrow>-1 \amp  0 \amp  -2 \end{matrix} \right)</mrow>
+            <mrow>A \amp  = \left( \begin{matrix} 0 \amp  0 \amp  8 \amp  -5</mrow>
+            <mrow>0 \amp  1 \amp  1 \amp  -2</mrow>
+            <mrow>0 \amp  6 \amp  6 \amp  -1</mrow>
+            <mrow>0 \amp  0 \amp  -4 \amp  -4 \end{matrix} \right) \hspace{2cm} A^T = \left( \begin{matrix} 0 \amp  0 \amp  0 \amp  0</mrow>
+            <mrow>0 \amp  1 \amp  6 \amp  0</mrow>
+            <mrow>8 \amp  1 \amp  6 \amp  -4</mrow>
+            <mrow>-5 \amp  -2 \amp  -1 \amp  -4 \end{matrix} \right)</mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="orthogonal-matrices">
+    <title>Orthogonal and Special Orthogonal Matrices</title>
+    <definition>
+      <statement>
+        <p>
+          An <m>n \times n</m> matrix <m>A</m> is called
+          <term>orthogonal</term> if it preserves lengths.
+          That is, for all <m>v \in \RR^n</m>, <m>|v| = |Av|</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Preservation of lengths is not the only way to define orthogonal matrices.
+      The following proposition shows the rich structure of this group of matrices.
+      Before stating the proposition,
+      here is a useful definition.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>i,j</m> be two indices which range from 1 to <m>n</m>.
+          The <term>Kronecker delta</term> is a twice-indexed set of numbers
+          <m>\delta_{ij}</m> which evaluates to <m>0</m> whenever
+          <m>i \neq j</m> and <m>1</m> whenever <m>i=j</m>.
+          <me>
+            \delta_{ij} = \left\{ \begin{matrix} 0 \amp  i \neq j \\ 1 \amp  i = j \end{matrix} \right.
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> be an <m>n \times n</m> matrix.
+          Write <m>A = (a_1, a_2, \ldots,
+          a_n)</m> where the <m>a_i</m> are column vectors.
+          Then the following seven statements are all equivalent and all can be taken as the definition of an orthogonal matrix.
+          <ol>
+            <li>
+              <p>
+                <m>A</m> preserves lengths:
+                <m>|v| = |Av|</m> for all <m>v \in \RR^n</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>A</m> preserves dot products:
+                <m>u\cdot v = (Au) \cdot (Av)</m> for all <m>u</m>, <m>v \in \RR^n</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>A^T = A^{-1}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>A^TA = \Id_n</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>a_i \perp a_j</m> for all
+                <m>i \neq j</m> and <m>|a_i| = 1</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>a_i \cdot a_j = \delta_{ij}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>A</m> preserves angles
+                (the angle between <m>u</m> and <m>v</m> is the same as the angle between <m>Au</m> and <m>Av</m> for all <m>u</m>,
+                <m>v \in \RR^n</m>)
+                <em>amd</em> <m>\det A = \pm 1</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      There are several very surprising statements here.
+      First, preserving angles and preserving lengths are nearly equivalent
+      (preserving angles needs the additional determinant condition).
+      This is a little odd;
+      there isn't a strong intuition that exactly the same transformations should preserve both properties.
+      Second, we have a convenient algebraic method of identifying orthogonal matrices in property d).
+      We can multiply by the transpose:
+      if we get the identity, we have an orthogonal matrix.
+      The equivalence of property d) and property f) is seen in simply calculating the matrix multiplication;
+      it involves the dot products of all the columns,
+      which must evaluate to <m>0</m> or <m>1</m> exactly matching the Kronecker delta.
+    </p>
+    <p>
+      Orthogonal matrices can be though of as rigid-body transformations.
+      Since they preserve both lengths and angles,
+      they preserve the shape of anything formed of vertices and lines:
+      any polygon, polyhedron, of higher dimensional analogue.
+      They may not preserve the position
+      (they may be moved around, rotated, reflected, etc)
+      but they will preserve the shape.
+      This makes orthogonal matrices extremely useful,
+      since many applications want to use transformations that don't destroy polygons or polyhedra.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Here are some other properties of orthogonal matrices.
+          <ul>
+            <li>
+              <p>
+                In <m>\RR^2</m>,
+                the only orthogonal transformations are the identity,
+                the rotations and the reflections.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>A</m> is orthogonal, so if <m>A^{-1}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                All orthogonal matrices have determinant <m>\pm 1</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>A</m> and <m>B</m> are orthogonal,
+                then so are <m>AB</m> and <m>BA</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Even in <m>\RR^3</m>,
+      orthogonality already gets a bit trickier than just the rotations/reflection of <m>\RR^2</m>.
+      Consider the following matrix.
+      <me>
+        \left( \begin{matrix} -1 \amp  0 \amp  0 \\ 0 \amp  -1 \amp  0 \\ 0 \amp  0 \amp  -1 \end{matrix} \right)
+      </me>
+    </p>
+    <p>
+      This matrix is orthogonal,
+      but it isn't a rotation or relection in <m>\RR^3</m>.
+      It is some kind of <sq>reflection through the origin</sq> where every point is sent to the opposite point with respect to the origin. (The equivalent in <m>\RR^2</m> is rotation by <m>\pi</m> radians).
+      It isn't even a physical transformation:
+      it's not something we can do with a physical object without destroying it.
+      However, it satisfies the condition of orthogonality.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          The group of orthogonal <m>n \times n</m> matrices is called the
+          <term>Orthogonal Group</term>
+          and is written <m>O_n(\RR)</m> or <m>O(n)</m>.
+          The group of orthogonal matrices which also preserve orientation
+          (have determinant one)
+          is called the <term>Special Orthogonal Group</term>
+          and is written <m>SO_n(\RR)</m> or <m>SO(n)</m>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="orthogonal-bases">
+    <title>Orthogonal Bases and the Gram-Schmidt Process</title>
+    <definition>
+      <statement>
+        <p>
+          A set of linearly independent non-zero vectors
+          <m>\{ v_1, \ldots,
+          v_k\}</m> is called an <term>orthogonal set</term>
+          if <m>v_i \cdot v_j = 0</m> whenever <m>i \neq j</m>.
+          The set is called an <term>orthonormal set</term>
+          if <m>v_i \cdot v_j = \delta_{ij}</m>.
+          If the set is a basis for a linear subspace,
+          we use the terms <term>orthogonal basis</term>
+          and <term>orthonormal basis</term>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      In many ways,
+      an orthonomal basis is the best kind of basis for a linear subspace:
+      all the vectors are perpendicular to each other and all the vectors are unit vectors.
+      The standard basis <m>\{e_1, \ldots,
+      e_n\}</m> of <m>\RR^n</m> is the classic example of a orthonormal basis;
+      all other orthonomal bases are trying to mimic the standard basis.
+    </p>
+    <p>
+      Given a set of linearly independent vectors <m>\{v_1, \ldots,
+      v_k\}</m>
+      (usually a basis for a linear subspace),
+      there is a general algorithm for adjusting them into an orthogonal or orthonomal basis.
+      This algorithm is called the Gram-Schmidt algorithm.
+      We define new vectors <m>u_i</m> as follows.
+      <md>
+        <mrow>u_1 \amp  = v_1</mrow>
+        <mrow>u_2 \amp  = v_2 - \Proj_{u_1} v_2</mrow>
+        <mrow>u_3 \amp  = v_3 - \Proj_{u_1} v_3 - \Proj_{u_2} v_3</mrow>
+        <mrow>u_4 \amp  = v_4 - \Proj_{u_1} v_4 - \Proj_{u_2} v_4 - \Proj_{u_2} v_4</mrow>
+        <mrow>\vdots \amp  \vdots</mrow>
+        <mrow>u_k \amp  = v_k - \Proj_{u_1} v_k - \Proj_{u_2} v_k - \ldots - \Proj_{u_{k-1}} v_4</mrow>
+      </md>
+    </p>
+    <p>
+      Conceptually,
+      this algorithm takes the first vector <m>v_1</m> as the first direction.
+      Then in the second step,
+      we take <m>v_2</m> and subtract any portion with lies in the <m>u_1</m> direction.
+      Removing that commonality gives a perpendicular vector.
+      In the third step,
+      we take <m>v_3</m> and remove the projection onto the first two pieces.
+      This again removes any commonality that we had so far,
+      giving a perpendicular direction.
+      We proceed in the same way through the list.
+      The result is an orthogonal basis <m>\{u_1, \ldots, u_k\}</m>.
+    </p>
+    <p>
+      The result is not, however, orthonormal.
+      To get an orthonormal set, we divide each <m>u_i</m> by its length.
+      <me>
+        \left\{ \frac{u_1}{|u_i|}, \frac{u_2}{|u_2|}, \ldots, \frac{u_k}{|u_k|} \right\}
+      </me>
+    </p>
+    <p>
+      In this way,
+      we can take any basis and turn it into an orthogonal or othonormal basis.
+    </p>
+    <example>
+      <statement>
+        <md>
+          <mrow>\amp  \Span \left\{ \begin{pmatrix}1</mrow>
+          <mrow>1</mrow>
+          <mrow>3\end{pmatrix}, \begin{pmatrix}0</mrow>
+          <mrow>2</mrow>
+          <mrow>2\end{pmatrix}
+          \right\}</mrow>
+          <mrow>u_1 \amp  = \begin{pmatrix}1</mrow>
+          <mrow>1</mrow>
+          <mrow>3\end{pmatrix}</mrow>
+          <mrow>u_2 \amp  = \begin{pmatrix}0</mrow>
+          <mrow>2</mrow>
+          <mrow>2\end{pmatrix} - \frac{\begin{pmatrix}0</mrow>
+          <mrow>2</mrow>
+          <mrow>2\end{pmatrix} \cdot
+          \begin{pmatrix}1</mrow>
+          <mrow>1</mrow>
+          <mrow>3\end{pmatrix} }{ \left| \begin{pmatrix}1</mrow>
+          <mrow>1</mrow>
+          <mrow>3\end{pmatrix} \right|^2}
+          \begin{pmatrix}1</mrow>
+          <mrow>1</mrow>
+          <mrow>3\end{pmatrix}</mrow>
+          <mrow>\amp  = \begin{pmatrix}0</mrow>
+          <mrow>2</mrow>
+          <mrow>2\end{pmatrix} - \frac{8}{11} \begin{pmatrix}1</mrow>
+          <mrow>1</mrow>
+          <mrow>3\end{pmatrix}</mrow>
+          <mrow>\amp  = \frac{1}{11} \begin{pmatrix}-8</mrow>
+          <mrow>14</mrow>
+          <mrow>-2\end{pmatrix}</mrow>
+          <mrow>|u_1| \amp  = \sqrt{11}</mrow>
+          <mrow>\frac{u_1}{|u_1|} \amp  = \frac{1}{\sqrt{11}} \begin{pmatrix}1</mrow>
+          <mrow>1</mrow>
+          <mrow>3\end{pmatrix}</mrow>
+          <mrow>|u_2| \amp  = \frac{1}{11} \sqrt{264}</mrow>
+          <mrow>\frac{u_2}{|u_2|} \amp  = \frac{1}{\sqrt{264}}
+          \begin{pmatrix}-8</mrow>
+          <mrow>14</mrow>
+          <mrow>-2\end{pmatrix}</mrow>
+        </md>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Sometimes, not all the work is required.
+          Say we are asked to find an orthonormal basis for the following linearly independent set.
+          <me>
+            \left\{ \begin{pmatrix}3\\1\\-2\\-2\end{pmatrix}, \begin{pmatrix}-3\\0\\0\\1\end{pmatrix}, \begin{pmatrix}2\\0\\2\\0\end{pmatrix}, \begin{pmatrix}0\\3\\1\\1\end{pmatrix} \right\}
+          </me>
+        </p>
+        <p>
+          We could go through the whole process,
+          but since these are four linearly independent vectors in <m>\RR^4</m>,
+          they must span the whole space.
+          Therefore, we can take <m>e_1, e_2, e_3</m> and <m>e_4</m>,
+          the standard basis, as the orthonormal basis.
+          No calculation was required.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
