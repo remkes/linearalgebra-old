@@ -1,5 +1,6 @@
 size(10cm);
 import graph;
+usepackage("amsmath");
 
 xlimits(-8,8);
 ylimits(-8,8);

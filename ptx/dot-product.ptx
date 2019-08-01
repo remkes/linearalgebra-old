@@ -129,7 +129,7 @@
     </proposition>
     <figure xml:id="the-cosine-law">
       <caption>The Cosine Law</caption>
-      <image width="800%" source="images/figure7.png" />
+      <image width="100%" source="images/figure7.svg" />
     </figure>
   </subsection>
 </section>

@@ -170,7 +170,7 @@
     </p>
     <figure xml:id="local-direction-vectors-diagram">
       <caption>Local Direction Vectors</caption>
-      <image width="800%" source="images/figure8.png" />
+      <image width="100%" source="images/figure8.svg" />
     </figure>
     <p>
       For example,
@@ -198,7 +198,7 @@
     <title>Projections</title>
     <figure xml:id="projections-diagram">
       <caption>Projection and Perpendicular Vectors</caption>
-      <image width="800%" source="images/figure9.png" />
+      <image width="100%" source="images/figure9.svg" />
     </figure>
     <definition>
       <statement>

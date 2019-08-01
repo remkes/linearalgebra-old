@@ -1,5 +1,6 @@
 size(10cm);
 import graph3;
+usepackage("amsmath");
 
 currentprojection=orthographic(1,1,1);
 
