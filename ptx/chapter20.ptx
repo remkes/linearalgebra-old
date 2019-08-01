@@ -1,6 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Eigenvectors, Eigenvalues and Spectra</title>
-  <xi:include  href="section20-1.ptx" />
-  <xi:include  href="section20-2.ptx" />
-  <xi:include  href="section20-3.ptx" />
-</chapter>

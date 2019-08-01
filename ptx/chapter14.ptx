@@ -1,6 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Inverse Linear Transforms and Matrix Inversion</title>
-  <xi:include  href="section14-1.ptx" />
-  <xi:include  href="section14-2.ptx" />
-  <xi:include  href="section14-3.ptx" />
-</chapter>

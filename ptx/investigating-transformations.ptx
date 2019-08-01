@@ -1,0 +1,7 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="investigating-transformations">
+  <title>Using Matrices to Investigate Linear Transformations</title>
+  <xi:include  href="orthogonality.ptx" />
+  <xi:include  href="conjugation.ptx" />
+  <xi:include  href="eigenvectors.ptx" />
+  <xi:include  href="diagonalization.ptx" />
+</chapter>

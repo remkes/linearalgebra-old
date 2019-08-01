@@ -1,0 +1,356 @@
+<section xml:id="eigenvectors">
+  <title>Eigenvectors, Eigenvalues and Spectra</title>
+  <subsection xml:id="eigenvectors-definitions">
+    <title>Definitions</title>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> be an <m>n \times n</m> matrix.
+          A non-zero vector <m>v \in \RR^n</m> is an <term>eigenvector</term>
+          for <m>A</m> with <term>eigenvalue</term>
+          <m>\lambda</m> if <m>Av = \lambda v</m>.
+          The set of all eigenvalues for the matrix <m>A</m> is called the
+          <term>spectrum</term> of <m>A</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Eigenvectors for a matrix are vectors which do not change direction.
+      They may be dialated by a factor <m>\lambda</m>
+      (including a flip if <m>\lambda</m> is negative),
+      but they still point in the same direction.
+      Projections are also included,
+      since we allow <m>\lambda = 0</m>;
+      such an eigenvector would represent a direction sent entirely to zero under the transformation.
+      Note that if <m>v</m> is an eigenvector,
+      then so is <m>\alpha v</m> for any
+      <m>\alpha \neq 0</m>, <m>\alpha \in \RR</m>.
+    </p>
+    <p>
+      At first glance, this definintion may seem insignificant;
+      interesting, perhaps, but not necessarily central.
+      It turns out that eigenvectors and eigenvalues are one of the most useful and important definitions in linear algebra.
+      Many problems in applied mathematics depend upon finding the eigenvalues of a particular matrix.
+    </p>
+    <p>
+      Before we learn how to calculate eigenvectors and eigenvalues,
+      we can look at some obvious examples.
+    </p>
+    <example>
+      <statement>
+        <p>
+          The identity is the easiest:
+          for any vector <m>v</m> we have <m>\Id v = v</m>.
+          Therefore, all vectors are eigenvectors of the identity with eigenvalue <m>\lambda = 1</m>.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          The zero matrix is similarly easy:
+          it sends all vectors to the origin.
+          All vectors are eigenvectors with eigenvalue <m>\lambda = 0</m>.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Consider a dialation matrix in <m>\RR^3</m>:
+          <md>
+            <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
+            <mrow>0 \amp  b \amp  0</mrow>
+            <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}1</mrow>
+            <mrow>0</mrow>
+            <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}a</mrow>
+            <mrow>0</mrow>
+            <mrow>0\end{pmatrix} = a \begin{pmatrix}1</mrow>
+            <mrow>0</mrow>
+            <mrow>0\end{pmatrix}</mrow>
+            <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
+            <mrow>0 \amp  b \amp  0</mrow>
+            <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}0</mrow>
+            <mrow>1</mrow>
+            <mrow>0\end{pmatrix} \amp  = \begin{pmatrix}0</mrow>
+            <mrow>b</mrow>
+            <mrow>0\end{pmatrix} = b \begin{pmatrix}0</mrow>
+            <mrow>1</mrow>
+            <mrow>0\end{pmatrix}</mrow>
+            <mrow>\left( \begin{matrix} a \amp  0 \amp  0</mrow>
+            <mrow>0 \amp  b \amp  0</mrow>
+            <mrow>0 \amp  0 \amp  c \end{matrix} \right) \begin{pmatrix}0</mrow>
+            <mrow>0</mrow>
+            <mrow>1\end{pmatrix} \amp  = \begin{pmatrix}0</mrow>
+            <mrow>0</mrow>
+            <mrow>c\end{pmatrix} = c \begin{pmatrix}0</mrow>
+            <mrow>0</mrow>
+            <mrow>1\end{pmatrix}</mrow>
+          </md>
+        </p>
+        <p>
+          Here, all three of the standard basis vectors are eigenvectors.
+          <m>e_1</m> has eigenvalue <m>a</m>,
+          <m>e_2</m> has eigenvalue <m>b</m> and <m>e_3</m> has eigenvalue <m>c</m>.
+          If <m>a</m>, <m>b</m> and <m>c</m> are all distinct numbers,
+          there are no other eigenvectors
+          (up to scale).
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Consider a rotation in <m>\RR^2</m>.
+          Assuming the rotation is not trivial (<m>\theta \neq 0</m>),
+          then there are no preserved directions.
+          This rotation has no eigenvectors.
+          However, if we had a rotation in <m>\RR^3</m>,
+          we have to choose an axis.
+          The axis direction is fixed,
+          so a vector in that direction would be an eigenvector with eigenvalue one.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Consider a reflection in <m>\RR^2</m>.
+          A vector along the line of reflection is unchanged,
+          so it would be an eigenvector with eigenvalue one.
+          A vector perpendicular to the line of reflection is fliped exactly,
+          so it would be an eigenvector with eigenvalue <m>-1</m>.
+          In <m>\RR^3</m>, we reflect over a plane through the origin.
+          Any vector in the plane of reflection is unchanged,
+          so that vector is an eigenvectors with eigenvalue one.
+          Any vector perpendicular to the plane of reflection is precisely fliped,
+          so that vector is an eigenvector with eigenvalue <m>-1</m>.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Finally, consider projections in <m>\RR^2</m>.
+          Projection onto the <m>x</m>-axis preserves the <m>x</m> axis,
+          so any vector <m>\begin{pmatrix}a\\0 \end{pmatrix}</m> is an eigenvector with eigenvalue one.
+          However, it sends the <m>y</m>-axis direction to the origin,
+          so any vector <m>\begin{pmatrix}0\\b \end{pmatrix}</m> is an eigenvector with eigenvalue zero.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="eigenvectors-calculation">
+    <title>Calculation of Eigenvalue and Eigenvectors</title>
+    <p>
+      We would like to have an algorithm for finding eigenvectors and eigenvalues.
+      Remember the definition:
+      <m>v</m> is an eigenvector of <m>A</m> if
+      <m>Av = \lambda v</m> for some real number <m>\lambda</m>.
+      We can write the scalar multiplication
+      <m>\lambda v</m> as <m>\lambda \Id v</m>,
+      since the matrix <m>\lambda \Id</m> multiplies each entry by <m>\lambda</m>.
+      Therefore, the equation becomes
+      <m>Av = \lambda \Id v</m> or <m>Av - \lambda \Id v = 0</m>,
+      where the right hand side is the zero vector.
+      Since matrix action is linear,
+      this is the same as <m>(A - \lambda \Id) v = 0</m>.
+    </p>
+    <p>
+      We assumed that <m>v</m> was non-zero in the definition of eigenvectors.
+      Therefore, the matrix <m>(A - \lambda \Id)</m> sends a non-zero vector <m>v</m> to the zero vector.
+      This implies <m>(A - \lambda \Id)</m> has a non-trivial kernel,
+      hence must have zero determinant.
+      Thererfore, a necessary condition for the existence of a eigenvector with eigenvalue <m>\lambda</m> is that <m>\det (A - \lambda \Id) = 0</m>.
+      We start our algorithm by computing this determinant.
+    </p>
+    <p>
+      This determinant has terms which involve the entries of <m>A</m> and <m>\lambda</m>.
+      Since <m>A</m> is an <m>n \times n</m> matrix,
+      each term can be the product of <m>n</m> entries.
+      That means that the determinant will be a degree <m>n</m> polynomial in the variable <m>\lambda</m>.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> be an <m>n \times n</m> matrix The polynomial
+          <m>\det (A - \lambda \Id)</m> in the variable <m>\lambda</m> is called the
+          <term>characteristic polynomial</term> of the matrix.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      We need an important definition about the roots of polynomials.
+      Recall that <m>\alpha</m> is a root of a polynomial <m>p(\lambda)</m> if and only if
+      <m>(\lambda - \alpha)</m> is a factor of the polynomial.
+      However, it may be true that
+      <m>(\lambda - \alpha)^m</m> is a factor for some integer <m>m>1</m>.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>p(\lambda)</m> be a polynomial in the variable <m>\lambda</m> and <m>\alpha</m> a root.
+          Let <m>m</m> be the largest positive integer such that
+          <m>(\lambda - \alpha)^m</m> is a factor of <m>p(\lambda)</m>.
+          Then <m>m</m> is called the <term>multiplicity</term>
+          of the root <m>\alpha</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      A degree <m>n</m> polynomial has at most <m>n</m> real roots,
+      so we can find at most <m>n</m> values for <m>\lambda</m> where the determinant vanishes.
+      These will be the possible eigenvalues.
+      However, the polynomial also have at most <m>n</m> factors,
+      so the sum of all the multiplicities of the roots is also at most <m>n</m>.
+      That implies that if we have roots with higher multiplicities,
+      we will certainly have fewer than <m>n</m> roots.
+    </p>
+    <p>
+      Now we return to the eigenvalue/eigenvector algorithm.
+      When we have an eigenvalue <m>\lambda</m>,
+      we then want to find the matching eigenvectors.
+      These vectors will be in the kernel of <m>(A - \lambda \Id)</m>,
+      so we just have to calcluate this kernel.
+    </p>
+    <p>
+      The second step will always find eigenvectors:
+      the determinant of the matrix is zero,
+      so it must have a non-trivial kernel.
+      However, we don't know now many we will find
+      (we don't know the dimension of the kernel).
+      In the first step,
+      we are looking for roots of a polynomials of degree <m>n</m>.
+      It may have as many as <m>n</m> distinct real roots,
+      but it may have far fewer or even none.
+      Recall the identity and the zero matrix,
+      where all vectors in <m>\RR^n</m> are eigenvectors for the appropriate eigenvalues,
+      and also the rotations in <m>\RR^2</m> where there were no eigenvectors for any eigenvalue.
+      Also note that solving for roots of polynomials,
+      particular in high degrees, is a very hard problem.
+    </p>
+    <p>
+      We have a definition that helps us keep track of this information.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> be a <m>n \times n</m> matrix and let <m>\lambda</m> be an eigenvalue of <m>A</m>.
+          Then the <term>eigenspace</term> of <m>\lambda</m>,
+          written <m>E(\lambda)</m>,
+          is the set of all eigenvectors for the eigenvalue <m>\lambda</m>.
+          Equivalently,
+          it is the kernel of the matrix <m>A - \lambda \Id</m>.
+          The dimension of the eigenspace associated to <m>\lambda</m> is bounded by the multiplicity of <m>\lambda</m> as a root of the characteristic polynomial.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <me>
+          A = \left( \begin{matrix}
+          3 \amp  1 \\ 1 \amp  3
+          \end{matrix} \right)
+          \implies A - \lambda \Id =
+          \left( \begin{matrix}
+          3-\lambda \amp  1 \\ 1 \amp  3 - \lambda
+          \end{matrix} \right)
+        </me>
+        <p>
+          The determinant of this is <m>9 - 6\lambda + \lambda^2 - 1 = 8-6\lambda + \lambda^2 = (\lambda-4)(\lambda-2)</m>.
+          So the eigenvalues are <m>\lambda = 4</m> and <m>\lambda = 2</m>.
+          We calculate the kernel of
+          <m>A - \lambda \Id</m> first for <m>\lambda = 2</m>.
+          <me>
+            A - 2 \Id = \left( \begin{matrix} 1 \amp  1 \\ 1 \amp  1 \end{matrix} \right)
+          </me>
+        </p>
+        <p>
+          The kernel of this matrix is <m>\Span</m><img src="MISSINGFILE"  width="400" /> . All multiples of <img src="MISSINGFILE"  width="400" /> are eigenvectors for <m>\lambda = 2</m>.
+          Next we move on to <m>\lambda = 4</m>.
+          <me>
+            A - 4 \Id = \left( \begin{matrix} -1 \amp  1 \\ 1 \amp  - 1 \end{matrix} \right)
+          </me>
+        </p>
+        <p>
+          The kernel of this matrix is <m>\Span</m><img src="MISSINGFILE" width="400" /> . All multiples of <img src="MISSINGFILE" width="400" /> are eigenvectors for <m>\lambda = 4</m>.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <me>
+          A = \left( \begin{matrix}
+          0 \amp  -2 \\ 2 \amp  0
+          \end{matrix} \right)
+          \implies A - \lambda \Id =
+          \left( \begin{matrix}
+          -\lambda \amp  -2 \\ 2 \amp  -\lambda
+          \end{matrix} \right)
+        </me>
+        <p>
+          The characteristic polynomial is <m>\lambda^2 + 4 = 0</m>,
+          which has no roots.
+          Therefore, there are no eigenvalues.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Consider a diagonal matrix.
+          <me>
+            A = \left( \begin{matrix} 1 \amp  0 \amp  0 \amp  0 \\ 0 \amp  -3 \amp  0 \amp  0 \\ 0 \amp  0 \amp  4 \amp  0 \\ 0 \amp  0 \amp  0 \amp  0 \end{matrix} \right) \implies A - \lambda \Id = \left( \begin{matrix} 1 - \lambda \amp  0 \amp  0 \amp  \\ 0 \amp  -3 - \lambda \amp  0 \amp  0 \\ 0 \amp  0 \amp 4 - \lambda \amp  0 \\ 0 \amp  0 \amp  0 \amp  - \lambda \end{matrix} \right)
+          </me>
+        </p>
+        <p>
+          The characteristic polynomial is <m>(1-\lambda)(-3-\lambda)(4-\lambda)(-\lambda)</m>,
+          which clearly has solutions <m>\lambda = 1</m>,
+          <m>-3</m>, <m>4</m> and <m>0</m>.
+          The eigenvectors are just the axis vectors <m>e_1</m>,
+          <m>e_2</m>, <m>e_3</m> and <m>e_4</m>, respectively.
+          As we said before,
+          diagonal matrices have axis vectors as eigenvectors and diagonal entries as eigenvalues.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="symmetric-matrices">
+    <title>Symmetric Matrices</title>
+    <p>
+      We defined the transpose of a matrix in the chapter on orthogonal matrices.
+      The transpose leads to a new definition in this chapter.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A <m>n \times n</m> matrix <m>A</m> is
+          <term>symmetric</term> if <m>A = A^T</m>.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          Here are two symmetric matrices.
+          <men>
+            \left( \begin{matrix} 5 \amp  1 \amp  -3 \\ 1 \amp  2 \amp  0 \\ -3 \amp  0 \amp  4 \end{matrix} \right) \hspace{2cm} \left( \begin{matrix} 1 \amp  4 \amp  -2 \amp  -9 \\ 4 \amp  -4 \amp  3 \amp  3 \\ -2 \amp  3 \amp  8 \amp  -1 \\ -9 \amp  3 \amp  -1 \amp  7 \end{matrix} \right)
+          </men>
+        </p>
+      </statement>
+    </example>
+    <p>
+      We define symmetric matrices in this section because they behave very well with respect to eigenvalue and eigenvectors.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          A symmetric <m>n \times n</m> matrix always has <m>n</m> real eigenvalues,
+          counted with multiplicity.
+          Moreover, the eigenspaces all have the maximum dimension,
+          which is the multiplicity of the eigenvalue.
+        </p>
+      </statement>
+    </proposition>
+  </subsection>
+</section>

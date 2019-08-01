@@ -1,5 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Solving by Row Reduction</title>
-  <xi:include  href="section10-1.ptx" />
-  <xi:include  href="section10-2.ptx" />
-</chapter>

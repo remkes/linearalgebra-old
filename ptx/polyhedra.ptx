@@ -1,0 +1,210 @@
+<section xml:id="polyhedra">
+  <title>Polyhedra in <m>\RR^n</m></title>
+  <introduction>
+    <p>
+      Now that we have defined vectors,
+      we want to investigate more complicated objects in <m>\RR^n</m>.
+      The major objects for the course work
+      (linear and affine subspaces)
+      will be defined in the coming lectures.
+      In this lecture, however,
+      we take a short detour to discover how familiar shapes and solids extend into higher dimensions.
+      I'll use the standard term <em>polyhedron</em>
+      (plural polyhedra)
+      to refer to a straight-edged objects in any <m>\RR^n</m>.
+      First, however, we start with a familiar without straight edges.
+    </p>
+  </introduction>
+  <subsection xml:id="spheres">
+    <title>Spheres</title>
+    <p>
+      Spheres are, in some way, the easiest objects to generalize.
+      Spheres are all things in <m>\RR^n</m> which are exactly one unit of distance from the origin.
+      The <sq>sphere</sq> in <m>\RR</m> is just the points <m>-1</m> and <m>1</m>.
+      The <sq>sphere</sq> in <m>\RR^2</m> is the circle <m>x^2 + y^2 = 1</m>.
+      The sphere in <m>\RR^3</m> is the conventional sphere,
+      with equation <m>x^2 + y^2 + z^2 = 1</m>.
+      The sphere in <m>\RR^4</m> has equation <m>x^2 + y^2 + z^2 + w^2 = 1</m>.
+      The sphere in <m>\RR^n</m> has equation <m>x_1^2 + x_2^2 + \ldots + x_n^2 = 1</m>.
+      For dimensional reasons,
+      since spheres are usually considered hollow objects,
+      the sphere in <m>\RR^n</m> is called the <m>(n-1)</m>-sphere.
+      That means the circle is the 1-sphere and the conventional sphere is the 2-sphere.
+    </p>
+    <p>
+      A sphere relate to the lower dimension spheres by looking at slices.
+      Any slice of a sphere produces a circle.
+      Likewise, any slice of a 3-sphere produces a 2-sphere.
+    </p>
+  </subsection>
+  <subsection xml:id="simplices">
+    <title>Simplicies</title>
+    <p>
+      The simplex is the simplest straight-line polyhedra.
+      I'll define them without specifying their vector definition in <m>\RR^n</m>,
+      since that definition is slightly more technical than necessary.
+      <ul>
+        <li>
+          <p>
+            The 1-simplex is a line segment.
+          </p>
+        </li>
+        <li>
+          <p>
+            The 2-simplex is an equilateral triangle.
+            It is formed from the 1-simplex by adding one new vertex and drawing edges to the existing vertex such that all edges have the same length.
+          </p>
+        </li>
+        <li>
+          <p>
+            The 3-simplex is a tetrahedron
+            (or triangular pyramid).
+            Again, it is formed by adding one new vertex in a new direction and drawing lines to all existing vertices such that all line
+            (new and old)
+            have the same length.
+          </p>
+        </li>
+        <li>
+          <p>
+            This process extends into higher dimensions.
+            In each stage a new vertex is added in the new direction and edges connect it to all previous vertices,
+            such that all edges have the same length.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml:id="cross-polytopes">
+    <title>Cross-Polytopes</title>
+    <p>
+      Another family of regular solids which extends to all dimensions is the cross-polytopes.
+      <ul>
+        <li>
+          <p>
+            In <m>\RR^2</m>,
+            the cross-polytope is the diamond with vertices <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , and <img src="MISSINGFILE" width="400" /> . In each dimension,
+            two vertices are added at <m>\pm 1</m> in the new axis direction,
+            and edges are added connecting the two new vertices to each existing vertex (but the two new vertices are not connected to each other)..
+          </p>
+        </li>
+        <li>
+          <p>
+            In <m>\RR^3</m>, the cross-polytope is the octahedron,
+            with vertices <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , <img src="MISSINGFILE" width="400" /> , and <img src="MISSINGFILE" width="400" /> .
+          </p>
+        </li>
+        <li>
+          <p>
+            In higher dimensions,
+            the vertices are all vectors with <m>\pm 1</m> in one component and zero in all other components.
+            Each vertex is connected to all other vertices except its opposite.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml:id="cubes">
+    <title>Cubes</title>
+    <p>
+      Finally, we have the family of cubes.
+      <ul>
+        <li>
+          <p>
+            The <sq>cube</sq> n <m>\RR</m> is the interval <m>[0,1]</m>.
+            It can be defined by the inequality
+            <m>0 \leq x \leq 1</m> for <m>x \in \RR</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            In <m>\RR^2</m>,
+            the <sq>cube</sq> is the just the ordinary (solid) square.
+            It is all vectors <img src="MISSINGFILE" width="400" /> such that
+            <m>0 \leq x \leq 1</m> and <m>0 \leq y \leq 1</m>.
+            The square can be formed by taking two intervals and connecting the matching vertices.
+            It has four vertices and four edges.
+          </p>
+        </li>
+        <li>
+          <p>
+            In <m>\RR^3</m>, the square object is the (solid) cube.
+            It is all vectors <img src="MISSINGFILE" width="400" /> , such that each coordinate is in the interval <m>[0,1]</m>.
+            It can also be seen as two squares with matching vertices connected.
+            Two square gives eight vertices.
+            Eight square edges plus four connecting edges gives the twelve edges of the cube.
+            It also has six square faces.
+          </p>
+        </li>
+        <li>
+          <p>
+            Then we can simply keep extending.
+            In <m>\RR^4</m>,
+            the set of all vectors <img src="MISSINGFILE" width="400" /> where all coordinates are in the interal <m>[0,1]</m> is called the hypercube or 4-cube.
+            It can be seen as two cubes with pairwise edges connected.
+            The cubes each have eight vertices,
+            so the 4-cubes has sixteen vertices.
+            Each cube has 12 edges, and their are 8 new connecting edges,
+            so the 4-cube has 32 edges.
+            It has 24 faces and 8 cells.
+            A cell (or 3-face) here is a three dimensional <sq>edge</sq> of a four
+            (or higher)
+            dimensional object.
+          </p>
+        </li>
+        <li>
+          <p>
+            There is an <m>n</m>-cube in each <m>\RR^n</m>,
+            consisting of all vectors where all components are in the interval <m>[0,1]</m>.
+            Each can be constructed by joining two copies of a lower dimensional <m>(n-1)</m>-cube with edges between matching vertices.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml:id="other-solids">
+    <title>Other Platonic Solics</title>
+    <p>
+      A regular polyhedron is one where all edges, faces, cells,
+      n-cells are the same size/shape and,
+      in addition, the angles between all the edges, faces, cells,
+      n-cells are also the same whever the various objects meet.
+      In addition,
+      the polyhedron is called convex if all angles are greater that <m>\frac{\pi}{2}</m> radians.
+      The study of convex regular polyhedra is an old and celebrated part of mathematics.
+    </p>
+    <p>
+      In <m>\RR^2</m>,
+      there are infinitely many convex regular polyhedra:
+      the regular polygons with any number of sides.
+      In <m>\RR^3</m>, in addition to the cube,
+      tetrahedron and octahedron, there are only two others:
+      the dodecahedron and the icosahedron.
+      These were well known to the ancient Greeks and are called the
+      <em>Platonic Solids</em>.
+    </p>
+    <p>
+      The three families (cube,
+      tetrahedron, cross-polytope) extend to all dimensions,
+      but the dodecahedron and icoahedron are particular to <m>\RR^3</m>.
+      It is a curious and fascinating question to ask what other special,
+      unique convex regular polyhedra occur in higher dimesions.
+    </p>
+    <p>
+      In <m>\RR^4</m>, there are three others.
+      They are called the 24-cell, the 120-cell and 600-cell,
+      named for the number of 3-dimensional cells they contain
+      (the same way the 4-cubes contains 8 3-cubes).
+      The 24-cell is built from 24 octahedral cells.
+      The 120-cell is built from dodecahedral cells and the 600-cell is built from tetrahedral cells.
+      The 120-cell, in some ways,
+      extends the dodecahedron and the 600-cell extends the icosahedron.
+      The 24-cell is unique to <m>\RR^4</m>.
+    </p>
+    <p>
+      It is an amazing theorem of modern mathematics that in dimensions higher than <m>4</m>,
+      there are no regular polyhedra other than the three families.
+      Neither the icosahedron nor the dodecahedron extend,
+      and there are no other erratic special polyhedra found in any higher dimension.
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,89 @@
+<section xml:id="conjugation">
+  <title>Conjugation</title>
+  <subsection xml:id="conjugation-definition">
+    <title>Definitions</title>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> be an <m>n \times n</m> matrix.
+          The <term>order</term> of <m>A</m> is the smallest positive integer <m>n</m> such that <m>A^n = \Id</m>.
+          If no such integer exists, the order of <m>A</m> is <m>\infty</m>.
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> be an <m>n \times n</m> matrix and <m>v \in \RR^n</m>.
+          The <m>v</m> is a <term>fixed point</term>
+          of <m>A</m> if <m>Av = v</m>.
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> and <m>B</m> be
+          <m>n \times n</m> matrices with <m>B</m> invertible.
+          The <term>conjugation</term> of <m>A</m> by <m>B</m> is the matrix <m>B^{-1}AB</m>.
+          (In some contexts, conjugation is <m>BAB^{-1}</m>.
+          We will always write the inverse on the left.)
+        </p>
+      </statement>
+    </definition>
+    <p>
+      To define conjugation
+      (and have it mean anything interesting),
+      we require the non-commutativity of matrix multiplication.
+      If matrix multiplication were commutative,
+      we could calculate <m>B^{-1}AB = B^{-1}BA = A</m>,
+      and conjugation would have no effect.
+      Conjugation works because of the non-commutativity of matrix multiplication.
+    </p>
+    <p>
+      Conjugation changes the matrix <m>A</m>,
+      but tends to keep some similarity to the original matrix.
+      It also divides matrix groups into classes which share certain similarities or properties.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>G</m> be a group of linear transformations.
+          Let <m>A \in G</m>.
+          The <term>conjugacy class</term> of <m>A</m> is the set of all matrices which are conjugates of <m>A</m> by any other <m>B \in G</m>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="conjugation-properties">
+    <title>Properties of Conjugation</title>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> and <m>B</m> be
+          <m>n \times n</m> matrices with <m>B</m> invertible.
+          Conjugation preserves determinants:
+          <m>\det A = \det B^{-1}AB</m>.
+        </p>
+      </statement>
+    </proposition>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> and <m>B</m> be invertible
+          <m>n \times n</m> matrices in a finite matrix group <m>G</m>.
+          Then the order of <m>A</m> is the same as the order of <m>B^{-1}AB</m>.
+        </p>
+      </statement>
+    </proposition>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> and <m>B</m> be
+          <m>n \times n</m> matrices with <m>B</m> invertible.
+          The number of fixed points of <m>A</m> is the same as the number of fixed points of <m>B^{-1}AB</m>.
+        </p>
+      </statement>
+    </proposition>
+  </subsection>
+</section>

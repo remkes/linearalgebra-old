@@ -1,0 +1,10 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="geometry">
+  <title>Geometry</title>
+  <xi:include  href="vectors.ptx" />
+  <xi:include  href="dot-product.ptx" />
+  <xi:include  href="vector-structures.ptx" />
+  <xi:include  href="polyhedra.ptx" />
+  <xi:include  href="subspaces.ptx" />
+  <xi:include  href="spans.ptx" />
+  <xi:include  href="normals.ptx" />
+</chapter>

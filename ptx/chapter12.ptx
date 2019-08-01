@@ -1,9 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Linear Transformations</title>
-  <xi:include  href="section12-1.ptx" />
-  <xi:include  href="section12-2.ptx" />
-  <xi:include  href="section12-3.ptx" />
-  <xi:include  href="section12-4.ptx" />
-  <xi:include  href="section12-5.ptx" />
-  <xi:include  href="section12-6.ptx" />
-</chapter>

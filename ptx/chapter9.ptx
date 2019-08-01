@@ -1,6 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Systems of Linear Equations</title>
-  <xi:include  href="section9-1.ptx" />
-  <xi:include  href="section9-2.ptx" />
-  <xi:include  href="section9-3.ptx" />
-</chapter>

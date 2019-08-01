@@ -1,0 +1,8 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="linear-transformations">
+  <title>Linear Transformations</title>
+  <xi:include  href="linear-transformations-defintions-and-examples.ptx" />
+  <xi:include  href="matrices-and-transformations.ptx" />
+  <xi:include  href="inversion.ptx" />
+  <xi:include  href="transformations-of-spans-and-loci.ptx" />
+  <xi:include  href="kernels-and-images.ptx" />
+</chapter>

@@ -3,9 +3,7 @@
   <docinfo>
 <macros>
 \def\vs{\textit{vs. }}
-\renewcommand{\chaptername}{Lecture}
 \def\cf{\textit{cf. }}
-\renewcommand{\abstractname}{License}
 \def\viz{\textit{viz. }}
 \def\ie{\textit{i.e. }}
 \def\etc{\textit{etc. }}
@@ -566,35 +564,14 @@
           <personname>Remkes Kooistra</personname>
         </author>
       </titlepage>
-      <abstract>
-        <p>
-          This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
-        </p>
-      </abstract>
     </frontmatter>
-    <xi:include href="./Welcome_to_the_Course.ptx" />
-    <xi:include href="./chapter1.ptx" />
-    <xi:include href="./Vectors.ptx" />
-    <xi:include href="./chapter3.ptx" />
-    <xi:include href="./chapter4.ptx" />
-    <xi:include href="./chapter5.ptx" />
-    <xi:include href="./chapter6.ptx" />
-    <xi:include href="./chapter7.ptx" />
-    <xi:include href="./chapter8.ptx" />
-    <xi:include href="./chapter9.ptx" />
-    <xi:include href="./chapter10.ptx" />
-    <xi:include href="./chapter11.ptx" />
-    <xi:include href="./chapter12.ptx" />
-    <xi:include href="./chapter13.ptx" />
-    <xi:include href="./chapter14.ptx" />
-    <xi:include href="./chapter15.ptx" />
-    <xi:include href="./chapter16.ptx" />
-    <xi:include href="./chapter17.ptx" />
-    <xi:include href="./chapter18.ptx" />
-    <xi:include href="./chapter19.ptx" />
-    <xi:include href="./chapter20.ptx" />
-    <xi:include href="./chapter21.ptx" />
-    <xi:include href="./chapter22.ptx" />
+    <xi:include href="./welcome.ptx" />
+    <xi:include href="./geometry.ptx" />
+    <xi:include href="./systems-and-dimensions.ptx" />
+    <xi:include href="./linear-transformations.ptx" />
+    <xi:include href="./determinants.ptx" />
+    <xi:include href="./investigating-transformations.ptx" />
+    <xi:include href="./dynamical-systems.ptx" />
     <backmatter>
       <xi:include href="./bibliography.ptx" />
     </backmatter>
