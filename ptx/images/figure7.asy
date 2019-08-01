@@ -1,4 +1,4 @@
-size(10cm,10cm);
+size(10cm);
 import graph;
 
 xlimits(0,5);
