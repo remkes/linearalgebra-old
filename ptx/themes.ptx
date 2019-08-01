@@ -32,7 +32,10 @@
           <term>Algebra</term> is the study of sets with structure.
           It investigates possible structures on sets,
           the rules obeyed by those structures,
-          and the interaction of various structures.
+          and the interaction of various structures. (This definition is a
+          little vague, since not all structures on sets are 
+          <term>algebraic</term> structures, but it will suit our purposes 
+          for this course.) 
         </p>
       </statement>
     </definition>
