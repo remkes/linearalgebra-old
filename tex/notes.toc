@@ -1,0 +1,101 @@
+\contentsline {chapter}{\numberline {1}Welcome to the Course}{3}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}Pedagogical Model}{3}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}Other Resources}{4}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.3}Perspectives and Philosophy}{4}{subsection.1.1.3}% 
+\contentsline {section}{\numberline {1.2}Themes of the Course}{4}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.2.1}Algebra}{4}{subsection.1.2.1}% 
+\contentsline {subsection}{\numberline {1.2.2}Abstraction}{5}{subsection.1.2.2}% 
+\contentsline {subsection}{\numberline {1.2.3}Geometry}{5}{subsection.1.2.3}% 
+\contentsline {subsection}{\numberline {1.2.4}Flatness}{6}{subsection.1.2.4}% 
+\contentsline {subsection}{\numberline {1.2.5}Symmetry}{6}{subsection.1.2.5}% 
+\contentsline {subsection}{\numberline {1.2.6}Proof}{6}{subsection.1.2.6}% 
+\contentsline {chapter}{\numberline {2}Geometry}{7}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Vectors}{7}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Definitions}{7}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Points or Directions?}{9}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Linear Operations}{10}{subsection.2.1.3}% 
+\contentsline {section}{\numberline {2.2}The Dot Product}{14}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Definition}{14}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Properties of the Dot Product}{14}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}More Vector Structures}{15}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}The Cross Product}{15}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Angular Motion}{17}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Local Direction Vectors}{18}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Projections}{19}{subsection.2.3.4}% 
+\contentsline {section}{\numberline {2.4}Polyhedra in $\mathbb {R}^n$}{20}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Spheres}{20}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Simplicies}{21}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Cross-Polytopes}{21}{subsection.2.4.3}% 
+\contentsline {subsection}{\numberline {2.4.4}Cubes}{21}{subsection.2.4.4}% 
+\contentsline {subsection}{\numberline {2.4.5}Other Platonic Solics}{22}{subsection.2.4.5}% 
+\contentsline {section}{\numberline {2.5}Linear and Affine Subspaces}{22}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Definitions}{22}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Loci}{23}{subsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.5.3}Intersection}{25}{subsection.2.5.3}% 
+\contentsline {section}{\numberline {2.6}Spans}{25}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}Definitions}{25}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.2}Dimension and Basis}{26}{subsection.2.6.2}% 
+\contentsline {section}{\numberline {2.7}Normals to Planes and Hyperplanes}{27}{section.2.7}% 
+\contentsline {subsection}{\numberline {2.7.1}Dot Products and Loci}{27}{subsection.2.7.1}% 
+\contentsline {subsection}{\numberline {2.7.2}An Algorithm for Equations of Planes}{28}{subsection.2.7.2}% 
+\contentsline {chapter}{\numberline {3}Systems and Dimensions}{29}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Systems of Linear Equations}{29}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Definitions}{29}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Matrices}{30}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Matrix Represetation of Systems of Linear Equations}{32}{subsection.3.1.3}% 
+\contentsline {section}{\numberline {3.2}Solving by Row Reduction}{34}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Row Operations and Gaussian Elimination}{34}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Solution Spaces and Free Parameters}{35}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Dimensions of Spans and Loci}{38}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Rank}{38}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Dimensions of Spans}{39}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Bases for Spans}{39}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}Dimensions of Loci}{40}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.5}Bases for Loci}{42}{subsection.3.3.5}% 
+\contentsline {chapter}{\numberline {4}Linear Transformations}{43}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Definitions and Examples}{43}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Defitions}{43}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Composition}{44}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Linear Transformations of $\mathbb {R}^2$}{45}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Linear Transformations of $\mathbb {R}^3$}{45}{subsection.4.1.4}% 
+\contentsline {subsection}{\numberline {4.1.5}Symmetry}{46}{subsection.4.1.5}% 
+\contentsline {subsection}{\numberline {4.1.6}Dihedral Groups}{46}{subsection.4.1.6}% 
+\contentsline {section}{\numberline {4.2}Matrices and Transformations}{47}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Matrix Representation of Linear Transformations}{47}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Composition and Matrix Multiplication}{49}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}Inverse Linear Transforms and Matrix Inversion}{50}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Inverse Transforms}{50}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Inverse Matrices}{50}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}Calculating Inverse Matrices}{51}{subsection.4.3.3}% 
+\contentsline {section}{\numberline {4.4}Transformations of Spans and Loci}{51}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Transformations of Spans}{51}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Transformation of Loci}{52}{subsection.4.4.2}% 
+\contentsline {section}{\numberline {4.5}Kernels and Images}{52}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}Row and Column Spaces}{52}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}Images}{53}{subsection.4.5.2}% 
+\contentsline {subsection}{\numberline {4.5.3}Kernels}{54}{subsection.4.5.3}% 
+\contentsline {chapter}{\numberline {5}Determinants}{55}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Definitions}{55}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Cofactor Expansion}{56}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Properties of Determinants}{57}{section.5.3}% 
+\contentsline {chapter}{\numberline {6}Using Matrices to Investigate Linear Transformations}{60}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Orthogonality and Symmetry}{60}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}Symmetry, Again}{60}{subsection.6.1.1}% 
+\contentsline {subsection}{\numberline {6.1.2}Matrices of Determinant One}{61}{subsection.6.1.2}% 
+\contentsline {subsection}{\numberline {6.1.3}Transposes}{61}{subsection.6.1.3}% 
+\contentsline {subsection}{\numberline {6.1.4}Orthogonal and Special Orthogonal Matrices}{61}{subsection.6.1.4}% 
+\contentsline {subsection}{\numberline {6.1.5}Orthogonal Bases and the Gram-Schmidt Process}{63}{subsection.6.1.5}% 
+\contentsline {section}{\numberline {6.2}Conjugation}{65}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Definitions}{65}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}Properties of Conjugation}{65}{subsection.6.2.2}% 
+\contentsline {section}{\numberline {6.3}Eigenvectors, Eigenvalues and Spectra}{65}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}Definitions}{65}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}Calculation of Eigenvalue and Eigenvectors}{67}{subsection.6.3.2}% 
+\contentsline {subsection}{\numberline {6.3.3}Symmetric Matrices}{68}{subsection.6.3.3}% 
+\contentsline {section}{\numberline {6.4}Diagonalization}{69}{section.6.4}% 
+\contentsline {chapter}{\numberline {7}Linear Dynamical Systems}{71}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Theory of Dynamical Systems}{71}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Linear Recurrence Relations}{72}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}Leslie Matrices}{73}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}Stochastic Matrices and Markov Chains}{74}{section.7.4}% 
