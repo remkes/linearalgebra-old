@@ -4,40 +4,43 @@
     <title>Definition</title>
     <p>
       Earlier we said that we can't multiply two vectors together.
-      That's mostly true,
-      in the sense that there is no general product of two vectors <m>uv</m> which is still a vector.
-      However, there are other kinds of <sq>multiplication</sq> which combine two vectors.
-      The operation defined in this lecture multiplies two vectors,
-      but the result is a scalar.
+      That's mostly true, in the sense that there is no general
+      product of two vectors <m>uv</m> which is still a vector.
+      However, there are other kinds of <sq>multiplication</sq> which
+      combine two vectors. The operation defined in this lecture
+      multiplies two vectors, but the result is a scalar.
     </p>
     <definition>
       <statement>
         <p>
-          The <term>dot product</term> or
-          <term>inner product</term>
-          or <term>scalar product</term>
-          of two vectors <m>u</m> and <m>v</m> is given by the following formula.
+          The <term>dot product</term> or <term>inner product</term>
+          or <term>scalar product</term> of two vectors <m>u</m> and
+          <m>v</m> is given by the following formula.
           <me>
-            u \cdot v = \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} = u_1 v_1 + u_2 v_2 + \ldots + u_n v_n
+            u \cdot v =
+            \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot
+            \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} = u_1
+            v_1 + u_2 v_2 + \ldots + u_n v_n
           </me>
         </p>
       </statement>
     </definition>
     <p>
-      We can think of the dot product as a scalar measure of the similarity of direction between the two vectors.
-      If the two vectors point in a similar direction,
-      their dot product is large,
-      but if they point in very different directions,
-      their dot product is small.
-      However, we already have a measure,
-      at least in <m>\RR^2</m>, of this difference:
-      the angle between two vectors.
-      Thankfully, the two measures of difference agree and the dot product can be expressed in terms of angles.
+      We can think of the dot product as a scalar measure of the
+      similarity of direction between the two vectors. If the two
+      vectors point in a similar direction, their dot product is
+      large, but if they point in very different directions, their dot
+      product is small. However, we already have a measure, at least
+      in <m>\RR^2</m>, of this difference: the angle between two
+      vectors. Thankfully, the two measures of difference agree and
+      the dot product can be expressed in terms of angles.
     </p>
     <definition>
       <statement>
         <p>
-          The <term>angle</term> <m>\theta</m> between two non-zero vectors <m>u</m> and <m>v</m> in <m>\RR^n</m> is given by the equation
+          The <term>angle</term> <m>\theta</m> between two non-zero
+          vectors <m>u</m> and <m>v</m> in <m>\RR^n</m> is given by
+          the equation 
           <me>
             \cos \theta = \frac{u \cdot v}{|u||v|}
           </me>
@@ -45,21 +48,22 @@
       </statement>
     </definition>
     <p>
-      This definition agrees with the angles in <m>\RR^2</m> and <m>\RR^3</m> which we can visualize.
-      However, this serves as a new definition for angles between vectors in all <m>\RR^n</m> when <m>n \geq 4</m>.
-      Since we can't visualize those spaces,
-      we don't have a way of drawing angles and calculating them with conventional trigonometry.
-      This definition allows us to extend angles in a completely algebraic way.
-      Notes that <m>\theta \in [0, \pi]</m>,
-      since we always take the smallest possible angle between two vectors.
+      This definition agrees with the angles in <m>\RR^2</m> and
+      <m>\RR^3</m> which we can visualize. However, this serves as a
+      new definition for angles between vectors in all <m>\RR^n</m>
+      when <m>n \geq 4</m>. Since we can't visualize those spaces, we
+      don't have a way of drawing angles and calculating them with
+      conventional trigonometry. This definition allows us to extend
+      angles in a completely algebraic way. Notes that <m>\theta \in
+      [0, \pi]</m>, since we always take the smallest possible angle
+      between two vectors.
     </p>
     <definition>
       <statement>
         <p>
           Two vectors <m>u</m> and <m>v</m> in <m>\RR^n</m> are called
-          <term>orthogonal</term> or
-          <term>perpendicular</term>
-          or <term>normal</term> if <m>u \cdot v = 0</m>.
+          <term>orthogonal</term> or <term>perpendicular</term> or
+          <term>normal</term> if <m>u \cdot v = 0</m>.
         </p>
       </statement>
     </definition>
@@ -67,54 +71,66 @@
   <subsection xml:id="dot-product-properties">
     <title>Properties of the Dot Product</title>
     <p>
-      There are many pairs of orthogonal vectors.
-      Thinking of the dot product as a multiplication,
-      we have uncovered a serious difference between the dot product and conventional multiplication of numbers.
-      If <m>a,b\in \RR</m> then <m>ab=0</m> implies that one of <m>a</m> or <m>b</m> must be zero.
-      For vectors,
-      we can have <img src="MISSINGFILE" width="400" /> <m>= 0</m> even though neither factor in the product is the zero vector.
-      We have a definition to keep track of this new property.
+      There are many pairs of orthogonal vectors. Thinking of the dot
+      product as a multiplication, we have uncovered a serious
+      difference between the dot product and conventional
+      multiplication of numbers. If <m>a,b\in \RR</m> then
+      <m>ab=0</m> implies that one of <m>a</m> or <m>b</m> must be
+      zero. For vectors, we can have <m>\begin{pmatrix} 1 \\ 0
+      \end{pmatrix} \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix} 
+      = 0</m> even though neither factor in the
+      product is the zero vector. We have a definition to keep track
+      of this new property.
     </p>
     <definition>
       <statement>
         <p>
-          Assume <m>A</m> is a set with addition and some kind of multiplication and that <m>0 \in A</m>.
-          If <m>u \neq 0</m> and <m>\neq 0</m> but <m>uv =0</m>,
-          we say that <m>u</m> and <m>v</m> are
-          <term>zero divisors</term>.
+          Assume <m>A</m> is a set with addition and some kind of
+          multiplication and that <m>0 \in A</m>. If <m>u \neq 0</m>
+          and <m>\neq 0</m> but <m>uv =0</m>, we say that <m>u</m> and
+          <m>v</m> are <term>zero divisors</term>.
         </p>
       </statement>
     </definition>
     <p>
-      An important property of ordinary numbers,
-      as we just noted, is that there are no zero divisors.
-      Other algebraic structures,
-      such as vectors with the dot product,
-      may have many zero divisors.
+      An important property of ordinary numbers, as we just noted, is
+      that there are no zero divisors. Other algebraic structures,
+      such as vectors with the dot product, may have many zero
+      divisors.
     </p>
     <p>
-      Now that we have a new operation,
-      it is useful to see how it interact with previously defined structure.
-      The following list shows some interactions between addition,
-      scalar multiplication, length and the dot product.
-      Some of these are easy to establish from the definition and some take more work.
+      Now that we have a new operation, it is useful to see how it
+      interact with previously defined structure. The following list
+      shows some interactions between addition, scalar multiplication,
+      length and the dot product. Some of these are easy to establish
+      from the definition and some take more work.
     </p>
     <proposition>
       <statement>
         <p>
-          Let <m>u,v,w</m> be vectors in <m>\RR^n</m> and let <m>a</m> be a scalar in <m>\RR</m>.
+          Let <m>u,v,w</m> be vectors in <m>\RR^n</m> and let <m>a</m>
+          be a scalar in <m>\RR</m>.
           <men>
-            \begin{array}{rll} u + v \amp  = v + u \amp  \hspace{1cm} \text{ Commutative Law for Vector Addition }  \\ a (u+v) \amp  = au + av \amp  \hspace{1cm} \text{ Distributive Law for Scalar Multiplication } \\ u \cdot v \amp  = v \cdot u \amp  \hspace{1cm} \text{ Commutative Law for the Dot Product } \\ u \cdot u \amp  = |u|^2 \amp  \\ u \cdot (v+w) \amp  = u \cdot v + u \cdot w \amp  \hspace{1cm} \text{ Distributive Law for the Dot Product } \\ u \cdot (av) \amp  = (au) \cdot v = a (u \cdot v) \end{array}
+            \begin{array}{rll} u + v \amp  = v + u \amp  \hspace{1cm}
+            \text{ Commutative Law for Vector Addition }  \\ a (u+v)
+            \amp  = au + av \amp  \hspace{1cm} \text{ Distributive Law
+            for Scalar Multiplication } \\ u \cdot v \amp  = v \cdot u
+            \amp  \hspace{1cm} \text{ Commutative Law for the Dot
+            Product } \\ u \cdot u \amp  = |u|^2 \amp  \\ u \cdot
+            (v+w) \amp  = u \cdot v + u \cdot w \amp  \hspace{1cm}
+            \text{ Distributive Law for the Dot Product } \\ u \cdot
+            (av) \amp  = (au) \cdot v = a (u \cdot v) \end{array}
           </men>
         </p>
       </statement>
     </proposition>
     <p>
-      In <m>\RR^2</m>,
-      norms and dot products allow us to recreate some well-known geometric constructions.
-      For example, now that we have lengths and angles,
-      we can state the cosine law in terms of vectors.
-      The visualization of the vector relationships of the cosine law is shown in <xref ref="the-cosine-law">Figure</xref>.
+      In <m>\RR^2</m>, norms and dot products allow us to recreate
+      some well-known geometric constructions. For example, now that
+      we have lengths and angles, we can state the cosine law in terms
+      of vectors. The visualization of the vector relationships of
+      the cosine law is shown in <xref
+      ref="the-cosine-law">Figure</xref>.
     </p>
     <proposition>
       <title>The Cosine Law</title>
@@ -122,7 +138,8 @@
         <p>
           Let <m>u</m> and <m>v</m> be vectors in <m>\RR^n</m>.
           <me>
-            |u-v|^2 = |u|^2 + |v|^2 - 2|u||v| \cos \theta = |u|^2 + |v|^2 - 2 u \cdot v
+            |u-v|^2 = |u|^2 + |v|^2 - 2|u||v| \cos \theta = |u|^2 +
+            |v|^2 - 2 u \cdot v
           </me>
         </p>
       </statement>

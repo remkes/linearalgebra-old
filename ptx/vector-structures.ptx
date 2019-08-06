@@ -3,52 +3,56 @@
   <subsection xml:id="cross-product">
     <title>The Cross Product</title>
     <p>
-      The dot product is an operation which can be performed on any two vectors in <m>\RR^n</m> for any <m>n \geq 1</m>.
-      There are no other conventional products that work in all dimensions.
-      However, there is a special product that works in three dimensions.
+      The dot product is an operation which can be performed on any
+      two vectors in <m>\RR^n</m> for any <m>n \geq 1</m>. There are
+      no other conventional products that work in all dimensions.
+      However, there is a special product that works in three
+      dimensions.
     </p>
     <definition>
       <statement>
         <p>
-          Let <m>u</m> = <img src="MISSINGFILE"  width="400" /> and <m>v</m> = <img src="MISSINGFILE"  width="400" /> be two vectors in <m>\RR^3</m>.
-          The <term>cross product</term> of <m>u</m> and <m>v</m> is written
-          <m>u \times v</m> and defined by the following formula.
+          Let <m>u = \begin{pmatrix} u_1 \\ u_2 \\ u_3
+          \end{pmatrix}</m> and <m>v = \begin{pmatrix} v_1 \\ v_2 \\
+          v_3 \end\pmatrix}</m> be two vectors in <m>\RR^3</m>. The
+          <term>cross product</term> of <m>u</m> and <m>v</m> is
+          written <m>u \times v</m> and defined by the following
+          formula.
           <me>
-            u \times v = \begin{pmatrix}u_2v_3 - u_3v_2\\u_3v_1 - u_1v_3\\u_1v_2 - u_2v_1\end{pmatrix}
+            u \times v = \begin{pmatrix}u_2v_3 - u_3v_2\\u_3v_1 -
+            u_1v_3\\u_1v_2 - u_2v_1\end{pmatrix}
           </me>
         </p>
       </statement>
     </definition>
     <p>
-      The cross product differs from the dot product in several important ways.
-      First, it produces a new vector in <m>\RR^3</m>, not a scalar.
-      For this reason, when working in <m>\RR^3</m>,
-      the dot product is often refered to as the <em>scalar product</em>
-      and the cross product as the <em>vector product</em>.
-      Second, the dot product measures,
-      in some sense, the similarity of two vectors.
-      The cross product measures, in some sense,
-      the difference between two vectors.
-      The cross product has greater magnitude if the vectors are closer to being perpendicular.
-      If <m>\theta</m> is the angle between <m>u</m> and <m>v</m>,
-      the dot product was expressed in terms of <m>\cos \theta</m>.
-      This measures similarity, since <m>\cos 0 = 1</m>.
+      The cross product differs from the dot product in several
+      important ways. First, it produces a new vector in
+      <m>\RR^3</m>, not a scalar. For this reason, when working in
+      <m>\RR^3</m>, the dot product is often refered to as the
+      <em>scalar product</em> and the cross product as the <em>vector
+      product</em>. Second, the dot product measures, in some sense,
+      the similarity of two vectors. The cross product measures, in
+      some sense, the difference between two vectors. The cross
+      product has greater magnitude if the vectors are closer to being
+      perpendicular. If <m>\theta</m> is the angle between <m>u</m>
+      and <m>v</m>, the dot product was expressed in terms of <m>\cos
+      \theta</m>. This measures similarity, since <m>\cos 0 = 1</m>.
       There is a similar identity for the cross product:
       <me>
         |u \times v| = |u||v| \sin \theta
       </me>
     </p>
     <p>
-      This identity tells us that the cross product measures difference in direction,
-      since <m>\sin 0 = 0</m>.
-      In particular, this tells us that <m>|u \times u| = 0</m>,
-      implying that <m>u \times u = 0</m>
-      (the zero vector is the only vector which has zero length).
-      This is another new and strange property:
-      in this particular multiplication,
-      everything squares to zero.
-      The cross product is obviously very different from multiplication of scalars,
-      where <m>a^2 = 0</m> cannot happen unless <m>a=0</m>.
+      This identity tells us that the cross product measures
+      difference in direction, since <m>\sin 0 = 0</m>. In
+      particular, this tells us that <m>|u \times u| = 0</m>, implying
+      that <m>u \times u = 0</m> (the zero vector is the only vector
+      which has zero length). This is another new and strange
+      property: in this particular multiplication, everything squares
+      to zero. The cross product is obviously very different from
+      multiplication of scalars, where <m>a^2 = 0</m> cannot happen
+      unless <m>a=0</m>.
     </p>
     <p>
       Also consider the relationship between <m>u</m> and
@@ -59,33 +63,37 @@
         <mrow>u_3\end{pmatrix} \cdot \begin{pmatrix}u_2v_3 - u_3v_2</mrow>
         <mrow>u_3v_1 - u_1v_3</mrow>
         <mrow>u_1v_2 - u_2v_1\end{pmatrix}</mrow>
-        <mrow>\amp  = u_1u_2v_3 - u_1u_3v_2 + u_2u_3v_1 - u_2u_1v_3 + u_3u_1v_2 - u_3u_2v_1 = 0</mrow>
+        <mrow>\amp  = u_1u_2v_3 - u_1u_3v_2 + u_2u_3v_1 - u_2u_1v_3 +
+          u_3u_1v_2 - u_3u_2v_1 = 0</mrow>
       </md>
     </p>
     <p>
-      A similar calculation shows that <m>v \cdot (u \times v) = 0</m>.
-      Since a dot product of two vectors is zero if and only if the vectors are perpendicular,
-      the vector <m>v \times u</m> is perpendicular to both <m>u</m> and <m>v</m>.
-      This turns out to be a very useful property of the cross product.
+      A similar calculation shows that <m>v \cdot (u \times v) =
+      0</m>. Since a dot product of two vectors is zero if and only
+      if the vectors are perpendicular, the vector <m>v \times u</m>
+      is perpendicular to both <m>u</m> and <m>v</m>. This turns out
+      to be a very useful property of the cross product.
     </p>
     <p>
-      Finally, a calculation from the definition shows that <m>u \times v = -(v \times u)</m>.
-      So far, multiplication of scalars and the dot product of vectors have not depended on order.
-      The cross product is one of many products in mathematics which depends on order.
-      If we change the order of the cross product,
+      Finally, a calculation from the definition shows that <m>u
+      \times v = -(v \times u)</m>. So far, multiplication of scalars
+      and the dot product of vectors have not depended on order. The
+      cross product is one of many products in mathematics which
+      depends on order. If we change the order of the cross product,
       we introduce a negative sign.
     </p>
     <definition>
       <statement>
         <p>
           Products which do not depend on the order of the factors,
-          such as multiplication of scalars and the dot product of vectors,
-          are called <term>commutative products</term>.
-          Products where changing the order of the factors introduces a negative sign are caled
-          <term>anti-commutative products</term>.
-          The cross product is an anti-commutative product.
-          Other products which have neither of these properties are called
-          <term>non-commutative products</term>.
+          such as multiplication of scalars and the dot product of
+          vectors, are called <term>commutative products</term>.
+          Products where changing the order of the factors introduces
+          a negative sign are caled <term>anti-commutative
+          products</term>. The cross product is an anti-commutative
+          product. Other products which have neither of these
+          properties are called <term>non-commutative
+          products</term>.
         </p>
       </statement>
     </definition>
@@ -93,11 +101,14 @@
   <subsection xml:id="angular-motion">
     <title>Angular Motion</title>
     <p>
-      An important application of the cross product is found in describing rotational motion.
-      Linear mechanics describes the motion of an object through space but rotational mechanics describes the rotation of an object independent of its movement through space.
-      A force on an object can cause both kinds of movement,
-      obviously.
-      The following table summarizes the parallel questions of linear motion and rotational motion in <m>\RR^3</m>.
+      An important application of the cross product is found in
+      describing rotational motion. Linear mechanics describes the
+      motion of an object through space but rotational mechanics
+      describes the rotation of an object independent of its movement
+      through space. A force on an object can cause both kinds of
+      movement, obviously. The following table summarizes the
+      parallel questions of linear motion and rotational motion in
+      <m>\RR^3</m>.
     </p>
     <tabular>
       <row>
@@ -139,59 +150,67 @@
       </row>
     </tabular>
     <p>
-      How do we describe torque?
-      If there is a linear force applied to an object which can only rotate around an axis,
-      and if the linear force is applied at a distance <m>r</m> from the axis,
-      we can think of the force <m>F</m> and the distance <m>r</m> as vectors.
-      The torque is then <m>\tau = r \times F</m>.
-      Notice that <m>|\tau| = |r||F| \sin \theta</m>,
-      indicating that linear force perpendicular to the radius gives the greatest angular acceleration.
-      That makes sense.
-      If <m>F</m> and <m>r</m> share a direction,
-      then we are pushing directly along the axis and no rotation can occur.
+      How do we describe torque?  If there is a linear force applied
+      to an object which can only rotate around an axis, and if the
+      linear force is applied at a distance <m>r</m> from the axis, we
+      can think of the force <m>F</m> and the distance <m>r</m> as
+      vectors. The torque is then <m>\tau = r \times F</m>. Notice
+      that <m>|\tau| = |r||F| \sin \theta</m>, indicating that linear
+      force perpendicular to the radius gives the greatest angular
+      acceleration. That makes sense. If <m>F</m> and <m>r</m> share
+      a direction, then we are pushing directly along the axis and no
+      rotation can occur.
     </p>
     <p>
-      The use of cross products in rotational dynamics is extended in many interesting ways.
-      In fluid dynamics,
-      local rotational products of the fluid result in turbulence,
-      vortices and similar effects.
-      Tornadoes and hurricanes are particularly extreme examples of vortices in the fluid which is our atmosphere.
-      All the descriptions of the force and motion of these vortices involve cross products in the vectors describing the fluid.
+      The use of cross products in rotational dynamics is extended in
+      many interesting ways. In fluid dynamics, local rotational
+      products of the fluid result in turbulence, vortices and similar
+      effects. Tornadoes and hurricanes are particularly extreme
+      examples of vortices in the fluid which is our atmosphere. All
+      the descriptions of the force and motion of these vortices
+      involve cross products in the vectors describing the fluid.
     </p>
   </subsection>
   <subsection xml:id="local-direction-vectors">
     <title>Local Direction Vectors</title>
     <p>
-      We've already spoken about the distinction between elements of <m>\RR^n</m> as points and vectors.
-      There is another important subtlety that shows up all throughout vector geometry.
-      In addition to thinking of vectors as directions starting at the origin,
-      we can think of them as directions starting anywhere in <m>\RR^n</m>.
-      We call these local direction vectors.
+      We've already spoken about the distinction between elements of
+      <m>\RR^n</m> as points and vectors. There is another important
+      subtlety that shows up all throughout vector geometry. In
+      addition to thinking of vectors as directions starting at the
+      origin, we can think of them as directions starting anywhere in
+      <m>\RR^n</m>. We call these local direction vectors.
     </p>
     <figure xml:id="local-direction-vectors-diagram">
       <caption>Local Direction Vectors</caption>
       <image width="100%" source="images/figure8.svg" />
     </figure>
     <p>
-      For example,
-      as pictured in <xref ref="local-direction-vectors">Figure</xref>,
-      at the point <img src="MISSINGFILE" width="400" /> in <m>\RR^2</m>,
-      we could think of the local directions <img src="MISSINGFILE" width="400" /> or <img src="MISSINGFILE" width="400" /> . These are not directions starting from the origin,
-      but starting from <img src="MISSINGFILE" width="400" />
-      <em>as if that were the origin</em>.
+      For example, as pictured in <xref
+      ref="local-direction-vectors">Figure</xref>, at the point
+      <m>\begin{pmatrix} 2 \\ 3 \end{pmatrix} \in \RR^2</m>, we could
+      think of the local directions <m>\begin{pmatrix} 1 \\ 0
+      \end{\pmatrix}</m> or <m>\begin{pmatrix} 0 \\ 1
+      \end{\pmatrix}</m>. These are not directions starting from the
+      origin, but starting from <m>\begin{pmatrix} 2 \\ 2
+      \end{pmatrix}</m> <em>as if that were the origin</em>.
     </p>
     <p>
-      Using vectors to define local directions is a particularly useful tool.
-      A standard example is camera location in a three dimensional virtual environment.
-      First, you need to know the location of the camera,
-      which is an ordinary vector starting from the origin.
-      Second, you need to know what direction the camera is pointing,
-      which is a local direction vector which treats the camera location as the current origin.
+      Using vectors to define local directions is a particularly
+      useful tool. A standard example is camera location in a three
+      dimensional virtual environment. First, you need to know the
+      location of the camera, which is an ordinary vector starting
+      from the origin. Second, you need to know what direction the
+      camera is pointing, which is a local direction vector which
+      treats the camera location as the current origin.
     </p>
     <p>
-      One of the most difficult things about learning vector geometry is becoming accustomed to local direction vectors.
-      We don't always carefully distinguish between vectors at the origin and local direction vectors;
-      often, the difference is implied and it is up to the reader/student to figure out how the vectors are being used.
+      One of the most difficult things about learning vector geometry
+      is becoming accustomed to local direction vectors. We don't
+      always carefully distinguish between vectors at the origin and
+      local direction vectors; often, the difference is implied and it
+      is up to the reader/student to figure out how the vectors are
+      being used.
     </p>
   </subsection>
   <subsection xml:id="projections">
@@ -204,7 +223,9 @@
       <statement>
         <p>
           Let <m>u</m> and <m>v</m> be two vectors in <m>\RR^n</m>.
-          The <term>projection</term> of <m>u</m> onto <m>v</m> is a scalar multiple of the vector <m>v</m> given by the following formula.
+          The <term>projection</term> of <m>u</m> onto <m>v</m> is a
+          scalar multiple of the vector <m>v</m> given by the
+          following formula.
           <me>
             \Proj_v u = \left( \frac{u \cdot v}{|v|^2} \right) v
           </me>
@@ -212,17 +233,17 @@
       </statement>
     </definition>
     <p>
-      Note that the bracketed term involves the dot product and the norm,
-      so it is a scalar.
-      Therefore, the result is a multiple of the vector <m>v</m>.
-      Projection is best visualized as the shadow of the vector <m>u</m> on the the vector <m>v</m>.
+      Note that the bracketed term involves the dot product and the
+      norm, so it is a scalar. Therefore, the result is a multiple of
+      the vector <m>v</m>. Projection is best visualized as the
+      shadow of the vector <m>u</m> on the the vector <m>v</m>.
     </p>
     <definition>
       <statement>
         <p>
           Let <m>u</m> and <m>v</m> be two vectors in <m>\RR^n</m>.
-          The part of <m>u</m> which is <term>perpendicular</term>
-          to <m>v</m> is given by the following formula.
+          The part of <m>u</m> which is <term>perpendicular</term> to
+          <m>v</m> is given by the following formula.
           <me>
             \Perp_v u = u - \Proj_v u
           </me>
@@ -230,22 +251,24 @@
       </statement>
     </definition>
     <p>
-      We can rearrange the previous definition to solve for the original vector <m>u</m>.
+      We can rearrange the previous definition to solve for the
+      original vector <m>u</m>.
       <me>
         u = \Proj_v u + \Perp_v u
       </me>
     </p>
     <p>
-      For any vector <m>v</m>,
-      every vector <m>u</m> can be decomposed into a sum of two unique vectors:
-      one in the direction of <m>v</m> and one perpendicular to <m>v</m>.
-      If <m>u</m> and <m>v</m> are already perpendicular,
-      then the projection term is the zero vector.
-      If <m>u</m> is a multple of <m>v</m>,
-      then the perpendicular term is the zero vector.
-      We think of this decomposition as capturing two pieces of the vector <m>u</m>:
-      the part that aligns with the direction of <m>v</m> and the part that has nothing to do with the direction of <m>v</m>.
-      A vectors with its projection and perpendicular onto another vector is shows in <xref ref="projections">Figure</xref>.
+      For any vector <m>v</m>, every vector <m>u</m> can be decomposed
+      into a sum of two unique vectors: one in the direction of
+      <m>v</m> and one perpendicular to <m>v</m>. If <m>u</m> and
+      <m>v</m> are already perpendicular, then the projection term is
+      the zero vector. If <m>u</m> is a multple of <m>v</m>, then the
+      perpendicular term is the zero vector. We think of this
+      decomposition as capturing two pieces of the vector <m>u</m>:
+      the part that aligns with the direction of <m>v</m> and the part
+      that has nothing to do with the direction of <m>v</m>. A
+      vectors with its projection and perpendicular onto another
+      vector is shows in <xref ref="projections">Figure</xref>.
     </p>
   </subsection>
 </section>

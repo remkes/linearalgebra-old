@@ -3,76 +3,79 @@
   <subsection xml:id="span_definitions">
     <title>Definitions</title>
     <p>
-      In addition to presenting the second description of linear subspaces,
-      this chapter also introduces linear combinations,
-      span and linear (in)dependence.
-      These are some of the most important and central definition in linear algebra.
+      In addition to presenting the second description of linear
+      subspaces, this chapter also introduces linear combinations,
+      span and linear (in)dependence. These are some of the most
+      important and central definition in linear algebra.
     </p>
     <definition>
       <statement>
         <p>
-          A <term>linear combination</term>
-          of a set of vectors <m>\{v_1, v_2, \ldots,
-          v_k\}</m> is a sum of the form
-          <m>a_1 v_1 + a_2 v_2 + \ldots a_k v_k</m> where the <m>a_i \in \RR</m>.
+          A <term>linear combination</term> of a set of vectors
+          <m>\{v_1, v_2, \ldots, v_k\}</m> is a sum of the form <m>a_1
+          v_1 + a_2 v_2 + \ldots a_k v_k</m> where the <m>a_i \in
+          \RR</m>.
         </p>
       </statement>
     </definition>
     <definition>
       <statement>
         <p>
-          The <term>span</term> of a set of vectors
-          <m>\{v_1, v_2, \ldots,
-          v_k\}</m>, written <m>\Span \{v_1, v_2, \ldots, v_k\}</m>,
-          is the set of <term>all</term> linear combinations of the vectors.
+          The <term>span</term> of a set of vectors <m>\{v_1, v_2,
+          \ldots, v_k\}</m>, written <m>\Span \{v_1, v_2, \ldots,
+          v_k\}</m>, is the set of <term>all</term> linear
+          combinations of the vectors.
         </p>
       </statement>
     </definition>
     <p>
-      After loci, spans are the second way of defining linear subspaces.
-      Span are never affine:
-      since linear combinations allow for all the coefficients <m>a_i</m> to be zero,
-      spans always include the origin.
-      To use spans to define affine subspaces,
-      we have to add an offset vector.
+      After loci, spans are the second way of defining linear
+      subspaces. Span are never affine: since linear combinations
+      allow for all the coefficients <m>a_i</m> to be zero, spans
+      always include the origin. To use spans to define affine
+      subspaces, we have to add an offset vector.
     </p>
     <definition>
       <statement>
         <p>
-          An <term>offset span</term> is an affine subspace formed by adding a fixed vector <m>u</m>,
-          called the <term>offset vector</term>,
-          to the span of some set of vectors.
+          An <term>offset span</term> is an affine subspace formed by
+          adding a fixed vector <m>u</m>, called the <term>offset
+          vector</term>, to the span of some set of vectors.
         </p>
       </statement>
     </definition>
     <p>
-      Loci are built top-down,
-      by starting with the ambient space and reducing the number of points by imposing restrictions in the form of linear equations.
-      Their dimension, at least ideally,
-      is the dimension of the ambient space minus the number of equations or restrictions.
-      Spans, on the other hand, are built bottom-up.
-      They start with a number of vectors and take all linear combinations:
-      more starting vectors leads to more independent directions and a larger dimension.
+      Loci are built top-down, by starting with the ambient space and
+      reducing the number of points by imposing restrictions in the
+      form of linear equations. Their dimension, at least ideally, is
+      the dimension of the ambient space minus the number of equations
+      or restrictions. Spans, on the other hand, are built bottom-up.
+      They start with a number of vectors and take all linear
+      combinations: more starting vectors leads to more independent
+      directions and a larger dimension.
     </p>
     <p>
       In particular, the span of one non-zero vector is the line
-      (through the origin)
-      consisting of all multiples of that vector.
+      (through the origin) consisting of all multiples of that vector.
       Similarly, we expect the span of two vectors to be a plane.
-      However, here we have the same problem as we had with loci:
-      we may have redundant information.
-      For example, in <m>\RR^2</m>,
-      we could consider the span <m>\Span</m><img src="MISSINGFILE" width="400" /> . We would hope the span of two vectors would be the entire plane,
-      but this is just the line in the direction <img src="MISSINGFILE" width="400" /> . The vector <img src="MISSINGFILE" width="400" /> , since it is already a multiple of <img src="MISSINGFILE" width="400" /> , is redundant.
+      However, here we have the same problem as we had with loci: we
+      may have redundant information. For example, in <m>\RR^2</m>,
+      we could consider the span <m>\Span \left\{ \begin{pmatrix} 1 \\
+      2 \end{pmatrix}, \begin{pmatrix} 2 \\ 4 \end{pmatrix}
+      \right\}</m>. We would hope the span of two vectors would be the
+      entire plane, but this is just the line in the direction
+      <m>\begin{pmatrix} 1 \\ 2 \end{pmatrix}</m> . The vector
+      <m>\begin{pmatrix} 2 \\ 4 \end{pmatrix}</m> , since it is
+      already a multiple of <m>\begin{pmatrix} 1 \\ 2
+      \end{pmatrix}</m> , is redundant.
     </p>
     <p>
-      The problem is magnified in higher dimensions.
-      If we have the span of a large number of vectors in <m>\RR^n</m>,
-      it is nearly impossible to tell,
-      at a glance, whether any of the vectors are redundant.
-      We would like to have tools to determine this redundancy.
-      As with the tools for dimensions of loci,
-      we have to wait until a later section of these notes.
+      The problem is magnified in higher dimensions. If we have the
+      span of a large number of vectors in <m>\RR^n</m>, it is nearly
+      impossible to tell, at a glance, whether any of the vectors are
+      redundant. We would like to have tools to determine this
+      redundancy. As with the tools for dimensions of loci, we have
+      to wait until a later section of these notes.
     </p>
   </subsection>
   <subsection xml:id="dimension-and-basis">
@@ -80,102 +83,114 @@
     <definition>
       <statement>
         <p>
-          A set of vectors <m>\{v_1, v_2, \ldots,
-          v_k\}</m> in <m>\RR^n</m> is called
-          <term>linearly independent</term> if the equation
+          A set of vectors <m>\{v_1, v_2, \ldots, v_k\}</m> in
+          <m>\RR^n</m> is called <term>linearly independent</term> if
+          the equation
           <me>
             a_1 v_1 + a_2 v_2 + a_3 v_3 + \ldots + a_k v_k = 0
           </me>
-          has only the trivial solution:
-          for all <m>i</m>, <m>a_i = 0</m>.
-          If a set of vectors isn't linearly independent,
-          it is called <term>linearly dependant</term>.
+          has only the trivial solution: for all <m>i</m>, <m>a_i =
+          0</m>. If a set of vectors isn't linearly independent, it
+          is called <term>linearly dependant</term>.
         </p>
       </statement>
     </definition>
     <p>
-      This may seem like a strange definition,
-      but it algebraically captures the idea of independent directions.
-      A set of vectors is linearly independent if all of them point in fundamentally different directions.
-      We could also say that a set of vectors is linearly independent if no vector is in the span of the other vectors.
-      No vector is a redundant piece of information;
-      if we remove any vectors, the span of the set gets smaller.
+      This may seem like a strange definition, but it algebraically
+      captures the idea of independent directions. A set of vectors
+      is linearly independent if all of them point in fundamentally
+      different directions. We could also say that a set of vectors
+      is linearly independent if no vector is in the span of the other
+      vectors. No vector is a redundant piece of information; if we
+      remove any vectors, the span of the set gets smaller.
     </p>
     <p>
-      In order for a set like this to be linearly independent,
-      we need <m>k \leq n</m>.
-      <m>\RR^n</m> has only <m>n</m> independent directions,
-      so it is impossible to have more than <m>n</m> linearly independent vectors in <m>\RR^n</m>.
-    </p>
-    <definition>
-      <statement>
-        <p>
-          Let <m>L</m> be a linear subspace of <m>\RR^n</m>.
-          Then <m>L</m> has <term>dimension k</term>
-          if <m>L</m> can be written as the span of <m>k</m> linearly independent vectors.
-        </p>
-      </statement>
-    </definition>
-    <definition>
-      <statement>
-        <p>
-          Let <m>A</m> be an affine subspace of <m>\RR^n</m> and write <m>A</m> as
-          <m>A = u + L</m> for <m>L</m> a linear subspace and <m>u</m> a offset vector.
-          Then <m>A</m> has <term>dimension k</term>
-          if <m>L</m> has dimension <m>k</m>.
-        </p>
-      </statement>
-    </definition>
-    <p>
-      This is the proper,
-      complete definition of dimension for linear and affine spaces.
-      It solves the problem of redundant information
-      (either redundant equations for loci or redundant vectors for spans)
-      by insisting on a linearly independent spanning set.
+      In order for a set like this to be linearly independent, we need
+      <m>k \leq n</m>. <m>\RR^n</m> has only <m>n</m> independent
+      directions, so it is impossible to have more than <m>n</m>
+      linearly independent vectors in <m>\RR^n</m>.
     </p>
     <definition>
       <statement>
         <p>
-          Let <m>L</m> be a linear subspace of <m>\RR^n</m>.
-          A <term>basis</term> for <m>L</m> is a minimal spanning set;
-          that is, a set of linearly independent vectors which span <m>L</m>.
+          Let <m>L</m> be a linear subspace of <m>\RR^n</m>. Then
+          <m>L</m> has <term>dimension k</term> if <m>L</m> can be
+          written as the span of <m>k</m> linearly independent
+          vectors.
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> be an affine subspace of <m>\RR^n</m> and write
+          <m>A</m> as <m>A = u + L</m> for <m>L</m> a linear subspace
+          and <m>u</m> a offset vector. Then <m>A</m> has
+          <term>dimension k</term> if <m>L</m> has dimension
+          <m>k</m>.
         </p>
       </statement>
     </definition>
     <p>
-      Since a span is the set of all linear combinations,
-      we can think of a basis as as way of writing the vectors of <m>L</m>:
-      every vector in <m>L</m> can be written as a linear combination of the basis vectors.
-      A basis gives a nice way to account for all the vectors in <m>L</m>.
+      This is the proper, complete definition of dimension for linear
+      and affine spaces. It solves the problem of redundant
+      information (either redundant equations for loci or redundant
+      vectors for spans) by insisting on a linearly independent
+      spanning set.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>L</m> be a linear subspace of <m>\RR^n</m>. A
+          <term>basis</term> for <m>L</m> is a minimal spanning set;
+          that is, a set of linearly independent vectors which span
+          <m>L</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Since a span is the set of all linear combinations, we can think
+      of a basis as as way of writing the vectors of <m>L</m>: every
+      vector in <m>L</m> can be written as a linear combination of the
+      basis vectors. A basis gives a nice way to account for all the
+      vectors in <m>L</m>.
     </p>
     <p>
-      Linear subspaces have many
-      (infinitely many)
-      different bases.
+      Linear subspaces have many (infinitely many) different bases.
       There are some standard choices.
     </p>
     <definition>
       <statement>
         <p>
-          The <term>standard basis</term> of <m>\RR^2</m> is composed of the two unit vectors in the positive <m>x</m> and <m>y</m> directions.
-          We can write any vector as a linear combination of the basis vectors.
+          The <term>standard basis</term> of <m>\RR^2</m> is composed
+          of the two unit vectors in the positive <m>x</m> and
+          <m>y</m> directions. We can write any vector as a linear
+          combination of the basis vectors.
           <men>
-            e_1 = \begin{pmatrix}1\\0\end{pmatrix} \hspace{2cm} e_2 = \begin{pmatrix}0\\1\end{pmatrix} \begin{pmatrix}x\\y\end{pmatrix} = x e_1 + y e_2
+            e_1 = \begin{pmatrix}1\\0\end{pmatrix} \hspace{2cm} e_2 =
+            \begin{pmatrix}0\\1\end{pmatrix}
+            \begin{pmatrix}x\\y\end{pmatrix} = x e_1 + y e_2
           </men>
         </p>
         <p>
-          The <term>standard basis</term> of <m>\RR^3</m> is composed of the three unit vectors in the positive <m>x</m>,
-          <m>y</m> and <m>z</m> directions.
-          We can again write any vector as a linear combination of the basis vectors.
+          The <term>standard basis</term> of <m>\RR^3</m> is composed
+          of the three unit vectors in the positive <m>x</m>, <m>y</m>
+          and <m>z</m> directions. We can again write any vector as a
+          linear combination of the basis vectors.
           <men>
-            e_1 = \begin{pmatrix}1\\0\\0\end{pmatrix} \hspace{1cm} e_2 = \begin{pmatrix}0\\1\\0\end{pmatrix} \hspace{1cm} e_3 = \begin{pmatrix}0\\0\\1\end{pmatrix} \begin{pmatrix}x\\y\\z\end{pmatrix} = x e_1 + y e_2 + z e_3
+            e_1 = \begin{pmatrix}1\\0\\0\end{pmatrix} \hspace{1cm} e_2
+            = \begin{pmatrix}0\\1\\0\end{pmatrix} \hspace{1cm} e_3 =
+            \begin{pmatrix}0\\0\\1\end{pmatrix}
+            \begin{pmatrix}x\\y\\z\end{pmatrix} = x e_1 + y e_2 + z
+            e_3
           </men>
         </p>
         <p>
-          The <term>standard basis</term> of <m>\RR^n</m> is composed of vectors
-          <m>e_1, e_2, \ldots,
-          e_n</m> where <m>e_i</m> has a <m>1</m> in the <m>i</m>th component and zeroes in all other components.
-          <m>e_i</m> is the unit vector in the positive <m>i</m>th axis direction.
+          The <term>standard basis</term> of <m>\RR^n</m> is composed
+          of vectors <m>e_1, e_2, \ldots, e_n</m> where <m>e_i</m> has
+          a <m>1</m> in the <m>i</m>th component and zeroes in all
+          other components. <m>e_i</m> is the unit vector in the
+          positive <m>i</m>th axis direction.
         </p>
       </statement>
     </definition>

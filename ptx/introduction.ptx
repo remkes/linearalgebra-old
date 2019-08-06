@@ -3,65 +3,68 @@
   <subsection xml:id="model">
     <title>Pedagogical Model</title>
     <p>
-      This courses uses a pedagogical model known either as blended learning or the flipped classroom.
-      In this model,
-      the majority of the content will be delivered outside of class time through two avenues:
-      these notes and a series of short videos.
-      You will be required to watch one of the short videos before most class periods.
-      We will begin each lecture period assuming you have watched the required video.
+      This courses uses a pedagogical model known either as blended
+      learning or the flipped classroom. In this model, the majority
+      of the content will be delivered outside of class time through
+      two avenues: these notes and a series of short videos. You will
+      be required to watch one of the short videos before most class
+      periods. We will begin each lecture period assuming you have
+      watched the required video.
     </p>
     <p>
       The videos are used to introduce the main ideas of the course.
-      They are the explanation.
-      Matched with each video will be a short section of notes.
-      The notes are provided for reference,
-      so that after you've watched the video,
-      you can use the notes to remind yourself of the content and refer to useful ideas,
-      concepts and formulae.
-      The notes are not primarily written to explain the material;
-      instead, they are written to provide a record of the ideas in the video for your reference.
-      The notes are light on examples.
-      The lecture time will be mostly devoted to necessary practice and examples.
+      They are the explanation. Matched with each video will be a
+      short section of notes. The notes are provided for reference,
+      so that after you've watched the video, you can use the notes to
+      remind yourself of the content and refer to useful ideas,
+      concepts and formulae. The notes are not primarily written to
+      explain the material; instead, they are written to provide a
+      record of the ideas in the video for your reference. The notes
+      are light on examples. The lecture time will be mostly devoted
+      to necessary practice and examples.
     </p>
     <p>
-      The course is organized into twenty-two lectures;
-      the videos and the activities are numbered to match these lectures.
-      There is a detailed schedule on the course website showing when the various lectures happen over the term.
-      Please use this schedule to ensure you watch the appropriate videos before class and bring the appropriate sections of the notes.
+      The course is organized into twenty-two lectures; the videos and
+      the activities are numbered to match these lectures. There is a
+      detailed schedule on the course website showing when the various
+      lectures happen over the term. Please use this schedule to
+      ensure you watch the appropriate videos before class and bring
+      the appropriate sections of the notes.
     </p>
   </subsection>
   <subsection xml:id="resources">
     <title>Other Resources</title>
     <p>
-      In addition to the notes associated to each lecture,
-      there are a number of other resources which are distributed via the course website.
-      These resources have been developed to assist you,
-      so please make use of them.
+      In addition to the notes associated to each lecture, there are a
+      number of other resources which are distributed via the course
+      website. These resources have been developed to assist you, so
+      please make use of them.
       <ul>
         <li>
           <p>
-            A complete formula sheet.
-            All of the basic formulas and rules for calculation are included on this sheet.
-            There are sections on algebra,
-            trigonometry, derivatives and integrals.
-            Later in the document are some pieces of linear algebra reference as well.
+            A complete formula sheet. All of the basic formulas and
+            rules for calculation are included on this sheet. There
+            are sections on algebra, trigonometry, derivatives and
+            integrals. Later in the document are some pieces of
+            linear algebra reference as well.
           </p>
         </li>
         <li>
           <p>
-            A notation reference.
-            This reference covers a number of notations used in the course which may be unfamiliar.
+            A notation reference. This reference covers a number of
+            notations used in the course which may be unfamiliar.
           </p>
         </li>
         <li>
           <p>
-            A course outcomes sheet.
-            This was originally developed as a study aid for students.
-            It summarizes the main definitions and concepts of the course,
-            as well as the types of questions your will encounter on assignments and exams.
-            In particular, it gives a guide to the material on the exam.
-            If you want to know whether a definition,
-            topic or type of problem might show up on the exam, consult this sheet.
+            A course outcomes sheet. This was originally developed as
+            a study aid for students. It summarizes the main
+            definitions and concepts of the course, as well as the
+            types of questions your will encounter on assignments and
+            exams. In particular, it gives a guide to the material on
+            the exam. If you want to know whether a definition, topic
+            or type of problem might show up on the exam, consult this
+            sheet.
           </p>
         </li>
       </ul>
@@ -70,13 +73,16 @@
   <subsection xml:id="philosophy">
     <title>Perspectives and Philosophy</title>
     <p>
-      In addition to the strictly mathematical material of the course, I will try to share some ideas which give perspective and context to mathematics.
-      This include the philosophy of mathematics,
-      the aesthetics of mathematics,
-      and how our own worldview and assumptions influence mathematical thought.
-      Linear algebra is perhaps the most abstract mathematical course offered at King's;
-      at least, it offers the most oppotunity for abstract thinking.
-      Therefore, I use this course as a venue for talking about abstraction in the context of perspectives and philosophy.
+      In addition to the strictly mathematical material of the course,
+      I will try to share some ideas which give perspective and
+      context to mathematics. This include the philosophy of
+      mathematics, the aesthetics of mathematics, and how our own
+      worldview and assumptions influence mathematical thought.
+      Linear algebra is perhaps the most abstract mathematical course
+      offered at King's; at least, it offers the most oppotunity for
+      abstract thinking. Therefore, I use this course as a venue for
+      talking about abstraction in the context of perspectives and
+      philosophy.
     </p>
   </subsection>
 </section>
