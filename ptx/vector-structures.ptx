@@ -14,7 +14,7 @@
         <p>
           Let <m>u = \begin{pmatrix} u_1 \\ u_2 \\ u_3
           \end{pmatrix}</m> and <m>v = \begin{pmatrix} v_1 \\ v_2 \\
-          v_3 \end\pmatrix}</m> be two vectors in <m>\RR^3</m>. The
+          v_3 \end{pmatrix}</m> be two vectors in <m>\RR^3</m>. The
           <term>cross product</term> of <m>u</m> and <m>v</m> is
           written <m>u \times v</m> and defined by the following
           formula.
@@ -183,15 +183,15 @@
     </p>
     <figure xml:id="local-direction-vectors-diagram">
       <caption>Local Direction Vectors</caption>
-      <image width="100%" source="images/figure8.svg" />
+      <image width="85%" source="images/figure8.svg" />
     </figure>
     <p>
       For example, as pictured in <xref
       ref="local-direction-vectors">Figure</xref>, at the point
       <m>\begin{pmatrix} 2 \\ 3 \end{pmatrix} \in \RR^2</m>, we could
       think of the local directions <m>\begin{pmatrix} 1 \\ 0
-      \end{\pmatrix}</m> or <m>\begin{pmatrix} 0 \\ 1
-      \end{\pmatrix}</m>. These are not directions starting from the
+      \end{pmatrix}</m> or <m>\begin{pmatrix} 0 \\ 1
+      \end{pmatrix}</m>. These are not directions starting from the
       origin, but starting from <m>\begin{pmatrix} 2 \\ 2
       \end{pmatrix}</m> <em>as if that were the origin</em>.
     </p>
@@ -217,7 +217,7 @@
     <title>Projections</title>
     <figure xml:id="projections-diagram">
       <caption>Projection and Perpendicular Vectors</caption>
-      <image width="100%" source="images/figure9.svg" />
+      <image width="85%" source="images/figure9.svg" />
     </figure>
     <definition>
       <statement>

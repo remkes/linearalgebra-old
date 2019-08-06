@@ -100,10 +100,14 @@
     </p>
     <p>
       Now that we have a new operation, it is useful to see how it
-      interact with previously defined structure. The following list
+      interact with previously defined structures. The following list
       shows some interactions between addition, scalar multiplication,
       length and the dot product. Some of these are easy to establish
-      from the definition and some take more work.
+      from the definition and some take more work. I've labeled some
+      of these as `commutative' and `distributative'. Recall that an
+      operation is commutative if the order can be reverse and
+      distributive (over addition) if it can be applied to both piece
+      of a sum seperately. 
     </p>
     <proposition>
       <statement>
@@ -111,15 +115,18 @@
           Let <m>u,v,w</m> be vectors in <m>\RR^n</m> and let <m>a</m>
           be a scalar in <m>\RR</m>.
           <men>
-            \begin{array}{rll} u + v \amp  = v + u \amp  \hspace{1cm}
-            \text{ Commutative Law for Vector Addition }  \\ a (u+v)
-            \amp  = au + av \amp  \hspace{1cm} \text{ Distributive Law
-            for Scalar Multiplication } \\ u \cdot v \amp  = v \cdot u
-            \amp  \hspace{1cm} \text{ Commutative Law for the Dot
-            Product } \\ u \cdot u \amp  = |u|^2 \amp  \\ u \cdot
-            (v+w) \amp  = u \cdot v + u \cdot w \amp  \hspace{1cm}
-            \text{ Distributive Law for the Dot Product } \\ u \cdot
-            (av) \amp  = (au) \cdot v = a (u \cdot v) \end{array}
+            \begin{array}{rll} 
+            u + v \amp = v + u \amp \hspace{1cm}
+            \text{Commutative} \\ 
+            a (u+v) \amp = au + av \amp \hspace{1cm} 
+            \text{Distributive} \\ 
+            u \cdot v \amp = v \cdot u \amp \hspace{1cm}
+            \text{Commutative} \\ 
+            u \cdot u \amp = |u|^2 \amp \\ 
+            u \cdot (v+w) \amp = u \cdot v + u \cdot w \amp \hspace{1cm}
+            \text{Distributive} \\ 
+            u \cdot (av) \amp = (au) \cdot v = a (u \cdot v)
+            \end{array}
           </men>
         </p>
       </statement>
@@ -146,7 +153,7 @@
     </proposition>
     <figure xml:id="the-cosine-law">
       <caption>The Cosine Law</caption>
-      <image width="100%" source="images/figure7.svg" />
+      <image width="85%" source="images/figure7.svg" />
     </figure>
   </subsection>
 </section>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <docinfo>
-    <xi:include href="./macros.xml" />  
+    <xi:include href="./macros.ptx" />  
     <latex-image-preamble>
       \usepackage{tikz}
       \usepackage{tkz-graph}
