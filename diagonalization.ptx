@@ -88,7 +88,7 @@
         <md>
           <mrow>
           \amp D = \begin{pmatrix} 4 \amp 0 \\ 0 \amp -2 \end{pmatrix}
-          \right) \amp \amp S = \frac{1}{\sqrt{2}} \begin{pmatrix} 1
+          \amp \amp S = \frac{1}{\sqrt{2}} \begin{pmatrix} 1
           \amp 1 \\ -1 \amp 1 \end{pmatrix}
           </mrow>
         </md>

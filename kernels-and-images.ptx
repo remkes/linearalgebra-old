@@ -54,21 +54,21 @@
           vectors are the columns of the matrix.
           <md>
             <mrow>
-              \begin{patrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
-              -4 \amp -1 \amp 2 \end{pmatrix} \begin{patrix} 1 \\ 0 \\
-              0 \end{pmatrix} = \begin{patrix} -2 \\ 7 \\ -4
+              \begin{pmatrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
+              -4 \amp -1 \amp 2 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\
+              0 \end{pmatrix} = \begin{pmatrix} -2 \\ 7 \\ -4
               \end{pmatrix}
             </mrow>
             <mrow>
-              \begin{patrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
-              -4 \amp -1 \amp 2 \end{pmatrix} \begin{patrix} 0 \\ 1 \\
-              0 \end{pmatrix} = \begin{patrix} -2 \\ -3 \\ -1
+              \begin{pmatrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
+              -4 \amp -1 \amp 2 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\
+              0 \end{pmatrix} = \begin{pmatrix} -2 \\ -3 \\ -1
               \end{pmatrix}
             </mrow>
             <mrow>
-              \begin{patrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
-              -4 \amp -1 \amp 2 \end{pmatrix} \begin{patrix} 0 \\ 0 \\
-              1 \end{pmatrix} = \begin{patrix} 0 \\ 2 \\ 2
+              \begin{pmatrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
+              -4 \amp -1 \amp 2 \end{pmatrix} \begin{pmatrix} 0 \\ 0 \\
+              1 \end{pmatrix} = \begin{pmatrix} 0 \\ 2 \\ 2
               \end{pmatrix}
             </mrow>
           </md>

@@ -125,8 +125,8 @@
           evaluates to <m>0</m> whenever <m>i \neq j</m> and <m>1</m>
           whenever <m>i=j</m>.
           <me>
-            \delta_{ij} = \begin{pmatrix} 0 \amp i \neq j \\ 1
-            \amp i = j \end{pmatrix} 
+            \delta_{ij} = \begin{cases} 0 \amp i \neq j \\ 1
+            \amp i = j \end{cases} 
           </me>
         </p>
       </statement>
