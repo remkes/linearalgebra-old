@@ -166,24 +166,24 @@
           of the two unit vectors in the positive <m>x</m> and
           <m>y</m> directions. We can write any vector as a linear
           combination of the basis vectors.
-          <men>
-            e_1 = \begin{pmatrix}1\\0\end{pmatrix} \hspace{2cm} e_2 =
-            \begin{pmatrix}0\\1\end{pmatrix}
-            \begin{pmatrix}x\\y\end{pmatrix} = x e_1 + y e_2
-          </men>
+          <me>
+            e_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \hspace{2cm}
+            e_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \begin{pmatrix}
+            x \\ y \end{pmatrix} = x e_1 + y e_2
+          </me>
         </p>
         <p>
           The <term>standard basis</term> of <m>\RR^3</m> is composed
           of the three unit vectors in the positive <m>x</m>, <m>y</m>
           and <m>z</m> directions. We can again write any vector as a
           linear combination of the basis vectors.
-          <men>
-            e_1 = \begin{pmatrix}1\\0\\0\end{pmatrix} \hspace{1cm} e_2
-            = \begin{pmatrix}0\\1\\0\end{pmatrix} \hspace{1cm} e_3 =
-            \begin{pmatrix}0\\0\\1\end{pmatrix}
-            \begin{pmatrix}x\\y\\z\end{pmatrix} = x e_1 + y e_2 + z
-            e_3
-          </men>
+          <me>
+            e_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}
+            \hspace{1cm} e_2 = \begin{pmatrix} 0 \\ 1 \\ 0
+            \end{pmatrix} \hspace{1cm} e_3 = \begin{pmatrix} 0 \\ 0 \\
+            1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+            = x e_1 + y e_2 + z e_3
+          </me>
         </p>
         <p>
           The <term>standard basis</term> of <m>\RR^n</m> is composed

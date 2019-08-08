@@ -68,18 +68,24 @@
           Therefore, we should be able to find number <m>a</m> and
           <m>b</m> in the following equation.
           <me>
-            \begin{pmatrix}-4\\-4\\7\end{pmatrix} = a
-            \begin{pmatrix}-2\\1\\-1\end{pmatrix} + b
-            \begin{pmatrix}0\\-2\\3\end{pmatrix}
+            \begin{pmatrix} -4 \\ -4 \\ 7 \end{pmatrix} = a
+            \begin{pmatrix} -2 \\ 1 \\ -1 \end{pmatrix} + b
+            \begin{pmatrix} 0 \\ -2 \\ 3 \end{pmatrix}
           </me>
         </p>
         <p>
           Let's write each components of this vector equation
           seperately.
           <md>
-            <mrow>-4 \amp  = -2a + 0b</mrow>
-            <mrow>-4 \amp  = a + (-2)b</mrow>
-            <mrow>7 \amp  = -1a + 3b</mrow>
+            <mrow>
+              -4 \amp  = -2a + 0b
+            </mrow>
+            <mrow>
+              -4 \amp  = a + (-2)b
+            </mrow>
+            <mrow>
+              7 \amp  = -1a + 3b
+            </mrow>
           </md>
         </p>
         <p>
@@ -89,9 +95,9 @@
           reduction. In this case, the linear system is solved by
           <m>a = 2</m> and <m>b=3</m>.
           <me>
-            \begin{pmatrix}-4\\-4\\7\end{pmatrix} = 2
-            \begin{pmatrix}-2\\1\\-1\end{pmatrix} + 3
-            \begin{pmatrix}0\\-2\\3\end{pmatrix}
+            \begin{pmatrix} -4 \\ -4 \\ 7 \end{pmatrix} = 2
+            \begin{pmatrix} -2 \\ 1 \\ -1 \end{pmatrix} + 3
+            \begin{pmatrix} 0 \\ -2 \\ 3 \end{pmatrix}
           </me>
         </p>
       </statement>
@@ -124,25 +130,31 @@
           for constants <m>a</m>, <m>b</m> and <m>c</m> that solve
           this vector equation.
           <me>
-            \begin{pmatrix}1\\1\\2\end{pmatrix} = a
-            \begin{pmatrix}4\\-1\\-1\end{pmatrix} + b
-            \begin{pmatrix}-2\\0\\-3\end{pmatrix} + c
-            \begin{pmatrix}0\\2\\7\end{pmatrix}
+            \begin{pmatrix} 1 \\ 1 \\ 2 \end{pmatrix} = a
+            \begin{pmatrix} 4 \\ -1 \\ -1 \end{pmatrix} + b
+            \begin{pmatrix} -2 \\ 0 \\ -3 \end{pmatrix} + c
+            \begin{pmatrix} 0 \\ 2 \\ 7 \end{pmatrix}
           </me>
         </p>
         <p>
           Writen in components, this gives the following linear system.
           <md>
-            <mrow>3a - 2b + 0c \amp  = 1</mrow>
-            <mrow>-a + 0b + 2c \amp  = 1</mrow>
-            <mrow>-a + 3b + 7c \amp  = 2</mrow>
+            <mrow>
+              3a - 2b + 0c \amp  = 1
+            </mrow>
+            <mrow>
+              -a + 0b + 2c \amp  = 1
+            </mrow>
+            <mrow>
+              -a + 3b + 7c \amp  = 2
+            </mrow>
           </md>
         </p>
         <p>
           We translate this into a matrix.
           <me>
-            \left( \begin{array}{ccc|c} 3 \amp  -2 \amp  0 \amp  1 \\
-            -1 \amp  0 \amp  2 \amp  1 \\ -1 \amp  3 \amp  7 \amp  2
+            \left( \begin{array}{ccc|c} 3 \amp -2 \amp 0 \amp 1 \\
+            -1 \amp 0 \amp 2 \amp 1 \\ -1 \amp 3 \amp 7 \amp 2
             \end{array} \right)
           </me>
         </p>
@@ -150,21 +162,21 @@
           We row reduce this matrix to get the reduced row-echelon
           form.
           <me>
-            \left( \begin{array}{ccc|c} 1 \amp  0 \amp  0 \amp  0 \\ 0
-            \amp  1 \amp  0 \amp  \frac{1}{2} \\ 0 \amp  0 \amp  1
-            \amp  \frac{1}{2} \end{array} \right)
+            \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp 0 \\ 0
+            \amp 1 \amp 0 \amp \frac{1}{2} \\ 0 \amp 0 \amp 1
+            \amp \frac{1}{2} \end{array} \right)
           </me>
         </p>
         <p>
           We read that <m>a=0</m>, <m>b=\frac{1}{2}</m> and <m>c =
           \frac{1}{2}</m>.
           <me>
-            \begin{pmatrix}1\\1\\2\end{pmatrix} = 0
-            \begin{pmatrix}3\\-1\\-1\end{pmatrix} + \frac{1}{2}
-            \begin{pmatrix}-2\\0\\-3\end{pmatrix} + \frac{1}{2}
-            \begin{pmatrix}0\\2\\7\end{pmatrix} = \frac{1}{2}
-            \begin{pmatrix}-2\\0\\-3\end{pmatrix} + \frac{1}{2}
-            \begin{pmatrix}0\\2\\7\end{pmatrix}
+            \begin{pmatrix} 1 \\ 1 \\ 2\end{pmatrix} = 0
+            \begin{pmatrix} 3 \\ -1 \\ -1 \end{pmatrix} + \frac{1}{2}
+            \begin{pmatrix} -2 \\ 0 \\ -3 \end{pmatrix} + \frac{1}{2}
+            \begin{pmatrix} 0 \\ 2 \\ 7 \end{pmatrix} = \frac{1}{2}
+            \begin{pmatrix} -2 \\ 0 \\ -3 \end{pmatrix} + \frac{1}{2}
+            \begin{pmatrix} 0 \\ 2 \\ 7 \end{pmatrix}
           </me>
         </p>
       </statement>
@@ -180,25 +192,30 @@
       the locus of some finite number of linear equations: the set of
       points that satisfy a list of equations.
       <md>
-        <mrow>a_{11} x_1 + a_{12} x_2 + \ldots a_{1n} x_n \amp  =
-        c_1</mrow>
-        <mrow>a_{21} x_1 + a_{22} x_2 + \ldots a_{2n} x_n \amp  =
-        c_2</mrow>
-        <mrow>\ldots \amp</mrow>
-        <mrow>a_{m1} x_1 + a_{m2} x_2 + \ldots a_{mn} x_n \amp  =
-        c_m</mrow>
+        <mrow>
+          a_{11} x_1 + a_{12} x_2 + \ldots a_{1n} x_n \amp  = c_1
+        </mrow>
+        <mrow>
+          a_{21} x_1 + a_{22} x_2 + \ldots a_{2n} x_n \amp  = c_2
+        </mrow>
+        <mrow>
+          \ldots \amp
+        </mrow>
+        <mrow>
+          a_{m1} x_1 + a_{m2} x_2 + \ldots a_{mn} x_n \amp  = c_m
+        </mrow>
       </md>
     </p>
     <p>
       This is just a system of linear equations, which has a
       corresponding matrix.
-      <men>
-        \left( \begin{array}{cccc|c} a_{11} \amp  a_{12} \amp  \ldots
-        \amp  a_{1n} \amp  c_1 \\ a_{21} \amp  a_{22} \amp  \ldots
-        \amp  a_{2n} \amp  c_2 \\ \ldots \amp  \ldots \amp  \ldots
-        \amp  \ldots \amp  \ldots \\ a_{11} \amp  a_{12} \amp  \ldots
-        \amp  a_{1n} \amp  c_1 \end{array} \right)
-      </men>
+      <me>
+        \left( \begin{array}{cccc|c} a_{11} \amp a_{12} \amp \ldots
+        \amp a_{1n} \amp c_1 \\ a_{21} \amp a_{22} \amp \ldots
+        \amp a_{2n} \amp c_2 \\ \ldots \amp \ldots \amp \ldots
+        \amp \ldots \amp \ldots \\ a_{11} \amp a_{12} \amp \ldots
+        \amp a_{1n} \amp c_1 \end{array} \right)
+      </me>
     </p>
     <p>
       So, by definition, the locus of a set of linear equation is just
@@ -270,10 +287,10 @@
           and <m>z</m>, where <m>y</m> and <m>z</m> are free
           variables.
           <me>
-            \begin{pmatrix}w\\x\\y\\z\end{pmatrix} =
-            \begin{pmatrix}1\\-4\\0\\0\end{pmatrix} + y
-            \begin{pmatrix}1\\-2\\1\\0\end{pmatrix} + z
-            \begin{pmatrix}-2\\-3\\0\\1\end{pmatrix}
+            \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
+            \begin{pmatrix} 1 \\ -4 \\ 0 \\ 0 \end{pmatrix} + y
+            \begin{pmatrix} 1 \\ -2 \\ 1 \\ 0 \end{pmatrix} + z
+            \begin{pmatrix} -2 \\ -3 \\ 0 \\ 1 \end{pmatrix}
           </me>
         </p>
         <p>

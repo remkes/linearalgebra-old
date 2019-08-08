@@ -19,8 +19,8 @@
           written <m>u \times v</m> and defined by the following
           formula.
           <me>
-            u \times v = \begin{pmatrix}u_2v_3 - u_3v_2\\u_3v_1 -
-            u_1v_3\\u_1v_2 - u_2v_1\end{pmatrix}
+            u \times v = \begin{pmatrix} u_2v_3 - u_3v_2 \\ u_3v_1 -
+            u_1v_3 \\ u_1v_2 - u_2v_1 \end{pmatrix}
           </me>
         </p>
       </statement>
@@ -58,13 +58,19 @@
       Also consider the relationship between <m>u</m> and
       <m>u \times v</m> as calculated through the dot product.
       <md>
-        <mrow>u \cdot (u \times v) \amp  = \begin{pmatrix}u_1</mrow>
-        <mrow>u_2</mrow>
-        <mrow>u_3\end{pmatrix} \cdot \begin{pmatrix}u_2v_3 - u_3v_2</mrow>
-        <mrow>u_3v_1 - u_1v_3</mrow>
-        <mrow>u_1v_2 - u_2v_1\end{pmatrix}</mrow>
-        <mrow>\amp  = u_1u_2v_3 - u_1u_3v_2 + u_2u_3v_1 - u_2u_1v_3 +
-          u_3u_1v_2 - u_3u_2v_1 = 0</mrow>
+        <mrow>
+          u \cdot (u \times v) \amp = 
+          \begin{pmatrix}
+          u_1 \\ u_2 \\ u_3  
+          \end{pmatrix} \cdot
+          \begin{pmatrix}
+          u_w v_3 - u_3 v_2 \\ u_3 v_1 - u_1 v_3 \\ u_1 v_2 - u_2 v_1
+          \end{pmatrix}
+        </mrow>
+        <mrow>
+          \amp = u_1u_2v_3 - u_1u_3v_2 + u_2u_3v_1 - u_2u_1v_3 +
+          u_3u_1v_2 - u_3u_2v_1 = 0
+        </mrow>
       </md>
     </p>
     <p>

@@ -26,7 +26,6 @@
     <xi:include href="./investigating-transformations.ptx" />
     <xi:include href="./dynamical-systems.ptx" />
     <backmatter>
-      <xi:include href="./bibliography.ptx" />
     </backmatter>
   </book>
 </mathbook>

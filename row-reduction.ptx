@@ -42,11 +42,11 @@
       <statement>
         <p>
           This example shows the encoding of a direction solution.
-          <men>
-            \left( \begin{array}{ccc|c} 1 \amp  0 \amp  0 \amp  -3 \\
-            0 \amp  1 \amp  0 \amp  -2 \\ 0 \amp  0 \amp  1 \amp  8
+          <me>
+            \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
+            0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8
             \end{array} \right)
-          </men>
+          </me>
         </p>
         <p>
           The system has three columns before its vertical line,
@@ -54,9 +54,15 @@
           <m>x,y,z</m>. If we translate this back into equations, we
           get the following system.
           <md>
-            <mrow>x + 0y + 0z \amp  = -3</mrow>
-            <mrow>0z + y + 0z \amp  = -2</mrow>
-            <mrow>0x + 0y + z \amp  = 8</mrow>
+            <mrow>
+              x + 0y + 0z \amp  = -3
+            </mrow>
+            <mrow>
+              0z + y + 0z \amp  = -2
+            </mrow>
+            <mrow>
+              0x + 0y + z \amp  = 8
+            </mrow>
           </md>
         </p>
         <p>
@@ -203,11 +209,11 @@
           Let's return to the example at the start of this section to
           understand how we read solutions from reduced row-echelon
           matrices.
-          <men>
-            \left( \begin{array}{ccc|c} 1 \amp  0 \amp  0 \amp  -3 \\
-            0 \amp  1 \amp  0 \amp  -2 \\ 0 \amp  0 \amp  1 \amp  8
+          <me>
+            \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
+            0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8
             \end{array} \right)
-          </men>
+          </me>
         </p>
         <p>
           This example is the easiest case: we have a leading one in
@@ -223,11 +229,11 @@
         <p>
           We might have a row of zeros in the reduced row-echelon
           form.
-          <men>
-            \left( \begin{array}{ccc|c} 1 \amp  0 \amp  0 \amp  -3 \\
-            0 \amp  1 \amp  0 \amp  -2 \\ 0 \amp  0 \amp  1 \amp  8 \\
-            0 \amp  0 \amp  0 \amp  0 \end{array} \right)
-          </men>
+          <me>
+            \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
+            0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8 \\
+            0 \amp 0 \amp 0 \amp 0 \end{array} \right)
+          </me>
         </p>
         <p>
           This row of zeros doesn't actually change the solution at
@@ -247,11 +253,11 @@
           <m>w,x,y,z</m>. (In that order, so that the first column is
           the <m>w</m> column, the second is the <m>x</m> column, and
           so on).
-          <men>
-            \left( \begin{array}{cccc|c} 1 \amp  0 \amp  0 \amp  0
-            \amp  -3 \\ 0 \amp  1 \amp  0 \amp  0 \amp  -2 \\ 0 \amp
-            0 \amp  1 \amp  0 \amp  8 \end{array} \right)
-          </men>
+          <me>
+            \left( \begin{array}{cccc|c} 1 \amp 0 \amp 0 \amp 0
+            \amp -3 \\ 0 \amp 1 \amp 0 \amp 0 \amp -2 \\ 0 \amp
+            0 \amp 1 \amp 0 \amp 8 \end{array} \right)
+          </me>
         </p>
         <p>
           The translation gives <m>w=-3</m>, <m>x=-2</m> and
@@ -267,11 +273,11 @@
         <p>
           The columns of a free variables need not contain all zeros.
           The following matrix is still in reduced row-echelon form.
-          <men>
-            \left( \begin{array}{cccc|c} 1 \amp  0 \amp  0 \amp  2
-            \amp  -3 \\ 0 \amp  1 \amp  0 \amp  -1 \amp  -2 \\ 0 \amp
-            0 \amp  1 \amp  -1 \amp  8 \end{array} \right)
-          </men>
+          <me>
+            \left( \begin{array}{cccc|c} 1 \amp 0 \amp 0 \amp 2
+            \amp -3 \\ 0 \amp 1 \amp 0 \amp -1 \amp -2 \\ 0 \amp
+            0 \amp 1 \amp -1 \amp 8 \end{array} \right)
+          </me>
         </p>
         <p>
           Reduced row-echelon form needs a leading one in each
@@ -282,18 +288,32 @@
           corresponds to a free variable. Look at the translation of
           this matrix back into a linear system.
           <md>
-            <mrow>w + 2z \amp  = -3</mrow>
-            <mrow>x - z \amp  = -2</mrow>
-            <mrow>y - z \amp  = 8</mrow>
+            <mrow>
+              w + 2z \amp  = -3
+            </mrow>
+            <mrow>
+              x - z \amp  = -2
+            </mrow>
+            <mrow>
+              y - z \amp  = 8
+            </mrow>
           </md>
         </p>
         <p>
           Let's move the <m>z</m> terms to the right side.
           <md>
-            <mrow>w \amp  = - 2z - 3</mrow>
-            <mrow>x \amp  = z - 2</mrow>
-            <mrow>y \amp  = z + 8</mrow>
-            <mrow>z \amp  = z</mrow>
+            <mrow>
+              w \amp  = - 2z - 3
+            </mrow>
+            <mrow>
+              x \amp  = z - 2
+            </mrow>
+            <mrow>
+              y \amp  = z + 8
+            </mrow>
+            <mrow>
+              z \amp  = z
+            </mrow>
           </md>
         </p>
         <p>
@@ -302,9 +322,9 @@
           clear that <m>z</m> is a free variable, since we can write
           the solution as follows:
           <me>
-            \begin{pmatrix}w\\x\\y\\z\end{pmatrix} =
-            \begin{pmatrix}-3\\-2\\8\\0\end{pmatrix} + z
-            \begin{pmatrix}-2\\1\\1\\1\end{pmatrix}
+            \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
+            \begin{pmatrix} -3 \\ -2 \\ 8 \\ 0 \end{pmatrix} + z
+            \begin{pmatrix} -2 \\ 1 \\ 1 \\ 1 \end{pmatrix}
           </me>
         </p>
         <p>
@@ -324,11 +344,11 @@
           We can go further. The following matrix is also in reduced
           row-echelon form (again, using <m>w</m>, <m>x</m>, <m>y</m>
           and <m>z</m> as variables in that order).
-          <men>
-            \left( \begin{array}{cccc|c} 1 \amp  0 \amp  3 \amp  2
-            \amp  -3 \\ 0 \amp  1 \amp  -1 \amp  -1 \amp  -2
+          <me>
+            \left( \begin{array}{cccc|c} 1 \amp 0 \amp 3 \amp 2
+            \amp -3 \\ 0 \amp 1 \amp -1 \amp -1 \amp -2
             \end{array} \right)
-          </men>
+          </me>
         </p>
         <p>
           Here, both the third and the fourth columns have no leading
@@ -336,16 +356,24 @@
           variables. We translate the matrix back into a linear
           system.
           <md>
-            <mrow>w \amp  = -3y - 2z - 3</mrow>
-            <mrow>x \amp  = y+z-2</mrow>
-            <mrow>y \amp  = y</mrow>
-            <mrow>z \amp  = z</mrow>
+            <mrow>
+              w \amp  = -3y - 2z - 3
+            </mrow>
+            <mrow>
+              x \amp  = y+z-2
+            </mrow>
+            <mrow>
+              y \amp  = y
+            </mrow>
+            <mrow>
+              z \amp  = z
+            </mrow>
           </md>
           <me>
-            \begin{pmatrix}w\\x\\y\\z\end{pmatrix} =
-            \begin{pmatrix}-3\\2\\0\\0\end{pmatrix} + y
-            \begin{pmatrix}-3\\1\\1\\0\end{pmatrix} + z
-            \begin{pmatrix}-2\\1\\0\\1\end{pmatrix}
+            \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
+            \begin{pmatrix} -3 \\ 2 \\ 0 \\ 0 \end{pmatrix} + y
+            \begin{pmatrix} -3 \\ 1 \\ 1 \\ 0 \end{pmatrix} + z
+            \begin{pmatrix} -2 \\ 1 \\ 0 \\ 1 \end{pmatrix}
           </me>
         </p>
         <p>
@@ -362,11 +390,11 @@
         <p>
           Finally, we can also have a reduced row-echelon matrix of
           the following form. 
-          <men>
-            \left( \begin{array}{ccc|c} 1 \amp  0 \amp  0 \amp  -3 \\
-            0 \amp  1 \amp  0 \amp  -2 \\ 0 \amp  0 \amp  1 \amp  8 \\
-            0 \amp  0 \amp  0 \amp  1 \end{array} \right)
-          </men>
+          <me>
+            \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
+            0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8 \\
+            0 \amp 0 \amp 0 \amp 1 \end{array} \right)
+          </me>
         </p>
         <p>
           The first three rows translate well. However, the fourth

@@ -3,51 +3,55 @@
   <subsection xml:id="linear-transformations-defintions">
     <title>Defitions</title>
     <p>
-      After a good definition of the environment (<m>\RR^n</m>) and its objects (lines,
-      planes, hyperplanes, etc),
-      the next mathematical step is to understand the functions that live in the environment and affect its objects.
-      First, we need to generalize the simple notion of a function to linear spaces.
-      In algebra and calculus, we worked with functions of real numbers.
-      These functions are rules <m>f: A \rightarrow B</m> which go between subsets of real numbers.
-      The function <m>f</m> assigns to each <em>number</em>
-      in <m>A</m> a unique <em>number</em> in <m>B</m>.
-      They include the very familiar <m>f(x) = x^2</m>,
+      After a good definition of the environment (<m>\RR^n</m>) and
+      its objects (lines, planes, hyperplanes, etc), the next
+      mathematical step is to understand the functions that live in
+      the environment and affect its objects. First, we need to
+      generalize the simple notion of a function to linear spaces. In
+      algebra and calculus, we worked with functions of real numbers.
+      These functions are rules <m>f: A \rightarrow B</m> which go
+      between subsets of real numbers  The function <m>f</m> assigns
+      to each <em>number</em> in <m>A</m> a unique <em>number</em> in
+      <m>B</m>  They include the very familiar <m>f(x) = x^2</m>,
       <m>f(x) = \sin (x)</m>, <m>f(x) = e^x</m> and many others.
     </p>
     <definition>
       <statement>
         <p>
-          Let <m>A</m> and <m>B</m> be subsets of <m>\RR^n</m> and <m>\RR^m</m>,
-          respectively.
-          A <term>function</term> between linear spaces is a rule
-          <m>f: A \rightarrow B</m> which assigns to each <term>vector</term>
-          in A a unique <term>vector</term> in <m>B</m>.
+          Let <m>A</m> and <m>B</m> be subsets of <m>\RR^n</m> and
+          <m>\RR^m</m>, respectively  A <term>function</term> between
+          linear spaces is a rule <m>f: A \rightarrow B</m> which
+          assigns to each <term>vector</term> in A a unique
+          <term>vector</term> in <m>B</m>.
         </p>
       </statement>
     </definition>
     <example>
       <statement>
         <p>
-          We can define a function <m>f: \RR^3 \rightarrow \RR^3</m> by <m>f\begin{pmatrix}x\\y\\z \end{pmatrix} = \begin{pmatrix}x^2\\y^2\\z^2 \end{pmatrix}</m>.
+          We can define a function <m>f: \RR^3 \rightarrow \RR^3</m>
+          by <m>f\begin{pmatrix}x\\y\\z \end{pmatrix} =
+          \begin{pmatrix}x^2\\y^2\\z^2 \end{pmatrix}</m>.
         </p>
       </statement>
     </example>
     <example>
       <statement>
         <p>
-          Another function <m>f: \RR^3 \rightarrow \RR^2</m> could be <m>f\begin{pmatrix}x\\y\\z \end{pmatrix} = \begin{pmatrix}x-y\\z-y \end{pmatrix}</m>.
+          Another function <m>f: \RR^3 \rightarrow \RR^2</m> could be
+          <m>f\begin{pmatrix}x\\y\\z \end{pmatrix} =
+          \begin{pmatrix}x-y\\z-y \end{pmatrix}</m>.
         </p>
       </statement>
     </example>
     <definition>
       <statement>
         <p>
-          A <term>linear function</term> or
-          <term>linear transformation</term>
-          from <m>\RR^n</m> to <m>\RR^m</m> is a function
-          <m>f: \RR^n \rightarrow \RR^m</m> such that for two vectors
-          <m>u,v \in \RR^n</m> and any scalar <m>a \in \RR</m>,
-          the function must obey two rules.
+          A <term>linear function</term> or <term>linear
+          transformation</term> from <m>\RR^n</m> to <m>\RR^m</m> is a
+          function <m>f: \RR^n \rightarrow \RR^m</m> such that for two
+          vectors <m>u,v \in \RR^n</m> and any scalar <m>a \in
+          \RR</m>, the function must obey two rules.
           <md>
             <mrow>f(u+v) \amp  = f(u) + f(v)</mrow>
             <mrow>f(au) \amp  = af(u)</mrow>
@@ -55,87 +59,89 @@
         </p>
         <p>
           Informally, we say that the function <term>respects</term>
-          the two main operations on linear spaces:
-          addition of vectors and multiplication by scalars.
-          If we perform addition before or after the function, we get the same result.
-          Likewise for scalar multiplication.
+          the two main operations on linear spaces: addition of
+          vectors and multiplication by scalars  If we perform
+          addition before or after the function, we get the same
+          result  Likewise for scalar multiplication.
         </p>
       </statement>
     </definition>
     <p>
-      By inspection and testing,
-      one could determined that the first example above fails these two rules,
-      but the second example satisfies them.
+      By inspection and testing, one could determined that the first
+      example above fails these two rules, but the second example
+      satisfies them.
     </p>
     <p>
-      This definition creates to the restrictive but important class of linear functions.
-      We could easily define linear algebra as a study of these transformations.
-      There is an alternative and equivalent definition of linear transformation.
+      This definition creates to the restrictive but important class
+      of linear functions  We could easily define linear algebra as a
+      study of these transformations  There is an alternative and
+      equivalent definition of linear transformation.
     </p>
     <proposition>
       <statement>
         <p>
-          A function <m>f: \RR^n \rightarrow \RR^m</m> is linear if and only if it sends linear objects to linear objects.
+          A function <m>f: \RR^n \rightarrow \RR^m</m> is linear if
+          and only if it sends linear objects to linear objects.
         </p>
       </statement>
     </proposition>
     <p>
-      Under a linear transformation points, lines,
-      planes are changed to other points, lines, planes, etc.
-      A line can't be bent into an arc or broken into two different lines.
-      Hopefully, some of the major ideas of the course are starting to fit together:
-      the two basic operations of addition and scalar multiplication give rise to spans,
-      which are flat objects.
-      Linear transformation preserve those operations,
-      so they preserve flat objects.
-      Exactly <em>how</em> they change these objects can be tricky to determine.
+      Under a linear transformation points, lines, planes are changed
+      to other points, lines, planes, etc  A line can't be bent into
+      an arc or broken into two different lines  Hopefully, some of
+      the major ideas of the course are starting to fit together: the
+      two basic operations of addition and scalar multiplication give
+      rise to spans, which are flat objects  Linear transformation
+      preserve those operations, so they preserve flat objects.
+      Exactly <em>how</em> they change these objects can be tricky to
+      determine.
     </p>
     <p>
-      Lastly, because of scalar multiplication,
-      if we take <m>a = 0</m> we get that <m>f(0) = 0</m>.
-      Under a linear transformation,
-      the origin is always sent to the origin.
-      So, in addition to preserving flat objects,
-      linear transformation can't move the origin.
-      We could drop this condition of preserving the origin to get another class of functions.
+      Lastly, because of scalar multiplication, if we take <m>a =
+      0</m> we get that <m>f(0) = 0</m>  Under a linear
+      transformation, the origin is always sent to the origin  So, in
+      addition to preserving flat objects, linear transformation can't
+      move the origin  We could drop this condition of preserving the
+      origin to get another class of functions.
     </p>
     <definition>
       <statement>
         <p>
-          A <term>affine transformation</term>
-          from <m>\RR^n</m> to <m>\RR^m</m> is a transformation that preserves affine subspaces.
-          These transformations preserve flat objects but may move the origin.
+          A <term>affine transformation</term> from <m>\RR^n</m> to
+          <m>\RR^m</m> is a transformation that preserves affine
+          subspaces  These transformations preserve flat objects but
+          may move the origin.
         </p>
       </statement>
     </definition>
     <p>
-      Though they are interesting,
-      we don't spend much time with affine transformations.
-      They can always be realized as a linear transformation combined with a shift or displacement of the entire space by a fixed vector.
-      Since shifts are relatively simple,
-      we can usually reduce problems of affine transformations to problems of linear transformations.
+      Though they are interesting, we don't spend much time with
+      affine transformations  They can always be realized as a linear
+      transformation combined with a shift or displacement of the
+      entire space by a fixed vector  Since shifts are relatively
+      simple, we can usually reduce problems of affine transformations
+      to problems of linear transformations.
     </p>
   </subsection>
   <subsection xml:id="composition">
     <title>Composition</title>
     <p>
-      Once we understood functions of real numbers,
-      we learned to compose them.
-      We do the same for linear transformations.
+      Once we understood functions of real numbers, we learned to
+      compose them  We do the same for linear transformations.
     </p>
     <definition>
       <statement>
         <p>
-          Let <m>f : \RR^n \rightarrow \RR^m</m> and
-          <m>g: \RR^m \rightarrow \RR^l</m> be linear transformations.
-          Then <m>g \circ f : \RR^n \rightarrow \RR^l</m> is the linear transformation formed by first applying <m>f</m> and then <m>g</m>.
-          Note that the <m>\RR^m</m> has to match:
-          <m>f</m> outputs to <m>\RR^m</m>,
-          which is the input for <m>g</m>.
-          Also note that the notation is written right-to-left: In <m>g \circ f</m>,
-          the transformation <m>f</m> happens first, followed by <m>g</m>.
-          This new transformation is called the <term>composition</term>
-          of <m>f</m> and <m>g</m>.
+          Let <m>f : \RR^n \rightarrow \RR^m</m> and <m>g: \RR^m
+          \rightarrow \RR^l</m> be linear transformations  Then <m>g
+          \circ f : \RR^n \rightarrow \RR^l</m> is the linear
+          transformation formed by first applying <m>f</m> and then
+          <m>g</m>  Note that the <m>\RR^m</m> has to match: <m>f</m>
+          outputs to <m>\RR^m</m>, which is the input for <m>g</m>.
+          Also note that the notation is written right-to-left: In
+          <m>g \circ f</m>, the transformation <m>f</m> happens first,
+          followed by <m>g</m>  This new transformation is called the
+          <term>composition</term> of <m>f</m> and <m>g</m>.
         </p>
       </statement>
     </definition>
@@ -143,69 +149,72 @@
   <subsection xml:id="transformations-r2">
     <title>Linear Transformations of <m>\RR^2</m></title>
     <p>
-      It is useful for us to specialize to transformations <m>\RR^2 \rightarrow \RR^2</m>,
-      in order to build experience and intuition.
-      As we noted above, linear transformations preserve flat objects.
-      What can we do to <m>\RR^2</m> that preserves lines and preserves the origin?
+      It is useful for us to specialize to transformations <m>\RR^2
+      \rightarrow \RR^2</m>, in order to build experience and
+      intuition  As we noted above, linear transformations preserve
+      flat objects  What can we do to <m>\RR^2</m> that preserves
+      lines and preserves the origin?
     </p>
     <proposition>
       <statement>
         <p>
-          There are five basic types of linear transformation of <m>\RR^2</m>.
+          There are five basic types of linear transformation of
+          <m>\RR^2</m>.
         </p>
       </statement>
     </proposition>
     <ul>
       <li>
         <p>
-          <em>Rotations</em> about the origin
-          (either clockwise or counter-clockwise)
-          preserve lines.
-          We can't rotate around any other point,
-          since that would move the origin.
-          Since we can choose any angle,
-          there are infinitely many such rotations.
-          Also, since rotating by <m>\theta</m> radians clockwise is the same as
-          <m>2\pi - \theta</m> radians counter-clockwise,
-          we typically choose to only deal with counter-clockwise rotations.
-          Counter-clockwise rotations are considered positive and clockwise rotations are considered negative.
+          <em>Rotations</em> about the origin (either clockwise or
+          counter-clockwise) preserve lines  We can't rotate around
+          any other point, since that would move the origin  Since we
+          can choose any angle, there are infinitely many such
+          rotations  Also, since rotating by <m>\theta</m> radians
+          clockwise is the same as <m>2\pi - \theta</m> radians
+          counter-clockwise, we typically choose to only deal with
+          counter-clockwise rotations  Counter-clockwise rotations
+          are considered positive and clockwise rotations are
+          considered negative.
         </p>
       </li>
       <li>
         <p>
-          <em>Reflections</em> over lines through the origin preserve lines.
-          The line of refleciton must passthrough the origin or else the reflection will move the origin.
-          Since there are infinitely many different lines through the origin,
+          <em>Reflections</em> over lines through the origin preserve
+          lines  The line of refleciton must passthrough the origin
+          or else the reflection will move the origin  Since there
+          are infinitely many different lines through the origin,
           there are infinitely many such reflections.
         </p>
       </li>
       <li>
         <p>
-          <em>Skews</em> are a little tricker to visualize.
-          A skew is a transformation that takes either veritcal or horizontal lines
-          (but not both)
-          and tilts them diagonally.
-          It changes squares into parallelograms.
-          The tilted lines are still lines,
-          so it is a linear transformation.
+          <em>Skews</em> are a little tricker to visualize  A skew is
+          a transformation that takes either veritcal or horizontal
+          lines (but not both) and tilts them diagonally  It changes
+          squares into parallelograms  The tilted lines are still
+          lines, so it is a linear transformation.
         </p>
       </li>
       <li>
         <p>
-          <em>Dialations</em> are transformation which stretch or shink in various directions.
+          <em>Dialations</em> are transformation which stretch or
+          shink in various directions.
         </p>
       </li>
       <li>
         <p>
-          <em>Projections</em> are transformations which collapse <m>\RR^2</m> down to a line through the origin.
-          Two important examples are projection onto either axis.
-          Projection onto the <m>x</m> axis sends a point <m>(a,b)</m> to <m>(a,0)</m>,
-          removing the <m>y</m> component.
-          Likewise, projection onto the <m>y</m> axis sends a point <m>(a,b)</m> to <m>(0,b)</m>,
-          removing the <m>x</m> component.
-          In a similar manner,
-          we can project onto any line though the origin by sending each point to the closest point on the line.
-          Finally, there is the projection to the origin which sends all points to the origin.
+          <em>Projections</em> are transformations which collapse
+          <m>\RR^2</m> down to a line through the origin  Two
+          important examples are projection onto either axis.
+          Projection onto the <m>x</m> axis sends a point <m>(a,b)</m>
+          to <m>(a,0)</m>, removing the <m>y</m> component  Likewise,
+          projection onto the <m>y</m> axis sends a point <m>(a,b)</m>
+          to <m>(0,b)</m>, removing the <m>x</m> component  In a
+          similar manner, we can project onto any line though the
+          origin by sending each point to the closest point on the
+          line  Finally, there is the projection to the origin which
+          sends all points to the origin.
         </p>
       </li>
     </ul>
@@ -215,7 +224,8 @@
     <theorem>
       <statement>
         <p>
-          All linear transformation of <m>\RR^2</m> are generated by composition of transformations of the previous five types.
+          All linear transformation of <m>\RR^2</m> are generated by
+          composition of transformations of the previous five types.
         </p>
       </statement>
     </theorem>
@@ -224,47 +234,47 @@
     <title>Linear Transformations of <m>\RR^3</m></title>
     <p>
       We can also specialize to transformations of <m>\RR^3</m>,
-      though it is not as easy to give a complete account of the basic types.
-      However, all of the types listed for <m>\RR^2</m> generalize.
+      though it is not as easy to give a complete account of the basic
+      types  However, all of the types listed for <m>\RR^2</m>
+      generalize.
       <ul>
         <li>
           <p>
             Rotations in <m>\RR^3</m> are no longer about the origin.
-            Instead, we have to choose an axis.
-            Any line through the origin will do for an axis of rotation.
-            Any rotation in <m>\RR^3</m> is determined by an axis of rotation and an angle of rotation about that axis.
+            Instead, we have to choose an axis  Any line through the
+            origin will do for an axis of rotation  Any rotation in
+            <m>\RR^3</m> is determined by an axis of rotation and an
+            angle of rotation about that axis.
           </p>
         </li>
         <li>
           <p>
-            Reflections are also altered:
-            instead of reflecting over a line,
-            we have to reflect over a plane through the origin.
+            Reflections are also altered: instead of reflecting over a
+            line, we have to reflect over a plane through the origin.
             Any plane through the origin determines a reflection.
           </p>
         </li>
         <li>
           <p>
-            Skews are similarly defined:
-            one or two directions are fixed and the remaining directions are tilted.
+            Skews are similarly defined: one or two directions are
+            fixed and the remaining directions are tilted.
           </p>
         </li>
         <li>
           <p>
-            Dialations are also similar,
-            though we have three possible axis directions in which to stretch or compress.
+            Dialations are also similar, though we have three possible
+            axis directions in which to stretch or compress.
           </p>
         </li>
         <li>
           <p>
-            Like <m>\RR^2</m>, we can project onto the origin,
-            sending everything to zero, or onto a line,
-            sending every point to the closest point on a line.
-            Examples include projection onto the axes.
-            However, we can also project onto planes.
+            Like <m>\RR^2</m>, we can project onto the origin, sending
+            everything to zero, or onto a line, sending every point to
+            the closest point on a line. Examples include projection
+            onto the axes. However, we can also project onto planes.
             Sending <m>(a,b,c)</m> to <m>(a,b,0)</m>, for example,
-            removes the <m>z</m> coordinate;
-            this is projection onto the <m>xy</m> plane.
+            removes the <m>z</m> coordinate; this is projection onto
+            the <m>xy</m> plane.
           </p>
         </li>
       </ul>
@@ -273,95 +283,98 @@
   <subsection xml:id="transformations-symmetry">
     <title>Symmetry</title>
     <p>
-      Notice that we've defined linear functions by the objects and/or properties they preserve.
-      This is a very general technique in mathematics.
-      Very frequently, functions are classified by what they preserve.
-      As discussed in the very first chapter,
-      we use the word <sq>symmetry</sq> to describe this perspective:
-      the symmetries of a function are the objects or algebraic properties preserved by the function.
-      A function exhibits more symmetry if it preserves more objects or more properties.
-      The conventional use of symmetry in English relates more to a shape than a function:
-      what are the symmetries of a hexagon?
-      We can connect the two ideas:
-      asking for the symmetries of the hexagon can be thought of as asking for the transformations of <m>\RR^2</m> that preserve a hexagon.
-      This is a bit of a reverse:
-      the standard usage of the word talks about transformation as the symmetries of a shape.
-      Here we start with a transformation and talk about the shape as a symmetry of the transformation:
-      the hexagon is a symmetry of rotation by one sixth of a full turn.
+      Notice that we've defined linear functions by the objects and/or
+      properties they preserve. This is a very general technique in
+      mathematics. Very frequently, functions are classified by what
+      they preserve. As discussed in the very first chapter, we use
+      the word <sq>symmetry</sq> to describe this perspective: the
+      symmetries of a function are the objects or algebraic properties
+      preserved by the function. A function exhibits more symmetry if
+      it preserves more objects or more properties. The conventional
+      use of symmetry in English relates more to a shape than a
+      function: what are the symmetries of a hexagon?  We can connect
+      the two ideas: asking for the symmetries of the hexagon can be
+      thought of as asking for the transformations of <m>\RR^2</m>
+      that preserve a hexagon. This is a bit of a reverse: the
+      standard usage of the word talks about transformation as the
+      symmetries of a shape. Here we start with a transformation and
+      talk about the shape as a symmetry of the transformation: the
+      hexagon is a symmetry of rotation by one sixth of a full turn.
     </p>
   </subsection>
   <subsection xml:id="dihedral-groups">
     <title>Dihedral Groups</title>
     <p>
-      The case of regular polygons,
-      such as the hexagon, is a very useful place for us to start.
-      Transformations which do not preserve flat objects may not going to preserve the edges of the polygons.
-      Therefore, we want to know which linear transformations preserve the regular polygons.
+      The case of regular polygons, such as the hexagon, is a very
+      useful place for us to start. Transformations which do not
+      preserve flat objects may not going to preserve the edges of the
+      polygons. Therefore, we want to know which linear
+      transformations preserve the regular polygons.
     </p>
     <definition>
       <statement>
         <p>
-          A <term>Dihedral Group</term> is the group of linear symmetries of a regular polygon.
-          If the polygon has <m>n</m> edges,
-          then we write <m>D_n</m> for the associated dihedral group.
-          Thus, <m>D_3</m> is the group of symmetries of the triangle,
-          <m>D_4</m> is the group of symmetries of the square,
-          <m>D_5</m> is the group of symmetries of the pentagon,
-          and so on.
-          (Some texts use <m>D_{2n}</m> instead of <m>D_n</m>.)
+          A <term>Dihedral Group</term> is the group of linear
+          symmetries of a regular polygon. If the polygon has
+          <m>n</m> edges, then we write <m>D_n</m> for the associated
+          dihedral group. Thus, <m>D_3</m> is the group of symmetries
+          of the triangle, <m>D_4</m> is the group of symmetries of
+          the square, <m>D_5</m> is the group of symmetries of the
+          pentagon, and so on. (Some texts use <m>D_{2n}</m> instead
+          of <m>D_n</m>.)
         </p>
       </statement>
     </definition>
     <example>
       <statement>
         <p>
-          Let's first consider the square.
-          For all the polygons we are considering,
-          we assume the origin is at the centre of the polygon.
-          We can assume the square has vertices <m>(1,1)</m>, <m>(1,-1)</m>,
-          <m>(-1,-1)</m> and <m>(-1,1)</m>.
-          Conveniently, the vertices are all we need to think about:
-          since linear transformations preserve lines,
-          if we know where the vertices go,
-          then we know that the lines connecting them are preserved and hence the shape is preseved.
-          Which transformations preserve the vertices?
+          Let's first consider the square. For all the polygons we
+          are considering, we assume the origin is at the centre of
+          the polygon. We can assume the square has vertices
+          <m>(1,1)</m>, <m>(1,-1)</m>, <m>(-1,-1)</m> and
+          <m>(-1,1)</m>. Conveniently, the vertices are all we need
+          to think about: since linear transformations preserve lines,
+          if we know where the vertices go, then we know that the
+          lines connecting them are preserved and hence the shape is
+          preseved. Which transformations preserve the vertices?
         </p>
         <p>
-          There are two relatively obvious classes that might occur to us.
-          First, there are rotation about the origin.
-          If we rotate by <m>\pi/2</m> radians (a quarter turn),
-          the vertices are preserved.
-          Likewise for rotations by <m>\pi</m> and <m>3\pi/2</m> radians.
-          If we are really paying attention,
-          we might also think of rotation by <m>2\pi</m> radians,
-          a full turn.
-          This might seem silly, but the identity transformation
-          (the transformation that leaves everything fixed)
-          is a very important transformation and should be included in the list.
-          So, for now, we have the identity and three rotations.
+          There are two relatively obvious classes that might occur to
+          us. First, there are rotation about the origin. If we
+          rotate by <m>\pi/2</m> radians (a quarter turn), the
+          vertices are preserved. Likewise for rotations by
+          <m>\pi</m> and <m>3\pi/2</m> radians. If we are really
+          paying attention, we might also think of rotation by
+          <m>2\pi</m> radians, a full turn. This might seem silly,
+          but the identity transformation (the transformation that
+          leaves everything fixed) is a very important transformation
+          and should be included in the list. So, for now, we have
+          the identity and three rotations.
         </p>
         <p>
-          We might also think about reflections.
-          Looking at the square, we can find four lines of reflection:
-          the <m>x</m>-axs, the <m>y</m>-axis,
-          the line <m>x=y</m> and the line <m>x=-y</m>.
-          That brings the total number of transformation to eight:
-          the identity, three rotations, and four reflections.
-          These eight are, in face, the complete group.
+          We might also think about reflections. Looking at the
+          square, we can find four lines of reflection: the
+          <m>x</m>-axs, the <m>y</m>-axis, the line <m>x=y</m> and the
+          line <m>x=-y</m>. That brings the total number of
+          transformation to eight: the identity, three rotations, and
+          four reflections. These eight are, in face, the complete
+          group.
         </p>
       </statement>
     </example>
     <p>
-      You may have noticed that we used the work <sq>group</sq> instead of <sq>set</sq> to describe this collection.
-      <sq>Group</sq> is a technical word in mathematics,
-      refering to a set with some extra properties.
-      We won't go into the formal details,
-      but we'll use the dihedral groups as archetypical examples.
-      There are three properties of the dihedral groups which hold for all groups.
+      You may have noticed that we used the work <sq>group</sq>
+      instead of <sq>set</sq> to describe this collection.
+      <sq>Group</sq> is a technical word in mathematics, refering to a
+      set with some extra properties. We won't go into the formal
+      details, but we'll use the dihedral groups as archetypical
+      examples. There are three properties of the dihedral groups
+      which hold for all groups.
       <ul>
         <li>
           <p>
-            The composition of two elements of the group is still in the group.
+            The composition of two elements of the group is still in
+            the group.
           </p>
         </li>
         <li>
@@ -371,38 +384,40 @@
         </li>
         <li>
           <p>
-            The inverse operation of any group element is still a group element.
+            The inverse operation of any group element is still a
+            group element.
           </p>
         </li>
       </ul>
     </p>
     <p>
-      Though we haven't formally defined inverses,
-      the third property is not to hard to see for the dihedral groups.
-      For the reflections,
-      if we perform the reflection again we get back to where we started.
-      The reflections are their own inverses.
-      For rotations,
-      we add another rotation so that we have completed a full turn.
-      The inverse of rotation by <m>\pi/2</m> radians is rotation by <m>3\pi/2</m> radians.
-      Equivalently, the inverse is rotation by <m>-\pi/2</m> radians.
+      Though we haven't formally defined inverses, the third property
+      is not to hard to see for the dihedral groups. For the
+      reflections, if we perform the reflection again we get back to
+      where we started. The reflections are their own inverses. For
+      rotations, we add another rotation so that we have completed a
+      full turn. The inverse of rotation by <m>\pi/2</m> radians is
+      rotation by <m>3\pi/2</m> radians. Equivalently, the inverse is
+      rotation by <m>-\pi/2</m> radians.
     </p>
     <p>
-      The first property is a little trickier.
-      We leave it to you to try out some compositions of rotations and reflections to see how the result is still one of the eight symmetries.
-      Likewise, we leave it to you to extend this analysis of <m>D_4</m> to other diheadral groups:
+      The first property is a little trickier. We leave it to you to
+      try out some compositions of rotations and reflections to see
+      how the result is still one of the eight symmetries. Likewise,
+      we leave it to you to extend this analysis of <m>D_4</m> to
+      other diheadral groups:
       <m>D_3</m>, <m>D_5</m>, <m>D_6</m> and so on.
     </p>
     <p>
-      All dihedral groups are composed of the identity,
-      some rotations, and some reflections.
-      <m>D_4</m> is a useful enough example that we should fix notation.
-      I or <m>\Id</m> is the identity transformation,
-      <m>R_1</m> is rotation by <m>\pi/2</m> radians,
-      <m>R_2</m> is rotation by <m>\pi</m>radians and <m>R_3</m> is rotation by <m>3\pi/2</m> radians.
-      <m>F_1</m> is reflection over the <m>x</m> axis,
-      <m>F_2</m> over <m>x=y</m>,
-      <m>F_3</m> over the <m>y</m> axis and <m>F_4</m> over <m>y=-x</m>.
+      All dihedral groups are composed of the identity, some
+      rotations, and some reflections. <m>D_4</m> is a useful enough
+      example that we should fix notation. I or <m>\Id</m> is the
+      identity transformation, <m>R_1</m> is rotation by <m>\pi/2</m>
+      radians, <m>R_2</m> is rotation by <m>\pi</m>radians and
+      <m>R_3</m> is rotation by <m>3\pi/2</m> radians. <m>F_1</m> is
+      reflection over the <m>x</m> axis, <m>F_2</m> over <m>x=y</m>,
+      <m>F_3</m> over the <m>y</m> axis and <m>F_4</m> over
+      <m>y=-x</m>.
     </p>
   </subsection>
 </section>

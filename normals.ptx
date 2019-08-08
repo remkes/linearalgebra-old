@@ -18,10 +18,9 @@
       vector <m>a</m> is constant. Then we can re-write the linear
       equation using these two vectors.
       <me>
-        a_1 u_1 + a_2 u_2 + \ldots + a_n u_n =
-        \begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix} \cdot
-        \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} = a \cdot u
-        = c
+        a_1 u_1 + a_2 u_2 + \ldots + a_n u_n = \begin{pmatrix} a_1 \\
+        a_2 \\ \vdots \\ a_n \end{pmatrix} \cdot \begin{pmatrix} u_1
+        \\ u_2 \\ \vdots \\ u_n \end{pmatrix} = a \cdot u = c
       </me>
     </p>
     <p>
@@ -50,11 +49,11 @@
           \end{pmatrix}</m> is called the <term>normal to the
           plane</term>. Let <m>H</m> be a hyperplane in <m>\RR^n</m>
           determined by the equivalent equation in <m>\RR^n</m>.
-          <men>
-            u \cdot a =
-            \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot
-            \begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix} = c
-          </men>
+          <me>
+            u \cdot a = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
+            \end{pmatrix} \cdot \begin{pmatrix} a_1 \\ a_2 \\ \vdots
+            \\ a_n \end{pmatrix} = c
+          </me>
         </p>
         <p>
           The vector <m>a</m> is called the <term>normal to the
@@ -82,9 +81,10 @@
       plane by taking <m>u \times v</m>. Then we can find the
       equation of the plane by taking the dot product <m>p \cdot (u
       \times v)</m> to find the constant <m>c</m>.
-      <men>
-        \begin{pmatrix}x\\y\\z\end{pmatrix} \cdot (u \times v) = c
-      </men>
+      <me>
+        \begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot (u \times v) =
+        c
+      </me>
     </p>
     <p>
       If we are given three points on a plane (<m>p</m>, <m>q</m> and

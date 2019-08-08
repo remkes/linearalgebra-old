@@ -17,10 +17,10 @@
           or <term>scalar product</term> of two vectors <m>u</m> and
           <m>v</m> is given by the following formula.
           <me>
-            u \cdot v =
-            \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} \cdot
-            \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} = u_1
-            v_1 + u_2 v_2 + \ldots + u_n v_n
+            u \cdot v = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
+            \end{pmatrix} \cdot \begin{pmatrix} v_1 \\ v_2 \\ \vdots
+            \\ v_n \end{pmatrix} = u_1 v_1 + u_2 v_2 + \ldots + u_n
+            v_n
           </me>
         </p>
       </statement>
@@ -114,20 +114,27 @@
         <p>
           Let <m>u,v,w</m> be vectors in <m>\RR^n</m> and let <m>a</m>
           be a scalar in <m>\RR</m>.
-          <men>
-            \begin{array}{rll} 
-            u + v \amp = v + u \amp \hspace{1cm}
-            \text{Commutative} \\ 
-            a (u+v) \amp = au + av \amp \hspace{1cm} 
-            \text{Distributive} \\ 
-            u \cdot v \amp = v \cdot u \amp \hspace{1cm}
-            \text{Commutative} \\ 
-            u \cdot u \amp = |u|^2 \amp \\ 
-            u \cdot (v+w) \amp = u \cdot v + u \cdot w \amp \hspace{1cm}
-            \text{Distributive} \\ 
+          <md>
+            <mrow>
+            u + v \amp = v + u \amp \text{Commutative} 
+            </mrow>
+            <mrow>
+            a (u+v) \amp = au + av \amp \text{Distributive} 
+            </mrow>
+            <mrow>
+            u \cdot v \amp = v \cdot u \amp \text{Commutative} 
+            </mrow>
+            <mrow>
+            u \cdot u \amp = |u|^2 \amp 
+            </mrow>
+            <mrow>
+            u \cdot (v+w) \amp = u \cdot v + u \cdot w \amp
+            \text{Distributive} 
+            </mrow>
+            <mrow>
             u \cdot (av) \amp = (au) \cdot v = a (u \cdot v)
-            \end{array}
-          </men>
+            </mrow>
+          </md>
         </p>
       </statement>
     </proposition>

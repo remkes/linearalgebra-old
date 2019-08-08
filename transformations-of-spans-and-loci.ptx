@@ -3,86 +3,95 @@
   <subsection xml:id="transformations-of-spans">
     <title>Transformations of Spans</title>
     <p>
-      Now that we have matrices to describe transformations,
-      we want to know how transformations affect to linear subspaces.
-      We know that they preserve them,
-      but we want to be more specific:
-      given a particular linear subspace,
-      can we determine where it goes under a transformation?
+      Now that we have matrices to describe transformations, we want
+      to know how transformations affect to linear subspaces. We know
+      that they preserve them, but we want to be more specific: given
+      a particular linear subspace, can we determine where it goes
+      under a transformation?
     </p>
     <definition>
       <statement>
         <p>
-          If <m>M: \RR^n \rightarrow \RR^m</m> is a transformation (represented by a
-          <m>m \times n</m>and <m>L</m> is a linear or affine subspace of <m>\RR^n</m>,
-          then the result of the matrix <m>M</m> acting on all vectors in <m>L</m> will be a linear or affine subspace of <m>\RR^m</m> called the
-          <term>image of <m>L</m> under <m>M</m></term>.
-          The image of all of <m>\RR^n</m> under <m>M</m> is simply called the
+          If <m>M: \RR^n \rightarrow \RR^m</m> is a transformation
+          (represented by a <m>m \times n</m>and <m>L</m> is a linear
+          or affine subspace of <m>\RR^n</m>, then the result of the
+          matrix <m>M</m> acting on all vectors in <m>L</m> will be a
+          linear or affine subspace of <m>\RR^m</m> called the
+          <term>image of <m>L</m> under <m>M</m></term>. The image of
+          all of <m>\RR^n</m> under <m>M</m> is simply called the
           <term>image of <m>M</m></term>.
         </p>
       </statement>
     </definition>
     <p>
-      The most important property of linear transformations is that they preserve addition and scalar multiplication.
-      That means they preserve the linear combintaions.
-      Let <m>a_i</m> be scalars and <m>v_i</m> be vectors in <m>\RR^n</m>,
-      with <m>M</m> a <m>m\times n</m> matrix.
-      <md>
-        <mrow>M(a_1 v_1 + a_2v_2 + \ldots + a_kv_k) \amp  = M(a_1v_1) + M(a_2v_2) + \ldots + M(a_kv_k)</mrow>
-        <mrow>\amp  = a_1(Mv_1) + a_2(Mv_2) + \ldots + a_k (Mv_k)</mrow>
+      The most important property of linear transformations is that
+      they preserve addition and scalar multiplication. That means
+      they preserve the linear combintaions. Let <m>a_i</m> be
+      scalars and <m>v_i</m> be vectors in <m>\RR^n</m>, with <m>M</m>
+      a <m>m\times n</m> matrix. 
+      <md> 
+        <mrow>
+          M(a_1 v_1 + a_2v_2 + \ldots + a_kv_k) \amp = M(a_1v_1) +
+          M(a_2v_2) + \ldots + M(a_kv_k)
+        </mrow> 
+        <mrow>
+          \amp = a_1(Mv_1) + a_2(Mv_2) + \ldots + a_k (Mv_k)
+        </mrow>
       </md>
     </p>
     <p>
-      We see that the image of a linear combination is still a linear combination,
-      just in the vectors <m>Mv_i</m> instead of <m>v_i</m>.
-      Since all elements of a span are linear combinations,
-      we can say that everything in the span of the <m>v_i</m> is sent to the span of the vectors <m>Mv_i</m>.
-      We can summarize these observations in a proposition.
+      We see that the image of a linear combination is still a linear
+      combination, just in the vectors <m>Mv_i</m> instead of
+      <m>v_i</m>. Since all elements of a span are linear
+      combinations, we can say that everything in the span of the
+      <m>v_i</m> is sent to the span of the vectors <m>Mv_i</m>. We
+      can summarize these observations in a proposition.
     </p>
     <proposition>
       <statement>
         <p>
-          A linear transformation represented by a
-          <m>m \times n</m> matrix <m>M</m> sends spans to spans.
-          In particular, the span <m>\Span \{ v_1, v_2, \ldots,
-          v_k\}</m> is sent to <m>\Span \{ Mv_1, Mv_2, \ldots, Mv_k\}</m>.
+          A linear transformation represented by a <m>m \times n</m>
+          matrix <m>M</m> sends spans to spans. In particular, the
+          span <m>\Span \{ v_1, v_2, \ldots, v_k\}</m> is sent to
+          <m>\Span \{ Mv_1, Mv_2, \ldots, Mv_k\}</m>.
         </p>
       </statement>
     </proposition>
     <p>
-      Matrices acting on spans are easy:
-      we just figure out where the individual vectors go and the span of those vectors will be transformed into the span of their images.
-      Offset spans are almost as easy:
-      consider an affine subspace <m>u + \Span \{ v_1, v_2, \ldots,
-      v_k\}</m>.
-      Any element of this looks like <m>u + a_1v_1 + a_2v_2 + \ldots a_kv_k</m>.
-      Under <m>M</m>, we have:
+      Matrices acting on spans are easy: we just figure out where the
+      individual vectors go and the span of those vectors will be
+      transformed into the span of their images. Offset spans are
+      almost as easy: consider an affine subspace <m>u + \Span \{ v_1,
+      v_2, \ldots, v_k\}</m>. Any element of this looks like <m>u +
+      a_1v_1 + a_2v_2 + \ldots a_kv_k</m>. Under <m>M</m>, we have:
       <me>
-        M(u + a_1v_1 + a_2v_2 + \ldots + a_kv_k) = Mu + a_1 Mv_1 + a_2Mv_2 + \ldots + a_kMv_k
+        M(u + a_1v_1 + a_2v_2 + \ldots + a_kv_k) = Mu + a_1 Mv_1 +
+        a_2Mv_2 + \ldots + a_kMv_k
       </me>
     </p>
     <p>
-      The offset span is still sent to an offset span,
-      with offset <m>Mu</m> and spanning vectors <m>Mv_i</m>.
+      The offset span is still sent to an offset span, with offset
+      <m>Mu</m> and spanning vectors <m>Mv_i</m>.
     </p>
     <p>
-      Be careful that the matrix need not preserve the dimension of the span.
-      Even if the <m>v_i</m> are linearly independent and form a basis for the span,
-      the vectors <m>Mv_i</m> need not be linearly independent.
-      The dimension of the new span might be smaller.
+      Be careful that the matrix need not preserve the dimension of
+      the span. Even if the <m>v_i</m> are linearly independent and
+      form a basis for the span, the vectors <m>Mv_i</m> need not be
+      linearly independent. The dimension of the new span might be
+      smaller.
     </p>
   </subsection>
   <subsection xml:id="transformations-of-loci">
     <title>Transformation of Loci</title>
     <p>
-      For loci, the picture is much more complicated.
-      Equations do not transform nearly as pleasantly as spans.
-      Planes in <m>\RR^3</m> are defined by a normal;
-      we might hope that the new plane is defined by the image of the normal.
-      Unfortunatly, since the matrix may not preserve orthogonality,
-      this will usually not happen.
-      To determine the image of a locus,
-      the best solution is to describe the locus as a span or offset span find the image of the that span.
+      For loci, the picture is much more complicated. Equations do
+      not transform nearly as pleasantly as spans. Planes in
+      <m>\RR^3</m> are defined by a normal; we might hope that the new
+      plane is defined by the image of the normal. Unfortunatly,
+      since the matrix may not preserve orthogonality, this will
+      usually not happen. To determine the image of a locus, the best
+      solution is to describe the locus as a span or offset span find
+      the image of the that span.
     </p>
   </subsection>
 </section>

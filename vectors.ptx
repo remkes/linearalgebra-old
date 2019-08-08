@@ -18,10 +18,12 @@
           vector is a list of the numbers <m>4</m>, <m>15</m>,
           <m>\pi</m> and <m>-e</m> (in that order), we write the
           vector in one of two ways.
-          <men>
-            \begin{pmatrix}4\\15\\\pi\\e\end{pmatrix} \hspace{1cm}
-            \text{ or } \hspace{1cm} (4, 15, \pi, -e)
-          </men>
+          <md>
+           <mrow>
+             \amp \begin{pmatrix} 4 \\ 15 \\ \pi \\ e \end{pmatrix} 
+             \amp \text{or} \amp \amp (4, 15, \pi, -e) \amp
+            </mrow>
+          </md>
         </p>
       </statement>
     </definition>
@@ -36,12 +38,13 @@
           <m>\RR^n</m>, is the set of all vectors of length <m>n</m>
           with real number entries. An arbitrary element of
           <m>\RR^n</m> is written as a column.
-          <men>
-            \begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}
-          </men>
+          <me>
+            \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
+          </me>
         </p>
         <p>
-          We say that <m>\RR^n</m> has <term>dimension</term> <m>n</m>.
+          We say that <m>\RR^n</m> has <term>dimension</term>
+          <m>n</m>.
         </p>
       </statement>
     </definition>
@@ -55,11 +58,14 @@
           coordinate, and so on. For <m>\RR^2</m>, <m>\RR^3</m> and
           <m>\RR^4</m>, we use the letters <m>w,x,y,z</m> instead of
           <m>x_i</m>
-          <men>
-            \begin{pmatrix}x\\y\end{pmatrix} \in \RR^2 \hspace{1cm}
-            \begin{pmatrix}x\\y\\z\end{pmatrix} \in \RR^3 \hspace{1cm}
-            \begin{pmatrix}w\\x\\y\\z\end{pmatrix} \in \RR^4
-          </men>
+          <md>
+            <mrow>
+              \begin{pmatrix} x \\ y \end{pmatrix} \amp \in \RR^2 \amp
+              \begin{pmatrix} x \\ y\\ z \end{pmatrix} \amp \in \RR^3
+              \amp \begin{pmatrix} w \\ x\\ y\\ z \end{pmatrix} \amp
+              \in \RR^4
+            </mrow>
+          </md>
         </p>
       </statement>
     </definition>
@@ -70,9 +76,9 @@
           point given by a vector of zeros. It is also called the
           zero vector. It is considered the centre point of Cartesian
           space.
-          <men>
-            \begin{pmatrix}0\\0\\\vdots\\0\end{pmatrix}
-          </men>
+          <me>
+            \begin{pmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{pmatrix}
+          </me>
         </p>
       </statement>
     </definition>
@@ -169,10 +175,10 @@
           The <term>sum</term> of two vectors <m>u</m> and <m>v</m> in
           <m>\RR^n</m> is the sum taken componentwise..
           <me>
-            u + v = \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix}
-            + \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} =
-            \begin{pmatrix}u_1 + v_1\\u_2 + v_2\\\vdots\\u_n +
-            v_n\end{pmatrix}
+            u + v = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
+            \end{pmatrix} + \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\
+            v_n \end{pmatrix} = \begin{pmatrix} u_1 + v_1 \\ u_2 + v_2
+            \\ \vdots \\ u_n + v_n \end{pmatrix}
           </me>
         </p>
       </statement>
@@ -198,8 +204,9 @@
           By convention, scalar multiplication is written with the
           scalar on the left of the vector.
           <me>
-            au = a \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} =
-            \begin{pmatrix}au_1\\au_2\\\vdots\\au_n\end{pmatrix}
+            au = a \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
+            \end{pmatrix} = \begin{pmatrix} au_1 \\ au_2 \\ \vdots \\
+            au_n \end{pmatrix}
           </me>
         </p>
       </statement>
@@ -230,11 +237,10 @@
           scalar multiplication. This works out to be componentwise
           subtraction.
           <me>
-            u - v = u + (-1) v=
-            \begin{pmatrix}u_1\\u_2\\\vdots\\u_n\end{pmatrix} + (-1)
-            \begin{pmatrix}v_1\\v_2\\\vdots\\v_n\end{pmatrix} =
-            \begin{pmatrix}u_1 - v_1\\u_2 - v_2\\\vdots\\u_n -
-            v_n\end{pmatrix}
+            u - v = u + (-1) v= \begin{pmatrix} u_1 \\ u_2 \\ \vdots
+            \\ u_n \end{pmatrix} + (-1) \begin{pmatrix} v_1 \\ v_2 \\
+            \vdots \\ v_n \end{pmatrix} = \begin{pmatrix} u_1 - v_ 1\\
+            u_2 - v_2 \\ \vdots \\ u_n - v_n \end{pmatrix}
           </me>
         </p>
       </statement>
@@ -316,9 +322,13 @@
           We briefly state two properties of vector lenghts without
           proof.
           <md>
-            <mrow>|u+v| \amp  \leq |u| + |v| \amp  \hspace{1cm} \
-            \text{ Triangle Inequality }</mrow> <mrow>|au| \amp  =
-            |a||u| \amp</mrow>
+            <mrow>
+              |u+v| \amp  \leq |u| + |v| \amp  \hspace{1cm} \ \text{
+              Triangle Inequality }
+            </mrow> 
+            <mrow>
+              |au| \amp  = |a||u| \amp
+            </mrow>
           </md>
         </p>
       </statement>

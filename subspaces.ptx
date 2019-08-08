@@ -21,7 +21,8 @@
             </li>
             <li>
               <p>
-                If <m>u \in L</m> and <m>a \in \RR</m> then <m>av \in L</m>.
+                If <m>u \in L</m> and <m>a \in \RR</m> then <m>av \in
+                L</m>.
               </p>
             </li>
           </ul>
@@ -187,7 +188,7 @@
     <p>
       We would like the dimension of a locus to be simply determined
       by the dimension of the ambient space minus the number of
-      equations. However, there is a problem with the na&#xef;ve
+      equations. However, there is a problem with the naïve
       approach to dimension. In <m>\RR^2</m>, adding two linear
       equations should drop the dimension by two, giving a dimension
       zero subspace: a point. However, consider the equations <m>3x +

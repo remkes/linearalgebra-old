@@ -4,15 +4,19 @@
     The determinant of a (square) matrix is constructed recursively,
     starting with <m>2 \times 2</m> matrices.
     <me>
-      \det \left( \begin{matrix} a \amp  b \\ c \amp  d \end{matrix} \right) = \left| \begin{matrix} a \amp  b \\ c \amp  d \end{matrix} \right| = ad-bc
+      \det \left( \begin{matrix} a \amp  b \\ c \amp  d \end{matrix}
+      \right) = \left| \begin{matrix} a \amp  b \\ c \amp  d
+      \end{matrix} \right| = ad-bc
     </me>
   </p>
   <example>
     <statement>
       <p>
-        For the matrix <m>\left( \begin{matrix}1 \amp -3 \\ 2 \amp -1 \end{matrix} \right)</m>,
-        the determinant is <m>(1)(-1) - (2)(-3) = -1 + 6 = 5</m>.
-        Therefore, we know that this matrix multiplies all areas by a factor of <m>5</m> and preserves orientation.
+        For the matrix <m>\left( \begin{matrix}1 \amp -3 \\ 2 \amp -1
+        \end{matrix} \right)</m>, the determinant is <m>(1)(-1) -
+        (2)(-3) = -1 + 6 = 5</m>. Therefore, we know that this matrix
+        multiplies all areas by a factor of <m>5</m> and preserves
+        orientation.
       </p>
     </statement>
   </example>
@@ -20,24 +24,28 @@
     <statement>
       <p>
         The algorithm for calculating determinants in general is call
-        <term>Co-Factor Expansion</term>.
-        It is a recursive algorithm that reduces determinant calculation to determinants of smaller square matrices,
-        eventually down to <m>2 \times 2</m> matrices.
+        <term>Co-Factor Expansion</term>. It is a recursive algorithm
+        that reduces determinant calculation to determinants of
+        smaller square matrices, eventually down to <m>2 \times 2</m>
+        matrices.
       </p>
     </statement>
   </definition>
   <p>
-    Co-factor expansion procceds in this way:
-    we choose <em>any</em> column or row of the matrix.
-    We take the coefficients from that column or row.
-    For each of the coefficients,
-    we multiply that coefficient by the detminant of the matrix formed by removing both the columnn and row containig that coefficient.
-    Then we add up the determinants of these small matrices multiplied by matching coefficients,
-    with a pattern of <m>\pm</m> signs.
-    That pattern of <m>\pm</m> signs is a checkerboard pattern,
-    as in the following <m>5 \times 5</m> matrix.
+    Co-factor expansion procceds in this way: we choose <em>any</em>
+    column or row of the matrix. We take the coefficients from that
+    column or row. For each of the coefficients, we multiply that
+    coefficient by the detminant of the matrix formed by removing both
+    the columnn and row containig that coefficient. Then we add up
+    the determinants of these small matrices multiplied by matching
+    coefficients, with a pattern of <m>\pm</m> signs. That pattern of
+    <m>\pm</m> signs is a checkerboard pattern, as in the following
+    <m>5 \times 5</m> matrix.
     <me>
-      \left( \begin{matrix} + \amp  - \amp  + \amp  - \amp  + \\ - \amp  + \amp  - \amp  + \amp  - \\ + \amp  - \amp  + \amp  - \amp  + \\ - \amp  + \amp  - \amp  + \amp  - \\ + \amp  - \amp  + \amp  - \amp  + \end{matrix} \right)
+      \left( \begin{matrix} + \amp  - \amp  + \amp  - \amp  + \\ -
+      \amp  + \amp  - \amp  + \amp  - \\ + \amp  - \amp  + \amp  -
+      \amp  + \\ - \amp  + \amp  - \amp  + \amp  - \\ + \amp  - \amp
+      + \amp  - \amp  + \end{matrix} \right)
     </me>
   </p>
   <p>
@@ -47,51 +55,54 @@
   <example>
     <statement>
       <p>
-        Here is a <m>3 \times 3</m> example where we choose the first row for cofactor expansion.
+        Here is a <m>3 \times 3</m> example where we choose the first
+        row for cofactor expansion.
         <md>
-          <mrow>\left| \begin{matrix} 5 \amp  -2 \amp  0</mrow>
-          <mrow>-3 \amp  3 \amp  -2</mrow>
-          <mrow>1 \amp  -5 \amp  3 \end{matrix} \right| \amp  = (+1) 5 \left| \begin{matrix} 3 \amp  -2</mrow>
-          <mrow>-5 \amp  3 \end{matrix} \right| + (-1) (-2) \left| \begin{matrix} -3 \amp  -2</mrow>
-          <mrow>1 \amp  3 \end{matrix} \right| + (+1) (0) \left| \begin{matrix} -3 \amp  3</mrow>
-          <mrow>1 \amp  -5 \end{matrix} \right|</mrow>
-          <mrow>\amp  = 5 ((3)(3) - (-2)(-5)) + 2( (-3)(3) - (-2)(1)) + (0) (-3)(-5) - (3)(1)</mrow>
-          <mrow>\amp  = 5 (-1) + 2 (-7) = - 19</mrow>
+          <mrow>
+            \amp \begin{vmatrix} 5 \amp -2 \amp 0 \\ -3 \amp 3 \amp -2
+            \\ 1 \amp -5 \amp 3 \end{vmatrix} = +5 \begin{vmatrix} 3
+            \amp -2 \\ -5 \amp 3 \end{vmatrix} -(-2) \begin{vmatrix}
+            -3 \amp -2 \\ 1 \amp 3 \end{vmatrix} +0 \begin{vmatrix} -3
+            \amp 3 \\ 1 \amp -5 \end{vmatrix} 
+          </mrow>
+          <mrow>
+            \amp = 5((3)(3) - (-2)(-5)) + 2((-3)(3) - (-2)(1)) +
+            (0)((-3)(-5)-(3)(1))
+          </mrow>
+          <mrow>
+            \amp = 5(-1) + 2(-7) + 0 = -19
+          </mrow>
         </md>
       </p>
     </statement>
   </example>
   <p>
-    If we did cofactor expansion of an arbitrary <m>3 \times 3</m> matrix,
-    we would get a direct expression for the determinant.
+    If we did cofactor expansion of an arbitrary <m>3 \times 3</m>
+    matrix, we would get a direct expression for the determinant.
     <me>
-      \left| \begin{matrix} a \amp  b \amp  c \\ d \amp  e \amp  f \\ g \amp  h \amp  i \end{matrix} \right| = aei - ahf - bdi + bfg + cdh - ceg
+      \left| \begin{matrix} a \amp  b \amp  c \\ d \amp  e \amp  f \\
+      g \amp  h \amp  i \end{matrix} \right| = aei - ahf - bdi + bfg +
+      cdh - ceg
     </me>
   </p>
   <p>
-    We could use this formula for
-    <m>3 \times 3</m> matrices, if we wished.
-    We could do the same for larger matrices,
-    but it starts to get quite complicated.
-    The computational complexity of the recursive determinant algorithm grows very quickly.
-    For a <m>3 \times 3</m> matrix,
-    we had 3 recursions to <m>2 \times 2</m> matrices,
-    each with <m>2</m> multiplication terms in the determinant,
-    giving <m>6</m> terms.
-    Each term was the multiple of three coefficients,
-    giving <m>12</m> total multiplications.
-    For a <m>4 \times 4</m>, the recursions gives <m>24</m> terms,
-    each with <m>4</m> coefficients,
-    so <m>24\cdot 3 = 72</m> multiplications.
-    For a <m>5 \times 5</m> matrix,
-    we recurse five times to a <m>4 \times 4</m> matrix,
-    for <m>120</m> terms each with <m>5</m> coefficients,
-    which is <m>120 \cdot 4 = 600</m> multiplications.
-    The pattern continues:
-    there are <m>n!</m> terms in the determinant of a <m>n \times n</m> matrix,
-    each with <m>n</m> coefficient,
-    for <m>n! (n-1)</m> multiplications.
-    This is computationally terrifying,
-    making determinants of large matrices computationally very difficult.
+    We could use this formula for <m>3 \times 3</m> matrices, if we
+    wished. We could do the same for larger matrices, but it starts
+    to get quite complicated. The computational complexity of the
+    recursive determinant algorithm grows very quickly. For a <m>3
+    \times 3</m> matrix, we had 3 recursions to <m>2 \times 2</m>
+    matrices, each with <m>2</m> multiplication terms in the
+    determinant, giving <m>6</m> terms. Each term was the multiple of
+    three coefficients, giving <m>12</m> total multiplications. For a
+    <m>4 \times 4</m>, the recursions gives <m>24</m> terms, each with
+    <m>4</m> coefficients, so <m>24\cdot 3 = 72</m> multiplications.
+    For a <m>5 \times 5</m> matrix, we recurse five times to a <m>4
+    \times 4</m> matrix, for <m>120</m> terms each with <m>5</m>
+    coefficients, which is <m>120 \cdot 4 = 600</m> multiplications.
+    The pattern continues: there are <m>n!</m> terms in the
+    determinant of a <m>n \times n</m> matrix, each with <m>n</m>
+    coefficient, for <m>n! (n-1)</m> multiplications. This is
+    computationally terrifying, making determinants of large matrices
+    computationally very difficult.
   </p>
 </section>

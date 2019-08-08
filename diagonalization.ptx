@@ -4,93 +4,110 @@
     <statement>
       <p>
         An <m>n \times n</m> matrix is called
-        <term>diagonalizable</term>
-        if if has <m>n</m> eigenvalues,
-        counted with multiplicity,
-        and if its eigenspaces all have the maximum dimension
-        (their dimension equals their multiplicity).
+        <term>diagonalizable</term> if if has <m>n</m> eigenvalues,
+        counted with multiplicity, and if its eigenspaces all have the
+        maximum dimension (their dimension equals their
+        multiplicity).
       </p>
     </statement>
   </definition>
   <p>
-    All symmetric matrices are diagonalizable by the proposition at the end of the previous section.
-    The reason for the term <sq>diagonalizable</sq> is the following proposition.
+    All symmetric matrices are diagonalizable by the proposition at
+    the end of the previous section. The reason for the term
+    <sq>diagonalizable</sq> is the following proposition.
   </p>
   <proposition>
     <statement>
       <p>
         Let <m>A</m> be a diagonalizable <m>n \times n</m> matrix.
-        Then there exists a diagonal
-        <m>n \times n</m> matrix <m>D</m> and an intertible
-        <m>n \times n</m> matrix <m>S</m> such that <m>D = S^{-1}AS</m>. (Equivalently,
-        <m>A</m> is <em>conjugate</em> to a diagonal matrix).
-        Moreover, the entries on the diagonal of <m>D</m> are precisely the eigenvalues of <m>A</m>.
-        <m>S</m> can then be construsted such that the <m>i</m>th column of <m>S</m> is a eigenvector for the <m>i</m>th diagonal entry of <m>D</m>.
+        Then there exists a diagonal <m>n \times n</m> matrix <m>D</m>
+        and an intertible <m>n \times n</m> matrix <m>S</m> such that
+        <m>D = S^{-1}AS</m>. (Equivalently, <m>A</m> is
+        <em>conjugate</em> to a diagonal matrix). Moreover, the
+        entries on the diagonal of <m>D</m> are precisely the
+        eigenvalues of <m>A</m>. <m>S</m> can then be construsted
+        such that the <m>i</m>th column of <m>S</m> is a eigenvector
+        for the <m>i</m>th diagonal entry of <m>D</m>.
       </p>
     </statement>
   </proposition>
   <p>
-    The proposition already provides an algorithm.
-    We find the eigenvalues and eigenvectors of <m>A</m>,
-    construct <m>D</m> with the eigenvalues on the diagonal,
-    and construct <m>S</m> with the eigenvectors as columns,
-    matching in place with <m>D</m>.
-    Then we just need to invert <m>S</m> to have the complete formula.
-    Often we write the diagonalization as <m>A = SDS^{-1}</m>.
+    The proposition already provides an algorithm. We find the
+    eigenvalues and eigenvectors of <m>A</m>, construct <m>D</m> with
+    the eigenvalues on the diagonal, and construct <m>S</m> with the
+    eigenvectors as columns, matching in place with <m>D</m>. Then we
+    just need to invert <m>S</m> to have the complete formula. Often
+    we write the diagonalization as <m>A = SDS^{-1}</m>.
   </p>
   <p>
-    Our symmetric matrices are even more pleasant than we noted before.
+    Our symmetric matrices are even more pleasant than we noted
+    before.
   </p>
   <proposition>
     <statement>
       <p>
-        A matrix is diagonalizable with <m>S</m> an orthogonal matrix if and only if the matrix is symmetric.
-        Equivalently,
-        a matrix is symmetric if and only if there is an orthonormal basis of <m>\RR^n</m> consisting entirely of eigenvectors.
-        To construct this <m>S</m> we simply take unit eigenvectors for its columns.
+        A matrix is diagonalizable with <m>S</m> an orthogonal matrix
+        if and only if the matrix is symmetric. Equivalently, a
+        matrix is symmetric if and only if there is an orthonormal
+        basis of <m>\RR^n</m> consisting entirely of eigenvectors. To
+        construct this <m>S</m> we simply take unit eigenvectors for
+        its columns.
       </p>
     </statement>
   </proposition>
   <example>
     <statement>
       <me>
-        A = \left(
-        \begin{matrix}
-        1 \amp  3 \\ 3 \amp  1
-        \end{matrix}
-        \right)
+        A = \begin{pmatrix} 1 \amp 3 \\ 3 \amp 1 \end{pmatrix}
       </me>
       <p>
-        The characteristic polynomial is <m>\lambda^2 - 2\lambda - 8</m>.
-        The roots are <m>\lambda = 4</m> and <m>\lambda = -2</m>.
-        We start with <m>\lambda = 4</m>.
+        The characteristic polynomial is <m>\lambda^2 - 2\lambda -
+        8</m>. The roots are <m>\lambda = 4</m> and <m>\lambda =
+        -2</m>. We start with <m>\lambda = 4</m>.
         <me>
-          A - 3 \Id = \left( \begin{matrix} -3 \amp  3 \\ 3 \amp  -3 \end{matrix} \right)
+          A - 3 \Id = \begin{pmatrix} -3 \amp 3 \\ 3 \amp -3
+          \end{pmatrix}
         </me>
       </p>
       <p>
-        The kernel is the span of <img src="MISSINGFILE"  width="400" /> . The unit vector is <img src="MISSINGFILE"  width="400" /> . Next we take <m>\lambda = -2</m>.
+        The kernel is the span of <m>\begin{pmatrix} 1 \\ 1
+        \end{pmatrix}</m> . The unit vector is <m> \frac{1}{\sqrt{2}}
+        \begin{pmatrix} 1 \\ 1 \end{pmatrix}</m> . Next we take
+        <m>\lambda = -2</m>.
         <me>
-          A + 2 \Id = \left( \begin{matrix} 3 \amp  3 \\ 3 \amp  3 \end{matrix} \right)
+          A + 2 \Id = \begin{pmatrix} 3 \amp 3 \\ 3 \amp 3
+          \end{pmatrix} 
         </me>
       </p>
       <p>
-        The kernel is the span of <img src="MISSINGFILE"  width="400" /> . The unit vector is <img src="MISSINGFILE"  width="400" /> . Then we can construct the diagonal matrix <m>D</m> and the invertible matrix <m>S</m>.
-        <me>
-          D = \left( \begin{matrix} 4 \amp  0 \\ 0 \amp  -2 \end{matrix} \right) \hspace{2cm} S = \frac{1}{\sqrt{2}} \left( \begin{matrix} 1 \amp  1 \\ -1 \amp  1 \end{matrix} \right)
-        </me>
+        The kernel is the span of <m>\begin{pmatrix} 1 \\ -1
+        \end{pmatrix}</m> . The unit vector is <m>\frac{1}{\sqrt{2}}
+        \begin{pmatrix} 1 \\ -1 \end{pmatrix}</m>. Then we can
+        construct the diagonal matrix <m>D</m> and the invertible
+        matrix <m>S</m>. 
+        <md>
+          <mrow>
+          \amp D = \begin{pmatrix} 4 \amp 0 \\ 0 \amp -2 \end{pmatrix}
+          \right) \amp \amp S = \frac{1}{\sqrt{2}} \begin{pmatrix} 1
+          \amp 1 \\ -1 \amp 1 \end{pmatrix}
+          </mrow>
+        </md>
       </p>
       <p>
-        Since <m>S</m> is orthogonal,
-        its inverse is its transpose.
+        Since <m>S</m> is orthogonal, its inverse is its transpose.
         <me>
-          \frac{1}{\sqrt{2}} \left( \begin{matrix} 1 \amp  -1 \\ 1 \amp  1 \end{matrix} \right)
+          \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \amp -1 \\ 1
+          \amp 1 \end{pmatrix} 
         </me>
       </p>
       <p>
         This completes the diagonalization.
         <me>
-          A = \left( \begin{matrix} 1 \amp  3 \\ 3 \amp  1 \end{matrix} \right) = \frac{1}{\sqrt{2}} \left( \begin{matrix} 1 \amp  1 \\ -1 \amp  1 \end{matrix} \right) \left( \begin{matrix} 4 \amp  0 \\ 0 \amp  -2 \end{matrix} \right) \frac{1}{\sqrt{2}} \left( \begin{matrix} 1 \amp  -1 \\ 1 \amp  1 \end{matrix} \right) = SDS^{-1}
+          A = \begin{pmatrix} 1 \amp 3 \\ 3 \amp 1 \end{pmatrix} =
+          \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \amp 1 \\ -1 \amp 1
+          \end{pmatrix} \begin{pmatrix} 4 \amp 0 \\ 0 \amp -2
+          \end{pmatrix} \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \amp -1
+          \\ 1 \amp 1 \end{pmatrix} = SDS^{-1}
         </me>
       </p>
     </statement>
