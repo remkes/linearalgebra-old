@@ -104,7 +104,7 @@
       shows some interactions between addition, scalar multiplication,
       length and the dot product. Some of these are easy to establish
       from the definition and some take more work. I've labeled some
-      of these as `commutative' and `distributative'. Recall that an
+      of these as 'commutative' and 'distributative'. Recall that an
       operation is commutative if the order can be reverse and
       distributive (over addition) if it can be applied to both piece
       of a sum seperately. 
@@ -160,7 +160,7 @@
     </proposition>
     <figure xml:id="the-cosine-law">
       <caption>The Cosine Law</caption>
-      <image width="85%" source="images/figure7.svg" />
+      <image width="85%" source="images/figure7" />
     </figure>
   </subsection>
 </section>

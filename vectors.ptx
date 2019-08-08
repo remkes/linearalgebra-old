@@ -96,7 +96,7 @@
     </p>
     <figure xml:id="points-in-the-cartesian-plane">
       <caption>Points in the Cartesian Plane <m>\RR^2</m></caption>
-      <image width="85%" source="images/figure1.svg" />
+      <image width="85%" source="images/figure1"/>
     </figure>
     <p>
       As with <m>\RR^2</m>, the point <m> \begin{pmatrix} a \\ b \\ c
@@ -114,7 +114,7 @@
     </p>
     <figure xml:id="points-in-cartesian-three-space">
       <caption>Points in Cartesian three-space <m>\RR^3</m></caption>
-      <image width="85%" source="images/figure2.svg" />
+      <image width="85%" source="images/figure2"/>
     </figure>
     <definition>
       <statement>
@@ -159,7 +159,7 @@
     </p>
     <figure xml:id="points-and-directions">
       <caption>Vectors as Points and Directions</caption>
-      <image width="85%" source="images/figure3.svg" />
+      <image width="85%" source="images/figure3"/>
     </figure>
   </subsection>
   <subsection xml:id="linear-operations">
@@ -192,7 +192,7 @@
     </p>
     <figure xml:id="visualizing-vector-addition">
       <caption>Visualizing Vector Addition</caption>
-      <image width="85%" source="images/figure4.svg" />
+      <image width="85%" source="images/figure4"/>
     </figure>
     <definition>
       <statement>
@@ -223,7 +223,7 @@
     </p>
     <figure xml:id="visualizing-scalar-multiplication">
       <caption>Visualizing Scalar Multiplication</caption>
-      <image width="85%" source="images/figure5.svg" />
+      <image width="85%" source="images/figure5"/>
     </figure>
     <p>
       Scalar multiplication also lets us define the difference between
@@ -314,7 +314,7 @@
     </p>
     <figure xml:id="difference-and-length">
       <caption>Visualizing Distance Between Vectors</caption>
-      <image width="85%" source="images/figure6.svg" />
+      <image width="85%" source="images/figure6"/>
     </figure>
     <proposition>
       <statement>
