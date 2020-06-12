@@ -1,5 +1,4 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="welcome">
-  <title>Welcome to the Course</title>
-  <xi:include  href="introduction.ptx" />
+  <title>Week 0</title>
   <xi:include  href="themes.ptx" />
 </chapter>

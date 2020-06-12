@@ -1,0 +1,256 @@
+<section xml:id="matrices-and-transformations">
+  <title>Examples in <m>\RR^3</m></title>
+  <subsection xml:id="matrix-representation">
+    <title>Matrix Representation of Linear Transformations</title>
+    <p>
+      Now we come to the second eajor application of matrices. In
+      addition to succintly encoding linear systems, matrices can also
+      be used very efficiently to encode linear transformations. This
+      is done by defining how a matrix can act on a vector.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A = a_{ij}</m> be a <m>m \times n</m> matrix and let
+          <m>v</m> be a vector in <m>\RR^n</m>. There is an action of
+          <m>A</m> on <m>v</m>, written <m>Av</m>, which defines a new
+          vector in <m>\RR^m</m>. That action is given in the
+          following formula.
+          <me>
+            \begin{pmatrix} a_{11} \amp a_{12} \amp \cdots
+            \amp a_{1n} \\ a_{21} \amp a_{22} \amp \cdots \amp
+            a_{2n} \\ \vdots \amp \vdots \amp \vdots \amp \vdots \\
+            a_{n1} \amp a_{n2} \amp \cdots \amp a_{nn} \end{pmatrix}
+            \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix}
+            = \begin{pmatrix} a_{11}v_1 + a_{12}v_2 + \ldots +
+            a_{1n}v_n \\ a_{21}v_1 + a_{22}v_2 + \ldots + a_{2n}v_n \\
+            \vdots \\ a_{n1}v_1 + a_{n2}v_2 + \ldots + a_{nn}v_n
+            \end{pmatrix}
+          </me>
+        </p>
+        <p>
+          This is a bit troubling to work out in general. Let's see
+          what it looks like slightly more concretely in <m>\RR^2</m>
+          and <m>\RR^3</m>.
+          <md>
+            <mrow>
+              \begin{pmatrix}
+              a \amp b \\ c \amp d  
+              \end{pmatrix}
+              \begin{pmatrix}
+              x \\ y 
+              \end{pmatrix} \amp = 
+              \begin{pmatrix}
+              ax + by \\ cx + dy 
+              \end{pmatrix}
+            </mrow>
+            <mrow>
+              \begin{pmatrix}
+              a \amp b \amp c \\ d \amp e \amp f \\ g \amp h \amp i     
+              \end{pmatrix}
+              \begin{pmatrix}
+              x \\ y \\ z 
+              \end{pmatrix} \amp = 
+              \begin{pmatrix}
+              ax + by + cz \\ dx + ey + fz \\ gx + hy + iz 
+              \end{pmatrix}
+            </mrow>
+          </md>
+        </p>
+        <p>
+          In this way, all <m>m \times n</m> matrices determine a
+          method of sending vectors in <m>\RR^n</m> to <m>\RR^m</m>: a
+          function <m>\RR^n \rightarrow \RR^m</m>. It is not at all
+          obvious from the definition, but matrices completely
+          describe all linear transformations.
+        </p>
+      </statement>
+    </definition>
+    <proposition>
+      <statement>
+        <p>
+          If <m>A</m> is a <m>m \times n</m> matrix, then the
+          associated function defined by the matrix action is a linear
+          function <m>\RR^n \rightarrow \RR^m</m>. Moreover, all
+          linear functions <m>\RR^n \rightarrow \RR^m</m> can be
+          encoded this way. Finally, each linear function is encoded
+          uniquely, i.e., each <m>m \times n</m> matrix corresponds to
+          a different transformation.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      In this way, the set of linear transformation <m>\RR^n
+      \rightarrow \RR^m</m> is <em>exactly</em> the same as the set of
+      <m>m \times n</m> matrices. This is a very powerful result: in
+      order to understand linear transformations of Euclidean space,
+      we only have to understand matrices and their properties.
+    </p>
+    <p>
+      Let's see what certain special matrices mean as transformations.
+      We'll look at <m>3 \times 3</m> matrices for these examples.
+    </p>
+    <example>
+      <statement>
+        <p>
+          First, we had the zero matrix: all coefficient are zero.
+          <me>
+            \begin{pmatrix} 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \\ 0
+            \amp 0 \amp 0 \end{pmatrix} \begin{pmatrix} x \\ y \\ z
+            \end{pmatrix} = \begin{pmatrix} 0x + 0y + 0z \\ 0x + 0y +
+            0z \\ 0x + 0y + 0z \end{pmatrix} = \begin{pmatrix} 0 \\ 0
+            \\ 0 \end{pmatrix}
+          </me>
+        </p>
+        <p>
+          The zero matrix corresponds to the projection that sends all
+          vectors to the origin.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          We also had the identity matrix: ones on the diagonal and
+          zeros elsewhere.
+          <me>
+            \begin{pmatrix} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0
+            \amp 0 \amp 1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z
+            \end{pmatrix} = \begin{pmatrix} 1x + 0y + 0z \\ 0x + 1y +
+            0z \\ 0x + 0y + 1z \end{pmatrix} = \begin{pmatrix} x \\ y
+            \\ z \end{pmatrix}
+          </me>
+        </p>
+        <p>
+          The identity matrix corresponds to the transformation which
+          doesn't change anything. Appropriately, we called this the
+          identity transformation.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Diagonal matrices only have non-zero entires on the diagonal.
+          <me>
+            \begin{pmatrix} a \amp 0 \amp 0 \\ 0 \amp b \amp 0 \\ 0
+            \amp 0 \amp c \end{pmatrix} \begin{pmatrix} x \\ y \\ z
+            \end{pmatrix} = \begin{pmatrix} ax + 0y + 0z \\ 0x + by +
+            0z \\ 0x + 0y + cz \end{pmatrix} = \begin{pmatrix} ax \\
+            by \\ cz \end{pmatrix}
+          </me>
+        </p>
+        <p>
+          This is a dialation: the <m>x</m> direction is stretched by
+          the factor <m>a</m>, the <m>y</m> direction by the factor
+          <m>b</m> and the <m>z</m> direction by the factor <m>c</m>.
+          Diagonal matrices are dialations.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="matrix-multiplication">
+    <title>Composition and Matrix Multiplication</title>
+    <p>
+      We previously defined the composition of linear transformation.
+      Compositon allows us to combine transformations: we can ask what
+      happens if we first rotate and then reflect in <m>\RR^2</m>.
+      However, since matrices represent transformations, this
+      compsotion should somehow be accounted for in the matrix
+      representation. If <m>A</m> is the matrix of <m>S</m> and
+      <m>B</m> is the matrix of <m>T</m>, what is the matrix of <m>S
+      \circ T</m>?  The answer is given by matrix multiplication.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>A</m> be a <m>k \times m</m> matrix and <m>B</m> a
+          <m>m \times n</m> matrix. We can think of the
+          <term>rows</term> of <m>A</m> as vectors in <m>\RR^m</m>,
+          and the <term>columns</term> of <m>B</m> as vectors in
+          <m>\RR^m</m> as well. To emphasise this perspective, we
+          write the following, using <m>u_i</m> for the rows of
+          <m>A</m> and <m>v_i</m> for the columns of <m>B</m>.
+          <md>
+            <mrow>
+            \amp A = \begin{pmatrix} \rightarrow \amp u_1 \amp
+            \rightarrow \\ \rightarrow \amp u_2 \amp \rightarrow \\
+            \rightarrow \amp u_3 \amp \rightarrow \\ \vdots \amp
+            \vdots \amp \vdots \\ \rightarrow \amp u_k \amp
+            \rightarrow \end{pmatrix} \amp \amp B = \begin{pmatrix}
+            \downarrow \amp \downarrow \amp \downarrow \amp \ldots
+            \amp \downarrow \\ v_1 \amp v_2 \amp v_3 \amp \ldots \amp
+            v_n \\ \downarrow \amp \downarrow \amp \downarrow \amp
+            \ldots \amp \downarrow \end{pmatrix}
+            </mrow>
+          </md>
+        </p>
+        <p>
+          With this notation, the <term>matrix multiplication</term>
+          of <m>A</m> and <m>B</m> is the <m>k \times n</m> matrix
+          where the entires are the dot products of rows and columns.
+          <me>
+            AB = \begin{pmatrix} u_1 \cdot v_1 \amp u_1 \cdot
+            v_2 \amp u_1 \cdot v_3 \amp \ldots \amp u_1 \cdot v_n \\
+            u_2 \cdot v_1 \amp u_2 \cdot v_2 \amp u_2 \cdot v_3 \amp
+            \ldots \amp u_2 \cdot v_n \\ u_3 \cdot v_1 \amp u_3 \cdot
+            v_2 \amp u_3 \cdot v_3 \amp \ldots \amp u_3 \cdot v_n \\
+            \vdots \amp  \vdots \amp  \vdots \amp  \ldots \amp  \vdots
+            \\ u_k \cdot v_1 \amp u_k \cdot v_2 \amp u_k \cdot v_3
+            \amp \ldots \amp u_k \cdot v_n \end{pmatrix} 
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      This operation has the desired property: the product of the
+      matrices repesents the composition of the transformations.
+      (This remarkable fact is presented here without proof; I'll
+      leave it to you to wonder why this wierd combinations of dot
+      products has the desired geometric interpretation.) Remember
+      that the composition still works from right to left, so that the
+      matrix multiplication <m>AB</m> represents the transformation
+      associated to <m>B</m> first, followed by the transformation
+      associated to <m>A</m>. When we think of matrices acting on
+      vectors, we wrote the action on the right: <m>Av</m>. Now when
+      when a composition acts, as in <m>ABv</m>, the closest matrix
+      gets to act first.
+    </p>
+    <p>
+      We have defined a new algebraic operation. As with the new
+      products for vectors (dot and cross), we want to know the
+      properties of this new operation.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> be a <m>k \times l</m> matrix, <m>B</m> and
+          <m>C</m> be <m>l \times m</m> matrices, and <m>D</m> a <m>m
+          \times n</m> matrix. Also let <m>I_i</m> be the identity
+          matrix in <m>\RR^i</m> for any <m>i \in \NN</m>. Then there
+          are three important properties of matrix multiplication.
+          <md>
+            <mrow>
+              A(BD) \amp = (AB) D \amp \amp \text{Associative}  
+            </mrow>
+            <mrow>
+              A(B+C) \amp = AB + AC \amp \amp \text{Distributive}
+            </mrow>
+            <mrow>
+              AI_l \amp  = I_kA = A \amp \amp \text{Identity} 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Note the lack of commutativity: <m>AB \neq BA</m>. In fact, if
+      <m>A</m> and <m>B</m> are not square matrices, if <m>AB</m> is
+      defined and <m>BA</m> will not be; the indices will not match.
+      Not only are we unable to exchange the order of matrix
+      multiplication; sometimes that multiplication doesn't even make
+      sense as an operation. Matrix multiplication is a very
+      important example of a non-commutative product.
+    </p>
+  </subsection>
+</section>

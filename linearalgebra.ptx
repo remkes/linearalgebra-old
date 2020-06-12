@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <docinfo>
     <xi:include href="./macros.ptx" />  
     <latex-image-preamble>
@@ -18,14 +18,20 @@
   <book>
     <title>Course Notes for Linear Algebra</title>
     <xi:include href="./frontmatter.ptx" /> 
-    <xi:include href="./welcome.ptx" />
-    <xi:include href="./geometry.ptx" />
-    <xi:include href="./systems-and-dimensions.ptx" />
-    <xi:include href="./linear-transformations.ptx" />
-    <xi:include href="./determinants.ptx" />
-    <xi:include href="./investigating-transformations.ptx" />
-    <xi:include href="./dynamical-systems.ptx" />
+    <xi:include href="./week0.ptx" />
+    <xi:include href="./week1.ptx" />
+    <xi:include href="./week2.ptx" />
+    <xi:include href="./week3.ptx" />
+    <xi:include href="./week4.ptx" />
+    <xi:include href="./week5.ptx" />
+    <xi:include href="./week6.ptx" />
+    <xi:include href="./week7.ptx" />
+    <xi:include href="./week8.ptx" />
+    <xi:include href="./week9.ptx" />
+    <xi:include href="./week10.ptx" />
+    <xi:include href="./week11.ptx" />
+    <xi:include href="./week12.ptx" />
     <backmatter>
     </backmatter>
   </book>
-</mathbook>
+</pretext>

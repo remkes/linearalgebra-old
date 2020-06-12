@@ -1,0 +1,8 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="week3">
+  <title>Week 3</title>
+  <xi:include href="spans.ptx" />
+  <xi:include href="subspaces.ptx" />
+  <xi:include href="bases.ptx" />
+  <xi:include href="proofs-week3.ptx" />
+  <xi:include href="week3-activity.ptx" />
+</chapter>

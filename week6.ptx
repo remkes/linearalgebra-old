@@ -1,0 +1,9 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="week6">
+  <title>Week 6</title>
+  <xi:include href="transformations.ptx" />
+  <xi:include href="matrices-and-transformations.ptx" />
+  <xi:include href="r2-examples.ptx" />
+  <xi:include href="r3-examples.ptx" />
+  <xi:include href="proofs-week6.ptx" />
+  <xi:include href="week6-activity.ptx" />
+</chapter>

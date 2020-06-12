@@ -1,7 +1,154 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="dynamical-systems">
-  <title>Linear Dynamical Systems</title>
-  <xi:include  href="dynamical-systems-theory.ptx" />
-  <xi:include  href="recurrence.ptx" />
-  <xi:include  href="leslie.ptx" />
-  <xi:include  href="stochastic.ptx" />
-</chapter>
+<section xml:id="dynamical-systems-theory">
+  <title>Theory of Dynamical Systems</title>
+  <p>
+    Let's consider an applied mathematics problem where a vector <m>v
+    \in \RR^n</m> somehow represents the state of the situation under
+    consideration. This state could be a position, keeping with the
+    geometry of <m>\RR^n</m>, but typically it is just a list of
+    numbers with some other interpretation. Once we have states,
+    which are vectors in <m>\RR^n</m>, assume we can move from one
+    state to the next over a period of time called a timestep. If we
+    are in state <m>v_k</m>, then after the next
+    second/minute/day/year, we are in the next state <m>v_{k+1}</m>.
+    Thus we have a sequence <m>\{v_k\}_{k=1}^\infty</m> of states in
+    <m>\RR^n</m>.
+  </p>
+  <p>
+    How do we move from one state to the next?  If the process is
+    linear, then we can describe the progression as a matrix
+    multiplication. That it, there exists a matrix <m>A</m> such that
+    <m>v_k = A v_{k+1}</m> for all <m>k \in \NN</m>. Notice that this
+    is only a single matrix: the matrix <m>A</m> goes from one state
+    to the next, no matter where we are in the sequence. In this way,
+    these processes have no memory: each state only depends on the
+    previous state, not on any of the states before the previous.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        A sequence of vectors <m>\{v_k\}_{k=1}^\infty</m> which
+        satisfy the matrix equation <m>v_{k+1} = A v_k</m> is called a
+        <term>(discrete) linear dynamical system</term>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    As a first observation, we need to calculate <m>A^n</m> for large
+    values of <m>n</m>. In general, this is computationally
+    difficult. However, if <m>A</m> is diagonalizable, then <m>A =
+    SDS^{-1}</m> and <m>A^n = SD^nS^{-1}</m>. Higher powers of a
+    diagonal matrix are computationally easy, so diagonalizaing the
+    matrix is often a necessary and natural step.
+  </p>
+  <p>
+    We can also use the eigenvalue/eigenvector information in our
+    interpretation. A natural question is: what is the long term
+    behaviour of the sequence?  For dynamical systems, we can asnwer
+    this question with eigenvectors. If <m>v</m> is an eigenvector of
+    <m>A</m> with eigenvalue <m>\lambda</m>, then <m>A^n v = \lambda^n
+    v</m>, so the long term behaviour of this state is expressed as
+    multiples of the original state. This behaviour can be broken
+    down into cases depending on the eigenvalue <m>\lambda</m>.
+    <ul>
+      <li>
+        <p>
+          If <m>\lambda = 0</m>, then this is a collapsing state and
+          all future states are simply the zero vector.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>|\lambda| \lt 1</m>, then we have exponential decay.
+          The long term behaviour of <m>A^n v</m> is exponential decay
+          of the original vector.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>\lambda = -1</m>, then we have a 2-period oscilating
+          state. The sequence begins with the state <m>v</m> and
+          jumps back and forth between <m>v</m> and <m>-v</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>\lambda = 1</m>, then <m>v</m> is a steady state: the
+          sequence never changes. These steady states are often very
+          important in modelling.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>|\lambda| > 1</m>, then we have exponential growth of
+          the original vector. If <m>\lambda \lt -1</m>, this growth
+          comes with <m>\pm</m> oscilations as well.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    We could ask what happens for complex eigenvalues, since those
+    will naturally also occur. Since the characteristic polynomial
+    will have real coefficients, these complex eigenvalues will come
+    in conjugate pairs. As we might learn in other courses, such
+    pairs and the exponential behaviour (<m>\lambda^n</m>) give rise
+    to sinusoidal behaviour after clever linear combinations. The
+    reasons will have to wait for another course.
+  </p>
+  <p>
+    In many models, the coefficients of the matrix will be
+    probabilities, transition terms, growth rates or other
+    <em>positive</em> real numbers. <m>A</m> will very often be a
+    matrix with all non-negative entries. There is a powerful theorem
+    that tells us what to expect for the eigenvalues/eigenvectors of
+    such a matirx: the Perron-Frobenius theorem. There are some
+    technical details in the assumptions for the theorem; we'll state
+    a weak version first.
+  </p>
+  <theorem>
+    <statement>
+      <p>
+        Let <m>A</m> be a <m>n\times n</m> matrix with non-negative
+        coefficients. Then there is a largest non-negative eigenvalue
+        <m>\lambda_1</m> with an eigenvector which has all
+        non-negative entries. All other eigenvalues <m>\lambda</m>
+        satisfy <m>|\lambda| \leq |\lambda_1|</m>.
+      </p>
+    </statement>
+  </theorem>
+  <p>
+    The stronger version needs an new definition.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        Let <m>A</m> be an <m>n \times n</m> matrix. Then <m>A</m> is
+        called <term>irreducible</term> if for all <m>i</m> and
+        <m>j</m> the exists a positive integer <m>m</m> such that the
+        <m>ij</m>th entry of <m>A^m</m> is non-zero.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    This definition roughly captures the idea that all the
+    coefficients in the states are somehow related. Using the
+    defitinion, here is a stronger version of the Perron-Frobenius
+    theorem.
+  </p>
+  <theorem>
+    <statement>
+      <p>
+        Let <m>A</m> be a <m>n \times n</m> irreducible matrix with
+        non-negative coefficients. There there is a <em>unique</em>
+        largest <em>positive</em> eigenvalue <m>\lambda_1</m> with a
+        1-dimensional eigenspace and an eignevector which has all
+        <em>positive</em> entires. All other eigenvalues
+        <m>\lambda</m> satisfy <m>|\lambda| \lt |\lambda_1|</m>.
+        Moreover, if <m>r_i</m> is the sum of the entries of <m>A</m>
+        in the <m>i</m>th row, then <m>\lambda</m> is bounded above
+        and below by the largest and the smallest of the
+        <m>|r_i|</m>.
+      </p>
+    </statement>
+  </theorem>
+</section>
