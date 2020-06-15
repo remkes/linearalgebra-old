@@ -1,412 +1,676 @@
 <section xml:id="week1-activity">
   <title>Week 1 Activity</title>
-  <subsection xml:id="equations-of-lines">
-    <title>Equations of Lines</title>
+  <subsection xml:id="higher-dimensional-space">
+    <title>Higher Dimensional Space</title>
     <activity>
       <statement>
         <p>
-          Find the equation of the line through the point
-          <m>(3,2)</m> with slope 5.  
+          In 2-dimensional space, an infinitely long line divides the
+          space into two pieces: one cannot pass from one side of the
+          line to the other without crossing the line. In
+          3-dimensional space, however, an infnitely long line does
+          not do this; we can go around the line, and there isn't a
+          division of space into two halves.
+        </p>
+        <p>
+          In 3-dimensional space, an infinitely extended plane does
+          divide space into two pieces and it is impossible to pass
+          from one side to the other without going across the plane.
+          In 4-dimensional space, does an infinitely extended plane
+          still divide it into two pieces, or can we go around it,
+          like we go around the line in 3-dimensional space?
         </p>
       </statement>
       <solution>
         <p>
-          Since the slope of the line is 5, using the slope intercept
-          form, the equation of the line must be <m>y = 5x + b</m>.
-          The only remaining unknown in this expression is the
-          intercept <m>b</m>. We can solve for this <m>b</m> by
-          inserting the point into the equation.
-          <me>
-            y = 5x + b \implies 2 = 5(3) + b \implies b = 2 - 15 = -13
-          </me>
-          Therefore, the equation of the line is <m>y = 5x-13</m>.
+          This is a tricky thing to try to visualize (being that
+          4-dimesnional space is not visualizable). However, we can
+          argue by analogy. How do we get around the line in
+          3-dimensions? We move to the side, then move past the line,
+          instead of running into it. We can do this because we have
+          two degree of freedom in directions other than the direction
+          of the line.
+        </p>
+        <p>
+          The same thing works for a plane in 4-dimensional space.
+          While in 3-dimensional space, we only have one dimension of
+          movement a part from the plane. To get to the other side,
+          moving in this one degree of freedom, we have to cross the
+          place. In 4-dimensional space, we have two other degrees of
+          freedom. Like getting around the line in 3-dimensional
+          space, we can move to the side, then move past the plane to
+          reach <q>the other side</q>. There really isn't another
+          side, much like a line in 3-dimenisonal space doesn't really
+          create two sides of space. 
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Find the equation of the line through the point
-          <m>(-2,-5)</m> with slope <m>\frac{1}{3}</m>.  
+         In 2-dimensional space, a square or rectangle is enought to
+         trap or contain something that lives in the plane. In
+         3-dimensional space, a cube (or other box) is enough to trap
+         or contain something. What do we need to contain something in
+         4-dimensional space? In 5-dimensional space?
         </p>
       </statement>
       <solution>
         <p>
-          Since the slope of the line is <m>/frac{1}{3}</m>,  using
-          the slope intercept form, the equation of the line must be
-          <m>y = \frac{1}{3}x + b</m>.  The only remaining unknown in
-          this expression is the intercept <m>b</m>. We can solve for
-          this <m>b</m> by inserting the point into the equation.
-          <me>
-            -5 = \frac{1}{3}(-2) + b \implies -5 = \frac{-2}{3} + b
-            \implies b = -5 + \frac{2}{3} = \frac{-13}{3} 
-          </me>
-          Therefore, the equation of the line is <m>y =
-          \frac{1}{3}x-\frac{13}{3}</m>.
+          To contain something in 4-dimesional space, we need a four
+          dimensional box. Since we have 4 independent and free
+          direction of movement, we have to close of movement in all
+          four of these directions. This box will have a front/back, a
+          top/bottom, an left/right, and then an additional pair of
+          sides which block in the fourth direction of movement. 
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
-        <p>
-          Find the equation of the line through the point
-          <m>(\pi,1)</m> with slope <m>\frac{-1}{2}</m>.  
+        <p> 
+          In 2-dimensional space, the slices of a rectangle are lines.
+          In 3-dimensional space, the slices of a box are rectangle.
+          What are the slices of a 4-dimensional box? A 5-dimensional
+          box?
         </p>
       </statement>
       <solution>
         <p>
-          Since the slope of the line is <m>\frac{-1}{2}</m>, using
-          the slope intercept form, the equation of the line must be
-          <m>y = \frac{-1}{2}x + b</m>.  The only remaining unknown in
-          this expression is the intercept <m>b</m>. We can solve for
-          this <m>b</m> by inserting the point into the equation.
-          <me>
-            y = \frac{-1}{2} x + b \implies 1 = \frac{-1}{2} \pi + b
-            \implies b = 1 + \frac{\pi}{2} 
-          </me>
-          Therefore, the equation of the line is <m>y = \frac{-1}{2}x
-          + 1 + \frac{\pi}{2}</m>. You might ask if there is an easier
-          way to write this <m>b</m> value. We could express it as a
-          decimal: it is approximately 2.57. However, that's less
-          precise than simply writing <m>1 + \frac{\pi}{2}</m>, so I
-          prefer to write it this way. 
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find the equation of the line through the points
-          <m>(0,4))</m> and <m>(2,2)</m>. 
-        </p>
-      </statement>
-      <solution>
-        <p>
-          We need to calculate the slope first: this is calculate as
-          the difference in the <m>y</m> coordinates divided by the
-          difference in the <m>x</m> coordinates, often referred to as
-          rise over run. 
-          <me>
-            m = \frac{4-2}{0-2} = \frac{2}{-2} = -1 
-          </me>
-          When we have the slope, we can use the slope intercept form,
-          so the equation of the line will be <m>y = (-1)x + b</m>.
-          Then we can use either of the points in this equation to
-          solve for <m>b</m>. (Either point should give the same
-          intercept; if they don't, we've made an error somewhere). 
-          <me>
-            y = -x + b \implies 4 = -0 + b \implies b = 4 
-          </me>
-          The equation of the line is <m>y = -x + 4</m>. 
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find the equation of the line through the points
-          <m>(-2,6))</m> and <m>(3,2)</m>. 
-        </p>
-      </statement>
-      <solution>
-        <p>
-          We need to calculate the slope first: this is calculate as
-          the difference in the <m>y</m> coordinates divided by the
-          difference in the <m>x</m> coordinates, often referred to as
-          rise over run. 
-          <me>
-            m = \frac{6-2}{(-2)-3} = \frac{4}{-5} = \frac{-4}{5} 
-          </me>
-          When we have the slope, we can use the slope intercept form,
-          so the equation of the line will be <m>y = \frac{-4}{5}x +
-          b</m>.  Then we can use either of the points in this
-          equation to solve for <m>b</m>. (Either point should give
-          the same intercept; if they don't, we've made an error
-          somewhere).
-          <me>
-            y = \frac{-4}{5}x + b \implies 2 = \frac{-4}{5} (3) + b
-            \implies 2 = \frac{-12}{5} + b \implies b = 2 +
-            \frac{12}{5} = \frac{22}{5}
-          </me>
-          The equation of the line is <m>y = \frac{-4}{5}x +
-          \frac{22}{5}</m>. 
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find the equation of the line through the points
-          <m>(\sqrt{2},3))</m> and <m>(2\sqrt{2},4)</m>. 
-        </p>
-      </statement>
-      <solution>
-        <p>
-          We need to calculate the slope first: this is calculate as
-          the difference in the <m>y</m> coordinates divided by the
-          difference in the <m>x</m> coordinates, often referred to as
-          rise over run. 
-          <me>
-            m = \frac{4-3}{2\sqrt{2} - \sqrt{2}} = \frac{1}{\sqrt{2}}
-          </me>
-          When we have the slope, we can use the slope intercept form,
-          so the equation of the line will be <m>y =
-          \frac{1}{\sqrt{2}} x + b</m>.
-          Then we can use either of the points in this equation to
-          solve for <m>b</m>. (Either point should give the same
-          intercept; if they don't, we've made an error somewhere). 
-          <me>
-            y = \frac{1}{\sqrt{2}} x + b \implies 3 =
-            \frac{1}{\sqrt{2}} (\sqrt{2}) + b \implies 3 = 1 + b
-            \implies b = 3 - 1 = 2
-          </me>
-          The equation of the line is <m>y = \frac{1}{\sqrt{2}}x +
-          2</m>.
+          By a <q>slice</q>, it seems we are referring to a piece of
+          the object of one smaller dimension. Therefore, the slices
+          of this four-dimensional box must be three dimensional
+          boxes. In this way, we can think of a four-dimensional box
+          as an infinite stack of three-dimensional boxes, all stacked
+          in some new direction of movement. (The same way we can
+          think of a cube as a infinite stack of squares moving in a
+          direction perpendicular to the squares themselves). 
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="equations-of-conics">
-    <title>Equations of Conics</title>
+  <subsection xml:id="vector-arithmetics">
     <activity>
+      <title>Vector Arithmetic</title>
       <statement>
         <p>
-          Write the equation of an ellipse centred at the origin with
-          semi-major axis 4 and semi-minor axis 2. 
+          Consider these vectors.
+          <md>
+            <mrow>
+              u \amp = \left( \begin{matrix} 3 \\ 0 \end{matrix} \right) 
+              \amp 
+              v \amp = \left( \begin{matrix} -2 \\ -1 \end{matrix} \right) 
+              \amp 
+              w \amp = \left( \begin{matrix} -3 \\ 2 \end{matrix} \right) 
+            </mrow>
+          </md>
+          Calculate and draw the following vectors. 
+          <md>
+            <mrow>
+              \amp -u 
+            </mrow>
+            <mrow>
+              \amp -v 
+            </mrow>
+            <mrow>
+              \amp -w 
+            </mrow>
+            <mrow>
+              \amp u+v
+            </mrow>
+            <mrow>
+              \amp u+w
+            </mrow>
+            <mrow>
+              \amp v+w
+            </mrow>
+            <mrow>
+              \amp u-v
+            </mrow>
+            <mrow>
+              \amp v-u
+            </mrow>
+            <mrow>
+              \amp u-w
+            </mrow>
+            <mrow>
+              \amp w-u
+            </mrow>
+            <mrow>
+              \amp v-w
+            </mrow>
+            <mrow>
+              \amp w-v
+            </mrow>
+          </md>
+          In addition, calcluate these lengths. 
+          <md>
+            <mrow>
+              \amp |u|
+            </mrow>
+            <mrow>
+              \amp |v|
+            </mrow>
+            <mrow>
+              \amp |w|
+            </mrow>
+            <mrow>
+              \amp |u-v|
+            </mrow>
+            <mrow>
+              \amp |u-w|
+            </mrow>
+            <mrow>
+              \amp |v-w|
+            </mrow>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
-          The standard form of the equation of an ellipse centred at
-          the origin is <m> \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1</m>
-          where <m>a</m> and <m>b</m> are the semi-axes in the
-          <m>x</m> and <m>y</m> directions, respectively. We've been
-          told in the equation that the semi-major axis is 4 and the
-          semi-minor axis is 2; but the question didn't specify which
-          was the horizontal and which was the vertical directly.
-          Therefore, we can just choose: setting <m>a=2</m> and
-          <m>b=4</m> or vice-versa. 
-          <me>
-            \frac{x^2}{4} + \frac{y^2}{16} = 1 \text{ or }
-            \frac{x^2}{16} + \frac{y^2}{4} = 1 \text{ or }
-          </me>
+          We'll do the arithmetic one by one. Then, at the end, all
+          the vector will be drawn in
+          <xref ref="vector-arithmetic-figure" />.
+          <md>
+            <mrow>
+              \amp -u = - \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) = \left( \begin{matrix} -3 \\ 0 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp -v = - \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} 2 \\ 1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp -w = - \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} 3 \\ -2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u+v = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) + \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} 1 \\ -1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u+w = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) + \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} 0 \\ 2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp v+w = \left( \begin{matrix} -2 \\ - 1 \end{matrix}
+              \right) + \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} -5 \\ 1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u-v = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) - \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} 5 \\ 1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp v-u = \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) - \left( \begin{matrix} -3 \\ -2 \end{matrix}
+              \right) = \left( \begin{matrix} 1 \\ 1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u-w = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) - \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} 6 \\ -2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp w-u = \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) - \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) + \left( \begin{matrix} -6 \\ 2 \end{matrix}
+              \right)
+            </mrow>
+            <mrow>
+              \amp v-w = \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) - \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) + \left( \begin{matrix} 1 \\ -3 \end{matrix}
+              \right)
+            </mrow>
+            <mrow>
+              \amp w-v = 
+              \left( \begin{matrix} -3 \\ 2 
+              \end{matrix} \right) - 
+              \left( \begin{matrix} -2 \\ -1 
+              \end{matrix} \right) =
+              \left( \begin{matrix} 1 \\ 1 
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          <figure xml:id="vector-arithmetic-figure">
+            <caption>Vector Arithmetic</caption>
+            <image width="100%" source="images/figure10" />
+          </figure>
+          In addition, calcluate these lengths. 
+          <md>
+            <mrow>
+              \amp |u| = \sqrt{3^2 + 0^2} = \sqrt{9} = 3 
+            </mrow>
+            <mrow>
+              \amp |v| = \sqrt{(-2)^2 + (-1)^2} = \sqrt{5} 
+            </mrow>
+            <mrow>
+              \amp |w| = \sqrt{(-3)^2 + 2^2} = \sqrt{13} 
+            </mrow>
+            <mrow>
+              \amp |u-v| = \sqrt{5^2 + 1^2} = \sqrt{26} 
+            </mrow>
+            <mrow>
+              \amp |u-w| = \sqrt{6^2 + (-2)^2} = \sqrt{40} = 2
+              \sqrt{10} 
+            </mrow>
+            <mrow>
+              \amp |v-w| = \sqrt{1^2 + (-3)^2} = \sqrt{10} 
+            </mrow>
+          </md>
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Write the equation of the circle centred at the origin with
-          radius <m>\sqrt{15}</m>.
+          Consider these vectors.
+          <md>
+            <mrow>
+              u \amp = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) 
+              \amp 
+              v \amp = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) 
+              \amp 
+              w \amp = \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          Calculate the following vectors and length. (Since this is
+          in <m>\RR^5</m>, drawing these is no longer an option. 
+          <md>
+            <mrow>
+              \amp -u 
+            </mrow>
+            <mrow>
+              \amp -v 
+            </mrow>
+            <mrow>
+              \amp -w 
+            </mrow>
+            <mrow>
+              \amp u+v
+            </mrow>
+            <mrow>
+              \amp u+w
+            </mrow>
+            <mrow>
+              \amp v+w
+            </mrow>
+            <mrow>
+              \amp u-v
+            </mrow>
+            <mrow>
+              \amp v-u
+            </mrow>
+            <mrow>
+              \amp u-w
+            </mrow>
+            <mrow>
+              \amp w-u
+            </mrow>
+            <mrow>
+              \amp v-w
+            </mrow>
+            <mrow>
+              \amp w-v
+            </mrow>
+            <mrow>
+              \amp |u|
+            </mrow>
+            <mrow>
+              \amp |v|
+            </mrow>
+            <mrow>
+              \amp |w|
+            </mrow>
+            <mrow>
+              \amp |u-v|
+            </mrow>
+            <mrow>
+              \amp |u-w|
+            </mrow>
+            <mrow>
+              \amp |v-w|
+            </mrow>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
-          The standard form of the equation of an ellipse centred at
-          the origin is <m>x^2 + y^2 = r^2</m>. We are given the
-          radius of <m>\sqrt{15}</m>, so we just square that value in
-          insert it in the equation.
-          <me>
-            x^2 + y^2 = 15
-          </me>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Write the equation of the parabola with vertex <m>(3,-2)</m>
-          and leading coefficient <m>\frac{1}{4}</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          The standard form of the equation of an parabola with vertex
-          <m>(c,d)</m> and leading coefficient <m>a</m> is <m>y = a (x
-          - c)^2 + d </m>. We can just replace the three unknown with
-          what we are given in the problem.
-          <me>
-            y = \frac{1}{4} (x-3)^2 - 2 
-          </me>
-          If we want a more conventional equation for this parabola,
-          we can expand.
-          <me>
-            y = \frac{1}{4} (x^2 - 6x + 9) - 2 = \frac{1}{4} x^2 -
-            \frac{3}{2} x + \frac{9}{4} 
-          </me>
+          We'll do the calculation one by one. 
+          <md>
+            <mrow>
+              \amp -u = - \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\
+              1 \end{matrix} \right) = \left( \begin{matrix} -6 \\ 0
+              \\ 1 \\ 1 \\ -1 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp -v = - \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\
+              1 \end{matrix} \right) \left( \begin{matrix} -3 \\ 3 \\
+              -1 \\ 3 \\ -1 \end{matrix} \right)
+            </mrow>
+            <mrow>
+              \amp -w = - \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) = \left( \begin{matrix} 0 \\ 1 \\ 0
+              \\ -3 \\ -5 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp u+v = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) + \left( \begin{matrix} 3 \\ -3 \\
+              1 \\ -3 \\ 1 \end{matrix} \right) = \left(
+              \begin{matrix} 9 \\ -3 \\ 0 \\ -4 \\ 2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u+w = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) + \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
+              6 \\ -1 \\ -1 \\ 2 \\ 6 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp v+w = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) + \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
+              3 \\ -4 \\ 1 \\ 0 \\ 6 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp u-v = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 3 \\ -3 \\
+              1 \\ -3 \\ 1 \end{matrix} \right) = \left(
+              \begin{matrix} 3 \\ 3 \\ -2 \\ 2 \\ 0 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp v-u = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 6 \\ 0 \\
+              -1 \\ -1 \\ 1 \end{matrix} \right) + \left(
+              \begin{matrix} -3 \\ -3 \\ 2 \\ -2 \\ 0 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u-w = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) + \left( \begin{matrix}
+              6 \\ 1 \\ -1 \\ -4 \\ -4 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp w-u = \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) - \left( \begin{matrix} 6 \\ 0 \\
+              -1 \\ -1 \\ 1 \end{matrix} \right) + \left(
+              \begin{matrix} -6 \\ -1 \\ 1 \\ 4 \\ 4 \end{matrix}
+              \right)
+            </mrow>
+            <mrow>
+              \amp v-w = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) + \left( \begin{matrix}
+              3 \\ -2 \\ 1 \\ -6 \\ -4 \end{matrix} \right)
+            </mrow>
+            <mrow>
+              \amp w-v = 
+              \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) - 
+              \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1 
+              \end{matrix} \right) +
+              \left( \begin{matrix} -3 \\ 2 \\ -1 \\ 6 \\ 4
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp |u| = \sqrt{6^2 + 0^2 + (-1)^2 + (-1)^2 + 1^2} =
+              \sqrt{39} 
+            </mrow>
+            <mrow>
+              \amp |v| = \sqrt{3^2 + (-3)^2 + 1^2 + (-3)^2 + 1^2} =
+              \sqrt{29} 
+            </mrow>
+            <mrow>
+              \amp |w| = \sqrt{0^2 + (-1)^2 + 0^2 + 3^2 + 5^2} =
+              \sqrt{35} 
+            </mrow>
+            <mrow>
+              \amp |u-v| = \sqrt{3^2 + 3^2 + (-2)^2 + 2^2 + 0^2} =
+              \sqrt{26} 
+            </mrow>
+            <mrow>
+              \amp |u-w| = \sqrt{6^2 + 1^2 + (-1)^2 + (-4)^2 + (-4)^2} =
+              \sqrt{70} 
+            </mrow>
+            <mrow>
+              \amp |v-w| = \sqrt{3^2 + (-2)^2 + 1^2 + (-6)^2 + (-4)^2}
+              = \sqrt{66} 
+            </mrow>
+          </md>
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="intersections">
-    <title>Intersection of Lines and Conics</title>
+  <subsection xml:id="week1-proofs">
+    <title>Proof Questions</title>
     <activity>
       <statement>
         <p>
-          Find the intersection of the line <m>y = -2x -5</m> and the
-          line <m>y = 9x+1</m>. 
+          If <m>a \in \RR</m> and <m>u \in \RR^3</m>, prove that <m>|au|
+          = |a||u|</m>. (Use the definition of scalar multiplication
+          and the definition of legnth of a vector. Start with the
+          left side and try to turn it into the right or vice-verse.
+          Do not reduce both equations to equivalent expressions --
+          that's not, in general, a valid proof technique. You may try
+          some examples out if you wish, but your final solution
+          should be general. Finally, not that the notation here is a
+          bit subtle: <m>|au|</m> and <m>|u|</m> are the lengths of
+          vectors, defined by pythagorean calculations, but <m>|a|</m>
+          is just the absolute value of a real number.)
         </p>
       </statement>
       <solution>
         <p>
-          Solving for intesection is algebraically the same as solving
-          the system of two equations. In these two equations, the
-          <m>y</m> terms are already isolated, so we can simply equate
-          these two terms and solve for <m>x</m>. 
-          <md>
-            <mrow>
-            -2x - 5 \amp = 9x + 1
-            </mrow>
-            <mrow>
-            -2x - 9x \amp = 5 + 1
-            </mrow>
-            <mrow>
-            -11x \amp = 6 \implies x = \frac{-6}{11}
-            </mrow>
-          </md>
-          Then we can insert this <m>x</m> value into either equation
-          to get the <m>y</m> value of the intersection point. (Either
-          equation will give the same <m>y</m> value; if they don't,
-          we've made an error somewhere). 
+          I will start with the left side and try to manipulate it
+          into the write write. I'll write <m>u</m> in components and
+          use the definition of the scalar multiplication to start.
           <me>
-            y = 9x + 1 = 9 \frac{-6}{11} + 1 = \frac{-54}{11} +
-            \frac{11}{11} = \frac{-43}{11}
+            |au| = \left| a \left( \begin{matrix} u_1 \\ u_2 \\ u_3
+            \end{matrix} \right) \right| = \left| \left(
+            \begin{matrix} au_1 \\ au_2 \\ au_3 \end{matrix} \right)
+            \right|
           </me>
-          We conclude that the intersection point is <m> \left(
-          \frac{-6}{11}, \frac{-43}{11} \right)</m>
+          This is the definition of scalar multiplication, to multiply
+          the scalar by each component of the vector. Now I use the
+          square root definition of the length of a vector. 
+          <me>
+            \left| \left( \begin{matrix} au_1 \\ au_2 \\ au_3
+            \end{matrix} \right) \right| = \sqrt{(au_1)^2 + (au_2)^2 +
+            (au_3)^2} 
+          </me>
+          Now I need to do some algebra with the square root. I can
+          distribute the exponent, using the exponent rule <m>(xy)^a =
+          x^ay^2</m>.
+          <me>
+            \sqrt{(au_1)^2 + (au_2)^2 + (au_3)^2} = \sqrt{a^2 u_1^2 +
+            a^2 u_2^2 + a_2u_3^2}
+          </me>
+          Now I can factor out the <m>a^2</m>. Once it is factor out,
+          I can also remove it from the square root. 
+          <me>
+            \sqrt{a^2 u_1^2 + a^2 u_2^2 + a_2u_3^2} = \sqrt{a^2(u_1^2
+            + u_2^2 + u_3^2} = |a| \sqrt{u_1^2 + u_2^2 + u_3^2}
+          </me>
+          When I take <m>a^2</m> out of the square root, since the
+          square root also return a positive number, I don't get
+          <m>a</m> back. If <m>a</m> was negative to start, then I will
+          have turn <m>a</m> form negative to positive. Therefore, I get
+          the absolute value of <m>a</m> back. Finally, I can recognize
+          the remaining term as the definition of the length of a
+          vector. 
+          <me>
+            |a| \sqrt{u_1^2 + u_2^2 + u_3^2} = |a| |u| 
+          </me>
+        </p>
+        Now I have started with the left side and produce the right.
+        This prove that <m>|au| = |a||u|</m>, as desired. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          If <m>u</m> and <m>v</m> are vectors in <m>\RR^3</m>, prove
+          that <m>|u-v| = |v-u|</m>. Then adapt your argument to work
+          for vectors in <m>\RR^n</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will write <m>u</m> amd <m>v</m> in components, take
+          their difference and then apply the length operation. I will
+          start with the left side and try to produce the right. 
+          <me>
+            |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ u_3
+            \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
+            v_3 \end{matrix} \right) \right|
+          </me>
+          The difference is done componentwise. 
+          <me>
+            \left| \left( \begin{matrix} u_1 \\ u_2 \\ u_3
+            \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
+            v_3 \end{matrix} \right) \right| = 
+            \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
+            - v_3 \end{matrix} \right) \right| 
+          </me>
+          Then we use the square root definition of the length.
+          <me>
+            \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
+            - v_3 \end{matrix} \right) \right| = \sqrt{(u_1-v_1)^2 +
+            (u_2-v_2)^2 + (u_3-v_3)^2}
+          </me>
+          Now, each of the three terms is square. Since they are
+          square, any positive or negative will become positive, since
+          square are always positive. Therefore, we could multiply by
+          <m>(-1)</m> inside the square root to no effect. This
+          will interchange the order of the difference in each term.
+          <me>
+            \sqrt{(u_1-v_1)^2 + (u_2-v_2)^2 + (u_3-v_3)^2} = 
+            \sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 + (v_3-u_3)^2} 
+          </me>
+          Then we repeat the steps from before in reverse. This is the
+          definition of the length of a vector with the terms in the
+          squares as components. 
+          <me>
+            \sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 + (v_3-u_3)^2} = \left|
+            \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3 - u_3 
+            \end{matrix} \right) \right|
+          </me>
+          Since each term is a difference, we can write this as the
+          difference of two vectors. 
+          <me>
+            \left| \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3
+            - u_3 \end{matrix} \right) \right| = \left| \left(
+            \begin{matrix} v_1 \\ v_2 \\ v_3 \end{matrix} \right) -
+            \left( \begin{matrix} u_1 \\ u_2 \\ u_3 \end{matrix}
+            \right) \right| 
+          </me>
+          Finally, these are just the component of the vectors
+          <m>u</m> amd <m>v</m>. 
+          <me>
+            = \left| \left( \begin{matrix} v_1 \\ v_2 \\ v_3
+            \end{matrix} \right) - \left( \begin{matrix} u_1 \\ u_2 \\
+            u_3 \end{matrix} \right) \right| = |v-u|
+          </me>
+          We have started from the left and produce the right in a
+          string of equality, so we have proved the desired result. 
+        </p>
+        <p>
+          If we wanted to adapt this to a more general proof for
+          <m>\RR^n</m>, the steps of the proof would be identical, but
+          we would have vectors with <m>n</m> components instead of
+          just 3 components. We would use ellipses to indicate the
+          list of component. The proof would start like this.
+          <me>
+            |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots
+            \\ u_n \end{matrix} \right) - \left( \begin{matrix} v_1 \\
+            v_2 \\ \\ \vdots \\ v_n \end{matrix} \right) \right|
+          </me>
+          The difference is done componentwise. 
+          <me>
+            \left| \left( \begin{matrix} u_1 \\ u_2 \\\vdots \\  u_n
+            \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
+            \vdots \\ v_n \end{matrix} \right) \right| = 
+            \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\
+            \vdots \\ u_n - v_n \end{matrix} \right) \right| 
+          </me>
+          I won't repeat all the steps, but they would proceed exactly
+          in the same sequence as before, resulting in <m>|v-u|</m>
+          eventually at the end. 
         </p>
       </solution>
     </activity>
     <activity>
       <statement>
         <p>
-          Find the intersection of the line <m>3x-2y+4=0</m> and the
-          line <m>y = 4</m>. 
+          Prove that the zero vector is the \emph{only} vector in 
+          <m>\RR^n</m> of length zero. (To prove that it is the only
+          vector with this property, assume that <m>u \in \RR^n</m> is
+          a vector length zero and prove that <m>u</m> must be the
+          zero vector. This will show that only the zero vector has
+          the desired property). 
         </p>
       </statement>
       <solution>
         <p>
-          Solving for intesection is algebraically the same as solving
-          the system of two equations. In the second equation,
-          <m>y</m> is already isolated, so we can replace <m>y</m> in
-          the first equation. 
-          <md>
-            <mrow>
-            3x - 2y + 4 \amp = 0 
-            </mrow>
-            <mrow>
-            3x - 2(4) + 4 \amp = 0
-            </mrow>
-            <mrow>
-            3x - 4 \amp = 0 \implies x = \frac{4}{3}
-            </mrow>
-          </md>
-          We already know that <m>y</m> value must be 4, so this gives
-          us the intersection point: <m>\left( \frac{4}{3}, 4
-          \right)</m>.
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find the intersection of the line <m>3y - x - 5 = 0</m> and
-          the circle <m>x^2 + y^2 = 25</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          Solving for intesection is algebraically the same as solving
-          the system of two equations. If we isolate <m>x</m> in the
-          first equation, we get <m>x = 3y - 5</m>. We can use this to
-          replace <m>x</m> in the second equation and expand to get a
-          quadratic equation.
-          <md>
-            <mrow>
-            \left( 3y - 5 \right)^2 + y^2 \amp = 25
-            </mrow>
-            <mrow>
-            9y^2 - 30y + 25 + y^2 \amp = 25
-            </mrow>
-            <mrow>
-            10y^2 - 30 y \amp = 0 
-            </mrow>
-            <mrow>
-            10y(y - 3) \amp = 0 
-            </mrow>
-          </md>
-          The roots of the quadratic are 0 and 3, so those are the
-          <m>y</m> values of the intersection points. We can use
-          either equation to calculate the matching <m>x</m> values,
-          but if we use the islated version of the first equation,
-          that is most efficient.
-          <md>
-            <mrow>
-            y \amp = 0 \implies x = 3y - 5 = 3(0) - 5 = -5 
-            </mrow>
-            <mrow>
-            y \amp = 3 \implies x = 3y - 5 = 3(3) - 5 = 4
-            </mrow>
-          </md>
-          Therefore, the two intersection point are <m>(-5, 0)</m> and
-          <m>(4,3)</m>. 
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Find the intersection of the line <m>x - y + 4 = 0</m> and the
-          hyperbola <m>\frac{x^2}{1} - \frac{y^2}{4} = 1</m>. 
-        </p>
-      </statement>
-      <solution>
-        <p>
-          Solving for intesection is algebraically the same as solving
-          the system of two equations. In the first equation,
-          we can isolate <m>y</m> to get <m>y = x+4</m>. We can
-          use this to replace <m>y</m> in the equation of the
-          hyperbola.
-          <md>
-            <mrow>
-            x^2 - \frac{1}{4} (x+4)^2 \amp = 1 
-            </mrow>
-            <mrow>
-            4x^2 - (x+4)^2 \amp = 4 
-            </mrow>
-            <mrow>
-            4x^2 - x^2 - 8x - 16 \amp = 4 
-            </mrow>
-            <mrow>
-            3x^2  - 8x - 20 \amp = 0 
-            </mrow>
-          </md>
-          This is a quadratic; the quadratic equation tells us the
-          roots.
+          Let <m>u</m> be an arbitrary vector in <m>\RR^n</m> of
+          length 0. We will start by writing <m>u</m> in component and
+          use the definition of length. Note we need ellipses to show
+          all the component of <m>u</m>, since we are working in an
+          arbitrary dimension <m>n</m>. 
           <me>
-            x = \frac{8 \pm \sqrt{64 + 240}}{6} = \frac{8 \pm
-            2\sqrt{76}}{6} = \frac{4 \pm \sqrt{76}}{3}
+            |u| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\
+            u_n \end{matrix} \right) \right|
           </me>
-          Then we can use the previous <m>y = x+4</m> to get the
-          matching <m>y</m> coordinates. 
+          Then we use the definition of length. By assumption, we set
+          this length equal to zero. 
           <me>
-            y = x + 4 \frac{4 \pm \sqrt{76}}{3} + 4 = \frac{16 \pm
-            \sqrt{76}}{3} 
+            |u| = \sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2} = 0 
           </me>
-          All together, we have two intersection points. 
-          <md>
-            <mrow>
-            \amp \left( \frac{4 + \sqrt{76}}{3}, \frac{16 + \sqrt{76}}{3}
-            \right) 
-            </mrow>
-            \amp \left( \frac{4 - \sqrt{76}}{3}, \frac{16 - \sqrt{76}}{3}
-            \right) 
-            <mrow>
-            </mrow>
-          </md>
-          We could write the decimal approximates of these values.
-          That might help us know where to draw them, but the above
-          expressions are preferable as exact values.  
+          We can square both sides of the equation.
+          <me>
+            (\sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2})^2 = 0^2 
+          </me>
+          The square root and squaring cancel each other out. 
+          <me>
+            (u_1)^2 + (u_2)^2 + \ldots + (u_n)^2 = 0
+          </me>
+          On the left, we have the sum of a bunch of non-negative
+          number (since the square of any real number must be zero or
+          postiive). On the right we have zero. The only way that a
+          bunch of non-negative number add up to zero is if they are
+          all zero to begin with. Therefore, we see that for each
+          index <m>i</m>, the component <m>u_i</m> must be zero. But
+          that means that 
+          <me>
+            \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\ u_n 
+            \end{matrix} \right) =
+            \left( \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 
+            \end{matrix} \right)
+          </me>
+          This is precisely the definition of the zero vector: the
+          vector where all components are zero. Therefore, <m>u</m>
+          must be the zero vector. To conclude, we assume that
+          <m>u</m> had length zero and concluded that is must be the
+          zero vector. This proves that the zero vector is the only
+          vector with length zero. 
         </p>
       </solution>
     </activity>
@@ -416,20 +680,23 @@
     <p>
       <ul>
         <li>
-          What data determine a line? What is the minimum information
-          we need?
+          How can we talk about higher dimensional geometric spaces?
         </li>
         <li>
-          What does slope mean and how is it measured?
+          What is cartesian or euclidean space? What are coordinates?
         </li>
         <li>
-          What is a conic? Why are the four shapes (circle, parabola,
-          ellipse and hyperbola) considered four members of the same
-          family. 
+          What is a vector?
         </li>
         <li>
-          In geometry, intersection is where two geometric shapes
-          meet. What does intersection mean algebraically?
+          What is a scalar?
+        </li>
+        <li>
+          How is vector arithmetic similar and different from number
+          arithmetic.
+        </li>
+        <li>
+          What is the length of a vector? 
         </li>
       </ul>
     </p>
