@@ -1,14 +1,803 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week5-activity">
+  <title>Week 5 Activity</title>
+  <subsection xml:id="dimensions-of-spans">
+    <title>Dimensions and Bases of Spans</title>
     <activity>
       <statement>
         <p>
+          Calculate the dimension of this span and give a basis. 
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              -3 \\ -6 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              2 \\ 5 \\ -3 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              1 \\ 4 \\ -5 
+            \end{matrix} \right) \right\}
+          </me>
         </p>
       </statement>
       <solution>
         <p>
+          We need to determine if there are any redundancies in the
+          span. To do this, we put the vectors in the span as
+          <emph>rows</emph> of a matrix. 
+          <me>
+            \left( \begin{matrix}
+              -3 \amp -6 \amp  1 \\
+              2 \amp 5 \amp -3 \\
+              1 \amp 4 \amp -5 
+            \end{matrix} \right) 
+          </me>
+          We row reduce this matrix. We either row reduce without
+          interchanging rows or keeping track of row exchanges. (If
+          done by computer, as is our practice, we'll have to be
+          careful choosing a basis. Because of this, I'll recheck the
+          bases after I find them.)
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp \frac{13}{3} \\
+              0 \amp 1 \amp \frac{-7}{3} \\
+              0 \amp 0 \amp 0 
+            \end{matrix} \right) 
+          </me>
+          Every row that has a leading one is a row that is necessary
+          for the span; every row without a leading one is redundant.
+          Here, there is one vector that is redundant, since we have a
+          row of zeros. There are two leading ones, so the dimension of
+          this span is 2. We can take the vectors that corresponded
+          to rows with leading ones as a basis.
+          <me>
+            \left\{ \left( \begin{matrix}
+              -3 \\ -6 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              2 \\ 5 \\ -3 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+        We can check with a matrix that these four are independent
+        using the same steps as before (I've not shown that work). We
+        need this check to make sure rows weren't exchanged during row
+        reduction. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this span and give a basis. 
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              1 \\ 1 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              3 \\ 0 \\ -4
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ 6
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -1 \\ -1 \\ -1 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to determine if there are any redundancies in the
+          span. To do this, we put the vectors in the span as
+          <emph>rows</emph> of a matrix. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp 0 \\
+              3 \amp 0 \amp -4 \\
+              0 \amp 0 \amp 6 \\
+              -1 \amp -1 \amp -1
+            \end{matrix} \right) 
+          </me>
+          We row reduce this matrix. We either row reduce without
+          interchanging rows or keeping track of row exchanges. (If
+          done by computer, as is our practice, we'll have to be
+          careful choosing a basis. Because of this, I'll recheck the
+          bases after I find them.)
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 0 \\
+              0 \amp 1 \amp 0 \\
+              0 \amp 1 \amp 1 \\
+              0 \amp 0 \amp 0
+            \end{matrix} \right) 
+          </me>
+          Every row that has a leading one is a row that is necessary
+          for the span; every row without a leading one is redundant.
+          Here, the fourth vector is all zeros, so there is a
+          redundant vector. There are three
+          leading ones, so the dimension of this span is 3.
+          We can take the vectors that corresponded to rows with
+          leading ones as a basis.
+          <me>
+            \left\{ \left( \begin{matrix}
+              1 \\ 1 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              3 \\ 0 \\ -4
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ 6 
+            \end{matrix} \right) \right\}
+          </me>
+          We can check with a matrix that these four are independent
+          using the same steps as before (I've not shown that work).
+          We need this check to make sure rows weren't exchanged
+          during row reduction. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this span and give a basis. 
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              7 \\ 0 \\ -5 \\ -5 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -3 \\ -3 \\ 4 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              7 \\ -3 \\ -8 \\ -1 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to determine if there are any redundancies in the
+          span. To do this, we put the vectors in the span as
+          <emph>rows</emph> of a matrix. 
+          <me>
+            \left( \begin{matrix}
+              7 \amp 0 \amp -5 \amp -5 \\
+              0 \amp -3 \amp -3 \amp 4 \\
+              7 \amp -3 \amp -8 \amp -1 
+            \end{matrix} \right) 
+          </me>
+          We row reduce this matrix. We either row reduce without
+          interchanging rows or keeping track of row exchanges. (If
+          done by computer, as is our practice, we'll have to be
+          careful choosing a basis. Because of this, I'll recheck the
+          bases after I find them.)
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp \frac{-5}{7} \amp \frac{-5}{7} \\
+              0 \amp 1 \amp 1 \amp \frac{-4}{3} \\
+              0 \amp 0 \amp 0 \amp 0 
+            \end{matrix} \right) 
+          </me>
+          Every row that has a leading one is a row that is necessary
+          for the span; every row without a leading one is redundant.
+          Here we see that there is a row of zeros, so there is a
+          redundant vector. There are two leading ones, to the
+          dimension of this span is We can take the vectors that
+          corresponded to rows with leading ones as a basis.
+          <me>
+            \left\{ \left( \begin{matrix}
+              7 \\ 0 \\ -5 \\ -5 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -3 \\ -3 \\ 4 
+            \end{matrix} \right) \right\}
+          </me>
+          We can check with a matrix that these four are independent
+          using the same steps as before (I've not shown that work).
+          We need this check to make sure rows weren't exchanged
+          during row reduction. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this span and give a basis. 
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              6 \\ -1 \\ -1 \\ 4 \\ 7 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 4 \\ 3 \\ 0 \\ -5 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -4 \\ 10 \\ 2 \\ -5 \\ -8 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -8 \\ -6 \\ 3 \\ 4 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -6 \\ 7 \\ 7 \\ 3 \\ -6
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to determine if there are any redundancies in the
+          span. To do this, we put the vectors in the span as
+          <emph>rows</emph> of a matrix. 
+          <me>
+            \left( \begin{matrix}
+              6 \amp -1 \amp 01 \amp 4 \amp 7 \\
+              0 \amp 4 \amp 3 \amp 0 \amp 5 \\
+              -4 \amp 10 \amp 2 \amp -5 \amp -8 \\
+              -8 \amp -6 \amp 3 \amp 4 \amp 0 \\
+              -6 \amp 7 \amp 7 \amp 3 \amp -6 
+            \end{matrix} \right) 
+          </me>
+          We row reduce this matrix. We either row reduce without
+          interchanging rows or keeping track of row exchanges. (If
+          done by computer, as is our practice, we'll have to be
+          careful choosing a basis. Because of this, I'll recheck the
+          bases after I find them.)
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 0 \amp 0 \amp \frac{-1}{4} \\
+              0 \amp 1 \amp 0 \amp 0 \amp \frac{23}{62} \\
+              0 \amp 0 \amp 1 \amp 0 \amp \frac{-67}{31} \\
+              0 \amp 0 \amp 0 \amp 1 \amp \frac{52}{31} \\
+              0 \amp 0 \amp 0 \amp 0 \amp 0
+            \end{matrix} \right) 
+          </me>
+          Every row that has a leading one is a row that is necessary
+          for the span; every row without a leading one is redundant.
+          Here we see that the fifth row is a row of zeros, so one
+          vector is redundant.  There are four leading ones, so the
+          dimension of this span is 4.  We can take the vectors that
+          corresponded to rows with leading ones as a basis.
+          <me>
+            \left\{ \left( \begin{matrix}
+              6 \\ -1 \\ -1 \\ 4 \\ 7 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 4 \\ 3 \\ 0 \\ -5 \\
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -4 \\ 10 \\ 2 \\ -5 \\ -8 \\
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -8 \\ -6 \\ 3 \\ 4 \\ 0
+            \end{matrix} \right) \right\}
+          </me>
+          We can check with a matrix that these four are independent
+          using the same steps as before (I've not shown that work).
+          We need this check to make sure rows weren't exchanged
+          during row reduction. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this span and give a basis. 
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              4 \\ 0 \\ -3 \\ -3 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              1 \\ 2 \\ 2 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -3 \\ 2 \\ 5 \\ 3 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              8 \\ 0 \\ -7 \\ 1
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to determine if there are any redundancies in the
+          span. To do this, we put the vectors in the span as
+          <emph>rows</emph> of a matrix. 
+          <me>
+            \left( \begin{matrix}
+              4 \amp 0 \amp -3 \amp -3 \\
+              1 \amp 2 \amp 2 \amp 0 \\
+              -3 \amp 2 \amp 5 \amp 3 \\
+              8 \amp 0 \amp -7 \amp 1 
+            \end{matrix} \right) 
+          </me>
+          We row reduce this matrix. We either row reduce without
+          interchanging rows or keeping track of row exchanges. (If
+          done by computer, as is our practice, we'll have to be
+          careful choosing a basis. Because of this, I'll recheck the
+          bases after I find them.)
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 0 \amp -6 \\
+              0 \amp 1 \amp 0 \amp 10 \\
+              0 \amp 0 \amp 1 \amp -7 \\
+              0 \amp 0 \amp 0 \amp 0 
+            \end{matrix} \right) 
+          </me>
+          Every row that has a leading one is a row that is necessary
+          for the span; every row without a leading one is redundant.
+          We see that we have a row of zeros, so one vector is
+          redundant. There are three leading ones, so the dimension of
+          this span is 3. We can take the vectors that corresponded to
+          rows with leading ones as a basis.
+          <me>
+            \left\{ \left( \begin{matrix}
+              4 \\ 0 \\ -3 \\ -3 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              1 \\ 2 \\ 2 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -3 \\ 2 \\ 5 \\ 3
+            \end{matrix} \right) \right\}
+          </me>
+          If we check, however, we find that this is still redundant.
+          This is not a basis, so one of these rows must have been
+          redundant and the row reduction must have involved some
+          exchange of rows. If we take the fourth vector instead of
+          the third, we get this basis. 
+          <me>
+            \left\{ \left( \begin{matrix}
+              4 \\ 0 \\ -3 \\ -3 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              1 \\ 2 \\ 2 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              8 \\ 0 \\ -7 \\ 1 
+            \end{matrix} \right) \right\}
+          </me>
+          If we check, we will find that there are no redundancies
+          now, so this is a basis. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="dimensions-of-loci">
+    <title>Dimensions and Bases of Loci</title>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this locus.
+          <md>
+            <mrow>
+              4x - y + 7z \amp = 3
+            </mrow>
+            <mrow>
+              2x + z \amp = 0 
+            </mrow>
+            <mrow>
+              2x - y + 6z \amp = 3 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We change the locus into a matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              4 \amp -1 \amp 7 \amp 3 \\
+              2 \amp 0 \amp 1 \amp 0 \\
+              2 \amp -1 \amp 6 \amp 3 
+            \end{array} \right)
+          </me>
+          We row reduce this matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{1}{2} \amp 0 \\
+              0 \amp 1 \amp -5 \amp -3 \\
+              0 \amp 0 \amp 0 \amp 0
+            \end{array} \right)
+          </me>
+          Then the dimension is determined by the number of free
+          variables, as long as there isn't a row equivalent to
+          <m>0=1</m>. Here, there is one free variable, so the locus
+          has dimension 1.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this locus. 
+          <md>
+            <mrow>
+              x - y - z \amp = 7
+            </mrow>
+            <mrow>
+              2x + 5y - 3z \amp = 2 
+            </mrow>
+            <mrow>
+              3x + 4y - 4z \amp = 4
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We change the locus into a matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp -1 \amp -1 \amp 7 \\
+              2 \amp 5 \amp -3 \amp 2 \\
+              3 \amp 4 \amp -4 \amp 4
+            \end{array} \right)
+          </me>
+          We row reduce this matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{-8}{7} \amp 0 \\
+              0 \amp 1 \amp \frac{-1}{7} \amp 0 \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{array} \right)
+          </me>
+          Then the dimension is determined by the number of free
+          variables, as long as there isn't a row equivalent to
+          <m>0=1</m>. Here, the last row is such a row, so this locus
+          is emtpy and has no dimension. (Note this is not dimension
+          0, which is the dimension of a point. The empty set simply
+          doesn't not have any dimension.)
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this locus. (In this course, the
+          order of the variables in <m>\RR^4</m> is <m>w,x,y,z</m>.( 
+          <md>
+            <mrow>
+              9w - 3x + 5y - z \amp = 0 
+            </mrow>
+            <mrow>
+              3w - 12x + 4y \amp = 0 
+            </mrow>
+            <mrow>
+              3w + 21x - 3y - z \amp 0 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We change the locus into a matrix. 
+          <me>
+            \left( \begin{array}{cccc|c}
+              9 \amp -3 \amp 5 \amp -1 \amp 0
+              3 \amp -12 \amp 4 \amp 0 \amp 0
+              3 \amp 21 \amp -3 \amp -1 \amp 0
+            \end{array} \right)
+          </me>
+          We row reduce this matrix. 
+          <me>
+            \left( \begin{array}{cccc|c}
+              1 \amp 0 \amp \frac{16}{33} \amp \frac{-4}{33} \amp 0 \\
+              0 \amp 1 \amp \frac{-7}{33} \amp \frac{-1}{33} \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0 \amp 9
+            \end{array} \right)
+          </me>
+          Then the dimension is determined by the number of free
+          variables, as long as there isn't a row equivalent to
+          <m>0=1</m>. Here, there are two free variables, so the locus
+          has dimension 2. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the dimension of this locus. (In this course, the
+          order of the variables in <m>\RR^4</m> is <m>w,x,y,z</m>.
+          <md>
+            <mrow>
+              w - 2x + y - 3z \amp = 0 
+            </mrow>
+            <mrow>
+              2x - 4x + 2y - 6z \amp = 0 
+            </mrow>
+            <mrow>
+              3x - 6x + 3y - 9z \amp = 0 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We change the locus into a matrix. 
+          <me>
+            \left( \begin{array}{cccc|c}
+              1 \amp -2 \amp 1 \amp -3 \amp 0 \\
+              2 \amp -4 \amp 2 \amp -6 \amp 0 \\
+              3 \amp -6 \amp 3 \amp -9 \amp 0
+            \end{array} \right)
+          </me>
+          We row reduce this matrix. 
+          <me>
+            \left( \begin{array}{cccc|c}
+              1 \amp -2 \amp 1 \amp -3 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+            \end{array} \right)
+          </me>
+          Then the dimension is determined by the number of free
+          variables, as long as there isn't a row equivalent to
+          <m>0=1</m>. Here, there are three free variables, so the
+          dimension of the locus is three. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="linear-combinations">
+    <title>Calculating Linear Combinations</title>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the
+          vectors in the span. 
+          <md>
+            <mrow>
+              \amp \left( \begin{matrix}
+                2 \\ -2 
+              \end{matrix} \right) \amp \amp 
+              \Span \left\{ \left( \begin{matrix}
+                4 \\ 9 
+              \end{matrix} \right), 
+              \left( \begin{matrix}
+                -3 \\ 12 
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can convert into an equation with unknown by writing out
+          the definition of a linear combination.
+          <me>
+            \left( \begin{matrix}
+              2 \\ -2 
+            \end{matrix} \right) = 
+            a \left( \begin{matrix}
+              4 \\ 9 
+            \end{matrix} \right) + 
+            b \left( \begin{matrix}
+              -3 \\ 12 
+            \end{matrix} \right) 
+          </me>
+          Then we can translate this into a system of equation in the
+          unknowns <m>a,b</m>. 
+          <md>
+            <mrow>
+              2 \amp = 4a - 3b 
+            </mrow>
+            <mrow>
+              -2 \amp = 9a + 12 b
+            </mrow>
+          </md>
+          Then we can translate this into a matrix. 
+          <me>
+            \left( \begin{array}{cc|c}
+              4 \amp -3 \amp 2 \\
+              9 \amp 12 \amp -2 
+            \end{array} \right)
+          </me>
+          Then we row reduce this matrix. 
+          <me>
+            \left( \begin{array}{cc|c}
+              1 \amp 0 \amp \frac{6}{25} \\
+              0 \amp 1 \amp \frac{-26}{75}
+            \end{array} \right)
+          </me>
+          This has a unique solution, which gives us the coefficient
+          of the linear combination. Finally, we can write the
+          original vector as a linear combination of the spanning
+          vectors. 
+          <me>
+            \left( \begin{matrix}
+              2 \\ -2 
+            \end{matrix} \right) = 
+            \frac{6}{25} \left( \begin{matrix}
+              4 \\ 9 
+            \end{matrix} \right) + 
+            \frac{-26}{75} \left( \begin{matrix}
+              -3 \\ 12 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the
+          vectors in the span. 
+          <md>
+            <mrow>
+              \amp \left( \begin{matrix}
+                1 \\ 0 \\ 4 
+              \end{matrix} \right) \amp \amp 
+              \Span \left\{ \left( \begin{matrix}
+                4 \\ 0 \\ 13
+              \end{matrix} \right), 
+              \left( \begin{matrix}
+                -1 \\ -1 \\ 3 
+              \end{matrix} \right), 
+              \left( \begin{matrix}
+                0 \\ -5 \\ 4
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can convert into an equation with unknown by writing out
+          the definition of a linear combination.
+          <me>
+            \left( \begin{matrix}
+              1 \\ 0 \\ 4
+            \end{matrix} \right) = 
+            a \left( \begin{matrix}
+              4 \\ 0 \\ 13
+            \end{matrix} \right) + 
+            b \left( \begin{matrix}
+              -1 \\ -1 \\ 3
+            \end{matrix} \right) + 
+            c \left( \begin{matrix}
+              0 \\ -5 \\ 4 
+            \end{matrix} \right) 
+          </me>
+          Then we can translate this into a system of equation in the
+          unknowns <m>a,b</m>. 
+          <md>
+            <mrow>
+              1 \amp = 4a - b 
+            </mrow>
+            <mrow>
+              0 \amp = -b - 5c
+            </mrow>
+            <mrow>
+              4 \amp = 13a + 3b + 4c 
+            </mrow>
+          </md>
+          Then we can translate this into a matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              4 \amp -1 \amp 0 \amp 1 \\
+              0 \amp -1 \amp -5 \amp 0 \\
+              13 \amp 3 \amp 4 \amp 4 
+            \end{array} \right)
+          </me>
+          Then we row reduce this matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{31}{109} \\
+              0 \amp 1 \amp 0 \amp \frac{15}{109} \\
+              0 \amp 0 \amp 1 \amp \frac{-3}{109} 
+            \end{array} \right)
+          </me>
+          This has a unique solution, which gives us the coefficient
+          of the linear combination. Finally, we can write the
+          original vector as a linear combination of the spanning
+          vectors. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ 0 \\ 4 
+            \end{matrix} \right) = 
+            \frac{31}{109} \left( \begin{matrix}
+              4 \\ 0 \\ 13 
+            \end{matrix} \right) + 
+            \frac{15}{109} \left( \begin{matrix}
+              -1 \\ -1 \\ 3 
+            \end{matrix} \right) +
+            \frac{-3}{109} \left( \begin{matrix}
+              0 \\ -5 \\ 4 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the
+          vectors in the span. 
+          <md>
+            <mrow>
+              \amp \left( \begin{matrix}
+                -6 \\ 9 \\ -25 \\ 16
+              \end{matrix} \right) \amp \amp
+              \Span \left\{ \left( \begin{matrix}
+                0 \\ 5 \\ -3 \\ 8 
+              \end{matrix} \right), 
+              \left( \begin{matrix}
+                -1 \\ -1 \\ 4 \\ 3 
+              \end{matrix} \right), 
+              \left( \begin{matrix}
+                -5 \\ -5 \\ 0 \\ 2
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can convert into an equation with unknown by writing out
+          the definition of a linear combination.
+          <me>
+            \left( \begin{matrix}
+              -6 \\ 9 \\ -25 \\ 16
+            \end{matrix} \right) = 
+            a \left( \begin{matrix}
+              0 \\ 5 \\ -3 \\ 8 
+            \end{matrix} \right) + 
+            b \left( \begin{matrix}
+              -1 \\ -1 \\ 4 \\ 3
+            \end{matrix} \right) 
+            c \left( \begin{matrix}
+              -5 \\ -5 \\ 0 \\ 2
+            \end{matrix} \right) 
+          </me>
+          Then we can translate this into a system of equation in the
+          unknowns <m>a,b</m>. 
+          <md>
+            <mrow>
+              -6 \amp = -b - 5c 
+            </mrow>
+            <mrow>
+              9 \amp = 5a - b - 5c 
+            </mrow>
+            <mrow>
+              -25 \amp = -3a + 4b 
+            </mrow>
+            <mrow>
+              16 \amp = 8a + 3b + 2c 
+            </mrow>
+          </md>
+          Then we can translate this into a matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              0 \amp -1 \amp -5 \amp -6 \\
+              5 \amp -1 \amp -5 \amp 9 \\
+              -3 \amp 4 \amp 0 \amp -25 \\
+              8 \amp 3 \amp 2 \amp 16
+            \end{array} \right)
+          </me>
+          Then we row reduce this matrix. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp 3 \\
+              0 \amp 1 \amp 0 \amp -4 \\
+              0 \amp 0 \amp 1 \amp 2 \\
+              0 \amp 0 \amp 0 \amp 0
+            \end{array} \right)
+          </me>
+          This has a unique solution, which gives us the coefficient
+          of the linear combination. Finally, we can write the
+          original vector as a linear combination of the spanning
+          vectors. 
+          <me>
+            \left( \begin{matrix}
+              -6 \\ 9 \\ -25 \\ 16 
+            \end{matrix} \right) = 
+            3 \left( \begin{matrix}
+              0 \\ 5 \\ -3 \\ 8 
+            \end{matrix} \right) + 
+            -4 \left( \begin{matrix}
+              -1 \\ -1 \\ 4 \\ 3
+            \end{matrix} \right) +
+            2 \left( \begin{matrix}
+              -5 \\ -5 \\ 0 \\ 2
+            \end{matrix} \right) 
+          </me>
         </p>
       </solution>
     </activity>
@@ -18,12 +807,11 @@
     <p>
       <ul>
         <li>
+          What is dimension? 
         </li>
         <li>
-        </li>
-        <li>
-        </li>
-        <li>
+          How are spans <q>built up</q> but loci are <q>restricted
+          down</q>?
         </li>
       </ul>
     </p>

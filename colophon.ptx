@@ -9,5 +9,10 @@
       href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
       Commons 4.0 Attribution-ShareAlike International License</url>.
     </shortlicense>
+    <p>
+      Many calclutions in this books have been done or checked with
+      one of two computer algebra systems: Wolfram Alpha and SageMath.
+      Thanks to the developers and publishers of these tools. 
+    </p>
   </copyright>
 </colophon>

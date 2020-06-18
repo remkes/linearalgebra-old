@@ -1,29 +1,1059 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week4-activity">
+  <title>Week 4 Activity</title>
+  <subsection xml:id="row-reduction">
+    <title>Row Reduction</title>
     <activity>
       <statement>
         <p>
+          Row reduce this matrix.
+          <me>
+            \left( \begin{matrix}
+              1 \amp -3 \amp 0 \\
+              1 \amp 0 \amp 7 \\
+              0 \amp -4 \amp -2 
+            \end{matrix} \right) 
+          </me>
         </p>
       </statement>
       <solution>
         <p>
+          We proceed step-by-step through the row reduction algorithm.
+          I'll be very explicit about the row operaion in each step.
+          The first row already has a leading one in the first column,
+          so we don't need to create one. When we have a leading one,
+          we want to clear its colum. We'll start by subtracting row 1
+          from row 2. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp -3 \amp 0 \\
+              0 \amp 3 \amp 7 \\
+              0 \amp -4 \amp -2 
+            \end{matrix} \right) 
+          </me>
+          This has cleared the first column other than the leading 1.
+          Now we want a leading one in the second column, if we can.
+          To get that, I'll divide the second row by 3. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp -3 \amp 0 \\
+              0 \amp 1 \amp \frac{7}{3}  \\
+              0 \amp -4 \amp -2 
+            \end{matrix} \right) 
+          </me>
+          Now I have a leading 1, so I want to clear its column. I'll
+          add 3 times row 2 to row 1 to clear the entry above the
+          leading 1. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 7 \\
+              0 \amp 1 \amp \frac{7}{3}  \\
+              0 \amp -4 \amp -2 
+            \end{matrix} \right) 
+          </me>
+          Then I'll add 4 times row 2 to row 3 to clear the entry
+          below the leading 1.
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 7 \\
+              0 \amp 1 \amp \frac{7}{3}  \\
+              0 \amp 0 \amp \frac{22}{3}  
+            \end{matrix} \right) 
+          </me>
+          That clears the second column. Now I want a leading 1 in the
+          third column, if I can. I can divide the last row by
+          <m>\frac{22}{3}</m> to make a leading 1.
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 7 \\
+              0 \amp 1 \amp \frac{7}{3}  \\
+              0 \amp 0 \amp 1  
+            \end{matrix} \right) 
+          </me>
+          Then I need to clear the column above this leading 1. I
+          subtract 7 times the third row from the first row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 0 \\
+              0 \amp 1 \amp \frac{7}{3}  \\
+              0 \amp 0 \amp 1  
+            \end{matrix} \right) 
+          </me>
+          Finally, I subtract <m>\frac{7}{3}</m> times the third row
+          from the second row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 0 \\
+              0 \amp 1 \amp \\
+              0 \amp 0 \amp 1  
+            \end{matrix} \right) 
+          </me>
+          This is the row reduced form.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Row reduce this matrix.
+          <me>
+            \left( \begin{matrix}
+              4 \amp 4 \amp 0 \amp 1 \\
+              -1 \amp -1 \amp 2 \amp 1 \\
+              6 \amp 6 \amp -4 \amp -1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We proceed step-by-step through the row reduction algorithm.
+          I'll be very explicit about the row operaion in each step. 
+          <me>
+            \left( \begin{matrix}
+              4 \amp 4 \amp 0 \amp 1 \\
+              -1 \amp -1 \amp 2 \amp 1 \\
+              6 \amp 6 \amp -4 \amp -1 
+            \end{matrix} \right) 
+          </me>
+          First I need a leading one in the first column. I could
+          divide the first row by 4, but I'd like to avoid introducing
+          fractions this early if I can. Instead, I'll mutiply the
+          second row by <m>(-1)</m> and then'll interchange
+          the first and second row.
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp -2 \amp -1 \\
+              4 \amp 4 \amp 0 \amp 1 \\
+              6 \amp 6 \amp -4 \amp -1 
+            \end{matrix} \right) 
+          </me>
+          Now I have a leading one in the first column. I need to
+          clear the other entries in this column. I'll subtract 4
+          times the first row from the second row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp -2 \amp -1 \\
+              0 \amp 0 \amp 8 \amp 5 \\
+              6 \amp 6 \amp -4 \amp -1 
+            \end{matrix} \right) 
+          </me>
+          Then I'll subtract 6 times the first row from the third row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp -2 \amp -1 \\
+              0 \amp 0 \amp 8 \amp 5 \\
+              0 \amp 0 \amp 4 \amp 3 
+            \end{matrix} \right) 
+          </me>
+          Now I've clear the first column. Next I'll try to make a
+          leading one in the second column. Looking at the matrix,
+          though, this is impossible. The only non-zero entry in the
+          second column is already behind a leading one -- it can
+          never be the first non-zero entry in its rown. Since it is
+          impossible to make a leading one in the second column, we
+          move on to the third. Here, I'll divide the second row by 8. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp -2 \amp -1 \\
+              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
+              0 \amp 0 \amp 4 \amp 3 
+            \end{matrix} \right) 
+          </me>
+          Now I want to clear the third column above and below the
+          leading one. I'll add 2 times the second row to the first
+          row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp 0 \amp \frac{1}{4} \\
+              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
+              0 \amp 0 \amp 4 \amp 3 
+            \end{matrix} \right) 
+          </me>
+          Then I'll subtract 4 times the second row from the third
+          row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp 0 \amp \frac{1}{4} \\
+              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
+              0 \amp 0 \amp 0 \amp \frac{1}{2} 
+            \end{matrix} \right) 
+          </me>
+          Now I want to make a leading one in the last column. I'll
+          multiply the last row by 2. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp 0 \amp \frac{1}{4} \\
+              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{matrix} \right) 
+          </me>
+          Then I want to clear the last column above the leading one.
+          I'll subtract <m>\frac{1}{4}</m> times the third row from
+          the first row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{matrix} \right) 
+          </me>
+          Finally, I'll subtract <m>\frac{5}{8}</m> times the third
+          row from the second row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 1 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{matrix} \right) 
+          </me>
+          This is the row reduced form. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Row reduce this matrix.
+          <me>
+            \left( \begin{matrix}
+              2 \amp -1 \amp -3 \amp 0 \\
+              -6 \amp 3 \amp 5 \amp 2 \\
+              -4 \amp 2 \amp -2 \amp 2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I want a leading one in the first row, so I'll divide the
+          first row by 2. (There is no avoiding fractions in this row
+          reduction.) 
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp \frac{-3}{2} \amp 0 \\
+              -6 \amp 3 \amp 5 \amp 2 \\
+              -4 \amp 2 \amp -2 \amp 2 
+            \end{matrix} \right) 
+          </me>
+          Now I want to clean the first column under the leading one.
+          I add 6 times the first row to the second.
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp \frac{-3}{2} \amp 0 \\
+              0 \amp 0 \amp -4 \amp 2 \\
+              -4 \amp 2 \amp -2 \amp 2 
+            \end{matrix} \right) 
+          </me>
+          Then I add 4 times the first row to the third.
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp \frac{-3}{2} \amp 0 \\
+              0 \amp 0 \amp -4 \amp 2 \\
+              0 \amp 0 \amp -8 \amp 2 
+            \end{matrix} \right) 
+          </me>
+          Now the first column is finished. It is impossible to make a
+          leading one in the second column, so we move to the third
+          column. I'll divide the second row by <m>(-4)</m>
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp \frac{-3}{2} \amp 0 \\
+              0 \amp 0 \amp 1 \amp \frac{-1}{2} \\
+              0 \amp 0 \amp -8 \amp 2 
+            \end{matrix} \right) 
+          </me>
+          Then I want to clear the third column above and below the
+          leading one. I add <m>\frac{3}{2}</m> times the second row
+          to the first row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              0 \amp 0 \amp 1 \amp \frac{-1}{2} \\
+              0 \amp 0 \amp -8 \amp 2 
+            \end{matrix} \right) 
+          </me>
+          Then I'll add 8 times the second row to the third row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              0 \amp 0 \amp 1 \amp \frac{-1}{2} \\
+              0 \amp 0 \amp 0 \amp -2 
+            \end{matrix} \right) 
+          </me>
+          That finishes the third column, so we move of the fourth. We
+          can make a leading one in the third row. I divide the third
+          row by <m>(-2)</m>.
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              0 \amp 0 \amp 1 \amp \frac{-1}{2} \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{matrix} \right) 
+          </me>
+          Then I want to clear the fourth column. I subtraction
+          <m>\frac{1}{2}</m> times the third row from the second row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              0 \amp 0 \amp 1 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{matrix} \right) 
+          </me>
+          Finally, I subtract <m>\frac{3}{4}</m> times the third row
+          from the first row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp \frac{-1}{2} \amp 0 \amp 0 \\
+              0 \amp 0 \amp 1 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{matrix} \right) 
+          </me>
+          This is the reduced form. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Row reduce this matrix.
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp -4 \amp 2 \amp 9 \\
+              0 \amp 3 \amp -2 \amp 0 \amp 7 \\
+              7 \amp 0 \amp 0 \amp 2 \amp -1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We proceed step-by-step through the row reduction algorithm.
+          I'll be very explicit about the row operaion in each step.
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp -4 \amp 2 \amp 9 \\
+              0 \amp 3 \amp -2 \amp 0 \amp 7 \\
+              7 \amp 0 \amp 0 \amp 2 \amp -1 
+            \end{matrix} \right) 
+          </me>
+          There is already a leading one in the first row, and there
+          is already a zero in the second row below it. I need to
+          clear the first entry in the third row, so I subtract 7
+          times the first row from the third row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp -4 \amp 2 \amp 9 \\
+              0 \amp 3 \amp -2 \amp 0 \amp 7 \\
+              0 \amp 0 \amp 28 \amp -12 \amp -64
+            \end{matrix} \right) 
+          </me>
+          There is one non-zero entry in the second column, so we'll
+          use that for the leading one. We divide the second row by 3. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp -4 \amp 2 \amp 9 \\
+              0 \amp 1 \amp \frac{-2}{3} \amp 0 \amp \frac{7}{3} \\
+              0 \amp 0 \amp 28 \amp -12 \amp -64
+            \end{matrix} \right) 
+          </me>
+          That already finishes the second colulmn. Now we work the
+          third column. To make a leading one, I divide the third row
+          by 28. (The numbers get a bit unwieldy here, but that often
+          happens with row reduction).
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp -4 \amp 2 \amp 9 \\
+              0 \amp 1 \amp \frac{-2}{3} \amp 0 \amp \frac{7}{3} \\
+              0 \amp 0 \amp 1 \amp \frac{-3}{7} \amp \frac{-16}{7}
+            \end{matrix} \right) 
+          </me>
+          Then I need to clear the third colum above the leading one.
+          I a <m>\frac{2}{3}</m> times the third row to the second. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp -4 \amp 2 \amp 9 \\
+              0 \amp 1 \amp 0 \amp \frac{-2}{7} \amp \frac{17}{21} \\
+              0 \amp 0 \amp 1 \amp \frac{-3}{7} \amp \frac{-16}{7}
+            \end{matrix} \right) 
+          </me>
+          Then I add 4 times the third row to the first row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 0 \amp 0 \amp \frac{2}{7} \amp \frac{-1}{7} \\
+              0 \amp 1 \amp 0 \amp \frac{-2}{7} \amp \frac{17}{21} \\
+              0 \amp 0 \amp 1 \amp \frac{-3}{7} \amp \frac{-16}{7}
+            \end{matrix} \right) 
+          </me>
+          This is the row reduced form. 
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="solving-systems">
+    <title>Solving Linear Systems</title>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear system using a matrix and row reduction.
+          Describe the solution as a locus, as a span, and in a
+          description by free parameters. 
+          <md>
+            <mrow>
+              y + 3z \amp = 0 
+            </mrow>
+            <mrow>
+              -2x - 2y + z \amp = 0 
+            </mrow>
+            <mrow>
+              4x + y - 3z \amp = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we write the matrix of the system.
+          <me>
+            \left( \begin{array}{ccc|c}
+              0 \amp 1 \amp 3 \amp 0 \\
+              -2 \amp -2 \amp 1 \amp 0 \\
+              4 \amp 1 \amp -3 \amp 1 
+            \end{array} \right) 
+          </me>
+          Then we row reduce this matrix. After the previous activity
+          for row reducing matrices, I'm not going to show all the
+          steps; I'll just give the row reduced form calculated by
+          computer. You are welcome to do the same for all row
+          reductions for the rest of the course. Here is the row
+          reduced matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{7}{16} \\
+              0 \amp 1 \amp 0 \amp \frac{-3}{8} \\
+              0 \amp 0 \amp 1 \amp \frac{1}{8} 
+            \end{array} \right) 
+          </me>
+          Now we need to interpret this in the three ways required by
+          the question. The solution as a locus doesn't need any
+          interpretation -- the original set of three equations
+          defined a locus, since a locus is nothing but the solutions
+          of some number of equations in the coordinate variables. 
+        </p>
+        <p>
+          A description by parameters looks for free parameter, which
+          are found in columns left of the dividing line without
+          leading ones. Then we can interpret the matrix as a new
+          system, using these free parameters. Here we have no free
+          parameters and there is a unique solution
+          <md>
+            <mrow>
+              x \amp = \frac{7}{16}
+            </mrow>
+            <mrow>
+              y \amp = \frac{-3}{8}
+            </mrow>
+            <mrow>
+              z \amp = \frac{1}{8}
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Finally, a description as a span is a rewriting of the
+          description by free parameters. For every parameter, we
+          think of the coefficients of that parameter as a vector. The
+          vector of constants becomes the offset vector. Grouping the
+          variables into a vector lets us write the solution as an
+          (offset) span. Since this is a unique solution, we only have
+          the offset vector and we have no span. 
+          <me>  
+            \left( \begin{matrix}
+              x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{7}{16} \\ \frac{-3}{8} \\ \frac{1}{8} 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear system using a matrix and row reduction.
+          Describe the solution as a locus, as a span, and in a
+          description by free parameters. 
+          <md>
+            <mrow>
+              4x - y - z \amp = 5 
+            </mrow>
+            <mrow>
+              -3x + 2z \amp = 1 
+            </mrow>
+            <mrow>
+              -2x - y + 3z \amp = 9 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we write the matrix of the system.
+          <me>
+            \left( \begin{array}{ccc|c}
+              4 \amp -1 \amp -1 \amp 5 \\
+              -3 \amp 0 \amp 2 \amp 1 \\
+              -2 \amp -1 \amp 3 \amp 9 
+            \end{array} \right) 
+          </me>
+          Then we row reduce this matrix. After the previous activity
+          for row reducing matrices, I'm not going to show all the
+          steps; I'll just give the row reduced form calculated by
+          computer. You are welcome to do the same for all row
+          reductions for the rest of the course. Here is the row
+          reduced matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{-2}{3} \amp 0 \\
+              0 \amp 1 \amp \frac{-5}{3} \amp 0 \\
+              0 \amp 0 \amp 0 \amp 1 
+            \end{array} \right) 
+          </me>
+          We have a row that translates to <m>0=1</m>, which is a
+          contradiction. Therefore, this sytem has no solutions. As
+          there are no solutions, there is no description of those
+          solutions, either as a locus, by parameters, or as a span. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear system using a matrix and row reduction.
+          Describe the solution as a locus, as a span, and in a
+          description by free parameters. 
+          <md>
+            <mrow>
+              -x - y + 1 \amp = 2 
+            </mrow>
+            <mrow>
+              2x + 3 \amp = 1 
+            </mrow>
+            <mrow>
+              -4y + 7z \amp = 6 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we write the matrix of the system.
+          <me>
+            \left( \begin{array}{ccc|c}
+              -1 \amp -1 \amp 1 \amp 2 \\
+              2 \amp 0 \amp 3 \amp 1 \\
+              0 \amp -4 \amp 7 \amp 6
+            \end{array} \right) 
+          </me>
+          Then we row reduce this matrix. After the previous activity
+          for row reducing matrices, I'm not going to show all the
+          steps; I'll just give the row reduced form calculated by
+          computer. You are welcome to do the same for all row
+          reductions for the rest of the course. Here is the row
+          reduced matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{-3}{2} \\
+              0 \amp 1 \amp 0 \amp \frac{5}{6} \\
+              0 \amp 0 \amp 1 \amp \frac{4}{3} 
+            \end{array} \right) 
+          </me>
+          Now we need to interpret this in the three ways required by
+          the question. The solution as a locus doesn't need any
+          interpretation -- the original set of three equations
+          defined a locus, since a locus is nothing but the solutions
+          of some number of equations in the coordinate variables. 
+        </p>
+        <p>
+          A description by parameters looks for free parameter, which
+          are found in columns left of the dividing line without
+          leading ones. Then we can interpret the matrix as a new
+          system, using these free parameters. Here, we have no free
+          parameters and there is an exact solution.
+          <md>
+            <mrow>
+              x \amp = \frac{-3}{2} 
+            </mrow>
+            <mrow>
+              y \amp = \frac{5}{6} 
+            </mrow>
+            <mrow>
+              z \amp = \frac{4}{3}
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Finally, a description as a span is a rewriting of the
+          description by free parameters. For every parameter, we
+          think of the coefficients of that parameter as a vector. The
+          vector of constants becomes the offset vector. Grouping the
+          variables into a vector lets us write the solution as an
+          (offset) span. Since we have a unique solution, we only have
+          the offset vector and we have no span at all.
+          <me>  
+            \left( \begin{matrix}
+              x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{-3}{2} \\ \frac{5}{6} \\ \frac{4}{3} 
+            \end{matrix} \right)  
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear system using a matrix and row reduction.
+          Describe the solution as a locus, as a span, and in a
+          description by free parameters. 
+          <md>
+            <mrow>
+              2x - y + 6z \amp = 1 
+            </mrow>
+            <mrow>
+              3x - 7z \amp = 1 
+            </mrow>
+            <mrow>
+              y + 4z \amp = 2
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we write the matrix of the system.
+          <me>
+            \left( \begin{array}{ccc|c}
+              2 \amp 01 \amp 6 \amp 1 \\
+              3 \amp 0 \amp -7 \amp 1 \\
+              0 \amp 1 \amp 4 \amp 2 
+            \end{array} \right) 
+          </me>
+          Then we row reduce this matrix. After the previous activity
+          for row reducing matrices, I'm not going to show all the
+          steps; I'll just give the row reduced form calculated by
+          computer. You are welcome to do the same for all row
+          reductions for the rest of the course. Here is the row
+          reduced matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{31}{44} \\
+              0 \amp 1 \amp 0 \amp \frac{15}{11} \\
+              0 \amp 0 \amp 1 \amp \frac{7}{44} 
+            \end{array} \right) 
+          </me>
+          Now we need to interpret this in the three ways required by
+          the question. The solution as a locus doesn't need any
+          interpretation -- the original set of three equations
+          defined a locus, since a locus is nothing but the solutions
+          of some number of equations in the coordinate variables. 
+        </p>
+        <p>
+          A description by parameters looks for free parameter, which
+          are found in columns left of the dividing line without
+          leading ones. Then we can interpret the matrix as a new
+          system, using these free parameters. Here we have no free
+          parameters and a unique solution.
+          <md>
+            <mrow>
+              x \amp = \frac{31}{44} 
+            </mrow>
+            <mrow>
+              y \amp = \frac{15}{11} 
+            </mrow>
+            <mrow>
+              z \amp =  \frac{7}{44} 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Finally, a description as a span is a rewriting of the
+          description by free parameters. For every parameter, we
+          think of the coefficients of that parameter as a vector. The
+          vector of constants becomes the offset vector. Grouping the
+          variables into a vector lets us write the solution as an
+          (offset) span. Since we have a unique solution, we only have
+          the offset vector and no span at all. 
+          <me>  
+            \left( \begin{matrix}
+              x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{31}{44} \\ \frac{15}{11} \\ \frac{7}{44} 
+            \end{matrix} \right)  
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear system using a matrix and row reduction.
+          Describe the solution as a locus, as a span, and in a
+          description by free parameters. 
+          <md>
+            <mrow>
+              x - y + 2z \amp = 0 
+            </mrow>
+            <mrow>
+              2x - 3z \amp = 1 
+            </mrow>
+            <mrow>
+              4x - 2y + z \amp = 1 
+            </mrow>
+            <mrow>
+              x + 3y - 12 z \amp = 2 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we write the matrix of the system.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp -1 \amp 2 \amp 0 \\
+              2 \amp 0 \amp -3 \amp 1 \\
+              4 \amp -2 \amp 1 \amp 1 \\
+              1 \amp 3 \amp -12 \amp 2
+            \end{array} \right) 
+          </me>
+          Then we row reduce this matrix. After the previous activity
+          for row reducing matrices, I'm not going to show all the
+          steps; I'll just give the row reduced form calculated by
+          computer. You are welcome to do the same for all row
+          reductions for the rest of the course. Here is the row
+          reduced matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{-3}{2} \amp \frac{1}{2} \\
+              0 \amp 1 \amp \frac{-7}{2} \amp \frac{1}{2} \\
+              0 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0 
+            \end{array} \right) 
+          </me>
+          Now we need to interpret this in the three ways required by
+          the question. The solution as a locus doesn't need any
+          interpretation -- the original set of three equations
+          defined a locus, since a locus is nothing but the solutions
+          of some number of equations in the coordinate variables. 
+        </p>
+        <p>
+          A description by parameters looks for free parameter, which
+          are found in columns left of the dividing line without
+          leading ones. Then we can interpret the matrix as a new
+          system, using these free parameters. Here, the third column
+          has no leading ones, so <m>z</m> is a free parameter. 
+          <md>
+            <mrow>
+              x \amp = \frac{1}{2} + \frac{3}{2} z 
+            </mrow>
+            <mrow>
+              y \amp = \frac{1}{2} + \frac{7}{2} z 
+            </mrow>
+            <mrow>
+              z \amp = z 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Finally, a description as a span is a rewriting of the
+          description by free parameters. For every parameter, we
+          think of the coefficients of that parameter as a vector. The
+          vector of constants becomes the offset vector. Grouping the
+          variables into a vector lets us write the solution as an
+          (offset) span.
+          <me>  
+            \left( \begin{matrix}
+              x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{1}{2} \\ \frac{1}{2} \\ 0 
+            \end{matrix} \right) + 
+            z \left( \begin{matrix}
+              \frac{3}{2} \\ \frac{7}{2} \\ 1 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{1}{2} \\ \frac{1}{2} \\ 0 
+            \end{matrix} \right) + 
+            \Span \left\{ \left( \begin{matrix}
+              \frac{3}{2} \\ \frac{7}{2} \\ 1
+            \end{matrix} \right) \right\} 
+          </me>
+          If we want, we can scale the span to clear the fraction
+          (since a span is all multiple, applying any multiple of the
+          vectors in the span has no effect on the span. 
+          <me>  
+            \left( \begin{matrix}
+              x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{1}{2} \\ \frac{1}{2} \\ 0 
+            \end{matrix} \right) + 
+            \Span \left\{ \left( \begin{matrix}
+              3 \\ 7 \\ 2
+            \end{matrix} \right) \right\} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear system using a matrix and row reduction.
+          Describe the solution as a locus, as a span, and in a
+          description by free parameters. In <m>\RR^4</m>, the order
+          of variables that we are using in this course is
+          <m>w,x,y,z</m>. 
+          <md>
+            <mrow>
+              w - y - z \amp = 4 
+            </mrow>
+            <mrow>
+              5w - x + 2z \amp = 2 
+            </mrow>
+            <mrow>
+              6x - 3y \amp = 1 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we write the matrix of the system.
+          <me>
+            \left( \begin{array}{cccc|c}
+              1 \amp 0 \amp -1 \amp -1 \amp 4 \\
+              5 \amp -1 \amp - \amp 2 \amp 2 \\
+              0 \amp 6 \amp -3 \amp 0 \amp 1 
+            \end{array} \right) 
+          </me>
+          Then we row reduce this matrix. After the previous activity
+          for row reducing matrices, I'm not going to show all the
+          steps; I'll just give the row reduced form calculated by
+          computer. You are welcome to do the same for all row
+          reductions for the rest of the course. Here is the row
+          reduced matrix.
+          <me>
+            \left( \begin{array}{cccc|c}
+              1 \amp 0 \amp 0 \amp \frac{5}{9} \amp \frac{1}{27} \\
+              0 \amp 1 \amp 0 \amp \frac{7}{9} \amp \frac{-49}{27} \\
+              0 \amp 0 \amp 1 \amp \frac{14}{9} \amp \frac{-107}{27} 
+            \end{array} \right) 
+          </me>
+          Now we need to interpret this in the three ways required by
+          the question. The solution as a locus doesn't need any
+          interpretation -- the original set of three equations
+          defined a locus, since a locus is nothing but the solutions
+          of some number of equations in the coordinate variables. 
+        </p>
+        <p>
+          A description by parameters looks for free parameter, which
+          are found in columns left of the dividing line without
+          leading ones. Then we can interpret the matrix as a new
+          system, using these free parameters. Here the fourth column
+          has no leading one, so we can use <m>z</m> as the free
+          parameter. 
+          <md>
+            <mrow>
+              w \amp = \frac{1}{27} - \frac{5}{9} z
+            </mrow>
+            <mrow>
+              x \amp = \frac{-49}{27} - \frac{7}{9} z 
+            </mrow>
+            <mrow>
+              y \amp = \frac{-107}{27} - \frac{14}{9} z 
+            </mrow>
+            <mrow>
+              z \amp = z
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Finally, a description as a span is a rewriting of the
+          description by free parameters. For every parameter, we
+          think of the coefficients of that parameter as a vector. The
+          vector of constants becomes the offset vector. Grouping the
+          variables into a vector lets us write the solution as an
+          (offset) span.
+          <me>  
+            \left( \begin{matrix}
+              w \\ x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{1}{27} \\ \frac{-49}{27} \\ \frac{-107}{27} \\ 0 
+            \end{matrix} \right) + 
+            z \left( \begin{matrix}
+              \frac{-5}{9} \\ \frac{-7}{9} \\ \frac{-14}{9} \\ 1 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{1}{@7} \\ \frac{-49}{27} \\ \frac{-107}{27} \\ 0 
+            \end{matrix} \right) + 
+            \Span \left\{ \left( \begin{matrix}
+              \frac{-5}{9} \\ \frac{-7}{9} \\ \frac{-14}{9} \\ 1 
+            \end{matrix} \right) \right\} 
+          </me>
+          We can scale the term in the span, if we want to clear the
+          denominators. 
+          <me>  
+            \left( \begin{matrix}
+              w \\ x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{1}{27} \\ \frac{-49}{27} \\ \frac{-107}{27} \\ 0 
+            \end{matrix} \right) + 
+            \Span \left\{ \left( \begin{matrix}
+              -5 \\ -7 \\ -14 \\ 9 
+            \end{matrix} \right) \right\} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear system using a matrix and row reduction.
+          Describe the solution as a locus, as a span, and in a
+          description by free parameters. In <m>\RR^4</m>, the order
+          of variables that we are using in this course is
+          <md>
+            <mrow>
+              -3w + 2x - z \amp = 3 
+            </mrow>
+            <mrow>
+              x + y - 4z \amp = 2 
+            </mrow>
+            <mrow>
+              2w + x \amp \ 3 
+            </mrow>
+            <mrow>
+              -w + 4x + y - 5z \amp = 8 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we write the matrix of the system.
+          <me>
+            \left( \begin{array}{cccc|c}
+              -3 \amp 2 \amp 0 \amp -1 \amp 3 \\
+              0 \amp 1 \amp 1 \amp -4 \amp 2 \\
+              2 \amp 1 \amp 0 \amp 0 \amp 3 \\
+              -1 \amp 4 \amp 1 \amp -5 \amp 8
+            \end{array} \right) 
+          </me>
+          Then we row reduce this matrix. After the previous activity
+          for row reducing matrices, I'm not going to show all the
+          steps; I'll just give the row reduced form calculated by
+          computer. You are welcome to do the same for all row
+          reductions for the rest of the course. Here is the row
+          reduced matrix.
+          <me>
+            \left( \begin{array}{cccc|c}
+              1 \amp 0 \amp 0 \amp \frac{1}{7} \amp \frac{3}{7} \\
+              0 \amp 1 \amp 0 \amp \frac{-2}{7} \amp \frac{15}{7} \\
+              0 \amp 0 \amp 1 \amp \frac{-26}{7} \amp \frac{-1}{7} \\
+              0 \amp 0 \amp 0 \amp 0 \amp 0 
+            \end{array} \right) 
+          </me>
+          Now we need to interpret this in the three ways required by
+          the question. The solution as a locus doesn't need any
+          interpretation -- the original set of three equations
+          defined a locus, since a locus is nothing but the solutions
+          of some number of equations in the coordinate variables. 
+        </p>
+        <p>
+          A description by parameters looks for free parameter, which
+          are found in columns left of the dividing line without
+          leading ones. Then we can interpret the matrix as a new
+          system, using these free parameters. Since the fourth column
+          has no leading one, we can use <m>z</m> as a free parameter. 
+          <md>
+            <mrow>
+              w \amp = \frac{3}{7} - \frac{1}{7} z 
+            </mrow>
+            <mrow>
+              x \amp = \frac{15}{7} + \frac{2}{7} z 
+            </mrow>
+            <mrow>
+              y \amp = \frac{-1}{7} + \frac{26}{7} z 
+            </mrow>
+            <mrow>
+              z \amp = z
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Finally, a description as a span is a rewriting of the
+          description by free parameters. For every parameter, we
+          think of the coefficients of that parameter as a vector. The
+          vector of constants becomes the offset vector. Grouping the
+          variables into a vector lets us write the solution as an
+          (offset) span.
+          <me>  
+            \left( \begin{matrix}
+              w \\ x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{3}{7} \\ \frac{15}{7} \\ \frac{-1}{7} \\ 0 
+            \end{matrix} \right) + 
+            z \left( \begin{matrix}
+              \frac{-1}{7} \\ \frac{2}{7} \\ \frac{-26}{7} \\ 1 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{3}{7} \\ \frac{15}{7} \\ \frac{-1}{7} \\ 0 
+            \end{matrix} \right) + 
+            \Span \left\{ \left( \begin{matrix}
+              \frac{-1}{7} \\ \frac{2}{7} \\ \frac{-26}{7} \\ 1 
+            \end{matrix} \right) \right\} 
+          </me>
+          We can scale the vector in the span if we want to clear
+          denominators. 
+          <me>  
+            \left( \begin{matrix}
+              w \\ x \\ y \\ z
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              \frac{3}{7} \\ \frac{15}{7} \\ \frac{-1}{7} \\ 0 
+            \end{matrix} \right) + 
+            \Span \left\{ \left( \begin{matrix}
+              -1 \\ 2 \\ -26 \\ 7 
+            \end{matrix} \right) \right\} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week4-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>
         <li>
+          What is a linear system?
         </li>
         <li>
+          What does a matrix encode a linear system?
         </li>
         <li>
+          What is row reduction?
         </li>
         <li>
+          What is description by parameters?
+        </li>
+        <li>
+          How does solving systems relate to the geometry of loci and
+          spans?
         </li>
       </ul>
     </p>

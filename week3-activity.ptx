@@ -1,29 +1,640 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week3-activity">
+  <title>Week 3 Activity</title>
+  <subsection xml:id="linear-combinations">
+    <title>Linear Combinations</title>
     <activity>
       <statement>
         <p>
+          Write the first vector as a linear combination of the second
+          and third vectors. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
         </p>
       </statement>
       <solution>
         <p>
+          We need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            b \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          If we look at the components, we get two equations.
+          <md>
+            <mrow>
+              2 \amp = a + b 
+            </mrow>
+            <mrow>
+              3 \amp = -a + b 
+            </mrow>
+          </md>
+          We have to solve this sytem. If we isolate <m>a</m> in the
+          first equation, we get <m>a = 2-b</m>. If we replace that in
+          the second equation, we get <m>3 = -2 + b + b</m>. We can
+          solve this to get <m>b = \frac{5}{2}</m>. Then the
+          expression for <m>a</m> gives <m>a = 2 - b = 2 - \frac{5}{2}
+          = \frac{-1}{2}</m>. That lets us write the linear
+          combination. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right) =
+            \frac{-1}{2} \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            \frac{5}{2} \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the second
+          and third vectors. 
+          <me>
+            \left( \begin{matrix} 
+              -4 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              -4 \\ -1 
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            b \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          If we look at the components, we get two equations.
+          <md>
+            <mrow>
+              -4 \amp = a + b 
+            </mrow>
+            <mrow>
+              -1 \amp =  -a + b 
+            </mrow>
+          </md>
+          We have to solve this sytem. If we isolate <m>a</m> in the
+          first equation, we get <m>a = -4-b</m>. If we replace that in
+          the second equation, we get <m>-1 = 4 + b + b</m>. We can
+          solve this to get <m>b = \frac{-5}{2}</m>. Then the
+          expression for <m>a</m> gives <m>a = -4 - b = -4 - \frac{5}{2}
+          = \frac{-3}{2}</m>. That lets us write the linear
+          combination. 
+          <me>
+            \left( \begin{matrix} 
+              -4 \\ -1
+            \end{matrix} \right) =
+            \frac{-3}{2} \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            \frac{-5}{2} \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the second
+          and third vectors. 
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 3 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 1
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 3 
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            b \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          If we look at the components, we get two equations.
+          <md>
+            <mrow>
+              0 \amp = a + b 
+            </mrow>
+            <mrow>
+              3 \amp = -a + b 
+            </mrow>
+          </md>
+          We have to solve this sytem. If we isolate <m>a</m> in the
+          first equation, we get <m>a = -b</m>. If we replace that in
+          the second equation, we get <m>3 = b + b</m>. We can
+          solve this to get <m>b = \frac{3}{2}</m>. Then the
+          expression for <m>a</m> gives <m>a = - b = - \frac{3}{2}
+          = \frac{-3}{2}</m>. That lets us write the linear
+          combination. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right) =
+            \frac{-3}{2} \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            \frac{3}{2} \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the second
+          third and fourth vectors. 
+          <me>
+            \left( \begin{matrix} 
+              3 \\ 0 \\ 2
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              0 \\ 1 \\ 1 
+            \end{matrix} \right),
+            \left( \begin
+              {matrix} 0 \\ -1 \\ 1
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              3 \\ 0 \\ 2
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ 0 \\ 0 
+            \end{matrix} \right) +
+            b \left( \begin
+              {matrix} 0 \\ 1 \\ 1 
+            \end{matrix} \right) +
+            c \left( \begin{matrix} 
+              0 \\ -1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          We could try to solve this by linear system as we did
+          before, but let's try to work by inspection first, so we if
+          we can informally find a solution. Since the second vector
+          is the only vector of the last three that has an <m>x</m>
+          component, we know that <m>a = 3</m> is the only way to get
+          a 3 in the first coordinate. That gives us one constant.
+          Then, looking at the <m>y</m> amd <m>z</m> coordinates, we
+          can see that if we simply add the third and fourth vectors
+          gother, the <m>y</m> cancels and the <m>z</m> adds to 2.
+          Therefore, we can conclude taht <m>b = c = 1</m> 
+          <me>
+            \left( \begin{matrix} 
+              3 \\ 0 \\ 2
+            \end{matrix} \right) =
+            3 \left( \begin{matrix} 
+              1 \\ 0 \\ 0 
+            \end{matrix} \right) +
+            \left( \begin{matrix} 
+              0 \\ 2 \\ 1 
+            \end{matrix} \right) +
+            \left( \begin{matrix} 
+              0 \\ -1 \\ 1 
+            \end{matrix} \right) 
+          </me>
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="linear-independence">
+    <title>Linear Independence</title>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearity independent.
+          <me>
+            \left\{ \left( \begin{matrix}
+              4 \\ 5 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -6 \\ -9
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -3 \\ 11
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are three vector here, but they are all vector in
+          <m>\RR^2</m>. In two-dimensional space, there are only two
+          independent directions of movement, so three vectors can
+          never be linearly independent. We conclude that this is a
+          linearly independent set. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearity independent.
+          <me>
+            \left\{ \left( \begin{matrix} 
+              5 \\ 0 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              15 \\ 0 \\ 3 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -25 \\ 0 \\ -5 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The second and third vectors are multiple (by 3 and
+          <m>(-5)</m>, respectively) of the first vector. That means
+          that all three vector point along the same line, so these
+          are not different directions and cannot be linearly
+          independent. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearity independent.
+          <me>
+            \left\{ \left( \begin{matrix}
+              5 \\ 9 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ -4 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -9 \\ 5 \\ 0 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The second vector is clearly independent from the other two,
+          since it only has a <m>z</m> coordinate and the others have
+          0 in the <m>z</m> coordinate. It points in the <m>z</m>
+          direction, while the others are restricted to the <m>x-y</m>
+          plane. For the first and third vector, the dot product shows
+          that they are perpendicular, so they point in fundamentally
+          different directions. We conclude that this is a linearly
+          independent set. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearity independent.
+          <me>
+            \left\{ \left( \begin{matrix}
+              1 \\ 1 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -1 \\ 0 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              - \\ 1 \\ 0 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Working by inspection again, we can see that the sum of the
+          first two vectors is the third vector. Any relation like
+          this, where some linear combinations of some of the vectors
+          produces another vector, means that the set is linearly
+          dependent. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="spans-and-bases">
+    <title>Spans and Bases</title>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              4 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -9 \\ - 4
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 5 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              6 \\ -2
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We are in <m>\RR^2</m>, so the maximum number of linearly
+          independent vectors is 2. These are not all in the same
+          direction, so this span is all of <m>\RR^2</m>. We can take
+          any two of these as a basis, since no vector is a multiple
+          of any other vector. Since the span is <m>\RR^2</m>, we
+          could also take the standard basis <m>\{ e_1, e_2\}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              0 \\ 4 \\ 13 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 5 \\ -6
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -1 \\ -1 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          None of the vectors have a non-zero <m>x</m> component, so
+          this set cannot span all of <m>\RR^3</m>. However, we do
+          have different directions in the <m>y-z</m> plane, so this
+          span does span all of the <m>y-z</m>. Therefore, since none
+          of the vectors is a multple of the others, any two vectors
+          form a basis. We can also take the subset of the standard
+          basis that spans the <m>y-z</m> plane: <m>\{e_2, e_3\}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              1 \\ 0 \\ 0 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -4 \\ 0 \\ 0 \\ 0
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ -6 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ 0 \\ 0 \\ -9
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          All of the vector point in axis directions in <m>\RR^5</m>,
+          and all the axis directions are different. We conclude that
+          this is a linearly independent set, so we can take all four
+          vectors as a basis. Since we get the first, second, third
+          and fifth axis directions, we could also take a portion of
+          the standard basis that spans those four directions:
+          <m>\{e_1, e_2, e_3, e_5\}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              0 \\ 6 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -13 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 5 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 34 \\ 0 \\ 0 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          All four vectors point in the second axis direction, so they
+          are all multiples of the standard basis vector <m>e_2</m>.
+          Therefore, the span is one-dimensional and any individual
+          vector, or for that matter <m>e_2</m>, could be taken as a
+          basis. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week3-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          Consider a set of three vectors in <m>\RR^3</m> such that
+          all three vectors have a 0 <m>x</m> coordinate. Proof that
+          these three vector cannot be linearly independent.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are a number of possible approaches here. First, was
+          can talk about fundamentally different directions. If all
+          three vectors have a 0 <m>x</m> component, then they are all
+          found in the <m>y-z</m>. In that plane (like any plane),
+          there are only two fundamentally different direction.
+          Therefore, a set of three vectors cannot have fundamentally
+          different directions, hence cannot be linearly independent.
+        </p>
+        <p>
+          Alternatively, we could delete the first coordinate of each
+          vectors and think of the resulting vectors in <m>\RR^2</m>.
+          Then we would have three vectors in <m>\RR^2</m>, so they are
+          linearly independent and there exists a way to write one of
+          the vectors as a linear combination of the others: <m>u  =
+          av + bw</m>. Since all we did was deleted a zero component
+          from each vector, this relationship will still work with
+          the original vectors in <m>\RR^3</m>, proving that they are
+          linearly independent.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that if a set of non-zero vector are pairwise
+          orthogonal (the dot product of any two vectors in the set is
+          zero), then the set must be linearly independent.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Agaiin, there are several possible approaches. First, we can
+          think about fundamentally different directions. Since all
+          the vectors in the set are perpendicular to all the other
+          vectors, there is no way that they can share any kind of
+          common direction. This means that they all need a
+          fundamentally new, perpendicular-to-all-others direction.
+          Therefore, they must be a basis.
+        </p>
+        <p>
+          More formally, we could prove by contradiction. Assume that
+          the vectors are linearly independent. Let the vectors be
+          written <m>\{v_i\}</m> (each index indicates a different
+          vector, not the components of one vector).  Linear
+          dependence means we can find constant <m>a_i</m> such that
+          not all of the <m>a_i</m> are zero and 
+          <me>
+            a_1v_1 + a_2v_2 + \ldots + a_nv_n = 0
+          </me>.
+          Now take the dot product of this equation with the vector
+          <m>v_i</m>.
+          <me>
+            v_i \cdot (a_1v_1 + a_2v_2 + \ldots + a_nv_n) = v_i \cdot 0 
+          </me>
+          On the right, the dot product of any vector with the zero
+          vector is zero. On the right, the dot product is linear, so
+          we can distribute and pull out constants. 
+          <me>
+            a_1(v_i \cdot v_1) + a_2(v_i \cdot v_2) + \ldots + a_n(v_i
+            \cdot v_n)) = v_i \cdot 0 
+          </me>
+          But all the vectors are perpendicular, so on the left,
+          everything is zero except for <m>v_i \cdot v_i</m>.
+          <me>
+            a_i (v_i \cdot v_i) = 0 
+          </me>
+          Then we can write the dot product as a length squared. 
+          <me>
+            a_i |v_i| = 0 
+          </me>
+          Since the vector <m>v_i</m> is not zero, the constant
+          <m>a_i</m> must be. But we did this arbitrarily for any
+          index <m>i</m>, so this means all of the constant <m>a_i</m>
+          must be zero. This contradicts the assumption that at least
+          one of the constants is non-zero. This contradiction means
+          that the original assumption must be wrong. We conclude that
+          the vectors are linearly independent. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that any linear subspace has a basis of vectors which
+          all have length 1.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Any linear subspace has a basis of non-zero vectors. For any
+          linear subspace, take any basis whatever. Then, for every
+          vector <m>v</m> in that basis, replace <m>v</m> with
+          <m>\frac{1}{|v|} v</m>. This new vector is a scalar multiple
+          of the old, so it points in the same direction. Since the
+          directions have not changes, these new replacement vectors
+          are still a basis: they still all point in fundamentally
+          different directions. But, by dividing by the original
+          lengths, the lengths of these new vectors are all 1.
+          Therefore, we have constructed a basis of vectors of length
+          1. Since we made no assumption on the linear subspace, we
+          conclude that all linear subspaces have a basis of vectors
+          of length 1. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week3-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>
         <li>
+          What is a linear combination?
         </li>
         <li>
+          What is a span?
         </li>
         <li>
+          What is linear independence and how it is checked?
         </li>
         <li>
+          What is a basis? What does it mean to represent a vector as
+          a linear combination of a basis?
+        </li>
+        <li>
+          What does it mean geometrically is a set of vector is
+          linearly independent?  
         </li>
       </ul>
     </p>

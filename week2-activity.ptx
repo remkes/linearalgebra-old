@@ -1,29 +1,1324 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week2-activity">
+  <title>Week 2 Activity</title>
+  <subsection xml:id="dot-products">
+    <title>Dot Products</title>
     <activity>
       <statement>
-        <p>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 
+            \end{matrix} \right) 
+          </me>
         </p>
       </statement>
       <solution>
         <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 
+            \end{matrix} \right) = (4)(0) + (-2)(-1) = 2
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -2 \\ -7 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -2 \\ -7 
+            \end{matrix} \right) = (2)(-2) + (3)(-7) = -25 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              19 \\ -29 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              19 \\ -29 
+            \end{matrix} \right) = (0)(19) + (0)(-29) = 0 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              \frac{1}{4} \\ \frac{-4}{7} 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \frac{-2}{7} \\ \frac{-4}{5}
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin
+              {matrix} \frac{1}{4} \\ \frac{-4}{7} 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \frac{-2}{7} \\ \frac{-4}{5} 
+            \end{matrix} \right) = \frac{1}{4} \frac{-2}{7} +
+            \frac{-4}{7} \frac{-4}{5} = \frac{-1}{14} + \frac{16}{35}
+            = \frac{-5}{70} + \frac{32}{70} = \frac{27}{70} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              -2 \\ 1 \\ 1 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 \\ 9 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              -2 \\ 1 \\ 1 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 \\ 9 
+            \end{matrix} \right) = (-2)(0) + (1)(-1) + (1)(9) = 8 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 \\ -6 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -6 \\ -7 \\ -2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 \\ -6 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -6 \\ -7 \\ -2 
+            \end{matrix} \right) = (4)(-6) + (-2)(-7) + (-6)(-2) = 2
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              \sqrt{2} \\ 4 \\ \sqrt[3]{2}
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \sqrt{7} \\ \pi^2 \\ 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              \sqrt{2} \\ 4 \\ \sqrt[3]{2}
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \sqrt{7} \\ \pi^2 \\ 0 
+            \end{matrix} \right) = (\sqrt{2})(\sqrt{7}) + (4)(\pi^2) +
+            (\sqrt[3]{2})(0) = \sqrt{14} + 4 \pi^2 
+          </me>
+          The isn't really a simpler way to write this number. This
+          form is just fine. If we wanted an approximate value, we
+          could ask a computer: <m>\sqrt{14} + 4 \pi^2 \doteq
+          217.78</m>. (When you write approximate values, please use
+          this equal with a dot to indicate that this is approximately
+          equal to, not exactly equal to.) 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \sqrt{\pi} \ \frac{1}{e^2+6} \\
+            \sqrt{1 + \sqrt{8}}
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} \sqrt{\pi} \ \frac{1}{e^2+6} \\
+            \sqrt{1 + \sqrt{8}}
+            \end{matrix} \right) = 0 
+          </me>
+          No matter how complicated the other vector is, anything
+          multiplied by zero is still zero. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              -2 \\ -3 \\ 1 \\ 4 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -6 \\ -5 \\ 2 \\ -2 \\ 3 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <md>
+            <mrow>
+              \left( \begin{matrix} 
+                -2 \\ -3 \\ 1 \\ 4 \\ -2 
+              \end{matrix} \right) \cdot
+              \left( \begin{matrix} 
+                -6 \\ -5 \\ 2 \\ -2 \\ 3
+              \end{matrix} \right) \amp = (-2)(-6) + (-3)(-5) + (1)(2) +
+              (4)(-2) + (-2)(3) 
+            </mrow>
+            <mrow>
+              \amp = 12 + 15 + 2 - 8 - 6 = 15
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              6 \\ -7 \\ 1 \\ 0 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -2 \\ 4 \\ -3 \\ -3 \\ -4 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <md>
+            <mrow>
+             \left( \begin{matrix} 
+               6 \\ -7 \\ 1 \\ 0 \\ -2 
+             \end{matrix} \right) \cdot
+             \left( \begin{matrix} 
+                -2 \\ 4 \\ -3 \\ -3 \\ -4 
+              \end{matrix} \right) \amp = (6)(-2) + (-7)(4) + (1)(-3) +
+              (0)(-3) + (-2)(-4) 
+            </mrow>
+            <mrow>
+              \amp = -12 - 28 - 3 + 0 + 8 = -35
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              5 \\ -3 \\ -7 \\ 10 \\ 1 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -2 \\ 0 \\ -4 \\ -4 \\ 0
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <md>
+            <mrow>
+              \left( \begin{matrix} 
+                5 \\ -3 \\ -7 \\ 10 \\ 1 \\ 0 
+              \end{matrix} \right) \cdot
+              \left( \begin{matrix} 
+                0 \\ -2 \\ 0 \\ -4 \\ -4 \\ 0
+              \end{matrix} \right) \amp = (5)(0)  + (-3)(-2) + (-7)(0) +
+              (10)(-4) + (1)(-4) + (0)(0) 
+            </mrow>
+            <mrow>
+              \amp = 0 + 6 + 0 - 40 - 4 + 0 = -38 
+            </mrow>
+          </md>
         </p>
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="angles-between-vectors">
+    <title>Angles Between Vectors</title>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              -2 \\ -5 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              3 \\ -4 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. We'll
+          calculate the three piece of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{(-2)^2 + (-5)^2} = \sqrt{29} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{3^2 + (-4)^2} = \sqrt{25} = 5 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                -2 \\ -5 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                3 \\ -4 
+              \end{matrix} \right) = (-2)(3) + (-5)(-4) = 14
+            </mrow>
+            <mrow>
+              \cos \theta \amp = \frac{14}{5 \sqrt{29}}
+            </mrow>
+          </md>
+          Then we can ask a computer to give us the inverse cosine to
+          get an approximation for the angle. (All angles are given in
+          radians. The inverse cosine function will give an angle
+          between 0 and <m>\pi</m>, which is good since the angle
+          between two vector should be bounded by <m>\pi</m>
+          radians.) 
+          <me>
+            \theta = \arccos \frac{14}{5\sqrt{29}} 
+            \doteq 1.024
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              1 \\ 3 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              1 \\ 7 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. We'll
+          calculate the three piece of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{1^2 + 3^2} = \sqrt{10} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{1^2 + 7^2} = \sqrt{50} 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                1 \\ 3
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                1 \\ 7 
+              \end{matrix} \right) =  (1)(1) + (3)(7) = 22
+            </mrow>
+            <mrow>
+              \cos \theta \amp = \frac{22}{\sqrt{500}} =
+              \frac{22}{10\sqrt{5}} = \frac{11}{5\sqrt{5}}
+            </mrow>
+          </md>
+          Then we can ask a computer to give us the inverse cosine to
+          get an approximation for the angle.
+          <me>
+            \theta = \arccos \frac{11}{5\sqrt{5}}
+            \doteq 0.180
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              0 \\ 1 \\ 2 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              1 \\ -2 \\ -2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. We'll
+          calculate the three piece of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{0^2 + 1^2 + 2^2} = \sqrt{5} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{1^2 + (-2)^2 + (-2)^2} = \sqrt{9} = 3 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                0 \\ 1 \\ 2
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                1 \\ -2 \\ -2 
+              \end{matrix} \right) = (0)(1) + (1)(-2) + (2)(-2) = -6
+            </mrow>
+            <mrow>
+              \cos \theta \amp = \frac{-6}{3\sqrt{5}}
+            </mrow>
+          </md>
+          Then we can ask a computer to give us the inverse cosine to
+          get an approximation for the angle.
+          <me>
+            \theta = \arccos \frac{-6}{3\sqrt{5}}
+            \doteq 2.678
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              -4 \\ 1 \\ 1 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              -2 \\ 4 \\ 4 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. We'll
+          calculate the three piece of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{(-4)^2 + 1^2 + 1^2} = \sqrt{18} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{(-2)^2 + 4^2 + 4^2} = \sqrt{36} = 6 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                -4 \\ 1 \\ 1 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                -2 \\ 4 \\ 4 
+              \end{matrix} \right) = (-4)(-2) + (1)(4) + (1)(4) = 0 
+            </mrow>
+            <mrow>
+              \cos \theta \amp = 0 
+            </mrow>
+          </md>
+          Cosine is zero when angles are perpendicular, so the angle
+          bewteen these two vectors must be <m>\frac{\pi}{2}</m>
+          radians. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="cross-products">
+    <title>Cross Product</title>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix} 
+              1 \\ 0 \\ -2 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -4 \\ 2 \\ 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by the slightly complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix} 
+              1 \\ 0 \\ -2 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -4 \\ 2 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (0)(0) - (2)(-2) \\ (-2)(-4) - (0)(1) \\ (1)(2) - (0)(-4) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              4 \\ 8 \\ 2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix} 
+              2 \\ -6 \\ -3 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -1 \\ -2 \\ -1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by the slightly complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ -6 \\ -3 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -1 \\ -2 \\ -1 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (-6)(-1) - (-3)(-2) \\ (-3)(-1) - (2)(-1) \\ (2)(-2) -
+              (-6)(-1) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              0 \\ 5 \\ -10
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix}
+              0 \\ 3 \\ 8
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              1 \\ 6 \\ -5 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by the slightly complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix}
+              0 \\ 3 \\ 8
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              1 \\ 6 \\ -5 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (3)(-6) - (8)(6) \\ (8)(1) - (0)(-5) \\ (0)(6) - (3)(1) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              -66 \\ 8 \\ -3 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix}
+              2 \\ 1 \\ 0 
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              -4 \\ -2 \\ 0
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by the slightly complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix}
+              2 \\ 1 \\ 0 
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              -4 \\ -2 \\ 0
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (1)(0) - (0)(-2) \\ (0)(-4) - (2)(0) \\ (2)(-2) -
+              (1)(-4) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              0 \\ 0 \\ 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="equations-of-planes">
+    <title>Equations of Planes and Hyperplanes</title>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with normal
+          <m>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 0
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 3 
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the plane. We put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            (-1)x + (-1)y + 0 z = d 
+          </m>
+          We can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = (-1)(0) + (-1)(1) + (0)(3) = -1 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            - x - y = -1 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with normal
+          <m>
+            \left( \begin{matrix}
+              2 \\ 0 \\ 3
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              -4 \\ -1 \\ 2
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the plane. We put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            2x + 0y + 3z = d 
+          </m>
+          We can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = 2(-4) + 0(-1) + 3(2) = -2 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            2x + 3z = -2 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with local direcitons
+          <m>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 1 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0 
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              2 \\ 1 \\ 1
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product of the local direcitons gives the normal
+          to the plane. 
+          <me>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (-1)(0) - (1)(1) \\ (1)(-2) - (-1)(0) \\ (-1)(1) -
+              (-1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              -1 \\ -2 \\ -1 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. We put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            -x - 2y - z = d 
+          </m>
+          We can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = -(2)(2) - (2)(1) - (1) = -7
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            -x - 2y - z = -7 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with local direcitons
+          <m>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              -1 \\ 0 \\ -3 
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product of the local direcitons gives the normal
+          to the plane. 
+          <me>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 1
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (1)(1) - (1)(1) \\ (1)(-2) - (0)(1) \\ (0)(1) - (1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              0 \\ -2 \\ 2 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. We put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            0x - 2y + 2z = d 
+          </m>
+          We can calculate the constant using the point. Put the 
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <m>
+            d = 0(-1) - 2(0) + 2(-3) = -6 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            -2y + 2z = -6 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with points
+          <m>
+            p = \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m>,
+          <m>
+            q = \left( \begin{matrix}
+              1 \\ 0 \\ 0 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            r = \left( \begin{matrix}
+              -2 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The local directions are give by the differences of the
+          point: <m>(q-p)</m> and <m>(r-p)</m>. We calculate those two
+          local directions.
+          <md>
+            <mrow>
+              q-p = \left( \begin{matrix}
+                1 \\ 0 \\ 0 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                0 \\ 1 \\ 1 
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                1 \\ -1 \\ -1 
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              r-p = \left( \begin{matrix}
+                -2 \\ 1 \\ 1 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                0 \\ 1 \\ 1
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                -2 \\ 0 \\ 0 
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          These are the two local direction. The cross product of the
+          local direcitons gives the normal to the plane. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ -1 \\ -1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 0 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (-1)(0) - (-1)(0) \\ (-1)(-2) - (1)(0) \\ (1)(0) -
+              (-1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              0 \\ 2 \\ -2 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. We put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            0x + 2y - 2z = d 
+          </m>
+          We can calculate the constant using the point (we can use
+          any of the three points--all will determine the same
+          constant). Put the corodinates of the point into the left
+          side of the equation and calculate <m>d</m>.
+          <m>
+            d = (0)(0) + 2 (1) - 2(1) = 0 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            2y - 2z = 0 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with points
+          <m>
+            p = \left( \begin{matrix}
+              -3 \\ -1 \\ 0 
+            \end{matrix} \right)
+          </m>,
+          <m>
+            q = \left( \begin{matrix}
+              -2 \\ 1 \\ -4 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            r = \left( \begin{matrix}
+              0 \\ 5 \\ 0 
+            \end{matrix} \right)
+          </m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The local directions are give by the differences of the
+          point: <m>(q-p)</m> and <m>(r-p)</m>. We calculate those two
+          local directions.
+          <md>
+            <mrow>
+              q-p = \left( \begin{matrix}
+                -2 \\ 1 \\ -4 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                -3 \\ -1 \\ 0 
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                1 \\ 2 \\ -4 
+              \end{matrix} \right) = 
+            </mrow>
+            <mrow>
+              r-p = \left( \begin{matrix}
+                0 \\ 5 \\ 0
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                -3 \\ -1 \\ 0
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                3 \\ 6 \\ 0  
+              \end{matrix} \right) = 
+            </mrow>
+          </md>
+          These are the two local direction. The cross product of the
+          local direcitons gives the normal to the plane. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ 2 \\ -4 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              3 \\ 6 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (2)(0) - (-4)(6) \\ (-4)(3) - (1)(0) \\ (1)(6) - (2)(3) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              24 \\ -12 \\ 0
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. We put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            24 x - 12 y + 0z = d 
+          </m>
+          We can calculate the constant using the point (we can use
+          any of the three points--all will determine the same
+          constant). Put the corodinates of the point into the left
+          side of the equation and calculate <m>d</m>.
+          <m>
+            d =  24(0) - 12(5) + 0 z = -60 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            24 x - 12 y = -60 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the hyperplane with normal
+          <m>
+            \left( \begin{matrix}
+              -3 \\ 1 \\ 1 \\ 0 \\ 0 
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              4 \\ 0 \\ 1 \\ -1 \\ -2 
+            \end{matrix} \right)
+          </m> is a point on the hyperplane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the hyperplane. We put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = d 
+          </m>
+          We can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = -3 (4) + 1 (0) + 1 (1) + 0 (-1) + 0 (-2) =-11
+          </m>
+          Therefore, the equation of the hyperplane is 
+          <m>
+            -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = -11
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the hyperplane with normal
+          <m>
+            \left( \begin{matrix}
+              -1 \\-1 \\ -4 \\ 1 \\ -2 \\ 2 
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              3 \\ 1 \\ -2 \\ -2 \\ -6 \\ 0
+            \end{matrix} \right)
+          </m> is a point on the hyperplane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the hyperplane. We put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            -1 x_1 - 1 x_2 + 4 x_3 + x_4 - 2 x_5 + 2 x_6 = d
+          </m>
+          We can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = -1 (3) - 1 (1) + 4 (-2) + (-2) - 2(-6) + 2(0) = -2
+          </m>
+          Therefore, the equation of the hyperplane is 
+          <m>
+            -1 x_1 - 1 x_2 + 4 x_3 + x_4 - 2 x_5 + 2 x_6 = -2
+          </m>.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week2-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          This is a guided proof to prove the triangle inequality
+          using the dot product. The triangle inequality states that,
+          for any vector <m>u,v \in \RR^n</m>, the length of the sum
+          is bounded by the sum of the lengths of the individual
+          vectors. In symbols:
+          <me>
+            |u+v| \leq |u| + |v|
+          </me>.
+          I'm going to give you several small steps which fit together
+          into a complete proof.
+          <ol>
+            <li>
+              Write <m>|u+v|^2</m> as a dot product.
+            </li>
+            <li>
+              Expand that dot product (distribute the pieces).
+            </li>
+            <li>
+              Replace <m>u \cdot </m> with <m>|u||v| \cos \theta</m>. 
+            </li>
+            <li>
+              Use the fact that <m>\cos \theta \leq 1</m> to make the
+              equality into an inequality.
+            </li>
+            <li>
+              Manipulate the inequality to show that <m>|u+v|^2 \leq
+              (|u| + |v|)^2</m>.
+            </li>
+            <li>
+              Take the square root of both sides (which preserves the
+              inequality and is well defined since both sides are
+              positive). 
+            </li>
+            <li>
+              Conclude the triangle inequality. 
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I'll follow the guided steps for this proof. First, let's
+          write <m>|u+v|^2</m> as a dot product. We use the fact that
+          the square of the length of a vector is the same as the dot
+          product of a vector with itself. 
+          <me>
+            |u+v|^2 = (u+v) \cdot (u+v)
+          </me>
+          The next step is to distribute the right side. The dot
+          product distributes over vector addition like ordinary
+          multipliction. 
+          <me>
+            |u+v|^2 = u \cdot u + 2 u \cdot v + v \cdot v 
+          </me>
+          The middle term has the dot product which we can replace as
+          instructed.
+          <me>
+            |u+v|^2 = u \cdot u + 2 |u||v| \cos \theta + v \cdot v 
+          </me>
+          The greatest that the cosine term can be is 1, so the
+          maximum for the right side happens when we repalce the
+          cosine with 1. 
+          <me>
+            |u+v|^2 \leq u \cdot u + 2 |u||v| + v \cdot v 
+          </me>
+          Then we need to turn the right side into a square term. The
+          first step in that direction is to write the dot products
+          as squares of lengths. 
+          <me>
+            |u+v|^2 \leq |u|^2 + 2 |u||v| + |v|^2
+          </me>
+          Then the right side is the square of a binomial.
+          <me>
+            |u+v|^2 \leq \left( |u| + |v| \right)^2 
+          </me>
+          Finally, we take the square root of both sides. 
+          <me>
+            |u+v| \leq |u| + |v| 
+          </me>
+          We have produced the triangle inequality.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that the cross product is anticommutative. (Take any
+          two vector <m>u,v \in \RR^3</m>, write them in their
+          components and prove that <m>u \times v = - (v \times
+          u)</m>.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I will start with the right side and try to manipulate it
+          into the left side. I'll write the vector in their
+          components, use the definition of the cross product, and
+          bring in the <m>(-1)</m> using the definition of scalar
+          multiplication. 
+          <md>
+            <mrow>
+              - (v \times u) \amp = - \left( \left( \begin{matrix}
+                v_1 \\ v_2 \\ v_3
+              \end{matrix} \right) \times \left( \begin{matrix}
+                u_1 \\ u_2 \\ u_3 
+              \end{matrix} \right) \right)
+            </mrow>
+            <mrow>
+              \amp = - \left( \left( \begin{matrix}
+                v_2 u_3 - v_3 u_2 \\
+                v_3 u_1 - v_1 u_3 \\
+                v_1 u_2 - v_2 u_1 
+              \end{matrix} \right) \right)
+            </mrow>
+            <mrow>
+              \amp = \left( \left( \begin{matrix}
+                - v_2 u_3 + v_3 u_2 \\
+                - v_3 u_1 + v_1 u_3 \\
+                - v_1 u_2 + v_2 u_1 
+              \end{matrix} \right) \right)
+            </mrow>
+          </md>
+          Now I just write each component in the other order,
+          interchage the order of the each multiplication, and
+          recognize the definition of the cross product. 
+          <me>
+            = \left( \left( \begin{matrix}
+              v_3 u_2 - v_2 u_3 \\
+              v_1 u_3 - v_3 u_1 \\
+              v_2 u_1 - v_1 u_2 
+            \end{matrix} \right) \right)
+            = \left( \left( \begin{matrix}
+              u_2 v_3 - u_3 v_2 \\
+              u_3 v_1 - u_1 v_3 \\
+              u_1 v_3 - u_2 v_1 
+            \end{matrix} \right) \right) = u \times v
+          </me>
+          I start with the right side and made a chain of equality to
+          the left side, thus proving the identity. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week2-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>
         <li>
+          What is a local direction?
         </li>
         <li>
+          What is a dot product? What does it mean?
         </li>
         <li>
+          What is a cross product? Why is it only in three dimensions?
         </li>
         <li>
+          What is a normal vector to a plane or hyperplane? Why are
+          planes and hyperplanes determined by normals?
+        </li>
+        <li>
+          Why do cross product help calculate normals to planes in
+          three dimensions?
         </li>
       </ul>
     </p>
