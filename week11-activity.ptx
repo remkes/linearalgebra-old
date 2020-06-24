@@ -1,7 +1,287 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week11-activity">
+  <title>Week 11 Activity</title>
+  <subsection xml:id="leslie-matrices">
+    <title>Leslie Matrices</title>
+    <activity>
+      <statement>
+        <p>
+          This is a Leslie  matrix for a four-stage population model. 
+          Determine the long term behaviuor by analysing the
+          eigenvalues and eigenvectors.  Describe the eventual age
+          ratios and determine whether or not the population is
+          viable.
+          <me>
+            \left( \begin{matrix}
+              0 \amp 0 \amp 0.7 \amp 0.6 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.7 \amp 0 \\
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to calculate the eigenvectors and eigenvalue. We ask
+          a computer to do this for us. Since Leslie matrices are
+          irreducible matrices with non-negative coefficients, we will
+          get a unique largest positive real eigenvalue with a
+          positive eigenvector. That is the only eigenvalue we are
+          interested in, so it's the only one I'll list here. (The
+          other three are either smaller and real, have eigenvectors
+          with negative entries, or are complex; none of these are
+          useful for determining the population). 
+          <md>
+            <mrow>
+              \amp \lambda = 0.83 
+              \amp \amp v = \left( \begin{matrix}
+                1.72 \\ 1.65 \\ 1.19 \\ 1
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          The popluation is not viable, since the dominant eigenvalue
+          is less than 1; the population will decay. The age ratios
+          will approach <m>1.72:1.65:1.19:1</m> from youngest to
+          oldest. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          This is a Leslie  matrix for a four-stage population model. 
+          Determine the long term behaviuor by analysing the
+          eigenvalues and eigenvectors. Describe the eventual age
+          ratios and determine whether or not the population is
+          viable. Explain what is different from the previous matrix. 
+          <me>
+            \left( \begin{matrix}
+              0 \amp 0 \amp 1.1 \amp 0.6 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.9 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.7 \amp 0
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to calculate the eigenvectors and eigenvalue. We ask
+          a computer to do this for us. Since Leslie matrices are
+          irreducible matrices with non-negative coefficients, we will
+          get a unique largest positive real eigenvalue with a
+          positive eigenvector. That is the only eigenvalue we are
+          interested in, so it's the only one I'll list here. (The
+          other three are either smaller and real, have eigenvectors
+          with negative entries, or are complex; none of these are
+          useful for determining the population). 
+          <md>
+            <mrow>
+              \amp \lambda = 1.03
+              \amp \amp v = \left( \begin{matrix}
+                2.15 \amp 1.68 \amp 1.49 \amp 1
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          The population is viable; since the dominant eigenvalue is
+          larger than one, the population will grow. The age ratios
+          will approach <m>2.15: 1.68:1.49:1</m>. Compared with the
+          previous question, two coefficients have been changes: the
+          fecundity coefficient of the 3rd age category and the
+          survival coefficient from the 2nd to the 3rd age category.
+          These were both increase sufficiently to change the non-viable
+          population into a viable population. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          This is a Leslie  matrix for a four-stage population model. 
+          Determine the long term behaviuor by analysing the
+          eigenvalues and eigenvectors.  Describe the eventual age
+          ratios and determine whether or not the population is
+          viable.
+          <me>
+            \left( \begin{matrix}
+              0 \amp 0 \amp 2 \amp 1 \\
+              0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.9 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.9 \amp 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to calculate the eigenvectors and eigenvalue. We ask
+          a computer to do this for us. Since Leslie matrices are
+          irreducible matrices with non-negative coefficients, we will
+          get a unique largest positive real eigenvalue with a
+          positive eigenvector. That is the only eigenvalue we are
+          interested in, so it's the only one I'll list here. (The
+          other three are either smaller and real, have eigenvectors
+          with negative entries, or are complex; none of these are
+          useful for determining the population). 
+          <md>
+            <mrow>
+              \amp \lambda = 1.01
+              \amp \amp v = \left( \begin{matrix}
+                3.21 \\ 1.27 \\ 1.16 \\ 1 
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          This is a viable population; since the dominant eigenvalue
+          is positive, this population will grow. That said, since the
+          dominant eigenvalue is only slighly above 1, the population
+          growth will be relatively slow. As the population grows, the
+          age ratios will approach <m>3.21:1.27:1.16:1</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          This is a Leslie  matrix for a four-stage population model. 
+          Determine the long term behaviuor by analysing the
+          eigenvalues and eigenvectors.  Describe the eventual age
+          ratios and determine whether or not the population is
+          viable.
+          <me>
+            \left( \begin{matrix}
+              0 \amp 0 \amp 150 \amp 50 \\
+              0.03 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.9 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.9 \amp 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to calculate the eigenvectors and eigenvalue. We ask
+          a computer to do this for us. Since Leslie matrices are
+          irreducible matrices with non-negative coefficients, we will
+          get a unique largest positive real eigenvalue with a
+          positive eigenvector. That is the only eigenvalue we are
+          interested in, so it's the only one I'll list here. (The
+          other three are either smaller and real, have eigenvectors
+          with negative entries, or are complex; none of these are
+          useful for determining the population). 
+          <md>
+            <mrow>
+              \amp \lambda = 1.63
+              \amp \amp v = \left( \begin{matrix}
+                196.37 \\ 3.50 \\ 1.87 \\ 1
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          The population is viable, since the dominant eigenvalue is
+          larger than 1. In addition, this is quite a fast growth
+          rate, since the eigenvalue is significantly above one. The
+          age ratios will approach <m>196.37:3.50:1.87:1</m>. Note
+          that these ratios are quite different from previous
+          questions: this is a population with many many young
+          members, very few of which reach maturity. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          This is a Leslie  matrix for a four-stage population model. 
+          Determine the long term behaviuor by analysing the
+          eigenvalues and eigenvectors.  Describe the eventual age
+          ratios and determine whether or not the population is
+          viable.
+          <me>
+            \left( \begin{matrix}
+              0 \amp 0 \amp 50 \amp 30 \\
+              0.03 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.9 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.9 \amp 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to calculate the eigenvectors and eigenvalue. We ask
+          a computer to do this for us. Since Leslie matrices are
+          irreducible matrices with non-negative coefficients, we will
+          get a unique largest positive real eigenvalue with a
+          positive eigenvector. That is the only eigenvalue we are
+          interested in, so it's the only one I'll list here. (The
+          other three are either smaller and real, have eigenvectors
+          with negative entries, or are complex; none of these are
+          useful for determining the population). 
+          <md>
+            <mrow>
+              \amp \lambda = 1.25 
+              \amp \amp v = \left( \begin{matrix}
+                79.63 \\ 1.92 \\ 1.38 \\ 1
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          The poluation is viable, since the dominant eigenvalue is
+          greater than 1. The age ratios will approach
+          <m>79.63:1.92:1.38:1</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          This is a Leslie  matrix for a four-stage population model. 
+          Determine the long term behaviuor by analysing the
+          eigenvalues and eigenvectors. Describe the eventual age
+          ratios and determine whether or not the population is
+          viable. Describe the differences between this question and
+          the previous question. 
+          <me>
+            \left( \begin{matrix}
+              0 \amp 0 \amp 50 \amp 30 \\
+              0.01 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.9 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.9 \amp 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to calculate the eigenvectors and eigenvalue. We ask
+          a computer to do this for us. Since Leslie matrices are
+          irreducible matrices with non-negative coefficients, we will
+          get a unique largest positive real eigenvalue with a
+          positive eigenvector. That is the only eigenvalue we are
+          interested in, so it's the only one I'll list here. (The
+          other three are either smaller and real, have eigenvectors
+          with negative entries, or are complex; none of these are
+          useful for determining the population). 
+          <md>
+            <mrow>
+              \amp \lambda = 0.90
+              \amp \amp v = \left( \begin{matrix}
+                89.01 \\ 0.99 \\ 1.00 \\ 1
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          The poluation is not viable, since the dominant eigenvalue
+          is less than 1. The age ratios will approach
+          <m>89.01:0.99:1:1</m>. Compared to the previous question,
+          the viable population has now become non-variable. The only
+          coefficient that has changed is the survival coefficient
+          from the 1st to the 2nd age category. Previously, 3% of the
+          youngest survived for a time interval. Now, only 1% survive.
+          That change is significant enough to drop the population
+          from viable to non-viable. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="predator-prey">
+    <title>Predator-Prey Models</title>
     <activity>
       <statement>
         <p>
@@ -13,17 +293,33 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="competition">
+    <title>Competition Models</title>
+    <activity>
+      <statement>
+        <p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week11-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>
         <li>
+          What is a dynamical system? What does it mean for such a
+          system to be discrete and linear?
         </li>
         <li>
+          How can matrices be used as models?
         </li>
         <li>
-        </li>
-        <li>
+          Why are eigenvalues and eigenvectors important in matrix
+          models?
         </li>
       </ul>
     </p>

@@ -11,4 +11,6 @@
   </titlepage>
   <xi:include href="colophon.ptx" />
   <xi:include href="preface.ptx" />
+  <xi:include href="themes.ptx" />
+  <xi:include href="week0-activity.ptx" />
 </frontmatter>
