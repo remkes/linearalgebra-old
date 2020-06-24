@@ -1,10 +1,533 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week10-activity">
+  <title>Week 10 Activity</title>
+  <subsection xml:id="eigenvalues">
+    <title>Eigenvalues and Eigenvectors</title>
     <activity>
       <statement>
         <p>
+          Calculate the eigenvalue and eigenvectors of this matrix.
+          (Give the solutions in exact value). 
+          <me>
+            \left( \begin{matrix}
+              -2 \amp 0 \amp 1 \\
+              0 \amp -2 \amp 1 \\
+              1 \amp 1 \amp 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We follow the algorithm for eigenvalue and eigenvectors. The
+          first step is writing the matrix <m>M - \lambda \Id</m>. 
+          <me>
+            \left( \begin{matrix}
+              -2 - \lambda \amp 0 \amp 1 \\
+              0 \amp -2 - \lambda \amp 1 \\
+              1 \amp 1 \amp - \lambda 
+            \end{matrix} \right) 
+          </me>
+          Then we calculate the determinant of this matrix. We use
+          cofactor expansion on the first row.
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix}
+                -2 - \lambda \amp 0 \amp 1 \\
+                0 \amp -2 - \lambda \amp 1 \\
+                1 \amp 1 \amp - \lambda 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (1)(-2 - \lambda) \left| \begin{matrix}
+                -2 - \lambda \amp 1 \\
+                1 \amp -\lambda
+              \end{matrix} \right| + 
+              (-1)(0) \left| \begin{matrix}
+                0 \amp 1 \\
+                1 \amp -\lambda
+              \end{matrix} \right| + 
+              (1)(1) \left| \begin{matrix}
+                0 \amp -2 - \lambda \\
+                1 \amp 1 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = (-2 - \lambda) \left[ (-2 - \lambda)(-\lambda) -
+              1 \right] + 0 + \left[ (0)(1) - (-2 - \lambda)(1)
+              \right] 
+            </mrow>
+            <mrow>
+              \amp = (-2 - \lambda)(\lambda^2 + 2 \lambda - 1) + 2 +
+              \lambda 
+            </mrow>
+            <mrow>
+              \amp = -\lambda^3 - 2\lambda^2 - 2\lambda^2 - 4\lambda +
+              \lambda + 2 + 2 + \lambda 
+            </mrow>
+            <mrow>
+              \amp = -\lambda^3 - 4\lambda^2 - 2\lambda + 4
+            </mrow>
+          </md>
+          By inspection or by computer, we can see that <m>\lambda =
+          -2</m> is a root, so this polynomial factors as 
+          <me>
+            -\lambda^3 - 4\lambda^2 - 2\lambda + 4 = -(\lambda +
+            2)(\lambda^2 + 2 \lambda - 2) 
+          </me>.
+          The quadratic piece does not factor into integer roots. The
+          quadratic formula gives the other roots as <m>\lambda = -1
+          \pm \sqrt{3}</m>. Now we find the kernel of each <m>M -
+          \lambda Id</m> to calculate the matching eigenvectors. Let's
+          start with <m>\lambda = -2</m>.
+          <md>
+            <mrow>
+              \amp \left( \begin{array}{ccc|c}
+                0 \amp 0 \amp 1 \amp 0 \\
+                0 \amp 0 \amp 1 \amp 0 \\
+                1 \amp 1 \amp 2 \amp 0 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \text{We row reduce to find the kernel.}
+            </mrow>
+            <mrow>
+              \amp \left( \begin{array}{ccc|c}
+                1 \amp 1 \amp 0 \amp 0 \\
+                0 \amp 0 \amp 1 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 0
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                0 \amp 0 \amp 1 \\
+                0 \amp 0 \amp 1 \\
+                1 \amp 1 \amp 2
+              \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
+                1 \\ -1 \\ 0 
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+          That gives us an eigenvector for <m>\lambda = -2</m>. 
+          Next, let's look at <m>\lambda = -1 + \sqrt{3}</m>.
+          <md>
+            <mrow>
+              \amp \left( \begin{array}{ccc|c}
+                -1 - \sqrt{3} \amp 0 \amp 1 \amp 0 \\
+                0 \amp -1 - \sqrt{3} \amp 1 \amp 0 \\
+                1 \amp 1 \amp 1 - \sqrt{3} \amp 0  
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \text{We row reduce to find the kernel.}
+            </mrow>
+            <mrow>
+              \amp \left( \begin{array}{ccc|c}
+                1 \amp 0 \amp \frac{-1}{1 + \sqrt{3}} \amp 0 \\
+                0 \amp 1 \amp \frac{-1}{1 + \sqrt{3}} \amp 0 \\
+                0 \amp 0 \amp 0 \amp 0  
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                -1 - \sqrt{3} \amp 0 \amp 1 \\
+                0 \amp -1 - \sqrt{3} \amp 1 \\
+                1 \amp 1 \amp 1 - \sqrt{3} 
+              \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
+                1 \\ 1 \\ 1 + \sqrt{3} 
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+          That gives us an eigenvector for <m>\lambda = -1 + \sqrt{3}</m>. 
+          Next, let's look at <m>\lambda = -1 - \sqrt{3}</m>.
+          <md>
+            <mrow>
+              \amp \left( \begin{array}{ccc|c}
+                -1 + \sqrt{3} \amp 0 \amp 1 \\
+                0 \amp -1 + \sqrt{3} \amp 1 \\
+                1 \amp 1 \amp 1 + \sqrt{3} 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \text{We row reduce to find the kernel.}
+            </mrow>
+            <mrow>
+              \amp \left( \begin{array}{ccc|c}
+                1 \amp 0 \amp \frac{-1}{1 - \sqrt{3}} \\
+                0 \amp 1 \amp \frac{-1}{1 - \sqrt{3}} \\
+                1 \amp 1 \amp 1 + \sqrt{3} 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                -1 + \sqrt{3} \amp 0 \amp 1 \\
+                0 \amp -1 + \sqrt{3} \amp 1 \\
+                1 \amp 1 \amp 1 + \sqrt{3} 
+              \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
+                1 \amp 1 \amp 1 - \sqrt{3} 
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+          This gives us an eigenvector for <m>\lambda = -1 - \sqrt{3}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the eigenvalue and eigenvectors of this matrix.
+          (Give the solutions in exact value). 
+          <me>
+            \left( \begin{matrix}
+              0 \amp -6 \amp 0 \amp 6 \\
+              0 \amp -2 \amp 0 \amp 2 \\
+              0 \amp 0 \amp 2 \amp 2 \\
+              0 \amp 0 \amp 0 \amp 2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We follow the algorithm for eigenvalue and eigenvectors. The
+          first step is writing the matrix <m>M - \lambda \Id</m>. 
+          <me>
+            \left( \begin{matrix}
+              -\lambda \amp -6 \amp 0 \amp 6 \\
+              0 \amp -2 - \lambda \amp 0 \amp 2 \\
+              0 \amp 0 \amp 2 - \lambda \amp 2 \\
+              0 \amp 0 \amp 0 \amp 2 - \lambda 
+            \end{matrix} \right) 
+          </me>
+          Then we calculate the determinant of this matrix. This is an
+          upper triangular matrix, so the determinant is the product
+          of the diagonal entries.
+          <me>
+            \left| \begin{matrix}
+              -\lambda \amp -6 \amp 0 \amp 6 \\
+              0 \amp -2 - \lambda \amp 0 \amp 2 \\
+              0 \amp 0 \amp 2 - \lambda \amp 2 \\
+              0 \amp 0 \amp 0 \amp 2 - \lambda 
+              \end{matrix} \right| = -\lambda(-2 - \lambda)(2 -
+              \lambda)^2 
+          </me>
+          This already in factor form, so we see that the eigenvalue
+          are <m>\lambda = 0</m>, <m>\lambda = 2</m> and <m>\lambda =
+          -2</m>. For each eigenvalue, we find the kernel of <m>M -
+          \lambda \Id</m> to calculate the eigenvalues. Let's start
+          with <m>\lambda = 0</m>
+          <md>
+            <mrow>
+              \amp \left( \begin{array}{cccc|c}
+                0 \amp -6 \amp 0 \amp 6 \amp 0 \\
+                0 \amp -2 \amp 0 \amp 2 \amp 0 \\
+                0 \amp 0 \amp 2 \amp 2 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 2 \amp 0 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \text{We row reduce to find the kernel.}
+            </mrow>
+            <mrow>
+              \amp \left( \begin{array}{cccc|c}
+                0 \amp 1 \amp 0 \amp 0 \amp 0 \\
+                0 \amp 0 \amp 1 \amp 0 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 1 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 0 \amp 0 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                0 \amp -6 \amp 0 \amp 6 \\
+                0 \amp -2 \amp 0 \amp 2 \\
+                0 \amp 0 \amp 2 \amp 2 \\
+                0 \amp 0 \amp 0 \amp 2 
+              \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
+                1 \\ 0 \\ 0 \\ 0 
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+          That gives us an eigenvector for <m>\lambda = 0</m>. 
+          Next, let's look at <m>\lambda = 2</m>.
+          <md>
+            <mrow>
+              \amp \left( \begin{array}{cccc|c}
+                -2 \amp -6 \amp 0 \amp 6 \amp 0 \\
+                0 \amp -4 \amp 0 \amp 2 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 2 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 0 \amp 0 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \text{We row reduce to find the kernel.}
+            </mrow>
+            <mrow>
+              \amp \left| \begin{array}{cccc|c}
+                1 \amp 0 \amp 0 \amp 0 \amp 0 \\
+                0 \amp 1 \amp 0 \amp 0 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 1 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 0 \amp 0 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                -2 \amp -6 \amp 0 \amp 6 \\
+                0 \amp -4 \amp 0 \amp 2 \\
+                0 \amp 0 \amp 0 \amp 2 \\
+                0 \amp 0 \amp 0 \amp 0 
+              \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
+                0 \\ 0 \\ 1 \\ 0 
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+          That gives us an eigenvector for <m>\lambda = 2</m>. 
+          Next, let's look at <m>\lambda = -2</m>.
+          <md>
+            <mrow>
+              \amp \left( \begin{array}{cccc|c}
+                2 \amp -6 \amp 0 \amp 6 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 2 \amp 0 \\
+                0 \amp 0 \amp 4 \amp 2 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 4 \amp 0 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \text{We row reduce to find the kernel.}
+            </mrow>
+            <mrow>
+              \amp \left| \begin{array}{cccc|c}
+                1 \amp -3 \amp 0 \amp 0 \amp 0 \\
+                0 \amp 0 \amp 1 \amp 0 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 1 \amp 0 \\
+                0 \amp 0 \amp 0 \amp 0 \amp 0 
+              \end{array} \right)   
+            </mrow>
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                2 \amp -6 \amp 0 \amp 6 \\
+                0 \amp 0 \amp 0 \amp 2 \\
+                0 \amp 0 \amp 4 \amp 2 \\
+                0 \amp 0 \amp 0 \amp 4 
+              \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
+                -3 \\ 1 \\ 0 \\ 0 
+              \end{matrix} \right) \right\}
+            </mrow>
+          </md>
+          This gives us an eigenvector for <m>\lambda = -2</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the eigenvalues and eigenvectors of this matrix.
+          Use approximate values (to three significant figures), but
+          show all the steps in the algorithm.
+          <me>
+            \left( \begin{matrix} 
+              0.294 \amp 0.343 \amp 0.945 \amp 0 \\
+              0.812 \amp 0 \amp 0.310 \amp 0.050 \\
+              0.110 \amp 0.745 \amp 0.901 \amp 0.874 \\
+              0.314 \amp 0 \amp 0 \amp 0.041 
+            \end{matrix} \right)
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We ask a computer for the determinant of <m>M - \lambda
+          Id</m>.
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+                0.294 - \lambda \amp 0.343 \amp 0.945 \amp 0 \\
+                0.812 \amp - \lambda \amp 0.310 \amp 0.050 \\
+                0.110 \amp 0.745 \amp 0.901 - \lambda \amp 0.874 \\
+                0.314 \amp 0 \amp 0 \amp 0.041 - \lambda  
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = x^4 - 1.235 x^3 - 0.300x^2 -
+              0.515x - 0.025
+            </mrow>
+          </md>
+          We ask a computer for the roots of this polynomial. There
+          are two real roots: <m>\lambda = 1.622</m> and <m>\lambda =
+          -0.049</m>. We calculate the kernel of <m>M - \lambda
+          \Id</m> for both eigenvalues. We start with <m>\lambda =
+          1.622</m>
+          <md>  
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                -1.328 \amp 0.343 \amp 0.945 \amp 0 \\
+                0.812 \amp -1.622 \amp 0.310 \amp 0.050 \\
+                0.110 \amp 0.745 \amp -0.721 \amp 0.874 \\
+                0.314 \amp 0 \amp 0 \amp -1.581 
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp = \Span \left\{ \left( \begin{matrix}
+                5.035 \\ 3.651 \\ 5.752 \\ 1
+              \end{matrix} \right) \right\} 
+            </mrow>
+          </md>
+          This gives us an eigevalue for <m>\lambda = 1.622</m>. Then
+          we do the same for <m>\lambda = -0.049</m>. 
+          <md>  
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                0.343 \amp 0.343 \amp 0.945 \amp 0 \\
+                0.812 \amp 0.049\amp 0.310 \amp 0.050 \\
+                0.110 \amp 0.745 \amp 0.950 \amp 0.874 \\
+                0.314 \amp 0 \amp 0 \amp 0.090
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp = \Span \left\{ \left( \begin{matrix}
+               -0.286 \\ -2.351 \\ 0.957 \\ 1
+              \end{matrix} \right) \right\} 
+            </mrow>
+          </md>
+          This is an eigenvalue for <m>\lambda = -0.049</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the eigenvalues and eigenvectors of this matrix.
+          Use approximate values (to three significant figures), but
+          show all the steps in the algorithm.
+          <me>
+            \left( \begin{matrix} 
+              2.30 \amp -0.29 \amp -0.92 \amp -3.17 \\
+              -1.01 \amp 1.31 \amp 3.51 \amp 4.52 \\
+              -3.68 \amp -5.42 \amp 8.54 \amp -4.62 \\
+              -9.54 \amp -3.33 \amp -7.54 \amp 2.50 
+            \end{matrix} \right)
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We ask a computer for the determinant of <m>M - \lambda
+          Id</m>.
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+                2.30 - \lambda \amp -0.29 \amp -0.92 \amp -3.17 \\
+                -1.01 \amp 1.31  - \lambda\amp 3.51 \amp 4.52 \\
+                -3.68 \amp -5.42 \amp 8.54  - \lambda\amp -4.62 \\
+                -9.54 \amp -3.33 \amp -7.54 \amp 2.50 - \lambda 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = x^4 - 14.65 x^3 - 29.54 x^2 -
+              35.81 x + 73.34
+            </mrow>
+          </md>
+          We ask a computer for the roots of this polynomial. There
+          are two real roots: <m>\lambda = 12.47</m> and <m>\lambda =
+          2.26</m>. We calculate the kernel of <m>M - \lambda
+          \Id</m> for both eigenvalues. We start with <m>\lambda =
+          12.47</m>
+          <md>  
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                -10.17\amp -0.29 \amp -0.92 \amp -3.17 \\
+                -1.01 \amp -11.16 \amp 3.51 \amp 4.52 \\
+                -3.68 \amp -5.42 \amp -4.02 \amp -4.62 \\
+                -9.54 \amp -3.33 \amp -7.54 \amp -9.97
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp = \Span \left\{ \left( \begin{matrix}
+                -0.22 \\ 0.08 \\ -1.09 \\ 1 
+              \end{matrix} \right) \right\} 
+            </mrow>
+          </md>
+          This gives us an eigevalue for <m>\lambda = 12.47</m>. Then
+          we do the same for <m>\lambda = 2.26</m>. 
+          <md>  
+            <mrow>
+              \amp \Ker \left( \begin{matrix}
+                0.04 \amp -0.29 \amp -0.92 \amp -3.17 \\
+                -1.01 \amp -0.95 \amp 3.51 \amp 4.52 \\
+                -3.68 \amp -5.42 \amp 6.28 \amp -4.62
+                -9.54 \amp -3.33 \amp -7.54 \amp 0.24
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp = \Span \left\{ \left( \begin{matrix}
+                3.15 \\ -5.01 \\ 01.74 \\ 1 
+              \end{matrix} \right) \right\} 
+            </mrow>
+          </md>
+          This is an eigenvalue for <m>\lambda = 2.26</m>.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week10-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          Prove that a square matrix <m>M</m> is invertible if and
+          only if <m>\lambda = 0</m> is <emph>not</emph> an eigenvalue
+          of <m>M</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Let <m>M</m> be an invertible matrix. Prove that
+          <m>\lambda</m> is an eigenvalue of <m>M</m> if and only
+          <m>\frac{1}{\lambda</m> is an eigenvalue of <m>M^{-1}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Let <m>M</m> be a <m>3 \times 3</m> matrix. Prove that
+          <m>M</m> has at least one real eigenvalue. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that rotations in <m>\RR^2</m> has no real
+          eigenvalues. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that reflections in <m>\RR^2</m> have 1 and
+          <m>(-1)</m> as their two eigenvalue and that their
+          eigenvectors are perpendicular. Also argue that these two
+          condition completely describe reflections (i.e., any matrix
+          with these two properties must be a reflection). 
         </p>
       </statement>
       <solution>
@@ -18,12 +541,13 @@
     <p>
       <ul>
         <li>
+          What are eigenvalues and eigenvectors?
         </li>
         <li>
+          How to determinants help to calculate eigenvalues?
         </li>
         <li>
-        </li>
-        <li>
+          What is an eigenspace? What is a spectrum?
         </li>
       </ul>
     </p>

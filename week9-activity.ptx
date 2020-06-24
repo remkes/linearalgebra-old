@@ -1,10 +1,592 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week9-activity">
+  <title>Week 9 Activity</title>
+  <subsection xml:id="orthogonal-matrices">
+    <title>Proof Questions</title>
     <activity>
       <statement>
         <p>
+          Determine which of these matrices are orthogonal. For the
+          matrices which are not orthogonal, clearly state how they
+          fail the orthogonality criteria. 
+          <md>
+            <mrow>
+              a) \amp \left( \begin{matrix}
+                1 \amp 1 \amp -1 \\
+                -1 \amp 1 \amp -1 \\
+                0 \amp 1 \amp 2 
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              b) \amp \left( \begin{matrix}
+                \frac{1}{\sqrt{38}} \amp \frac{3}{\sqrt{19}} \amp
+                  \frac{1}{\sqrt{2}} \\
+                \frac{1}{\sqrt{38}} \amp \frac{3}{\sqrt{19}} \amp 
+                  \frac{-1}{\sqrt{2}} \\
+                \frac{-6}{\sqrt{38}} \amp \frac{1}{\sqrt{19}} \amp 
+                  0 \\
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              c) \amp \left( \begin{matrix}
+                \frac{2}{\sqrt{6}} \amp \frac{3}{\sqrt{29}} \amp 
+                  \frac{-2}{\sqrt{174}} \\
+                \frac{-1}{\sqrt{6}} \amp \frac{4}{\sqrt{29}} \amp 
+                  \frac{7}{\sqrt{174}} \\
+                \frac{1}{\sqrt{6}} \amp \frac{-2}{\sqrt{29}} \amp 
+                  \frac{11}{\sqrt{174}} 
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              d) \amp \left( \begin{matrix}
+                \frac{3}{\sqrt{17}} \amp \frac{-2}{\sqrt{13}} \amp 
+                  \frac{-6}{\sqrt{173}} \\
+                \frac{-2}{\sqrt{17}} \amp 0 \amp 
+                  \frac{-11}{\sqrt{173}} \\
+                \frac{-2}{\sqrt{17}} \amp \frac{3}{\sqrt{13}} \amp 
+                  \frac{4}{\sqrt{173}} 
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In a), the columns are pairwise orthogonal; we can check
+          that all the dot products are zero.
+          <md>
+            <mrow>  
+              \left( \begin{matrix}
+                1 \\ -1 \\ 0 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                1 \\ 1 \\ 1
+              \end{matrix} \right) = 0 
+            </mrow>
+            <mrow>  
+              \left( \begin{matrix}
+                1 \\ -1 \\  0 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                -1 \\ -1 \\ 2 
+              \end{matrix} \right) = 0 
+            </mrow>
+            <mrow>  
+              \left( \begin{matrix}
+                1 \\ 1 \\ 1
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                -1 \\ -1 \\ 2
+              \end{matrix} \right) = 0 
+            </mrow>
+          </md>
+          However, the columns are not unit vectors. The length of the
+          first column is <m>\sqrt{2}</m>, the second is
+          <m>\sqrt{3}{</m> and the third if <m>\sqrt{6}</m>. An
+          orthogonal matrix has to have columns of length one, so this
+          is not an orthogonal matrix. 
+        </p>
+        <p>
+          In b), the columns are pairwise orthogonal; we can check
+          that all the dot products are zero. (Not that for these
+          checks, we can scale the vectors as we wish, since whether
+          or not the dot product is zero doesn't depend on the
+          scaling. I've scale the columns to remove the square roots
+          to make these calculations easier.) 
+          <md>
+            <mrow>  
+              \left( \begin{matrix}
+                1 \\ 1 \\ -6 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                3 \\ 3 \\ 1 
+              \end{matrix} \right) = 0 
+            </mrow>
+            <mrow>  
+              \left( \begin{matrix}
+                1 \\ 1 \\ -6 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                1 \\ -1 \\ 0 
+              \end{matrix} \right) = 0 
+            </mrow>
+            <mrow>  
+              \left( \begin{matrix}
+                3 \\ 3 \\ 1 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                1 \\ -1 \\ 0 
+              \end{matrix} \right) = 0 
+            </mrow>
+          </md>
+          In addition, the column vectors all have length one. 
+          <md>
+            <mrow>
+              \left| \begin{matrix} 
+                \frac{1}{sqrt{38}} \\ \frac{1}{\sqrt{38}} \\
+                \frac{-6}{\sqrt{38}}
+              \end{matrix} \right| \amp = 
+              \frac{1}{\sqrt{38}} \left| \begin{matrix} 
+                1 \\ 1 \\ -6 
+              \end{matrix} \right| = 
+              \frac{1}{\sqrt{38}} \sqrt{1^2 + 1^2 + (-6)^2} =
+              \frac{\sqrt{38}}{\sqrt{38}} = 1 
+            </mrow>
+            <mrow>
+              \left| \begin{matrix} 
+                \frac{3}{\sqrt{19}} \\ \frac{3}{\sqrt{19}} \\
+                \frac{1}{\sqrt{19}}
+              \end{matrix} \right| \amp = 
+              \frac{1}{\sqrt{19}} \left| \begin{matrix} 
+                3 \\ 3 \\ 1 
+              \end{matrix} \right| = 
+              \frac{1}{\sqrt{19}} \sqrt{3^2 + 3^2 + 1^2} =
+              \frac{\sqrt{19}}{\sqrt{19}} = 1 
+            </mrow>
+            <mrow>
+              \left| \begin{matrix} 
+                \frac{1}{\sqrt{2}} \\ \frac{-1}{\sqrt{2}} \\ 0 
+              \end{matrix} \right| \amp = 
+              \frac{1}{\sqrt{2}} \left| \begin{matrix} 
+                1 \\ -1 \\ 0
+              \end{matrix} \right| = 
+              \frac{1}{\sqrt{2}} \sqrt{1^2 + (-1)^2 + 0^2} =
+              \frac{\sqrt{2}}{\sqrt{2}} = 1 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          In c), the columns are pairwise orthogonal; we can check
+          that all the dot products are zero. (Not that for these
+          checks, we can scale the vectors as we wish, since whether
+          or not the dot product is zero doesn't depend on the
+          scaling. I've scale the columns to remove the square roots
+          to make these calculations easier.) 
+          <md>
+            <mrow>  
+              \left( \begin{matrix}
+                2 \\ -1 \\ 1 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                3 \\ 4 \\ -2 
+              \end{matrix} \right) = 0 
+            </mrow>
+            <mrow>  
+              \left( \begin{matrix}
+                2 \\ -1 \\ 1 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                -2 \\ 7 \\ 11 
+              \end{matrix} \right) = 0 
+            </mrow>
+            <mrow>  
+              \left( \begin{matrix}
+                3 \\ 4 \\ -2 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix}
+                -2 \\ 7 \\ 11
+              \end{matrix} \right) = 0 
+            </mrow>
+          </md>
+          In addition, the column vectors all have length one. 
+          <md>
+            <mrow>
+              \left| \begin{matrix} 
+                \sqrt{2}{\sqrt{6}} \\ \frac{-1}{\sqrt{6}} \\ 
+                \frac{1}{\sqrt{6}}
+              \end{matrix} \right| \amp = 
+              \frac{1}{\sqrt{6}} \left| \begin{matrix} 
+                2 \\ -1 \\ 1 
+              \end{matrix} \right| = 
+              \frac{1}{\sqrt{6}} \sqrt{2^2 + (-1)^2 + 1^2} =
+              \frac{\sqrt{6}}{\sqrt{6}} = 1 
+            </mrow>
+            <mrow>
+              \left| \begin{matrix} 
+                \frac{3}{\sqrt{29}} \\ \frac{4}{\sqrt{29}} \\
+                \frac{-2}{\sqrt{29}}
+              \end{matrix} \right| \amp = 
+              \frac{1}{\sqrt{29}} \left| \begin{matrix} 
+                3 \\ 4 \\ -2 
+              \end{matrix} \right| = 
+              \frac{1}{\sqrt{29}} \sqrt{3^2 + 4^2 + (-2)^2} =
+              \frac{\sqrt{29}}{\sqrt{29}} = 1 
+            </mrow>
+            <mrow>
+              \left| \begin{matrix} 
+                \frac{-2}{\sqrt{174}} \\ \frac{7}{sqrt{174}} \\
+                \frac{11}{\sqrt{174}} 
+              \end{matrix} \right| \amp = 
+              \frac{1}{\sqrt{174}} \left| \begin{matrix} 
+                -2 \\ 7 \\ 11 
+              \end{matrix} \right| = 
+              \frac{1}{\sqrt{174}} \sqrt{(-2)^2 + 7^2 + (11)^2} =
+              \frac{\sqrt{174}}{\sqrt{174}} = 1 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          In d), the columns are not pairwise orthogonal; we can check
+          to see that this fails with the first and third columns.
+          <md>
+            <mrow>  
+              \amp \left( \begin{matrix}
+                3 \\ -2 \\ -2 
+              \end{matrix} \right) \cdot
+              \left( \begin{matrix}
+                -6 \\ -11 \\ 4 
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp = (3)(-6) + (-2)(-11) + (-2)(-4) = -18 + 22 + 8 =
+              12 \neq 0
+            </mrow>
+          </md>
+          Since the columns are not orthogonal, this cannot be an
+          orthogonal matrix. (We could check that the columns are unit
+          vectors, which indeed they are, but we don't need to since
+          we've already show that this cannot match the criteria for
+          othogonality). 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          For this incomplete matrix, add a final column which
+          produces an orthogonal matrix.
+          <me>
+            \left( \begin{matrix}
+              \frac{5}{\sqrt{41}} \amp \cdot \\
+              \frac{4}{\sqrt{41}} \amp \cdot \\
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We simply need to add a vector of length one which is
+          perpendicular to the given column. If we switch the terms in
+          the vector and make one of them negative, we can accomplish
+          this. (This isn't an algorithmic solution; this is
+          essentially by inspection. I'm looking at the matrix and
+          making a guess based on my familiarity with vectors in
+          <m>\RR^2</m>.)
+          <me>
+            \left( \begin{matrix}
+              \frac{5}{\sqrt{41}} \amp \frac{-4}{\sqrt{41}} \\
+              \frac{4}{\sqrt{41}} \amp \frac{5}{\sqrt{41}}  \\
+            \end{matrix} \right) 
+          </me>
+          Note there are two possible answers; if we choose to make
+          the other component negative, the following is another
+          option. 
+          <me>
+            \left( \begin{matrix}
+              \frac{5}{\sqrt{41}} \amp \frac{4}{\sqrt{41}} \\
+              \frac{4}{\sqrt{41}} \amp \frac{-5}{\sqrt{41}}  \\
+            \end{matrix} \right) 
+          </me>
+          These are, however, the only two possible solutions. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          For this incomplete matrix, add a final column which
+          produces an orthogonal matrix.
+          <me>
+            \left( \begin{matrix}
+              \frac{1}{\sqrt{2}} \amp \frac{-3}{\sqrt{22}} \amp 
+                \cdot \\
+              \frac{1}{\sqrt{2}} \amp \frac{3}{\sqrt{22}} \amp 
+                \cdot \\
+              0 \amp \frac{-2}{\sqrt{2}} \amp \cdot 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Unlike the previous matrix, this is much harder to do by
+          inspection. Fortunately, we have an algorithmic approach. We
+          want a new vector in <m>\RR^3</m> which is orthogonal to two
+          given vector (the two columns). In <m>\RR^3</m>, the cross
+          product gives exactly this desired vector. Let's take the
+          cross product of the two columns. For ease of calculation,
+          I'll scale the vectors to remove the denominators to find
+          this third vector, since all I care about at this point is
+          orthogonality. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ 1 \\ 0 
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              -3 \\ 3 \\ -2 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              -2 \\ 2 \\ 6 
+            \end{matrix} \right) 
+          </me>
+          This produces a vector othogonal to both columns. Now we
+          want to scale it so that it is unit vector. The length of
+          this vector is <m>\sqrt{(-2)^2 + 2^2 + 6^2} =
+          \sqrt{44}</m>, so we divide by this to make a unit vector.
+          That produces this orthogonal matrix. 
+          <me>
+            \left( \begin{matrix}
+              \frac{1}{\sqrt{2}} \amp \frac{-3}{\sqrt{22}} \amp 
+                \frac{-2}{\sqrt{44}}  \\
+              \frac{1}{\sqrt{2}} \amp \frac{3}{\sqrt{22}} \amp 
+                \frac{2}{\sqrt{44}}  \\
+              0 \amp \frac{-2}{\sqrt{2}} \amp \frac{6}{\sqrt{44}}
+            \end{matrix} \right) 
+          </me>
+          Note, again, that there are two possible answers. If we did
+          the cross-product in the other order, we would get the same
+          vector multiplied by <m>(-1)</m>. That produces this other
+          answer. 
+          <me>
+            \left( \begin{matrix}
+              \frac{1}{\sqrt{2}} \amp \frac{-3}{\sqrt{22}} \amp 
+                \frac{2}{\sqrt{44}}  \\
+              \frac{1}{\sqrt{2}} \amp \frac{3}{\sqrt{22}} \amp 
+                \frac{-2}{\sqrt{44}}  \\
+              0 \amp \frac{-2}{\sqrt{2}} \amp \frac{-6}{\sqrt{44}}
+            \end{matrix} \right) 
+          </me>
+          These are the only two solution.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          For this incomplete matrix, add a final column which
+          produces an orthogonal matrix.
+          <me>
+            \left( \begin{matrix}
+              \frac{1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
+                \cdot \\
+              0 \amp \frac{1}{\sqrt{2}} \amp 0 \amp \cdot \\
+              \frac{-1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
+                \cdot \\
+              0 \amp \frac{-1}{\sqrt{2}} \amp 0 \amp \cdot \\
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Now we again lack an algorithmic approach, since we don't
+          have a cross product in <m>\RR^4</m>. So we have to try to
+          work by inspection again, which is tricky. Looking at the
+          first and third columns, these are only non-zero in the
+          first and third coordinates. The second column is non-zero
+          only in the second and fourth coordinate. We might try to
+          match the second column and take zeros in the first and
+          third components; that guarantees orthogonality with the
+          first and third vector. Then we need to choose components to
+          be orthogonal to the second column; that can be done by
+          copying the second colum and setting one of the components
+          to be negative. That gives the following answer. 
+          <me>
+            \left( \begin{matrix}
+              \frac{1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
+                0  \\
+              0 \amp \frac{1}{\sqrt{2}} \amp 0 \amp 
+                \frac{1}{\sqrt{2}} \\
+              \frac{-1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
+                0 \\
+              0 \amp \frac{-1}{\sqrt{2}} \amp 0 \amp
+                \frac{1}{\sqrt{2}} \\
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="dihedral-groups">
+    <title>Dihedral Groups</title>
+    <activity>
+      <statement>
+        <p>
+          Make a multiplication table for the dihedral group
+          <m>D_5</m>. (Label the rotations <m>R_i</m>; the index
+          <m>i</m> indicates how many fifth of a full turn for the
+          rotation. Label the reflections <m>F_i</m>; the index
+          indicates reflection over a line through the <m>i</m>
+          vertex, counting counterclockwise.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are many multiplication to calculate. I recommend
+          calculating matrices by vertex operaions. If we number the
+          vertices of the pentagon counterclockwise from 1 to 5, then
+          <m>R_2</m> (rotation by <m>\frac{2}{5}</m> of a turn) can be
+          represented by this movement of vertices.
+          <md>
+            <mrow>
+              1 \amp \mapsto 3
+            </mrow>
+            <mrow>
+              2 \amp \mapsto 4
+            </mrow>
+            <mrow>
+              3 \amp \mapsto 5
+            </mrow>
+            <mrow>
+              4 \amp \mapsto 1
+            </mrow>
+            <mrow>
+              5 \amp \mapsto 2
+            </mrow>
+          </md>
+          Reflection <m>F_3</m> (reflection over the line through
+          vertex 3 and the middle of the opposite edge)) can be
+          represented by this action on the vertices.
+          <md>
+            <mrow>
+              1 \amp \mapsto 5
+            </mrow>
+            <mrow>
+              2 \amp \mapsto 4
+            </mrow>
+            <mrow>
+              3 \amp \mapsto 3
+            </mrow>
+            <mrow>
+              4 \amp \mapsto 2
+            </mrow>
+            <mrow>
+              5 \amp \mapsto 1
+            </mrow>
+          </md>
+          To calculate <m>R_2 \circ F_3</m>, we can use these vertex
+          changes. In composition, we do the right transformation
+          first. Therefore, starting at vertex 1, <m>F_3</m> send it
+          to vertex 5, and then <m>R_2</m> sends vertex 5 to vertex 2.
+          Therefore, the whole composition sends vertex 1 to vertex 2.
+          We calculate the movement of the other four vertices
+          similarly. 
+          <md>
+            <mrow>
+              1 \amp \mapsto 2
+            </mrow>
+            <mrow>
+              2 \amp \mapsto 1
+            </mrow>
+            <mrow>
+              3 \amp \mapsto 5
+            </mrow>
+            <mrow>
+              4 \amp \mapsto 4
+            </mrow>
+            <mrow>
+              5 \amp \mapsto 3
+            </mrow>
+          </md>
+          Then we have to identify this transformation, since is still
+          should be something in the group. It cannot be a rotation,
+          since vertex 4 is fixed. The only rotation that fixes vertex
+          4 is <m>F_4</m>. Therefore, we have <m>R_2 \circ F_3 =
+          F_4</m>. Note that the multiplication is not commutative. If
+          we did <m>F_3 \circ R_2</m>, we would have these vertex
+          transformations.
+          <md>
+            <mrow>
+              1 \amp \mapsto 3
+            </mrow>
+            <mrow>
+              2 \amp \mapsto 2
+            </mrow>
+            <mrow>
+              3 \amp \mapsto 1
+            </mrow>
+            <mrow>
+              4 \amp \mapsto 5
+            </mrow>
+            <mrow>
+              5 \amp \mapsto 4
+            </mrow>
+          </md>
+          This is the reflection <m>F_2</m>, so <m>F_3 \circ R_2</m>.
+          Using similar vertex calcluation for all the entries, we
+          produce the following multiplication table for <m>D_5</m>.
+          <me>
+            \begin{array}{c|c|c|c|c|c|c|c|c|c|c}
+              \cdot \amp \Id \amp R_1 \amp R_2 \amp R_3 \amp R_4 \amp
+                F_1 \amp F_2 \amp F_3 \amp F_4 \amp F_5 \\
+              \Id \amp \Id \amp R_1 \amp R_2 \amp R_3 \amp R_4 \amp
+                F_1 \amp F_2 \amp F_3 \amp F_4 \amp F_5 \\
+              R_1 \amp R_1 \amp R_2 \amp R_3 \amp R_4 \amp \Id \amp
+                F_4 \amp F_5 \amp F_1 \amp F_2 \amp F_3 \\
+              R_2 \amp R_2 \amp R_3 \amp R_4 \amp \Id \amp R_1 \amp
+                F_2 \amp F_3 \amp F_4 \amp F_1 \amp F_2 \\
+              R_3 \amp R_3 \amp R_4 \amp \Id \amp R_1 \amp R_2 \amp
+                F_5 \amp F_1 \amp F_2 \amp F_3 \amp F_4 \\
+              R_4 \amp R_4 \amp \Id \amp R_1 \amp R_2 \amp R_3 \amp
+                F_3 \amp F_4 \amp F_5 \amp F_1 \amp F_2 \\ 
+              F_1 \amp F_1 \amp F_3 \amp F_5 \amp F_2 \amp F_4 \amp
+                \Id \amp R_3 \amp R_1 \amp R_4 \amp R_2 \\
+              F_2 \amp F_2 \amp F_4 \amp F_1 \amp F_3 \amp F_5 \amp
+                R_2 \amp \Id \amp R_3 \amp R_1 \amp R_4 \\
+              F_3 \amp F_3 \amp F_5 \amp F_2 \amp F_4 \amp F_1 \amp
+                R_4 \amp R_2 \amp \Id \amp R_3 \amp R_1 \\
+              F_4 \amp F_4 \amp F_1 \amp F_3 \amp F_5 \amp F_2 \amp
+                R_1 \amp R_4 \amp R_2 \amp \Id \amp R_3 \\
+              F_5 \amp F_5 \amp F_2 \amp F_4 \amp F_1 \amp F_3 \amp
+                R_3 \amp R_1 \amp R_4 \amp R_2 \amp \Id \\
+            \end{array}
+          </me>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week9-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          Prove that the inverse of an orthogonal transformation is
+          also orthogonal
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that the composition of orthogonal transformations is
+          still orthogonal. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that all orthogonal matrices have determinant <m>\pm
+          1</m>. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that the rotations and the reflections are the only
+          orthogonal transformations in <m>\RR^2</m>. 
         </p>
       </statement>
       <solution>
@@ -13,17 +595,26 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="week9-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>
         <li>
+          What is an orthogonal matrix? 
         </li>
         <li>
+          Why are there so many equivalent descriptions of an
+          orthogonal matrix?
         </li>
         <li>
+          What is a group? What is a matrix group? What is a dihedral
+          group?
         </li>
         <li>
+          What does it mean to make a multiplication table?
+        </li>
+        <li>
+          What do linear transformations have to do with symmetry. 
         </li>
       </ul>
     </p>

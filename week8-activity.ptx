@@ -1,10 +1,426 @@
-<section xml:id="week1-activity">
-  <title>Week 1 Activity</title>
-  <subsection xml:id="">
-    <title></title>
+<section xml:id="week8-activity">
+  <title>Week 8 Activity</title>
+  <subsection xml:id="calculating-determinants">
+    <title>Calculating Determinants</title>
     <activity>
       <statement>
         <p>
+          Calculate the determinant of this matrix. Show the steps in
+          the cofactor expansion.
+          <me>
+            \left( \begin{matrix} 
+              4 \amp 0 \amp -8 \\
+              -1 \amp -2 \amp 3 \\
+              5 \amp 0 \amp 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We cofactor expansion along the second column to take
+          advantage of the zeros in that column. 
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+                4 \amp 0 \amp -8 \\
+                -1 \amp -2 \amp 3 \\
+                5 \amp 0 \amp 0 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (-1)(0) \left| \begin{matrix}
+                -1 \amp 3 \\ 
+                5 \amp 0 
+              \end{matrix} \right| + 
+              (1)(-2) \left| \begin{matrix}
+                4 \amp -8 \\
+                5 \amp 0 
+              \end{matrix} \right| + 
+              (-1)(0) \left| \begin{matrix}
+                4 \amp -8 \\
+                -1 \amp 3 
+              \end{matrix} \right| + 
+            </mrow>
+          </md>
+          The terms multiplied by zero are obviously zero. For the
+          middle term, we use the formula for a <m>2 \times 2</m>
+          determinant. 
+          <md>
+            <mrow>
+              \amp = 0 + 2 \left[ (4)(0) - (5)(-8) \right] + 0 
+            </mrow>
+            <mrow>
+              \amp =  2 (40) = 80 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the determinant of this matrix. Show the steps in
+          the cofactor expansion.
+          <me>
+            \left( \begin{matrix} 
+              0 \amp =2 \amp -2 \\
+              1 \amp -6 \amp 1 \\
+              -3 \amp 0 \amp 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We cofactor expansion along the first row
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+                0 \amp =2 \amp -2 \\
+                1 \amp -6 \amp 1 \\
+                -3 \amp 0 \amp 1 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (1)(0) \left| \begin{matrix}
+                -6 \amp 1 \\
+                0 \amp 1 
+              \end{matrix} \right| + 
+              (-1)(-2) \left| \begin{matrix}
+                1 \amp 1 \\
+                -3 \amp 1 
+              \end{matrix} \right| + 
+              (1)(-2) \left| \begin{matrix}
+                 1 \amp -6 \\
+                 -3 \amp 0
+              \end{matrix} \right| 
+            </mrow>
+          </md>
+          The term multiplied by zero goes away. For the other two
+          terms, we use the formula for <m>2 \times 2</m>
+          determinants. 
+          <md>
+            <mrow>
+              \amp = 0 + 2 \left[ (1)(1) - (1)(-3) \right] + 
+              (-2) \left[ (1)(0) - (3)(-6) \right] 
+            </mrow>
+            <mrow>
+              \amp = 0 + 8 - 36 = -28
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the determinant of this matrix. Show the steps in
+          the cofactor expansion.
+          <me>
+            \left( \begin{matrix} 
+              6 \amp -1 \amp 3 \\
+              -4 \amp -2 \amp 0 \\
+              -2 \amp -5 \amp 3 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We cofactor expansion along the third column, to take
+          advantage of the zero term. 
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+                6 \amp -1 \amp 3 \\
+                -4 \amp -2 \amp 0 \amp 
+                -2 \amp -5 \amp 3 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (1)(3) (\left| \begin{matrix}
+                -4 \amp -2 \\
+                -2 \amp -5 
+              \end{matrix} \right| + 
+              (-1)(0) \left| \begin{matrix}
+                6 \amp -1 \\
+                -2 \amp -5 
+              \end{matrix} \right| + 
+              (1)(3) \left| \begin{matrix}
+                6 \amp -1 \\
+                -4 \amp -2 
+              \end{matrix} \right| + 
+            </mrow>
+          </md>
+          The term multiplied by zero goes away. For the other two
+          terms, we use the formula for the determinant of a <m>2
+          \times 2</m> matrix. 
+          <md>
+            <mrow>
+              \amp = (3) \left[ (-4)(-5) - (-2)(-2) \right] + 0 +
+              (3) \left[ (6)(-2) - (-1)(-4) \right] 
+            </mrow>
+            <mrow>
+              \amp = 48 - 24 = 24 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the determinant of this matrix. Show the steps in
+          the cofactor expansion.
+          <me>
+            \left( \begin{matrix} 
+              6 \amp 2 \amp -1 \amp 3 \\
+              0 \amp 4 \amp 8 \amp 2 \\
+              0 \amp 0 \amp -3 \amp 9 \\
+              0 \amp 0 \amp 0 \amp -7 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a upper triangular matrices. We know for any
+          diagonal or triangular matrix, the determinant is just the
+          product of the diagonal entires. 
+          <me>
+            \left| \begin{matrix} 
+              6 \amp 2 \amp -1 \amp 3 \\
+              0 \amp 4 \amp 8 \amp 2 \\
+              0 \amp 0 \amp -3 \amp 9 \\
+              0 \amp 0 \amp 0 \amp -7 
+            \end{matrix} \right|  = (6)(4)(-3)(-7) = 504
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Calculate the determinant of this matrix. Show the steps in
+          the cofactor expansion.
+          <me>
+            \left( \begin{matrix} 
+              4 \amp -1 \amp -1 \amp 6 \\
+              0 \amp -3 \amp 3 \amp -2 \\
+              0 \amp 1 \amp 1 \amp -2 \\
+              -2 \amp 0 \amp 0 \amp 3 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We cofactor expansion along the first column to take
+          advantage of the zero terms. 
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+              4 \amp -1 \amp -1 \amp 6 \\
+              0 \amp -3 \amp 3 \amp -2 \\
+              0 \amp 1 \amp 1 \amp -2 \\
+              -2 \amp 0 \amp 0 \amp 3 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (1)(4) \left| \begin{matrix}
+                -3 \amp 3 \amp -2 \\
+                1 \amp 1 \amp -2 \\
+                0 \amp 0 \amp 3 
+              \end{matrix} \right| + 
+              (-1)(0) \left| \begin{matrix}
+                -1 \amp -1 \amp 6 \\
+                1 \amp 1 \amp -2 \\
+                0 \amp 0 \amp 3
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp + (1)(0) \left| \begin{matrix}
+                -1 \amp -1 \amp 6 \\
+                -3 \amp 3 \amp -2 \\
+                0 \amp 0 \amp 3 \\
+              \end{matrix} \right| + 
+              (-1)(-2) \left| \begin{matrix}
+                -1 \amp -1 \amp 6 \\
+                -3 \amp 3 \amp -2 \\
+                1 \amp 1 \amp -2 
+              \end{matrix} \right| 
+            </mrow>
+          </md>
+          The two terms multiplied by zero go away. We have two
+          remaining <m>3 \times 3</m> determinants. We'll do these
+          seperately and then put their determinant values back into
+          the original equation. Here is the first one; we do cofactor
+          expansion along the third row. 
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+                -3 \amp 3 \amp -2 \\
+                1 \amp 1 \amp -2 \\
+                0 \amp 0 \amp 3 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (1)(0) \left| \begin{matrix}
+                3 \amp -2 \\
+                1 \amp -2 
+              \end{matrix} \right| + 
+              (-1)(0)  \left| \begin{matrix}
+                -3 \amp -2 \\
+                1 \amp -2 
+              \end{matrix} \right| + 
+              (1)(3) \left| \begin{matrix}
+                -3 \amp 3 \\
+                1 \amp 1 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 0 + 0 + 3 \left[ (-3)(1) - (3)(1) \right] 
+            </mrow>
+            <mrow>
+              \amp = -18 
+            </mrow>
+          </md>
+          Here is the seoncd one; we do cofactor expansion along the
+          first row. 
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+                -1 \amp -1 \amp 6 \\
+                -3 \amp 3 \amp -2 
+                1 \amp 1 \amp -2 \\
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (1)(-1) \left| \begin{matrix}
+                3 \amp -2 \\
+                1 \amp -2 
+              \end{matrix} \right| + 
+              (-1)(-1) \left| \begin{matrix}
+                -3 \amp -2 \\
+                1 \amp -2 
+              \end{matrix} \right| + 
+              (1)(6) \left| \begin{matrix}
+                -3 \amp 3 \\
+                1 \amp 1
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = (-1) \left[ (3)(-2) - (1)(-2) \right] 
+              + (1) \left[ (-3)(-2) - (1)(-2) \right] 
+              + (6) \left[ (-3)(1) - (1)(3) \right] 
+            </mrow>
+            <mrow>
+              \amp = 4 + 8 - 36 = -24 
+            </mrow>
+          </md>
+          Now we put these back into the full expression.
+          <md>
+            <mrow>
+              \amp \left| \begin{matrix} 
+              4 \amp -1 \amp -1 \amp 6 \\
+              0 \amp -3 \amp 3 \amp -2 \\
+              0 \amp 1 \amp 1 \amp -2 \\
+              -2 \amp 0 \amp 0 \amp 3 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 
+              (1)(4) \left| \begin{matrix}
+                -3 \amp 3 \amp -2 \\
+                1 \amp 1 \amp -2 \\
+                0 \amp 0 \amp 3 
+              \end{matrix} \right| + 
+              (-1)(0) \left| \begin{matrix}
+                -1 \amp -1 \amp 6 \\
+                1 \amp 1 \amp -2 \\
+                0 \amp 0 \amp 3
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp + (1)(0) \left| \begin{matrix}
+                -1 \amp -1 \amp 6 \\
+                -3 \amp 3 \amp -2 \\
+                0 \amp 0 \amp 3 \\
+              \end{matrix} \right| + 
+              (-1)(-2) \left| \begin{matrix}
+                -1 \amp -1 \amp 6 \\
+                -3 \amp 3 \amp -2 \\ 
+                1 \amp 1 \amp -2 
+              \end{matrix} \right| 
+            </mrow>
+            <mrow>
+              \amp = 4 (-18) + 0 + 0 + 2(-24) = -120
+            </mrow> 
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="week8-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          Prove that all rotations in <m>\RR^2</m> have determinant 1. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that all reflections in <m>\RR^2</m> have determinant 1. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Let <m>M</m> be a square matrix. Prove that <m>\det M =
+          \detl M^T</m>. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Let <m>M</m> and <m>N</m> be <m>n \times n</m> matrices.
+          Prove that <m>\det (MN) = \det (M) \det (N)</m>. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Let <m>M</m> be an invertible matrix. Prove that <m>\det
+          M^{-1} = \frac{1}{\det M}</m>. 
         </p>
       </statement>
       <solution>
@@ -13,17 +429,15 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="week8-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>
         <li>
+          What is a determinant and what does it mean?
         </li>
         <li>
-        </li>
-        <li>
-        </li>
-        <li>
+          Why is the determinant multiplicative but not linear?
         </li>
       </ul>
     </p>
