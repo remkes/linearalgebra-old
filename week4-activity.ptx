@@ -1,6 +1,6 @@
-<section xml:id="week4-activity">
+<section xml:id="section-week4-activity">
   <title>Week 4 Activity</title>
-  <subsection xml:id="row-reduction">
+  <subsection xml:id="subsection-activity-row-reduction">
     <title>Row Reduction</title>
     <activity>
       <statement>
@@ -389,7 +389,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="solving-systems">
+  <subsection xml:id="subsection-activity-solving-systems">
     <title>Solving Linear Systems</title>
     <activity>
       <statement>
@@ -1035,7 +1035,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week4-concepts">
+  <subsection xml:id="subsection-week4-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

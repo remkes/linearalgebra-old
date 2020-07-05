@@ -1,6 +1,6 @@
-<section xml:id="dynamical-examples">
+<section xml:id="section-dynamical-examples">
   <title>Examples of Dynamical Systems</title>
-  <subsection xml:id="leslie">
+  <subsection xml:id="subsection-leslie">
     <title>Leslie Matrices</title>
     <p>
       Let's conisder a population broken down into finitely many age
@@ -49,22 +49,22 @@
       <m>\lambda \lt 1</m> we expect exponential decay.
     </p>
   </subsection>
-  <subsection xml:id="dna-change">
+  <subsection xml:id="subsection-dna-change">
     <title>DNA Change (Cantor-Jukes)</title>
     <p>
     </p>
   </subsection>
-  <subsection xml:id="population-movement">
+  <subsection xml:id="subsection-population-movement">
     <title>Population Movement</title>
     <p>
     </p>
   </subsection>
-  <subsection xml:id="predator-prey">
+  <subsection xml:id="subsection-predator-prey">
     <title>Predator-Prey Models</title>
     <p>
     </p>
   </subsection>
-  <subsection xml:id="competition">
+  <subsection xml:id="subsection-competition">
     <title>Competition Models</title>
     <p>
     </p>

@@ -1,6 +1,6 @@
-<section xml:id="dot-product">
+<section xml:id="section-dot-product">
   <title>Dot Product</title>
-  <subsection xml:id="dot-product-definition">
+  <subsection xml:id="subsection-dot-product-definition">
     <title>Definition</title>
     <p>
       Earlier we said that we can't multiply two vectors together.
@@ -68,7 +68,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="dot-product-properties">
+  <subsection xml:id="subsection-dot-product-properties">
     <title>Properties of the Dot Product</title>
     <p>
       There are many pairs of orthogonal vectors. Thinking of the dot
@@ -143,8 +143,7 @@
       some well-known geometric constructions. For example, now that
       we have lengths and angles, we can state the cosine law in terms
       of vectors. The visualization of the vector relationships of
-      the cosine law is shown in <xref
-      ref="the-cosine-law">Figure</xref>.
+      the cosine law is shown in <xref ref="figure-the-cosine-law" />.
     </p>
     <proposition>
       <title>The Cosine Law</title>
@@ -158,7 +157,7 @@
         </p>
       </statement>
     </proposition>
-    <figure xml:id="the-cosine-law">
+    <figure xml:id="figure-the-cosine-law">
       <caption>The Cosine Law</caption>
       <image width="85%" source="images/figure7" />
     </figure>

@@ -1,6 +1,6 @@
-<section xml:id="inversion">
+<section xml:id="section-inversion">
   <title>Inverse Linear Transforms and Matrix Inversion</title>
-  <subsection xml:id="inverse-transforms">
+  <subsection xml:id="subsection-inverse-transforms">
     <title>Inverse Transforms</title>
     <p>
       When we defined Dihedral Groups, we already talked briefly about
@@ -27,7 +27,7 @@
       algebriac definition of the inverse as well.
     </p>
   </subsection>
-  <subsection xml:id="inverse-matrices">
+  <subsection xml:id="subsection-inverse-matrices">
     <title>Inverse Matrices</title>
     <p>
       The identity property: <m>AI_l = I_k A = A</m> reminds us of
@@ -69,7 +69,7 @@
       get us back to the identity.
     </p>
   </subsection>
-  <subsection xml:id="calculation-inverse-matrices">
+  <subsection xml:id="subsection-calculation-inverse-matrices">
     <title>Calculating Inverse Matrices</title>
     <p>
       The definition is good, but we are left with the problem of

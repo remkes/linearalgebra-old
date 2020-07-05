@@ -1,6 +1,6 @@
-<section xml:id="reduction-algorithms">
+<section xml:id="section-reduction-algorithms">
   <title>Other Algorithms Using Row Reduction</title>
-  <subsection xml:id="linear-combinations">
+  <subsection xml:id="subsection-linear-combinations">
     <title>Linear Combinations</title>
     <p>
     </p>

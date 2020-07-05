@@ -1,6 +1,6 @@
-<section xml:id="week0-activity">
+<section xml:id="section-week0-activity">
   <title>Week 0 Activity</title>
-  <subsection xml:id="sets-with-structure">
+  <subsection xml:id="subsection-activity-sets-with-structure">
     <title>Sets with Structure</title>
     <activity>
       <statement>
@@ -333,7 +333,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="subsection-week1-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

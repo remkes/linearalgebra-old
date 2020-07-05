@@ -1,6 +1,6 @@
-<section xml:id="week3-activity">
+<section xml:id="section-week3-activity">
   <title>Week 3 Activity</title>
-  <subsection xml:id="linear-combinations">
+  <subsection xml:id="subsection-activity-linear-combinations">
     <title>Linear Combinations</title>
     <activity>
       <statement>
@@ -258,7 +258,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="linear-independence">
+  <subsection xml:id="subsection-activity-linear-independence">
     <title>Linear Independence</title>
     <activity>
       <statement>
@@ -372,7 +372,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="spans-and-bases">
+  <subsection xml:id="subsection-activity-spans-and-bases">
     <title>Spans and Bases</title>
     <activity>
       <statement>
@@ -497,7 +497,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week3-proofs">
+  <subsection xml:id="subsection-week3-proofs">
     <title>Proof Questions</title>
     <activity>
       <statement>
@@ -615,7 +615,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week3-concepts">
+  <subsection xml:id="subsection-week3-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

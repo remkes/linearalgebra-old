@@ -1,6 +1,6 @@
-<section xml:id="week11-activity">
+<section xml:id="section-week11-activity">
   <title>Week 11 Activity</title>
-  <subsection xml:id="leslie-matrices">
+  <subsection xml:id="subsection-activity-leslie-matrices">
     <title>Leslie Matrices</title>
     <activity>
       <statement>
@@ -280,7 +280,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="predator-prey">
+  <subsection xml:id="subsection-activity-predator-prey">
     <title>Predator-Prey Models</title>
     <activity>
       <statement>
@@ -293,7 +293,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="competition">
+  <subsection xml:id="subsection-activity-competition">
     <title>Competition Models</title>
     <activity>
       <statement>
@@ -306,7 +306,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week11-concepts">
+  <subsection xml:id="subsection-week11-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

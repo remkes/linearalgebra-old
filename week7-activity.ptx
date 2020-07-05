@@ -1,6 +1,6 @@
-<section xml:id="week7-activity">
+<section xml:id="section-week7-activity">
   <title>Week 7 Activity</title>
-  <subsection xml:id="inversion">
+  <subsection xml:id="subsection-activity-inversion">
     <title>Inversion</title>
     <activity>
       <statement>
@@ -276,7 +276,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="transformations-of-spans">
+  <subsection xml:id="subsection-activity-transformations-of-spans">
     <title>Transformations of Spans</title>
     <activity>
       <statement>
@@ -691,7 +691,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="kernels-images">
+  <subsection xml:id="subsection-activity-kernels-images">
     <title>Kernels and Images</title>
     <activity>
       <statement>
@@ -1080,7 +1080,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week7-proofs">
+  <subsection xml:id="subsection-week7-proofs">
     <title>Proof Questions</title>
     <activity>
       <statement>
@@ -1126,7 +1126,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week7-concepts">
+  <subsection xml:id="subsection-week7-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

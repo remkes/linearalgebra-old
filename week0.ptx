@@ -1,4 +1,5 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="welcome">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  
+  xml:id="chapter-week0"> 
   <title>Week 0</title>
   <xi:include href="themes.ptx" />
   <xi:include href="week0-activity.ptx" />

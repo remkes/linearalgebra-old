@@ -1,6 +1,6 @@
-<section xml:id="euclidean-space">
+<section xml:id="section-euclidean-space">
   <title>Euclidean Space</title>
-  <subsection xml:id="vector-definitions">
+  <subsection xml:id="subsection-vector-definitions">
     <title>Definitions</title>
     <definition>
       <statement>
@@ -90,11 +90,10 @@
       <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> corresponds to the
       unique point we get moving <m>a</m> units in the direction of
       the <m>x</m> axis and <m>b</m> units in the direction of the
-      <m>y</m> axis. <xref
-      ref="points-in-the-cartesian-plane">Figure</xref> shows the
-      location of several points in <m>\RR^2</m>.
+      <m>y</m> axis. <xref ref="figure-points-in-the-cartesian-plane"
+      /> shows the location of several points in <m>\RR^2</m>.
     </p>
-    <figure xml:id="points-in-the-cartesian-plane">
+    <figure xml:id="figure-points-in-the-cartesian-plane">
       <caption>Points in the Cartesian Plane <m>\RR^2</m></caption>
       <image width="85%" source="images/figure1"/>
     </figure>
@@ -109,10 +108,10 @@
       direction upwards. For <m>\RR^3</m>, the <m>x</m> and <m>y</m>
       axes form a flat plane and the <m>z</m> axis extend vertically
       from that plan, as shown in <xref
-      ref="points-in-cartesian-three-space">Figure</xref>. Notice, in
+      ref="figure-points-in-cartesian-three-space" />. Notice, in
       both cases, we needed to choose directions for the axes.
     </p>
-    <figure xml:id="points-in-cartesian-three-space">
+    <figure xml:id="figure-points-in-cartesian-three-space">
       <caption>Points in Cartesian three-space <m>\RR^3</m></caption>
       <image width="85%" source="images/figure2"/>
     </figure>
@@ -143,7 +142,7 @@
       is the space with <m>n</m> independent directions.
     </p>
   </subsection>
-  <subsection xml:id="point-or-directions">
+  <subsection xml:id="subsection-point-or-directions">
     <title>Points or Directions?</title>
     <p>
       We can think of a element of <m>\RR^2</m>, say
@@ -151,195 +150,15 @@
       located at <m>\begin{pmatrix} 1 \\ 4 \end{pmatrix}</m> and the
       vector drawn from the origin to the point <m>\begin{pmatrix} 1
       \\ 4 \end{pmatrix}</m> , as shown in <xref
-      ref="points-and-directions">Figure</xref>. Though these two
+      ref="figure-points-and-directions" />. Though these two
       ideas are distinct, we will frequently change perspective
       between them. Part of becoming proficient in vector geometry is
       becoming accustomed to the switch between the perspectives of
       points and directions.
     </p>
-    <figure xml:id="points-and-directions">
+    <figure xml:id="figure-points-and-directions">
       <caption>Vectors as Points and Directions</caption>
       <image width="85%" source="images/figure3"/>
     </figure>
-  </subsection>
-  <subsection xml:id="linear-operations">
-    <title>Linear Operations</title>
-    <p>
-      The environment for linear algebra is <m>\RR^n</m>. Algebra is
-      concerned with operations on sets, so we want to know what
-      operations we can perform on <m>\RR^n</m>. There are several.
-    </p>
-    <definition>
-      <statement>
-        <p>
-          The <term>sum</term> of two vectors <m>u</m> and <m>v</m> in
-          <m>\RR^n</m> is the sum taken componentwise..
-          <me>
-            u + v = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
-            \end{pmatrix} + \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\
-            v_n \end{pmatrix} = \begin{pmatrix} u_1 + v_1 \\ u_2 + v_2
-            \\ \vdots \\ u_n + v_n \end{pmatrix}
-          </me>
-        </p>
-      </statement>
-    </definition>
-    <p>
-      The sum is visuzliazed by placing the start of the second vector
-      at the end of the first, as in <xref
-      ref="visualizing-vector-addition">Figure</xref>. Note that we
-      can only add two vectors in the same dimension. We can't add a
-      vector in <m>\RR^2</m> to a vector in <m>\RR^3</m>.
-    </p>
-    <figure xml:id="visualizing-vector-addition">
-      <caption>Visualizing Vector Addition</caption>
-      <image width="85%" source="images/figure4"/>
-    </figure>
-    <definition>
-      <statement>
-        <p>
-          If <m>u</m> is a vector in <m>\RR^n</m> and <m>a \in \RR</m>
-          is a real number, then the <term>scalar
-          multiplication</term> of <m>u</m> and <m>a</m> is
-          multiplication by <m>a</m> in each component of <m>u</m>.
-          By convention, scalar multiplication is written with the
-          scalar on the left of the vector.
-          <me>
-            au = a \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
-            \end{pmatrix} = \begin{pmatrix} au_1 \\ au_2 \\ \vdots \\
-            au_n \end{pmatrix}
-          </me>
-        </p>
-      </statement>
-    </definition>
-    <p>
-      Though there will be other <sq>multiplications</sq> to come, we
-      generally say that we can't multiply vectors together in any way
-      reminiscent of numbers. Instead, we can only multiply by
-      scalars. Scalar multiplication is visualizing by scaling the
-      vector by the value of the scalar. (Hence the term
-      <sq>scalar</sq>!) If the scalar is negative, the direction is
-      also reversed, as in <xref
-      ref="visualizing-scalar-multiplication">Figure</xref>.
-    </p>
-    <figure xml:id="visualizing-scalar-multiplication">
-      <caption>Visualizing Scalar Multiplication</caption>
-      <image width="85%" source="images/figure5"/>
-    </figure>
-    <p>
-      Scalar multiplication also lets us define the difference between
-      vectors.
-    </p>
-    <definition>
-      <statement>
-        <p>
-          The difference between two vectors <m>u</m> and <m>v</m> is
-          the vector <m>u + (-1)v</m>, defined using addition and
-          scalar multiplication. This works out to be componentwise
-          subtraction.
-          <me>
-            u - v = u + (-1) v= \begin{pmatrix} u_1 \\ u_2 \\ \vdots
-            \\ u_n \end{pmatrix} + (-1) \begin{pmatrix} v_1 \\ v_2 \\
-            \vdots \\ v_n \end{pmatrix} = \begin{pmatrix} u_1 - v_ 1\\
-            u_2 - v_2 \\ \vdots \\ u_n - v_n \end{pmatrix}
-          </me>
-        </p>
-      </statement>
-    </definition>
-    <definition>
-      <statement>
-        <p>
-          With respect to some set of scalars (such as <m>\RR</m>),
-          whenever we find a mathematical structure which has the two
-          properties of addition and scalar multiplication, we call
-          the structure <term>linear</term>. <m>\RR^n</m> is a linear
-          space, because vectors allow for addition and scalar
-          multiplication.
-        </p>
-      </statement>
-    </definition>
-    <definition>
-      <statement>
-        <p>
-          The <term>length</term> of a vector <m>u</m> in <m>\RR^n</m>
-          is written <m>|u|</m> and is given by a generalized form of
-          the Pythagorean rule for right triangles.
-          <me>
-            |u| = \sqrt{u_1^2 + u_2^2 + \ldots + u_n^2}
-          </me>
-        </p>
-        <p>
-          This length is also called the <term>norm</term> of the
-          vector. A vector of length one is called a <term>unit
-          vector</term>.
-        </p>
-      </statement>
-    </definition>
-    <p>
-      If we think of vectors as directions from the origin towards a
-      point, this definition of length gives exactly what we expect:
-      the physical length of that arrow in <m>\RR^2</m> and
-      <m>\RR^3</m>. Past <m>\RR^3</m>, we don't have a natural notion
-      of length. This definition serves as a reasonable
-      generalization to <m>\RR^4</m> and higher dimensions which we
-      can't visualize. Note also that <m>|u| = 0</m> only if <m>u</m>
-      is the zero vector. All other vectors have positive length.
-    </p>
-    <p>
-      Often the square root is annoying and we find it convenient to
-      work with the square of length.
-      <me>
-        |u|^2 = u_1^2 + u_2^2 + \ldots + u_n^2
-      </me>
-    </p>
-    <p>
-      The notions of length and difference allow us to define the
-      distance between two vectors.
-    </p>
-    <definition>
-      <statement>
-        <p>
-          The <term>distance between two vectors</term> <m>u</m> and
-          <m>v</m> in <m>\RR^n</m> is the length of their difference:
-          <m>|u-v|</m>.
-        </p>
-      </statement>
-    </definition>
-    <p>
-      You can check from the definition that <m>|u-v| = |v-u|</m>, so
-      distance doesn't depend on which comes first. If <m>|\cdot|</m>
-      were absolute value in <m>\RR</m>, this definition would match
-      the notion of distance between numbers on the number line.
-      Difference and length are visualized in <xref
-      ref="difference-and-length">Figure</xref>.
-    </p>
-    <figure xml:id="difference-and-length">
-      <caption>Visualizing Distance Between Vectors</caption>
-      <image width="85%" source="images/figure6"/>
-    </figure>
-    <proposition>
-      <statement>
-        <p>
-          We briefly state two properties of vector lenghts without
-          proof.
-          <md>
-            <mrow>
-              |u+v| \amp  \leq |u| + |v| \amp  \hspace{1cm} \ \text{
-              Triangle Inequality }
-            </mrow> 
-            <mrow>
-              |au| \amp  = |a||u| \amp
-            </mrow>
-          </md>
-        </p>
-      </statement>
-    </proposition>
-    <p>
-      The last line deserves some attention for the notation. When we
-      write <m>|a| |u|</m>, <m>|a|</m> is an absolute value of a real
-      number and <m>|u|</m> is the length of a vector. The fact that
-      they have the same notation is frustrating, but these notations
-      are common. (Some text use double bars for the length of a
-      vector, <m>||v||</m>, to avoid this particular issue).
-    </p>
   </subsection>
 </section>

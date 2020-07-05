@@ -1,6 +1,6 @@
-<section xml:id="systems">
+<section xml:id="section-systems">
   <title>Systems of Linear Equations</title>
-  <subsection xml:id="systems_definition">
+  <subsection xml:id="subsection-systems_definition">
     <title>Definitions</title>
     <p>
       The previous eight chapters introduced the geometric side of
@@ -96,7 +96,7 @@
       often think of the third operation this way.
     </p>
   </subsection>
-  <subsection xml:id="matrices">
+  <subsection xml:id="subsection-matrices">
     <title>Matrices</title>
     <p>
       If we worked with the equations directly, we would find, with
@@ -291,7 +291,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="matrix-representation-of-systems">
+  <subsection xml:id="subsection-matrix-representation-of-systems">
     <title>Matrix Represetation of Systems of Linear Equations</title>
     <p>
       Consider a general system with <m>m</m> equations in the

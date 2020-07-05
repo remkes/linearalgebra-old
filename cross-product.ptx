@@ -1,7 +1,7 @@
-<section xml:id="vector-structures">
+<section xml:id="section-cross-product">
   <title>Cross Product</title>
-  <subsection xml:id="cross-product">
-    <title>The Cross Product</title>
+  <subsection xml:id="subsection-cross-product-definition">
+    <title>Definition of the Cross Product</title>
     <p>
       The dot product is an operation which can be performed on any
       two vectors in <m>\RR^n</m> for any <m>n \geq 1</m>. There are
@@ -104,7 +104,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="angular-motion">
+  <subsection xml:id="subsection-angular-motion">
     <title>Angular Motion</title>
     <p>
       An important application of the cross product is found in
@@ -177,7 +177,7 @@
       involve cross products in the vectors describing the fluid.
     </p>
   </subsection>
-  <subsection xml:id="local-direction-vectors">
+  <subsection xml:id="subsection-local-direction-vectors">
     <title>Local Direction Vectors</title>
     <p>
       We've already spoken about the distinction between elements of
@@ -187,13 +187,13 @@
       origin, we can think of them as directions starting anywhere in
       <m>\RR^n</m>. We call these local direction vectors.
     </p>
-    <figure xml:id="local-direction-vectors-diagram">
+    <figure xml:id="figure-local-direction-vectors">
       <caption>Local Direction Vectors</caption>
       <image width="85%" source="images/figure8" />
     </figure>
     <p>
       For example, as pictured in <xref
-      ref="local-direction-vectors">Figure</xref>, at the point
+      ref="figure-local-direction-vectors" />, at the point
       <m>\begin{pmatrix} 2 \\ 3 \end{pmatrix} \in \RR^2</m>, we could
       think of the local directions <m>\begin{pmatrix} 1 \\ 0
       \end{pmatrix}</m> or <m>\begin{pmatrix} 0 \\ 1
@@ -217,64 +217,6 @@
       local direction vectors; often, the difference is implied and it
       is up to the reader/student to figure out how the vectors are
       being used.
-    </p>
-  </subsection>
-  <subsection xml:id="projections">
-    <title>Projections</title>
-    <figure xml:id="projections-diagram">
-      <caption>Projection and Perpendicular Vectors</caption>
-      <image width="85%" source="images/figure9" />
-    </figure>
-    <definition>
-      <statement>
-        <p>
-          Let <m>u</m> and <m>v</m> be two vectors in <m>\RR^n</m>.
-          The <term>projection</term> of <m>u</m> onto <m>v</m> is a
-          scalar multiple of the vector <m>v</m> given by the
-          following formula.
-          <me>
-            \Proj_v u = \left( \frac{u \cdot v}{|v|^2} \right) v
-          </me>
-        </p>
-      </statement>
-    </definition>
-    <p>
-      Note that the bracketed term involves the dot product and the
-      norm, so it is a scalar. Therefore, the result is a multiple of
-      the vector <m>v</m>. Projection is best visualized as the
-      shadow of the vector <m>u</m> on the the vector <m>v</m>.
-    </p>
-    <definition>
-      <statement>
-        <p>
-          Let <m>u</m> and <m>v</m> be two vectors in <m>\RR^n</m>.
-          The part of <m>u</m> which is <term>perpendicular</term> to
-          <m>v</m> is given by the following formula.
-          <me>
-            \Perp_v u = u - \Proj_v u
-          </me>
-        </p>
-      </statement>
-    </definition>
-    <p>
-      We can rearrange the previous definition to solve for the
-      original vector <m>u</m>.
-      <me>
-        u = \Proj_v u + \Perp_v u
-      </me>
-    </p>
-    <p>
-      For any vector <m>v</m>, every vector <m>u</m> can be decomposed
-      into a sum of two unique vectors: one in the direction of
-      <m>v</m> and one perpendicular to <m>v</m>. If <m>u</m> and
-      <m>v</m> are already perpendicular, then the projection term is
-      the zero vector. If <m>u</m> is a multple of <m>v</m>, then the
-      perpendicular term is the zero vector. We think of this
-      decomposition as capturing two pieces of the vector <m>u</m>:
-      the part that aligns with the direction of <m>v</m> and the part
-      that has nothing to do with the direction of <m>v</m>. A
-      vectors with its projection and perpendicular onto another
-      vector is shows in <xref ref="projections">Figure</xref>.
     </p>
   </subsection>
 </section>

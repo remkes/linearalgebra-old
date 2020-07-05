@@ -1,6 +1,6 @@
-<section xml:id="subspaces">
+<section xml:id="section-subspaces">
   <title>Linear and Affine Subspaces</title>
-  <subsection xml:id="subspace-definitions">
+  <subsection xml:id="subsection-subspace-definitions">
     <title>Definitions</title>
     <p>
       In addition to vectors, we want to consider various geometric
@@ -78,7 +78,7 @@
       substapces. There are two main approaches: loci and spans.
     </p>
   </subsection>
-  <subsection xml:id="loci">
+  <subsection xml:id="subsection-loci">
     <title>Loci</title>
     <definition>
       <statement>
@@ -212,7 +212,7 @@
       will have to wait until later in these notes.
     </p>
   </subsection>
-  <subsection xml:id="intersection">
+  <subsection xml:id="subsection-intersection">
     <title>Intersection</title>
     <definition>
       <statement>

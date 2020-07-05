@@ -1,6 +1,6 @@
-<section xml:id="loci">
+<section xml:id="section-loci">
   <title>Normals to Planes and Hyperplanes</title>
-  <subsection xml:id="dot-product-and-loci">
+  <subsection xml:id="subsection-dot-product-and-loci">
     <title>Dot Products and Loci</title>
     <p>
       Having discussed spans, let's return to loci. By re-examing the
@@ -71,7 +71,7 @@
       vectors which lie on the plane.
     </p>
   </subsection>
-  <subsection xml:id="planes-algorithm">
+  <subsection xml:id="subsection-planes-algorithm">
     <title>An Algorithm for Equations of Planes</title>
     <p>
       Now we can build a general process for finding the equation of a

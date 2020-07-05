@@ -1,6 +1,6 @@
-<section xml:id="week5-activity">
+<section xml:id="subsection-week5-activity">
   <title>Week 5 Activity</title>
-  <subsection xml:id="dimensions-of-spans">
+  <subsection xml:id="subsection-activity-dimensions-of-spans">
     <title>Dimensions and Bases of Spans</title>
     <activity>
       <statement>
@@ -360,7 +360,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="dimensions-of-loci">
+  <subsection xml:id="subsection-activity-dimensions-of-loci">
     <title>Dimensions and Bases of Loci</title>
     <activity>
       <statement>
@@ -535,7 +535,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="linear-combinations">
+  <subsection xml:id="subsection-activity-linear-combinations">
     <title>Calculating Linear Combinations</title>
     <activity>
       <statement>
@@ -802,7 +802,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week5-concepts">
+  <subsection xml:id="subsection-week5-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

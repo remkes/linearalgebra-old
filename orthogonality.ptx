@@ -1,6 +1,6 @@
-<section xml:id="orthogonality">
+<section xml:id="section-orthogonality">
   <title>Orthogonality and Symmetry</title>
-  <subsection xml:id="symmetry-again">
+  <subsection xml:id="subsection-symmetry-again">
     <title>Symmetry, Again</title>
     <p>
       Throughout the course, we've talked about symmetry and defined
@@ -44,7 +44,7 @@
       </ul>
     </p>
   </subsection>
-  <subsection xml:id="determinant-one">
+  <subsection xml:id="subsection-determinant-one">
     <title>Matrices of Determinant One</title>
     <p>
       Determinants measure two geometric properites: size and
@@ -64,7 +64,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="transpose">
+  <subsection xml:id="subsection-transpose">
     <title>Transposes</title>
     <p>
       The following definition will be useful in this chapter.
@@ -99,7 +99,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="orthogonal-matrices">
+  <subsection xml:id="subsection-orthogonal-matrices">
     <title>Orthogonal and Special Orthogonal Matrices</title>
     <definition>
       <statement>
@@ -273,7 +273,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="orthogonal-bases">
+  <subsection xml:id="subsection-orthogonal-bases">
     <title>Orthogonal Bases and the Gram-Schmidt Process</title>
     <definition>
       <statement>

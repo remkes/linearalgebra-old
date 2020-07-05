@@ -1,6 +1,6 @@
-<section xml:id="dimensions">
+<section xml:id="section-dimensions">
   <title>Dimensions of Spans and Loci</title>
-  <subsection xml:id="rank">
+  <subsection xml:id="subsection-rank">
     <title>Rank</title>
     <definition>
       <statement>
@@ -12,7 +12,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="dimensions-of-spans">
+  <subsection xml:id="subsection-dimensions-of-spans">
     <title>Dimensions of Spans</title>
     <p>
       We can now define the desired techniques to solve the dimension
@@ -44,7 +44,7 @@
       </statement>
     </proposition>
   </subsection>
-  <subsection xml:id="bases-for-spans">
+  <subsection xml:id="subsection-bases-for-spans">
     <title>Bases for Spans</title>
     <p>
       If <m>\Span\{v_1, v_2, v_3\}</m> has dimension two and the first
@@ -182,7 +182,7 @@
       </statement>
     </example>
   </subsection>
-  <subsection xml:id="dimensions-of-loci">
+  <subsection xml:id="subsection-dimensions-of-loci">
     <title>Dimensions of Loci</title>
     <p>
       Similarly, we can use row-reduction of matrices to find the
@@ -272,7 +272,7 @@
       dimension boils down to the rank of an associated matrix.
     </p>
   </subsection>
-  <subsection xml:id="bases-for-loci">
+  <subsection xml:id="subsection-bases-for-loci">
     <title>Bases for Loci</title>
     <p>
       If we have a solution space for a linear system expressed in

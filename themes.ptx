@@ -1,6 +1,6 @@
-<section xml:id="themes">
+<section xml:id="section-themes">
   <title>Themes of the Course</title>
-  <subsection>
+  <subsection xml:id="subsection-algebra-theme">
     <title>Algebra</title>
     <p>
       Linear <em>algebra</em> is, as expected, an algebra course. (It
@@ -41,7 +41,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="abstraction">
+  <subsection xml:id="subsection-abstraction-theme">
     <title>Abstraction</title>
     <p>
       The definition of algebra just stated is an immensely abstract
@@ -71,7 +71,7 @@
       of abstract mathematics, in and of themselves.
     </p>
   </subsection>
-  <subsection xml:id="geometry-theme">
+  <subsection xml:id="subsection-geometry-theme">
     <title>Geometry</title>
     <p>
       Though the subjet is called <sq>algebra</sq>, linear algebra is
@@ -93,7 +93,7 @@
       dimensional geometry.
     </p>
   </subsection>
-  <subsection xml:id="flatness">
+  <subsection xml:id="subsection-flatness-theme">
     <title>Flatness</title>
     <p>
       While a geometry course, the geometry we are considering will be
@@ -114,7 +114,7 @@
       results.
     </p>
   </subsection>
-  <subsection xml:id="symmetry">
+  <subsection xml:id="subsection-symmetry-theme">
     <title>Symmetry</title>
     <p>
       Other than flatness, our other major geometric theme is
@@ -132,7 +132,7 @@
       give a understanding of algebraic symmetry.
     </p>
   </subsection>
-  <subsection xml:id="proof">
+  <subsection xml:id="subsection-proof-theme">
     <title>Proof</title>
     <p>
       Proofs are another major difference between the grade-school

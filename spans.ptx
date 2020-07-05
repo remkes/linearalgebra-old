@@ -1,6 +1,6 @@
-<section xml:id="spans">
+<section xml:id="section-spans">
   <title>Spans</title>
-  <subsection xml:id="span_definitions">
+  <subsection xml:id="subsection-span-definitions">
     <title>Definitions</title>
     <p>
       In addition to presenting the second description of linear
@@ -78,7 +78,7 @@
       to wait until a later section of these notes.
     </p>
   </subsection>
-  <subsection xml:id="dimension-and-basis">
+  <subsection xml:id="subsection-dimension-and-basis">
     <title>Dimension and Basis</title>
     <definition>
       <statement>

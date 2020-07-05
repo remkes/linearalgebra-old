@@ -1,6 +1,6 @@
-<section xml:id="week2-activity">
+<section xml:id="section-week2-activity">
   <title>Week 2 Activity</title>
-  <subsection xml:id="dot-products">
+  <subsection xml:id="subsection-activity-dot-products">
     <title>Dot Products</title>
     <activity>
       <statement>
@@ -352,7 +352,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="angles-between-vectors">
+  <subsection xml:id="subsection-activity-angles-between-vectors">
     <title>Angles Between Vectors</title>
     <activity>
       <statement>
@@ -561,7 +561,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="cross-products">
+  <subsection xml:id="subsection-activity-cross-products">
     <title>Cross Product</title>
     <activity>
       <statement>
@@ -710,7 +710,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="equations-of-planes">
+  <subsection xml:id="subsection-activity-equations-of-planes">
     <title>Equations of Planes and Hyperplanes</title>
     <activity>
       <statement>
@@ -1151,7 +1151,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week2-proofs">
+  <subsection xml:id="subsection-activity-week2-proofs">
     <title>Proof Questions</title>
     <activity>
       <statement>
@@ -1299,7 +1299,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week2-concepts">
+  <subsection xml:id="subsection-week2-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

@@ -1,6 +1,6 @@
-<section xml:id="eigenvectors">
+<section xml:id="section-eigenvectors">
   <title>Eigenvectors, Eigenvalues and Spectra</title>
-  <subsection xml:id="eigenvectors-definitions">
+  <subsection xml:id="subsection-eigenvectors-definitions">
     <title>Definitions</title>
     <definition>
       <statement>
@@ -162,7 +162,7 @@
       </statement>
     </example>
   </subsection>
-  <subsection xml:id="eigenvectors-calculation">
+  <subsection xml:id="subsection-eigenvectors-calculation">
     <title>Calculation of Eigenvalue and Eigenvectors</title>
     <p>
       We would like to have an algorithm for finding eigenvectors and
@@ -349,7 +349,7 @@
       </statement>
     </example>
   </subsection>
-  <subsection xml:id="symmetric-matrices">
+  <subsection xml:id="subsection-symmetric-matrices">
     <title>Symmetric Matrices</title>
     <p>
       We defined the transpose of a matrix in the chapter on

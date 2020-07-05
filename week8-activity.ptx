@@ -1,6 +1,6 @@
-<section xml:id="week8-activity">
+<section xml:id="section-week8-activity">
   <title>Week 8 Activity</title>
-  <subsection xml:id="calculating-determinants">
+  <subsection xml:id="subsection-activity-calculating-determinants">
     <title>Calculating Determinants</title>
     <activity>
       <statement>
@@ -368,7 +368,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week8-proofs">
+  <subsection xml:id="subsection-week8-proofs">
     <title>Proof Questions</title>
     <activity>
       <statement>
@@ -429,7 +429,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week8-concepts">
+  <subsection xml:id="subsection-week8-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

@@ -1,6 +1,6 @@
-<section xml:id="week6-activity">
+<section xml:id="section-week6-activity">
   <title>Week 6 Activity</title>
-  <subsection xml:id="matrix-action">
+  <subsection xml:id="subsection-activity-matrix-action">
     <title>Matrix Action</title>
     <activity>
       <statement>
@@ -651,7 +651,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="matrix-multiplication">
+  <subsection xml:id="subsection-activity-matrix-multiplication">
     <title>Matrix Multiplication</title>
     <activity>
       <statement>
@@ -790,7 +790,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week6-proofs">
+  <subsection xml:id="subsection-week6-proofs">
     <title>Proof Questions</title>
     <activity>
       <statement>

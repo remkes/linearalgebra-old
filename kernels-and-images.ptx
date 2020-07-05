@@ -1,6 +1,6 @@
-<section xml:id="kernels-and-images">
+<section xml:id="section-kernels-and-images">
   <title>Kernels and Images</title>
-  <subsection xml:id="row-and-column-spaces">
+  <subsection xml:id="subsection-row-and-column-spaces">
     <title>Row and Column Spaces</title>
     <definition>
       <statement>
@@ -26,7 +26,7 @@
       </statement>
     </proposition>
   </subsection>
-  <subsection xml:id="images">
+  <subsection xml:id="subsection-images">
     <title>Images</title>
     <proposition>
       <statement>
@@ -76,7 +76,7 @@
       </statement>
     </example>
   </subsection>
-  <subsection xml:id="kernels">
+  <subsection xml:id="subsection-kernels">
     <title>Kernels</title>
     <definition>
       <statement>

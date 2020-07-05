@@ -1,6 +1,6 @@
-<section xml:id="week12-activity">
+<section xml:id="section-week12-activity">
   <title>Week 12 Activity</title>
-  <subsection xml:id="transition-graphs">
+  <subsection xml:id="subsection-activity-transition-graphs">
     <title>Transition Graphs</title>
     <activity>
       <statement>
@@ -57,7 +57,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="linear-recurrence">
+  <subsection xml:id="subsection-activity-linear-recurrence">
     <title>Linear Recurrence Relations</title>
     <activity>
       <statement>
@@ -90,7 +90,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="linear-difference-equations">
+  <subsection xml:id="subsection-activity-linear-difference-equations">
     <activity>
       <statement>
         <p>
@@ -158,7 +158,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week12-concepts">
+  <subsection xml:id="subsection-week12-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

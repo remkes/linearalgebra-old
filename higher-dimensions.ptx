@@ -1,6 +1,7 @@
-<section xml:id="higher-dimensions">
+<section xml:id="section-higher-dimensions">
   <title>Higher Dimensions</title>
-  <introduction>
+  <subsection xml:id="subsection-spheres">
+    <title>Spheres</title>
     <p>
       Now that we have defined vectors, we want to investigate more
       complicated objects in <m>\RR^n</m>. The major objects for the
@@ -12,9 +13,6 @@
       straight-edged objects in any <m>\RR^n</m>  First, however, we
       start with a familiar without straight edges.
     </p>
-  </introduction>
-  <subsection xml:id="spheres">
-    <title>Spheres</title>
     <p>
       Spheres are, in some way, the easiest objects to generalize.
       Spheres are all things in <m>\RR^n</m> which are exactly one
@@ -36,7 +34,7 @@
       slice of a 3-sphere produces a 2-sphere.
     </p>
   </subsection>
-  <subsection xml:id="simplices">
+  <subsection xml:id="subsection-simplices">
     <title>Simplicies</title>
     <p>
       The simplex is the simplest straight-line polyhedra. I'll
@@ -76,7 +74,7 @@
       </ul>
     </p>
   </subsection>
-  <subsection xml:id="cross-polytopes">
+  <subsection xml:id="subsection-cross-polytopes">
     <title>Cross-Polytopes</title>
     <p>
       Another family of regular solids which extends to all dimensions
@@ -118,7 +116,7 @@
       </ul>
     </p>
   </subsection>
-  <subsection xml:id="cubes">
+  <subsection xml:id="subsection-cubes">
     <title>Cubes</title>
     <p>
       Finally, we have the family of cubes.
@@ -177,7 +175,7 @@
       </ul>
     </p>
   </subsection>
-  <subsection xml:id="other-solids">
+  <subsection xml:id="subsection-other-solids">
     <title>Other Platonic Solics</title>
     <p>
       A regular polyhedron is one where all edges, faces, cells,

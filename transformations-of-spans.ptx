@@ -1,6 +1,6 @@
-<section xml:id="transformations-of-spans-and-loci">
+<section xml:id="section-transformations-of-spans-and-loci">
   <title>Transformations of Spans and Loci</title>
-  <subsection xml:id="transformations-of-spans">
+  <subsection xml:id="subsection-transformations-of-spans">
     <title>Transformations of Spans</title>
     <p>
       Now that we have matrices to describe transformations, we want
@@ -81,7 +81,7 @@
       smaller.
     </p>
   </subsection>
-  <subsection xml:id="transformations-of-loci">
+  <subsection xml:id="subsection-transformations-of-loci">
     <title>Transformation of Loci</title>
     <p>
       For loci, the picture is much more complicated. Equations do

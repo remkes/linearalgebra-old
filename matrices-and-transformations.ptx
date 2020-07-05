@@ -1,6 +1,6 @@
-<section xml:id="matrices-and-transformations">
+<section xml:id="ection-matrices-and-transformations">
   <title>Matrices and Transformations</title>
-  <subsection xml:id="matrix-representation">
+  <subsection xml:id="subsection-matrix-representation">
     <title>Matrix Representation of Linear Transformations</title>
     <p>
       Now we come to the second eajor application of matrices. In
@@ -149,7 +149,7 @@
       </statement>
     </example>
   </subsection>
-  <subsection xml:id="matrix-multiplication">
+  <subsection xml:id="subsection-matrix-multiplication">
     <title>Composition and Matrix Multiplication</title>
     <p>
       We previously defined the composition of linear transformation.

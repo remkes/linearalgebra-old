@@ -1,4 +1,5 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="week5">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
+  xml:id="chapter-week5">
   <title>Week 5</title>
   <xi:include href="dimensions.ptx" />
   <xi:include href="reduction-algorithms.ptx" />

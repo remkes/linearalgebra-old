@@ -1,6 +1,6 @@
-<section xml:id="week1-activity">
+<section xml:id="section-week1-activity">
   <title>Week 1 Activity</title>
-  <subsection xml:id="higher-dimensional-space">
+  <subsection xml:id="subsection-activity-higher-dimensional-space">
     <title>Higher Dimensional Space</title>
     <activity>
       <statement>
@@ -89,7 +89,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="vector-arithmetics">
+  <subsection xml:id="subsection-activity-vector-arithmetics">
     <activity>
       <title>Vector Arithmetic</title>
       <statement>
@@ -170,7 +170,7 @@
         <p>
           We'll do the arithmetic one by one. Then, at the end, all
           the vector will be drawn in
-          <xref ref="vector-arithmetic-figure" />.
+          <xref ref="figure-vector-arithmetic" />.
           <md>
             <mrow>
               \amp -u = - \left( \begin{matrix} 3 \\ 0 \end{matrix}
@@ -245,7 +245,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          <figure xml:id="vector-arithmetic-figure">
+          <figure xml:id="figure-vector-arithmetic">
             <caption>Vector Arithmetic</caption>
             <image width="100%" source="images/figure10" />
           </figure>
@@ -459,7 +459,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-proofs">
+  <subsection xml:id="subsection-week1-proofs">
     <title>Proof Questions</title>
     <activity>
       <statement>
@@ -675,7 +675,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="subsection-week1-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

@@ -1,6 +1,6 @@
-<section xml:id="week10-activity">
+<section xml:id="section-week10-activity">
   <title>Week 10 Activity</title>
-  <subsection xml:id="eigenvalues">
+  <subsection xml:id="subsection-activity-eigenvalues">
     <title>Eigenvalues and Eigenvectors</title>
     <activity>
       <statement>
@@ -468,7 +468,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week10-proofs">
+  <subsection xml:id="subsection-week10-proofs">
     <title>Proof Questions</title>
     <activity>
       <statement>
@@ -536,7 +536,7 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="week1-concepts">
+  <subsection xml:id="subsection-week1-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>

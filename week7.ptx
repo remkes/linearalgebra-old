@@ -1,4 +1,5 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="week7">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
+  xml:id="chapter-week7">
   <title>Week 7</title>
   <xi:include href="inversion.ptx" />
   <xi:include href="transformations-of-spans.ptx" />

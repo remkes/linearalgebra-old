@@ -1,6 +1,0 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="determinants">
-  <title>Determinants</title>
-  <xi:include  href="determinants-definition.ptx" />
-  <xi:include  href="cofactor.ptx" />
-  <xi:include  href="properties-of-determinants.ptx" />
-</chapter>
