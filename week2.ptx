@@ -4,6 +4,7 @@
   <xi:include href="dot-product.ptx" />
   <xi:include href="cross-product.ptx" />
   <xi:include href="loci.ptx" />
+  <xi:include href="sets-structure.ptx" />
   <xi:include href="proofs-week2.ptx" />
   <xi:include href="week2-activity.ptx" />
 </chapter>

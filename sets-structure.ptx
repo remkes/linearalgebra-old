@@ -1,0 +1,93 @@
+<section xml:id="section-sets-with-structure">
+  <title>Sets and Structures</title>
+  <subsection xml:id="subsection-sets">
+    <title>Sets</title>
+    <p>
+      Before we talk about properties of dot/cross products and proof,
+      I want to step back to take a much more abstract look at what we
+      are accomplishing. I said in <xref
+      ref="subsection-algebra-theme" /> that algebra was the study of
+      sets with (algebraic) structures. I want to use this section to
+      explain that idea. 
+    </p>
+    <p>
+      I should start with sets, very briefly. Set theory is a whole
+      branch of mathematics itself, but I'm not going into the
+      details. It is enough for us to know that a set is a collection
+      of things. In many places in mathematics, sets are collections
+      of numbers. In other courses you may have seen some of these:
+      the set of natural numbers (<m>\NN</m>); the set of integers
+      (<m>\ZZ</m>); the set of rational number (<m>\QQ</m>); the set
+      of real numbers (<m>\RR</m>); or intervals on the number line
+      (such as <m>(1,4]</m>). However, sets can contain anything we
+      want. In this course, we'll have sets of vectors and sets of
+      matrices. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-sets-structure">
+    <title>Sets with Structure</title>
+    <p>
+      So what do I mean when I say <qt>sets with structure</qt>? What
+      is a structure? A structure is a mathematical construction on a
+      set <mdash /> something that we can do, mathematically, with the
+      elements of the set. This is best illustrated by some very
+      familiar examples.
+    </p>
+    <ul>
+      <li>
+        Addition is a structure on many number sets. 
+      </li>
+      <li>
+        Subtraction is a structure on many number sets. Subtraction is
+        not a structure on the natural number, however. <m>4</m> and
+        <m>7</m> are natural number, but <m>4 - 7 = -3</m> is no
+        longer a natural number. 
+      </li>
+      <li>
+        Multiplication is a structure on many number sets.
+      </li>
+      <li>
+        Division by non-zero elemenets is a structure on many number
+        sets. Note that we hvae to make sure to exclude zero, since
+        division by zero is undefined. Division is not a structure on
+        the natural numbers; like with subtraction, even though
+        <m>4</m> and <m>7</m> are natural numbers, <m>\frac{4}{7}</m>
+        is not a natural number
+      </li>
+      <li>
+        The four previous examples are all types of <em>binary
+        relation</em>. They are structure which take two elements from
+        the set and combine them together to produce something new
+        from the set. 
+      </li>
+      <li>
+        The dot product is a new binary operation, and a strange one,
+        since its output is a different kind of object. 
+        It take two vectors and produces a scalar. However, 
+      </li>
+      <li>
+        The cross product is a binary operation on vectors in
+        <m>\RR^3</m>. 
+      </li>
+      <li>
+        There are also structures which are not binary operations.
+        Less than and greater than are structures on many number sets. 
+      </li>
+      <li>
+        Absolute value is also a structure on many number sets. 
+      </li>
+    </ul>
+    <p>
+      This list is just the start of many, many kinds of algebraic
+      structure that we can consider on sets. If we think about linear
+      algebra abstractly, often what we are doing is building new
+      structures on sets of vectors and analyzing their properties.
+      The dot product and the cross product are the new structure
+      we've introduced in Week 2; there will be more to come. 
+    </p>
+    <p>
+      In the activity for this week, I'll ask you to think about the
+      abstract idea of sets with structure. 
+    </p>
+  </subsection>
+</section>
