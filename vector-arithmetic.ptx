@@ -30,7 +30,7 @@
     </p>
     <figure xml:id="figure-visualizing-vector-addition">
       <caption>Visualizing Vector Addition</caption>
-      <image width="85%" source="images/figure4"/>
+      <image width="90%" source="images/figure04"/>
     </figure>
     <definition>
       <statement>
@@ -61,7 +61,7 @@
     </p>
     <figure xml:id="figure-visualizing-scalar-multiplication">
       <caption>Visualizing Scalar Multiplication</caption>
-      <image width="85%" source="images/figure5"/>
+      <image width="90%" source="images/figure05"/>
     </figure>
     <p>
       Scalar multiplication also lets us define the difference between
@@ -152,7 +152,7 @@
     </p>
     <figure xml:id="figure-difference-and-length">
       <caption>Visualizing Distance Between Vectors</caption>
-      <image width="85%" source="images/figure6"/>
+      <image width="90%" source="images/figure06"/>
     </figure>
     <proposition>
       <statement>

@@ -14,4 +14,4 @@ draw((2,2)--(3,2),Arrow);
 
 label("$\begin{pmatrix} 2 \\ 2 \end{pmatrix}$",(1,1),SE);
 label("Local $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$",(3,2),S);
-label("Local $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$",(2,3),E);
+label("Local $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$",(2,3),E);
