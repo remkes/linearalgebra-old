@@ -100,14 +100,9 @@
     </p>
     <p>
       Now that we have a new operation, it is useful to see how it
-      interact with previously defined structures. The following list
-      shows some interactions between addition, scalar multiplication,
-      length and the dot product. Some of these are easy to establish
-      from the definition and some take more work. I've labeled some
-      of these as 'commutative' and 'distributative'. Recall that an
-      operation is commutative if the order can be reverse and
-      distributive (over addition) if it can be applied to both piece
-      of a sum seperately. 
+      interact with previously defined structures. We'll take up the
+      proofs of these in <xref ref="section-proofs-week2" /> and in the
+      activity for this week. 
     </p>
     <proposition>
       <statement>
@@ -115,12 +110,6 @@
           Let <m>u,v,w</m> be vectors in <m>\RR^n</m> and let <m>a</m>
           be a scalar in <m>\RR</m>.
           <md>
-            <mrow>
-            u + v \amp = v + u \amp \text{Commutative} 
-            </mrow>
-            <mrow>
-            a (u+v) \amp = au + av \amp \text{Distributive} 
-            </mrow>
             <mrow>
             u \cdot v \amp = v \cdot u \amp \text{Commutative} 
             </mrow>

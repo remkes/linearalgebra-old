@@ -1,9 +1,281 @@
 <section xml:id="section-proofs-week1">
   <title>Proofs - Vector Arithmetic</title>
-  <subsection xml:id="subsection-TBD">
-    <title>Subsection</title>
+  <subsection xml:id="subsection-properties-vector-arithmetic">
+    <title>Properties of Vector Arithmetic</title>
     <p>
-      TBD
+      In the themes of the course, I said that algebra was the study
+      of structures on sets. I'll talk in more detail about this them
+      in <xref ref="section-sets-with-structure" />, but we've already
+      seen our first important example.  In <xref
+      ref="section-vector-arithmetic" />, we introduced three
+      structures on <m>\RR^n</m>: vector addition, scalar
+      multiplication, and vector length. The abstract algebraic
+      question that mathematician ask at this point is: what are the
+      properties of these structures? How does vector addition
+      resemble normal addition (which is it named after) and how does
+      it differ? How does scalar multiplication resemble normal
+      multiplication (which is it named after) and how does it differ?
+      How does length differ from absolute value (which shares the
+      same notation?
+    </p>
+    <p>
+      These are abstract question, but they are also practically
+      useful. If we are in a situation where we need to use linear
+      algebra (of which there are many), we need to know how to
+      manipulate the objects. We have a whole collection of a habits
+      with addition and multiplication, but we can't assume that all
+      those habits immediately transfer to these new structure. We
+      have to prove that they do or, if they don't, we have to adjust
+      our habits. We'll see both cases happen in this course. In this
+      section, we'll mostly be proving that the properties of addition
+      and multiplication carry over to these new structures. Later in
+      the course, we'll have new structures which have properties that
+      are different from what we expect for conventional arithmetic. 
+    </p>
+    <p>
+      I'm going to go through three properties of scalar
+      multiplication and vector addition. Some properties of the
+      vector length operation are left for the activities. 
+    </p>
+  </subsection>
+  <subsection xml-id="subsection-commutativity">
+    <title>Commutativity</title>
+    <p>
+      Addition and multiplication of number are commutative binary
+      operations. This means that we can interchange the order: <m>4 +
+      5</m> is the same as <m>5 + 4</m> and <m>7 \times 2</m> is the
+      same as <m>2 \times 7</m>. We've defined a new addition and a
+      new multiplication, but we can't just assume that these new
+      structures are commutative. We have to check it. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Vector addition is commutative. That is, for any two vector
+          <m>u, v \in \RR^n</m>,
+          <me>
+            u + v = v + u 
+          </me>.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          When approaching a proof, it is often very useful to return
+          to the definition. Let me first work in <m>\RR^2</m> to
+          illustrate; I'll generalize to <m>\RR^n</m> afterwards. We
+          have two vectors <m>u,v \in \RR^n</m>. I'll write them as
+          components.
+          <md>
+            <mrow>
+              \amp u = \begin{pmatrix} u_1 \\ u_2 \end{pmatrix} 
+              \amp \amp v = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} 
+            </mrow>
+          </md>
+          Then I use the definition of vector addition. I'll start
+          with the left side of the equation and try to work towards
+          the right. 
+          <md>
+            <mrow>
+              u + v \amp = \begin{pmatrix} u_1 \\ u_2 \end{pmatrix} 
+              + \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} 
+            </mrow>
+            <mrow>
+              \amp = \begin{pmatrix} u_1 + v_1 \\ u_2 + v_2 
+              \end{pmatrix} 
+            </mrow>
+          </md>
+          That's the definition. Now each addition in the components
+          (<m>u_1 + v_1</m> and <m>u_2 + v_2</m>) is the addition of
+          ordinary numbers, so we can reverse the order of this
+          addition. 
+          <md>
+            <mrow>
+              \amp = \begin{pmatrix} v_1 + u_1 \\ v_2 + u_2 
+              \end{pmatrix} 
+            </mrow>
+          </md>
+          Then this is precisely the definition of the right side. 
+          <md>
+            <mrow>
+              \amp = v + u
+            </mrow>
+          </md>
+          We started on the left side of the desired equation and
+          ended up the with the right side, thus proving the identity.
+          This was for <m>\RR^2</m>, so I still need to do the general
+          case for <m>\RR^n</m>. Luckily for me, the steps are exactly
+          the same, just working with a vector with <m>n</m>
+          components. Here are the steps in the general case: first I
+          use the definition of <m>u + v</m>, then I switch the order
+          of the ordinary addition of numbers in each component, then
+          I use the definition of <m>v + u</m>.
+          <md>
+            <mrow>
+              u + v \amp = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
+              \end{pmatrix} + \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\
+              v_n \end{pmatrix} 
+            </mrow>
+            <mrow>
+              \amp = \begin{pmatrix} u_1 + v_2  \\ u_2 + v_2 \\ 
+              \vdots \\ u_n + v_n \end{pmatrix} 
+            </mrow>
+            <mrow>
+              \amp = \begin{pmatrix} v_1 + u_2  \\ v_2 + u_2 \\ 
+              \vdots \\ v_n + u_n \end{pmatrix} 
+            </mrow>
+            <mrow>
+              \amp = v + u
+            </mrow>
+          </md>
+          That is the proof for the general case, so we are done.
+        </p>
+      </proof>
+    </proposition>
+    <p>
+      I want to point out a couple of things about this proof. First,
+      it is general. I didn't try to prove by choosing specific
+      vectors and checking. We can't prove by examples. Now, often
+      working through some examples is extremely valuable. When
+      starting a proof, I'll often try some examples to get a sense of
+      what is going on. But, in the end, the argument needs to be
+      general and apply to all possible cases in the statement of the
+      proposition.
+    </p>
+    <p>
+      Second, I never started with <m>u + v = v + u</m>. I started
+      with the left side and worked my way to the right (though I
+      could have just as easily started from the right and worked my
+      way to the left). I should never assume what I want to prove, so
+      I should never write <m>u + v = v + u</m> until the end of the
+      proof, when it has been established. If I'm trying to
+      figure out how to do a proof, I'll often work backwards: I'll
+      start with the statement I want to get to, manipulate it and see
+      how the piece work. But when I write up the proof, I'm starting
+      with my goal, only finishing with it. 
+    </p>
+    <p>
+      This establishes commutativity of vector addition. What about
+      scalar multiplication? For real number, we know <m>ab = ba</m>.
+      However, scalar multiplication is something quite different. If
+      <m>a</m> is a scalar and <m>u</m> is a vector, then <m>au</m>
+      produces another vector. In defining scalar multiplication, we
+      wrote the scalar on the left and the vector on the right. Right
+      now, the expression <m>ua</m> doesn't even mean anything. We
+      could define it to mean the same thing, so that we could do
+      scalar multiplication on either side, but our convention is to
+      always write the scalar on the left and the vector on the right.
+      In this way, scalar multiplication isn't commutative because of
+      our choice of notation. 
+    </p>
+  </subsection>
+  <subsection xml-id="subsection-vector-arithmetic-associativity">
+    <title>Associativity</title>
+    <p>
+      Another property of addition and multiplication for number is
+      associativity. This property states that we can group a
+      three-fold addition or multiplication either way and the result
+      is the same. For addition, this is
+      <me>
+        a + (b + c) = (a + b) + c 
+      </me>.
+      For multiplication, this is similarly
+      <me>
+        a(bc) = (ab)c
+      </me>.
+      To be more explicit, consider the sum <m>6 + 4 + 9</m>. We can
+      add this in two ways. If we start with the left sum, we get
+      <m>10 + 9 = 19</m>. If we start with the right sum, we get <m>6
+      + 13 = 19</m>. Both ways produce <m>19</m>; associativity says
+      that this works for all sums of numbers. Associativity is a
+      property which we very rarely think about. It is naturally built
+      into how number work and, when doing arithmetic, we use it
+      implicitly and subconsciously all the time. However, it is a
+      property we have to worry about for new operations. There are
+      (strangely enough!) non-associative operations in mathematics. 
+    </p>
+    <p>
+      Happily, both vector addition and scalar multiplication are
+      associative. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          If <m>u,v,w \in \RR^n</m> are vectors, then 
+          <me>
+            (u + v) + w = u + (v + w) 
+          </me>
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      The proof is nearly identify to the proof of commutativity. We
+      write the vectors with components and then use the associativity
+      of ordinary addition in each component. I'll not write the proof
+      formally. 
+    </p>
+    <p>
+      For scalar multiplication, since there are vectors and scalars
+      involved, we have to be careful how we even state associativity. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          If <m>u\in \RR^n</m> and <m>a,b, \in \RR</m>  then 
+          <me>
+            a(bu) = (ab)u
+          </me>
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      This is the only statement of associativity that makes sense. We
+      can't have multiple vectors, but we can do successive scalar
+      multiplication by different scalars. The property here says that
+      we can do two scalar multiplications with the vector u, or we
+      can first multiple the scalars normally then do one scalar
+      mulitplication. The proof is also like the proof for
+      commutativity: we write everything in components and use the
+      associativity of ordinary multiplication. 
+    </p>
+  </subsection>
+  <subsection xml-id="subsection-vector-arithmetic-distribution">
+    <title>Distribution</title>
+      <p>
+        For number, multiplication distributes over addition. 
+        <me>
+          a(b + c) = ab + ac 
+        </me>
+        For vector addition and scalar multiplication, distribution
+        still works. There are two versions of the distributive law
+        here. 
+      </p>
+    <proposition>
+      <statement>
+        <p>
+          If <m>u,\in \RR^n</m> and <m>a,b \in \RR</m>, then 
+          <me>
+            (a + b)u = au + bu 
+          </me>.
+        </p>
+      </statement>
+    </proposition>
+    <proposition>
+      <statement>
+        <p>
+          If <m>u,v \in \RR^n</m>  and <m>a \in \RR</m>, then
+          <me>
+            a(u + v) = au + av 
+          </me>
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      In the first version, the addition is happening with the
+      scalars. In the second, the addition is happening with the
+      vectors. Since these are different kinds of addition, two
+      different statements are required. The proofs are again like the
+      commutativity proofs: write everything in components and use the
+      distributive rules for ordinary numbers in each component. 
     </p>
   </subsection>
 </section>

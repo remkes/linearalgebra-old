@@ -620,7 +620,7 @@
     <activity>
       <statement>
         <p>
-          Prove that the zero vector is the \emph{only} vector in 
+          Prove that the zero vector is the <em>only</em> vector in 
           <m>\RR^n</m> of length zero. (To prove that it is the only
           vector with this property, assume that <m>u \in \RR^n</m> is
           a vector length zero and prove that <m>u</m> must be the
