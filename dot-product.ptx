@@ -134,6 +134,10 @@
       of vectors. The visualization of the vector relationships of
       the cosine law is shown in <xref ref="figure-the-cosine-law" />.
     </p>
+    <figure xml:id="figure-the-cosine-law">
+      <caption>The Cosine Law</caption>
+      <image width="90%" source="images/figure07" />
+    </figure>
     <proposition>
       <title>The Cosine Law</title>
       <statement>
@@ -145,10 +149,43 @@
           </me>
         </p>
       </statement>
+      <proof>
+        <p>
+          To prove the cosine law using vector, I'm going to interpret the
+          left side, <m>|u-v|^2</m>, as <m>(u-v) \cdot (u-v)</m>, using
+          one of the properties of the dot product. Then I can go through
+          some algebraic manipulation with the dot product. First, I'll
+          distribute the dot product.
+           <me>
+            |u-v|^2 = (u-v) \cdot (u-v) = u \cdot u - v \cdot u - u \cdot
+            v + v \cdot v
+          </me>
+          Then I can interchange the order of the second term, since the
+          dot product is commutative.
+          <me>
+            |u-v|^2 = u \cdot u - u \cdot v - u \cdot v + v \cdot v
+          </me>
+          Then I can group the middle terms.
+          <me>
+            |u-v|^2 = u \cdot u - 2u \cdot v + v \cdot v
+          </me>
+          Then I can interpret the first and last terms as length squared. 
+          <me>
+            |u-v|^2 = |u|^2 - 2u \cdot v + |v|^2 
+          </me>
+          Then I can reorder the term.s
+          <me>
+            |u-v|^2 = |u|^2 + |v|^2 - 2u \cdot v 
+          </me>
+          Finally, using the definition of angle, I can replace the dot
+          product witt <m>|u||v| \cos \theta</m>, where <m>\theta</m> is
+          the angle between the two vectors. 
+          <me>
+            |u-v|^2 = |u|^2 + |v|^2 - 2|u||v| \cos \theta
+          </me>
+          This is the cosine law.
+        </p>
+      </proof>
     </proposition>
-    <figure xml:id="figure-the-cosine-law">
-      <caption>The Cosine Law</caption>
-      <image width="85%" source="images/figure7" />
-    </figure>
   </subsection>
 </section>

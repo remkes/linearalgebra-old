@@ -177,46 +177,4 @@
       involve cross products in the vectors describing the fluid.
     </p>
   </subsection>
-  <subsection xml:id="subsection-local-direction-vectors">
-    <title>Local Direction Vectors</title>
-    <p>
-      We've already spoken about the distinction between elements of
-      <m>\RR^n</m> as points and vectors. There is another important
-      subtlety that shows up all throughout vector geometry. In
-      addition to thinking of vectors as directions starting at the
-      origin, we can think of them as directions starting anywhere in
-      <m>\RR^n</m>. We call these local direction vectors.
-    </p>
-    <figure xml:id="figure-local-direction-vectors">
-      <caption>Local Direction Vectors</caption>
-      <image width="85%" source="images/figure8" />
-    </figure>
-    <p>
-      For example, as pictured in <xref
-      ref="figure-local-direction-vectors" />, at the point
-      <m>\begin{pmatrix} 2 \\ 3 \end{pmatrix} \in \RR^2</m>, we could
-      think of the local directions <m>\begin{pmatrix} 1 \\ 0
-      \end{pmatrix}</m> or <m>\begin{pmatrix} 0 \\ 1
-      \end{pmatrix}</m>. These are not directions starting from the
-      origin, but starting from <m>\begin{pmatrix} 2 \\ 2
-      \end{pmatrix}</m> <em>as if that were the origin</em>.
-    </p>
-    <p>
-      Using vectors to define local directions is a particularly
-      useful tool. A standard example is camera location in a three
-      dimensional virtual environment. First, you need to know the
-      location of the camera, which is an ordinary vector starting
-      from the origin. Second, you need to know what direction the
-      camera is pointing, which is a local direction vector which
-      treats the camera location as the current origin.
-    </p>
-    <p>
-      One of the most difficult things about learning vector geometry
-      is becoming accustomed to local direction vectors. We don't
-      always carefully distinguish between vectors at the origin and
-      local direction vectors; often, the difference is implied and it
-      is up to the reader/student to figure out how the vectors are
-      being used.
-    </p>
-  </subsection>
 </section>

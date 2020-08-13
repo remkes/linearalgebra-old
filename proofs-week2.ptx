@@ -143,26 +143,34 @@
               + \ldots + u_n(v_n + w_n)
             </mrow>
           </md>
-          Then teach of these products with fraction can be
+          Then each of these products with fraction can be
           distributed, since this is all arithmetic or ordinary real
           numbers.
-          <me>
-            u \cdot (v + w) = (u_1v_1 + u_1w_1) + (u_2v_2 + u_2w_2) +
-            (u_3v_3 + u_3w_3) + \ldots + (u_nv_n + u_nw_n)
-          </me>
+          <md>
+            <mrow>
+              u \cdot (v + w) \amp = (u_1v_1 + u_1w_1) + (u_2v_2 + u_2w_2) 
+            </mrow>
+            <mrow>
+              \amp + (u_3v_3 + u_3w_3) + \ldots + (u_nv_n + u_nw_n)
+            </mrow>
+          </md>
           Then the right side is the sum of many products. I can
           rearrange this sum as I please, so I'll put all the terms
           with <m>v_i</m> first, then all those with <m>w_i</m>
           afterwards.
-          <me>
-            u \cdot (v + w) 
-            = (u_1v_1 + u_2v_2 + u_3v_3 + \ldots + u_nv_n)
-            + (u_1w_1 + u_2w_2 + u_3w_3 + \ldots + u_nw_n)
-          </me>
+          <md>
+            <mrow>
+              u \cdot (v + w) \amp = (u_1v_1 + u_2v_2 + u_3v_3 +
+              \ldots + u_nv_n)
+            </mrow>
+            <mrow>
+              \amp + (u_1w_1 + u_2w_2 + u_3w_3 + \ldots + u_nw_n)
+            </mrow>
+          </md>
           Then I can use the definition of the dot product again. On
           the right side, the term in the first bracket is, by
           definition, <m>u \cdot v</m>. The term in the second brack
-          it, again by definition, <m>u \dcot w</m>.
+          it, again by definition, <m>u \cdot w</m>.
           <me>
             u \cdot (v + w) = u \cdot v + u \cdot w
           </me>
@@ -194,7 +202,7 @@
           </md>
           Then I want to consider this sum:
           <me>
-            au_1v_2 + au_2v_2 + au_3v_3 + \ldots au_nv_n
+            au_1v_1 + au_2v_2 + au_3v_3 + \ldots au_nv_n
           </me>
           I'm going to organize this sum in three difference ways,
           which will correspond to the three desire version in the
@@ -207,7 +215,7 @@
         <p>
           First, I'll factor the <m>a</m> out of the entire sum.
           <me>
-            a(u_1v_2 + u_2v_2 + u_3v_3 + \ldots u _nv_n \right)
+            a(u_1v_2 + u_2v_2 + u_3v_3 + \ldots u _nv_n)
           </me>
           What is in bracket is the definition of the dot product, so
           this is <m>a (u \cdot v)</m>. Next I'll bracket the <m>a</m>
