@@ -30,7 +30,35 @@
     </p>
     <figure xml:id="figure-visualizing-vector-addition">
       <caption>Visualizing Vector Addition</caption>
-      <image width="90%" source="images/figure04"/>
+      <image xml:id="figure04" width="90%">
+        <asymptote>
+          size(10cm);
+          import graph;
+          usepackage("amsmath");
+
+          xlimits(0,5);
+          ylimits(0,5);
+
+          xaxis("$x$",Ticks("%"));
+          yaxis("$y$",Ticks("%"));
+
+          draw((0,0)--(1,3),Arrow); 
+          draw((1,3)--(4,4),Arrow); 
+          draw((0,0)--(4,4),Arrow);
+          draw((0,0)--(3,1),Arrow);
+          draw((3,1)--(4,4),Arrow);
+
+          label("$u = \begin{pmatrix} 1 \\ 3
+            \end{pmatrix}$",(0.8,2.4),E);
+          label("$v = \begin{pmatrix} 3 \\ 1
+            \end{pmatrix}$",(2,3.5),N);
+          label("$u = \begin{pmatrix} 1 \\ 3
+            \end{pmatrix}$",(3.5,2.5),E);
+          label("$v = \begin{pmatrix} 3 \\ 1
+            \end{pmatrix}$",(1.5,0.7),SE);
+          label("$u+v$",(2,2),SE);
+        </asymptote>
+      </image>
     </figure>
     <definition>
       <statement>
@@ -61,7 +89,33 @@
     </p>
     <figure xml:id="figure-visualizing-scalar-multiplication">
       <caption>Visualizing Scalar Multiplication</caption>
-      <image width="90%" source="images/figure05"/>
+      <image xml:id="figure05" width="90%">
+        <asymptote>
+          size(10cm);
+          import graph;
+          usepackage("amsmath");
+
+          xaxis("$x$",Ticks("%"));
+          yaxis("$y$",Ticks("%"));
+
+          draw((0,0)--(1,2),Arrow); 
+          draw((0,0)--(2,4),Arrow); 
+          draw((0,0)--(0.24,0.5),Arrow); 
+          draw((0,0)--(-1,-2),Arrow); 
+          draw((0,0)--(-2,-4),Arrow); 
+
+          label("$u = \begin{pmatrix} 1 \\ 2
+            \end{pmatrix}$",(1.1,2),E);
+          label("$2u = \begin{pmatrix} 2 \\ 4
+            \end{pmatrix}$",(2,4),E);
+          label("$\frac{1}{4} u = \begin{pmatrix} \dfrac{1}{4} \\[1em]
+            \dfrac{1}{2} \end{pmatrix}$",(-0.2,0.2),NW);
+          label("$-u = \begin{pmatrix} -1 \\ 2
+            \end{pmatrix}$",(-1,-2),W);
+          label("$-2u = \begin{pmatrix} -2 \\ 4
+            \end{pmatrix}$",(-2,-4),W);
+        </asymptote>
+      </image>
     </figure>
     <p>
       Scalar multiplication also lets us define the difference between
@@ -152,7 +206,32 @@
     </p>
     <figure xml:id="figure-difference-and-length">
       <caption>Visualizing Distance Between Vectors</caption>
-      <image width="90%" source="images/figure06"/>
+      <image xml:id="figure06" width="90%"> 
+        <asymptote>
+          size(10cm);
+          import graph;
+          usepackage("amsmath");
+
+          xlimits(0,5);
+          ylimits(0,5);
+
+          xaxis("$x$",Ticks("%"));
+          yaxis("$y$",Ticks("%"));
+
+          draw((0,0)--(1,4),Arrow); 
+          draw((0,0)--(4,2),Arrow); 
+          draw((1,4)--(4,2),Arrow); 
+
+          label("$u = \begin{pmatrix} 1 \\ 4
+            \end{pmatrix}$",(0.5,2),E);
+          label("$v = \begin{pmatrix} 4 \\ 2
+            \end{pmatrix}$",(2,0.8),S);
+          label("$|v-u| = \sqrt{3^2 + (-2)^2} =
+            \sqrt{13}$",(1.8,3.6),E);
+          label("$v-u = \begin{pmatrix} 3 \\ -2
+            \end{pmatrix}$",(3,2.9),E);
+        </asymptote>
+      </image>
     </figure>
     <proposition>
       <statement>

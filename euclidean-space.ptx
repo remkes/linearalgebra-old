@@ -6,7 +6,7 @@
       <statement>
         <p>
           In linear algebra, ordinary numbers (intergers, rational
-          numbers or real numbers) are called <term>scalars</term>
+          numbers or real numbers) are called <term>scalars</term>.
         </p>
       </statement>
     </definition>
@@ -17,12 +17,12 @@
           Vectors can be written either as columns or rows. If a
           vector is a list of the numbers <m>4</m>, <m>15</m>,
           <m>\pi</m> and <m>-e</m> (in that order), we write the
-          vector in one of two ways.
+          vector in one of two ways:
           <md>
            <mrow>
              \amp \begin{pmatrix} 4 \\ 15 \\ \pi \\ -e \end{pmatrix} 
              \amp \text{or} \amp \amp (4, 15, \pi, -e) \amp
-            </mrow>
+            </mrow>.
           </md>
         </p>
       </statement>
@@ -36,8 +36,8 @@
           Let <m>n</m> be a positive integer. <term>Real Euclidean
           Space</term> or <term>Cartesian Space</term>, written
           <m>\RR^n</m>, is the set of all vectors of length <m>n</m>
-          with real number entries. An arbitrary element of
-          <m>\RR^n</m> is written as a column.
+          with real number entries. In this course, elements of
+          <m>\RR^n</m> are written as a column.
           <me>
             \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
           </me>
@@ -57,7 +57,7 @@
           <m>x_1</m> is the first coordinate, <m>x_2</m> is the second
           coordinate, and so on. For <m>\RR^2</m>, <m>\RR^3</m> and
           <m>\RR^4</m>, we use the letters <m>w,x,y,z</m> instead of
-          <m>x_i</m>
+          <m>x_i</m>.
           <md>
             <mrow>
               \begin{pmatrix} x \\ y \end{pmatrix} \amp \in \RR^2 \amp
@@ -74,8 +74,8 @@
         <p>
           In any <m>\RR^n</m>, the <term>origin</term> is the unique
           point given by a vector of zeros. It is also called the
-          zero vector. It is considered the centre point of Cartesian
-          space.
+          <term>zero vector</term>. It is considered the centre point
+          of Euclidean space.
           <me>
             \begin{pmatrix} 0 \\ 0 \\ \vdots \\ 0 \end{pmatrix}
           </me>
@@ -83,9 +83,9 @@
       </statement>
     </definition>
     <p>
-      Cartesian space, particularly the Cartesian plane, is a familiar
+      Euclidean space, particularly the plane, is a familiar
       object from high-school mathematics. We usually visualize
-      Cartesian space by drawing axes, one in each independent
+      Euclidean space by drawing axes, one in each independent
       perpendicular direction. In this visualization, the vector
       <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> corresponds to the
       unique point we get moving <m>a</m> units in the direction of
@@ -94,8 +94,31 @@
       /> shows the location of several points in <m>\RR^2</m>.
     </p>
     <figure xml:id="figure-points-in-the-cartesian-plane">
-      <caption>Points in the Cartesian Plane <m>\RR^2</m></caption>
-      <image width="90%" source="images/figure01"/>
+      <caption>Points in <m>\RR^2</m></caption>
+      <image xml:id="figure01" width="90%">
+        <asymptote>
+          size(10cm);
+          import graph;
+          usepackage("amsmath");
+
+          xlimits(-8,8);
+          ylimits(-8,8);
+
+          xaxis("$x$",Ticks("%"));
+          yaxis("$y$",Ticks("%"));
+
+          dot((3,6));
+          dot((0,0));
+          dot((4,-4));
+          dot((-5,-2));
+          dot((-7,7));
+          label("$\begin{pmatrix} 3 \\ 6 \end{pmatrix}$",(3,6),E);
+          label("$\begin{pmatrix} 0 \\ 0 \end{pmatrix}$",(0.4,0.4),NE);
+          label("$\begin{pmatrix} 4 \\ -4 \end{pmatrix}$",(4,-4),E);
+          label("$\begin{pmatrix} -5 \\ -2 \end{pmatrix}$",(-5,-2),E);
+          label("$\begin{pmatrix} -7 \\ 7 \end{pmatrix}$",(-7,7),E);
+        </asymptote>
+      </image>
     </figure>
     <p>
       As with <m>\RR^2</m>, the point <m> \begin{pmatrix} a \\ b \\ c
@@ -108,12 +131,29 @@
       direction upwards. For <m>\RR^3</m>, the <m>x</m> and <m>y</m>
       axes form a flat plane and the <m>z</m> axis extend vertically
       from that plan, as shown in <xref
-      ref="figure-points-in-cartesian-three-space" />. Notice, in
+      ref="figure-points-in-three-space" />. Notice, in
       both cases, we needed to choose directions for the axes.
     </p>
-    <figure xml:id="figure-points-in-cartesian-three-space">
-      <caption>Points in Cartesian three-space <m>\RR^3</m></caption>
-      <image width="90%" source="images/figure02"/>
+    <figure xml:id="figure-points-in-three-space">
+      <caption>Points in <m>\RR^3</m></caption>
+      <image xml:id="figure02" width="90%">
+        <asymptote> 
+          import graph3;
+          size(200,200,keepAspect=false);
+          usepackage("amsmath");
+          currentprojection=orthographic(1,1,1);
+          limits((-5,-5,-5),(5,5,5));
+          xaxis3("$x$", OutTicks());
+          yaxis3("$y$", OutTicks());
+          zaxis3("$z$", OutTicks());
+          dot(Label("$\begin{pmatrix} 1 \\ 3 \\ 2
+            \end{pmatrix}$",align=Y), (1,3,2));
+          dot(Label("$\begin{pmatrix} -2 \\ -4 \\ 1
+            \end{pmatrix}$",align=X), (-2,-4,1));
+          dot(Label("$\begin{pmatrix} 1 \\ -1 \\ -3
+            \end{pmatrix}$",align=X), (1,-1,-3));
+        </asymptote>
+      </image>
     </figure>
     <definition>
       <statement>
@@ -158,7 +198,33 @@
     </p>
     <figure xml:id="figure-points-and-directions">
       <caption>Vectors as Points and Directions</caption>
-      <image width="85%" source="images/figure03"/>
+      <image xml:id="figure03" width="90%"> 
+        <asymptote>
+          size(10cm);
+          import graph;
+          usepackage("amsmath");
+          
+          xlimits(0,5);
+          ylimits(0,5);
+
+          xaxis("$x$",Ticks("%"));
+          yaxis("$y$",Ticks("%"));
+
+          dot((1,4));
+          draw((0,0)--(1,4),Arrow); 
+          label("Point: $\begin{pmatrix} 1 \\ 4
+            \end{pmatrix}$",(1,4),NE);
+          label("Vector: $\begin{pmatrix} 1 \\ 4
+            \end{pmatrix}$",(0.8,2.5),E);
+
+          dot((4,2));
+          draw((0,0)--(4,2),Arrow); 
+          label("Point: $\begin{pmatrix} 4 \\ 2
+            \end{pmatrix}$",(4,2),N);
+          label("Vector: $\begin{pmatrix} 4 \\ 2
+            \end{pmatrix}$",(2,1),SE);
+        </asymptote>
+      </image>
     </figure>
   </subsection>
   <subsection xml:id="subsection-local-direction-vectors">
@@ -173,7 +239,29 @@
     </p>
     <figure xml:id="figure-local-direction-vectors">
       <caption>Local Direction Vectors</caption>
-      <image width="90%" source="images/figure08" />
+      <image xml:id="figure08" width="90%">
+        <asymptote>
+          size(10cm);
+          import graph;
+          usepackage("amsmath");
+
+          xlimits(0,4);
+          ylimits(0,4);
+
+          xaxis("$x$",Ticks("%"));
+          yaxis("$y$",Ticks("%"));
+
+          draw((0,0)--(2,2),Arrow); 
+          draw((2,2)--(2,3),Arrow); 
+          draw((2,2)--(3,2),Arrow); 
+
+          label("$\begin{pmatrix} 2 \\ 2 \end{pmatrix}$",(1,1),SE);
+          label("Local $\begin{pmatrix} 1 \\ 0
+            \end{pmatrix}$",(3,2),S);
+          label("Local $\begin{pmatrix} 0 \\ 1
+            \end{pmatrix}$",(2,3),E);
+        </asymptote>
+      </image>
     </figure>
     <p>
       For example, as pictured in <xref
