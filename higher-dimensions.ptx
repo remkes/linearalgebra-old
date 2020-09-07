@@ -3,11 +3,10 @@
   <subsection xml:id="subsection-higher-dimensions">
     <title>New Environments</title>
     <p>
-      In the definitions in the previous section, euclidean space was
-      defined in any dimension we want. In addition to the
-      conventional and known two and three dimensional spaces, by
-      writing a vector with many components, we can consider any
-      dimension we want. This is a strange and new thing. Conventional
+      In the definitions in the previous section, Euclidean space was
+      defined in any dimension we want. If we want to work in seven
+      dimensions, we simply need to write vectors with sevean
+      components.  This is a strange and new thing. Conventional
       geometry deals with this we can draw and see, which are things
       that necessarily exist in two or three dimensions. Higher
       dimensions are something new and bizzare.
@@ -19,16 +18,16 @@
       dimensional spaces. 
     </p>
     <p>
-      In some context, particularly physics after general
+      In some contexts, particularly physics after general
       relativility, the fourth dimension is often treated as time.
       That's not the approach in this course. We're interested in
-      treating all these higher dimensions as geometry. We want to
-      imagine objects, path, intersections, and many other geometric
-      ideas in these higher dimensions. In the applications of linear
-      algebra, higher dimensions can be given a huge variety of
-      interpretation, including treating one dimension as time. Those
-      applications come afterwards. In linear algebra, we treat all
-      dimensions geometrically. 
+      treating all these higher dimensions as environments for
+      geometry. We want to imagine objects, paths, intersections, and
+      many other geometric ideas in these higher dimensions. In the
+      applications of linear algebra, higher dimensions can be given a
+      huge variety of interpretation, including treating one dimension
+      as time. Those applications come afterwards. In linear algebra,
+      we treat all dimensions geometrically. 
     </p>
   </subsection>
   <subsection xml:id="subsection-spheres">
@@ -38,7 +37,7 @@
       origin form the unit circle. In three dimensional space, all
       points that are exactly one unit from the origin form the
       unit sphere. Following this logic, we can construct
-      <qt>spheres</qt> in higher dimensions. In any <m>\RR^n</m>, all
+      <sq>spheres</sq> in higher dimensions. In any <m>\RR^n</m>, all
       objects which are exactly one unit from the origin form the
       sphere in that dimension. 
     </p>
@@ -93,7 +92,7 @@
       what these spheres look like.
     </p>
     <p>
-      Getting this intuitive sense is really fundamentally difficult.
+      Getting this intuitive sense is fundamentally difficult.
       It is worth repeating that the major challenge of higher
       dimensions geometry is the fact that we can't see it, since we
       are so used to seeing our geometry. However, there are still
@@ -105,9 +104,9 @@
       horizontally, each cross section is a circle. The cross section
       at the widest point is a unit circle, and as we move up or down,
       the cross-sections are smaller and smaller circles. We can think
-      of the sphere as an object whose slices are all circle (though
+      of the sphere as an object whose slices are all circles (though
       it is not the unique object with that property). We could also
-      think of the sphere as an infinite stack if infinitly think
+      think of the sphere as an infinite stack if infinitly thin
       circles, starting with small circles, growing to the equator and
       the unit circles, and then shrinking again as we move up the
       sphere.
@@ -121,7 +120,7 @@
       <m>3</m>-sphere. It is an object whose slices are spheres and
       can be thought of as infinitely many spheres stacked up. This is
       still strange: the stacking happens in a new direction, so that
-      all point on <qt>adjacemt</qt> sphere are right next to each
+      all point on <qt>adjacent</qt> sphere are right next to each
       other, just like the circles stack up to make the ordinary
       sphere are right next to each other. But maybe this helps us
       think a bit about what kind of object the <m>3</m>-sphere is. 
@@ -176,7 +175,7 @@
       this a bit more clear, in <xref ref="figure-cube" />, I've drawn
       the two original squares in black and the four connecting lines
       in red. I could also describe the cube (including its interior)
-      as all point where the coordinate satisfyt <m>x \in [0,1]</m>,
+      as all point where the coordinate satisfy <m>x \in [0,1]</m>,
       <m>y \in [0,1]</m> and <m>z \in [0,1]</m>. 
     </p>
     <figure xml:id="figure-cube">
@@ -267,7 +266,7 @@
       </image>
     </figure>
     <p>
-      There is an <m>n</m>-cube in each <m>\RR^n</m>, consisting
+      There is an cube in each <m>\RR^n</m>, consisting
       of all vectors where all components are in the interval
       <m>[0,1]</m>. Each can be constructed by joining two
       copies of a lower dimensional <m>(n-1)</m>-cube with edges
@@ -287,8 +286,8 @@
       In addition to the cubes, I want to introduce another kind of
       higher dimensional polytope, called the cross-polytope. It
       generalizes the idea of a diamond shape in two and three
-      dimensions. It lets me show another way of trying to get a sense
-      of what higher dimensional object look like. 
+      dimensions. It also lets me show another way of trying to get a
+      sense of what higher dimensional object look like. 
     </p>
     <p>
       In <m>\RR^2</m>, the cross-polytope is the diamond with
@@ -359,8 +358,8 @@
     <p>
       We can continue to build cross-polytopes in higher dimensions
       using this process: adding vertices on either side and
-      connection the new vertices to all previous vertices (but not to
-      each other). If we choose the new vertices as point in the new
+      connecting the new vertices to all previous vertices (but not to
+      each other). If we choose the new vertices as points in the new
       axis direction, then all the vertices of the
       <m>n</m>-cross-polytope are vertces with <m>\pm 1</m> in one
       component and zero in all other components. Each vertex is
@@ -395,7 +394,7 @@
       The octahedron is the 3-cross polytope. We tried to draw a 3D
       image in perspective earlier. However, if I don't try to get a
       3D perspective and just draw the vertices and edges, I get the
-      vertex diagram. Like the diamond, all edges except for those
+      vertex diagram. Like the diamond, all vertices except for those
       directly opposite are connected. 
       <figure xml:id="figure-3-cross-vertex">
         <caption>The 3-Cross-Polytope (Octaheron) Vertex Diagram</caption>
@@ -538,7 +537,7 @@
       </figure>
       We can go as far as we want in this way. Each time we go up a
       dimension, we add two vertices. The 8-cross-polytope (in
-      <m>\RR^8</m> has <m>16</m> vertices connected this way.
+      <m>\RR^8</m>) has <m>16</m> vertices connected this way.
       <figure xml:id="figure-8-cross-vertex">
         <caption>The 8-Cross-Polytope Vertex Diagram</caption>
         <image xml:id="figure20" width="90%">
@@ -1201,10 +1200,10 @@
         </image>
       </figure>
       These images are obviously not full pictures of these higher
-      dimensional object, but there are some kind of 2D shadows of
-      them which give us some information and intuition for the
+      dimensional object, but just some kind of 2D shadows
+      which give us some information and intuition for the
       obejcts. Everything in higher dimensions must be done
-      indirectly, but working indirectly, we can produce some useful
+      indirectly but, working indirectly, we can produce some useful
       and interesting visualizations that let us start to understand
       the objects. 
     </p>

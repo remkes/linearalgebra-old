@@ -1,150 +1,151 @@
 <section xml:id="section-themes">
   <title>Themes of the Course</title>
-  <subsection xml:id="subsection-algebra-theme">
-    <title>Algebra</title>
-    <p>
-      Linear <em>algebra</em> is, as expected, an algebra course. (It
-      is the only strictly algebra course taught at King's, though
-      elsewhere, it would be the first of a sequence of algebra
-      courses.)
-    </p>
-    <p>
-      The word <sq>algebra</sq> does not mean the same thing in
-      university mathematics as it did in high-school mathematics.
-      Previously, the world <sq>algebra</sq> usually signaled the use
-      of variables: <m>3+5 = 8</m> is arithmetic, but <m>3 + x = 8
-      \implies x = 5</m> is algebra. From that point, algebra became
-      the manipulation of equations (and inequalities) with variables,
-      particularly focusing on solving polynomials and rational
-      functions.
-    </p>
-    <p>
-      In academic mathematics, algebra has a much broader and deeper
-      sense. It is a whole branch of mathematics, with many
-      subdisciplines: linear algebra, abstract algebra, homological
-      algebra, etc. One of the goals of this course will be to build
-      as sense of what we mean by the term <sq>algebra</sq>. I'll
-      give a definition right now, at the start, but it's a difficult
-      definition to understand; hopefully the course will provide the
-      necessary elaboration.
-    </p>
-    <definition>
-      <statement>
-        <p>
-          <term>Algebra</term> is the study of sets with structure.
-          It investigates possible structures on sets, the rules
-          obeyed by those structures, and the interaction of various
-          structures. (This definition is a little vague, since not
-          all structures on sets are <term>algebraic</term>
-          structures, but it will suit our purposes for this course.)
-        </p>
-      </statement>
-    </definition>
-  </subsection>
-  <subsection xml:id="subsection-abstraction-theme">
-    <title>Abstraction</title>
-    <p>
-      The definition of algebra just stated is an immensely abstract
-      definition. I haven't specified what sets or what structures
-      I'm talking about. (I could say that we are looking at
-      <em>algebraic structures</em>, but that doesn't actually add any
-      insight; it just delays the question.) The definition is very
-      broad, applies to a huge variety of sets and structures.
-      Abstraction is built into the very nature of algebra.
-    </p>
-    <p>
-      In the calculus courses, I often motivate the material by its
-      applications. (The two most often used motivations are the
-      Newtonian physics and percentage growth in ecology or finance.)
-      In this sense, I'm treating the calculus as applied mathematics:
-      mathematics driven by and designed for the solving of certain
-      extra-mathematical problems. This is a reasonable approach for
-      calculus, both for historical and pedagogical reasons.
-    </p>
-    <p>
-      In this course, there will be points where I emphasize the
-      practical applications of linear algebra, of which there are
-      many. However, my primary motivation for the course will be
-      intrinsic and abstract: I want to study sets and their structure
-      simply for the mathematical joy of it. This is the one course
-      at King's which is most suited to presenting the goals and ideas
-      of abstract mathematics, in and of themselves.
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-geometry-theme">
-    <title>Geometry</title>
-    <p>
-      Though the subjet is called <sq>algebra</sq>, linear algebra is
-      a very geometric discpline. Given my background as a geometer,
-      my approach to the course will be heavily geometric. We will
-      start with vectors, which is a geometric discpline, though it
-      has rich algebraic structre. Throughout the course, we will
-      play the geometry and algebra against each other and use each to
-      understand the other better. This interplay drives the
-      discpline. In many ways, this will be a geomety course hiding
-      under the title of an algebra course.
-    </p>
-    <p>
-      In addition, we will not restrict ourselves for conventional two
-      and three dimensional geometry. The definitions of this course
-      are very general, so we will try to do geometry in any (finite)
-      dimension. A major challenge of the course is going from
-      familiar, visible three dimensions to un-visualizable higher
-      dimensional geometry.
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-flatness-theme">
-    <title>Flatness</title>
-    <p>
-      While a geometry course, the geometry we are considering will be
-      very restricted. The <sq>linear</sq> in linear algebra refers
-      to lines, so we will start with the geometry of lines. However,
-      the important property of a line, in our context, is the fact
-      that it is straight: it doesn't curve. Linear algebra is the
-      geomtery of flat things.
-    </p>
-    <p>
-      Therefore, curved, bent and broken objects are off limits. We
-      will investigate the geometry of flat objects: points, lines,
-      planes and higher dimensional analogue. A great advantage of
-      this restriction is the fact that flat things are very
-      accessable. The geometry of curved objects is an immensely
-      complicated and difficult subject. By restricting to flat
-      objects, we can produce a wide range of accessible mathematical
-      results.
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-symmetry-theme">
-    <title>Symmetry</title>
-    <p>
-      Other than flatness, our other major geometric theme is
-      symmetry. Many of the definitions and propositions produced in
-      this course can be stated in terms of some kind of symmetry.
-      Speaking broadly, I want to thing of symmetry as preservation:
-      the symmetry of a shape is some kind of operation which keeps
-      the shape intact, preserves it. Throughout linear algebra, we
-      will be talking about the preservation of various kinds of
-      shapes and flat objects.
-    </p>
-    <p>
-      With the interplay between algebra and geometry mentioned above,
-      we will also translate this idea of symmetry back to algebra to
-      give a understanding of algebraic symmetry.
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-proof-theme">
-    <title>Proof</title>
-    <p>
-      Proofs are another major difference between the grade-school
-      understanding of algebra and the academic sense of the word.
-      Algebra is originally introduced to solve problems involving
-      unknown quantities, usually by solving equations. Algebra is a
-      problem-solving technique. In academic mathematics, we are
-      usually more concerned with conjectures about mathematical
-      objects and the proofs of those conjecture. In this course,
-      we'll introduce the idea of conjectures, propositions, theorems
-      and proofs. We'll do a small amount of proving on the
-      assignments to build a flavour for proof-based mathematics.
-    </p>
-  </subsection>
+  <dl>
+    <li>
+      <title>Algebra</title>
+      <p>
+        Linear <em>algebra</em> is, as expected, an algebra course. (It
+        is the only strictly algebra course taught at King's, though
+        in a school with a larger mathematics program, it would be the
+        first of a sequence of algebra courses.)
+     </p>
+      <p>
+        The word <sq>algebra</sq> does not mean the same thing in
+        university mathematics as it did in high-school mathematics.
+        Previously, the world <sq>algebra</sq> usually signaled the use
+        of variables: <m>3+5 = 8</m> is arithmetic, but <m>3 + x = 8
+        \implies x = 5</m> is algebra. From that point, algebra became
+        the manipulation of equations (and inequalities) with variables,
+        particularly focusing on solving polynomials and rational
+        functions.
+      </p>
+      <p>
+        In academic mathematics, algebra has a much broader and deeper
+        sense. It is a whole branch of mathematics, with many
+        subdisciplines: linear algebra, abstract algebra, homological
+        algebra, etc. To build a concept of what we mean by the term
+        <sq>algebra</sq> is a central goal of the course. I'll
+        give a definition right now, at the start, but it's a difficult
+        definition to understand; hopefully the course will provide the
+        necessary elaboration.
+      </p>
+      <definition>
+        <statement>
+          <p>
+            <term>Algebra</term> is the study of sets with structure.
+            It investigates possible structures on sets, the rules
+            obeyed by those structures, and the interaction of various
+            structures. (This definition is a little vague, since not
+            all structures on sets are <term>algebraic</term>
+            structures, but it will suit our purposes for this course.)
+          </p>
+        </statement>
+      </definition>
+    </li> 
+    <li>
+      <title>Abstraction</title>
+      <p>
+        The definition of algebra just stated is an immensely abstract
+        definition. I haven't specified what sets or what structures
+        I'm talking about. (I could say that we are looking at
+        <em>algebraic structures</em>, but that doesn't actually add any
+        insight; it just delays the question.) The definition is very
+        broad and  applies to a huge variety of sets and structures.
+        Abstraction is built into the very nature of algebra.
+      </p>
+      <p>
+        In the calculus courses, I often motivate the material by its
+        applications. (The two most often used motivations are the
+        Newtonian physics and percentage growth in ecology or finance.)
+        In this sense, I'm treating the calculus as applied mathematics:
+        mathematics driven by and designed for the solving of certain
+        extra-mathematical problems. This is a reasonable approach for
+        calculus, both for historical and pedagogical reasons.
+      </p>
+      <p>
+        In this course, there will be points where I emphasize the
+        practical applications of linear algebra, of which there are
+        many. However, my primary motivation for the course will be
+        intrinsic and abstract: I want to study sets and their structure
+        simply for the mathematical joy of it. This is the one course
+        at King's which is most suited to presenting the goals and ideas
+        of abstract mathematics, in and of themselves.
+      </p>
+    </li>
+    <li>
+      <title>Geometry</title>
+      <p>
+        Though the subjet is called <sq>algebra</sq>, linear algebra is
+        a very geometric discpline and my approach to this course will
+        emphasize the geometry. We will start with vectors, a geometric
+        topic (though with rich algebraic structre). Throughout the
+        course, we will play geometry and algebra against each other and
+        use each to understand the other better. This interplay drives
+        the discpline. In many ways, this will be a geomety course
+        hiding under the title of an algebra course.
+      </p>
+      <p>
+        In our geometry, we will not restrict ourselves for conventional
+        two and three dimensional geometry. The definitions of this
+        course are very general, so we will try to do geometry in any
+        (finite) dimension. A major challenge of the course is going
+        from familiar, visible three dimensions to un-visualizable
+        higher dimensional geometry.
+      </p>
+    </li>
+    <li>
+      <title>Flatness</title>
+      <p>
+        While a geometry course, the geometry we are considering will be
+        very restricted. The <sq>linear</sq> in linear algebra refers
+        to lines, so we will start with the geometry of lines. However,
+        the important property of a line, in our context, is the fact
+        that it is straight: it doesn't curve. Linear algebra is the
+        geomtery of straight or flat things.
+      </p>
+      <p>
+        Therefore, curved, bent and broken objects are off-limits. We
+        will investigate the geometry of flat objects: points, lines,
+        planes and higher dimensional analogues. A great advantage of
+        this restriction is that flat things are very
+        accessable. The geometry of curved objects is an immensely
+        complicated and difficult subject. By restricting to flat
+        objects, our mathematical tools and constructions are much
+        more accessible.
+      </p>
+    </li>
+    <li>
+      <title>Symmetry</title>
+      <p>
+        Other than flatness, our other major geometric theme is
+        symmetry. Many of the definitions and propositions produced in
+        this course can be stated in terms of some kind of symmetry.
+        Speaking broadly, I want to think of symmetry as preservation:
+        the symmetry of a shape is some kind of operation which keeps
+        the shape intact, preserves it. Throughout linear algebra, we
+        will be talking about the preservation of various kinds of
+        shapes and flat objects.
+      </p>
+      <p>
+        With the interplay between algebra and geometry mentioned above,
+        we will also translate this idea of symmetry back to algebra to
+        give a understanding of algebraic symmetry.
+     </p>
+    </li>
+    <li>
+      <title>Proof</title>
+      <p>
+        Proofs are another major difference between the grade-school
+        understanding of algebra and the academic sense of the word.
+        Algebra is originally introduced to solve problems involving
+        unknown quantities, usually by solving equations. Algebra is a
+        problem-solving technique. In academic mathematics, we are
+        usually more concerned with conjectures about mathematical
+        objects and the proofs of those conjectures. In this course,
+        we'll introduce the idea of conjectures, propositions, theorems
+        and proofs. We'll do a small amount of proving on the
+        assignments to build a flavour for proof-based mathematics.
+      </p>
+    </li>
+  </dl>
 </section>

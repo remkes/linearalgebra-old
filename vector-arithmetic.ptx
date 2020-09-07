@@ -3,9 +3,10 @@
   <subsection xml:id="subsection-linear-operations">
     <title>Linear Operations</title>
     <p>
-      The environment for linear algebra is <m>\RR^n</m>. Algebra is
-      concerned with operations on sets, so we want to know what
-      operations we can perform on <m>\RR^n</m>. There are several.
+      In this section, we go through the basic arithmetic of vectors.
+      In some ways, it mimics the arithmetic of scalars; in other
+      ways, scalar operations not longer work and are replace with
+      other operations. 
     </p>
     <definition>
       <statement>
@@ -30,7 +31,7 @@
     </p>
     <figure xml:id="figure-visualizing-vector-addition">
       <caption>Visualizing Vector Addition</caption>
-      <image xml:id="figure04" width="90%">
+      <image xml:id="figure04" width="80%">
         <asymptote>
           size(10cm);
           import graph;
@@ -89,7 +90,7 @@
     </p>
     <figure xml:id="figure-visualizing-scalar-multiplication">
       <caption>Visualizing Scalar Multiplication</caption>
-      <image xml:id="figure05" width="90%">
+      <image xml:id="figure05" width="80%">
         <asymptote>
           size(10cm);
           import graph;
@@ -206,7 +207,7 @@
     </p>
     <figure xml:id="figure-difference-and-length">
       <caption>Visualizing Distance Between Vectors</caption>
-      <image xml:id="figure06" width="90%"> 
+      <image xml:id="figure06" width="80%"> 
         <asymptote>
           size(10cm);
           import graph;
@@ -236,7 +237,7 @@
     <proposition>
       <statement>
         <p>
-          We briefly state two properties of vector lenghts without
+          We briefly state two properties of vector lengths without
           proof.
           <md>
             <mrow>
@@ -256,7 +257,7 @@
       number and <m>|u|</m> is the length of a vector. The fact that
       they have the same notation is frustrating, but these notations
       are common. (Some text use double bars for the length of a
-      vector, <m>||v||</m>, to avoid this particular issue).
+      vector, <m>||v||</m>, to avoid this particular issue.)
     </p>
   </subsection>
 </section>

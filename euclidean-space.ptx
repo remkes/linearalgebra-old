@@ -28,7 +28,8 @@
       </statement>
     </definition>
     <p>
-      In these notes, we will exclusively use column vectors.
+      In this course, we will exclusively use column vectors. In many
+      other places, row vectors are common.
     </p>
     <definition>
       <statement>
@@ -36,11 +37,11 @@
           Let <m>n</m> be a positive integer. <term>Real Euclidean
           Space</term> or <term>Cartesian Space</term>, written
           <m>\RR^n</m>, is the set of all vectors of length <m>n</m>
-          with real number entries. In this course, elements of
-          <m>\RR^n</m> are written as a column.
+          with real number entries. We write an arbitrary vector with
+          coefficients <m>x_i</m>:
           <me>
             \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
-          </me>
+          </me>.
         </p>
         <p>
           We say that <m>\RR^n</m> has <term>dimension</term>
@@ -95,7 +96,7 @@
     </p>
     <figure xml:id="figure-points-in-the-cartesian-plane">
       <caption>Points in <m>\RR^2</m></caption>
-      <image xml:id="figure01" width="90%">
+      <image xml:id="figure01" width="80%">
         <asymptote>
           size(10cm);
           import graph;
@@ -129,14 +130,13 @@
       write the <m>x</m> axis horizontally, with a positive direction
       to the right, and the <m>y</m> axis vertically, with a positive
       direction upwards. For <m>\RR^3</m>, the <m>x</m> and <m>y</m>
-      axes form a flat plane and the <m>z</m> axis extend vertically
+      axes form a flat plane and the <m>z</m> axis extends vertically
       from that plan, as shown in <xref
-      ref="figure-points-in-three-space" />. Notice, in
-      both cases, we needed to choose directions for the axes.
+      ref="figure-points-in-three-space" />. 
     </p>
     <figure xml:id="figure-points-in-three-space">
       <caption>Points in <m>\RR^3</m></caption>
-      <image xml:id="figure02" width="90%">
+      <image xml:id="figure02" width="80%">
         <asymptote> 
           import graph3;
           size(200,200,keepAspect=false);
@@ -158,8 +158,12 @@
     <definition>
       <statement>
         <p>
-          A choice of axis directions in a visualization of
-          <m>\RR^n</m> is called an <term>orientation</term>.
+          Noticed that we needed to choose directions for the axes in
+          both <m>\RR^2</m> and <m>\RR^3</m>. In a visualization of
+          Euclidean space, there is no predetermined directions for
+          axes. We have to make a choice. This choice of axis
+          directions in a visualization of <m>\RR^n</m> is called an
+          <term>orientation</term>.
         </p>
       </statement>
     </definition>
@@ -190,15 +194,15 @@
       located at <m>\begin{pmatrix} 1 \\ 4 \end{pmatrix}</m> and the
       vector drawn from the origin to the point <m>\begin{pmatrix} 1
       \\ 4 \end{pmatrix}</m> , as shown in <xref
-      ref="figure-points-and-directions" />. Though these two
-      ideas are distinct, we will frequently change perspective
-      between them. Part of becoming proficient in vector geometry is
-      becoming accustomed to the switch between the perspectives of
-      points and directions.
+      ref="figure-points-and-directions" />. Though these two ideas
+      are distinct, we will frequently switch between them, often
+      without explicitly saying so. Part of becoming proficient in
+      vector geometry is becoming accustomed to the switch between the
+      perspectives of points and directions.
     </p>
     <figure xml:id="figure-points-and-directions">
       <caption>Vectors as Points and Directions</caption>
-      <image xml:id="figure03" width="90%"> 
+      <image xml:id="figure03" width="80%"> 
         <asymptote>
           size(10cm);
           import graph;
@@ -239,7 +243,7 @@
     </p>
     <figure xml:id="figure-local-direction-vectors">
       <caption>Local Direction Vectors</caption>
-      <image xml:id="figure08" width="90%">
+      <image xml:id="figure08" width="80%">
         <asymptote>
           size(10cm);
           import graph;
@@ -264,18 +268,17 @@
       </image>
     </figure>
     <p>
-      For example, as pictured in <xref
-      ref="figure-local-direction-vectors" />, at the point
-      <m>\begin{pmatrix} 2 \\ 3 \end{pmatrix} \in \RR^2</m>, we could
-      think of the local directions <m>\begin{pmatrix} 1 \\ 0
-      \end{pmatrix}</m> or <m>\begin{pmatrix} 0 \\ 1
-      \end{pmatrix}</m>. These are not directions starting from the
-      origin, but starting from <m>\begin{pmatrix} 2 \\ 2
-      \end{pmatrix}</m> <em>as if that were the origin</em>.
+      <xref ref="figure-local-direction-vectors" /> shows local
+      direction vectors starting at the point <m>\begin{pmatrix} 2 \\
+      2 \end{pmatrix} \in \RR^2</m>. The two local vector
+      <m>\begin{pmatrix} 1 \\ 0 \end{pmatrix}</m> and
+      <m>\begin{pmatrix} 0 \\ 1 \end{pmatrix}</m> are direction from
+      the point <m>\begin{pmatrix} 2 \\ 2 \end{pmatrix} \in \RR^2</m>
+      as if that were the origin.
     </p>
     <p>
-      Using vectors to define local directions is a particularly
-      useful tool. A standard example is camera location in a three
+      Using vectors to define local directions is a 
+      useful tool. A standard example is the camera in a three
       dimensional virtual environment. First, you need to know the
       location of the camera, which is an ordinary vector starting
       from the origin. Second, you need to know what direction the
