@@ -3,8 +3,8 @@
   <subsection xml:id="subsection-what-is-a-proof">
     <title>What Is A Proof</title>
     <p>
-      In the sequence of courses that we offer at King's, the course
-      on linear algera ia the most natural place to talk about
+      In the sequence of math courses that we offer at King's, 
+      linear algera is the most natural place to start talking about
       mathematical proof. The material lends itself to a number of
       accessible proof examples and has a level of abstraction that
       suits proof questions. The linear algebra course also serves as
@@ -16,14 +16,14 @@
     <p>
       So what is a mathematical proof? A simple definition is hard,
       but my best attempt is very general: a proof is a formal,
-      logical mathematical argument that succeeds in convincing an
+      logical, mathematical argument that succeeds in convincing an
       informed reader. Let me talk through this definition.
       <ul>
         <li>
           First, a proof is an argument. It is persuasive: it has a
           proposition and it wants to convince its reader that the
           proposition is true. In this, it shares something with all
-          the other arguments persuasions through the academy,
+          the other persuasive writing through university,
           including scientific studies, aethetic critiques, and
           persuasive essays.
         </li>
@@ -36,23 +36,24 @@
           assumptions of the proof to the desired conclusion.
         </li>
         <li>
-          Third, a proof is formal. Mathematical comes with formal
-          notations, definition, and rules of manipulating
+          Third, a proof is formal. Mathematics has formal
+          notations, definition, and rules for manipulating
           expressions. A proof follows these formalities. It can't
-          treat mathematical ideas and definition loosely <mdash /> it
-          need to specifically and clearly use the construction
-          provided by its assumptions and starting point. 
+          treat mathematical ideas and definitions loosely or casually
+          <emdash /> it has to follow the rules and strict conventions
+          of mathematics.
         </li>
         <li>
           Finally, it succeeds in convincing its reader. At the end of
           a proof, the question should always be: are you convinced?
-          Proof are accepted by the mathematical community when a
+          Proofs are accepted by the mathematical community when a
           sufficient number of qualified readers are convinced by the
           mathematical formality and logical sequence. In this course,
           when we study proof, I will try to repeatedly ask if you are
-          convinced by the proof. If you are not, either the proof if
-          flawed or you need to go back and study the assumptions,
-          notations and structure more carefully.
+          convinced by the proof. If you are not, either the proof is
+          flawed or your understanding of the argument is weak and you
+          need to go back and study the assumptions, notations and
+          structure more carefully.
         </li>
       </ul>
     </p>
@@ -62,23 +63,23 @@
       <p>
         I desperately wish there were something simple and
         straightfoward I could say here about how to write a proof. I
-        wish it could give you a reasonable three-step process which
-        you could follow which would always provide good proofs.
+        wish I could give you a reasonable three-step process 
+        which would always produce good proofs.
         Unfortunately, no such thing exists. Writing proofs is the
         most difficult skill in mathematics. Writing a good proof is
-        comparable to writing a good essay. Both tasks require a long
-        process of reading lots of good examples and practicing the
-        writing. 
+        comparable to writing a good essay. We learn by reading good
+        examples, practicing our own, and being patient with the long
+        process.
       </p>
       <p>
         In this course, I'm not going to give you any short, easy
         method for writing proof (since, as I just said, no such
         method exists). Instead, I'm going to try to start the process
-        of exposing you to proof. In many ways, we learn to write
+        of exposing you to proofs. In many ways, we learn to write
         proof by example <mdash /> by reading lots of proofs and
-        seeing how thye work. I'll show you a bunch of short proofs in
-        this course and ask you to try to emulate them in the proofs I
-        ask you to write in activities and assignments.
+        seeing how they work. I'll show you a bunch of short proofs in
+        this course and ask you to try to emulate them in 
+        the activities and assignments.
       </p>
       <p>
         That said, I will give some pointers and ideas on how to
@@ -106,8 +107,8 @@
         <li>
           There is a huge difference between the rough work that goes
           into sketching a proof and the final proof. In the rough
-          work, we do often start with the conclusion and play around
-          with idea to see how we might get their. We try things, play
+          work, we do often start with the conclusion and make various 
+          attempts to see how we might get their. We try things, play
           around with ideas, do test cases. But when we write up a
           proof, we take all this rough work and try to put in into
           a formal logical chain with the desired statement coming at
@@ -121,9 +122,9 @@
         </li>
         <li>
           There are a number of special proof techniques that are
-          worth some attention. I'll spend the next section on some of
-          these techniques. Not all proofs need to any of these
-          techniques, but they are common enough to point out at the
+          worth some attention. I'll spend the next section on two of
+          these techniques. Not all proofs need a names technique, 
+          but these two are common enough to point out at the
           start. 
         </li>
       </ul>
@@ -131,7 +132,7 @@
   <subsection xml-id="subsection-contradiction">
     <title>Proof by Contradiction</title>
     <p>
-      There are many common structures and technique used in proof.
+      There are many common structures and techniques used in proof.
       I'm going to share with you two of the most common techniques.
       The first is proof by contraction. This technique relies on the
       assumption that any (well-formed) statement in mathematics is
@@ -149,8 +150,7 @@
       being both true and false; or some other situation which cannot
       make sense. Since we end up with this contradiction, our
       original assumption must have been wrong. Since we assumed
-      the statement was false, the fact that this assumption is wrong
-      means the statement is true.
+      the statement was false, the statement must therefore be true.
     </p>
     <p>
       This is perhaps easier to see in an example. I'll do two
@@ -159,9 +159,10 @@
     </p>
     <ul>
       <li>
-        Step 1: Assume the statement is false. Here, the statement
+        Step 1: Assume the statement is false. The statement
         says there are infinitely many prime numbers. If that is
-        false, there must be only finitely many prime numbers.
+        false, there must be only finitely many prime numbers. So our
+        assumption is that there are finitely many prime numbers.
       </li>
       <li>
         Step 2: Work from the assumption to build a contradiction. The
@@ -173,7 +174,7 @@
           m = p_1p_2 \ldots p_k + 1 
         </me>.
         What are the prime factors of this number? We know that all
-        number break down uniquely into prime factors, so it must have
+        numbers break down uniquely into prime factors, so it must have
         prime factors. However, every prime number <m>p_i</m> in our
         list (which, by assumption is all prime numbers ) is a
         factor of <m>m-1</m>. A prime number can't be the factor of
@@ -181,10 +182,10 @@
         factors of <m>m</m>.
       </li>
       <li>
-        Step 3: State the contradictionl The number <m>m</m>must have
+        Step 3: State the contradiction. The number <m>m</m>must have
         prime factors, but cannot have prime factors, since none of
-        the prime <m>p_i</m> are factors. This is a contradiction: the
-        number both has and does not have prime factors. 
+        the primes <m>p_i</m> are factors. This is a contradiction: the
+        number must have prime factors but has none.
       </li>
       <li>
         Step 4: Conclude that the original statement was false, which
@@ -194,6 +195,14 @@
         many prime numbers. 
       </li>
     </ul>
+    <p>
+      This proof is <em>non-construction</me>. It tells us that there
+      are infinitely many prime numbers, but it doesn't tell us
+      anything about there: what they how, how to find them, how they
+      are distributed on the number line, etc. This is often a major
+      weakness of proofs by contradiction: they may not give us an
+      concrete information about the objects in the proposition.
+    </p>
     <p>
       Another classic example is the proof that <m>\sqrt{2}</m> is
       irrational. Let's also prove this by contradiction.
@@ -207,7 +216,7 @@
       </li>
       <li>
         Step 2: Work from the assumption to build a contradiction. If
-        <m>\sqrt{2}</m> is rational, then there are integer <m>a</m>
+        <m>\sqrt{2}</m> is rational, then there are integers <m>a</m>
         and <m>b</m> such that <m>\sqrt{2} = \frac{a}{b}</m>. Since
         any fraction can be written in simplest terms, we can assume
         that <m>a</m> and <m>b</m> have no common factors. Then I can
@@ -225,9 +234,9 @@
         </md>
         <m>2</m> divides the left side of the equation, so it must
         divide the right side as well, meaning that <m>a^2</m> must be
-        even. But the square of odd numbers are odd, and of even
-        numbers are even. Therefore, <m>a</m> must be even. We can
-        write <m>a = 2c</m> for some integer <m>c</m>. Then I'll
+        even. But the squares of odd numbers are odd and the squares
+        of even numbers are even. Therefore, <m>a</m> must be even. We
+        can write <m>a = 2c</m> for some integer <m>c</m>. Then I'll
         replace <m>a</m> by <m>2c</m> in the equation an do a bit more
         arithmetic. 
         <md>
@@ -282,12 +291,14 @@
         true for all natural numbers. When there isn't a direct
         argument, statements such as these can be difficult to prove,
         since there are infinitely many natural numbers to check.
-        Mathematician accept that the following process suffices.
+        Mathematicians agree that the following process suffices to
+        check all infinitely many cases.
       </p>
       <ul>
         <li>
-          Prove a base case. (Usually, prove that the statement
-          holds for <m>n=0</m> or <m>n=1</m>). 
+          Prove a base case. Usually, we prove that the statement
+          holds for <m>n=0</m> or <m>n=1</m>, but the base case could
+          be any starting natural number. 
         </li>
         <li>
           Assume that the statement is true for some number
@@ -295,27 +306,28 @@
         </li>
         <li>
           Using that assumption, prove that the statement holds for
-          the next number <m>k+1</m>
+          the next number <m>k+1</m>.
         </li>
         <li>
           Conclude that the statement is true for all natural numbers
-          <m>n</m>
+          <m>n</m>. (Or all number past the base cases, if we started
+          at a larger number.)
         </li>
       </ul>
       <p>
         This process is called mathematical induction. (This is really
         a terrible name. The reasoning here is still deductive
         reasoning, not inductive reasoning. Calling it induction
-        really messing with the convention use of the term
-        <qt>induction</qt> in logic). It is something like
-        bootstrapping all the way up the natural numbers. We prove ti
-        is true for <m>1</m>. Then we have a general way of proving
-        that if it is true for a number, it is also true for the next
-        number. Since it is true for <m>1</m>, it must be true for
-        <m>2</m>. If it is true for <m>2</m>, it must be true for
-        <m>3</m>. If it is true for <m>3</m>, it must be true for
-        <m>4</m>. This just keeps going, so we conclude that it is
-        true for all natural numbers. 
+        really messes with the conventional use of the term
+        <qt>induction</qt> in logic). Mathematical induction  is
+        something like bootstrapping all the way up the natural
+        numbers. We prove the statement is true for <m>1</m>. Then we
+        have a general way of proving that if it is true for a number,
+        it is also true for the next number. Since it is true for
+        <m>1</m>, it must be true for <m>2</m>. If it is true for
+        <m>2</m>, it must be true for <m>3</m>. If it is true for
+        <m>3</m>, it must be true for <m>4</m>. This just keeps going,
+        so we conclude that it is true for all natural numbers.
       </p>
       <p>
         Again, this is probably best demonstrated by example. I claim
@@ -323,7 +335,7 @@
         <me>
           1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}
         </me>.
-        This is a nice identites giving us a way to quickly calculate
+        This is a nice identity giving us a way to quickly calculate
         the sum of the first <m>n</m> numbers. For example
         <me>
           1 + 2 + 3 + 4 + \ldots + 703 = \frac{703\cdot704}{2} = 703
@@ -342,17 +354,17 @@
           side and the right side are the same, the base case holds. 
         </li>
         <li>
-          Step 2: Assume this is true for <m>n=k</m> for some number
+          Step 2: Assume the statements is true for some number
           <m>k</m>. I assume that 
           <me>
             1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
           </me>
-          is true for some number <m>n</m>. (Not every number, yet,
+          is true for some number <m>k</m>. (Not every number, yet,
           just some number.) 
         </li>
         <li>
           Step 3: Prove the next case. I need to prove the statement
-          is true for <m>n = k+1</m>. I can start with the assumption.
+          is true for <m>k+1</m>. I can start with the assumption.
           <me>
             1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
           </me>
@@ -373,7 +385,7 @@
             1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{(k+1)(k+1+1)}{2}
           </me>
           Finally, I can observe that this right side is precisely the
-          desired equation with <m>n = k+1</m>. I have prove the next
+          desired equation for <m>k+1</m>. I have proved the next
           case. 
         </li>
         <li>

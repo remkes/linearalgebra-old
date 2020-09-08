@@ -10,7 +10,7 @@
       ref="section-vector-arithmetic" />, we introduced three
       structures on <m>\RR^n</m>: vector addition, scalar
       multiplication, and vector length. The abstract algebraic
-      question that mathematician ask at this point is: what are the
+      question that mathematicians ask at this point is: what are the
       properties of these structures? How does vector addition
       resemble normal addition (which is it named after) and how does
       it differ? How does scalar multiplication resemble normal
@@ -19,21 +19,22 @@
       same notation?
     </p>
     <p>
-      These are abstract question, but they are also practically
+      These are abstract questions, but they are also practically
       useful. If we are in a situation where we need to use linear
       algebra (of which there are many), we need to know how to
       manipulate the objects. We have a whole collection of a habits
       with addition and multiplication, but we can't assume that all
-      those habits immediately transfer to these new structure. We
-      have to prove that they do or, if they don't, we have to adjust
-      our habits. We'll see both cases happen in this course. In this
-      section, we'll mostly be proving that the properties of addition
-      and multiplication carry over to these new structures. Later in
-      the course, we'll have new structures which have properties that
-      are different from what we expect for conventional arithmetic. 
+      those habits immediately transfer to these new structures. If
+      the new structures resemlee the old, we have to prove it to be
+      sure. If they don't, we have to adjust our habits. We'll see
+      both cases happen in this course. In this section, we'll mostly
+      be proving that the properties of ordinary addition and
+      multiplication carry over to these new structures.  Later in the
+      course, we'll have new structures which have properties that are
+      different from what we expect for conventional arithmetic. 
     </p>
     <p>
-      I'm going to go through three properties of scalar
+      In the notes, I'm going to address three properties of scalar
       multiplication and vector addition. Some properties of the
       vector length operation are left for the activities. 
     </p>
@@ -41,12 +42,12 @@
   <subsection xml-id="subsection-commutativity">
     <title>Commutativity</title>
     <p>
-      Addition and multiplication of number are commutative binary
+      Addition and multiplication of numbers are commutative binary
       operations. This means that we can interchange the order: <m>4 +
       5</m> is the same as <m>5 + 4</m> and <m>7 \times 2</m> is the
       same as <m>2 \times 7</m>. We've defined a new addition and a
       new multiplication, but we can't just assume that these new
-      structures are commutative. We have to check it. 
+      structures are commutative. We have to prove it. 
     </p>
     <proposition>
       <statement>
@@ -63,7 +64,7 @@
           When approaching a proof, it is often very useful to return
           to the definition. Let me first work in <m>\RR^2</m> to
           illustrate; I'll generalize to <m>\RR^n</m> afterwards. We
-          have two vectors <m>u,v \in \RR^n</m>. I'll write them as
+          have two vectors <m>u,v \in \RR^n</m>. I write them as
           components.
           <md>
             <mrow>
@@ -94,7 +95,7 @@
               \end{pmatrix} 
             </mrow>
           </md>
-          Then this is precisely the definition of the right side. 
+          The result is precisely the definition of the right side. 
           <md>
             <mrow>
               \amp = v + u
@@ -104,7 +105,7 @@
           ended up the with the right side, thus proving the identity.
           This was for <m>\RR^2</m>, so I still need to do the general
           case for <m>\RR^n</m>. Luckily for me, the steps are exactly
-          the same, just working with a vector with <m>n</m>
+          the same, just for a vector with <m>n</m>
           components. Here are the steps in the general case: first I
           use the definition of <m>u + v</m>, then I switch the order
           of the ordinary addition of numbers in each component, then
@@ -134,12 +135,12 @@
     <p>
       I want to point out a couple of things about this proof. First,
       it is general. I didn't try to prove by choosing specific
-      vectors and checking. We can't prove by examples. Now, often
+      vectors and checking. We can't prove by examples. That said, often
       working through some examples is extremely valuable. When
       starting a proof, I'll often try some examples to get a sense of
       what is going on. But, in the end, the argument needs to be
-      general and apply to all possible cases in the statement of the
-      proposition.
+      general <mdash /> it must cover all possible cases in the
+      statement of the proposition.
     </p>
     <p>
       Second, I never started with <m>u + v = v + u</m>. I started
@@ -150,22 +151,22 @@
       proof, when it has been established. If I'm trying to
       figure out how to do a proof, I'll often work backwards: I'll
       start with the statement I want to get to, manipulate it and see
-      how the piece work. But when I write up the proof, I'm starting
-      with my goal, only finishing with it. 
+      how the piece work. But when I write up the proof, I'm never
+      starting with my goal, only finishing with it. 
     </p>
     <p>
-      This establishes commutativity of vector addition. What about
-      scalar multiplication? For real number, we know <m>ab = ba</m>.
-      However, scalar multiplication is something quite different. If
-      <m>a</m> is a scalar and <m>u</m> is a vector, then <m>au</m>
-      produces another vector. In defining scalar multiplication, we
-      wrote the scalar on the left and the vector on the right. Right
-      now, the expression <m>ua</m> doesn't even mean anything. We
-      could define it to mean the same thing, so that we could do
-      scalar multiplication on either side, but our convention is to
-      always write the scalar on the left and the vector on the right.
-      In this way, scalar multiplication isn't commutative because of
-      our choice of notation. 
+      This proof establishes commutativity of vector addition. What
+      about scalar multiplication? For real numbers, we know <m>ab =
+      ba</m>. However, scalar multiplication is something quite
+      different. If <m>a</m> is a scalar and <m>u</m> is a vector,
+      then <m>au</m> produces another vector. In defining scalar
+      multiplication, we wrote the scalar on the left and the vector
+      on the right. Right now, the expression <m>ua</m> doesn't even
+      mean anything. We could define it to mean the same thing, so
+      that we could do scalar multiplication on either side, but our
+      convention is to always write the scalar on the left and the
+      vector on the right.  In this way, scalar multiplication isn't
+      commutative because of our choice of notation. 
     </p>
   </subsection>
   <subsection xml-id="subsection-vector-arithmetic-associativity">
