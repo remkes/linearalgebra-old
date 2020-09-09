@@ -28,15 +28,15 @@
           argue by analogy. How do we get around the line in
           3-dimensions? We move to the side, then move past the line,
           instead of running into it. We can do this because we have
-          two degree of freedom in directions other than the direction
+          two degrees of freedom in directions other than the direction
           of the line.
         </p>
         <p>
           The same thing works for a plane in 4-dimensional space.
           While in 3-dimensional space, we only have one dimension of
-          movement a part from the plane. To get to the other side,
+          movement apart from the plane. To get to the other side,
           moving in this one degree of freedom, we have to cross the
-          place. In 4-dimensional space, we have two other degrees of
+          plane. In 4-dimensional space, we have two other degrees of
           freedom. Like getting around the line in 3-dimensional
           space, we can move to the side, then move past the plane to
           reach <q>the other side</q>. There really isn't another
@@ -48,7 +48,7 @@
     <activity>
       <statement>
         <p>
-         In 2-dimensional space, a square or rectangle is enought to
+         In 2-dimensional space, a square or rectangle is enougth to
          trap or contain something that lives in the plane. In
          3-dimensional space, a cube (or other box) is enough to trap
          or contain something. What do we need to contain something in
@@ -62,7 +62,10 @@
           direction of movement, we have to close of movement in all
           four of these directions. This box will have a front/back, a
           top/bottom, an left/right, and then an additional pair of
-          sides which block in the fourth direction of movement. 
+          sides which block in the fourth direction of movement. In
+          five dimensional space, we need a five dimensionsal box: it
+          will have a front/back, top/bottom, left/right, and two
+          other independent boundary pairs.
         </p>
       </solution>
     </activity>
@@ -84,7 +87,9 @@
           as an infinite stack of three-dimensional boxes, all stacked
           in some new direction of movement. (The same way we can
           think of a cube as a infinite stack of squares moving in a
-          direction perpendicular to the squares themselves). 
+          direction perpendicular to the squares themselves).
+          Likewise, the slices of a five dimensional box are
+          themselves four dimensional boxes. 
         </p>
       </solution>
     </activity>
@@ -247,7 +252,52 @@
           </md>
           <figure xml:id="figure-vector-arithmetic">
             <caption>Vector Arithmetic</caption>
-            <image width="100%" source="images/figure10" />
+            <image width="80%" source="images/figure10" />
+              size(12cm,8cm);
+              import graph;
+
+              xlimits(-7,7);
+              ylimits(-4,4);
+
+              xaxis("$x$",Ticks("%"));
+              yaxis("$y$",Ticks("%"));
+
+              draw((0,0)--(3,0),Arrow); 
+              draw((0,0)--(-2,-1),Arrow); 
+              draw((0,0)--(-3,2),Arrow); 
+              draw((0,0)--(-3,0),Arrow); 
+              draw((0,0)--(2,1),Arrow); 
+              draw((0,0)--(3,-2),Arrow); 
+              draw((0,0)--(1,-1),Arrow); 
+              draw((0,0)--(0,2),Arrow); 
+              draw((0,0)--(-5,1),Arrow); 
+              draw((0,0)--(5,1),Arrow); 
+              draw((0,0)--(-5,-1),Arrow); 
+              draw((0,0)--(6,-2),Arrow); 
+              draw((0,0)--(-6,2),Arrow); 
+              draw((0,0)--(1,-3),Arrow); 
+              draw((0,0)--(-1,3),Arrow); 
+              
+              draw((3,0)--(5,3),dotted);
+              draw((1,-1)--(5,-4),dotted);
+              draw((-3,0)--(-5,-3),dotted);
+              draw((0,2)--(0.5,3),dotted);
+              
+              label("$u$",(5,3),E);
+              label("$v$",(-2,-1),SW);
+              label("$w$",(-3,2),NW);
+              label("$-u$",(-6,-3),SE);
+              label("$-v$",(2,1),NE);
+              label("$-w$",(3,-2),SE);
+              label("$u+v$",(5,-4),E);
+              label("$u+w$",(0.5,3),E);
+              label("$v+w$",(-5,1),W);
+              label("$u-v$",(5,1),E);
+              label("$v-u$",(-5,-1),W);
+              label("$u-w$",(6,-2),E);
+              label("$w-u$",(-6,2),W);
+              label("$v-w$",(1.8,-3),S);
+              label("$w-v$",(-1,3),NW);
           </figure>
           In addition, calcluate these lengths. 
           <md>
@@ -467,11 +517,11 @@
           If <m>a \in \RR</m> and <m>u \in \RR^3</m>, prove that <m>|au|
           = |a||u|</m>. (Use the definition of scalar multiplication
           and the definition of legnth of a vector. Start with the
-          left side and try to turn it into the right or vice-verse.
+          left side and try to turn it into the right or vice-versa.
           Do not reduce both equations to equivalent expressions --
-          that's not, in general, a valid proof technique. You may try
+          that's not a valid proof technique. You may try
           some examples out if you wish, but your final solution
-          should be general. Finally, not that the notation here is a
+          should be general. Finally, note that the notation here is a
           bit subtle: <m>|au|</m> and <m>|u|</m> are the lengths of
           vectors, defined by pythagorean calculations, but <m>|a|</m>
           is just the absolute value of a real number.)
@@ -480,7 +530,7 @@
       <solution>
         <p>
           I will start with the left side and try to manipulate it
-          into the write write. I'll write <m>u</m> in components and
+          into the right side. I'll write <m>u</m> in components and
           use the definition of the scalar multiplication to start.
           <me>
             |au| = \left| a \left( \begin{matrix} u_1 \\ u_2 \\ u_3
@@ -488,7 +538,7 @@
             \begin{matrix} au_1 \\ au_2 \\ au_3 \end{matrix} \right)
             \right|
           </me>
-          This is the definition of scalar multiplication, to multiply
+          This is the definition of scalar multiplication: multiply
           the scalar by each component of the vector. Now I use the
           square root definition of the length of a vector. 
           <me>
@@ -503,7 +553,7 @@
             \sqrt{(au_1)^2 + (au_2)^2 + (au_3)^2} = \sqrt{a^2 u_1^2 +
             a^2 u_2^2 + a_2u_3^2}
           </me>
-          Now I can factor out the <m>a^2</m>. Once it is factor out,
+          Now I can factor out the <m>a^2</m>. Once it is factored out,
           I can also remove it from the square root. 
           <me>
             \sqrt{a^2 u_1^2 + a^2 u_2^2 + a_2u_3^2} = \sqrt{a^2(u_1^2
@@ -623,15 +673,15 @@
           Prove that the zero vector is the <em>only</em> vector in 
           <m>\RR^n</m> of length zero. (To prove that it is the only
           vector with this property, assume that <m>u \in \RR^n</m> is
-          a vector length zero and prove that <m>u</m> must be the
-          zero vector. This will show that only the zero vector has
-          the desired property). 
+          a vector with length zero and prove that <m>u</m> must be the
+          zero vector. This will show that only the zero vector is the
+          only vecotr with the desired property). 
         </p>
       </statement>
       <solution>
         <p>
           Let <m>u</m> be an arbitrary vector in <m>\RR^n</m> of
-          length 0. We will start by writing <m>u</m> in component and
+          length 0. We will start by writing <m>u</m> in components and
           use the definition of length. Note we need ellipses to show
           all the component of <m>u</m>, since we are working in an
           arbitrary dimension <m>n</m>. 

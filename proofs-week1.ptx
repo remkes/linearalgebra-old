@@ -172,8 +172,8 @@
   <subsection xml-id="subsection-vector-arithmetic-associativity">
     <title>Associativity</title>
     <p>
-      Another property of addition and multiplication for number is
-      associativity. This property states that we can group a
+      Another property of ordinary addition and multiplication is
+      associativity. This property states that we can bracket a
       three-fold addition or multiplication either way and the result
       is the same. For addition, this is
       <me>
@@ -189,7 +189,7 @@
       + 13 = 19</m>. Both ways produce <m>19</m>; associativity says
       that this works for all sums of numbers. Associativity is a
       property which we very rarely think about. It is naturally built
-      into how number work and, when doing arithmetic, we use it
+      into our number sense and, when doing arithmetic, we use it
       implicitly and subconsciously all the time. However, it is a
       property we have to worry about for new operations. There are
       (strangely enough!) non-associative operations in mathematics. 
@@ -211,8 +211,7 @@
     <p>
       The proof is nearly identify to the proof of commutativity. We
       write the vectors with components and then use the associativity
-      of ordinary addition in each component. I'll not write the proof
-      formally. 
+      of ordinary addition in each component. 
     </p>
     <p>
       For scalar multiplication, since there are vectors and scalars
@@ -230,7 +229,7 @@
     </proposition>
     <p>
       This is the only statement of associativity that makes sense. We
-      can't have multiple vectors, but we can do successive scalar
+      can't multiply vectors, but we can do successive
       multiplication by different scalars. The property here says that
       we can do two scalar multiplications with the vector u, or we
       can first multiple the scalars normally then do one scalar
@@ -242,7 +241,7 @@
   <subsection xml-id="subsection-vector-arithmetic-distribution">
     <title>Distribution</title>
       <p>
-        For number, multiplication distributes over addition. 
+        For real numbers, multiplication distributes over addition. 
         <me>
           a(b + c) = ab + ac 
         </me>

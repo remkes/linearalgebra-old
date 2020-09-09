@@ -2,6 +2,10 @@
   <title>Week 2 Activity</title>
   <subsection xml:id="subsection-activity-dot-products">
     <title>Dot Products</title>
+    <p>
+      Thoughout this activity, (WA) means that I used Wolfram Alpha to
+      calculate an approximate value. 
+    </p>
     <activity>
       <statement>
         <p> 
@@ -206,11 +210,11 @@
             (\sqrt[3]{2})(0) = \sqrt{14} + 4 \pi^2 
           </me>
           The isn't really a simpler way to write this number. This
-          form is just fine. If we wanted an approximate value, we
-          could ask a computer: <m>\sqrt{14} + 4 \pi^2 \doteq
-          217.78</m>. (When you write approximate values, please use
-          this equal with a dot to indicate that this is approximately
-          equal to, not exactly equal to.) 
+          form is just fine. If I wanted an approximate value, I
+          could ask a computer (WA): <m>\sqrt{14} +
+          4 \pi^2 \doteq 217.78</m>. (When you write approximate
+          values, please use this equal with a dot to indicate that
+          this is approximately equal to, not exactly equal to.) 
         </p>
       </solution>
     </activity>
@@ -341,8 +345,8 @@
               \end{matrix} \right) \cdot
               \left( \begin{matrix} 
                 0 \\ -2 \\ 0 \\ -4 \\ -4 \\ 0
-              \end{matrix} \right) \amp = (5)(0)  + (-3)(-2) + (-7)(0) +
-              (10)(-4) + (1)(-4) + (0)(0) 
+              \end{matrix} \right) \amp = (5)(0)  + (-3)(-2) + (-7)(0)
+              + (10)(-4) + (1)(-4) + (0)(0) 
             </mrow>
             <mrow>
               \amp = 0 + 6 + 0 - 40 - 4 + 0 = -38 
@@ -371,8 +375,8 @@
       <solution>
         <p>
           The cosine of the angle between two vectors is the dot
-          product divided by the product of the lengths. We'll
-          calculate the three piece of this and put them into the
+          product divided by the product of the lengths. I'll
+          calculate the three pieces of this and put them into the
           expression for the cosine of the angle. 
           <md>
             <mrow>
@@ -396,11 +400,11 @@
               \cos \theta \amp = \frac{14}{5 \sqrt{29}}
             </mrow>
           </md>
-          Then we can ask a computer to give us the inverse cosine to
-          get an approximation for the angle. (All angles are given in
-          radians. The inverse cosine function will give an angle
-          between 0 and <m>\pi</m>, which is good since the angle
-          between two vector should be bounded by <m>\pi</m>
+          Then I can ask a computer (WA) to give us the inverse
+          cosine to get an approximation for the angle. (All angles
+          are given in radians. The inverse cosine function will give
+          an angle between 0 and <m>\pi</m>, which is good since the
+          angle between two vector should be bounded by <m>\pi</m>
           radians.) 
           <me>
             \theta = \arccos \frac{14}{5\sqrt{29}} 
@@ -426,8 +430,8 @@
       <solution>
         <p>
           The cosine of the angle between two vectors is the dot
-          product divided by the product of the lengths. We'll
-          calculate the three piece of this and put them into the
+          product divided by the product of the lengths. I'll
+          calculate the three pieces of this and put them into the
           expression for the cosine of the angle. 
           <md>
             <mrow>
@@ -452,8 +456,8 @@
               \frac{22}{10\sqrt{5}} = \frac{11}{5\sqrt{5}}
             </mrow>
           </md>
-          Then we can ask a computer to give us the inverse cosine to
-          get an approximation for the angle.
+          Then I can ask a computer (WA) to give us the inverse
+          cosine to get an approximation for the angle.
           <me>
             \theta = \arccos \frac{11}{5\sqrt{5}}
             \doteq 0.180
@@ -478,8 +482,8 @@
       <solution>
         <p>
           The cosine of the angle between two vectors is the dot
-          product divided by the product of the lengths. We'll
-          calculate the three piece of this and put them into the
+          product divided by the product of the lengths. I'll
+          calculate the three pieces of this and put them into the
           expression for the cosine of the angle. 
           <md>
             <mrow>
@@ -503,8 +507,8 @@
               \cos \theta \amp = \frac{-6}{3\sqrt{5}}
             </mrow>
           </md>
-          Then we can ask a computer to give us the inverse cosine to
-          get an approximation for the angle.
+          Then I can ask a computer (WA) to give us the inverse
+          cosine to get an approximation for the angle.
           <me>
             \theta = \arccos \frac{-6}{3\sqrt{5}}
             \doteq 2.678
@@ -529,8 +533,8 @@
       <solution>
         <p>
           The cosine of the angle between two vectors is the dot
-          product divided by the product of the lengths. We'll
-          calculate the three piece of this and put them into the
+          product divided by the product of the lengths. I'll
+          calculate the threes piece of this and put them into the
           expression for the cosine of the angle. 
           <md>
             <mrow>
@@ -731,12 +735,12 @@
       <solution>
         <p>
           The normal determines the coefficients of the equation of
-          the plane. We put those coefficients into the general form,
+          the plane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
           <m>
             (-1)x + (-1)y + 0 z = d 
           </m>
-          We can calculate the constant using the point. Put the
+          I can calculate the constant using the point. Put the
           corodinates of the point into the left side of the equation
           and calculate <m>d</m> 
           <m>
@@ -768,12 +772,12 @@
       <solution>
         <p>
           The normal determines the coefficients of the equation of
-          the plane. We put those coefficients into the general form,
+          the plane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
           <m>
             2x + 0y + 3z = d 
           </m>
-          We can calculate the constant using the point. Put the
+          I can calculate the constant using the point. Put the
           corodinates of the point into the left side of the equation
           and calculate <m>d</m> 
           <m>
@@ -827,12 +831,12 @@
             \end{matrix} \right) 
           </me>
           This is the normal. the normal determines the coefficients
-          of the equation of the plane. We put those coefficients into
+          of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
           <m>
             -x - 2y - z = d 
           </m>
-          We can calculate the constant using the point. Put the
+          I can calculate the constant using the point. Put the
           corodinates of the point into the left side of the equation
           and calculate <m>d</m> 
           <m>
@@ -885,12 +889,12 @@
             \end{matrix} \right) 
           </me>
           This is the normal. the normal determines the coefficients
-          of the equation of the plane. We put those coefficients into
+          of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
           <m>
             0x - 2y + 2z = d 
           </m>
-          We can calculate the constant using the point. Put the 
+          I can calculate the constant using the point. Put the 
           corodinates of the point into the left side of the equation
           and calculate <m>d</m>.
           <m>
@@ -927,7 +931,7 @@
       <solution>
         <p>
           The local directions are give by the differences of the
-          point: <m>(q-p)</m> and <m>(r-p)</m>. We calculate those two
+          point: <m>(q-p)</m> and <m>(r-p)</m>. I calculate those two
           local directions.
           <md>
             <mrow>
@@ -971,12 +975,12 @@
             \end{matrix} \right) 
           </me>
           This is the normal. the normal determines the coefficients
-          of the equation of the plane. We put those coefficients into
+          of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
           <m>
             0x + 2y - 2z = d 
           </m>
-          We can calculate the constant using the point (we can use
+          I can calculate the constant using the point (I can use
           any of the three points--all will determine the same
           constant). Put the corodinates of the point into the left
           side of the equation and calculate <m>d</m>.
@@ -1014,7 +1018,7 @@
       <solution>
         <p>
           The local directions are give by the differences of the
-          point: <m>(q-p)</m> and <m>(r-p)</m>. We calculate those two
+          point: <m>(q-p)</m> and <m>(r-p)</m>. I calculate those two
           local directions.
           <md>
             <mrow>
@@ -1057,12 +1061,12 @@
             \end{matrix} \right) 
           </me>
           This is the normal. the normal determines the coefficients
-          of the equation of the plane. We put those coefficients into
+          of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
           <m>
             24 x - 12 y + 0z = d 
           </m>
-          We can calculate the constant using the point (we can use
+          I can calculate the constant using the point (I can use
           any of the three points--all will determine the same
           constant). Put the corodinates of the point into the left
           side of the equation and calculate <m>d</m>.
@@ -1095,12 +1099,12 @@
       <solution>
         <p>
           The normal determines the coefficients of the equation of
-          the hyperplane. We put those coefficients into the general form,
+          the hyperplane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
           <m>
             -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = d 
           </m>
-          We can calculate the constant using the point. Put the
+          I can calculate the constant using the point. Put the
           corodinates of the point into the left side of the equation
           and calculate <m>d</m> 
           <m>
@@ -1132,12 +1136,12 @@
       <solution>
         <p>
           The normal determines the coefficients of the equation of
-          the hyperplane. We put those coefficients into the general form,
+          the hyperplane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
           <m>
             -1 x_1 - 1 x_2 + 4 x_3 + x_4 - 2 x_5 + 2 x_6 = d
           </m>
-          We can calculate the constant using the point. Put the
+          I can calculate the constant using the point. Put the
           corodinates of the point into the left side of the equation
           and calculate <m>d</m> 
           <m>
@@ -1161,26 +1165,25 @@
           next two activities, I'm asking you to think through that
           abstract idea. In the first activity, I've given you an
           empty table with some number sets and some possible
+          structures.  Complete this table by writing <q>Yes</q> or
+          <q>No</q> in each space. Write <q>Yes</q> is the set in
+          question include the structure (the structure must remain in
+          the set); write <q>No</q> if the set does not include the
           structure. 
-          Complete this table by writing <q>Yes</q> or <q>No</q> in
-          each space. Write <q>Yes</q> is the set in question include
-          the structure (the structure must remain in the set); write
-          <q>No</q> if the set does not include the structure. 
         </p>
         <p>
-          The set
-          <m>\ZZ/12\ZZ</m> is the integers modulo 12. If this set is
-          unfamiliar, you may treat it as the numbers on the clock.
-          So, for example, if we want to add <m>7 + 9</m>, we ask what
-          time is 9 hours after 7, which is 4. Therefore <m>7 + 9 =
-          4</m> in an example of proper arithimetic for this set. In
-          general, whenever we would get a number larger than
-          <m>11</m>, we subtract multiples of <m>12</m> to reduce it
-          down to something between <m>0</m> and <m>11</m>. 
-          For another example, <m>5 \times 4 = 8</m> is also proper
+          The set <m>\ZZ/12\ZZ</m> is the integers modulo 12. If this
+          set is unfamiliar, you may treat it as the numbers on the
+          clock. So, for example, if I want to add <m>7 + 9</m>, I
+          ask what time is 9 hours after 7, which is 4. Therefore <m>7
+          + 9 = 4</m> in an example of proper arithimetic for this
+          set. In general, whenever I would get a number larger than
+          <m>11</m>, I subtract multiples of <m>12</m> to reduce it
+          down to something between <m>0</m> and <m>11</m>.  For
+          another example, <m>5 \times 4 = 8</m> is also proper
           arithmetic for this set, since <m>20 - 12 = 8</m>. Note that
           <m>12</m> is the same thing as <m>0</m> in this set; even
-          though on a clock we would ofter write <m>12</m>, in this
+          though on a clock we would often write <m>12</m>, in this
           set we usually just write <m>0</m>. So, for example, we
           would write <m>5 + 7 = 0</m> in this set. Finally, this is
           just integers modulo 12, so we only consider the whole
@@ -1372,10 +1375,10 @@
               the structure doesn't do anything.
             </li>
             <li>
-              Division for the integers modulo 12 is tricky. We might
-              thing that since we can extend addition, subtraction and
-              multiplication just fine modulo 12, we could extend
-              division as well. The problem is zero divisors: if we
+              Division for the integers modulo 12 is tricky. I might
+              thing that since I can extend addition, subtraction and
+              multiplication just fine modulo 12, I could extend
+              division as well. The problem is zero divisors: if I
               allow division by zero divisors, the arithmetic breaks.
               This is not immediate to see, so I didn't really expect
               anyone to know this unless you've previously studied
@@ -1384,18 +1387,18 @@
             <li>
               Speaking of zero divisiors, take the numbers 3 and 4 in
               the integers modulo 12. Their product is 12, which is
-              the same as 0 in that system. So, we can reasonable say
+              the same as 0 in that system. So, I can reasonably say
               that <m>3 \times 4 = 0</m> in the integers modulo 12.
               Since 3 and 4 are not also equivalent to zero
               themselves, they are zero divisors. 
             </li>
             <li>
               Whether or not we have an order relation on the integers
-              modulo 12 is also tricky. We can impose an order, saying
+              modulo 12 is also tricky. I can impose an order, saying
               that <m>0 \lt 1 \lt 2 \lt 3 \lt \ldots \lt 11</m>.
-              However, since the numbers loop around, if we keep going
+              However, since the numbers loop around, if I keep going
               from 12 back to 1, this seems intuitively probelmatic
-              with this order. So, even though we could impose such an
+              with this order. So, even though I could impose such an
               order, I think it makes more sense not to, and say that
               the integer modulo 12 are not ordered. If we think about
               time on a clock, I think we can justify this decision.
@@ -1468,8 +1471,8 @@
               works in <m>\NN</m>. Note that remainder is important
               here: division is not exact in <m>/NN</m>, since we
               don't have fractions. However, we can say that 7 goes
-              into 40 five time, with remainder 5 --- that still just
-              uses whole numbers. 
+              into 40 five time, with remainder 5 <mdash /> that still
+              just uses whole numbers. 
             </li>
             <li>
               You can get the whole set just by starting with 1 and
@@ -1483,13 +1486,13 @@
             <li>
               All numbers have square roots. This is a bit tricky,
               since none of our conventional number sets have this
-              property. We have to make a restriction. We certainly
-              want to work with real numbers, since we know that
-              <m>\sqrt{2}</m> is already irration. We're not going to
+              property. I have to make a restriction. I certainly
+              want to work with real numbers, since I know that
+              <m>\sqrt{2}</m> is already irrational. I'm not going to
               find square roots in the natural numbers, the integers,
               or the rational numbers. But the negative numbers cause
               a problem: they do not have square roots in the real
-              numbers. We can exclude these by taking the set of all
+              numbers. I can exclude these by taking the set of all
               positive real numbers. This set has the structure of all
               numbers having square roots. 
             </li>
@@ -1499,11 +1502,11 @@
               standard number set will have this structure, since they
               are all unbounded and keep getting larger forever.
               However, we can make a restriction and take a bounded
-              subset. Consider, for eample, all natural number less
+              subset. Consider, for eample, all natural numbers less
               that 40 (as I suggested in the statmeent of the
               problem). This set has a maximal element of 39, since
               everything else in the set is a whole number less than
-              39. 
+              or equal to 39. 
             </li>
           </ol>
       </solution>
@@ -1573,7 +1576,7 @@
       <solution>
         <p>
           I'll follow the guided steps for this proof. First, let's
-          write <m>|u+v|^2</m> as a dot product. We use the fact that
+          write <m>|u+v|^2</m> as a dot product. I use the fact that
           the square of the length of a vector is the same as the dot
           product of a vector with itself. 
           <me>
@@ -1585,18 +1588,17 @@
           <me>
             |u+v|^2 = u \cdot u + 2 u \cdot v + v \cdot v 
           </me>
-          The middle term has the dot product which we can replace as
+          The middle term has the dot product which I can replace as
           instructed.
           <me>
             |u+v|^2 = u \cdot u + 2 |u||v| \cos \theta + v \cdot v 
           </me>
-          The greatest that the cosine term can be is 1, so the
-          maximum for the right side happens when we repalce the
-          cosine with 1. 
+          The cosine term is at most <m>1</m>, so the maximum for the
+          right side happens when we repalce the cosine with 1. 
           <me>
             |u+v|^2 \leq u \cdot u + 2 |u||v| + v \cdot v 
           </me>
-          Then we need to turn the right side into a square term. The
+          Then I need to turn the right side into a square term. The
           first step in that direction is to write the dot products
           as squares of lengths. 
           <me>
@@ -1606,11 +1608,11 @@
           <me>
             |u+v|^2 \leq \left( |u| + |v| \right)^2 
           </me>
-          Finally, we take the square root of both sides. 
+          Finally, I take the square root of both sides. 
           <me>
             |u+v| \leq |u| + |v| 
           </me>
-          We have produced the triangle inequality.
+          I have produced the triangle inequality.
         </p>
       </solution>
     </activity>

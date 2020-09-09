@@ -100,15 +100,16 @@
     </p>
     <p>
       Now that we have a new operation, it is useful to see how it
-      interact with previously defined structures. We'll take up the
+      interacts with previously defined structures. We'll take up the
       proofs of these in <xref ref="section-proofs-week2" /> and in the
       activity for this week. 
     </p>
-    <proposition>
+    <proposition xml:id="proposition-dot-product-properties">>
       <statement>
         <p>
           Let <m>u,v,w</m> be vectors in <m>\RR^n</m> and let <m>a</m>
-          be a scalar in <m>\RR</m>.
+          be a scalar in <m>\RR</m>. The follow four identities are
+          true for all vectors and scalars. 
           <md>
             <mrow>
             u \cdot v \amp = v \cdot u \amp \text{Commutative} 
@@ -136,7 +137,7 @@
     </p>
     <figure xml:id="figure-the-cosine-law">
       <caption>The Cosine Law</caption>
-      <image xml:id="figure07" width="90%">
+      <image xml:id="figure07" width="80%">
         <asymptote>
           size(10cm);
           import graph;
@@ -175,9 +176,10 @@
         <p>
           To prove the cosine law using vector, I'm going to interpret the
           left side, <m>|u-v|^2</m>, as <m>(u-v) \cdot (u-v)</m>, using
-          one of the properties of the dot product. Then I can go through
-          some algebraic manipulation with the dot product. First, I'll
-          distribute the dot product.
+          the second identity in <xref
+          ref="proposition-dot-product-properties" />. Then I can go
+          through some algebraic manipulation with the dot product.
+          First, I'll distribute the dot product.
            <me>
             |u-v|^2 = (u-v) \cdot (u-v) = u \cdot u - v \cdot u - u \cdot
             v + v \cdot v
@@ -200,7 +202,7 @@
             |u-v|^2 = |u|^2 + |v|^2 - 2u \cdot v 
           </me>
           Finally, using the definition of angle, I can replace the dot
-          product witt <m>|u||v| \cos \theta</m>, where <m>\theta</m> is
+          product with <m>|u||v| \cos \theta</m>, where <m>\theta</m> is
           the angle between the two vectors. 
           <me>
             |u-v|^2 = |u|^2 + |v|^2 - 2|u||v| \cos \theta

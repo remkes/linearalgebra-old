@@ -168,13 +168,13 @@
       rotation can occur.
     </p>
     <p>
-      The use of cross products in rotational dynamics is extended in
-      many interesting ways. In fluid dynamics, local rotational
-      products of the fluid result in turbulence, vortices and similar
-      effects. Tornadoes and hurricanes are particularly extreme
-      examples of vortices in the fluid which is our atmosphere. All
-      the descriptions of the force and motion of these vortices
-      involve cross products in the vectors describing the fluid.
+      The use of cross products in rotational dynamics is ubiquitous.
+      In fluid dynamics, local rotational products of the fluid result
+      in turbulence, vortices and similar effects. Tornadoes and
+      hurricanes are particularly extreme examples of vortices in the
+      fluid which is our atmosphere. All the descriptions of the force
+      and motion of these vortices involve cross products in the
+      vectors describing the fluid.
     </p>
   </subsection>
 </section>

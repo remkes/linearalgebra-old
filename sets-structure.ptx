@@ -39,8 +39,8 @@
       </li>
       <li>
         Subtraction is a structure on many number sets. Subtraction is
-        not a structure on the natural number, however. <m>4</m> and
-        <m>7</m> are natural number, but <m>4 - 7 = -3</m> is no
+        not a structure on <m>\NN</m>, however. <m>4</m> and
+        <m>7</m> are natural numbers, but <m>4 - 7 = -3</m> is no
         longer a natural number. 
       </li>
       <li>
@@ -48,22 +48,22 @@
       </li>
       <li>
         Division by non-zero elemenets is a structure on many number
-        sets. Note that we hvae to make sure to exclude zero, since
-        division by zero is undefined. Division is not a structure on
-        the natural numbers; like with subtraction, even though
-        <m>4</m> and <m>7</m> are natural numbers, <m>\frac{4}{7}</m>
-        is not a natural number
+        sets. Note that we have to make sure to exclude zero, since
+        for sets that have zero, division by zero is undefined.
+        Division is not a structure on <m>\NN</m>; like with
+        subtraction, even though <m>4</m> and <m>7</m> are natural
+        numbers, <m>\frac{4}{7}</m> is not a natural number.
       </li>
       <li>
         The four previous examples are all types of <em>binary
-        relation</em>. They are structure which take two elements from
-        the set and combine them together to produce something new
-        from the set. 
+        relations</em>. They are structures which take two elements
+        from the set and combine them together to produce something
+        new from the set. 
       </li>
       <li>
-        The dot product is a new binary operation, and a strange one,
-        since its output is a different kind of object. 
-        It take two vectors and produces a scalar. However, 
+        The dot product is a new binary operation on <m>\RR^n</m>, and
+        a strange one, since its output is a different kind of object.
+        It take two vectors and produces a scalar.
       </li>
       <li>
         The cross product is a binary operation on vectors in
@@ -79,11 +79,11 @@
     </ul>
     <p>
       This list is just the start of many, many kinds of algebraic
-      structure that we can consider on sets. If we think about linear
-      algebra abstractly, often what we are doing is building new
-      structures on sets of vectors and analyzing their properties.
-      The dot product and the cross product are the new structure
-      we've introduced in Week 2; there will be more to come. 
+      structure that we can consider on sets. When we think about
+      linear algebra abstractly, we are building new structures on
+      sets of vectors and analyzing their properties. The dot product
+      and the cross product are the new structures we've introduced in
+      Week 2; there will be more to come.
     </p>
     <p>
       In the activity for this week, I'll ask you to think about the

@@ -196,7 +196,7 @@
       </li>
     </ul>
     <p>
-      This proof is <em>non-construction</me>. It tells us that there
+      This proof is <em>non-constructive</em>. It tells us that there
       are infinitely many prime numbers, but it doesn't tell us
       anything about there: what they how, how to find them, how they
       are distributed on the number line, etc. This is often a major
