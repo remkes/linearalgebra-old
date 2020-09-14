@@ -6,6 +6,36 @@
   <p><ol>
     <li>
       <p>
+        An ellipse is determined by a centre point, a greatest
+        distance to the edge <m>a</m> in some direction and a least
+        distance to the edge <m>b</m> in the perpendicular direction
+        to the first. This produces an oval shape <mdash /> a circle
+        if the two distances are the same. If the centre is the
+        origin, the large distance is along the <m>x</m> axis, and the
+        small distance is along the <m>y</m> axis, then the equation
+        of the ellipse is 
+        <me>
+          \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 
+        </me>.
+        How does the ellipse generalize to <m>\RR^3</m>, <m>\RR^4</m>
+        and higher dimensional spaces? How much information is needed
+        to determine the object (how many constants like the numbers
+        <m>a</m> and <m>b</m>)? (4)
+      </p>
+    </li>
+    <li>
+      <p>
+        How many vertices does the <m>n</m>-dimensional cube have?
+        (Make sure you give your reasoning based on the construction
+        of these cubes described in the videos and notes.) (4)
+      </p>
+    </li>
+    <li>
+      <p>
+        Prove that if <m>u</m> and <m>v</m> are vectors in
+        <m>\RR^n</m>, then <m>|u-v| = |v-u|</m>. (This shows that the
+        definition of distance between two vectors doesn't depend on
+        order we write the vectors.) (6)
       </p>
     </li>
   </ol></p>
