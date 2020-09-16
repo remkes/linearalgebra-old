@@ -32,10 +32,9 @@
     </li>
     <li>
       <p>
-        Prove that if <m>u</m> and <m>v</m> are vectors in
-        <m>\RR^n</m>, then <m>|u-v| = |v-u|</m>. (This shows that the
-        definition of distance between two vectors doesn't depend on
-        order we write the vectors.) (6)
+        Prove that vector addition is associative. (I said in the
+        notes that this is very similar to the proof for
+        commutativity. You can follow the structure of that proof).
       </p>
     </li>
   </ol></p>

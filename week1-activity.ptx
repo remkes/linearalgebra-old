@@ -218,8 +218,8 @@
             </mrow>
             <mrow>
               \amp v-u = \left( \begin{matrix} -2 \\ -1 \end{matrix}
-              \right) - \left( \begin{matrix} -3 \\ -2 \end{matrix}
-              \right) = \left( \begin{matrix} 1 \\ 1 \end{matrix}
+              \right) - \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) = \left( \begin{matrix} -5 \\ -1 \end{matrix}
               \right) 
             </mrow>
             <mrow>
@@ -231,23 +231,20 @@
             <mrow>
               \amp w-u = \left( \begin{matrix} -3 \\ 2 \end{matrix}
               \right) - \left( \begin{matrix} 3 \\ 0 \end{matrix}
-              \right) + \left( \begin{matrix} -6 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} -6 \\ 2 \end{matrix}
               \right)
             </mrow>
             <mrow>
               \amp v-w = \left( \begin{matrix} -2 \\ -1 \end{matrix}
               \right) - \left( \begin{matrix} -3 \\ 2 \end{matrix}
-              \right) + \left( \begin{matrix} 1 \\ -3 \end{matrix}
+              \right) = \left( \begin{matrix} 1 \\ -3 \end{matrix}
               \right)
             </mrow>
             <mrow>
-              \amp w-v = 
-              \left( \begin{matrix} -3 \\ 2 
-              \end{matrix} \right) - 
-              \left( \begin{matrix} -2 \\ -1 
-              \end{matrix} \right) =
-              \left( \begin{matrix} 1 \\ 1 
-              \end{matrix} \right) 
+              \amp w-v = \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) - \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} -1 \\ 3 \end{matrix}
+              \right) 
             </mrow>
           </md>
           <figure xml:id="figure-vector-arithmetic">

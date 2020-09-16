@@ -1,9 +1,136 @@
 <section xml:id="section-proofs-week3">
-  <title>Proofs - Spans and Bases</title>
+  <title>Proofs - Linear Subspaces</title>
   <subsection xml:id="subsection-TBD">
-    <title>Subsection</title>
+    <title>Proving Some Properties of Linear Subspaces</title>
     <p>
-      TBD
+      In developing the idea of proof, I'll present a couple of
+      examples using the definition of this section. 
     </p>
+    <proposition>
+      <statement>
+        <p>
+          The intersection of any two linear subspaces is another
+          linear subspace.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          A linear subspace is a subset of <m>\RR^n</m> with three
+          properties: closed under addition, close under scalar
+          multiplication, and contains the origin. If <m>L_1</m> and
+          <m>L_2</m> are subspaces, we have to check that all three
+          properties hold for the intersection <m>L_1 \cap L_1</m>.
+        </p>
+        <p>
+          The last properties if the easiest. If the origin is
+          contained in <m>L_1</m> and in <m>L_2</m>, then it must be
+          contained in the intersection. That's simply the definition
+          of the intersection: all points from both sets.
+        </p>
+        <p>
+          If two vectors <m>u</m> and <m>v</m> are in the
+          intersection, then they are contained in both <m>L_1</m> and
+          <m>L_2</m>. Since they are both in <m>L_1</m> and <m>L_1</m>
+          is a subspace (meaning closed under addition), the sum <m>u
+          + v</m> is also in <m>L_1</m>. The same is true for
+          <m>L_2</m>. Therefore, the sum <m>u + v</m> is in both
+          subspaces, thus in the intersection. Since we made no
+          assumptions on the vectors, this shows the intersection is
+          closed under addition.
+        </p>
+        <p>
+          A very similar argument works for scalar multiplication. If
+          a vector <m>u</m> is in the intersection (hence in both
+          subspaces) and <m>a</m> is a scalar, then since each
+          subspaces is closed under scalar multiplication, the scalar
+          multiple <m>au</m> is in both subspace, hence in the
+          intersection. This shows the intersection is closed under
+          scalar multiplication.
+        </p>
+        <p>
+          Notce that this proof goes back to the very first algebraic 
+          definition of a linear subspace. There may be other ways to
+          make the argument. Perhaps we could make it geometrically,
+          thinking of subspaces as infinitely extended flat objects
+          containing the origin. We know all subspaces can be spans or
+          loci, so perhaps we could use spans or loci to prove this
+          fact as well. 
+        </p>
+      </proof>
+    </proposition>
+    <proposition>
+      <statement>
+        Prove that a hyperplane through the origin is a linear
+        subspace.
+      </statement>
+      <proof>
+        <p>
+          I stated that loci were linear or affine subspaces, and
+          that loci through the origins were linear subspaces.
+          However, I never proved this. Here, I'm going to prove it
+          for the special case of a hyperplane.
+        </p>
+        <p> 
+          A hyperplane is the locus of one linear equation.
+          <me>
+            a_1x_1 + a_2x_2 + \ldots a_nx_n = c 
+          </me>
+          However, if the hyperplane contains the origin, the constant
+          <m>c</m> must be zero. (We stated this in the note; we could
+          argue is by sauing that if all the <m>x_i</m> are set to
+          zero, the left side of the equation is zero, so the right
+          side must also be zero). 
+          <me>
+            a_1x_1 + a_2x_2 + \ldots a_nx_n = 0 
+          </me>
+          All points on the hyperplane satisfy this equation and I
+          will use that fact to prove the proposition. To make this
+          easier, I will write the equation in terms of dot products.
+          If <m>n</m> is the vector with all the <m>a_i</m> (<m>n</m>
+          for normal) and <m>x</m> is the vector with all the
+          <m>x_i</m>, then the equation is 
+          <me>
+            n \cdot x = 0 
+          </me>.
+        </p>
+        <p>
+          Let <m>u</m> and <m>v</m> are vectors on the hyperplane,
+          then <m>n \cdot u = 0</m> and <m>n \cdot v = 0</m>. Then I
+          can consider 
+          <me>
+            n \cdot (u + v) 
+          </me>.
+          The dot product is linear, so it distributes here.
+          <me>
+            = n \cdot u + n \cdot v 
+          </me>
+          We just said that both of these dot products are zero, so
+          the equation gies <m>0 + 0 = 0</m>. Therefore, <m>u + v</m>
+          also satisfies the equation of the hyperplane, so is
+          contained in the hyperplane.
+        </p>
+        <p>
+          We do something very similar for the dot product. If
+          <m>a</m> is a scalar, consider the vector <m>au</m> and see
+          if it satisfies the equation of the hyperpane.
+          <me>
+            n \cdot (au)
+          </me>
+          By the properties of the dot product, again, I can pull out
+          the scalar.
+          <me>
+            = a (n \cdot u)
+          </me>
+          Then I get <m>a(0)</m>, since <m>u</m> is on the hyperplane.
+          This shows that the scalar multiple is also on the
+          hyperplane.
+        </p>
+        <p>
+          The third property of a linear subspace is containing the
+          origin, but we get that by assumption. Therefore, I've
+          proved that this hyperplane is, in fact, a linear subspace. 
+        </p>
+      </proof>
+    </proposition>
   </subsection>
 </section>
