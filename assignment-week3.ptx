@@ -6,6 +6,100 @@
   <p><ol>
     <li>
       <p>
+        Write the first vector as a linear combination of the second
+        and third vectors.
+        <ol>
+          <li>
+            <me>
+              \begin{pmatrix}
+                4 \\ 3 
+              \end{pmatrix},
+              \begin{pmatrix}
+                0 \\ 9 
+              \end{pmatrix},
+              \begin{pmatrix}
+                3  \\ -5 
+              \end{pmatrix}
+            </me>
+          </li>
+          <li>
+            <me>
+              \begin{pmatrix}
+                0 \\ 4 \\ 11 
+              \end{pmatrix},
+              \begin{pmatrix}
+                -1 \\ -2 \\ 1 
+              \end{pmatrix},
+              \begin{pmatrix}
+                0 \\ 5 \\ -2 
+              \end{pmatrix}
+            </me>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Write a third vector which is linearly independent to the
+        first two. (Make sure you show me why is it linearly
+        independent.)
+        <ol>
+          <li>
+            <me>
+              \begin{pmatrix}
+                0 \\ -4 \\ -4  
+              \end{pmatrix},
+              \begin{pmatrix}
+                3 \\ 0 \\ 0 
+              \end{pmatrix}
+            </me>
+          </li>
+          <li>
+            <me>
+              \begin{pmatrix}
+                1 \\ 1 \\ -4 
+              \end{pmatrix},
+              \begin{pmatrix}
+                2 \\ -3 \\ 1 
+              \end{pmatrix}
+            </me>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Write equations for these planes.
+        <ol>
+          <li>
+            The plane with normal 
+            <m>\begin{pmatrix}
+              -7 \\ -1 \\ -1 
+            \end{pmatrix}</m>
+            containing the point
+            <m>\begin{pmatrix}
+              4 \\ 0 \\ 2 
+            \end{pmatrix}</m>.
+          </li>
+          <li>
+            The plane containing the points 
+            <m>\begin{pmatrix}
+              4 \\ 8 \\ 0 
+            \end{pmatrix}, </m>
+            <m>\begin{pmatrix}
+              1 \\ -5 \\ -5 
+            \end{pmatrix}</m> and 
+            <m>\begin{pmatrix}
+              -3 \\ 10 \\ 2 
+            \end{pmatrix}</m>.
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Prove that any three vectors in <m>\RR^2</m> must be linearly
+        dependent. 
       </p>
     </li>
   </ol></p>

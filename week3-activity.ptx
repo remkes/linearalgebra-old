@@ -497,6 +497,447 @@
       </solution>
     </activity>
   </subsection>
+  <subsection xml:id="subsection-activity-equations-of-planes">
+    <title>Equations of Planes and Hyperplanes</title>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with normal
+          <m>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 0
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 3 
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the plane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            (-1)x + (-1)y + 0 z = d 
+          </m>
+          I can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = (-1)(0) + (-1)(1) + (0)(3) = -1 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            - x - y = -1 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with normal
+          <m>
+            \left( \begin{matrix}
+              2 \\ 0 \\ 3
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              -4 \\ -1 \\ 2
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the plane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            2x + 0y + 3z = d 
+          </m>
+          I can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = 2(-4) + 0(-1) + 3(2) = -2 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            2x + 3z = -2 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with local direcitons
+          <m>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 1 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0 
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              2 \\ 1 \\ 1
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product of the local direcitons gives the normal
+          to the plane. 
+          <me>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (-1)(0) - (1)(1) \\ (1)(-2) - (-1)(0) \\ (-1)(1) -
+              (-1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              -1 \\ -2 \\ -1 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            -x - 2y - z = d 
+          </m>
+          I can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = -(2)(2) - (2)(1) - (1) = -7
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            -x - 2y - z = -7 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with local direcitons
+          <m>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              -1 \\ 0 \\ -3 
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product of the local direcitons gives the normal
+          to the plane. 
+          <me>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 1
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (1)(1) - (1)(1) \\ (1)(-2) - (0)(1) \\ (0)(1) - (1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              0 \\ -2 \\ 2 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            0x - 2y + 2z = d 
+          </m>
+          I can calculate the constant using the point. Put the 
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <m>
+            d = 0(-1) - 2(0) + 2(-3) = -6 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            -2y + 2z = -6 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with points
+          <m>
+            p = \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m>,
+          <m>
+            q = \left( \begin{matrix}
+              1 \\ 0 \\ 0 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            r = \left( \begin{matrix}
+              -2 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The local directions are give by the differences of the
+          point: <m>(q-p)</m> and <m>(r-p)</m>. I calculate those two
+          local directions.
+          <md>
+            <mrow>
+              q-p = \left( \begin{matrix}
+                1 \\ 0 \\ 0 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                0 \\ 1 \\ 1 
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                1 \\ -1 \\ -1 
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              r-p = \left( \begin{matrix}
+                -2 \\ 1 \\ 1 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                0 \\ 1 \\ 1
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                -2 \\ 0 \\ 0 
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          These are the two local direction. The cross product of the
+          local direcitons gives the normal to the plane. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ -1 \\ -1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 0 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (-1)(0) - (-1)(0) \\ (-1)(-2) - (1)(0) \\ (1)(0) -
+              (-1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              0 \\ 2 \\ -2 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            0x + 2y - 2z = d 
+          </m>
+          I can calculate the constant using the point (I can use
+          any of the three points--all will determine the same
+          constant). Put the corodinates of the point into the left
+          side of the equation and calculate <m>d</m>.
+          <m>
+            d = (0)(0) + 2 (1) - 2(1) = 0 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            2y - 2z = 0 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with points
+          <m>
+            p = \left( \begin{matrix}
+              -3 \\ -1 \\ 0 
+            \end{matrix} \right)
+          </m>,
+          <m>
+            q = \left( \begin{matrix}
+              -2 \\ 1 \\ -4 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            r = \left( \begin{matrix}
+              0 \\ 5 \\ 0 
+            \end{matrix} \right)
+          </m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The local directions are give by the differences of the
+          point: <m>(q-p)</m> and <m>(r-p)</m>. I calculate those two
+          local directions.
+          <md>
+            <mrow>
+              q-p = \left( \begin{matrix}
+                -2 \\ 1 \\ -4 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                -3 \\ -1 \\ 0 
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                1 \\ 2 \\ -4 
+              \end{matrix} \right) = 
+            </mrow>
+            <mrow>
+              r-p = \left( \begin{matrix}
+                0 \\ 5 \\ 0
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                -3 \\ -1 \\ 0
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                3 \\ 6 \\ 0  
+              \end{matrix} \right) = 
+            </mrow>
+          </md>
+          These are the two local direction. The cross product of the
+          local direcitons gives the normal to the plane. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ 2 \\ -4 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              3 \\ 6 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (2)(0) - (-4)(6) \\ (-4)(3) - (1)(0) \\ (1)(6) - (2)(3) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              24 \\ -12 \\ 0
+            \end{matrix} \right) 
+          </me>
+          This is the normal. the normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <m>
+            24 x - 12 y + 0z = d 
+          </m>
+          I can calculate the constant using the point (I can use
+          any of the three points--all will determine the same
+          constant). Put the corodinates of the point into the left
+          side of the equation and calculate <m>d</m>.
+          <m>
+            d =  24(0) - 12(5) + 0 z = -60 
+          </m>
+          Therefore, the equation of the plane is 
+          <m>
+            24 x - 12 y = -60 
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the hyperplane with normal
+          <m>
+            \left( \begin{matrix}
+              -3 \\ 1 \\ 1 \\ 0 \\ 0 
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              4 \\ 0 \\ 1 \\ -1 \\ -2 
+            \end{matrix} \right)
+          </m> is a point on the hyperplane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the hyperplane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = d 
+          </m>
+          I can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = -3 (4) + 1 (0) + 1 (1) + 0 (-1) + 0 (-2) =-11
+          </m>
+          Therefore, the equation of the hyperplane is 
+          <m>
+            -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = -11
+          </m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the hyperplane with normal
+          <m>
+            \left( \begin{matrix}
+              -1 \\-1 \\ -4 \\ 1 \\ -2 \\ 2 
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              3 \\ 1 \\ -2 \\ -2 \\ -6 \\ 0
+            \end{matrix} \right)
+          </m> is a point on the hyperplane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the hyperplane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <m>
+            -1 x_1 - 1 x_2 + 4 x_3 + x_4 - 2 x_5 + 2 x_6 = d
+          </m>
+          I can calculate the constant using the point. Put the
+          corodinates of the point into the left side of the equation
+          and calculate <m>d</m> 
+          <m>
+            d = -1 (3) - 1 (1) + 4 (-2) + (-2) - 2(-6) + 2(0) = -2
+          </m>
+          Therefore, the equation of the hyperplane is 
+          <m>
+            -1 x_1 - 1 x_2 + 4 x_3 + x_4 - 2 x_5 + 2 x_6 = -2
+          </m>.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
   <subsection xml:id="subsection-week3-proofs">
     <title>Proof Questions</title>
     <activity>
