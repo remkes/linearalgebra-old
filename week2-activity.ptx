@@ -525,7 +525,7 @@
               -4 \\ 1 \\ 1 
             \end{matrix} \right) \text{ and }
             v = \left( \begin{matrix} 
-              -2 \\ 4 \\ 4 
+              2 \\ 4 \\ 4 
             \end{matrix} \right) 
           </me>
         </p>
@@ -534,7 +534,7 @@
         <p>
           The cosine of the angle between two vectors is the dot
           product divided by the product of the lengths. I'll
-          calculate the threes piece of this and put them into the
+          calculate the three pieces of this and put them into the
           expression for the cosine of the angle. 
           <md>
             <mrow>
@@ -544,15 +544,15 @@
               |u| \amp = \sqrt{(-4)^2 + 1^2 + 1^2} = \sqrt{18} 
             </mrow>
             <mrow>
-              |v| \amp = \sqrt{(-2)^2 + 4^2 + 4^2} = \sqrt{36} = 6 
+              |v| \amp = \sqrt{2^2 + 4^2 + 4^2} = \sqrt{36} = 6 
             </mrow>
             <mrow>
               u \cdot v \amp = \left( \begin{matrix} 
                 -4 \\ 1 \\ 1 
               \end{matrix} \right) \cdot 
               \left( \begin{matrix} 
-                -2 \\ 4 \\ 4 
-              \end{matrix} \right) = (-4)(-2) + (1)(4) + (1)(4) = 0 
+                2 \\ 4 \\ 4 
+              \end{matrix} \right) = (-4)(2) + (1)(4) + (1)(4) = 0 
             </mrow>
             <mrow>
               \cos \theta \amp = 0 
@@ -667,10 +667,10 @@
               1 \\ 6 \\ -5 
             \end{matrix} \right) = 
             \left( \begin{matrix} 
-              (3)(-6) - (8)(6) \\ (8)(1) - (0)(-5) \\ (0)(6) - (3)(1) 
+              (3)(-5) - (8)(6) \\ (8)(1) - (0)(-5) \\ (0)(6) - (3)(1) 
             \end{matrix} \right) = 
             \left( \begin{matrix} 
-              -66 \\ 8 \\ -3 
+              -63 \\ 8 \\ -3 
             \end{matrix} \right) 
           </me>
         </p>
@@ -1209,7 +1209,7 @@
             = \left( \left( \begin{matrix}
               u_2 v_3 - u_3 v_2 \\
               u_3 v_1 - u_1 v_3 \\
-              u_1 v_3 - u_2 v_1 
+              u_1 v_2 - u_2 v_1 
             \end{matrix} \right) \right) = u \times v
           </me>
           I start with the right side and made a chain of equality to
