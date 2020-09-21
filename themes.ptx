@@ -12,7 +12,7 @@
       <p>
         The word <sq>algebra</sq> does not mean the same thing in
         university mathematics as it did in high-school mathematics.
-        Previously, the world <sq>algebra</sq> usually signaled the use
+        Previously, the word <sq>algebra</sq> usually signalled the use
         of variables: <m>3+5 = 8</m> is arithmetic, but <m>3 + x = 8
         \implies x = 5</m> is algebra. From that point, algebra became
         the manipulation of equations (and inequalities) with variables,
@@ -26,7 +26,7 @@
         algebra, etc. To build a concept of what we mean by the term
         <sq>algebra</sq> is a central goal of the course. I'll
         give a definition right now, at the start, but it's a difficult
-        definition to understand; hopefully the course will provide the
+        definition to understand; hopefully, the course will provide the
         necessary elaboration.
       </p>
       <definition>
@@ -75,10 +75,10 @@
     <li>
       <title>Geometry</title>
       <p>
-        Though the subjet is called <sq>algebra</sq>, linear algebra is
-        a very geometric discpline and my approach to this course will
+        Though the subject is called <sq>algebra,</sq> linear algebra is
+        a very geometric discipline, and my approach to this course will
         emphasize the geometry. We will start with vectors, a geometric
-        topic (though with rich algebraic structre). Throughout the
+        topic (though with rich algebraic structure). Throughout the
         course, we will play geometry and algebra against each other and
         use each to understand the other better. This interplay drives
         the discpline. In many ways, this will be a geomety course
