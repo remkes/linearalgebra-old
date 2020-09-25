@@ -4,10 +4,10 @@
     <title>New Environments</title>
     <p>
       In the definitions in the previous section, Euclidean space was
-      defined in any dimension we want. If we want to work in seven
-      dimensions, we simply need to write vectors with sevean
+      defined in any dimension we wanted. If we want to work in seven
+      dimensions, we simply need to write vectors with seven
       components.  This is a strange and new thing. Conventional
-      geometry deals with this we can draw and see, which are things
+      geometry deals with things we can draw and see, which are things
       that necessarily exist in two or three dimensions. Higher
       dimensions are something new and bizzare.
     </p>
@@ -43,7 +43,7 @@
     </p>
     <p>
       The naming convention for these spheres in mathematics is
-      slighly unexpected. A sphere is usually considered a hollow
+      slightly unexpected. A sphere is usually considered a hollow
       object: it doesn't include the points inside it, which are
       closer than one unit to the origin. The normal sphere in
       <m>\RR^3</m> is, in this way, thought of as a two-dimensional
@@ -55,18 +55,18 @@
       <m>(n-1)</m>-sphere. 
     </p>
     <p>
-      What do we know about these higher dimensional spheres? First,
+      What do we know about these higher-dimensional spheres? First,
       we can look at their equations.  In <m>\RR^2</m>,  the circle
       has the equation <m>x^2 + y^2 = 1</m>. In <m>\RR^3</m> the sphere
       (the <m>2</m>-sphere) has equation <m>x^2 + y^2 + z^2 = 1</m>.
       The sphere (<m>3</m>-sphere) in <m>\RR^4</m> has equation <m>w^2
-      + x^2 + y^2 + z^2 + w^2 = 1</m>. The sphere
+      + x^2 + y^2 + z^2 = 1</m>. The sphere
       (<m>(n-1)</m>-sphere) in <m>\RR^n</m> has equation <m>x_1^2 +
       x_2^2 + \ldots + x_n^2 = 1</m>.
     </p>
     <p>
       These equations are useful for studying the algebra of the
-      object. We can determine which points are one any given sphere
+      object. We can determine which points are on any given sphere
       using these equations. The points
       <md>
         <mrow>
@@ -97,30 +97,30 @@
       dimensions geometry is the fact that we can't see it, since we
       are so used to seeing our geometry. However, there are still
       some indirect geometric ways of thinking that can help us
-      understand higher dimensions objects. 
+      understand higher-dimensional objects. 
     </p>
     <p>
       If we take the normal sphere in <m>\RR^3</m> and slice it
-      horizontally, each cross section is a circle. The cross section
+      horizontally, each cross-section is a circle. The cross-section
       at the widest point is a unit circle, and as we move up or down,
       the cross-sections are smaller and smaller circles. We can think
       of the sphere as an object whose slices are all circles (though
       it is not the unique object with that property). We could also
-      think of the sphere as an infinite stack if infinitly thin
+      think of the sphere as an infinite stack of infinitely thin
       circles, starting with small circles, growing to the equator and
       the unit circles, and then shrinking again as we move up the
       sphere.
     </p>
     <p>
       This notion of slicing works in higher dimensions. The
-      <m>3</m>-sphere in <m>\RR^4</m> has slices which are spheres.
-      That's a bizzare idea (because trying to think in four
-      dimensions is a bizzare task), and one that defies
+      <m>3</m>-sphere in <m>\RR^4</m> has slices, which are spheres.
+      That's a bizarre idea (because trying to think in four
+      dimensions is a bizarre task), and one that defies
       visualization. But it is a way of thinking about the
       <m>3</m>-sphere. It is an object whose slices are spheres and
       can be thought of as infinitely many spheres stacked up. This is
       still strange: the stacking happens in a new direction, so that
-      all point on <qt>adjacent</qt> sphere are right next to each
+      all points on <qt>adjacent</qt> spheres are right next to each
       other, just like the circles stack up to make the ordinary
       sphere are right next to each other. But maybe this helps us
       think a bit about what kind of object the <m>3</m>-sphere is. 
@@ -130,8 +130,8 @@
     <title>Cubes</title>
     <p>
       After the sphere, I want to consider square objects. To
-      understand the higher dimensional cubes, I want to talk about
-      how we build each cube from lower dimensional pieces.  Let's
+      understand the higher-dimensional cubes, I want to talk about
+      how we build each cube from lower-dimensional pieces.  Let's
       start at the very beginning, in <m>\RR^1</m>, which is just the
       number line. 
     </p>
@@ -141,14 +141,14 @@
       \leq x \leq 1</m> for <m>x \in \RR</m>.
     </p>
     <p>
-      In <m>\RR^2</m>, the <sq>cube</sq> is the just the
+      In <m>\RR^2</m>, the <sq>cube</sq> is just the
       ordinary square. It is all vectors
       <m>\begin{pmatrix} x \\ y \end{pmatrix}</m> such that <m>0
       \leq x \leq 1</m> and <m>0 \leq y \leq 1</m>. The square
       can be formed by taking two intervals (1-dimensional cubes) and
       connecting the matching vertices. This will become the way in
-      which we build higher dimensional cubes: each cube is form of
-      two cubes from the previous dimensionw with all the matching
+      which we build higher-dimensional cubes: each cube is formed of
+      two cubes from the previous dimension with all the matching
       vertices connected. 
     </p>
     <figure xml:id="figure-square">
@@ -168,14 +168,14 @@
     </figure>
     <p>
       Let's look at <m>\RR^3</m> and follow the algorithm I suggested.
-      If I take two squares and connected the matching vertices, I do
+      If I take two squares and connect the matching vertices, I do
       indeed get the ordinary cube. One of the two squares is the
-      front of the cube and the other is the back (or top and bottom,
+      front of the cube, and the other is the back (or top and bottom,
       left and right, depending on how you orient the pieces). To make
       this a bit more clear, in <xref ref="figure-cube" />, I've drawn
       the two original squares in black and the four connecting lines
       in red. I could also describe the cube (including its interior)
-      as all point where the coordinate satisfy <m>x \in [0,1]</m>,
+      as all points where the coordinates satisfy <m>x \in [0,1]</m>,
       <m>y \in [0,1]</m> and <m>z \in [0,1]</m>. 
     </p>
     <figure xml:id="figure-cube">
@@ -266,12 +266,12 @@
       </image>
     </figure>
     <p>
-      There is an cube in each <m>\RR^n</m>, consisting
+      There is a cube in each <m>\RR^n</m>, consisting
       of all vectors where all components are in the interval
       <m>[0,1]</m>. Each can be constructed by joining two
-      copies of a lower dimensional <m>(n-1)</m>-cube with edges
+      copies of a lower-dimensional <m>(n-1)</m>-cube with edges
       between matching vertices. I haven't tried to draw diagrams for
-      any of these higher dimensional cubes. 
+      any of these higher-dimensional cubes. 
     </p>
     <p>
       The cube is an example of a solid object with flat sides and
@@ -284,10 +284,10 @@
     <title>Cross-Polytopes</title>
     <p>
       In addition to the cubes, I want to introduce another kind of
-      higher dimensional polytope, called the cross-polytope. It
+      higher-dimensional polytope, called the cross-polytope. It
       generalizes the idea of a diamond shape in two and three
       dimensions. It also lets me show another way of trying to get a
-      sense of what higher dimensional object look like. 
+      sense of what higher-dimensional objects look like. 
     </p>
     <p>
       In <m>\RR^2</m>, the cross-polytope is the diamond with
@@ -315,8 +315,8 @@
       </image>
     </figure>
     <p>
-      In <m>\RR^3</m>, if we take the diamond, add two point on
-      either side, and connect the new points to all four original
+      In <m>\RR^3</m>, if we take the diamond, add two points on
+      either side and connect the new points to all four original
       vertices of the diamond, we are essentially building a square
       pyramid on either side of the diamond. The result is called the
       octahedron and has vertices <m>\begin{pmatrix} 1 \\ 0 \\ 0
@@ -361,21 +361,21 @@
       connecting the new vertices to all previous vertices (but not to
       each other). If we choose the new vertices as points in the new
       axis direction, then all the vertices of the
-      <m>n</m>-cross-polytope are vertces with <m>\pm 1</m> in one
+      <m>n</m>-cross-polytope are vertices with <m>\pm 1</m> in one
       component and zero in all other components. Each vertex is
       connected to all other vertices except its opposite. I haven't
       tried to draw diagrams of any of these higher cross-polytopes. 
     </p>
     <p>
-      One way of understanding higher dimensional object (since we
-      can't directly see them), is to just draw their lower
-      dimensional components. For polyhedra, we can do this by only
-      drawing their vertices and edges (and not trying to representing
-      the higher dimensional structures that includes those vertices
+      One way of understanding higher-dimensional objects (since we
+      can't directly see them) is to just draw their lower-dimensional 
+      components. For polyhedra, we can do this by only
+      drawing their vertices and edges (and not trying to represent
+      the higher-dimensional structures that include those vertices
       and edges). I'm going to do this for the
       cross-polytopes to demonstrate the idea. The diamond
       (2-cross-polytope) has four vertices with all connections except
-      for oppostive vertices.
+      for opposite vertices.
       <figure xml:id="figure-2-cross-vertex">
         <caption>The 2-Cross-Polytope (Diamond) Vertex Diagram</caption>
         <image xml:id="figure16" width="50%"> 
@@ -397,7 +397,7 @@
       vertex diagram. Like the diamond, all vertices except for those
       directly opposite are connected. 
       <figure xml:id="figure-3-cross-vertex">
-        <caption>The 3-Cross-Polytope (Octaheron) Vertex Diagram</caption>
+        <caption>The 3-Cross-Polytope (Octahedron) Vertex Diagram</caption>
         <image xml:id="figure17" width="50%">
           <asymptote>
             size(10cm);
@@ -425,10 +425,10 @@
         </image>
       </figure>
       The construction of the higher cross-polytopes, where we add two
-      vertices and connection them to all existing vertices,
+      vertices and connect them to all existing vertices,
       consistently builds a set of vertices where each vertex is
       attached, by an edge, to all other vertices except for the one
-      direclty opposite it. If we collapse the vertices and edges onto
+      directly opposite it. If we collapse the vertices and edges onto
       a 2D diagram, that means we draw all the lines between our
       vertices except those directly opposite. The 4-cross polytope
       has <m>8</m> vertices connected in this way. 
@@ -677,7 +677,7 @@
         </image>
       </figure>
       The 16-cross-polytope (in <m>\RR^{16}</m>) has <m>32</m>
-      vertice connected this way.
+      vertices connected this way.
       <figure xml:id="figure-16-cross-vertex">
         <caption>The 16-Cross-Polytope Vertex Diagram</caption>
         <image xml:id="figure21" width="90%">
@@ -1200,10 +1200,10 @@
         </image>
       </figure>
       These images are obviously not full pictures of these higher
-      dimensional object, but just some kind of 2D shadows
+      dimensional objects, but just some kind of 2D shadows
       which give us some information and intuition for the
-      obejcts. Everything in higher dimensions must be done
-      indirectly but, working indirectly, we can produce some useful
+      objects. Everything in higher dimensions must be done
+      indirectly, but working indirectly, we can produce some useful
       and interesting visualizations that let us start to understand
       the objects. 
     </p>

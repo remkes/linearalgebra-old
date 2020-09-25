@@ -5,14 +5,14 @@
     <p>
       In this section, we go through the basic arithmetic of vectors.
       In some ways, it mimics the arithmetic of scalars; in other
-      ways, scalar operations not longer work and are replace with
+      ways, scalar operations no longer work and are replaced with
       other operations. 
     </p>
     <definition>
       <statement>
         <p>
           The <term>sum</term> of two vectors <m>u</m> and <m>v</m> in
-          <m>\RR^n</m> is the sum taken componentwise..
+          <m>\RR^n</m> is the sum taken component wise.
           <me>
             u + v = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
             \end{pmatrix} + \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\
@@ -23,7 +23,7 @@
       </statement>
     </definition>
     <p>
-      The sum is visuzliazed by placing the start of the second vector
+      The sum is visualized by placing the start of the second vector
       at the end of the first, as in <xref
       ref="figure-visualizing-vector-addition" />. Note that we
       can only add two vectors in the same dimension. We can't add a
@@ -82,7 +82,7 @@
       Though there will be other <sq>multiplications</sq> to come, we
       generally say that we can't multiply vectors together in any way
       reminiscent of numbers. Instead, we can only multiply by
-      scalars. Scalar multiplication is visualizing by scaling the
+      scalars. Scalar multiplication is visualized by scaling the
       vector by the value of the scalar. (Hence the term
       <sq>scalar</sq>!) If the scalar is negative, the direction is
       also reversed, as in <xref
@@ -142,10 +142,10 @@
       <statement>
         <p>
           With respect to some set of scalars (such as <m>\RR</m>),
-          whenever we find a mathematical structure which has the two
+          whenever we find a mathematical structure that has the two
           properties of addition and scalar multiplication, we call
           the structure <term>linear</term>. <m>\RR^n</m> is a linear
-          space, because vectors allow for addition and scalar
+          space because vectors allow for addition and scalar
           multiplication.
         </p>
       </statement>
@@ -173,13 +173,13 @@
       the physical length of that arrow in <m>\RR^2</m> and
       <m>\RR^3</m>. Past <m>\RR^3</m>, we don't have a natural notion
       of length. This definition serves as a reasonable
-      generalization to <m>\RR^4</m> and higher dimensions which we
+      generalization to <m>\RR^4</m> and higher dimensions, which we
       can't visualize. Note also that <m>|u| = 0</m> only if <m>u</m>
-      is the zero vector. All other vectors have positive length.
+      is the zero vector. All other vectors have a positive length.
     </p>
     <p>
-      Often the square root is annoying and we find it convenient to
-      work with the square of length.
+      Often the square root is annoying, and we find it convenient to
+      work with the square of the length.
       <me>
         |u|^2 = u_1^2 + u_2^2 + \ldots + u_n^2
       </me>
