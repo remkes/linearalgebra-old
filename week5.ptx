@@ -1,8 +1,9 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-week5">
   <title>Week 5</title>
-  <xi:include href="dimensions.ptx" />
-  <xi:include href="reduction-algorithms.ptx" />
+  <xi:include href="dimensions-spans.ptx" />
+  <xi:include href="linear-combinations.ptx" />
+  <xi:include href="dimensions-loci.ptx" />
   <xi:include href="week5-activity.ptx" />
 </chapter>
 

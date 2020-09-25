@@ -398,6 +398,15 @@
         </p>
       </statement>
     </definition>
+    The leading ones are a key feature of the reduced row-echelon
+    form. It will be useful in the future to keep track of the number
+    of these leading one. We have a definition which does this.
+    <definition>
+      <statement>
+        The <term>rank</term> of a matrix is the number of leading
+        ones in its reduced row-echelong form.
+      </statement>
+    </definition>
   </subsection>
   <subsection xml:id="subsection-row-reduction-examples">
     <title>Examples of Row Reduction</title>
