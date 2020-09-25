@@ -174,7 +174,7 @@
         </p>
       </statement>
     </example>
-    <example>
+    <example xml:id="example-description-by-parameters">
       <statement>
         <p>
           We can go further. The following matrix is also in reduced

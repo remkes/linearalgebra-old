@@ -1,7 +1,5 @@
 <section xml:id="section-dimensions-loci">
   <title>Dimensions of Loci</title>
-  <subsection xml:id="subsection-dimensions-of-loci">
-    <title>Dimensions of Loci</title>
     <p>
       Similarly, we can use row-reduction of matrices to find the
       dimensions of a locus. In particular, we will be able to
@@ -28,11 +26,12 @@
       This is just a system of linear equations, which has a
       corresponding matrix.
       <me>
-        \left( \begin{array}{cccc|c} a_{11} \amp a_{12} \amp \ldots
-        \amp a_{1n} \amp c_1 \\ a_{21} \amp a_{22} \amp \ldots
-        \amp a_{2n} \amp c_2 \\ \ldots \amp \ldots \amp \ldots
-        \amp \ldots \amp \ldots \\ a_{11} \amp a_{12} \amp \ldots
-        \amp a_{1n} \amp c_1 \end{array} \right)
+        \left( \begin{array}{cccc|c} 
+          a_{11} \amp a_{12} \amp \ldots \amp a_{1n} \amp c_1 \\ 
+          a_{21} \amp a_{22} \amp \ldots \amp a_{2n} \amp c_2 \\ 
+          \vdots \amp \vdots \amp \ldots \amp \vdots \amp \vdots \\ 
+          a_{11} \amp a_{12} \amp \ldots \amp a_{1n} \amp c_1 
+        \end{array} \right)
       </me>
     </p>
     <p>
@@ -60,7 +59,7 @@
       To understand a locus, we just solve the associated system. If
       it has solutions, we count the free variables: that's the
       dimenion of the locus. We can get even more information from
-      this process  When we row reduce the matrix <m>A</m>
+      this process.  When we row reduce the matrix <m>A</m>
       corresponding to the linear system, the equations corresponding
       to rows with leading ones (keeping track of exchanging rows, if
       necessary) are equations which are necessary to define the
@@ -89,42 +88,48 @@
       dimensions by one. In either case, the question of calculating
       dimension boils down to the rank of an associated matrix.
     </p>
-  </subsection>
-  <subsection xml:id="subsection-bases-for-loci">
-    <title>Bases for Loci</title>
-    <p>
-      If we have a solution space for a linear system expressed in
-      free variables, we can write it as a vector sum using those free
-      variables.
-    </p>
     <example>
       <statement>
         <p>
-          The following is an example of a solution space in
-          <m>\RR^4</m>, with variables <m>w</m>, <m>x</m>, <m>y</m>,
-          and <m>z</m>, where <m>y</m> and <m>z</m> are free
-          variables.
+          I'm going to repeat <xref
+          ref="example-description-by-parameters" /> to make the point
+          that nothing new is happenings here: we're just treating
+          loci as linear systems and looking at their solutions
+          spaces. Consider a locus in <m>\RR^4</m> defined by two
+          equations.
+          <md>
+            <mrow>
+              w + 3y + 2z \amp = -3 
+            </mrow>
+            <mrow>
+              x - y - z \amp = -2 
+            </mrow>
+          </md>
+          The translation of this into a matrix is precisely the
+          matrix in <xref ref="example-description-by-parameters" />.
+          <me>
+            \begin{array}{cccc|c}
+              1 \amp 0 \amp 3 \amp 2 \amp -3 \\
+              0 \amp 1 \amp -1 \amp -1 \amp -2 
+            \end{array}
+          </me>
+          The equation is already in reduced row-echolon form. There
+          are two columns (other than the constant column) without
+          leading ones; therefore <m>y</m> and <m>z</m> are free
+          variables. The solution, in a description with free
+          parameters, is
           <me>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
             \begin{pmatrix} 1 \\ -4 \\ 0 \\ 0 \end{pmatrix} + y
             \begin{pmatrix} 1 \\ -2 \\ 1 \\ 0 \end{pmatrix} + z
             \begin{pmatrix} -2 \\ -3 \\ 0 \\ 1 \end{pmatrix}
-          </me>
+          </me>.
         </p>
         <p>
-          This is an offset span. The span is all combinations of the
-          vectors <m> \begin{pmatrix} 1 \\ -2 \\ 1 \\ 0 \end{pmatrix}
-          </m> and <m> \begin{pmatrix} -2 \\ -3 \\ 0 \\ 1\end{pmatrix}
-          </m> . Therefore, those two vectors are the basis for the
-          span. An offset space itself doesn't have a basis, since
-          basis is only defined for linear subspaces.
-        </p>
-        <p>
-          This gives us a way to describe the basis for any locus:
-          write it as a system, find the solution space by free
-          parameter and idenfity the basis of the linear part.
+          This is an affine subspace with dimension <m>2</m>. The number
+          of variablse (<m>4</m>) minus the rank of the matrix
+          (<m>2</m>) also confirms this dimension. 
         </p>
       </statement>
     </example>
-  </subsection>
 </section>
