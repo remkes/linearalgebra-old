@@ -8,7 +8,7 @@
           If we have a system of equations in the variables <m>x_1,
           x_2, \ldots, x_n</m>, the set of values for these variables
           which satisfy all the equations is called the
-          <term>solutions space</term> of the system. Since each set
+          <term>solution space</term> of the system. Since each set
           of values is a vector, we think of the solution space as a
           subset of <m>\RR^n</m>. For linear equations, the solution
           space will always be a affine subspace. If we have encoded

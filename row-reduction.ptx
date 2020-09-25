@@ -1,5 +1,240 @@
 <section xml:id="section-row-reduction">
-  <title>Solving by Row Reduction</title>
+  <title>Solving Systems and  Row Reduction</title>
+  <subsection xml:id="subsection-systems-definition">
+    <title>System of Linear Equations</title>
+    <p>
+      The previous eight chapters introduced the geometric side of
+      this course. This chapter changes perspective to look at the
+      algebraic side of linear algebra. A major problem in algebra is
+      solving systems of equations: given several equations in several
+      variables, can we find values for each variable which satisfy
+      all the equations? In general, algegra considers any kind of
+      equation.
+    </p>
+    <example>
+      <statement>
+        <md>
+          <mrow>x^2 + y^2 + z^2 \amp = 3</mrow>
+          <mrow>xy + 2xz - 3yz \amp = 0</mrow>
+          <mrow>x+y+z \amp = 3</mrow>
+        </md>
+        <p>
+          This system is solved by <m>\begin{pmatrix} x \\ y \\ z
+          \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}
+          </m> When substitued in the equations, these values satisfy
+          all three. No other triples satisfies, so this is a unique
+          solution.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Solving arbitrary systems of equations is a very difficult
+      problem. There are two initial techniques, which are usually
+      taught in high-school mathematics: isolating and replacing
+      variables; or performing arithmetic with the equations
+      themselves. Both are useful techniques. However, when the
+      equations become quite complicated, both methods can fail. In
+      that case, solutions to systerms can only be approached with
+      approximation methods. The methodology of these approximations
+      is a whole branch of mathematics in itself.
+    </p>
+    <p>
+      We are going to restrict ourselves to a class of systems which
+      is more approchable: systems of linear equations. Recall the
+      definition of a linear equation which we first stated in <xref
+      ref="section-loci" />.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Let <m>a_i</m> and <m>c</m> be real numbers. A <term>linear
+          equation</term> in the variables <m>x_1, x_2 \ldots, x_n</m>
+          is a equation of the following form.
+          <me>
+            a_1 x_1 + a_2 x_2 + \ldots + a_n x_n = c
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Given a fixed set of variables <m>x_1, x_2, \ldots, x_n</m>, we
+      want to consider systems of linear equations (and only linear
+      equations) in those variables. While much simpler than the
+      general case, linear systems are a common and useful type of
+      system to consider. Such systems also work well with arithmetic
+      solution techniques, since we can add two linear equations
+      together and still have a linear equation.
+    </p>
+    <p>
+      This turns out to be the key idea: we can do arithmetic with
+      linear equations. Specifically, there are three things we can
+      do with a system of linear equation. These three techniques
+      <em>preserve the solutions</em>, that is, they don't alter the
+      values of the variables that solve the system.
+      <ul>
+        <li>
+          <p>
+            Multiple a single equation by a (non-zero) constant.
+            (Multiplying both sides of the equation, of course).
+          </p>
+        </li>
+        <li>
+          <p>
+            Change the order of the equations.
+          </p>
+        </li>
+        <li>
+          <p>
+            Add one equation to another.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      If we combine the first and third, we could restate the third
+      as: add a multiple of one equation to another. In practice, we
+      often think of the third operation this way.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-matrix-representation-of-systems">
+    <title>Matrix Represetation of Systems of Linear Equations</title>
+    <p>
+      If we worked with the equations directly, we would find, with
+      careful application of the three techniques, we could always
+      solve linear systems. However, the notation becomes cumbersome
+      for large systems. Therefore, we use matrices to encode
+      the information in a nicely organized way. 
+    </p>
+    <p>
+      Consider a general system with <m>m</m> equations in the
+      variables <m>x_1, x_2, \ldots, x_n</m>, where <m>a_{ij}</m> and
+      <m>c_i</m> are real numbers.
+      <md>
+        <mrow>
+          \amp a_{11} x_1 + a_{12} x_2 + \ldots a_{1n} x_n \amp = \amp
+          c_1
+        </mrow>
+        <mrow>
+          \amp a_{21} x_1 + a_{22} x_2 + \ldots a_{2n} x_n \amp = \amp
+          c_2
+        </mrow>
+        <mrow>
+          \amp \vdots \amp \vdots \amp
+        </mrow>
+        <mrow>
+          \amp a_{m1} x_1 + a_{m2} x_2 + \ldots a_{mn} x_n \amp = \amp
+          c_m
+        </mrow>
+      </md>
+    </p>
+    <p>
+      We encode this as an extended matrix by taking the <m>a_{ij}</m>
+      and the <m>c_i</m> as the matrix coefficients. We drop the
+      <m>x_i</m>, keeping track of them implicitly by their positions
+      in the matrix. The result is a <m>m \times (n+1)</m> extended
+      matrix where the vertical line notes the position of the equals
+      sign in the original equation.
+      <me>
+        \left( \begin{array}{cccc|c} 
+          a_{11} \amp a_{12} \amp \ldots \amp a_{1n} \amp c_1 \\ 
+          a_{21} \amp a_{22} \amp \ldots \amp a_{2n} \amp c_2 \\ 
+          \vdots \amp \vdots \amp \vdots \amp \vdots \amp \vdots \\ 
+          a_{m1} \amp a_{m2} \amp \ldots \amp a_{mn} \amp c_1 
+        \end{array} \right)
+      </me>
+    </p>
+    <example>
+      <statement>
+        <md>
+          <mrow>-x+3y+6z \amp  = 1</mrow>
+          <mrow>2x + 2y + 2z \amp  = -6</mrow>
+          <mrow>5x-5y+z \amp  = 0</mrow>
+        </md>
+        <p>
+          We transfer the coefficients into the matrix representation.
+          <me>
+            \left( \begin{array}{ccc|c} -1 \amp 3 \amp 6 \amp 1 \\
+            2 \amp 2 \amp 2 \amp -6 \\ 5 \amp -5 \amp 1 \amp 0
+            \end{array} \right)
+          </me>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <md>
+          <mrow>
+            -3x-10y+15z \amp  = -34
+          </mrow>
+          <mrow>
+            20x - y + 19z \amp  = 25
+          </mrow>
+          <mrow>
+            32x + 51y - 31z \amp  = 16
+          </mrow>
+        </md>
+        <p>
+          We transfer the coefficients into the matrix representation.
+          <me>
+            \left( \begin{array}{ccc|c} -3 \amp -10 \amp 15 \amp
+            -34 \\ 20 \amp -1 \amp 19 \amp 25 \\ 32 \amp 51 \amp
+            -31 \amp 16 \end{array} \right)
+          </me>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Sometimes not every equations explicitly mentions each
+          variable.
+          <md>
+            <mrow>
+              x-2z \amp  = 0
+            </mrow>
+            <mrow>
+              2y + 3z \amp  = - 1
+            </mrow>
+            <mrow>
+              -3x - 4y \amp  = 9
+            </mrow>
+          </md>
+        </p>
+        <p>
+          This system is clarified by adding the extra variables with
+          coefficient <m>0</m>.
+          <md>
+            <mrow>
+              x + 0y -2z \amp  = 0
+            </mrow>
+            <mrow>
+              0x + 2y + 3z \amp  = - 1
+            </mrow>
+            <mrow>
+              -3x - 4y + 0z \amp  = 9
+            </mrow>
+          </md>
+        </p>
+        <p>
+          Then it can be clearly encoded as a matrix.
+          <me>
+            \left( \begin{array}{ccc|c} 1 \amp 0 \amp -2 \amp 0 \\
+            0 \amp 2 \amp 3 \amp -1 \\ -3 \amp -4 \amp 0 \amp 9
+            \end{array} \right)
+          </me>
+        </p>
+      </statement>
+    </example>
+    <p>
+      In this way, we can change any system of linear equations into a
+      extended matrix (with one column after the vertical line), and
+      any such extended matrix into a system of equations. The
+      columns represent the hidden variables. In the examples above,
+      we say that the first column is the <m>x</m> column, the second
+      is the <m>y</m> column, the third if the <m>z</m> column, and
+      the column after the vertical line is the column of constants.
+    </p>
+  </subsection>
   <subsection xml:id="subsection-row-operations">
     <title>Row Operations and Gaussian Elimination</title>
     <p>
@@ -163,6 +398,311 @@
         </p>
       </statement>
     </definition>
+  </subsection>
+  <subsection xml:id="subsection-row-reduction-examples">
+    <title>Examples of Row Reduction</title>
+    <example>
+      <statement>
+        <p>
+          Solve this system with row reduction.
+          <md>
+            <mrow>
+              x + z = 4 
+            </mrow>
+            <mrow>
+              3x - y + 2z = 0 
+            </mrow>
+            <mrow>
+              y -5z = -3 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          I first turn the system to a matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 1 \amp 4 \\
+              3 \amp -1 \amp 2 \amp 0 \\
+              0 \amp 1 \amp -5 \amp -3 
+            \end{array} \right) 
+          </me>
+          Then I will row reduce. For the examples here, I'm going to
+          be very explicit and show each little step. (As we do more
+          and more row reductions, this level of detail is
+          unnecessary.) There is already a leading one in the first
+          row, so I try to clear its column. There is a three below
+          it. To remove that three, I subtract three times the first
+          row from the second.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 1 \amp 4 \\
+              0 \amp -1 \amp -1 \amp -12 \\
+              0 \amp 1 \amp -5 \amp -3 
+            \end{array} \right) 
+          </me>
+          Then the first column is finished. Now I want a leading one
+          in the second row. To get this, I'll exchange the second and
+          third rows.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 1 \amp 4 \\
+              0 \amp 1 \amp -5 \amp -3 \\
+              0 \amp -1 \amp -1 \amp -12 
+            \end{array} \right) 
+          </me>
+          Then I have a leading one in the second row. I want to clear
+          its column. There is already a zero above, but I need to
+          clear the <m>-1</m> below. To do that, I add the second row
+          to the third.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 1 \amp 4 \\
+              0 \amp 1 \amp -5 \amp -3 \\
+              0 \amp 0 \amp -6 \amp -15 
+            \end{array} \right) 
+          </me>
+          That finished the second column. Now I want a leading one
+          in the third row. To get that, I divide the third row by
+          <m>-6</m>.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 1 \amp 4 \\
+              0 \amp 1 \amp -5 \amp -3 \\
+              0 \amp 0 \amp 1 \amp \frac{5}{2}
+            \end{array} \right) 
+          </me>
+          Then I need to clear the colum above this leading one. I
+          first subtract the third row from the first row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{3}{2} \\
+              0 \amp 1 \amp -5 \amp -3 \\
+              0 \amp 0 \amp 1 \amp \frac{5}{2}
+            \end{array} \right) 
+          </me>
+          Then I add <m>5</m> times the third row to the second.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{3}{2} \\
+              0 \amp 1 \amp 0 \amp \frac{19}{2} \\
+              0 \amp 0 \amp 1 \amp \frac{5}{2}
+            \end{array} \right) 
+          </me>
+          The matrix is now in reduced row echelon form and I can read
+          off the unique solution.
+          <md><mrow>
+            \amp x = \frac{3}{2} \amp \amp y = \frac{19}{2} \amp \amp
+            z = \frac{5}{2} 
+          </mrow></md>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Solve this system with row reduction.
+          <md>
+            <mrow>
+              2x + y - 3z = 1
+            </mrow>
+            <mrow>
+              4x + z = 7 
+            </mrow>
+            <mrow>
+              -3x - 3y + 2z = 0 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          We turn the system to a matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              2 \amp 1 \amp -3 \amp 1 \\
+              4 \amp 0 \amp 1 \amp 7  \\
+              -3 \amp -3 \amp 2 \amp 0 
+            \end{array} \right)
+          </me>
+          I was to make a leading one in the first row, so I divide
+          the first row by <m>2</m>.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp \frac{1}{2} \amp \frac{-3}{2} \amp \frac{1}{2} \\
+              4 \amp 0 \amp 1 \amp 7  \\
+              -3 \amp -3 \amp 2 \amp 0 
+            \end{array} \right)
+          </me>
+          Then I want to clear the column under this leading one. I
+          start by subtracting <m>4</m> times the first row from the
+          second row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp \frac{1}{2} \amp \frac{-3}{2} \amp \frac{1}{2} \\
+              0 \amp -2 \amp 7 \amp 5  \\
+              -3 \amp -3 \amp 2 \amp 0 
+            \end{array} \right)
+          </me>
+          Then I add <m>3</m> times the first row to the third row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp \frac{1}{2} \amp \frac{-3}{2} \amp \frac{1}{2} \\
+              0 \amp -2 \amp 7 \amp 5  \\
+              0 \amp \frac{-3}{2} \amp \frac{-5}{2} \amp \frac{3}{2}  
+            \end{array} \right)
+          </me>
+          That finishes the first column. Next, I want a leading one
+          in the second row. To get that, I divide the second row by
+          <m>-2</m>. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp \frac{1}{2} \amp \frac{-3}{2} \amp \frac{1}{2} \\
+              0 \amp 1 \amp \frac{-7}{2} \amp \frac{-5}{2}  \\
+              0 \amp \frac{-3}{2} \amp \frac{-5}{2} \amp \frac{3}{2}  
+            \end{array} \right)
+          </me>
+          Then I want to clear the column above and below this leading
+          one. First, I'll subtract <m>\frac{1}{2}</m> times the
+          second row from the first row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{1}{4} \amp \frac{7}{4} \\
+              0 \amp 1 \amp \frac{-7}{2} \amp \frac{-5}{2}  \\
+              0 \amp \frac{-3}{2} \amp \frac{-5}{2} \amp \frac{3}{2}  
+            \end{array} \right)
+          </me>
+          Then I'll add <m>\frac{3}{2}</m> times the second row to the
+          third row.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{1}{4} \amp \frac{7}{4} \\
+              0 \amp 1 \amp \frac{-7}{2} \amp \frac{-5}{2}  \\
+              0 \amp 0 \amp \frac{-31}{4} \amp \frac{-9}{4}  
+            \end{array} \right)
+          </me>
+          That finished the second column. Now I need a leading one in
+          the third row. To get that, I'll divide the third row by
+          <m>\frac{-31}{4}</m>.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{1}{4} \amp \frac{7}{4} \\
+              0 \amp 1 \amp \frac{-7}{2} \amp \frac{-5}{2}  \\
+              0 \amp 0 \amp 1 \amp \frac{9}{31}  
+            \end{array} \right)
+          </me>
+          Now I need to clear the column above the leading one. (The
+          arithmetic is starting to get pretty annoying here, but we
+          will press on. I made good use of a computer algebra system
+          to do the fraction arithmetic for me.) First, I subtract
+          <m>\frac{1}{4}</m> times the third row from the first row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{52}{31} \\
+              0 \amp 1 \amp \frac{-7}{2} \amp \frac{-5}{2}  \\
+              0 \amp 0 \amp 1 \amp \frac{9}{31}  
+            \end{array} \right)
+          </me>
+          Then I add <m>\frac{7}{2}</m> times the third row to the
+          second row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp 0 \amp \frac{52}{31} \\
+              0 \amp 1 \amp 0 \amp \frac{-46}{31}  \\
+              0 \amp 0 \amp 1 \amp \frac{9}{31}  
+            \end{array} \right)
+          </me>
+          Now I can read off the solution.
+          <md><mrow>
+            \amp x = \frac{52}{31} \amp \amp y = \frac{-46}{31} \amp \amp
+            z = \frac{9}{31} 
+          </mrow></md>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Solve this system with row reduction.
+          <md>
+            <mrow>
+              2x - 6y + z = 9
+            </mrow>
+            <mrow>
+              x + 4y - 2z = -2 
+            </mrow>
+            <mrow>
+              5x + 6y - 5z = 3 
+            </mrow>
+          </md>
+        </p>
+        <p>
+          We turn the system to a matrix.
+          <me>
+            \left( \begin{array}{ccc|c}
+              2 \amp -6 \amp 1 \amp 9 \\
+              1 \amp 4 \amp -2 \amp -2 \\
+              5 \amp 6 \amp -5 \amp 3
+            \end{array} \right)
+          </me>
+          Then I want to row reduce this. I start by interchanging
+          rows one and two, to get a leading one in the first row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 4 \amp -2 \amp -2 \\
+              2 \amp -6 \amp 1 \amp 9 \\
+              5 \amp 6 \amp -5 \amp 3
+            \end{array} \right)
+          </me>
+          Then I want to clear the column below the leading one. I
+          subtract <m>2</m> times the first row from the second.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 4 \amp -2 \amp -2 \\
+              0 \amp -14 \amp 5 \amp 13 \\
+              5 \amp 6 \amp -5 \amp 3
+            \end{array} \right)
+          </me>
+          Then I subtract <m>5</m> times the first row from the third
+          row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 4 \amp -2 \amp -2 \\
+              0 \amp -14 \amp 5 \amp 13 \\
+              0 \amp -14 \amp 5 \amp 13
+            \end{array} \right)
+          </me>
+          Immediately, I notice something odd. I can subtract the
+          second row from the third to clear it entirely.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 4 \amp -2 \amp -2 \\
+              0 \amp -14 \amp 5 \amp 13 \\
+              0 \amp 0 \amp 0 \amp 0
+            \end{array} \right)
+          </me>
+          Then I can keep going, by dividing the second row by
+          <m>-14</m>.
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 4 \amp -2 \amp -2 \\[1em]
+              0 \amp 1 \amp \frac{-5}{14} \amp \frac{-13}{14} \\
+              0 \amp 0 \amp 0 \amp 0
+            \end{array} \right)
+          </me>
+          Then I need to clear above this new leading one. I subtract
+          <m>4</m> times the second row from the first row. 
+          <me>
+            \left( \begin{array}{ccc|c}
+              1 \amp 0 \amp \frac{-24}{7} \amp \frac{-40}{7} \\[1em]
+              0 \amp 1 \amp \frac{-5}{14} \amp \frac{-13}{14} \\
+              0 \amp 0 \amp 0 \amp 0
+            \end{array} \right)
+          </me>
+          This matrix is now in reduced row-echelon form. There is
+          nothing more to be done. However, reading off the solution
+          isn't as obvious in this case. I will go over these
+          solutions in the next section.
+        </p>
+      </statement>
+    </example>
   </subsection>
 </section>
 
