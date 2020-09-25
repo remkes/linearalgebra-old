@@ -7,7 +7,7 @@
     <li>
       <p>
         Write the first vector as a linear combination of the second
-        and third vectors.
+        and third vectors or show that it cannot be done.(8)
         <ol>
           <li>
             <me>
@@ -41,8 +41,8 @@
     <li>
       <p>
         Write a third vector which is linearly independent to the
-        first two. (Make sure you show me why is it linearly
-        independent.)
+        first two. (Make sure you show me why it is linearly
+        independent.) (6) 
         <ol>
           <li>
             <me>
@@ -69,7 +69,7 @@
     </li>
     <li>
       <p>
-        Write equations for these planes.
+        Write equations for these planes.(10) 
         <ol>
           <li>
             The plane with normal 
@@ -99,7 +99,7 @@
     <li>
       <p>
         Prove that any three vectors in <m>\RR^2</m> must be linearly
-        dependent. 
+        dependent. (3)
       </p>
     </li>
   </ol></p>
