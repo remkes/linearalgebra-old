@@ -4,9 +4,9 @@
     <title>What Is A Proof</title>
     <p>
       In the sequence of math courses that we offer at King's, 
-      linear algera is the most natural place to start talking about
-      mathematical proof. The material lends itself to a number of
-      accessible proof examples and has a level of abstraction that
+      linear algebra is the most natural place to start talking about
+      mathematical proofs. The material lends itself to a number of
+      accessible proof examples and have a level of abstraction that
       suits proof questions. The linear algebra course also serves as
       a prerequisite for most of the other mathematic courses where
       proof becomes quite important, including the senior calculus
@@ -21,37 +21,37 @@
       <ul>
         <li>
           First, a proof is an argument. It is persuasive: it has a
-          proposition and it wants to convince its reader that the
+          proposition, and it wants to convince its reader that the
           proposition is true. In this, it shares something with all
           the other persuasive writing through university,
-          including scientific studies, aethetic critiques, and
+          including scientific studies, aesthetic critiques, and
           persuasive essays.
         </li>
         <li>
           Second, a proof is logical. Though mathematical discovery can
           happen in a variety of ways, the presentation of
-          mathematical idea happens through logic. A proof will be a
+          mathematical ideas happen through logic. A proof will be a
           series of logical statements and implications. If
           successful, the chain of logic will lead from the
           assumptions of the proof to the desired conclusion.
         </li>
         <li>
           Third, a proof is formal. Mathematics has formal
-          notations, definition, and rules for manipulating
+          notations, definitions, and rules for manipulating
           expressions. A proof follows these formalities. It can't
-          treat mathematical ideas and definitions loosely or casually
+          treat mathematical ideas and definitions loosely or casually;
           <emdash /> it has to follow the rules and strict conventions
           of mathematics.
         </li>
         <li>
-          Finally, it succeeds in convincing its reader. At the end of
+          Finally, it succeeds in convincing the reader. At the end of
           a proof, the question should always be: are you convinced?
           Proofs are accepted by the mathematical community when a
           sufficient number of qualified readers are convinced by the
           mathematical formality and logical sequence. In this course,
           when we study proof, I will try to repeatedly ask if you are
           convinced by the proof. If you are not, either the proof is
-          flawed or your understanding of the argument is weak and you
+          flawed, or your understanding of the argument is weak, and you
           need to go back and study the assumptions, notations and
           structure more carefully.
         </li>
@@ -62,9 +62,9 @@
     <title>How to Write a Proof</title>
       <p>
         I desperately wish there were something simple and
-        straightfoward I could say here about how to write a proof. I
+        straightforward I could say here about how to write a proof. I
         wish I could give you a reasonable three-step process 
-        which would always produce good proofs.
+        that would always produce good proofs.
         Unfortunately, no such thing exists. Writing proofs is the
         most difficult skill in mathematics. Writing a good proof is
         comparable to writing a good essay. We learn by reading good
@@ -73,10 +73,10 @@
       </p>
       <p>
         In this course, I'm not going to give you any short, easy
-        method for writing proof (since, as I just said, no such
+        method for writing proofs (since, as I just said, no such
         method exists). Instead, I'm going to try to start the process
         of exposing you to proofs. In many ways, we learn to write
-        proof by example <mdash /> by reading lots of proofs and
+        proofs by example <mdash /> by reading lots of proofs and
         seeing how they work. I'll show you a bunch of short proofs in
         this course and ask you to try to emulate them in 
         the activities and assignments.
@@ -88,7 +88,7 @@
       <ul>
         <li>
           Remember that a proof is a chain of logical arguments. You
-          should see this structure in the proofs your write. Look out
+          should see this structure in the proofs you write. Look out
           for any sudden jumps or gaps in the logic.
         </li>
         <li>
@@ -108,22 +108,22 @@
           There is a huge difference between the rough work that goes
           into sketching a proof and the final proof. In the rough
           work, we do often start with the conclusion and make various 
-          attempts to see how we might get their. We try things, play
+          attempts to see how we might get there. We try things, play
           around with ideas, do test cases. But when we write up a
-          proof, we take all this rough work and try to put in into
+          proof, we take all this rough work and try to put it into
           a formal logical chain with the desired statement coming at
           the end, as a conclusion.
         </li>
         <li>
           A good proof includes good writing as well as good
-          mathematics. Write clear, complete sentence. Treat proof
-          writing with the same level of care as you would any
+          mathematics. Write clear, complete sentences. Treat proof-writing 
+          with the same level of care as you would any
           academic writing. 
         </li>
         <li>
           There are a number of special proof techniques that are
           worth some attention. I'll spend the next section on two of
-          these techniques. Not all proofs need a names technique, 
+          these techniques. Not all proofs need a named technique, 
           but these two are common enough to point out at the
           start. 
         </li>
@@ -132,9 +132,9 @@
   <subsection xml-id="subsection-contradiction">
     <title>Proof by Contradiction</title>
     <p>
-      There are many common structures and techniques used in proof.
+      There are many common structures and techniques used with proofs.
       I'm going to share with you two of the most common techniques.
-      The first is proof by contraction. This technique relies on the
+      The first is proof by contradiction. This technique relies on the
       assumption that any (well-formed) statement in mathematics is
       either true or false. To prove a statement is true, we can
       equivalently show that it is impossible for the statement to be
@@ -142,12 +142,12 @@
     </p>
     <p>
       To prove by contradiction, we assume the statement we want to
-      prove it false. Then, starting from that assumption, we make
+      prove is false. Then, starting from that assumption, we make
       logical conclusions. These logical conclusions lead us to an
       impossible situation <mdash /> a contradiction. This
-      contradiction can take many forms: a contradiction of some of
-      statement we know is true; an impossibility of a statement
-      being both true and false; or some other situation which cannot
+      contradiction can take many forms: a contradiction of some 
+      statement we know is true, an impossibility of a statement
+      being both true and false, or some other situation which cannot
       make sense. Since we end up with this contradiction, our
       original assumption must have been wrong. Since we assumed
       the statement was false, the statement must therefore be true.
@@ -176,13 +176,13 @@
         What are the prime factors of this number? We know that all
         numbers break down uniquely into prime factors, so it must have
         prime factors. However, every prime number <m>p_i</m> in our
-        list (which, by assumption is all prime numbers ) is a
+        list (which, by assumption, is all prime numbers) is a
         factor of <m>m-1</m>. A prime number can't be the factor of
         two consecutive numbers, so none of the prime numbers are
         factors of <m>m</m>.
       </li>
       <li>
-        Step 3: State the contradiction. The number <m>m</m>must have
+        Step 3: State the contradiction. The number <m>m</m> must have
         prime factors, but cannot have prime factors, since none of
         the primes <m>p_i</m> are factors. This is a contradiction: the
         number must have prime factors but has none.
@@ -190,7 +190,7 @@
       <li>
         Step 4: Conclude that the original statement was false, which
         finishes the proof. The assumption that there were only
-        finitely many prime number led to a contradiction. Therefore,
+        finitely many prime numbers led to a contradiction. Therefore,
         by contradiction, we have proved that there are infinitely
         many prime numbers. 
       </li>
@@ -198,9 +198,9 @@
     <p>
       This proof is <em>non-constructive</em>. It tells us that there
       are infinitely many prime numbers, but it doesn't tell us
-      anything about there: what they how, how to find them, how they
+      anything about them: what they are, how to find them, how they
       are distributed on the number line, etc. This is often a major
-      weakness of proofs by contradiction: they may not give us an
+      weakness of proofs by contradiction: they may not give us
       concrete information about the objects in the proposition.
     </p>
     <p>
@@ -218,7 +218,7 @@
         Step 2: Work from the assumption to build a contradiction. If
         <m>\sqrt{2}</m> is rational, then there are integers <m>a</m>
         and <m>b</m> such that <m>\sqrt{2} = \frac{a}{b}</m>. Since
-        any fraction can be written in simplest terms, we can assume
+        any fraction can be written in the simplest terms, we can assume
         that <m>a</m> and <m>b</m> have no common factors. Then I can
         do some arithmetic with this equation.
         <md>
@@ -234,10 +234,10 @@
         </md>
         <m>2</m> divides the left side of the equation, so it must
         divide the right side as well, meaning that <m>a^2</m> must be
-        even. But the squares of odd numbers are odd and the squares
+        even. But the squares of odd numbers are odd, and the squares
         of even numbers are even. Therefore, <m>a</m> must be even. We
         can write <m>a = 2c</m> for some integer <m>c</m>. Then I'll
-        replace <m>a</m> by <m>2c</m> in the equation an do a bit more
+        replace <m>a</m> by <m>2c</m> in the equation and do a bit more
         arithmetic. 
         <md>
           <mrow>
@@ -254,32 +254,32 @@
           </mrow>
         </md>
         Now <m>2</m> divides the right side of the equation, so it
-        must divide the right as well. That mean that <m>b^2</m> is
+        must divide the left as well. That means that <m>b^2</m> is
         even, so <m>b</m> must be even.
       </li>
       <li>
         Step 3: State the contradiction. We assumed that <m>a</m>
-        and <m>b</m> have no common factors, since we wrote the
-        fraction in simplest terms. Now we have prove that both
+        and <m>b</m> have no common factors since we wrote the
+        fraction in the simplest terms. Now we have proved that both
         numbers are even, so <m>2</m> is a factor of both. This is a
-        contradiction: <m>a</m> and <m>b</m> have no common factors
+        contradiction: <m>a</m> and <m>b</m> have no common factors,
         but <m>2</m> is a common factor.
       </li>
       <li>
         Step 4: Conclude that the original statement was false, which
         finishes the proof. The assumption that <m>\sqrt{2}</m> was
-        rational lead to a contradiction, so we have proved that
+        rational lead to a contradiction, so we have proven that
         <m>\sqrt{2}</m> must be irrational. 
       </li>
     </ul>
     <p>
-      Proof by contradiction, as I mentioned at the start, relied on
+      Proof by contradiction, as I mentioned at the start, relies on
       the assumption that any (well-formed) statement in mathematics
       is either true or false. That seems like a reasonable assumption
-      in a logical system and proof by contradiction is an important
-      tool in mainstream mathematics. However, some versions have
+      in a logical system, and proof by contradiction is an important
+      tool in mainstream mathematics. However, some versions of
       mathematics have rejected this assumption. There are some
-      versions of mathematics which do not allow proof by
+      versions of mathematics that do not allow proof by
       contradiction. (These are called intuitionistic or
       constructionist mathematics). 
     </p>
@@ -305,12 +305,12 @@
           <m>k</m>.
         </li>
         <li>
-          Using that assumption, prove that the statement holds for
+          Using this assumption, prove that the statement holds for
           the next number <m>k+1</m>.
         </li>
         <li>
           Conclude that the statement is true for all natural numbers
-          <m>n</m>. (Or all number past the base cases, if we started
+          <m>n</m>. (Or all numbers past the base case, if we started
           at a larger number.)
         </li>
       </ul>
@@ -374,10 +374,10 @@
             (k+1) 
           </me>
           Then I can do some arithmetic with the right side, starting
-          with common demoninator. 
+          with a common denominator. 
           <me>
-            \frac{k(k+1)}{2} + (k+1) = \frac{k^2 + k + 2k + 1}{2} =
-            \frac{k^2 + 3k + 1} = \frac{(k+1)(k+2}{2} =
+            \frac{k(k+1)}{2} + (k+1) = \frac{k^2 + k + 2(k + 1)}{2} =
+            \frac{k^2 + 3k + 2}{2} = \frac{(k+1)(k+2)}{2} =
             \frac{(k+1)(k+1+1)}{2}
           </me>
           Now I'll replace the right side with this last expression.

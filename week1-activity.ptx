@@ -1,20 +1,20 @@
 <section xml:id="section-week1-activity">
   <title>Week 1 Activity</title>
   <subsection xml:id="subsection-activity-higher-dimensional-space">
-    <title>Higher Dimensional Space</title>
+    <title>higher-dimensional Space</title>
     <activity>
       <statement>
         <p>
           In 2-dimensional space, an infinitely long line divides the
           space into two pieces: one cannot pass from one side of the
           line to the other without crossing the line. In
-          3-dimensional space, however, an infnitely long line does
+          3-dimensional space, however, an infinitely long line does
           not do this; we can go around the line, and there isn't a
           division of space into two halves.
         </p>
         <p>
           In 3-dimensional space, an infinitely extended plane does
-          divide space into two pieces and it is impossible to pass
+          divide space into two pieces, and it is impossible to pass
           from one side to the other without going across the plane.
           In 4-dimensional space, does an infinitely extended plane
           still divide it into two pieces, or can we go around it,
@@ -24,7 +24,7 @@
       <solution>
         <p>
           This is a tricky thing to try to visualize (being that
-          4-dimesnional space is not visualizable). However, we can
+          4-dimensional space is not visualizable). However, we can
           argue by analogy. How do we get around the line in
           3-dimensions? We move to the side, then move past the line,
           instead of running into it. We can do this because we have
@@ -39,8 +39,8 @@
           plane. In 4-dimensional space, we have two other degrees of
           freedom. Like getting around the line in 3-dimensional
           space, we can move to the side, then move past the plane to
-          reach <q>the other side</q>. There really isn't another
-          side, much like a line in 3-dimenisonal space doesn't really
+          reach <q>the other side.</q> There really isn't another
+          side, much like a line in 3-dimensional space doesn't really
           create two sides of space. 
         </p>
       </solution>
@@ -48,7 +48,7 @@
     <activity>
       <statement>
         <p>
-         In 2-dimensional space, a square or rectangle is enougth to
+         In 2-dimensional space, a square or rectangle is enough to
          trap or contain something that lives in the plane. In
          3-dimensional space, a cube (or other box) is enough to trap
          or contain something. What do we need to contain something in
@@ -57,13 +57,13 @@
       </statement>
       <solution>
         <p>
-          To contain something in 4-dimesional space, we need a four
-          dimensional box. Since we have 4 independent and free
-          direction of movement, we have to close of movement in all
+          To contain something in 4-dimensional space, we need a 
+          four-dimensional box. Since we have four independent and free
+          directions of movement, we have to close of movement in all
           four of these directions. This box will have a front/back, a
-          top/bottom, an left/right, and then an additional pair of
+          top/bottom, a left/right, and then an additional pair of
           sides which block in the fourth direction of movement. In
-          five dimensional space, we need a five dimensionsal box: it
+          five dimensional space, we need a five-dimensional box: it
           will have a front/back, top/bottom, left/right, and two
           other independent boundary pairs.
         </p>
@@ -73,30 +73,30 @@
       <statement>
         <p> 
           In 2-dimensional space, the slices of a rectangle are lines.
-          In 3-dimensional space, the slices of a box are rectangle.
+          In 3-dimensional space, the slices of a box are rectangles.
           What are the slices of a 4-dimensional box? A 5-dimensional
           box?
         </p>
       </statement>
       <solution>
         <p>
-          By a <q>slice</q>, it seems we are referring to a piece of
+          By a <q>slice,</q> it seems we are referring to a piece of
           the object of one smaller dimension. Therefore, the slices
-          of this four-dimensional box must be three dimensional
+          of this four-dimensional box must be three-dimensional
           boxes. In this way, we can think of a four-dimensional box
           as an infinite stack of three-dimensional boxes, all stacked
           in some new direction of movement. (The same way we can
-          think of a cube as a infinite stack of squares moving in a
+          think of a cube as an infinite stack of squares moving in a
           direction perpendicular to the squares themselves).
-          Likewise, the slices of a five dimensional box are
-          themselves four dimensional boxes. 
+          Likewise, the slices of a five-dimensional box are
+          themselves four-dimensional boxes. 
         </p>
       </solution>
     </activity>
   </subsection>
   <subsection xml:id="subsection-activity-vector-arithmetics">
+    <title>Vector Arithmetic</title>
     <activity>
-      <title>Vector Arithmetic</title>
       <statement>
         <p>
           Consider these vectors.
@@ -513,14 +513,14 @@
         <p>
           If <m>a \in \RR</m> and <m>u \in \RR^3</m>, prove that <m>|au|
           = |a||u|</m>. (Use the definition of scalar multiplication
-          and the definition of legnth of a vector. Start with the
+          and the definition of length of a vector. Start with the
           left side and try to turn it into the right or vice-versa.
           Do not reduce both equations to equivalent expressions --
           that's not a valid proof technique. You may try
           some examples out if you wish, but your final solution
           should be general. Finally, note that the notation here is a
           bit subtle: <m>|au|</m> and <m>|u|</m> are the lengths of
-          vectors, defined by pythagorean calculations, but <m>|a|</m>
+          vectors, defined by Pythagorean calculations, but <m>|a|</m>
           is just the absolute value of a real number.)
         </p>
       </statement>
@@ -554,12 +554,12 @@
           I can also remove it from the square root. 
           <me>
             \sqrt{a^2 u_1^2 + a^2 u_2^2 + a_2u_3^2} = \sqrt{a^2(u_1^2
-            + u_2^2 + u_3^2} = |a| \sqrt{u_1^2 + u_2^2 + u_3^2}
+            + u_2^2 + u_3^2)} = |a| \sqrt{u_1^2 + u_2^2 + u_3^2}
           </me>
           When I take <m>a^2</m> out of the square root, since the
-          square root also return a positive number, I don't get
+          square root also returns a positive number, I don't get
           <m>a</m> back. If <m>a</m> was negative to start, then I will
-          have turn <m>a</m> form negative to positive. Therefore, I get
+          have turned <m>a</m> from negative to positive. Therefore, I get
           the absolute value of <m>a</m> back. Finally, I can recognize
           the remaining term as the definition of the length of a
           vector. 
@@ -567,8 +567,8 @@
             |a| \sqrt{u_1^2 + u_2^2 + u_3^2} = |a| |u| 
           </me>
         </p>
-        Now I have started with the left side and produce the right.
-        This prove that <m>|au| = |a||u|</m>, as desired. 
+        Now I have started with the left side and produced the right.
+        This proves that <m>|au| = |a||u|</m>, as desired. 
       </solution>
     </activity>
     <activity>
@@ -581,7 +581,7 @@
       </statement>
       <solution>
         <p>
-          We will write <m>u</m> amd <m>v</m> in components, take
+          We will write <m>u</m> and <m>v</m> in components, take
           their difference and then apply the length operation. I will
           start with the left side and try to produce the right. 
           <me>
@@ -604,8 +604,8 @@
             (u_2-v_2)^2 + (u_3-v_3)^2}
           </me>
           Now, each of the three terms is square. Since they are
-          square, any positive or negative will become positive, since
-          square are always positive. Therefore, we could multiply by
+          square, any positive or negative will become positive since
+          squares are always positive. Therefore, we could multiply by
           <m>(-1)</m> inside the square root to no effect. This
           will interchange the order of the difference in each term.
           <me>
@@ -630,21 +630,21 @@
             \right) \right| 
           </me>
           Finally, these are just the component of the vectors
-          <m>u</m> amd <m>v</m>. 
+          <m>u</m> and <m>v</m>. 
           <me>
             = \left| \left( \begin{matrix} v_1 \\ v_2 \\ v_3
             \end{matrix} \right) - \left( \begin{matrix} u_1 \\ u_2 \\
             u_3 \end{matrix} \right) \right| = |v-u|
           </me>
-          We have started from the left and produce the right in a
-          string of equality, so we have proved the desired result. 
+          We have started from the left and produced the right in a
+          string of equality, so we have proven the desired result. 
         </p>
         <p>
           If we wanted to adapt this to a more general proof for
           <m>\RR^n</m>, the steps of the proof would be identical, but
           we would have vectors with <m>n</m> components instead of
-          just 3 components. We would use ellipses to indicate the
-          list of component. The proof would start like this.
+          just three components. We would use ellipses to indicate the
+          list of components. The proof would start like this.
           <me>
             |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots
             \\ u_n \end{matrix} \right) - \left( \begin{matrix} v_1 \\
@@ -671,8 +671,8 @@
           <m>\RR^n</m> of length zero. (To prove that it is the only
           vector with this property, assume that <m>u \in \RR^n</m> is
           a vector with length zero and prove that <m>u</m> must be the
-          zero vector. This will show that only the zero vector is the
-          only vecotr with the desired property). 
+          zero vector. This will show that the zero vector is the
+          only vector with the desired property). 
         </p>
       </statement>
       <solution>
@@ -680,7 +680,7 @@
           Let <m>u</m> be an arbitrary vector in <m>\RR^n</m> of
           length 0. We will start by writing <m>u</m> in components and
           use the definition of length. Note we need ellipses to show
-          all the component of <m>u</m>, since we are working in an
+          all the components of <m>u</m>, since we are working in an
           arbitrary dimension <m>n</m>. 
           <me>
             |u| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\
@@ -700,9 +700,9 @@
             (u_1)^2 + (u_2)^2 + \ldots + (u_n)^2 = 0
           </me>
           On the left, we have the sum of a bunch of non-negative
-          number (since the square of any real number must be zero or
-          postiive). On the right we have zero. The only way that a
-          bunch of non-negative number add up to zero is if they are
+          numbers (since the square of any real number must be zero or
+          postive). On the right we have zero. The only way that a
+          bunch of non-negative numbers add up to zero is if they are
           all zero to begin with. Therefore, we see that for each
           index <m>i</m>, the component <m>u_i</m> must be zero. But
           that means that 
@@ -714,9 +714,9 @@
           </me>
           This is precisely the definition of the zero vector: the
           vector where all components are zero. Therefore, <m>u</m>
-          must be the zero vector. To conclude, we assume that
-          <m>u</m> had length zero and concluded that is must be the
-          zero vector. This proves that the zero vector is the only
+          must be the zero vector. To conclude, we assumed that
+          <m>u</m> had length zero and thus concluded that it must be the
+          zero vector. This proved that the zero vector is the only
           vector with length zero. 
         </p>
       </solution>
@@ -727,7 +727,7 @@
     <p>
       <ul>
         <li>
-          How can we talk about higher dimensional geometric spaces?
+          How can we talk about higher-dimensional geometric spaces?
         </li>
         <li>
           What is cartesian or euclidean space? What are coordinates?
@@ -739,7 +739,7 @@
           What is a scalar?
         </li>
         <li>
-          How is vector arithmetic similar and different from number
+          How is vector arithmetic similar to and different from number
           arithmetic.
         </li>
         <li>

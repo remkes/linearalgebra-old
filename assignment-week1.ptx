@@ -18,7 +18,7 @@
           \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 
         </me>.
         How does the ellipse generalize to <m>\RR^3</m>, <m>\RR^4</m>
-        and higher dimensional spaces? How much information is needed
+        and higher-dimensional spaces? How much information is needed
         to determine the object (how many constants like the numbers
         <m>a</m> and <m>b</m>)? (4)
       </p>

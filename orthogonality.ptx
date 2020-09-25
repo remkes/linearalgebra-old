@@ -204,7 +204,7 @@
       Orthogonal matrices can be though of as rigid-body
       transformations. Since they preserve both lengths and angles,
       they preserve the shape of anything formed of vertices and
-      lines: any polygon, polyhedron, of higher dimensional analogue.
+      lines: any polygon, polyhedron, of higher-dimensional analogue.
       They may not preserve the position (they may be moved around,
       rotated, reflected, etc) but they will preserve the shape. This
       makes orthogonal matrices extremely useful, since many

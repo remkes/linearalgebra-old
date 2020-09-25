@@ -5,7 +5,7 @@
     <definition>
       <statement>
         <p>
-          In linear algebra, ordinary numbers (intergers, rational
+          In linear algebra, ordinary numbers (integers, rational
           numbers or real numbers) are called <term>scalars</term>.
         </p>
       </statement>
@@ -130,8 +130,8 @@
       write the <m>x</m> axis horizontally, with a positive direction
       to the right, and the <m>y</m> axis vertically, with a positive
       direction upwards. For <m>\RR^3</m>, the <m>x</m> and <m>y</m>
-      axes form a flat plane and the <m>z</m> axis extends vertically
-      from that plan, as shown in <xref
+      axes form a flat plane, and the <m>z</m> axis extends vertically
+      from that plane, as shown in <xref
       ref="figure-points-in-three-space" />. 
     </p>
     <figure xml:id="figure-points-in-three-space">
@@ -158,18 +158,18 @@
     <definition>
       <statement>
         <p>
-          Noticed that we needed to choose directions for the axes in
+          Note that we needed to choose directions for the axes in
           both <m>\RR^2</m> and <m>\RR^3</m>. In a visualization of
-          Euclidean space, there is no predetermined directions for
+          Euclidean space, there are no predetermined directions for
           axes. We have to make a choice. This choice of axis
-          directions in a visualization of <m>\RR^n</m> is called an
+          directions in the visualization of <m>\RR^n</m> is called 
           <term>orientation</term>.
         </p>
       </statement>
     </definition>
     <p>
       While we can visualize <m>\RR^2</m> and <m>\RR^3</m> relatively
-      easily and efficiently, but we can't visualize any higher
+      easily and efficiently, we can't visualize any higher
       <m>\RR^n</m>. However, this doesn't prevent us from working in
       higher dimensions. We need to rely on the algebraic
       descriptions of vectors instead of the drawings and
@@ -177,7 +177,7 @@
     </p>
     <p>
       In our visualizations of <m>\RR^2</m> and <m>\RR^3</m>, we see
-      the different axes as fundementally different perpendicular
+      the different axes as fundamentally different perpendicular
       directions. We can think of <m>\RR^2</m> as the space with two
       independent directions and <m>\RR^3</m> as the space with three
       independent directions. Similarly, <m>\RR^4</m> is the space
@@ -189,7 +189,7 @@
   <subsection xml:id="subsection-point-or-directions">
     <title>Points or Directions?</title>
     <p>
-      We can think of a element of <m>\RR^2</m>, say
+      We can think of an element of <m>\RR^2</m>, say
       <m>\begin{pmatrix} 1 \\ 4 \end{pmatrix}</m> , as both the point
       located at <m>\begin{pmatrix} 1 \\ 4 \end{pmatrix}</m> and the
       vector drawn from the origin to the point <m>\begin{pmatrix} 1
@@ -270,16 +270,16 @@
     <p>
       <xref ref="figure-local-direction-vectors" /> shows local
       direction vectors starting at the point <m>\begin{pmatrix} 2 \\
-      2 \end{pmatrix} \in \RR^2</m>. The two local vector
+      2 \end{pmatrix} \in \RR^2</m>. The two local vectors
       <m>\begin{pmatrix} 1 \\ 0 \end{pmatrix}</m> and
-      <m>\begin{pmatrix} 0 \\ 1 \end{pmatrix}</m> are direction from
+      <m>\begin{pmatrix} 0 \\ 1 \end{pmatrix}</m> are relative to
       the point <m>\begin{pmatrix} 2 \\ 2 \end{pmatrix} \in \RR^2</m>
-      as if that were the origin.
+      as if that were their origin.
     </p>
     <p>
       Using vectors to define local directions is a 
-      useful tool. A standard example is the camera in a three
-      dimensional virtual environment. First, you need to know the
+      useful tool. A standard example is a camera in a three-dimensional 
+      virtual environment. First, you need to know the
       location of the camera, which is an ordinary vector starting
       from the origin. Second, you need to know what direction the
       camera is pointing, which is a local direction vector which
@@ -289,7 +289,7 @@
       One of the most difficult things about learning vector geometry
       is becoming accustomed to local direction vectors. We don't
       always carefully distinguish between vectors at the origin and
-      local direction vectors; often, the difference is implied and it
+      local direction vectors; often, the difference is implied, and it
       is up to the reader/student to figure out how the vectors are
       being used.
     </p>

@@ -171,7 +171,7 @@
           <term>offset vector</term>. Affine spaces include linear
           spaces, since we can also take <m>u</m> to be the zero
           vector and have <m>A=L</m>. Affine objects are the lines,
-          planes and higher dimensional flat objects that may or may
+          planes and higher-dimensional flat objects that may or may
           not pass through the origin.
         </p>
       </statement>
