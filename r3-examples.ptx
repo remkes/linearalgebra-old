@@ -11,8 +11,8 @@
         <li>
           <p>
             Rotations in <m>\RR^3</m> are no longer about the origin.
-            Instead, we have to choose an axis  Any line through the
-            origin will do for an axis of rotation  Any rotation in
+            Instead, we have to choose an axis.  Any line through the
+            origin will do for an axis of rotation.  Any rotation in
             <m>\RR^3</m> is determined by an axis of rotation and an
             angle of rotation about that axis.
           </p>
@@ -48,6 +48,13 @@
           </p>
         </li>
       </ul>
+      In addition, other types of transformations exist. One example
+      is the reflection through the origin: this transformation
+      multiplies all vectors by <m>(-1)</m>, sending them to the
+      opposite point on the other side of the origin. In <m>\RR^2</m>,
+      this turned out to be the same as the rotation by half a turn.
+      However, in <m>\RR^3</m>, this is neither a rotation nor a
+      reflection. 
     </p>
   </subsection>
 </section>

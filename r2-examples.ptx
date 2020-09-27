@@ -1,7 +1,7 @@
 <section xml:id="section-r2-examples">
   <title>Examples in <m>\RR^2</m></title>
   <subsection xml:id="subsection-r2-examples">
-    <title>Examples in <m>\RR^2</m></title>
+    <title>Five Types</title>
     <p>
       It is useful for us to specialize to transformations <m>\RR^2
       \rightarrow \RR^2</m>, in order to build experience and
@@ -83,6 +83,124 @@
         </p>
       </statement>
     </theorem>
+  </subsection>
+  <subsection xml:id="subsection-matrices">
+    <title>Matrices of the Five Types</title>
+    <p>
+      The rotation in <m>\RR^2</m> by the angle <m>\theta</m>
+      (counter-clockwise) around the origin given by the matrix
+      <me>
+        \begin{pmatrix}
+          \cos \theta \amp - \sin \theta \\
+          \sin \theta \amp \cos \theta
+        \end{pmatrix}
+      </me>.
+      Following this formula, a quarter turn is 
+      <me>
+        \begin{pmatrix}
+          0 \theta \amp -1 \theta \\
+          1 \theta \amp 0 \theta
+        \end{pmatrix}
+      </me>.
+      Likewise, a half turn is 
+      <me>
+        \begin{pmatrix}
+          -1 \theta \amp 0 \theta \\
+          0 \theta \amp -1 \theta
+        \end{pmatrix}
+      </me>.
+      Finally, a three-quarter turn is 
+      <me>
+        \begin{pmatrix}
+          0 \theta \amp 1 \theta \\
+          -1 \theta \amp 0 \theta
+        \end{pmatrix}
+      </me>.
+    </p>
+    <p>
+      If <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> is a
+      <em>unit</em> vector in <m>\RR^2</m>, then the reflection over
+      the line in the direction of <m>\begin{pmatrix} a \\ b
+      \end{pmatrix}</m> is given by matrix
+      <me>
+        \begin{pmatrix}
+          a^2 - b^2 \amp 2ab \\
+          2ab \amp b^2 - a^2
+        \end{pmatrix}
+      </me>
+      For some examples, reflection over the <m>x</m> axis is 
+      <me>
+        \begin{pmatrix}
+          1 \amp 0 \\
+          0 \amp -1 
+        \end{pmatrix}
+      </me>.
+      Reflection over the <m>y</m> axis is 
+      <me>
+        \begin{pmatrix}
+          - 1 \amp 0 \\
+          0 \amp 1 
+        \end{pmatrix}
+      </me>.
+      Reflection over the the line <m>y=x</m> is
+      <me>
+        \begin{pmatrix}
+          0 \amp 1 \\
+          1 \amp 0 
+        \end{pmatrix}
+      </me>.
+      Reflection over the line <m>y=-x</m> is 
+      <me>
+        \begin{pmatrix}
+          0 \amp -1 \\
+          -1 \amp 0 
+        \end{pmatrix}
+      </me>.
+    </p>
+    <p>
+      There isn't necessarily an easily describable form for all
+      skews. However, we can give some examples. A horizontal skew
+      that moves the positive <m>y</m> axis in the positive <m>x</m>
+      direction is
+      <me>
+        \begin{pmatrix}
+          1 \amp 0 \\
+          1 \amp 1 
+        \end{pmatrix}
+      </me>.
+      Similarly, a skew in the positive <m>y</m> direction is 
+      <me>
+        \begin{pmatrix}
+          1 \amp 1 \\
+          0 \amp 1 
+        \end{pmatrix}
+      </me>.
+    </p>
+    <p>
+      Dialations have two stretch factors: <m>a</m> in the <m>x</m>
+      direction and <m>b</m> in the <m>y</m> direction. The matrix for
+      this is 
+      <me>
+        \begin{pmatrix}
+          a \amp 0 \\
+          0 \amp b 
+        \end{pmatrix}
+      </me>.
+    </p>
+    <p>
+      Again, let <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> be a
+      <em>unit</em> vector. The projection only to line in the
+      direction of this unit vector is given by the matrix
+      <me>
+        \begin{pmatrix}
+          a^2 \amp ab \\
+          ab \amp b^2 
+        \end{pmatrix}
+      </me>.
+      In addition, there is one other projection: the projection to
+      the origin. This sends everything to zero and its matrix is the
+      zero matrix. 
+    </p>
   </subsection>
 </section>
 
