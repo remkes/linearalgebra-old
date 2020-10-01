@@ -19,7 +19,7 @@
       </statement>
       <proof>
         <p>
-          I first write the vector in coodinates. 
+          I first write the vector in coordinates. 
           <md>
             <mrow>
               \amp u = \begin{pmatrix}
@@ -36,8 +36,8 @@
           <me>
             u \cdot v = u_1v_1 + u_2v_2 + u_3v_3 + \ldots + u_nv_n
           </me>
-          Then each of the products <m>u_iv_i</m> are product of
-          ordinary real number. Multiplicaton of real numbers is
+          Then each of the products <m>u_iv_i</m> are products of
+          ordinary real numbers. Multiplicaton of real numbers is
           commutative, so I can interchange the order of each of
           these products.
           <me>
@@ -67,7 +67,7 @@
       </statement>
       <proof>
         <p>
-          I write <m>u</m> in its coorsdinates.
+          I write <m>u</m> in its coordinates.
           <me>
             u = \begin{pmatrix}
               u_1 \\ u_2 \\ u_3 \\ \ldots \\ u_n
@@ -83,7 +83,7 @@
             u \cdot u = u_1^2 + u_2^2 + u_3^2 + \ldots + u_n^2
           </me>
           Since the right side is a sum of squares, it is a positive
-          number (or possibly zero is all the <m>u_i</m> are zero). As
+          number (or possibly zero if all the <m>u_i</m> are zero). As
           a positive number or zero, I can square root it and then
           square it.
           <me>
@@ -167,8 +167,8 @@
           </md>
           Then I can use the definition of the dot product again. On
           the right side, the term in the first bracket is, by
-          definition, <m>u \cdot v</m>. The term in the second brack
-          it, again by definition, <m>u \cdot w</m>.
+          definition, <m>u \cdot v</m>. The term in the second bracket
+          is, again by definition, <m>u \cdot w</m>.
           <me>
             u \cdot (v + w) = u \cdot v + u \cdot w
           </me>
@@ -202,12 +202,12 @@
           <me>
             au_1v_1 + au_2v_2 + au_3v_3 + \ldots au_nv_n
           </me>.
-          I'm going to organize this sum in three difference ways,
+          I'm going to organize this sum in three different ways,
           which will correspond to the three desired versions in the
           equation in the proposition. Since I will only be arranging
           brackets for addition and multiplication of numbers in
-          acceptable ways, all three of those organization are just
-          calculating the same sum, so I can conclude all three are
+          acceptable ways, all three of these organizations are just
+          calculating the same sum, so I can conclude that all three are
           equal.
         </p>
         <p>
@@ -248,7 +248,7 @@
             \end{pmatrix}
           </me>
           The second vector in this dot product is, by definition, the
-          scalar multiple of <m>v</m> by <m>a</m>. Therfore, this
+          scalar multiple of <m>v</m> by <m>a</m>. Therefore, this
           organization of the sum gives <m>u \cdot (av)</m>. Since
           all three organizations are valid ways of calculating the
           sum, I conclude that 
