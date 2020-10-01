@@ -15,9 +15,9 @@
       branch of mathematics itself, but I'm not going into the
       details. It is enough for us to know that a set is a collection
       of things. In many places in mathematics, sets are collections
-      of numbers. In other courses you may have seen some of these:
+      of numbers. In other courses, you may have seen some of these:
       the set of natural numbers (<m>\NN</m>); the set of integers
-      (<m>\ZZ</m>); the set of rational number (<m>\QQ</m>); the set
+      (<m>\ZZ</m>); the set of rational numbers (<m>\QQ</m>); the set
       of real numbers (<m>\RR</m>); or intervals on the number line
       (such as <m>(1,4]</m>). However, sets can contain anything we
       want. In this course, we'll have sets of vectors and sets of
@@ -47,7 +47,7 @@
         Multiplication is a structure on many number sets.
       </li>
       <li>
-        Division by non-zero elemenets is a structure on many number
+        Division by non-zero elements is a structure on many number
         sets. Note that we have to make sure to exclude zero, since
         for sets that have zero, division by zero is undefined.
         Division is not a structure on <m>\NN</m>; like with
@@ -56,21 +56,21 @@
       </li>
       <li>
         The four previous examples are all types of <em>binary
-        relations</em>. They are structures which take two elements
+        relations</em>. They are structures that take two elements
         from the set and combine them together to produce something
         new from the set. 
       </li>
       <li>
         The dot product is a new binary operation on <m>\RR^n</m>, and
         a strange one, since its output is a different kind of object.
-        It take two vectors and produces a scalar.
+        It takes two vectors and produces a scalar.
       </li>
       <li>
         The cross product is a binary operation on vectors in
         <m>\RR^3</m>. 
       </li>
       <li>
-        There are also structures which are not binary operations.
+        There are also structures that are not binary operations.
         Less than and greater than are structures on many number sets. 
       </li>
       <li>
@@ -79,7 +79,7 @@
     </ul>
     <p>
       This list is just the start of many, many kinds of algebraic
-      structure that we can consider on sets. When we think about
+      structures that we can consider on sets. When we think about
       linear algebra abstractly, we are building new structures on
       sets of vectors and analyzing their properties. The dot product
       and the cross product are the new structures we've introduced in
