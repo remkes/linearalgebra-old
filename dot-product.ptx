@@ -3,9 +3,9 @@
   <subsection xml:id="subsection-dot-product-definition">
     <title>Definition</title>
     <p>
-      Earlier we said that we can't multiply two vectors together.
+      Earlier, we said that we ccouldn't multiply two vectors together.
       That's mostly true, in the sense that there is no general
-      product of two vectors <m>uv</m> which is still a vector.
+      product of two vectors <m>uv</m>, which is still a vector.
       However, there are other kinds of <sq>multiplication</sq> which
       combine two vectors. The operation defined in this lecture
       multiplies two vectors, but the result is a scalar.
@@ -32,7 +32,7 @@
       large, but if they point in very different directions, their dot
       product is small. However, we already have a measure, at least
       in <m>\RR^2</m>, of this difference: the angle between two
-      vectors. Thankfully, the two measures of difference agree and
+      vectors. Thankfully, the two measures of difference agree, and
       the dot product can be expressed in terms of angles.
     </p>
     <definition>
@@ -49,7 +49,7 @@
     </definition>
     <p>
       This definition agrees with the angles in <m>\RR^2</m> and
-      <m>\RR^3</m> which we can visualize. However, this serves as a
+      <m>\RR^3</m>, which we can visualize. However, this serves as a
       new definition for angles between vectors in all <m>\RR^n</m>
       when <m>n \geq 4</m>. Since we can't visualize those spaces, we
       don't have a way of drawing angles and calculating them with
@@ -73,8 +73,8 @@
     <p>
       There are many pairs of orthogonal vectors. Thinking of the dot
       product as a multiplication, we have uncovered a serious
-      difference between the dot product and conventional
-      multiplication of numbers. If <m>a,b\in \RR</m> then
+      difference between the dot product and the conventional
+      multiplication of numbers. If <m>a,b\in \RR</m>, then
       <m>ab=0</m> implies that one of <m>a</m> or <m>b</m> must be
       zero. For vectors, we can have <m>\begin{pmatrix} 1 \\ 0
       \end{pmatrix} \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix} 
@@ -87,7 +87,7 @@
         <p>
           Assume <m>A</m> is a set with addition and some kind of
           multiplication and that <m>0 \in A</m>. If <m>u \neq 0</m>
-          and <m>\neq 0</m> but <m>uv =0</m>, we say that <m>u</m> and
+          and <m>v \neq 0</m> but <m>uv =0</m>, we say that <m>u</m> and
           <m>v</m> are <term>zero divisors</term>.
         </p>
       </statement>
@@ -108,7 +108,7 @@
       <statement>
         <p>
           Let <m>u,v,w</m> be vectors in <m>\RR^n</m> and let <m>a</m>
-          be a scalar in <m>\RR</m>. The follow four identities are
+          be a scalar in <m>\RR</m>. The following four identities are
           true for all vectors and scalars. 
           <md>
             <mrow>
@@ -174,7 +174,7 @@
       </statement>
       <proof>
         <p>
-          To prove the cosine law using vector, I'm going to interpret the
+          To prove the cosine law using vectors, I'm going to interpret the
           left side, <m>|u-v|^2</m>, as <m>(u-v) \cdot (u-v)</m>, using
           the second identity in <xref
           ref="proposition-dot-product-properties" />. Then I can go
@@ -197,7 +197,7 @@
           <me>
             |u-v|^2 = |u|^2 - 2u \cdot v + |v|^2 
           </me>
-          Then I can reorder the term.s
+          Then I can reorder the terms.
           <me>
             |u-v|^2 = |u|^2 + |v|^2 - 2u \cdot v 
           </me>
