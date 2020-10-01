@@ -6,6 +6,81 @@
   <p><ol>
     <li>
       <p>
+        Calculate the dimensions of these spans. (12)
+        <ol>
+          <li><me>
+            \Span \left \{
+              \begin{pmatrix}
+                -1 \\ -2 \\ 3 
+              \end{pmatrix},
+              \begin{pmatrix}
+                -2 \\ 0 \\ 6
+              \end{pmatrix},
+              \begin{pmatrix}
+                5 \\ 1 \\ 1
+              \end{pmatrix}
+            \right\}
+          </me></li>
+          <li><me>
+            \Span \left \{
+              \begin{pmatrix}
+                -3 \\ 1 \\ 1 
+              \end{pmatrix},
+              \begin{pmatrix}
+                -2 \\ 0 \\ 1
+              \end{pmatrix},
+              \begin{pmatrix}
+                1 \\ 1 \\ -1
+              \end{pmatrix}
+            \right\}
+          </me></li>
+          <li><me>
+            \Span \left \{
+              \begin{pmatrix}
+                -1 \\ 0 \\ 1 \\ 0 
+              \end{pmatrix},
+              \begin{pmatrix}
+                0 \\ 1 \\ 0 \\ -1
+              \end{pmatrix},
+              \begin{pmatrix}
+                -2 \\ -2 \\ -2 \\ -2 
+              \end{pmatrix},
+              \begin{pmatrix}
+                1 \\ -1 \\ 2 \\ -2
+              \end{pmatrix}
+            \right\}
+          </me></li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Calculate the dimension of these loci. (12)
+        <ol>
+          <li>
+            The locus of the equations <m>x-z=1</m> and <m>y-z=1</m>
+            in <m>\RR^3</m>.
+          </li>
+          <li>
+            The locus of the equations <m>2x-y-z=0</m>, <m>z=4</m>,
+            and <m>x=6</m> in <m>\RR^3</m>.
+          </li>
+          <li>
+            The locus of the equations <m>2x-z=1</m>, <m>2x-y=0</m>,
+            <m>y-z+2=4</m> and <m>x-y+w=3</m> in <m>\RR^4</m>.
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>L_1</m> and <m>L-2</m> be two linear loci in
+        <m>\RR^n</m> with dimensions <m>d_1</m> and <m>d_2</m>,
+        respectively. What are the possible dimensions of the
+        intersection <m>L_1 \cap L_2</m>? What are the possible
+        dimensions of the union <m>L_1 \cup L_2</m>? What are the
+        possible problems with determining the dimension of the union?
+        (6) 
       </p>
     </li>
   </ol></p>
