@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-cross-product-definition">
     <title>Definition of the Cross Product</title>
     <p>
-      The dot product is an operation which can be performed on any
+      The dot product is an operation that can be performed on any
       two vectors in <m>\RR^n</m> for any <m>n \geq 1</m>. There are
       no other conventional products that work in all dimensions.
       However, there is a special product that works in three
@@ -29,12 +29,12 @@
       The cross product differs from the dot product in several
       important ways. First, it produces a new vector in
       <m>\RR^3</m>, not a scalar. For this reason, when working in
-      <m>\RR^3</m>, the dot product is often refered to as the
+      <m>\RR^3</m>, the dot product is often referred to as the
       <em>scalar product</em> and the cross product as the <em>vector
       product</em>. Second, the dot product measures, in some sense,
       the similarity of two vectors. The cross product measures, in
       some sense, the difference between two vectors. The cross
-      product has greater magnitude if the vectors are closer to being
+      product has a greater magnitude if the vectors are closer to being
       perpendicular. If <m>\theta</m> is the angle between <m>u</m>
       and <m>v</m>, the dot product was expressed in terms of <m>\cos
       \theta</m>. This measures similarity, since <m>\cos 0 = 1</m>.
@@ -50,7 +50,7 @@
       that <m>u \times u = 0</m> (the zero vector is the only vector
       which has zero length). This is another new and strange
       property: in this particular multiplication, everything squares
-      to zero. The cross product is obviously very different from
+      to zero. The cross product is obviously very different from the
       multiplication of scalars, where <m>a^2 = 0</m> cannot happen
       unless <m>a=0</m>.
     </p>
@@ -64,7 +64,7 @@
           u_1 \\ u_2 \\ u_3  
           \end{pmatrix} \cdot
           \begin{pmatrix}
-          u_w v_3 - u_3 v_2 \\ u_3 v_1 - u_1 v_3 \\ u_1 v_2 - u_2 v_1
+          u_2 v_3 - u_3 v_2 \\ u_3 v_1 - u_1 v_3 \\ u_1 v_2 - u_2 v_1
           \end{pmatrix}
         </mrow>
         <mrow>
@@ -91,13 +91,13 @@
     <definition>
       <statement>
         <p>
-          Products which do not depend on the order of the factors,
+          Products that do not depend on the order of the factors,
           such as multiplication of scalars and the dot product of
           vectors, are called <term>commutative products</term>.
           Products where changing the order of the factors introduces
-          a negative sign are caled <term>anti-commutative
+          a negative sign are called <term>anti-commutative
           products</term>. The cross product is an anti-commutative
-          product. Other products which have neither of these
+          product. Other products that have neither of these
           properties are called <term>non-commutative
           products</term>.
         </p>
@@ -109,7 +109,7 @@
     <p>
       An important application of the cross product is found in
       describing rotational motion. Linear mechanics describes the
-      motion of an object through space but rotational mechanics
+      motion of an object through space, but rotational mechanics
       describes the rotation of an object independent of its movement
       through space. A force on an object can cause both kinds of
       movement, obviously. The following table summarizes the
@@ -143,7 +143,7 @@
       </row>
       <row>
         <cell>Mass (resistance to motion)</cell>
-        <cell>Moment of Intertia (resistance
+        <cell>Moment of Inertia (resistance
           to spin)</cell>
       </row>
       <row>
@@ -164,7 +164,7 @@
       that <m>|\tau| = |r||F| \sin \theta</m>, indicating that linear
       force perpendicular to the radius gives the greatest angular
       acceleration. That makes sense. If <m>F</m> and <m>r</m> share
-      a direction, then we are pushing directly along the axis and no
+      a direction, then we are pushing directly along the axis, and no
       rotation can occur.
     </p>
     <p>
@@ -172,7 +172,7 @@
       In fluid dynamics, local rotational products of the fluid result
       in turbulence, vortices and similar effects. Tornadoes and
       hurricanes are particularly extreme examples of vortices in the
-      fluid which is our atmosphere. All the descriptions of the force
+      fluid, which is our atmosphere. All the descriptions of the force
       and motion of these vortices involve cross products in the
       vectors describing the fluid.
     </p>
