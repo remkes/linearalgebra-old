@@ -209,7 +209,7 @@
             \end{matrix} \right) = (\sqrt{2})(\sqrt{7}) + (4)(\pi^2) +
             (\sqrt[3]{2})(0) = \sqrt{14} + 4 \pi^2 
           </me>
-          The isn't really a simpler way to write this number. This
+          There isn't really a simpler way to write this number. This
           form is just fine. If I wanted an approximate value, I
           could ask a computer (WA): <m>\sqrt{14} +
           4 \pi^2 \doteq 217.78</m>. (When you write approximate
@@ -725,8 +725,8 @@
           abstract idea. In the first activity, I've given you an
           empty table with some number sets and some possible
           structures.  Complete this table by writing <q>Yes</q> or
-          <q>No</q> in each space. Write <q>Yes</q> is the set in
-          question include the structure (the structure must remain in
+          <q>No</q> in each space. Write <q>Yes</q> if the set in
+          question includes the structure (the structure must remain in
           the set); write <q>No</q> if the set does not include the
           structure. 
         </p>
@@ -735,15 +735,15 @@
           set is unfamiliar, you may treat it as the numbers on the
           clock. So, for example, if I want to add <m>7 + 9</m>, I
           ask what time is 9 hours after 7, which is 4. Therefore <m>7
-          + 9 = 4</m> in an example of proper arithimetic for this
+          + 9 = 4</m> in an example of proper arithmetic for this
           set. In general, whenever I would get a number larger than
           <m>11</m>, I subtract multiples of <m>12</m> to reduce it
           down to something between <m>0</m> and <m>11</m>.  For
           another example, <m>5 \times 4 = 8</m> is also proper
           arithmetic for this set, since <m>20 - 12 = 8</m>. Note that
           <m>12</m> is the same thing as <m>0</m> in this set; even
-          though on a clock we would often write <m>12</m>, in this
-          set we usually just write <m>0</m>. So, for example, we
+          though on a clock, we would often write <m>12</m>, in this
+          set, we usually just write <m>0</m>. So, for example, we
           would write <m>5 + 7 = 0</m> in this set. Finally, this is
           just integers modulo 12, so we only consider the whole
           numbers of the clock <mdash /> we don't have minutes or any
@@ -923,7 +923,7 @@
         </table>
         <p>
           Hopefully, most of these answers are straightforward. I'll
-          comment on a few, thought, which might be less obvious. 
+          comment on a few, though, which might be less obvious. 
           <ul>
             <li>
               The natural numbers can still be said to have absolute
@@ -935,16 +935,16 @@
             </li>
             <li>
               Division for the integers modulo 12 is tricky. I might
-              thing that since I can extend addition, subtraction and
-              multiplication just fine modulo 12, I could extend
+              think that since I can extend addition, subtraction and
+              multiplication just fine for modulo 12, I could extend
               division as well. The problem is zero divisors: if I
               allow division by zero divisors, the arithmetic breaks.
-              This is not immediate to see, so I didn't really expect
+              This is not immediatly obvious, so I didn't really expect
               anyone to know this unless you've previously studied
               modular arithmetic.
             </li>
             <li>
-              Speaking of zero divisiors, take the numbers 3 and 4 in
+              Speaking of zero divisors, take the numbers 3 and 4 in
               the integers modulo 12. Their product is 12, which is
               the same as 0 in that system. So, I can reasonably say
               that <m>3 \times 4 = 0</m> in the integers modulo 12.
@@ -956,14 +956,14 @@
               modulo 12 is also tricky. I can impose an order, saying
               that <m>0 \lt 1 \lt 2 \lt 3 \lt \ldots \lt 11</m>.
               However, since the numbers loop around, if I keep going
-              from 12 back to 1, this seems intuitively probelmatic
+              from 12 back to 1, this seems intuitively problematic
               with this order. So, even though I could impose such an
-              order, I think it makes more sense not to, and say that
-              the integer modulo 12 are not ordered. If we think about
+              order, I think it makes more sense not to. So I conclude that
+              the integer modulo 12 is not ordered. If we think about
               time on a clock, I think we can justify this decision.
               If it is currently 10 o'clock, then there is a time
               before that was 5 o'clock as well as a time in the
-              future which will also be 5 o'clock. Therefore, puting
+              future, which will also be 5 o'clock. Therefore, putting
               an order seems unreasonable. 
             </li>
           </ul>
@@ -973,7 +973,7 @@
     <activity>
       <statement>
         <p>
-          The structures we've included so far have mostly be binary
+          The structures we've included so far have mostly been binary
           operations (the conventional four of arithmetic) and some
           other familiar things like order and absolute value.
           However, structures can be as complicated as we like. Here
@@ -982,7 +982,7 @@
           these are a bit tricky: you are allowed to restrict the
           conventional number sets to make this work. For example, the
           set of all positive rational numbers is a number set,
-          as is the set of all natural numbers less that 40.) 
+          as is the set of all natural numbers less than 40.) 
           <ol>
             <li>
               Decomposition of numbers into prime factors (except for
@@ -992,7 +992,7 @@
               Reciprocals of non-zero numbers.
             </li>
             <li>
-              The ability to do long division with remainder. 
+              The ability to do long division with a remainder. 
             </li>
             <li>
               You can get the whole set just by starting with 1 and
@@ -1016,7 +1016,7 @@
           <ol>
             <li>
               Decomposition of numbers into prime factors (except for
-              0 and 1): This is true of <m>/NN</m>. Positive whole
+              0 and 1): This is true of <m>\NN</m>. Positive whole
               numbers (larger than 1) do decompose into prime factors.
             </li>
             <li>
@@ -1026,17 +1026,17 @@
               division. 
             </li>
             <li>
-              The ability to do long division with remainder: this
-              works in <m>\NN</m>. Note that remainder is important
-              here: division is not exact in <m>/NN</m>, since we
+              The ability to do long division with a remainder: this
+              works in <m>\NN</m>. Note that the remainder is important
+              here: division is not exact in <m>\NN</m>, since we
               don't have fractions. However, we can say that 7 goes
-              into 40 five time, with remainder 5 <mdash /> that still
+              into 40 five times, with a remainder of 5 <mdash /> that still
               just uses whole numbers. 
             </li>
             <li>
               You can get the whole set just by starting with 1 and
               allowing yourself to do any number of additions: this is
-              true for <m>/NN</m>. Any positive number can be thought
+              true for <m>\NN</m>. Any positive number can be thought
               of as adding 1 some number of times. For example: <m>8 =
               1 + 1 + 1 + 1 + 1 + 1 + 1 + 1</m>. In this way, the
               number 1 and the addition operation generate all of the
@@ -1061,8 +1061,8 @@
               standard number set will have this structure, since they
               are all unbounded and keep getting larger forever.
               However, we can make a restriction and take a bounded
-              subset. Consider, for eample, all natural numbers less
-              that 40 (as I suggested in the statmeent of the
+              subset. Consider, for example, all natural numbers less
+              than 40 (as I suggested in the statement of the
               problem). This set has a maximal element of 39, since
               everything else in the set is a whole number less than
               or equal to 39. 
@@ -1077,7 +1077,7 @@
       <statement>
         <p>
           This is a guided proof to prove the triangle inequality
-          using the dot product. The triangle inequality states that,
+          using the dot product. The triangle inequality states that
           for any vector <m>u,v \in \RR^n</m>, the length of the sum
           is bounded by the sum of the lengths of the individual
           vectors. In symbols:
@@ -1094,7 +1094,7 @@
               Expand that dot product (distribute the pieces).
             </li>
             <li>
-              Replace <m>u \cdot </m> with <m>|u||v| \cos \theta</m>. 
+              Replace <m>u \cdot v</m> with <m>|u||v| \cos \theta</m>. 
             </li>
             <li>
               Use the fact that <m>\cos \theta \leq 1</m> to make the
@@ -1136,7 +1136,7 @@
             |u+v|^2 = u \cdot u + 2 |u||v| \cos \theta + v \cdot v 
           </me>
           The cosine term is at most <m>1</m>, so the maximum for the
-          right side happens when we repalce the cosine with 1. 
+          right side happens when we replace the cosine with 1. 
           <me>
             |u+v|^2 \leq u \cdot u + 2 |u||v| + v \cdot v 
           </me>
@@ -1162,7 +1162,7 @@
       <statement>
         <p>
           Prove that the cross product is anticommutative. (Take any
-          two vector <m>u,v \in \RR^3</m>, write them in their
+          two vectors <m>u,v \in \RR^3</m>, write them in their
           components and prove that <m>u \times v = - (v \times
           u)</m>.)
         </p>
@@ -1170,7 +1170,7 @@
       <solution>
         <p>
           I will start with the right side and try to manipulate it
-          into the left side. I'll write the vector in their
+          into the left side. I'll write the vectors in their
           components, use the definition of the cross product, and
           bring in the <m>(-1)</m> using the definition of scalar
           multiplication. 
@@ -1198,7 +1198,7 @@
             </mrow>
           </md>
           Now I just write each component in the other order,
-          interchage the order of the each multiplication, and
+          interchage the order of each multiplication, and
           recognize the definition of the cross product. 
           <me>
             = \left( \left( \begin{matrix}
@@ -1233,7 +1233,7 @@
           planes and hyperplanes determined by normals?
         </li>
         <li>
-          Why do cross product help calculate normals to planes in
+          Why do cross products help calculate normals to planes in
           three dimensions?
         </li>
         <li>
