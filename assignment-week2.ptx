@@ -27,9 +27,9 @@
         The cross product of <m>u</m> and <m>v</m> in <m>\RR^3</m> is
         a new vector which is perpendicular to both <m>u</m> and
         <m>v</m>. Explain why this description of the cross-product can
-        only work in three dimension. If you have to generalize the
+        only work in three dimensions. If you have to generalize the
         cross-product to higher dimensions, based on this idea of
-        generating a new vector perpendicualr to the two previous, how
+        generating a new vector perpendicular to the two previous, how
         would you do it? (4)
       </p>
     </li>
