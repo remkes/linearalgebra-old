@@ -282,8 +282,8 @@
           There are three vectors here, but they are all vectors in
           <m>\RR^2</m>. In two-dimensional space, there are only two
           independent directions of movement, so three vectors can
-          never be linearly dependent. We conclude that this is a
-          linearly independent set. 
+          never be linearly independent. We conclude that this is a
+          linearly dependent set. 
         </p>
       </solution>
     </activity>
