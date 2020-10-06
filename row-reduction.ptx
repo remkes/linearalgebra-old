@@ -404,7 +404,7 @@
     <definition>
       <statement>
         The <term>rank</term> of a matrix is the number of leading
-        ones in its reduced row-echelong form.
+        ones in its reduced row-echelon form.
       </statement>
     </definition>
   </subsection>

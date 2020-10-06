@@ -121,7 +121,7 @@
                 1 \amp 0 \amp 2 \\
                 0 \amp 1 \amp 3 \\
                 0 \amp 0 \amp 0
-            \end{array} \right) k
+            \end{array} \right) 
           </me>
           This is solvable and the solution is <m>a = 2</m> and
           <m>b=3</m>. This lets us write the vector in terms of the
