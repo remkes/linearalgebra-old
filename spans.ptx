@@ -6,7 +6,7 @@
       In addition to presenting the second description of linear
       subspaces, this chapter also introduces linear combinations,
       span and linear (in)dependence. These are some of the most
-      important and central definition in linear algebra.
+      important and central definitions in linear algebra.
     </p>
     <definition>
       <statement>
@@ -30,7 +30,7 @@
     </definition>
     <p>
       After loci, spans are the second way of defining linear
-      subspaces. Span are never affine: since linear combinations
+      subspaces. Spans are never affine: since linear combinations
       allow for all the coefficients <m>a_i</m> to be zero, spans
       always include the origin. To use spans to define affine
       subspaces, we have to add an offset vector.
@@ -47,8 +47,8 @@
     <p>
       Loci are built top-down, by starting with the ambient space and
       reducing the number of points by imposing restrictions in the
-      form of linear equations. Their dimension, at least ideally, is
-      the dimension of the ambient space minus the number of equations
+      form of linear equations. Their dimensions, at least ideally, are
+      the dimensions of the ambient space minus the number of equations
       or restrictions. Spans, on the other hand, are built bottom-up.
       They start with a number of vectors and take all linear
       combinations: more starting vectors leads to more independent
@@ -60,14 +60,14 @@
       Similarly, we expect the span of two vectors to be a plane.
       However, here we have the same problem as we had with loci: we
       may have redundant information. For example, in <m>\RR^2</m>,
-      we could consider the span <m>\Span \left\{ \begin{pmatrix} 1 \\
+      we could consider the <m>\Span \left\{ \begin{pmatrix} 1 \\
       2 \end{pmatrix}, \begin{pmatrix} 2 \\ 4 \end{pmatrix}
       \right\}</m>. We would hope the span of two vectors would be the
       entire plane, but this is just the line in the direction
-      <m>\begin{pmatrix} 1 \\ 2 \end{pmatrix}</m> . The vector
-      <m>\begin{pmatrix} 2 \\ 4 \end{pmatrix}</m> , since it is
+      <m>\begin{pmatrix} 1 \\ 2 \end{pmatrix}</m>. The vector
+      <m>\begin{pmatrix} 2 \\ 4 \end{pmatrix}</m>, since it is
       already a multiple of <m>\begin{pmatrix} 1 \\ 2
-      \end{pmatrix}</m> , is redundant.
+      \end{pmatrix}</m>, is redundant.
     </p>
     <p>
       The problem is magnified in higher dimensions. If we have the
@@ -141,16 +141,16 @@
     </definition>
     <p>
       There are two basic operations on <m>\RR^n</m>: we can add
-      vectors and we can multiply by scalars. Linear subspaces are
+      vectors, and we can multiply by scalars. Linear subspaces are
       just subsets where we can still perform both operations and
       remain in the subset.
     </p>
     <p>
       Geometrically, vector addition and scalar multiplication produce
-      flat objects: lines, planes, and their higher-dimensions
+      flat objects: lines, planes, and their higher-dimensional
       analogues. Also, since we can take <m>a=0</m>, we must have
       <m>0 \in L</m>. So linear subspaces can be informally defined
-      as flat subsets which include the origin.
+      as flat subsets, which include the origin.
     </p>
     <definition>
       <statement>
@@ -169,7 +169,7 @@
           We think of affine subspaces as flat spaces that may be
           offset from the origin. The vector <m>v</m> is called the
           <term>offset vector</term>. Affine spaces include linear
-          spaces, since we can also take <m>u</m> to be the zero
+          spaces since we can also take <m>u</m> to be the zero
           vector and have <m>A=L</m>. Affine objects are the lines,
           planes and higher-dimensional flat objects that may or may
           not pass through the origin.
@@ -179,7 +179,7 @@
     <p>
       Notice that we defined both affine and linear subspaces to be
       non-empty. The empty set <m>\emptyset</m> is <em>not</em> a
-      linear or affine subspace. The smallest linear subspace if
+      linear or affine subspace. The smallest linear subspace is
       <m>\{0\}</m>: just the origin. The smallest affine subspace is
       any isolated point.
     </p>
@@ -200,8 +200,8 @@
       <statement>
         <p>
           Let <m>A</m> be an affine subspace of <m>\RR^n</m> and write
-          <m>A</m> as <m>A = u + L</m> for <m>L</m> a linear subspace
-          and <m>u</m> a offset vector. Then <m>A</m> has
+          <m>A</m> as <m>A = u + L</m> for <m>L</m>, a linear subspace,
+          and <m>u</m> an offset vector. Then <m>A</m> has
           <term>dimension k</term> if <m>L</m> has dimension
           <m>k</m>.
         </p>
@@ -219,14 +219,14 @@
         <p>
           Let <m>L</m> be a linear subspace of <m>\RR^n</m>. A
           <term>basis</term> for <m>L</m> is a minimal spanning set;
-          that is, a set of linearly independent vectors which span
+          that is, a set of linearly independent vectors that span
           <m>L</m>.
         </p>
       </statement>
     </definition>
     <p>
       Since a span is the set of all linear combinations, we can think
-      of a basis as as way of writing the vectors of <m>L</m>: every
+      of a basis as a way of writing the vectors of <m>L</m>: every
       vector in <m>L</m> can be written as a linear combination of the
       basis vectors. A basis gives a nice way to account for all the
       vectors in <m>L</m>.
@@ -239,7 +239,7 @@
       <statement>
         <p>
           The <term>standard basis</term> of <m>\RR^2</m> is composed
-          of the two unit vectors in the positive <m>x</m> and
+          of the two-unit vectors in the positive <m>x</m> and
           <m>y</m> directions. We can write any vector as a linear
           combination of the basis vectors.
           <md>
@@ -252,7 +252,7 @@
         </p>
         <p>
           The <term>standard basis</term> of <m>\RR^3</m> is composed
-          of the three unit vectors in the positive <m>x</m>, <m>y</m>
+          of the three-unit vectors in the positive <m>x</m>, <m>y</m>
           and <m>z</m> directions. We can again write any vector as a
           linear combination of the basis vectors.
           <md>

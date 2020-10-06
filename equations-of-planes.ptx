@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-dot-product-and-loci">
     <title>Dot Products and Loci</title>
     <p>
-      Having discussed spans, let's return to loci. By re-examing the
+      Having discussed spans, let's return to loci. By re-examining the
       linear equations, we can define loci via dot products. Consider,
       again, the general linear equation in <m>\RR^n</m>.
       <me>
@@ -13,8 +13,8 @@
     <p>
       Let's think of the variables <m>u_i</m> as the components of a
       vector <m>u \in \RR^n</m>. We also have <m>n</m> scalars
-      <m>a_i</m> which we likewise treat as a components of the vector
-      <m>a \in \RR^n</m>. The vector <m>u</m> is variables, the
+      <m>a_i</m>, which we likewise treat as components of the vector
+      <m>a \in \RR^n</m>. The vector <m>u</m> is variable; the
       vector <m>a</m> is constant. Then we can re-write the linear
       equation using these two vectors.
       <me>
@@ -25,11 +25,11 @@
     </p>
     <p>
       In this way, a linear equation specifies that the dot product
-      result of a variables vector <m>u</m> with a fixed vector
+      result of a variable vector <m>u</m> with a fixed vector
       <m>a</m> must have the result <m>c</m>. In this light, an
       affine plane in <m>\RR^3</m> is given by the equation
       <m>\begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot
-      \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = c</m> . This
+      \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = c</m>. This
       plane is precisely all vectors whose dot product with the vector
       <m>\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}</m> is the
       fixed number <m>c</m>. If <m>c=0</m>, then we get
