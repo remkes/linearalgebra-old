@@ -634,7 +634,7 @@
           First we write the matrix of the system.
           <me>
             \left( \begin{array}{ccc|c}
-              2 \amp 01 \amp 6 \amp 1 \\
+              2 \amp -1 \amp 6 \amp 1 \\
               3 \amp 0 \amp -7 \amp 1 \\
               0 \amp 1 \amp 4 \amp 2 
             \end{array} \right) 
@@ -834,7 +834,7 @@
           <me>
             \left( \begin{array}{cccc|c}
               1 \amp 0 \amp -1 \amp -1 \amp 4 \\
-              5 \amp -1 \amp - \amp 2 \amp 2 \\
+              5 \amp -1 \amp 0 \amp 2 \amp 2 \\
               0 \amp 6 \amp -3 \amp 0 \amp 1 
             \end{array} \right) 
           </me>

@@ -1,9 +1,204 @@
 <section xml:id="section-proofs-week6">
   <title>Proofs - Matrix Actions</title>
-  <subsection xml:id="subsection-TBD">
-    <title>Subsection</title>
+  <subsection xml:id="subsection-general-transformation-proofs">
+    <title>General Properties of the Matrix Action</title>
     <p>
-      TBD
+      I have defined linear transformation. At this point, I could
+      state and try to prove a variety of properties about linear
+      transformations and their matrix representations. Most
+      obviously, perhaps, I could prove that the matrix action is
+      actually a linear transformation, as I stated in <xref
+      ref="section-matrices-and-transformations" />, and the converse
+      that all linear transformations can be represented as matrices. 
+      I could also prove the two properties in <xref
+      ref="proposition-matrix-multiplication" />. I am opting not to
+      present these general proofs. They are not conceptually
+      difficult, but to do them in general is notationally difficult.
+      It involves a lot of matrix coefficients, vector coefficients
+      and many subscripts. I thought to include those proofs here
+      wasn't useful for building up our experience with proofs (other
+      than perhaps to show that notation is a major challenge in
+      writing mathematical proof).
     </p>
+  </subsection>
+  <subsection xml:id="subsection-transformations-r2-proofs">
+    <title>Properties of Transformations in <m>\RR^2</m></title>
+    <p>
+      Instead of proving the most general statements about matrix
+      transformations, I'll prove some more specific statements about
+      the types of transformations I defined in <xref
+      ref="section-r2-examples" />. 
+    </p>
+    <proposition>
+      <statement>
+        Any two reflections in <m>\RR^2</m> commute. 
+      </statement>
+      <proof>
+        <p>
+          To commute means that if the order of the composition (or
+          matrix multiplication) is reverse, the outcome is the same.
+          That is, if <m>A</m> and <m>B</m> are the matrix
+          representations of two reflections, then <m>AB = BA</m> is a
+          true statement about matrix multiplication. 
+        </p>
+        <p>
+          I want my proof to be completely general, so I want to work
+          with arbitrary reflections. Let's say that <m>A</m> is a
+          reflection by the angle <m>\theta</m>, so it has the matrix
+          <me>
+            \begin{pmatrix}
+              \cos \theta \amp - \sin \theta \\
+              \sin \theta \amp \cos \theta
+            \end{pmatrix}
+          </me>.
+          Let's also say that <m>B</m> is a reflection by the angle
+          <m>\phi</m>, so it has the matrix. 
+          <me>
+            \begin{pmatrix}
+              \cos \phi \amp - \sin \phi \\
+              \sin \phi \amp \cos \phi
+            \end{pmatrix}
+          </me>.
+          Now I need to calculate the two matrix multiplications and
+          show that the result is the same regardless of the order.
+          First I will calculate <m>AB</m>.
+          <md>
+            <mrow>
+              AB \amp = \begin{pmatrix}
+                \cos \theta \amp - \sin \theta \\
+                \sin \theta \amp \cos \theta
+              \end{pmatrix}
+              \begin{pmatrix}
+                \cos \phi \amp - \sin \phi \\
+                \sin \phi \amp \cos \phi
+              \end{pmatrix} 
+            </mrow>
+            <mrow>
+              \amp = \begin{pmatrix}
+                \cos \theta \cos \phi - \sin \theta \sin \phi \amp 
+                -\cos \theta \sin \phi - \sin \theta \cos \phi \\ 
+                \sin \theta \cos \phi + \cos \theta \sin \phi \amp 
+                -\sin \theta \sin \phi + \cos \theta \cos \phi 
+              \end{pmatrix} 
+            </mrow>
+          </md>.
+          Now I'll do the other order of the multiplication.
+          <md>
+            <mrow>
+              BA \amp = \begin{pmatrix}
+                \cos \phi \amp - \sin \phi \\
+                \sin \phi \amp \cos \phi
+              \end{pmatrix}
+              \begin{pmatrix}
+                \cos \theta \amp - \sin \theta \\
+                \sin \theta \amp \cos \theta
+              \end{pmatrix} 
+            </mrow>
+            <mrow>
+              \amp = \begin{pmatrix}
+                \cos \phi \cos \theta - \sin \phi \sin \theta \amp 
+                - \cos \phi \sin \theta - \sin \phi \cos \theta \\ 
+                \sin \phi \cos \theta + \cos \phi \sin \theta \amp 
+                -\sin \phi \sin \theta + \cos \phi \cos \theta
+              \end{pmatrix} 
+            </mrow>
+          </md>.
+          I  can take this second result and switch the order of all the
+          multiplications (which is valid since there are just
+          multiplications of ordinary numbers). I can also reorder a
+          couple of the additions/subtractions.
+          <me>
+            \begin{pmatrix}
+              \cos \theta \cos \phi - \sin \theta \sin \phi \amp 
+              - \cos \theta \sin \phi - \sin \theta \cos \phi \\ 
+              \sin \theta \cos \phi + \cos \theta \sin \phi \amp 
+              -\sin \theta \sin \phi + \cos \theta \cos \phi
+            \end{pmatrix} 
+          </me>.
+          This is the same as the result of <m>AB</m>. That conclude
+          the proof, showing that the outcome of either order of
+          matrix multiplication is the same.
+        </p>
+      </proof>
+    </proposition>
+    <p>
+      You might woner, at this point, about the structure of this
+      proof. I've tried to say several times that to prove an
+      equality, we need to start at one side and end at the other.
+      However, here I've tried to prove <m>AB=BA</m> and done so by
+      reducing to a common form. Am I disobeying my own rules?
+    </p>
+    <p>
+      I am not contradicting myself, though it is a very good
+      question. To understand why, look at the statement of the
+      proposition. Composition of transformation is a process where
+      two transformations combine into one new one. There are two ways
+      to do it: <m>AB</m> or <m>BA</m>. The proposition says that the
+      outcome of both orders is the same. Therefore, I can calculate
+      the outcome of both orders and compare them. This is different
+      from a proposition that simply states an equation; for these
+      proposition, reducing each side of the equation to a common
+      expression can result in a false proof (for example, by
+      muliptlying both sides by zero). Here, I'm not reducing an
+      equation to a common form, but doing two processes and comparing
+      the result. 
+    </p>
+    <proposition>
+      <statement>
+        Prove that a projection in <m>\RR^2</m> composed with itself
+        is just the same projection. (That is, for any projection
+        <m>A</m>, <m>AA = A</m>
+      </statement>
+      <proof>
+        All we need to do for this proof is take the general matrix
+        for a projection and multiply it by itself. The general matrix
+        is
+        <me>
+          A = \begin{pmatrix}
+            a^2 \amp ab \\
+            ab \amp b^2 
+          \end{pmatrix} 
+        </me>,
+        remembering that this is for a unit vector direction. Since we
+        have a unit vector direction, <m>a^2 + b^2 = 1</m>, which we
+        will ned for this proof. Now let's take this matrix and
+        muliptly it by itself.
+        <me>
+          A^2 = \begin{pmatrix}
+            a^2 \amp ab \\
+            ab \amp b^2 
+          \end{pmatrix} 
+          \begin{pmatrix}
+            a^2 \amp ab \\
+            ab \amp b^2 
+          \end{pmatrix}  =
+          \begin{pmatrix}
+            (a^2)(a^2) + (ab)(ab) \amp 
+            (a^2)(ab) + (ab)(b^2) \\
+            (ab)(a^2) + (b^2)(ab) \amp
+            (ab)(ab) + (b^2)(b^2)
+          \end{pmatrix}
+        </me>
+        In each component of this matrix, I can factor out <m>a^2</m>,
+        <m>b^2</m>, or <m>ab</m>. 
+        <me>
+          = \begin{pmatrix}
+            a^2(a^2 + b^2) \amp 
+            ab(a^2 + b^2) \\
+            ab(a^2) + b^2) \amp
+            b^2(a^2 + b^2)
+          \end{pmatrix}
+        </me>
+        Then I can use the fact that <m>a^2 + b^2 = 1</m>.
+        <me>
+          = \begin{pmatrix}
+            a^2 \amp ab \\ 
+            ab \amp b^2 
+          \end{pmatrix} = A 
+        </me>
+        This is the same as the starting matrix. I've proved that
+        <m>AA=A</m>, which was the goal of the proposition.
+      </proof>
+    </proposition>
   </subsection>
 </section>

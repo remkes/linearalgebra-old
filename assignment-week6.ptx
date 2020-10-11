@@ -6,7 +6,58 @@
   <p><ol>
     <li>
       <p>
+        Find a linear transformation of <m>\RR^2</m> for each of the
+        following conditions. (Give evidence or reasons for your
+        choice -- just writing down a matrix is not sufficient.) (15)
+        <ol>
+          <li><p>
+            A transformation that exchanges <m>\begin{pmatrix} -1 \\0
+            \end{pmatrix}</m> amd <m>\begin{pmatrix} 1 \\ 0
+            \end{pmatrix}</m> and send <m>\begin{pmatrix} 0 \\ 3
+            \end{pmatrix}</m> to <m>\begin{pmatrix} 0 \\ 6
+            \end{pmatrix}</m>.
+          </p></li>
+          <li><p>
+            A transformation that send a circle of radius 4 to the
+            unit circle and also reflect over the line <m>y = x</m>.
+          </p></li>
+          <li><p>
+            A transformation that preserve the <m>x</m> axis and sends
+            <m>\begin{pmatrix} 1 \\ 1 \end{pmatrix}</m> to
+            <m>\begin{pmatrix} 2 \\ 1 \end{pmatrix}</m>.
+          </p></li>
+          <li><p>
+            A transformation that preserves a septagon but it a
+            non-trivial rotation.
+          </p></li>
+          <li><p>
+            A transformation that sends <m>\begin{pmatrix} 3 \\ 4
+            \end{pmatrix}</m> to <m>\begin{pmatrix} 0 \\ 0
+            \end{pmatrix}</m>.
+          </p></li>
+        </ol>
       </p>
+    </li>
+    <li>
+      <p>
+        Prove that general reflections and rotations in <m>\RR^2</m>
+        do not commute. (4) 
+      </p>
+    </li>
+    <li>
+      A skew in the horizontal direction has the matrix
+      <me>
+        \begin{pmatrix}
+          1 \amp a \\
+          0 \amp 1 
+        \end{pmatrix}
+      </me>
+      where <m>a</m> is a parameter that determines the 
+      length of the skew. Prove that the composition of two skews in
+      the <m>x</m> direction is still a skew in the <m>x</m>
+      direction. Additionally, show that if the parameters of the two
+      skews are <m>a</m> and <m>b</m>, the composition skews by a
+      factor of <m>a + b</m>. (4) 
     </li>
   </ol></p>
 </section>

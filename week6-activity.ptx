@@ -796,7 +796,7 @@
       <statement>
         <p>
           Consider two rotations in <m>\RR^2</m>, by angles
-          <m>\theta</m> amd <m>\phi</m>. Use the general form of a
+          <m>\theta</m> and <m>\phi</m>. Use the general form of a
           matrix for a rotaion, prove that the composition of these
           two rotations is the rotation by the angle <m>(\theta +
           \phi)</m>. (You will need to use some trigonometric

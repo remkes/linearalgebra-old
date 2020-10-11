@@ -98,22 +98,22 @@
       Following this formula, a quarter turn is 
       <me>
         \begin{pmatrix}
-          0 \theta \amp -1 \theta \\
-          1 \theta \amp 0 \theta
+          0 \amp -1 \\
+          1 \amp 0 
         \end{pmatrix}
       </me>.
       Likewise, a half turn is 
       <me>
         \begin{pmatrix}
-          -1 \theta \amp 0 \theta \\
-          0 \theta \amp -1 \theta
+          -1 \amp 0 \\
+          0 \amp -1 
         \end{pmatrix}
       </me>.
       Finally, a three-quarter turn is 
       <me>
         \begin{pmatrix}
-          0 \theta \amp 1 \theta \\
-          -1 \theta \amp 0 \theta
+          0 \amp 1 \\
+          -1 \amp 0 
         \end{pmatrix}
       </me>.
     </p>

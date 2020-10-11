@@ -1,4 +1,4 @@
-<section xml:id="ection-matrices-and-transformations">
+<section xml:id="section-matrices-and-transformations">
   <title>Matrices and Transformations</title>
   <subsection xml:id="subsection-matrix-representation">
     <title>Matrix Representation of Linear Transformations</title>
@@ -221,20 +221,18 @@
       products for vectors (dot and cross), we want to know the
       properties of this new operation.
     </p>
-    <proposition>
+    <proposition xml:id="proposition-matrix-multiplication">
       <statement>
         <p>
           Let <m>A</m> be a <m>k \times l</m> matrix, <m>B</m> and
           <m>C</m> be <m>l \times m</m> matrices, and <m>D</m> a <m>m
           \times n</m> matrix. Also let <m>I_i</m> be the identity
           matrix in <m>\RR^i</m> for any <m>i \in \NN</m>. Then there
-          are three important properties of matrix multiplication.
+          are two important properties of matrix multiplication I want
+          to state at the start.
           <md>
             <mrow>
               A(BD) \amp = (AB) D \amp \amp \text{Associative}  
-            </mrow>
-            <mrow>
-              A(B+C) \amp = AB + AC \amp \amp \text{Distributive}
             </mrow>
             <mrow>
               AI_l \amp  = I_kA = A \amp \amp \text{Identity} 
