@@ -28,6 +28,13 @@
   </subsection>
   <subsection xml:id="subsection-images">
     <title>Images</title>
+    <p>
+      In <xref ref="section-transformations-of-spans-and-loci" />, we
+      defined the image of a matrix or transformation to be the whole
+      collection of outputs. (This is what we call the range in single
+      variable functions.) There is a nice proposition which tells us
+      how to calculate images for linear transformations.
+    </p>
     <proposition>
       <statement>
         <p>
@@ -130,7 +137,7 @@
               ax + by \amp  = x_0
             </mrow>
             <mrow>
-              cd + dy \amp  = y_0
+              cx + dy \amp  = y_0
             </mrow>
           </md>
         </p>
