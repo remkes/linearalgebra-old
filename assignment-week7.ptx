@@ -3,10 +3,120 @@
 -->
 <section xml:id="section-assignment-week7">
   <title>Week 7 Assignment</title>
-  <p><ol>
+  <ol>
     <li>
       <p>
+        Invert these matrices. (Show the steps of your process, though
+        you don't need to show every row operation in the row
+        recuction.) (6)
+        <ol>
+          <li><me>
+            \begin{pmatrix}
+              2 \amp -2 \amp 2 \\
+              1 \amp -1 \amp -1 \\
+              3 \amp 1 \amp 1
+            \end{pmatrix}
+          </me></li>
+          <li><me>
+            \begin{pmatrix}
+              0 \amp 4 \amp -3 \\
+              3 \amp -1 \amp 0 \\
+              1 \amp -2 \amp -1
+            \end{pmatrix}
+          </me></li>
+        </ol>
       </p>
     </li>
-  </ol></p>
+    <li>
+      <p>
+        Consider the transformation defined by this matrix. (6)
+        <me>
+          \begin{pmatrix}
+            0 \amp 2 \amp 0 \\
+            1 \amp 1 \amp 0 \\
+            0 \amp -1 \amp 1
+          \end{pmatrix}
+        </me>
+      </p>
+      <ol>
+        <li><p>
+          What does this matrix do to the line
+          <me>
+            \Span \left\{ \begin{pmatrix}
+              1 \\ 1 \\ 3\
+            \end{pmatrix} \right\} 
+          </me>.
+        </p></li>
+        <li><p>
+          What does this matrix do to the plane given by the equation     
+          <me>
+            x - y - z = 0 
+          </me>.
+        </p></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Consider this matrix and its associated transformation. (8) 
+        <me>
+          \begin{pmatrix}
+            1 \amp 1 \amp -1 \\
+            0 \amp 1 \amp 3 \\
+            2 \amp 4 \amp -1
+          \end{pmatrix}
+        </me>
+      </p>
+      <ol>
+        <li><p>
+          Find a basis for the kernel and state its dimension.
+        </p></li>
+        <li><p>
+          Find a basis for the image and state its dimension.
+        </p></li>
+        <li><p>
+          Check that the dimension of the image and the kernel add up
+          to the dimension of the domain.
+        </p></li>
+        <li><p>
+          Find the rank of the matrix. 
+        </p></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Consider this matrix and its associated transformation. (8) 
+        <me>
+          \begin{pmatrix}
+            1 \amp 1 \amp 1 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 1 \amp 1 \amp 1
+          \end{pmatrix}
+        </me>
+      </p>
+      <ol>
+        <li><p>
+          Find a basis for the kernel and state its dimension.
+        </p></li>
+        <li><p>
+          Find a basis for the image and state its dimension.
+        </p></li>
+        <li><p>
+          Check that the dimension of the image and the kernel add up
+          to the dimension of the domain.
+        </p></li>
+        <li><p>
+          Find the rank of the matrix. 
+        </p></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        If <m>m \gt n</m> and we have a matrix representing a
+        transformation <m>\RR^n \rightarrow \RR^m</m>, what are the
+        maximum and minimum dimensions of the column and rowspaces of
+        the matrix? What are the maximum and minimum dimensions of
+        the kernel and image of the transformation? (Give reasons for
+        your maxima and minima.) (6) 
+      </p>
+    </li>
+  </ol>
 </section>
