@@ -1,9 +1,112 @@
 <section xml:id="section-proofs-week7">
   <title>Proofs - Inversion, Kernels, Images</title>
-  <subsection xml:id="subsection-TBD">
-    <title>Subsection</title>
+  <subsection xml:id="subsection-interactions-definitions">
+    <title>Interactions between Definitions</title>
     <p>
-      TBD
+      In this section, we defined a bunch of different terms:
+      rowspace, columnspace, kernal, image and preimage. In <xref
+      ref="section-kernels-and-images" />, I already stated and proved
+      a couple propositions about these new terms. I want to continue
+      that work in this section. All these terms, along with the
+      matrix rank, fit togther very tightly. We'll explore that
+      connection in a few proofs in this section.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>M</m> be a <m>m \times n</m> matrix, representing a
+          transformation <m>\RR^n \rightarrow \RR^m</m>. The dimension
+          of the kernel of <m>M</m> and the dimension of the image of
+          <m>M</m> add up to <m>n</m>, the dimension of the domain.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          We know the dimension of the image is the rank, which is the
+          number of leading ones in the reduced row echelon form. We
+          also know that the dimension of the kernel is the dimension
+          of the system of equations represented by the extended
+          matrix <m>(M|0)</m>. The dimension of a solution space to a
+          system of equation is equal to the number of free
+          parameters. Each column without a leading one in the
+          extended matrix (left of the dividing line) is a free
+          variables. Therefore, the dimension of the kernel is the
+          number of columns without leading ones.
+        </p>
+        <p>
+          Each column in the row reduced form of <m>M</m> either has
+          or does not have a leading one. The columsn with leading
+          ones contribute to the rank. The columns without leading
+          ones are free parameters for the system. Therefore, the
+          dimensions of the image (rank) plus the dimension of the
+          kernel (free parameters) add up to the number of columns,
+          which is <m>n</m>.
+        </p>
+      </proof>
+    </proposition>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>M</m> be a <m>n \times n</m> matrix. <m>M</m> is
+          invertible if and only if its kernel is zero. 
+        </p>
+      </statement>
+      <proof>
+        <p>
+          For <qt>if and only if</qt> statement, we need to prove in
+          both directions. Let's start with the forward implication.
+          For this, we assume the matrix is invertible.
+        </p>
+        <p>
+          Since the matrix is invertible, it row reduces to the
+          identity matrix. (We know this from the inversion algorithm,
+          where we have to row reduce the left side of the extended
+          matrix to the identity.) That means is has rank <m>n</m>,
+          since each row has a leading one. This means that the image
+          has dimension <m>n</m>. Using the previous proposition, this
+          implies the kernel has dimension <m>0</m>. The only thing
+          with dimension zero is a point, so the kernel is a point.
+          The kernel always includes zero, since zero is also alwasy
+          sent to zero, to the kernel is zero.
+        </p>
+        <p>
+          We have to prove the reverse implication as well. Luckily in
+          this case, we can essentially reverse the same logic. A zero
+          kernel has dimension zero. Therefore the image has to have
+          dimension <m>n</m>. Therefore, there must be <m>n</m> leading
+          ones. Therefore, the matrix must reduce to the identity
+          matrix (the only <m>n \times n</m> matrix with <m>n</m>
+          leading ones). Therefore, the matrix is invertible.
+        </p>
+      </proof>
+    </proposition>
+    <p>
+      It turns out that there will be many ways to describe an
+      invertible matrix. I'll start a list of equivalent properties of
+      invertible matrices, which will be extended throughout the
+      course. Assume <m>M</m> is a <m>n \times n</m> matrix. The
+      following properties are equivalent (each implies all the rest).
+      <ul>
+        <li>
+          <m>M</m> is invertible.
+        </li>
+        <li>
+          <m>M</m> row reduces to the identity matrix.
+        </li>
+        <li>
+          <m>M</m> has rank <m>n</m>.
+        </li>
+        <li>
+          The image of <m>M</m> is <m>\RR^n</m>.
+        </li>
+        <li>
+          The kernel of <m>M</m> is zero.
+        </li>
+        <li>
+          <m>M</m> preserves the dimension of any (linear or affine)
+          object it acts upon
+        </li>
+      </ul>
     </p>
   </subsection>
 </section>

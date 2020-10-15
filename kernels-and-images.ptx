@@ -147,23 +147,66 @@
         </p>
       </statement>
     </example>
+  </subsection>
+  <subsection xml:id="subsection-loci-preimages-systems">
+    <title>A Central Connection Idea</title>
     <p>
-      The connection between kernels, preimages and solutions spaces
-      is a deep and important connection between the two pieces of
-      this course so far: vector geometry and solving linear system.
-      When we started with a linear system, we wrote it as an extended
-      matrix. The solution space of that extended matrix
-      (<m>(M|u)</m>, where <m>u</m> is the column vector as constants)
-      is the same as the vectors <m>v \in \RR^n</m> such that <m>Mv =
-      u</m>. Solutions spaces are preimages and preimages are
-      solutions spaces.
+      At the point int he course, we have talked about loci, solved
+      linear systems, and now defined the preimage of a vector under a
+      transformation. Loci are very geometric, systems are very
+      algebraic, and preimages are again geometric but from a
+      different perspective (transformations instead of static
+      objects). Despite their different starting point, these three
+      are essentially all talking about the same thing. The connection
+      between all three is a major conceptual goal in this course; if
+      we can understand how these three novel and abstract definition
+      fit together, that points to a deep and thorough understanding
+      of the three concepts. Let me try to describe this connection.
+    </p>
+    <p>
+      Let me start with a linear system. This is a set of linear
+      equation, implicitly asking what values of the variables (if
+      any) solves all the equations simultaneously. To move to loci,
+      all we have to do is thing geometrically. A locus is the set of
+      points which satisfy some equations (linear equations in this
+      course). So a locus is just the solution of a system, seen
+      geometrically. A locus is a solution space. We made this
+      connection before when we calcluated dimension of loci: the
+      dimension was the number of free parameters in the solution of
+      the associated system.
+    </p>
+    <p>
+      So what about pre-images. Conisider a <m>m \times n</m> matrix
+      <m>M</m>, representing a transformation <m>\RR^m \rightarrow
+      \RR^n</m>. For a vector <m>u</m> in <m>\RR^n</m>, we can ask for
+      the preimage <m>M^{-1}( \{ u\} )</m>. This is all the vectors in
+      <m>\RR^m</m> which the matrix send to <m>u</m> (which could
+      possibly be empty if none of the vectors are sent to <m>u</m>.
+      We can express this as a matrix equation: <m>v</m> is in the
+      preimage only if 
+      <me>
+        Mv = u
+      </me>
+      But then I can look at the coordinates of this equation. Each
+      coordinate gives me a linear equation, so I get a system of
+      <m>m</m> linear equations (because <m>v \in \RR^m</m>, so it has
+      <m>m</m> coordinates). The constants of this linear system are
+      the components of <m>u</m>. The matrix of this linear system is
+      the extended matrix <m>(M|u)</m>. The solution to this linear
+      system can be interpreted as a locus. This locus (line, plane,
+      etc) it precisely all the points that <m>M</m> sends to
+      <m>u</m>. In this way, solutions spaces to systems, loci, and
+      preimage are all the same things and are all found by the matrix
+      <m>(M|u)</m>.
     </p>
     <p>
       Specifically, the kernel is the linear space of all vector
       <m>v</m> with <m>Mv = 0</m>. This is a solution space for the
       linear system with matrix <m>(M|0)</m>, where the column after
-      the dividing line is all zeroes. This gives us a way of
-      calcluation kernels and expressing them as spans.
+      the dividing line is all zeroes. To calcluate a kernel, we have
+      to solve a system where the constants are all zero. The matrix
+      of that system is just <m>M</m>, the matrix of the
+      transformation.
     </p>
   </subsection>
 </section>
