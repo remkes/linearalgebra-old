@@ -3,12 +3,12 @@
   <subsection xml:id="subsection-systems-definition">
     <title>System of Linear Equations</title>
     <p>
-      The previous eight chapters introduced the geometric side of
-      this course. This chapter changes perspective to look at the
+      The previous three weeks introduced the geometric side of
+      this course. This week we change perspective to look at the
       algebraic side of linear algebra. A major problem in algebra is
       solving systems of equations: given several equations in several
-      variables, can we find values for each variable which satisfy
-      all the equations? In general, algegra considers any kind of
+      variables, can we find values for each variable that satisfy
+      all the equations? In general, algebra considers any kind of
       equation.
     </p>
     <example>
@@ -21,8 +21,8 @@
         <p>
           This system is solved by <m>\begin{pmatrix} x \\ y \\ z
           \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}
-          </m> When substitued in the equations, these values satisfy
-          all three. No other triples satisfies, so this is a unique
+          </m> When substituted in the equations, these values satisfy
+          all three. No other triples satisfy, so this is a unique
           solution.
         </p>
       </statement>
@@ -34,14 +34,14 @@
       variables; or performing arithmetic with the equations
       themselves. Both are useful techniques. However, when the
       equations become quite complicated, both methods can fail. In
-      that case, solutions to systerms can only be approached with
+      that case, solutions to systems can only be approached with
       approximation methods. The methodology of these approximations
       is a whole branch of mathematics in itself.
     </p>
     <p>
-      We are going to restrict ourselves to a class of systems which
-      is more approchable: systems of linear equations. Recall the
-      definition of a linear equation which we first stated in <xref
+      We are going to restrict ourselves to a class of systems that
+      are more approachable: systems of linear equations. Recall the
+      definition of a linear equation, which we first stated in <xref
       ref="section-loci" />.
     </p>
     <definition>
@@ -49,7 +49,7 @@
         <p>
           Let <m>a_i</m> and <m>c</m> be real numbers. A <term>linear
           equation</term> in the variables <m>x_1, x_2 \ldots, x_n</m>
-          is a equation of the following form.
+          is an equation of the following form.
           <me>
             a_1 x_1 + a_2 x_2 + \ldots + a_n x_n = c
           </me>
@@ -62,19 +62,19 @@
       equations) in those variables. While much simpler than the
       general case, linear systems are a common and useful type of
       system to consider. Such systems also work well with arithmetic
-      solution techniques, since we can add two linear equations
+      solution techniques since we can add two linear equations
       together and still have a linear equation.
     </p>
     <p>
       This turns out to be the key idea: we can do arithmetic with
       linear equations. Specifically, there are three things we can
-      do with a system of linear equation. These three techniques
-      <em>preserve the solutions</em>, that is, they don't alter the
+      do with a system of linear equations. These three techniques
+      <em>preserve the solutions</em>; that is, they don't alter the
       values of the variables that solve the system.
       <ul>
         <li>
           <p>
-            Multiple a single equation by a (non-zero) constant.
+            Multiply a single equation by a (non-zero) constant.
             (Multiplying both sides of the equation, of course).
           </p>
         </li>
@@ -186,7 +186,7 @@
     <example>
       <statement>
         <p>
-          Sometimes not every equations explicitly mentions each
+          Sometimes not every equation explicitly mentions each
           variable.
           <md>
             <mrow>
@@ -226,12 +226,12 @@
       </statement>
     </example>
     <p>
-      In this way, we can change any system of linear equations into a
-      extended matrix (with one column after the vertical line), and
+      In this way, we can change any system of linear equations into an
+      extended matrix (with one column after the vertical line) and
       any such extended matrix into a system of equations. The
       columns represent the hidden variables. In the examples above,
-      we say that the first column is the <m>x</m> column, the second
-      is the <m>y</m> column, the third if the <m>z</m> column, and
+      we say that the first column is the <m>x</m> column. The second
+      is the <m>y</m> column. The third is the <m>z</m> column, and
       the column after the vertical line is the column of constants.
     </p>
   </subsection>
@@ -284,8 +284,8 @@
           </me>
         </p>
         <p>
-          The system has three columns before its vertical line,
-          therefore it corresponds to a system of equation in
+          The system has three columns before its vertical line;
+          therefore it corresponds to a system of equations in
           <m>x,y,z</m>. If we translate this back into equations, we
           get the following system.
           <md>
@@ -315,8 +315,8 @@
     <definition>
       <statement>
         <p>
-          A matrix is a <term>reduced row-echelon</term> matrix, or is
-          said to be in <term>reduced row-echelon form</term>, if the
+          A matrix is a <term>reduced row-echelon</term> matrix or is
+          said to be in <term>reduced row-echelon form</term> if the
           following things are true:
           <ul>
             <li>
@@ -344,7 +344,7 @@
     <p>
       Knowing how to recognize solutions in matrix form and knowing
       the row operations, we can now state our matrix-based approach
-      to solving linear systems. First, we to translate a system into
+      to solving linear systems. First, we translate a system into
       a matrix. We then use row operations (which don't change the
       solution at all) to turn the matrix into reduced row-echelon
       form, where we can just read off the solution. Row operations
@@ -354,14 +354,14 @@
       <statement>
         <p>
           The process of using row operations to change a matrix into
-          reduced row echelon form is called <term>Guassian
-          elimantion</term> or <term>row reduction</term>. This
+          reduced row-echelon form is called <term>Gaussian
+          elimination</term> or <term>row reduction</term>. This
           process proceeds in the following steps.
           <ul>
             <li>
               <p>
-                Take a row which has a non-zero entry in the first
-                column. (Often we exchange this row with the first, so
+                Take a row that has a non-zero entry in the first
+                column. (Often, we exchange this row with the first so
                 that we are working on the first row).
               </p>
             </li>
@@ -374,7 +374,7 @@
             <li>
               <p>
                 Now that we have a leading one, we want to clear all
-                the other entries in the first column. Thererfore, we
+                the other entries in the first column. Therefore, we
                 add multiples of the row with the leading one to the
                 other rows, one by one, to make those first column
                 entries zero.
@@ -383,13 +383,13 @@
             <li>
               <p>
                 That produces a column with a leading one in the first
-                colum and sets all other first column entries zero.
+                column and sets all other first column entries to zero.
               </p>
             </li>
             <li>
               <p>
                 Then we proceed to the next column and repeat the
-                process all over again. Any column which is all zeros
+                process all over again. Any column, which is all zeros
                 is skipped. Any row which is all zeros is also left
                 alone.
               </p>
@@ -400,7 +400,7 @@
     </definition>
     The leading ones are a key feature of the reduced row-echelon
     form. It will be useful in the future to keep track of the number
-    of these leading one. We have a definition which does this.
+    of these leading ones. We have a definition that does this.
     <definition>
       <statement>
         The <term>rank</term> of a matrix is the number of leading
@@ -427,7 +427,7 @@
           </md>
         </p>
         <p>
-          I first turn the system to a matrix.
+          I first turn the system into a matrix.
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp 0 \amp 1 \amp 4 \\
@@ -437,7 +437,7 @@
           </me>
           Then I will row reduce. For the examples here, I'm going to
           be very explicit and show each little step. (As we do more
-          and more row reductions, this level of detail is
+          and more row reductions, this level of detail will be
           unnecessary.) There is already a leading one in the first
           row, so I try to clear its column. There is a three below
           it. To remove that three, I subtract three times the first
@@ -480,7 +480,7 @@
               0 \amp 0 \amp 1 \amp \frac{5}{2}
             \end{array} \right) 
           </me>
-          Then I need to clear the colum above this leading one. I
+          Then I need to clear the column above this leading one. I
           first subtract the third row from the first row. 
           <me>
             \left( \begin{array}{ccc|c}
@@ -497,7 +497,7 @@
               0 \amp 0 \amp 1 \amp \frac{5}{2}
             \end{array} \right) 
           </me>
-          The matrix is now in reduced row echelon form and I can read
+          The matrix is now in reduced row-echelon form and I can read
           off the unique solution.
           <md><mrow>
             \amp x = \frac{3}{2} \amp \amp y = \frac{19}{2} \amp \amp
@@ -531,7 +531,7 @@
               -3 \amp -3 \amp 2 \amp 0 
             \end{array} \right)
           </me>
-          I was to make a leading one in the first row, so I divide
+          I want to make a leading one in the first row, so I divide
           the first row by <m>2</m>.
           <me>
             \left( \begin{array}{ccc|c}
@@ -643,7 +643,7 @@
           </md>
         </p>
         <p>
-          We turn the system to a matrix.
+          We turn the system into a matrix.
           <me>
             \left( \begin{array}{ccc|c}
               2 \amp -6 \amp 1 \amp 9 \\

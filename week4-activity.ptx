@@ -18,10 +18,10 @@
       <solution>
         <p>
           We proceed step-by-step through the row reduction algorithm.
-          I'll be very explicit about the row operaion in each step.
+          I'll be very explicit about the row operation in each step.
           The first row already has a leading one in the first column,
           so we don't need to create one. When we have a leading one,
-          we want to clear its colum. We'll start by subtracting row 1
+          we want to clear its column. We'll start by subtracting row 1
           from row 2. 
           <me>
             \left( \begin{matrix}
@@ -31,7 +31,7 @@
             \end{matrix} \right) 
           </me>
           This has cleared the first column other than the leading 1.
-          Now we want a leading one in the second column, if we can.
+          Now we want a leading one in the second column if we can.
           To get that, I'll divide the second row by 3. 
           <me>
             \left( \begin{matrix}
@@ -60,7 +60,7 @@
             \end{matrix} \right) 
           </me>
           That clears the second column. Now I want a leading 1 in the
-          third column, if I can. I can divide the last row by
+          third column if I can. I can divide the last row by
           <m>\frac{22}{3}</m> to make a leading 1.
           <me>
             \left( \begin{matrix}
@@ -83,7 +83,7 @@
           <me>
             \left( \begin{matrix}
               1 \amp 0 \amp 0 \\
-              0 \amp 1 \amp \\
+              0 \amp 1 \amp 0 \\
               0 \amp 0 \amp 1  
             \end{matrix} \right) 
           </me>
@@ -107,7 +107,7 @@
       <solution>
         <p>
           We proceed step-by-step through the row reduction algorithm.
-          I'll be very explicit about the row operaion in each step. 
+          I'll be very explicit about the row operation in each step. 
           <me>
             \left( \begin{matrix}
               4 \amp 4 \amp 0 \amp 1 \\
@@ -115,9 +115,9 @@
               6 \amp 6 \amp -4 \amp -1 
             \end{matrix} \right) 
           </me>
-          First I need a leading one in the first column. I could
+          First, I need a leading one in the first column. I could
           divide the first row by 4, but I'd like to avoid introducing
-          fractions this early if I can. Instead, I'll mutiply the
+          fractions this early if I can. Instead, I'll multiply the
           second row by <m>(-1)</m> and then'll interchange
           the first and second row.
           <me>
@@ -142,68 +142,41 @@
             \left( \begin{matrix}
               1 \amp 1 \amp -2 \amp -1 \\
               0 \amp 0 \amp 8 \amp 5 \\
-              0 \amp 0 \amp 4 \amp 3 
+              0 \amp 0 \amp 8 \amp 5 
             \end{matrix} \right) 
           </me>
-          Now I've clear the first column. Next I'll try to make a
+          Now I've cleared the first column. Next I'll try to make a
           leading one in the second column. Looking at the matrix,
           though, this is impossible. The only non-zero entry in the
           second column is already behind a leading one -- it can
-          never be the first non-zero entry in its rown. Since it is
+          never be the first non-zero entry in its row. Since it is
           impossible to make a leading one in the second column, we
-          move on to the third. Here, I'll divide the second row by 8. 
+          move on to the third. The first thing I notice is that the 
+          second row and the third row are the same. So here, I'll 
+          subtract the second row from the third row. 
+          <me>
+            \left( \begin{matrix}
+              1 \amp 1 \amp -2 \amp -1 \\
+              0 \amp 0 \amp 8 \amp 5 \\
+              0 \amp 0 \amp 0 \amp 0 
+            \end{matrix} \right) 
+          </me>
+          Now I want to make sure the second row has a leading one in 
+          the third column and so I divide the second row by 8.
           <me>
             \left( \begin{matrix}
               1 \amp 1 \amp -2 \amp -1 \\
               0 \amp 0 \amp 1 \amp \frac{5}{8} \\
-              0 \amp 0 \amp 4 \amp 3 
+              0 \amp 0 \amp 0 \amp 0 
             \end{matrix} \right) 
           </me>
-          Now I want to clear the third column above and below the
-          leading one. I'll add 2 times the second row to the first
-          row. 
+          Now I want to clear the third column above the leading one. To 
+          do so I will add 2 times the second row to the first row.
           <me>
             \left( \begin{matrix}
               1 \amp 1 \amp 0 \amp \frac{1}{4} \\
               0 \amp 0 \amp 1 \amp \frac{5}{8} \\
-              0 \amp 0 \amp 4 \amp 3 
-            \end{matrix} \right) 
-          </me>
-          Then I'll subtract 4 times the second row from the third
-          row. 
-          <me>
-            \left( \begin{matrix}
-              1 \amp 1 \amp 0 \amp \frac{1}{4} \\
-              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
-              0 \amp 0 \amp 0 \amp \frac{1}{2} 
-            \end{matrix} \right) 
-          </me>
-          Now I want to make a leading one in the last column. I'll
-          multiply the last row by 2. 
-          <me>
-            \left( \begin{matrix}
-              1 \amp 1 \amp 0 \amp \frac{1}{4} \\
-              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
-              0 \amp 0 \amp 0 \amp 1 
-            \end{matrix} \right) 
-          </me>
-          Then I want to clear the last column above the leading one.
-          I'll subtract <m>\frac{1}{4}</m> times the third row from
-          the first row. 
-          <me>
-            \left( \begin{matrix}
-              1 \amp 1 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 1 \amp \frac{5}{8} \\
-              0 \amp 0 \amp 0 \amp 1 
-            \end{matrix} \right) 
-          </me>
-          Finally, I'll subtract <m>\frac{5}{8}</m> times the third
-          row from the second row. 
-          <me>
-            \left( \begin{matrix}
-              1 \amp 1 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 1 \amp 0 \\
-              0 \amp 0 \amp 0 \amp 1 
+              0 \amp 0 \amp 0 \amp \0 
             \end{matrix} \right) 
           </me>
           This is the row reduced form. 
@@ -267,7 +240,7 @@
           to the first row. 
           <me>
             \left( \begin{matrix}
-              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{-3}{4} \\
               0 \amp 0 \amp 1 \amp \frac{-1}{2} \\
               0 \amp 0 \amp -8 \amp 2 
             \end{matrix} \right) 
@@ -275,32 +248,32 @@
           Then I'll add 8 times the second row to the third row. 
           <me>
             \left( \begin{matrix}
-              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{-3}{4} \\
               0 \amp 0 \amp 1 \amp \frac{-1}{2} \\
               0 \amp 0 \amp 0 \amp -2 
             \end{matrix} \right) 
           </me>
-          That finishes the third column, so we move of the fourth. We
+          That finishes the third column, so we move to the fourth. We
           can make a leading one in the third row. I divide the third
           row by <m>(-2)</m>.
           <me>
             \left( \begin{matrix}
-              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{-3}{4} \\
               0 \amp 0 \amp 1 \amp \frac{-1}{2} \\
               0 \amp 0 \amp 0 \amp 1 
             \end{matrix} \right) 
           </me>
-          Then I want to clear the fourth column. I subtraction
-          <m>\frac{1}{2}</m> times the third row from the second row. 
+          Then I want to clear the fourth column. I add
+          <m>\frac{1}{2}</m> times the third row to the second row. 
           <me>
             \left( \begin{matrix}
-              1 \amp \frac{-1}{2} \amp 0 \amp \frac{3}{4} \\
+              1 \amp \frac{-1}{2} \amp 0 \amp \frac{-3}{4} \\
               0 \amp 0 \amp 1 \amp 0 \\
               0 \amp 0 \amp 0 \amp 1 
             \end{matrix} \right) 
           </me>
-          Finally, I subtract <m>\frac{3}{4}</m> times the third row
-          from the first row. 
+          Finally, I add <m>\frac{3}{4}</m> times the third row
+          to the first row. 
           <me>
             \left( \begin{matrix}
               1 \amp \frac{-1}{2} \amp 0 \amp 0 \\
@@ -328,7 +301,7 @@
       <solution>
         <p>
           We proceed step-by-step through the row reduction algorithm.
-          I'll be very explicit about the row operaion in each step.
+          I'll be very explicit about the row operation in each step.
           <me>
             \left( \begin{matrix}
               1 \amp 0 \amp -4 \amp 2 \amp 9 \\
@@ -356,7 +329,7 @@
               0 \amp 0 \amp 28 \amp -12 \amp -64
             \end{matrix} \right) 
           </me>
-          That already finishes the second colulmn. Now we work the
+          That already finishes the second column. Now we work the
           third column. To make a leading one, I divide the third row
           by 28. (The numbers get a bit unwieldy here, but that often
           happens with row reduction).
@@ -367,8 +340,8 @@
               0 \amp 0 \amp 1 \amp \frac{-3}{7} \amp \frac{-16}{7}
             \end{matrix} \right) 
           </me>
-          Then I need to clear the third colum above the leading one.
-          I a <m>\frac{2}{3}</m> times the third row to the second. 
+          Then I need to clear the third column above the leading one.
+          I add <m>\frac{2}{3}</m> times the third row to the second row. 
           <me>
             \left( \begin{matrix}
               1 \amp 0 \amp -4 \amp 2 \amp 9 \\
@@ -412,7 +385,7 @@
       </statement>
       <solution>
         <p>
-          First we write the matrix of the system.
+          First, we write the matrix of the system.
           <me>
             \left( \begin{array}{ccc|c}
               0 \amp 1 \amp 3 \amp 0 \\
@@ -423,7 +396,7 @@
           Then we row reduce this matrix. After the previous activity
           for row reducing matrices, I'm not going to show all the
           steps; I'll just give the row reduced form calculated by
-          computer. You are welcome to do the same for all row
+          a computer. You are welcome to do the same for all row
           reductions for the rest of the course. Here is the row
           reduced matrix.
           <me>
@@ -436,15 +409,15 @@
           Now we need to interpret this in the three ways required by
           the question. The solution as a locus doesn't need any
           interpretation -- the original set of three equations
-          defined a locus, since a locus is nothing but the solutions
+          defined a locus since a locus is nothing but the solutions
           of some number of equations in the coordinate variables. 
         </p>
         <p>
-          A description by parameters looks for free parameter, which
+          A description by parameters looks for free parameters, which
           are found in columns left of the dividing line without
           leading ones. Then we can interpret the matrix as a new
           system, using these free parameters. Here we have no free
-          parameters and there is a unique solution
+          parameters, and there is a unique solution
           <md>
             <mrow>
               x \amp = \frac{7}{16}
@@ -464,7 +437,7 @@
           vector of constants becomes the offset vector. Grouping the
           variables into a vector lets us write the solution as an
           (offset) span. Since this is a unique solution, we only have
-          the offset vector and we have no span. 
+          the offset vector, and we have no span. 
           <me>  
             \left( \begin{matrix}
               x \\ y \\ z
@@ -519,7 +492,7 @@
             \end{array} \right) 
           </me>
           We have a row that translates to <m>0=1</m>, which is a
-          contradiction. Therefore, this sytem has no solutions. As
+          contradiction. Therefore, this system has no solutions. As
           there are no solutions, there is no description of those
           solutions, either as a locus, by parameters, or as a span. 
         </p>
@@ -546,7 +519,7 @@
       </statement>
       <solution>
         <p>
-          First we write the matrix of the system.
+          First, we write the matrix of the system.
           <me>
             \left( \begin{array}{ccc|c}
               -1 \amp -1 \amp 1 \amp 2 \\
@@ -557,7 +530,7 @@
           Then we row reduce this matrix. After the previous activity
           for row reducing matrices, I'm not going to show all the
           steps; I'll just give the row reduced form calculated by
-          computer. You are welcome to do the same for all row
+          a computer. You are welcome to do the same for all row
           reductions for the rest of the course. Here is the row
           reduced matrix.
           <me>
@@ -570,15 +543,15 @@
           Now we need to interpret this in the three ways required by
           the question. The solution as a locus doesn't need any
           interpretation -- the original set of three equations
-          defined a locus, since a locus is nothing but the solutions
+          defined a locus since a locus is nothing but the solutions
           of some number of equations in the coordinate variables. 
         </p>
         <p>
-          A description by parameters looks for free parameter, which
+          A description by parameters looks for free parameters, which
           are found in columns left of the dividing line without
           leading ones. Then we can interpret the matrix as a new
           system, using these free parameters. Here, we have no free
-          parameters and there is an exact solution.
+          parameters, and there is an exact solution.
           <md>
             <mrow>
               x \amp = \frac{-3}{2} 
@@ -592,13 +565,13 @@
           </md>
         </p>
         <p>
-          Finally, a description as a span is a rewriting of the
+          Finally, description as a span is a rewriting of the
           description by free parameters. For every parameter, we
           think of the coefficients of that parameter as a vector. The
           vector of constants becomes the offset vector. Grouping the
           variables into a vector lets us write the solution as an
           (offset) span. Since we have a unique solution, we only have
-          the offset vector and we have no span at all.
+          the offset vector, and we have no span at all.
           <me>  
             \left( \begin{matrix}
               x \\ y \\ z
@@ -631,7 +604,7 @@
       </statement>
       <solution>
         <p>
-          First we write the matrix of the system.
+          First, we write the matrix of the system.
           <me>
             \left( \begin{array}{ccc|c}
               2 \amp -1 \amp 6 \amp 1 \\
@@ -641,7 +614,7 @@
           </me>
           Then we row reduce this matrix. After the previous activity
           for row reducing matrices, I'm not going to show all the
-          steps; I'll just give the row reduced form calculated by
+          steps; I'll just give the row reduced form calculated by a
           computer. You are welcome to do the same for all row
           reductions for the rest of the course. Here is the row
           reduced matrix.
@@ -659,7 +632,7 @@
           of some number of equations in the coordinate variables. 
         </p>
         <p>
-          A description by parameters looks for free parameter, which
+          A description by parameters looks for free parameters, which
           are found in columns left of the dividing line without
           leading ones. Then we can interpret the matrix as a new
           system, using these free parameters. Here we have no free
@@ -677,7 +650,7 @@
           </md>
         </p>
         <p>
-          Finally, a description as a span is a rewriting of the
+          Finally, description as a span is a rewriting of the
           description by free parameters. For every parameter, we
           think of the coefficients of that parameter as a vector. The
           vector of constants becomes the offset vector. Grouping the
@@ -719,7 +692,7 @@
       </statement>
       <solution>
         <p>
-          First we write the matrix of the system.
+          First, we write the matrix of the system.
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp -1 \amp 2 \amp 0 \\
@@ -730,7 +703,7 @@
           </me>
           Then we row reduce this matrix. After the previous activity
           for row reducing matrices, I'm not going to show all the
-          steps; I'll just give the row reduced form calculated by
+          steps; I'll just give the row reduced form calculated by a
           computer. You are welcome to do the same for all row
           reductions for the rest of the course. Here is the row
           reduced matrix.
@@ -749,7 +722,7 @@
           of some number of equations in the coordinate variables. 
         </p>
         <p>
-          A description by parameters looks for free parameter, which
+          A description by parameters looks for free parameters, which
           are found in columns left of the dividing line without
           leading ones. Then we can interpret the matrix as a new
           system, using these free parameters. Here, the third column
@@ -830,7 +803,7 @@
       </statement>
       <solution>
         <p>
-          First we write the matrix of the system.
+          First, we write the matrix of the system.
           <me>
             \left( \begin{array}{cccc|c}
               1 \amp 0 \amp -1 \amp -1 \amp 4 \\
@@ -841,7 +814,7 @@
           Then we row reduce this matrix. After the previous activity
           for row reducing matrices, I'm not going to show all the
           steps; I'll just give the row reduced form calculated by
-          computer. You are welcome to do the same for all row
+          a computer. You are welcome to do the same for all row
           reductions for the rest of the course. Here is the row
           reduced matrix.
           <me>
@@ -858,7 +831,7 @@
           of some number of equations in the coordinate variables. 
         </p>
         <p>
-          A description by parameters looks for free parameter, which
+          A description by parameters looks for free parameters, which
           are found in columns left of the dividing line without
           leading ones. Then we can interpret the matrix as a new
           system, using these free parameters. Here the fourth column
@@ -880,7 +853,7 @@
           </md>
         </p>
         <p>
-          Finally, a description as a span is a rewriting of the
+          Finally, description as a span is a rewriting of the
           description by free parameters. For every parameter, we
           think of the coefficients of that parameter as a vector. The
           vector of constants becomes the offset vector. Grouping the
@@ -897,13 +870,13 @@
               \frac{-5}{9} \\ \frac{-7}{9} \\ \frac{-14}{9} \\ 1 
             \end{matrix} \right) = 
             \left( \begin{matrix}
-              \frac{1}{@7} \\ \frac{-49}{27} \\ \frac{-107}{27} \\ 0 
+              \frac{1}{27} \\ \frac{-49}{27} \\ \frac{-107}{27} \\ 0 
             \end{matrix} \right) + 
             \Span \left\{ \left( \begin{matrix}
               \frac{-5}{9} \\ \frac{-7}{9} \\ \frac{-14}{9} \\ 1 
             \end{matrix} \right) \right\} 
           </me>
-          We can scale the term in the span, if we want to clear the
+          We can scale the term in the span if we want to clear the
           denominators. 
           <me>  
             \left( \begin{matrix}
@@ -944,7 +917,7 @@
       </statement>
       <solution>
         <p>
-          First we write the matrix of the system.
+          First, we write the matrix of the system.
           <me>
             \left( \begin{array}{cccc|c}
               -3 \amp 2 \amp 0 \amp -1 \amp 3 \\
@@ -956,7 +929,7 @@
           Then we row reduce this matrix. After the previous activity
           for row reducing matrices, I'm not going to show all the
           steps; I'll just give the row reduced form calculated by
-          computer. You are welcome to do the same for all row
+          a computer. You are welcome to do the same for all row
           reductions for the rest of the course. Here is the row
           reduced matrix.
           <me>
@@ -974,7 +947,7 @@
           of some number of equations in the coordinate variables. 
         </p>
         <p>
-          A description by parameters looks for free parameter, which
+          A description by parameters looks for free parameters, which
           are found in columns left of the dividing line without
           leading ones. Then we can interpret the matrix as a new
           system, using these free parameters. Since the fourth column
@@ -995,7 +968,7 @@
           </md>
         </p>
         <p>
-          Finally, a description as a span is a rewriting of the
+          Finally, description as a span is a rewriting of the
           description by free parameters. For every parameter, we
           think of the coefficients of that parameter as a vector. The
           vector of constants becomes the offset vector. Grouping the

@@ -11,7 +11,7 @@
           <term>solution space</term> of the system. Since each set
           of values is a vector, we think of the solution space as a
           subset of <m>\RR^n</m>. For linear equations, the solution
-          space will always be a affine subspace. If we have encoded
+          space will always be an affine subspace. If we have encoded
           the system of equations in an extended matrix, we can refer
           to the solution space of the matrix instead of the system.
         </p>
@@ -21,9 +21,9 @@
       <statement>
         <p>
           Since solution spaces are affine, they can be written as
-          <m>u + L</m> where <m>u</m> is a fixed offset vector and
+          <m>u + L</m> where <m>u</m> is a fixed offset vector, and
           <m>L</m> is a linear space. Since <m>L</m> is linear, it
-          has a basis <m>v_1, v_2, \ldots v_k</m> and any vector in
+          has a basis <m>v_1, v_2, \ldots v_k</m>, and any vector in
           <m>L</m> is a linear combination of the <m>v_i</m>. We can
           write any and all solutions to the system in the following
           fashion (where <m>a_i \in \RR</m>).
@@ -74,8 +74,8 @@
         <p>
           This row of zeros doesn't actually change the solution at
           all: it is still <m>x=-3</m>, <m>y=-2</m> and <m>z=8</m>.
-          The last line just corresponds to an equation which says
-          <m>0x + 0y + 0z = 0</m> or just <m>0=0</m> which is always
+          The last line just corresponds to an equation that says
+          <m>0x + 0y + 0z = 0</m> or just <m>0=0</m>, which is always
           true. Rows of zeros arise from redundant equations in the
           original system.
         </p>
@@ -97,7 +97,7 @@
         </p>
         <p>
           The translation gives <m>w=-3</m>, <m>x=-2</m> and
-          <m>y=8</m> but the matrix says nothing about <m>z</m>. A
+          <m>y=8</m>, but the matrix says nothing about <m>z</m>. A
           column of zeros corresponds to a free variable: any value of
           <m>z</m> solves the system as long as the other variables
           are set.
@@ -107,7 +107,7 @@
     <example>
       <statement>
         <p>
-          The columns of a free variables need not contain all zeros.
+          The columns of free variables need not contain all zeros.
           The following matrix is still in reduced row-echelon form.
           <me>
             \left( \begin{array}{cccc|c} 1 \amp 0 \amp 0 \amp 2
@@ -119,7 +119,7 @@
           Reduced row-echelon form needs a leading one in each
           non-zero row, and all other entries in a column with a lead
           one must be zero. This matrix satisfies all the conditions.
-          The fourth column corresponds to the <m>z</m> variable, but
+          The fourth column corresponds to the <m>z</m> variable but
           lacks a leading one. Any column lacking a leading one
           corresponds to a free variable. Look at the translation of
           this matrix back into a linear system.
@@ -155,7 +155,7 @@
         <p>
           We've added the last equation, which is trivial to satisfy,
           to show how all the terms depend on <m>z</m>. This makes it
-          clear that <m>z</m> is a free variable, since we can write
+          clear that <m>z</m> is a free variable since we can write
           the solution as follows:
           <me>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
@@ -167,9 +167,9 @@
           Any choice of <m>z</m> will solve this system. If we want
           specific solutions, we take specific values of <m>z</m>.
           For example, if <m>z=1</m>, these equations give <m>w=-5,
-          x=-1</m> and <m>y=9</m>. Moreover, this solutions is
-          explicity given as an offset spane, where the columns of
-          constants is the offset and the free variable gives the
+          x=-1</m> and <m>y=9</m>. Moreover, this solution is
+          explicitly given as an offset span, where the columns of
+          constants is the offset, and the free variable gives the
           span.
         </p>
       </statement>
@@ -188,7 +188,7 @@
         </p>
         <p>
           Here, both the third and the fourth columns have no leading
-          one, therefore, both <m>y</m> and <m>z</m> are free
+          one; therefore, both <m>y</m> and <m>z</m> are free
           variables. We translate the matrix back into a linear
           system.
           <md>
@@ -215,7 +215,7 @@
         <p>
           Any choice of <m>y</m> and <m>z</m> gives a solution. For
           example, if <m>y=0</m> and <m>z=1</m> then <m>w=-5</m> and
-          <m>x=-1</m> completes a solution. Since we have all these
+          <m>x=-1</m> complete a solution. Since we have all these
           choices, any system with a free variable has infinitely many
           solutions.
         </p>
@@ -248,8 +248,8 @@
       <ul>
         <li>
           <p>
-            If there is a row which translates to <m>0=1</m>, then
-            there is a contradiction and the system has no solutions.
+            If there is a row that translates to <m>0=1</m>, then
+            there is a contradiction, and the system has no solutions.
             This overrides any other information: whether or not there
             are free variables elsewhere, there are still no
             solutions.
@@ -258,21 +258,21 @@
         <li>
           <p>
             If there are no <m>0=1</m> rows and all columns left of
-            the vertical line have leading ones, then there is a
+            the vertical line have leading ones; then there is a
             unique solution. There are no columns representing free
-            variables, and each variable has a specific value which we
+            variables, and each variable has a specific value that we
             can read directly from the matrix.
           </p>
         </li>
         <li>
           <p>
             If there are no <m>0=1</m> rows and there is at least one
-            column left of the vertical line without a leading one,
+            column left of the vertical line without a leading one;
             then each such column represents a free variable. The
             remaining variables can be expressed in terms of the free
-            variables and any choices of the free variables leads to a
+            variables, and any choices of the free variables lead to a
             solution. There are infinitely many solutions. The
-            solutions space can always be expressed as a offset span.
+            solutions space can always be expressed as an offset span.
           </p>
         </li>
       </ul>

@@ -17,7 +17,7 @@
       <statement>
         <p>
           The rows of a matrix are called the <term>row vectors</term>
-          of the matrix. Likewise the columns are called <term>column
+          of the matrix. Likewise, the columns are called <term>column
           vectors</term> of the matrix.
         </p>
       </statement>
@@ -71,14 +71,14 @@
       </me>
     </p>
     <p>
-      By convention, in an aribitrary matrix entry
+      By convention, in an arbitrary matrix entry
       <m>a_{ij}</m> the first subscript tells us the row and the
       second subscript tells us the column. For example,
       <m>a_{64}</m> is the entry in the sixth row and the fourth
-      column. In the rare occurence that we have matrices with more
-      than 10 rows or columns, I can seperate the indices by commas:
+      column. In the rare occurrence that we have matrices with more
+      than 10 rows or columns, I can separate the indices by commas:
       <m>a_{12,15}</m> would be in the twelfth row and the fifteenth
-      column. Sometime I write <m>A = a_{ij}</m> as short-hand for
+      column. Sometimes I write <m>A = a_{ij}</m> as short-hand for
       the entire matrix when the size is understood or undetermined.
     </p>
     <definition>
@@ -143,7 +143,7 @@
         <p>
           The <term>identity matrix</term> is the unique <m>n \times
           n</m> matrix (one for each <m>n</m>) where the diagonal
-          entries are all <m>1</m> and all other entries are <m>0</m>.
+          entries are all <m>1</m>, and all other entries are <m>0</m>.
           It is often written as I or Id.
           <md>
             <mrow>
@@ -166,7 +166,7 @@
       <statement>
         <p>
           An <term>extended matrix</term> is a matrix with a vertical
-          division seperating the columns into two groups.
+          division separating the columns into two groups.
           <me>
             \left( \begin{array}{ccc|c} -3 \amp 0 \amp 6 \amp 1 \\
             4 \amp -2 \amp 2 \amp -1 \\ 0 \amp 0 \amp 3 \amp -7
