@@ -67,7 +67,7 @@
           </li>
           <li>
             The locus of the equations <m>2x-z=1</m>, <m>2x-y=0</m>,
-            <m>y-z+2=4</m> and <m>x-y+w=3</m> in <m>\RR^4</m>.
+            <m>w+y-z=4</m> and <m>w+x-y=3</m> in <m>\RR^4</m>.
           </li>
         </ol>
       </p>
