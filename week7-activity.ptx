@@ -1085,8 +1085,8 @@
     <activity>
       <statement>
         <p>
-          Let <m>M</m> and <m>N</m> be <m>n \times n</m> matrices.
-          Prove that 
+          Let <m>M</m> and <m>N</m> be <m>n \times n</m> invertible
+          matrices. Prove that 
           <me>
             (MN)^{-1} = N^{-1} M^{-1} 
           </me>
@@ -1094,21 +1094,28 @@
       </statement>
       <solution>
         <p>
+          There are a number of ways to argue this. I could write out
+          general matrices and argue algebraically, but that seems
+          very difficult and cumbersome. Instead, I'd like to give a
+          geometric argument. (Such an argument is not as formal but,
+          depending on the context, could still be considered a
+          proof.)
         </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
         <p>
-          Let <m>M</m> be an <m>n \times n</m> matrix. Prove that the
-          kernel of <m>M</m> is the same as the kernel of <m>M^k</m>
-          for any positive integer power <m>k</m>. Prove by providing
-          a counterexample that the same statement is not true for the
-          image. 
-        </p>
-      </statement>
-      <solution>
-        <p>
+          If I interpret <m>MN</m> as a transformations <m>\RR^n
+          \rightarrow \RR^n</m>, I apply <m>N</m> first and then I
+          apply <m>M</m> (composition works from right to left). Since
+          both are invertible matrice, I can reverse both processes.
+          If I wanted to reverse the composition, I would have to
+          start with the last thing I did, which is <m>M</m>.
+          Therefore, the first step in the inverse would be
+          <m>M^{-1}</m>. Then I would get back to the point after I
+          applied <m>N</m>, so the next thing to do would be
+          <m>N^{-1}</m>. The way to write the composition of
+          <m>M^{-1}</m> and <m>N^{-1}</m> would be
+          <m>N^{-1}M^{-1}</m>. Therefore, I have proved that the
+          inverse of <m>MN</m> should be the composition
+          <m>N^{-1}M^{-1}</m>.
         </p>
       </solution>
     </activity>
@@ -1122,6 +1129,16 @@
       </statement>
       <solution>
         <p>
+          I can use the proposition that the kernel and the image have
+          dimensions that add to the dimension of the domain. I know
+          the dimension of the kernel is <m>2</m> and the dimension of
+          the domain is <m>3</m>. Therefore, the dimension of the
+          image must be <m>1</m>. But I also know that the image is
+          the span of the columns. Since the image has dimension 1,
+          the span of the columns has dimension 1. This means that
+          there is only one linearly independant column, since all the
+          other columns are in the same line and thus multiples of
+          chosen column. 
         </p>
       </solution>
     </activity>
