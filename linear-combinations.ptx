@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-writing-linear-combinations">
     <title>Writing Linear Combinations</title>
     <p>
-      If <xref ref="section-week3-activity" />, I asked you to write
+      In <xref ref="section-week3-activity" />, I asked you to write
       some vectors as linear combinations of other vectors. In those
       calculations, you had to directly solve a system to find the
       correct coefficients for the linear combinations. In the present
@@ -17,23 +17,23 @@
     <p>
       In <xref ref="subsection-dimension-and-basis" />, we defined
       bases for linear subspaces; to recap, a basis is a linearly
-      independent set of vector which span the subspace. Since the
+      independent set of vectors which span the subspace. Since the
       basis spans the subspace, any vector in the subspace can be
       written as a linear combination of the vectors in the basis. A
       basis gives us a way of describing a subspace.
     </p>
     <p>
-      If <m>\{v_1, v_2, v_3\}</m> is a basis for a three-dimensional
-      subspace in <m>\RR^</m>, then the vectors in this subspaces are
-      precisely the all vectors of the form <m>av_1 + bv_2 + cv_3</m>
-      where <m>a</m>, <m>b</m> and <m>c</m> are any real constant. To
+      If <m>\{v_1, v_2, v_3\}</m> are a basis for a three-dimensional
+      subspace in <m>\RR^3</m>, then the vectors in this subspace are
+      precisely all the vectors of the form <m>av_1 + bv_2 + cv_3</m>
+      where <m>a</m>, <m>b</m> and <m>c</m> are any real constants. To
       talk about a specific vector in a subspace, we need to specify
-      the three constant. We can say that the vector is present <em>in
+      the three constants. We can say that the vector is present <em>in
       terms of the basis</em>.
     </p>
     <p>
       Let me be more concrete and consider the vector
-      <m>v = \begin{pmatrix} 4 \\ 5 \end{pmatrix}</m> in <m>\RR^4</m>. 
+      <m>v = \begin{pmatrix} 4 \\ 5 \end{pmatrix}</m> in <m>\RR^2</m>. 
       We can express this as a linear combination of the standard
       basis.
       <me>
@@ -63,9 +63,9 @@
         \end{pmatrix}
       </me>
       The problem of finding an expression of a vector as a linear
-      combination of other vectors is the problem of expression a
+      combination of other vectors is the problem of expressing a
       vector in terms of a given basis. Depending on the situation,
-      different bases for the same subspaces are often useful and we
+      different bases for the same subspaces are often useful, and we
       often want to change the presentation of vectors from one basis
       to another. 
     </p>
@@ -80,8 +80,8 @@
           basis for the span.
         </p>
         <p>
-          To do this, I need to find numbers <m>a</m> and
-          <m>b</m> that satisfy 
+          To do this, I need to find the numbers <m>a</m> and
+          <m>b</m> that satisfy the following:
           <me>
             \begin{pmatrix} -4 \\ -4 \\ 7 \end{pmatrix} = a
             \begin{pmatrix} -2 \\ 1 \\ -1 \end{pmatrix} + b
@@ -89,8 +89,8 @@
           </me>.
         </p>
         <p>
-          I'll write each components of this vector equation
-          seperately.
+          I'll write each component of this vector equation
+          separately.
           <md>
             <mrow>
               -4 \amp  = -2a + 0b
@@ -104,7 +104,7 @@
           </md>
         </p>
         <p>
-          This is a just a new linear system, with three equations and
+          This is just a new linear system, with three equations and
           two variables, <m>a</m> and <m>b</m>. I can solve it using
           matrices and row reduction. The matrix representing this
           system is
@@ -150,7 +150,7 @@
           \end{pmatrix}</m> in terms of this basis.
         </p>
         <p>
-          To do this, I need to find constants <m>a</m>, <m>b</m> and
+          To do this, I need to findconstants <m>a</m>, <m>b</m> and
           <m>c</m> that solve
           <me>
             \begin{pmatrix} 1 \\ 1 \\ 2 \end{pmatrix} = a
@@ -160,7 +160,7 @@
           </me>.
         </p>
         <p>
-          Writen in components, this gives the following linear system.
+          Written in components, this gives the following linear system.
           <md>
             <mrow>
               3a - 2b + 0c \amp  = 1
@@ -186,17 +186,17 @@
           form.
           <me>
             \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp 0 \\ 0
-            \amp 1 \amp 0 \amp \frac{1}{2} \\ 0 \amp 0 \amp 1
+            \amp 1 \amp 0 \amp \frac{-1}{2} \\ 0 \amp 0 \amp 1
             \amp \frac{1}{2} \end{array} \right)
           </me>
         </p>
         <p>
-          I conclude that <m>a=0</m>, <m>b=\frac{1}{2}</m> and <m>c =
+          I conclude that <m>a=0</m>, <m>b=\frac{-1}{2}</m> and <m>c =
           \frac{1}{2}</m>, which lets me write the vector in terms of
           the basis. 
           <me>
             \begin{pmatrix} 1 \\ 1 \\ 2\end{pmatrix} = 0
-            \begin{pmatrix} 3 \\ -1 \\ -1 \end{pmatrix} + \frac{1}{2}
+            \begin{pmatrix} 3 \\ -1 \\ -1 \end{pmatrix} - \frac{1}{2}
             \begin{pmatrix} -2 \\ 0 \\ -3 \end{pmatrix} + \frac{1}{2}
             \begin{pmatrix} 0 \\ 2 \\ 7 \end{pmatrix} 
           </me>

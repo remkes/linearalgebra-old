@@ -35,11 +35,11 @@
       </me>
     </p>
     <p>
-      So, by definition, the locus of a set of linear equation is just
+      So, by definition, the locus of a set of linear equations is just
       the geometric version of the solution space of the system of
-      linear equations. Loci and solutions spaces are exactly the
-      same thing; only loci are geometry and solution spaces are
-      algebra. The dimension of a locus is same dimensions of a
+      linear equations. Loci and solution spaces are exactly the
+      same things; only loci are geometry, and solution spaces are
+      algebra. The dimension of a locus is the same dimension as a
       solution space of a system. Fortunately, we already know how to
       figure that out.
     </p>
@@ -50,7 +50,7 @@
           the dimension of the locus is the number of free variables
           in the solution space of the matrix corresponding to the
           system of the equations. If the matrix contains a row that
-          leads to a contradction <m>0=1</m>, then the locus is
+          leads to a contradiction <m>0=1</m>, then the locus is
           empty.
         </p>
       </statement>
@@ -58,19 +58,19 @@
     <p>
       To understand a locus, we just solve the associated system. If
       it has solutions, we count the free variables: that's the
-      dimenion of the locus. We can get even more information from
+      dimension of the locus. We can get even more information from
       this process.  When we row reduce the matrix <m>A</m>
       corresponding to the linear system, the equations corresponding
       to rows with leading ones (keeping track of exchanging rows, if
-      necessary) are equations which are necessary to define the
-      locus. Those which end up a rows without leading ones are
-      redundant and the locus is unchanged if those equations are
+      necessary) are equations that are necessary to define the
+      locus. Those that end up as rows without leading ones are
+      redundant, and the locus is unchanged if those equations are
       removed.
     </p>
     <p>
       If the ambient space is <m>\RR^n</m>, then our equations have
       <m>n</m> variables. That is, there are <m>n</m> columns to the
-      right of the vertical line in the extended matrix. If the rank
+      left of the vertical line in the extended matrix. If the rank
       of <m>A</m> is <m>k</m>, and there are no rows that reduce to
       <m>0=1</m>, then there will be <m>n-k</m> columns without
       leading ones, so <m>n-k</m> free variables. The dimension of
@@ -79,9 +79,9 @@
     </p>
     <p>
       This fits our intuition for spans and loci. Spans are built up:
-      their dimension is equal to the rank of an associated matrix,
+      their dimension is equal to the rank of an associated matrix
       since each leading one corresponds to a unique direction in the
-      span, adding to the dimension by one. Loci are restictions down
+      span, adding to the dimension by one. Loci are restrictions down
       from the total space: their dimension is the ambient dimension
       minus the rank of an associated matrix, since each leading one
       corresponds to a real restriction on the locus, dropping the
@@ -93,7 +93,7 @@
         <p>
           I'm going to repeat <xref
           ref="example-description-by-parameters" /> to make the point
-          that nothing new is happenings here: we're just treating
+          that nothing new is happening here: we're just treating
           loci as linear systems and looking at their solutions
           spaces. Consider a locus in <m>\RR^4</m> defined by two
           equations.
@@ -108,10 +108,10 @@
           The translation of this into a matrix is precisely the
           matrix in <xref ref="example-description-by-parameters" />.
           <me>
-            \begin{array}{cccc|c}
+            \left(\begin{array}{cccc|c}
               1 \amp 0 \amp 3 \amp 2 \amp -3 \\
               0 \amp 1 \amp -1 \amp -1 \amp -2 
-            \end{array}
+            \end{array} \right)
           </me>
           The equation is already in reduced row-echolon form. There
           are two columns (other than the constant column) without
@@ -120,14 +120,14 @@
           parameters, is
           <me>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
-            \begin{pmatrix} 1 \\ -4 \\ 0 \\ 0 \end{pmatrix} + y
-            \begin{pmatrix} 1 \\ -2 \\ 1 \\ 0 \end{pmatrix} + z
-            \begin{pmatrix} -2 \\ -3 \\ 0 \\ 1 \end{pmatrix}
+            \begin{pmatrix} -3 \\ -2 \\ 0 \\ 0 \end{pmatrix} + y
+            \begin{pmatrix} -3 \\ 1 \\ 1 \\ 0 \end{pmatrix} + z
+            \begin{pmatrix} -2 \\ 1 \\ 0 \\ 1 \end{pmatrix}
           </me>.
         </p>
         <p>
           This is an affine subspace with dimension <m>2</m>. The number
-          of variablse (<m>4</m>) minus the rank of the matrix
+          of variables (<m>4</m>) minus the rank of the matrix
           (<m>2</m>) also confirms this dimension. 
         </p>
       </statement>

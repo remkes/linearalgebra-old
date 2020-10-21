@@ -106,7 +106,7 @@
             \left( \begin{matrix}
               1 \amp 0 \amp 0 \\
               0 \amp 1 \amp 0 \\
-              0 \amp 1 \amp 1 \\
+              0 \amp 0 \amp 1 \\
               0 \amp 0 \amp 0
             \end{matrix} \right) 
           </me>
@@ -227,8 +227,8 @@
           <emph>rows</emph> of a matrix. 
           <me>
             \left( \begin{matrix}
-              6 \amp -1 \amp 01 \amp 4 \amp 7 \\
-              0 \amp 4 \amp 3 \amp 0 \amp 5 \\
+              6 \amp -1 \amp -1 \amp 4 \amp 7 \\
+              0 \amp 4 \amp 3 \amp 0 \amp -5 \\
               -4 \amp 10 \amp 2 \amp -5 \amp -8 \\
               -8 \amp -6 \amp 3 \amp 4 \amp 0 \\
               -6 \amp 7 \amp 7 \amp 3 \amp -6 
@@ -442,9 +442,9 @@
           Then the dimension is determined by the number of free
           variables, as long as there isn't a row equivalent to
           <m>0=1</m>. Here, the last row is such a row, so this locus
-          is emtpy and has no dimension. (Note this is not dimension
+          is empty and has no dimension. (Note this is not dimension
           0, which is the dimension of a point. The empty set simply
-          doesn't not have any dimension.)
+          doesn't have any dimension.)
         </p>
       </solution>
     </activity>
@@ -461,7 +461,7 @@
               3w - 12x + 4y \amp = 0 
             </mrow>
             <mrow>
-              3w + 21x - 3y - z \amp 0 
+              3w + 21x - 3y - z \amp = 0 
             </mrow>
           </md>
         </p>
@@ -471,8 +471,8 @@
           We change the locus into a matrix. 
           <me>
             \left( \begin{array}{cccc|c}
-              9 \amp -3 \amp 5 \amp -1 \amp 0
-              3 \amp -12 \amp 4 \amp 0 \amp 0
+              9 \amp -3 \amp 5 \amp -1 \amp 0 \\
+              3 \amp -12 \amp 4 \amp 0 \amp 0 \\
               3 \amp 21 \amp -3 \amp -1 \amp 0
             \end{array} \right)
           </me>
@@ -501,10 +501,10 @@
               w - 2x + y - 3z \amp = 0 
             </mrow>
             <mrow>
-              2x - 4x + 2y - 6z \amp = 0 
+              2w - 4x + 2y - 6z \amp = 0 
             </mrow>
             <mrow>
-              3x - 6x + 3y - 9z \amp = 0 
+              3w - 6x + 3y - 9z \amp = 0 
             </mrow>
           </md>
         </p>
@@ -559,7 +559,7 @@
       </statement>
       <solution>
         <p>
-          We can convert into an equation with unknown by writing out
+          We can convert into an equation with unknowns by writing out
           the definition of a linear combination.
           <me>
             \left( \begin{matrix}
@@ -790,8 +790,8 @@
             \end{matrix} \right) = 
             3 \left( \begin{matrix}
               0 \\ 5 \\ -3 \\ 8 
-            \end{matrix} \right) + 
-            -4 \left( \begin{matrix}
+            \end{matrix} \right) - 
+            4 \left( \begin{matrix}
               -1 \\ -1 \\ 4 \\ 3
             \end{matrix} \right) +
             2 \left( \begin{matrix}
@@ -807,7 +807,7 @@
     <p>
       <ul>
         <li>
-          What is dimension? 
+          What are dimensions? 
         </li>
         <li>
           How are spans <q>built up</q> but loci are <q>restricted

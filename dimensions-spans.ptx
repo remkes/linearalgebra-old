@@ -4,13 +4,13 @@
     <title>Rank</title>
     <p>
       Let me remind you of a definition from <xref
-      ref="section-row-reduction" />, since it will be useful in this
+      ref="section-row-reduction" /> since it will be useful in this
       section.
     </p>
     <definition>
       <statement>
         <p>
-          Let <m>A</m> be a <m>m \times n</m> matrix. The
+          Let <m>A</m> be an <m>m \times n</m> matrix. The
           <term>rank</term> of <m>A</m> is the number of leading ones
           in its reduced row-echelon form. 
         </p>
@@ -24,7 +24,7 @@
       problems presented in <xref ref="section-spans" /> and <xref
       ref="section-loci" />.  For loci and spans, we
       didn't have a way of determining what information was redundant.
-      Row-reduction of matrices gives solves this problem for us. 
+      Row-reduction of matrices solves this problem for us. 
     </p>
     <p>
       Given some vectors <m>\{v_1, v_2, \ldots, v_k\}</m>, what is the
@@ -74,7 +74,7 @@
           </me>
         </p>
         <p>
-          To find the dimension of the span, we put the vectors of the
+          To find the dimensions of the span, we put the vectors of the
           span into a matrix (as rows, not columns). 
           <me>
             \begin{pmatrix}
@@ -86,13 +86,13 @@
           This row reduces to the following matrix.
           <me>
             \begin{pmatrix}
-              1 \amp 0 \amp 1 \\
+              1 \amp 0 \amp 0 \\
               0 \amp 1 \amp 0 \\
               0 \amp 0 \amp 1 
             \end{pmatrix} 
           </me>
           Since there are three leading ones, all three vectors are
-          linearly independent. The rank of the matrix is three and
+          linearly independent. The rank of the matrix is three, and
           the dimension of the span is three.
         </p>
       </statement>
@@ -100,7 +100,7 @@
     <example>
       <statement>
         <p>
-          Find the dimension of this span.
+          Find the dimensions of this span.
           <me>
             \Span \left\{ 
             \begin{pmatrix}
@@ -141,7 +141,7 @@
     <example>
       <statement>
         <p>
-          Find the dimension of this span.
+          Find the dimensions of this span.
           <me>
             \Span \left\{ 
             \begin{pmatrix}
@@ -166,7 +166,7 @@
           </me>
         </p>
         <p>
-          To find the dimension of the span, we put the vectors of the
+          To find the dimensions of the span, we put the vectors of the
           span into a matrix (as rows, not columns). 
           <me>
             \begin{pmatrix}
