@@ -6,7 +6,94 @@
   <p><ol>
     <li>
       <p>
+        Calculate the determinants of the following matrices using
+        cofactor expansion. Show the steps of the algorithm clearly.
+        (16). 
       </p>
+      <ol>
+        <li><me>
+          \begin{pmatrix}
+            7 \amp 0 \amp -3 \\
+            -4 \amp -1 \amp -4 \\
+            0 \amp 6 \amp 9
+          \end{pmatrix} 
+        </me></li>
+        <li><me>
+          \begin{pmatrix}
+            1 \amp -9 \amp -9 \\
+            2 \amp -3 \amp -3 \\
+            4 \amp -7 \amp -7
+          \end{pmatrix} 
+        </me></li>
+        <li><me>
+          \begin{pmatrix}
+            1 \amp -396 \amp 212 \\
+            0 \amp 4 \amp -716 \\
+            0 \amp 0 \amp 3 
+          \end{pmatrix} 
+        </me></li>
+        <li><me>
+          \begin{pmatrix}
+            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
+            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
+            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
+            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
+            -1 \amp -1 \amp -1 \amp -1 \amp -1 
+          \end{pmatrix} 
+        </me></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Under what conditions for <m>a</m> and <m>b</m> are the
+        following matrices invertible? (6) 
+      </p>
+      <ol>
+        <li><me>
+          \begin{pmatrix}
+            a \amp 2 \amp -1 \\
+            b \amp 2 \amp -1 \\
+            0 \amp 1 \amp 0 
+          \end{pmatrix} 
+        </me></li>
+        <li><me>
+          \begin{pmatrix}
+            a \amp a \amp a \\
+            0 \amp b \amp 0 \\
+            0 \amp 0 \amp b 
+          \end{pmatrix} 
+        </me></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Using the definition and properties of the determinant from
+        the video and the notes, prove the following statements.
+        Assume, throughout, that <m>A</m> and <m>B</m> are <m>n \times
+        n </m> matrices. (Some of these are just one or two lines,
+        connecting the relevant properties from different sections of
+        the notes. Other are short calculations using the properties.
+        Don't expect any of these to be long arguments.)
+      </p>
+      <ol>
+        <li><p>
+          If <m>\Ker A = \{0\}</m>, then <m>\det A \neq 0</m>.
+        </p></li>
+        <li><p>
+          If <m>A</m> has more than <m>n^2 - n</m> entries which are
+          o, then <m>\det A = 0</m>.
+        </p></li>
+        <li><p>
+          <m>\det (AA^T)</m> can't be negative. 
+        </p></li>
+        <li><p>
+          If <m>A</m> is invertible, then <m>\det (ABA^{-1}) = \det
+          B</m>. 
+        </p></li>
+        <li><p>
+          <m>A^{-1}</m> cannot have a row of zeroes. 
+        </p></li>
+      </ol>
     </li>
   </ol></p>
 </section>
