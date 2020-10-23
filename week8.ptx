@@ -4,6 +4,5 @@
   <xi:include href="determinants-definition.ptx" />
   <xi:include href="cofactor.ptx" />
   <xi:include href="properties-of-determinants.ptx" />
-  <xi:include href="proofs-week8.ptx" />
   <xi:include href="week8-activity.ptx" />
 </chapter>

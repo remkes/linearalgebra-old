@@ -396,7 +396,7 @@
       <statement>
         <p>
           Let <m>M</m> be a square matrix. Prove that <m>\det M =
-          \detl M^T</m>. 
+          \det M^T</m>. 
         </p>
       </statement>
       <solution>
