@@ -378,6 +378,22 @@
       </statement>
       <solution>
         <p>
+          The general rotation by an angle <m>\theta</m> in
+          <m>\RR^2</m> has matrix
+          <me>
+            \begin{pmatrix}
+              \cos \theta \amp -\sin \theta \\
+              \sin \theta \amp \cos \theta
+            \end{pmatrix}
+          </me>.
+          I can simply calculate the determinant of this matrix. 
+          <me>
+            \begin{vmatrix}
+              \cos \theta \amp -\sin \theta \\
+              \sin \theta \amp \cos \theta
+            \end{vmatrix} = \cos^2 \theta + \sin^2 \theta = 1 
+          </me>
+          That completes the proof. 
         </p>
       </solution>
     </activity>
@@ -389,6 +405,31 @@
       </statement>
       <solution>
         <p>
+          The general reflection in the (unit vector) direction
+          <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> in <m>\RR^2</m>
+          has matrix
+          <me>
+            \begin{pmatrix}
+              a^2 - b^2 \amp 2ab \\
+              2ab \amp b^2 - a^2  
+            \end{pmatrix}
+          </me>.
+          I can simply calculate the determinant of this matrix. 
+          <md>
+            <mrow>
+              \amp \begin{vmatrix}
+                a^2 - b^2 \amp 2ab \\
+                2ab \amp b^2 - a^2  
+              \end{vmatrix} = (a^2 - b^2)(b^2 - a^2) - (2ab)(2ab) 
+            </mrow>
+            <mrow>
+              \amp = -a^4 + 2a^2 b^2 - b^4 - 4a^2 b^2 = -(a^4 +
+              2a^2b^2 + b^2) = -(a^2 + b^2)^2
+            </mrow>
+          </md>
+          Since the description uses a unit vector for the direction,
+          <m>a^2 + b^2 = 1</m>. With that fact, I can see that the
+          determinant is <m>-1</m>, which completes the proof. 
         </p>
       </solution>
     </activity>
@@ -401,30 +442,35 @@
       </statement>
       <solution>
         <p>
+          I can argue this fact using the cofactor expansion. Since
+          cofactor expansions works along rows or columns, if I do
+          cofactor expansion along a row of <m>M</m>, that is the same
+          as cofactor expansion along the matching column of <m>M</m>
+          (since the transpose turns rows into columns). Since both
+          the row and column are removed in the cofactor expansion,
+          the effect on the matrix <m>M</m> and its transpose is the
+          same.
         </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
         <p>
-          Let <m>M</m> and <m>N</m> be <m>n \times n</m> matrices.
-          Prove that <m>\det (MN) = \det (M) \det (N)</m>. 
-        </p>
-      </statement>
-      <solution>
-        <p>
-        </p>
-      </solution>
-    </activity>
-    <activity>
-      <statement>
-        <p>
-          Let <m>M</m> be an invertible matrix. Prove that <m>\det
-          M^{-1} = \frac{1}{\det M}</m>. 
-        </p>
-      </statement>
-      <solution>
-        <p>
+          Using this cofactor expansion argument, I can reduce the
+          question down to only <m>2 \times 2</m> matrices. Here, I
+          can simply check by calculating the determinant of a general
+          <m>2 \times 2</m> matrix and its transpose.
+          <md>
+            <mrow>
+              \begin{vmatrix}
+                a \amp b \\
+                c \amp d 
+              \end{vmatrix} \amp = ad - bc 
+            </mrow>
+            <mrow>
+              \begin{vmatrix}
+                a \amp c \\
+                b \amp d 
+              \end{vmatrix} \amp = ad - cb = ad -bc
+            </mrow>
+          </md>
+          This completes the proof. 
         </p>
       </solution>
     </activity>
