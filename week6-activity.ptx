@@ -6,11 +6,11 @@
       <statement>
         <p>
           In the notes, we gave matrices for rotations by
-          <m>\frac{\pi}{2}</m> radian, <m>\pi</m> radian, and
-          <m>\frac{3\pi}{2}</m>. We also define reflections over the
+          <m>\frac{\pi}{2}</m> radians, <m>\pi</m> radians, and
+          <m>\frac{3\pi}{2}</m> radians. We also defined reflections over the
           <m>x</m>-axis, <m>y</m>-axs, the line <m>y=x</m>, and the
-          line <m>y=-x</m>. For all seven of these transformation,
-          check that the matrix action acts as expected on the vecotrs
+          line <m>y=-x</m>. For all seven of these transformations,
+          check that the matrix action acts as expected on the vectors
           <m> \left( \begin{matrix} 1 \\ 0 \end{matrix} \right)</m>,
           <m> \left( \begin{matrix} 0 \\ 1 \end{matrix} \right)</m>,
           <m> \left( \begin{matrix} 1 \\ 1 \end{matrix} \right)</m>
@@ -21,7 +21,7 @@
       <solution>
         <p>
           We have seven matrices, each of which acts on the four given
-          vectors. We'll go through the action one by one. Let's start
+          vectors. We'll go through the actions one by one. Let's start
           with rotation by <m>\frac{\pi}{2}</m>.
           <md>
             <mrow>
@@ -542,7 +542,7 @@
                 (0)(0) + (-2)(10) + (-2)(-5) + (5)(-5) \\
               \end{matrix} \right) 
               = \left( \begin{matrix}
-                80 \\ 45  \\ -50 \\ -35 
+                80 \\ 75  \\ -50 \\ -35 
               \end{matrix} \right)
             </mrow>
           </md>
@@ -591,7 +591,7 @@
                 0 + 6 + 0 - 35 - 12 - 36 
               \end{matrix} \right) 
               = \left( \begin{matrix}
-                -42 \\ 77
+                -42 \\ -77
               \end{matrix} \right)
             </mrow>
           </md>
@@ -643,7 +643,7 @@
                 (5)(1) + (4)(-2) + (-9)(0) \\
               \end{matrix} \right) 
               = \left( \begin{matrix}
-                -10 \\ 2 \\ -12 \\ -9 \\ -3 
+                -11 \\ 2 \\ -12 \\ -9 \\ -3 
               \end{matrix} \right)
             </mrow>
           </md>
@@ -687,9 +687,9 @@
               9 \amp 0 \amp 3 
             \end{matrix} \right) = 
             \left( \begin{matrix}
-              -10 \amp -19 \amp -83 \\
+              -10 \amp -19 \amp -67 \\
               -40 \amp 5 \amp -55 \\
-              -30 \amp -9 \amp 39 
+              -30 \amp 3 \amp 39 
             \end{matrix} \right) 
           </me>
         </p>
@@ -797,7 +797,7 @@
         <p>
           Consider two rotations in <m>\RR^2</m>, by angles
           <m>\theta</m> and <m>\phi</m>. Use the general form of a
-          matrix for a rotaion, prove that the composition of these
+          matrix for a rotation, prove that the composition of these
           two rotations is the rotation by the angle <m>(\theta +
           \phi)</m>. (You will need to use some trigonometric
           identities to prove this.)
@@ -812,7 +812,7 @@
               \sin \theta \amp \cos \theta
             \end{matrix} \right) 
           </me>.
-          We can make the same matrix for the anlge <m>\phi</m>.
+          We can make the same matrix for the angle <m>\phi</m>.
           <me>
             \left( \begin{matrix}
               \cos \phi \amp - \sin \phi \\
@@ -841,7 +841,7 @@
             </mrow>
           </md>
           Now we need trig identities. Each of these four matrix
-          entires is a sum identity. Replacing those according to
+          entries is a sum identity. Replacing those according to
           identities drawn from some formula sheet or other reference,
           we get this matrix.
           <me>
@@ -851,7 +851,7 @@
             \end{matrix} \right) 
           </me>
           This is precisely the matrix form for rotation by the angle
-          <m>(\theta + \phi)</m>. Therefore, we have prove that the
+          <m>(\theta + \phi)</m>. Therefore, we have proven that the
           matrix multiplication, and hence the composition, of two
           rotations produces the rotation by the sum of the two
           angles.
@@ -868,7 +868,7 @@
       </statement>
       <solution>
         <p>
-          The general form a reflection over the line spanned by the
+          The general form for a reflection over the line spanned by the
           <emph>unit</emph> vector <m>\left( \begin{matrix} a \\ b
           \end{matrix} \right)</m> is 
           <me>
@@ -906,7 +906,7 @@
                 a^4 - 2a^2b^2 + b^4 + 4a^2b^2 \amp
                 (a^2-b^2)(2ab) - (a^2-b^2)(2ab) \\
                 (2ab)(a^2-b^2) - (2ab)(a^2-b^2) \amp
-                4a^2b^2 + b^2 - 2a^2b^2 + a^2 
+                4a^2b^2 + b^4 - 2a^2b^2 + a^4 
               \end{matrix} \right) 
             </mrow>
             <mrow>

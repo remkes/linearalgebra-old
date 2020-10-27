@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-general-transformation-proofs">
     <title>General Properties of the Matrix Action</title>
     <p>
-      I have defined linear transformation. At this point, I could
+      I have defined linear transformations. At this point, I could
       state and try to prove a variety of properties about linear
       transformations and their matrix representations. Most
       obviously, perhaps, I could prove that the matrix action is
@@ -13,7 +13,7 @@
       I could also prove the two properties in <xref
       ref="proposition-matrix-multiplication" />. I am opting not to
       present these general proofs. They are not conceptually
-      difficult, but to do them in general is notationally difficult.
+      difficult, but to do them, in general, is notationally difficult.
       It involves a lot of matrix coefficients, vector coefficients
       and many subscripts. I thought to include those proofs here
       wasn't useful for building up our experience with proofs (other
@@ -36,7 +36,7 @@
       <proof>
         <p>
           To commute means that if the order of the composition (or
-          matrix multiplication) is reverse, the outcome is the same.
+          matrix multiplication) is reversed, the outcome is the same.
           That is, if <m>A</m> and <m>B</m> are the matrix
           representations of two reflections, then <m>AB = BA</m> is a
           true statement about matrix multiplication. 
@@ -115,7 +115,7 @@
               -\sin \theta \sin \phi + \cos \theta \cos \phi
             \end{pmatrix} 
           </me>.
-          This is the same as the result of <m>AB</m>. That conclude
+          This is the same as the result of <m>AB</m>. This concludes
           the proof, showing that the outcome of either order of
           matrix multiplication is the same.
         </p>

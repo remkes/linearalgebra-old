@@ -3,9 +3,9 @@
   <subsection xml:id="subsection-r3-examples">
     <title>Examples in <m>\RR^3</m></title>
     <p>
-      We can also specialize to transformations of <m>\RR^3</m>,
+      We can also specialize the transformations of <m>\RR^3</m>,
       though it is not as easy to give a complete account of the basic
-      types  However, all of the types listed for <m>\RR^2</m>
+      types. However, all of the types listed for <m>\RR^2</m>
       generalize.
       <ul>
         <li>
@@ -27,12 +27,12 @@
         <li>
           <p>
             Skews are similarly defined: one or two directions are
-            fixed and the remaining directions are tilted.
+            fixed, and the remaining directions are tilted.
           </p>
         </li>
         <li>
           <p>
-            Dialations are also similar, though we have three possible
+            Dilations are also similar, though we have three possible
             axis directions in which to stretch or compress.
           </p>
         </li>

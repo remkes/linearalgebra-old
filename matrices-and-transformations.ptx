@@ -3,8 +3,8 @@
   <subsection xml:id="subsection-matrix-representation">
     <title>Matrix Representation of Linear Transformations</title>
     <p>
-      Now we come to the second eajor application of matrices. In
-      addition to succintly encoding linear systems, matrices can also
+      Now we come to the second major application of matrices. In
+      addition to succinctly encoding linear systems, matrices can also
       be used very efficiently to encode linear transformations. This
       is done by defining how a matrix can act on a vector.
     </p>
@@ -69,7 +69,7 @@
     <proposition>
       <statement>
         <p>
-          If <m>A</m> is a <m>m \times n</m> matrix, then the
+          If <m>A</m> is an <m>m \times n</m> matrix, then the
           associated function defined by the matrix action is a linear
           function <m>\RR^n \rightarrow \RR^m</m>. Moreover, all
           linear functions <m>\RR^n \rightarrow \RR^m</m> can be
@@ -80,7 +80,7 @@
       </statement>
     </proposition>
     <p>
-      In this way, the set of linear transformation <m>\RR^n
+      In this way, the set of linear transformations <m>\RR^n
       \rightarrow \RR^m</m> is <em>exactly</em> the same as the set of
       <m>m \times n</m> matrices. This is a very powerful result: in
       order to understand linear transformations of Euclidean space,
@@ -131,7 +131,7 @@
     <example>
       <statement>
         <p>
-          Diagonal matrices only have non-zero entires on the diagonal.
+          Diagonal matrices only have non-zero entries on the diagonal.
           <me>
             \begin{pmatrix} a \amp 0 \amp 0 \\ 0 \amp b \amp 0 \\ 0
             \amp 0 \amp c \end{pmatrix} \begin{pmatrix} x \\ y \\ z
@@ -141,10 +141,10 @@
           </me>
         </p>
         <p>
-          This is a dialation: the <m>x</m> direction is stretched by
+          This is a dilation: the <m>x</m> direction is stretched by
           the factor <m>a</m>, the <m>y</m> direction by the factor
           <m>b</m> and the <m>z</m> direction by the factor <m>c</m>.
-          Diagonal matrices are dialations.
+          Diagonal matrices are dilations.
         </p>
       </statement>
     </example>
@@ -152,11 +152,11 @@
   <subsection xml:id="subsection-matrix-multiplication">
     <title>Composition and Matrix Multiplication</title>
     <p>
-      We previously defined the composition of linear transformation.
-      Compositon allows us to combine transformations: we can ask what
+      We previously defined the composition of a linear transformation.
+      Composition allows us to combine transformations: we can ask what
       happens if we first rotate and then reflect in <m>\RR^2</m>.
       However, since matrices represent transformations, this
-      compsotion should somehow be accounted for in the matrix
+      composition should somehow be accounted for in the matrix
       representation. If <m>A</m> is the matrix of <m>S</m> and
       <m>B</m> is the matrix of <m>T</m>, what is the matrix of <m>S
       \circ T</m>?  The answer is given by matrix multiplication.
@@ -164,11 +164,11 @@
     <definition>
       <statement>
         <p>
-          Let <m>A</m> be a <m>k \times m</m> matrix and <m>B</m> a
+          Let <m>A</m> be a <m>k \times m</m> matrix and <m>B</m> an
           <m>m \times n</m> matrix. We can think of the
           <term>rows</term> of <m>A</m> as vectors in <m>\RR^m</m>,
           and the <term>columns</term> of <m>B</m> as vectors in
-          <m>\RR^m</m> as well. To emphasise this perspective, we
+          <m>\RR^m</m> as well. To emphasize this perspective, we
           write the following, using <m>u_i</m> for the rows of
           <m>A</m> and <m>v_i</m> for the columns of <m>B</m>.
           <md>
@@ -188,7 +188,7 @@
         <p>
           With this notation, the <term>matrix multiplication</term>
           of <m>A</m> and <m>B</m> is the <m>k \times n</m> matrix
-          where the entires are the dot products of rows and columns.
+          where the entries are the dot products of rows and columns.
           <me>
             AB = \begin{pmatrix} u_1 \cdot v_1 \amp u_1 \cdot
             v_2 \amp u_1 \cdot v_3 \amp \ldots \amp u_1 \cdot v_n \\
@@ -204,16 +204,16 @@
     </definition>
     <p>
       This operation has the desired property: the product of the
-      matrices repesents the composition of the transformations.
+      matrices repesent the composition of the transformations.
       (This remarkable fact is presented here without proof; I'll
-      leave it to you to wonder why this wierd combinations of dot
+      leave it to you to wonder why this weird combination of dot
       products has the desired geometric interpretation.) Remember
-      that the composition still works from right to left, so that the
+      that the composition still works from right to left so that the
       matrix multiplication <m>AB</m> represents the transformation
-      associated to <m>B</m> first, followed by the transformation
-      associated to <m>A</m>. When we think of matrices acting on
+      associated with <m>B</m> first, followed by the transformation
+      associated with <m>A</m>. When we think of matrices acting on
       vectors, we wrote the action on the right: <m>Av</m>. Now when
-      when a composition acts, as in <m>ABv</m>, the closest matrix
+      a composition acts, as in <m>ABv</m>, the closest matrix
       gets to act first.
     </p>
     <p>
@@ -225,9 +225,9 @@
       <statement>
         <p>
           Let <m>A</m> be a <m>k \times l</m> matrix, <m>B</m> and
-          <m>C</m> be <m>l \times m</m> matrices, and <m>D</m> a <m>m
-          \times n</m> matrix. Also let <m>I_i</m> be the identity
-          matrix in <m>\RR^i</m> for any <m>i \in \NN</m>. Then there
+          <m>C</m> be <m>l \times m</m> matrices, and <m>D</m> an <m>m
+          \times n</m> matrix. Also, let <m>I_i</m> be the identity
+          matrix in <m>\RR^i</m> for any <m>i \in \NN</m>. Then, there
           are two important properties of matrix multiplication I want
           to state at the start.
           <md>
@@ -244,9 +244,9 @@
     <p>
       Note the lack of commutativity: <m>AB \neq BA</m>. In fact, if
       <m>A</m> and <m>B</m> are not square matrices, if <m>AB</m> is
-      defined and <m>BA</m> will not be; the indices will not match.
+      defined then <m>BA</m> will not be, the indices will not match.
       Not only are we unable to exchange the order of matrix
-      multiplication; sometimes that multiplication doesn't even make
+      multiplication, sometimes that multiplication doesn't even make
       sense as an operation. Matrix multiplication is a very
       important example of a non-commutative product.
     </p>

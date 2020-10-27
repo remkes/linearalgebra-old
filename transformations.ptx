@@ -4,7 +4,7 @@
     <title>Definitions</title>
     <p>
       After a good definition of the environment (<m>\RR^n</m>) and
-      its objects (lines, planes, hyperplanes, etc), the next
+      its objects (lines, planes, hyperplanes, etc.), the next
       mathematical step is to understand the functions that live in
       the environment and affect its objects. First, we need to
       generalize the simple notion of a function to linear spaces. In
@@ -19,8 +19,8 @@
       <statement>
         <p>
           Let <m>A</m> and <m>B</m> be subsets of <m>\RR^n</m> and
-          <m>\RR^m</m>, respectively  A <term>function</term> between
-          linear spaces is a rule <m>f: A \rightarrow B</m> which
+          <m>\RR^m</m>, respectively. A <term>function</term> between
+          linear spaces is a rule <m>f: A \rightarrow B</m>, which
           assigns to each <term>vector</term> in A a unique
           <term>vector</term> in <m>B</m>.
         </p>
@@ -50,7 +50,7 @@
           A <term>linear function</term> or <term>linear
           transformation</term> from <m>\RR^n</m> to <m>\RR^m</m> is a
           function <m>f: \RR^n \rightarrow \RR^m</m> such that for two
-          vectors <m>u,v \in \RR^n</m> and any scalar <m>a \in
+          vectors, <m>u,v \in \RR^n</m> and any scalar <m>a \in
           \RR</m>, the function must obey two rules.
           <md>
             <mrow>f(u+v) \amp  = f(u) + f(v)</mrow>
@@ -60,22 +60,22 @@
         <p>
           Informally, we say that the function <term>respects</term>
           the two main operations on linear spaces: addition of
-          vectors and multiplication by scalars  If we perform
+          vectors and multiplication by scalars. If we perform
           addition before or after the function, we get the same
-          result  Likewise for scalar multiplication.
+          result. Likewise for scalar multiplication.
         </p>
       </statement>
     </definition>
     <p>
-      By inspection and testing, one could determined that the first
+      By inspection and testing, one could determine that the first
       example above fails these two rules, but the second example
       satisfies them.
     </p>
     <p>
-      This definition creates to the restrictive but important class
-      of linear functions  We could easily define linear algebra as a
-      study of these transformations  There is an alternative and
-      equivalent definition of linear transformation.
+      This definition creates a restrictive but important class
+      of linear functions. We could easily define linear algebra as a
+      study of these transformations. There is an alternative and
+      equivalent definition of a linear transformation.
     </p>
     <proposition>
       <statement>
@@ -86,39 +86,39 @@
       </statement>
     </proposition>
     <p>
-      Under a linear transformation points, lines, planes are changed
-      to other points, lines, planes, etc  A line can't be bent into
-      an arc or broken into two different lines  Hopefully, some of
+      Under a linear transformation, points, lines, planes and etc. are changed
+      to other points, lines, planes and etc. A line can't be bent into
+      an arc or broken into two different lines. Hopefully, some of
       the major ideas of the course are starting to fit together: the
       two basic operations of addition and scalar multiplication give
-      rise to spans, which are flat objects  Linear transformation
+      rise to spans, which are flat objects. Linear transformations
       preserve those operations, so they preserve flat objects.
       Exactly <em>how</em> they change these objects can be tricky to
       determine.
     </p>
     <p>
       Lastly, because of scalar multiplication, if we take <m>a =
-      0</m> we get that <m>f(0) = 0</m>  Under a linear
-      transformation, the origin is always sent to the origin  So, in
-      addition to preserving flat objects, linear transformation can't
-      move the origin  We could drop this condition of preserving the
+      0</m> we get that <m>f(0) = 0</m>. Under a linear
+      transformation, the origin is always sent to the origin. So, in
+      addition to preserving flat objects, linear transformations can't
+      move the origin. We could drop this condition of preserving the
       origin to get another class of functions.
     </p>
     <definition>
       <statement>
         <p>
-          A <term>affine transformation</term> from <m>\RR^n</m> to
+          An <term>affine transformation</term> from <m>\RR^n</m> to
           <m>\RR^m</m> is a transformation that preserves affine
-          subspaces  These transformations preserve flat objects but
+          subspaces. These transformations preserve flat objects but
           may move the origin.
         </p>
       </statement>
     </definition>
     <p>
       Though they are interesting, we don't spend much time with
-      affine transformations  They can always be realized as a linear
+      affine transformations. They can always be realized as a linear
       transformation combined with a shift or displacement of the
-      entire space by a fixed vector  Since shifts are relatively
+      entire space by a fixed vector. Since shifts are relatively
       simple, we can usually reduce problems of affine transformations
       to problems of linear transformations.
     </p>
@@ -126,21 +126,21 @@
   <subsection xml:id="subsection-composition">
     <title>Composition</title>
     <p>
-      Once we understood functions of real numbers, we learned to
-      compose them  We do the same for linear transformations.
+      Once we understood the functions of real numbers, we learned to
+      compose them. We do the same for linear transformations.
     </p>
     <definition>
       <statement>
         <p>
           Let <m>f : \RR^n \rightarrow \RR^m</m> and <m>g: \RR^m
-          \rightarrow \RR^l</m> be linear transformations  Then <m>g
+          \rightarrow \RR^l</m> be linear transformations. Then <m>g
           \circ f : \RR^n \rightarrow \RR^l</m> is the linear
           transformation formed by first applying <m>f</m> and then
-          <m>g</m>  Note that the <m>\RR^m</m> has to match: <m>f</m>
+          <m>g</m>. Note that the <m>\RR^m</m> has to match: <m>f</m>
           outputs to <m>\RR^m</m>, which is the input for <m>g</m>.
           Also note that the notation is written right-to-left: In
           <m>g \circ f</m>, the transformation <m>f</m> happens first,
-          followed by <m>g</m>  This new transformation is called the
+          followed by <m>g</m>. This new transformation is called the
           <term>composition</term> of <m>f</m> and <m>g</m>.
         </p>
       </statement>
@@ -165,7 +165,7 @@
       standard usage of the word talks about transformation as the
       symmetries of a shape. Here we start with a transformation and
       talk about the shape as a symmetry of the transformation: the
-      hexagon is a symmetry of rotation by one sixth of a full turn.
+      hexagon is a symmetry of rotation by one-sixth of a full turn.
     </p>
   </subsection>
 </section>
