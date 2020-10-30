@@ -280,9 +280,20 @@
       second.
     </p>
     <table xml:id="table-d4-multiplication">
-      <tabular>
+      <tabular bottom="minor" top="minor" left="minor" right="minor">
         <row>
-          <cell><m>\circ</m></cell>
+          <cell bottom="major" right="major"><m>\circ</m></cell>
+          <cell bottom="major"><m>\Id</m></cell>
+          <cell bottom="major"><m>R_1</m></cell>
+          <cell bottom="major"><m>R_2</m></cell>
+          <cell bottom="major"><m>R_3</m></cell>
+          <cell bottom="major"><m>F_1</m></cell>
+          <cell bottom="major"><m>F_2</m></cell>
+          <cell bottom="major"><m>F_3</m></cell>
+          <cell bottom="major"><m>F_4</m></cell>
+        </row>
+        <row>
+          <cell right="major"><m>\Id</m></cell>
           <cell><m>\Id</m></cell>
           <cell><m>R_1</m></cell>
           <cell><m>R_2</m></cell>
@@ -293,18 +304,7 @@
           <cell><m>F_4</m></cell>
         </row>
         <row>
-          <cell><m>\Id</m></cell>
-          <cell><m>\Id</m></cell>
-          <cell><m>R_1</m></cell>
-          <cell><m>R_2</m></cell>
-          <cell><m>R_3</m></cell>
-          <cell><m>F_1</m></cell>
-          <cell><m>F_2</m></cell>
-          <cell><m>F_3</m></cell>
-          <cell><m>F_4</m></cell>
-        </row>
-        <row>
-          <cell><m>R_1</m></cell>
+          <cell right="major"><m>R_1</m></cell>
           <cell><m>R_1</m></cell>
           <cell><m>R_2</m></cell>
           <cell><m>R_3</m></cell>
@@ -315,7 +315,7 @@
           <cell><m>F_3</m></cell>
         </row>
         <row>
-          <cell><m>R_2</m></cell>
+          <cell right="major"><m>R_2</m></cell>
           <cell><m>R_2</m></cell>
           <cell><m>R_3</m></cell>
           <cell><m>\Id</m></cell>
@@ -326,7 +326,7 @@
           <cell><m>F_2</m></cell>
         </row>
         <row>
-          <cell><m>R_3</m></cell>
+          <cell right="major"><m>R_3</m></cell>
           <cell><m>R_3</m></cell>
           <cell><m>\Id</m></cell>
           <cell><m>R_1</m></cell>
@@ -337,7 +337,7 @@
           <cell><m>F_1</m></cell>
         </row>
         <row>
-          <cell><m>F_1</m></cell>
+          <cell right="major"><m>F_1</m></cell>
           <cell><m>F_1</m></cell>
           <cell><m>F_2</m></cell>
           <cell><m>F_3</m></cell>
@@ -348,7 +348,7 @@
           <cell><m>R_1</m></cell>
         </row>
         <row>
-          <cell><m>F_2</m></cell>
+          <cell right="major"><m>F_2</m></cell>
           <cell><m>F_2</m></cell>
           <cell><m>F_3</m></cell>
           <cell><m>F_4</m></cell>
@@ -359,7 +359,7 @@
           <cell><m>R_2</m></cell>
         </row>
         <row>
-          <cell><m>F_3</m></cell>
+          <cell right="major"><m>F_3</m></cell>
           <cell><m>F_3</m></cell>
           <cell><m>F_4</m></cell>
           <cell><m>F_1</m></cell>
@@ -370,7 +370,7 @@
           <cell><m>R_3</m></cell>
         </row>
         <row>
-          <cell><m>F_4</m></cell>
+          <cell right="major"><m>F_4</m></cell>
           <cell><m>F_4</m></cell>
           <cell><m>F_1</m></cell>
           <cell><m>F_2</m></cell>
