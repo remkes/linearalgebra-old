@@ -178,6 +178,35 @@
     <definition>
       <statement>
         <p>
+          The <term>transpose</term> of a matrix is the matrix formed
+          by switching the rows and columns. Alternatively, it is the
+          mirror of the matrix over the diagonal. If <m>A =
+          a_{ij}</m> is a matrix expressed in indices, then the
+          transpose is written <m>A^T</m> and has entries
+          <m>a_{ji}</m> with indices switched.
+          <md>
+            <mrow>
+              A \amp = \begin{pmatrix} 3 \amp 0 \amp 6 \amp -1 \\
+              4 \amp -2 \amp -7 \amp 0 \\ 6 \amp -6 \amp -1
+              \amp -2 \end{pmatrix} \amp A^T \amp = \begin{pmatrix} 3
+              \amp 4 \amp 6 \\ 0 \amp -2 \amp -6 \\ 6 \amp -7
+              \amp -1 \\ -1 \amp 0 \amp -2 \end{pmatrix} 
+            </mrow>
+            <mrow>
+              A \amp = \begin{pmatrix} 0 \amp 0 \amp 8 \amp -5 \\ 0
+              \amp 1 \amp 1 \amp -2 \\ 0 \amp 6 \amp 6 \amp -1
+              \\ 0 \amp 0 \amp -4 \amp -4 \end{pmatrix} \amp A^T
+              \amp = \begin{pmatrix} 0 \amp 0 \amp 0 \amp 0 \\ 0
+              \amp 1 \amp 6 \amp 0 \\ 8 \amp 1 \amp 6 \amp -4 \\
+              -5 \amp -2 \amp -1 \amp -4 \end{pmatrix}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
           The set of all <m>n \times m</m> matrices with real
           coefficients is written <m>M_{n,m}(\RR)</m>. For square
           matrices (<m>n \times n</m>), we simply write

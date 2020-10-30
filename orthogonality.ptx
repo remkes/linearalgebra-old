@@ -45,7 +45,7 @@
     </p>
   </subsection>
   <subsection xml:id="subsection-determinant-one">
-    <title>Matrices of Determinant One</title>
+    <title>Transformations that Preserve Size and Orientation</title>
     <p>
       Determinants measure two geometric properites: size and
       orientation. These are both symmetries. If we have matrices of
@@ -64,43 +64,8 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="subsection-transpose">
-    <title>Transposes</title>
-    <p>
-      The following definition will be useful in this chapter.
-    </p>
-    <definition>
-      <statement>
-        <p>
-          The <term>transpose</term> of a matrix is the matrix formed
-          by switching the rows and columns. Alternatively, it is the
-          mirror of the matrix over the diagonal. If <m>A =
-          a_{ij}</m> is a matrix expressed in indices, then the
-          transpose is written <m>A^T</m> and has entries
-          <m>a_{ji}</m> with indices switched.
-          <md>
-            <mrow>
-              A \amp = \begin{pmatrix} 3 \amp 0 \amp 6 \amp -1 \\
-              4 \amp -2 \amp -7 \amp 0 \\ 6 \amp -6 \amp -1
-              \amp -2 \end{pmatrix} \amp A^T \amp = \begin{pmatrix} 3
-              \amp 4 \amp 6 \\ 0 \amp -2 \amp -6 \\ 6 \amp -7
-              \amp -1 \\ -1 \amp 0 \amp -2 \end{pmatrix} 
-            </mrow>
-            <mrow>
-              A \amp = \begin{pmatrix} 0 \amp 0 \amp 8 \amp -5 \\ 0
-              \amp 1 \amp 1 \amp -2 \\ 0 \amp 6 \amp 6 \amp -1
-              \\ 0 \amp 0 \amp -4 \amp -4 \end{pmatrix} \amp A^T
-              \amp = \begin{pmatrix} 0 \amp 0 \amp 0 \amp 0 \\ 0
-              \amp 1 \amp 6 \amp 0 \\ 8 \amp 1 \amp 6 \amp -4 \\
-              -5 \amp -2 \amp -1 \amp -4 \end{pmatrix}
-            </mrow>
-          </md>
-        </p>
-      </statement>
-    </definition>
-  </subsection>
   <subsection xml:id="subsection-orthogonal-matrices">
-    <title>Orthogonal and Special Orthogonal Matrices</title>
+    <title>Preserving Lengths and Angles</title>
     <definition>
       <statement>
         <p>
@@ -179,7 +144,7 @@
                 <m>A</m> preserves angles (the angle between <m>u</m>
                 and <m>v</m> is the same as the angle between
                 <m>Au</m> and <m>Av</m> for all <m>u</m>, <m>v \in
-                \RR^n</m>) <em>amd</em> <m>\det A = \pm 1</m>.
+                \RR^n</m>) <em>and</em> <m>\det A = \pm 1</m>.
               </p>
             </li>
           </ol>
@@ -209,57 +174,69 @@
       rotated, reflected, etc) but they will preserve the shape. This
       makes orthogonal matrices extremely useful, since many
       applications want to use transformations that don't destroy
-      polygons or polyhedra.
+      polygons or polyhedra. Here is a proposition that gather some
+      other properties of orthogonal matrices. 
     </p>
     <proposition>
       <statement>
+        <ul>
+          <li>
+            <p>
+              In <m>\RR^2</m>, the only orthogonal transformations
+              are the identity, the rotations and the reflections.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> is an orthogonal matrix, so if <m>A^{-1}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              All orthogonal matrices have determinant <m>\pm 1</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>A</m> and <m>B</m> are orthogonal matrices,
+              then so are <m>AB</m> and <m>BA</m>.
+            </p>
+          </li>
+        </ul>
+      </statement>
+      <proof>
         <p>
-          Here are some other properties of orthogonal matrices.
-          <ul>
-            <li>
-              <p>
-                In <m>\RR^2</m>, the only orthogonal transformations
-                are the identity, the rotations and the reflections.
-              </p>
-            </li>
-            <li>
-              <p>
-                If <m>A</m> is orthogonal, so if <m>A^{-1}</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                All orthogonal matrices have determinant <m>\pm 1</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                If <m>A</m> and <m>B</m> are orthogonal,
-                then so are <m>AB</m> and <m>BA</m>.
-              </p>
-            </li>
-          </ul>
+          The proofs of these statements will be part of the activity
+          for this week.  
+        </p>
+      </proof>
+    </proposition>
+    <example>
+      <statement>
+        <p>
+          Even in <m>\RR^3</m>, orthogonality already gets a bit trickier
+          than just the rotations/reflection of <m>\RR^2</m>. Consider
+          the following matrix. 
+          <me> 
+            \begin{pmatrix} 
+              -1 \amp  0 \amp  0 \\ 
+              0 \amp  -1 \amp  0 \\ 
+              0 \amp  0 \amp  -1 
+            \end{pmatrix}
+          </me>
+        </p>
+        <p>
+          This matrix is orthogonal, but it isn't a rotation or
+          relection in <m>\RR^3</m>. It is some kind of <sq>reflection
+          through the origin</sq> where every point is sent to the
+          opposite point with respect to the origin. (The equivalent
+          in <m>\RR^2</m> is rotation by <m>\pi</m> radians). It isn't
+          even a physical transformation: it's not something we can do
+          with a physical object without destroying it. However, it
+          satisfies the condition of orthogonality.
         </p>
       </statement>
-    </proposition>
-    <p>
-      Even in <m>\RR^3</m>, orthogonality already gets a bit trickier
-      than just the rotations/reflection of <m>\RR^2</m>. Consider
-      the following matrix. <me> \left( \begin{matrix} -1 \amp  0
-      \amp  0 \\ 0 \amp  -1 \amp  0 \\ 0 \amp  0 \amp  -1 \end{matrix}
-      \right)
-      </me>
-    </p>
-    <p>
-      This matrix is orthogonal, but it isn't a rotation or relection
-      in <m>\RR^3</m>. It is some kind of <sq>reflection through the
-      origin</sq> where every point is sent to the opposite point with
-      respect to the origin. (The equivalent in <m>\RR^2</m> is
-      rotation by <m>\pi</m> radians). It isn't even a physical
-      transformation: it's not something we can do with a physical
-      object without destroying it. However, it satisfies the
-      condition of orthogonality.
-    </p>
+    </example>
     <definition>
       <statement>
         <p>
@@ -273,7 +250,12 @@
       </statement>
     </definition>
   </subsection>
-  <subsection xml:id="subsection-orthogonal-bases">
+  <!--
+  
+  Note: I removed this section but wanted to keep the typset notes
+  incase I decided to include it again later.
+ 
+ <subsection xml:id="subsection-orthogonal-bases">
     <title>Orthogonal Bases and the Gram-Schmidt Process</title>
     <definition>
       <statement>
@@ -349,4 +331,5 @@
       orthogonal or othonormal basis.
     </p>
   </subsection>
+  -->
 </section>
