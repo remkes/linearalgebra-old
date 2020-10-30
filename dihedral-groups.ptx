@@ -37,7 +37,7 @@
     <definition>
       <p>
       Let <m>G</m> be a set with an (associative) binary operation
-      represented by <m>cdot</m>. <m>G</m> is a group is it satisfies
+      represented by <m>\cdot</m>. <m>G</m> is a group is it satisfies
       these properties.
       </p>
       <ul>
@@ -83,6 +83,15 @@
           inverse operation. By restriction to only invertible
           matrices of a fixed size, all element can be composed
           together and all elements have inverses. 
+        </p></li>
+        <li><p>
+          In <xref ref="section-inversion" /> I defined three more
+          matrix groups: the special linear group <m>SL_n(\RR)</m>;
+          the orthogonal group <m>O_n(\RR)</m> and the special
+          orthogonal group <m>SO_n(\RR)</m>. These are smaller sets of
+          invertible matrices with particular properties. Eeach of
+          them contains the identity matrix and has inverses which are
+          matrices with the same restricted properties.
         </p></li>
       </ul>
     </p>

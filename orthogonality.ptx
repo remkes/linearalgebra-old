@@ -3,20 +3,24 @@
   <subsection xml:id="subsection-symmetry-again">
     <title>Symmetry, Again</title>
     <p>
-      Throughout the course, we've talked about symmetry and defined
-      types of transformation by their symmetries, that is, by what
-      they preserve. We started the entire section of transformation
-      with a symmetry property: linear transformations have the
-      symmetry of preserving flat object (linear subspaces). We
-      defined the dihedral groups as the linear transformation which
-      preserved certain polygons.
+      A major theme of this course is symmetry. When I defined linear
+      transformations, I defined them to be transformations which
+      preserved something. Geometrically, they preserved linear
+      subspaces: each linear subspace is sent to another linear
+      subspace. Algebraically, they perserved the linear operations of
+      addition and scalar multiplition: we can do vector addition or
+      scalar multiplication before or after the transformation and the
+      result is the same. This the general notion of symmetry that I
+      want to develop in this course: transformations which preserve
+      something (either algebraic or geometric). 
     </p>
     <p>
-      This persepctive is only strengthened as we get further into the
-      discipline of linear algebra. Our classification of matrices,
-      at least geometrically, is almost always a question of symmetry.
-      In this section, we're going to define some new classes of
-      matrices in terms of their symmetries.
+      This general idea of symmetry continues to develop as we get
+      deeper into the discipline of linear algebra. Our classification
+      of matrices, at least geometrically, is almost always a question
+      of symmetry.  In this section, we're going to define some new
+      classes of matrices in terms of their symmetries <emdash/> in
+      terms of what they preserve.
     </p>
     <p>
       Recall the notation we're already established for matrix sets
@@ -234,6 +238,31 @@
           even a physical transformation: it's not something we can do
           with a physical object without destroying it. However, it
           satisfies the condition of orthogonality.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Here is another example of an orthogonal matrix in
+          <m>\RR^3</m>. 
+          <me> 
+            \begin{pmatrix} 
+              \dfrac{5}{\sqrt{38}} \amp \dfrac{-3}{\sqrt{67}} 
+                \dfrac{-23}{\sqrt{2546}} \\
+              \dfrac{-3}{\sqrt{38}} \amp \dfrac{-7}{\sqrt{67}} 
+                \dfrac{-9}{\sqrt{2546}} \\
+              \dfrac{-2}{\sqrt{38}} \amp \dfrac{3}{\sqrt{67}} 
+                \dfrac{-44}{\sqrt{2546}} \\
+            \end{pmatrix}
+          </me>
+        </p>
+        <p>
+          To check the orthogonality, I would just take the dot
+          products of the columns with each other. I should get
+          <m>0</m> for each of these dot products, to show that the
+          columns are perpendicular to each other. Then I would check
+          that the length of each column is <m>1</m>.
         </p>
       </statement>
     </example>
