@@ -5,11 +5,11 @@
     <definition>
       <statement>
         <p>
-          Let <m>M</m> be a <m>m \times n</m> matrix. The
+          Let <m>M</m> be an <m>m \times n</m> matrix. The
           <term>rowspace</term> of the matrix is the span of the row
-          of the matrix, thought of as vectors in <m>\RR^n</m>. It is
+          of the matrix thought of as vectors in <m>\RR^n</m>. It is
           a subspace of <m>\RR^n</m>. The <term>columnspace</term> of
-          the matrix is the span of the columns of the matrix, thought
+          the matrix is the span of the columns of the matrix thought
           of as vectors in <m>\RR^m</m>. It is a subspace of
           <m>\RR^m</m>.
         </p>
@@ -18,9 +18,9 @@
     <proposition>
       <statement>
         <p>
-          Let <m>M</m> be a <m>m \times n</m> matrix. The columnspace
+          Let <m>M</m> be an <m>m \times n</m> matrix. The columnspace
           and the row spaces of <m>M</m> are linear subspaces (of
-          <m>\RR^m</m> and <m>\RR^n</m>, respectively) with dimension
+          <m>\RR^m</m> and <m>\RR^n</m>, respectively) with dimensions
           equal to the rank of <m>M</m>.
         </p>
       </statement>
@@ -49,7 +49,7 @@
         whole space <m>\RR^n</m>. We can think of <m>\RR^n</m> as the
         span of its standard basis <m>e_1, e_2, \ldots e_n</m>. The
         image, then, is the span of <m>Me_1, Me_2, \ldots Me_n</m>.
-        These vectors are precisely the columns of the matrix, so the
+        These vectors are precisely the columns of the matrix, so
         their span is the columnspace.
       </p>
     </proof>
@@ -88,7 +88,7 @@
     <definition>
       <statement>
         <p>
-          Let <m>M</m> be a <m>m \times n</m> matrix representing a
+          Let <m>M</m> be an <m>m \times n</m> matrix representing a
           transformation <m>\RR^n \rightarrow \RR^m</m>. For any <m>u
           \in \RR^m</m>, the <term>preimage</term> of <m>u</m> is the
           set of all vectors in <m>\RR^m</m> which are mapped to
@@ -104,7 +104,7 @@
       <statement>
         <p>
           The preimage of <m>u</m> is the solution space of the system
-          of equations associated to the extended matrix <m>(M|u)</m>
+          of equations associated with the extended matrix <m>(M|u)</m>
           where we add the vector <m>u</m> as a column to the matrix
           <m>M</m>.
         </p>
@@ -151,27 +151,27 @@
   <subsection xml:id="subsection-loci-preimages-systems">
     <title>A Central Connection Idea</title>
     <p>
-      At the point int he course, we have talked about loci, solved
+      At this point in the course, we have talked about loci, solved
       linear systems, and now defined the preimage of a vector under a
       transformation. Loci are very geometric, systems are very
       algebraic, and preimages are again geometric but from a
       different perspective (transformations instead of static
-      objects). Despite their different starting point, these three
+      objects). Despite their different starting points, these three
       are essentially all talking about the same thing. The connection
       between all three is a major conceptual goal in this course; if
-      we can understand how these three novel and abstract definition
-      fit together, that points to a deep and thorough understanding
+      we can understand how these three novel and abstract definitions
+      fit together, that points us to a deep and thorough understanding
       of the three concepts. Let me try to describe this connection.
     </p>
     <p>
       Let me start with a linear system. This is a set of linear
-      equation, implicitly asking what values of the variables (if
-      any) solves all the equations simultaneously. To move to loci,
-      all we have to do is thing geometrically. A locus is the set of
-      points which satisfy some equations (linear equations in this
+      equations, implicitly asking what values of the variables (if
+      any) solve all the equations simultaneously. To move to loci,
+      all we have to do is think geometrically. A locus is the set of
+      points that satisfy some equations (linear equations in this
       course). So a locus is just the solution of a system, seen
       geometrically. A locus is a solution space. We made this
-      connection before when we calcluated dimension of loci: the
+      connection before when we calculated the dimension of loci: the
       dimension was the number of free parameters in the solution of
       the associated system.
     </p>
@@ -179,9 +179,9 @@
       So what about pre-images. Conisider a <m>m \times n</m> matrix
       <m>M</m>, representing a transformation <m>\RR^m \rightarrow
       \RR^n</m>. For a vector <m>u</m> in <m>\RR^n</m>, we can ask for
-      the preimage <m>M^{-1}( \{ u\} )</m>. This is all the vectors in
-      <m>\RR^m</m> which the matrix send to <m>u</m> (which could
-      possibly be empty if none of the vectors are sent to <m>u</m>.
+      the pre-image <m>M^{-1}( \{ u\} )</m>. This is all the vectors in
+      <m>\RR^m</m> which the matrix sends to <m>u</m> (this could
+      possibly be empty if none of the vectors are sent to <m>u</m>).
       We can express this as a matrix equation: <m>v</m> is in the
       preimage only if 
       <me>
@@ -194,16 +194,16 @@
       the components of <m>u</m>. The matrix of this linear system is
       the extended matrix <m>(M|u)</m>. The solution to this linear
       system can be interpreted as a locus. This locus (line, plane,
-      etc) it precisely all the points that <m>M</m> sends to
+      etc) is precisely all the points that <m>M</m> sends to
       <m>u</m>. In this way, solutions spaces to systems, loci, and
-      preimage are all the same things and are all found by the matrix
+      preimages are all the same things and are all found by the matrix
       <m>(M|u)</m>.
     </p>
     <p>
       Specifically, the kernel is the linear space of all vector
       <m>v</m> with <m>Mv = 0</m>. This is a solution space for the
       linear system with matrix <m>(M|0)</m>, where the column after
-      the dividing line is all zeroes. To calcluate a kernel, we have
+      the dividing line is all zeroes. To calculate a kernel, we have
       to solve a system where the constants are all zero. The matrix
       of that system is just <m>M</m>, the matrix of the
       transformation.

@@ -15,7 +15,7 @@
           \rightarrow \RR^n</m> which undoes what <m>T</m> did.
           Equivalent, it is a transformation <m>S</m> such that the
           compositions <m>T \circ S</m> and <m>S \circ T</m> are the
-          identity. For an arbitrary transformation, there is no
+          identities. For an arbitrary transformation, there is no
           guarantee that an inverse exists; if it does, it is written
           <m>T^{-1}</m>.
         </p>
@@ -24,7 +24,7 @@
     <p>
       This is the geometric definition. Now that we've encoded
       transformations as matrices, we can use matrices and ask for an
-      algebriac definition of the inverse as well.
+      algebraic definition of the inverse as well.
     </p>
   </subsection>
   <subsection xml:id="subsection-inverse-matrices">
@@ -44,14 +44,14 @@
     <p>
       For matrices, we have the same question. For any matrix
       <m>M</m>, is there another matrix <m>N</m> such that <m>MN =
-      I</m>?  Multiplication of numbers alreay shows us that we need
+      I</m>?  Multiplication of numbers already shows us that we need
       to take care: for the number zero, there is no such number. For
       matrices, we have to be even more cautious.
     </p>
     <definition>
       <statement>
         <p>
-          Let <m>M</m> be a <m>n \times n</m> (square) matrix. The
+          Let <m>M</m> be a <m>n \times n</m> (square) matrix. Then
           the <term>inverse</term> of <m>M</m> is the
           <term>unique</term> matrix <m>M^{-1}</m> (if it exists) such
           that <m>MM^{-1} = M^{-1}M = I_n</m>.
@@ -80,8 +80,8 @@
       each other, separated by a vertical line. Then we row reduce,
       treating the conglomeration as one matrix with long rows. If
       our row reduction of <m>M</m> results in the identity on the
-      left, then the matrix has the form <m>(I|M^{-1})</m>; the right
-      hand side will be the inverse.
+      left, then the matrix has the form <m>(I|M^{-1})</m>; the 
+      right-hand side will be the inverse.
     </p>
     <p>
       This algorithm gives us two observations. First, obviously, it
@@ -89,7 +89,7 @@
       <m>n \times n</m> matrix is invertible, in this algorithm, only
       if we get the identity matrix on the left after row reduction.
       This is part of a general result, which is the first of several
-      conditions for intertible matrices.
+      conditions for invertible matrices.
     </p>
     <proposition>
       <statement>
@@ -110,7 +110,7 @@
           <m>GL_n(\RR)</m>. If we wanted to change the coefficients
           to another set of scalars <m>S</m>, we would write
           <m>GL_n(S)</m>. When the coefficients are understood, we
-          sometime write <m>GL_n</m> or <m>GL(n)</m>.
+          sometimes write <m>GL_n</m> or <m>GL(n)</m>.
         </p>
       </statement>
     </definition>
