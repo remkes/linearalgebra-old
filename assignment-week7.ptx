@@ -8,7 +8,7 @@
       <p>
         Invert these matrices. (Show the steps of your process, though
         you don't need to show every row operation in the row
-        recuction.) (6)
+        recursion.) (6)
         <ol>
           <li><me>
             \begin{pmatrix}

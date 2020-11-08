@@ -122,7 +122,7 @@
       </proof>
     </proposition>
     <p>
-      You might woner, at this point, about the structure of this
+      You might wonder, at this point, about the structure of this
       proof. I've tried to say several times that to prove an
       equality, we need to start at one side and end at the other.
       However, here I've tried to prove <m>AB=BA</m> and done so by
@@ -130,17 +130,17 @@
     </p>
     <p>
       I am not contradicting myself, though it is a very good
-      question. To understand why, look at the statement of the
-      proposition. Composition of transformation is a process where
+      question. To understand why look at the statement of the
+      proposition. The composition of the transformation is a process where
       two transformations combine into one new one. There are two ways
-      to do it: <m>AB</m> or <m>BA</m>. The proposition says that the
+      to do this: <m>AB</m> or <m>BA</m>. The proposition says that the
       outcome of both orders is the same. Therefore, I can calculate
       the outcome of both orders and compare them. This is different
       from a proposition that simply states an equation; for these
-      proposition, reducing each side of the equation to a common
+      propositions, reducing each side of the equation to a common
       expression can result in a false proof (for example, by
-      muliptlying both sides by zero). Here, I'm not reducing an
-      equation to a common form, but doing two processes and comparing
+      multiplying both sides by zero). Here, I'm not reducing an
+      equation to a common form but doing two processes and comparing
       the result. 
     </p>
     <proposition>
@@ -161,8 +161,8 @@
         </me>,
         remembering that this is for a unit vector direction. Since we
         have a unit vector direction, <m>a^2 + b^2 = 1</m>, which we
-        will ned for this proof. Now let's take this matrix and
-        muliptly it by itself.
+        will need for this proof. Now let's take this matrix and
+        multiply it by itself.
         <me>
           A^2 = \begin{pmatrix}
             a^2 \amp ab \\
