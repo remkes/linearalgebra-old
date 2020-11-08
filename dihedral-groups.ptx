@@ -256,8 +256,8 @@
       </md>
       Then I can ask: what is this transformation? This switches
       vertices <m>1</m> and <m>2</m>, and also switches the other two
-      vertices. This must be reflection over the <m>x</m>-axis, which
-      is <m>F_1</m>. Therefore, <m>R_1 \circ F_2 = F_1</m>. I've
+      vertices. This must be reflection over the <m>y</m>-axis, which
+      is <m>F_3</m>. Therefore, <m>R_1 \circ F_2 = F_3</m>. I've
       calcluated a multiplication. What happens if I reverse the
       order: <m>F_2 \circ R_1</m>? Now the rotation happens first, but
       I can still calculate the vertex movements by doing the rotation
@@ -278,8 +278,8 @@
       </md>
       This transformation switches vertices <m>1</m> and <m>4</m>, and
       also switches vertices <m>2</m> and <m>3</m>. It must be the
-      reflection over the <m>y</m>-axis, which is called <m>F_3</m>.
-      Therefore, <m>F_2 \circ R_1 = F_3</m>.
+      reflection over the <m>x</m>-axis, which is called <m>F_1</m>.
+      Therefore, <m>F_2 \circ R_1 = F_1</m>.
     </p>
     <p>
       In this way, I can calculate all the composition and put them
@@ -318,10 +318,10 @@
           <cell><m>R_2</m></cell>
           <cell><m>R_3</m></cell>
           <cell><m>\Id</m></cell>
-          <cell><m>F_4</m></cell>
-          <cell><m>F_1</m></cell>
           <cell><m>F_2</m></cell>
           <cell><m>F_3</m></cell>
+          <cell><m>F_4</m></cell>
+          <cell><m>F_1</m></cell>
         </row>
         <row>
           <cell right="major"><m>R_2</m></cell>
@@ -340,17 +340,17 @@
           <cell><m>\Id</m></cell>
           <cell><m>R_1</m></cell>
           <cell><m>R_2</m></cell>
-          <cell><m>F_2</m></cell>
-          <cell><m>F_3</m></cell>
           <cell><m>F_4</m></cell>
           <cell><m>F_1</m></cell>
+          <cell><m>F_2</m></cell>
+          <cell><m>F_3</m></cell>
         </row>
         <row>
           <cell right="major"><m>F_1</m></cell>
           <cell><m>F_1</m></cell>
-          <cell><m>F_2</m></cell>
-          <cell><m>F_3</m></cell>
           <cell><m>F_4</m></cell>
+          <cell><m>F_3</m></cell>
+          <cell><m>F_2</m></cell>
           <cell><m>\Id</m></cell>
           <cell><m>R_3</m></cell>
           <cell><m>R_2</m></cell>
@@ -359,9 +359,9 @@
         <row>
           <cell right="major"><m>F_2</m></cell>
           <cell><m>F_2</m></cell>
-          <cell><m>F_3</m></cell>
-          <cell><m>F_4</m></cell>
           <cell><m>F_1</m></cell>
+          <cell><m>F_4</m></cell>
+          <cell><m>F_3</m></cell>
           <cell><m>R_1</m></cell>
           <cell><m>\Id</m></cell>
           <cell><m>R_3</m></cell>
@@ -370,9 +370,9 @@
         <row>
           <cell right="major"><m>F_3</m></cell>
           <cell><m>F_3</m></cell>
-          <cell><m>F_4</m></cell>
-          <cell><m>F_1</m></cell>
           <cell><m>F_2</m></cell>
+          <cell><m>F_1</m></cell>
+          <cell><m>F_4</m></cell>
           <cell><m>R_2</m></cell>
           <cell><m>R_1</m></cell>
           <cell><m>\Id</m></cell>
@@ -381,9 +381,9 @@
         <row>
           <cell right="major"><m>F_4</m></cell>
           <cell><m>F_4</m></cell>
-          <cell><m>F_1</m></cell>
-          <cell><m>F_2</m></cell>
           <cell><m>F_3</m></cell>
+          <cell><m>F_2</m></cell>
+          <cell><m>F_1</m></cell>
           <cell><m>R_3</m></cell>
           <cell><m>R_2</m></cell>
           <cell><m>R_1</m></cell>
