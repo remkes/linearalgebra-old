@@ -65,7 +65,7 @@
           the cofactor expansion.
           <me>
             \left( \begin{matrix} 
-              0 \amp =2 \amp -2 \\
+              0 \amp -2 \amp -2 \\
               1 \amp -6 \amp 1 \\
               -3 \amp 0 \amp 1 
             \end{matrix} \right) 
@@ -78,7 +78,7 @@
           <md>
             <mrow>
               \amp \left| \begin{matrix} 
-                0 \amp =2 \amp -2 \\
+                0 \amp -2 \amp -2 \\
                 1 \amp -6 \amp 1 \\
                 -3 \amp 0 \amp 1 
               \end{matrix} \right| 
