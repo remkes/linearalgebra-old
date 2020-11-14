@@ -3,17 +3,17 @@
   <subsection xml:id="subsection-determinant-composition">
     <title>Determinants and Composition</title>
     <p>
-      Algebra considers sets with structre. On the sets <m>M_n(\RR)</m>
+      Algebra considers sets with structure. On the sets <m>M_n(\RR)</m>
       of <m>n \times n</m> matrices, the determinant is a new algebraic
-      structre. We would like to investigate how it interacts with
+      structure. We would like to investigate how it interacts with
       existing structures, starting with matrix multiplication.
     </p>
     <p>
       To compose two transformations, we multiply the matrices. In this
       composition, the effects on size should compound. If the first
       transformation doubles size and the second triples it, the
-      composition should multiply size by a factor of <m>6</m>.
-      Similarly with orientation: if both preserve orientation, the
+      composition should multiply the size by a factor of <m>6</m>.
+      Similarly, with orientation: if both preserve orientation, the
       composition should as well. If both reverse orientation,
       reversing twice should return us to the normal orientation. So,
       two positive or two negatives should result in a positive, and one
@@ -40,8 +40,8 @@
       be non-zero. For <m>A</m> to be invertible, it must have a
       non-zero determinant. It turns out this property is sufficient as
       well as necessary. A non-zero determinant preserves the
-      dimension: it may increase or decrease size but it doesn't
-      entirely destroy it. Therefore, there is always a way to go back,
+      dimension: it may increase or decrease size, but it doesn't
+      entirely destroy it. Therefore, there is always a way to go back and
       to reverse the process.
     </p>
     <proposition>
@@ -145,14 +145,14 @@
       </statement>
     </proposition>
     <p>
-      Row reduction is an important operations on matrices. It is
+      Row reduction is an important operation on matrices. It is
       convenient to know how the determinant changes under row
       operations.
     </p>
     <proposition>
       <statement>
         <p>
-          Let <m>A</m> be a <m>n \times n</m> matrix. If we exchange
+          Let <m>A</m> be an <m>n \times n</m> matrix. If we exchange
           two rows of <m>A</m>, the determinant changes sign (positive
           to negative, negative to positive). If we multiply a row by a
           constant <m>\alpha</m>, the determinant is multiplied by the
@@ -168,18 +168,18 @@
       we can row reduce the matrix to a triangular matrix and calculate
       the determinant of the triangular matrix by multiplying the
       diagonal elements. If we kept track of the multiplication by
-      constants and the row exchanges, we can use these rules to
+      constants and the row exchanges, we could use these rules to
       calculate the determinant of the original matrix.
     </p>
     <p>
       All of the properties of determinant listed so far have been
       multiplicative. The situation for matrix addition and
       determinants is less elegant: <m>\det (A + B)</m> has no pleasant
-      identity. This is an interesting contrast from many of the thing
+      identity. This is an interesting contrast from many of the other things
       in this course: determinants are not linear functions <m>M_n(\RR)
       \rightarrow \RR</m> since they do not act nicely with addition.
       Instead, they act nicely with multiplication. On sets with
-      various algebraic structure, it is common for an operation to
+      various algebraic structures, it is common for an operation to
       interact well with one structure but poorly with the others.
     </p>
   </subsection>

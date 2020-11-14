@@ -49,10 +49,10 @@
           determinant. 
           <md>
             <mrow>
-              \amp = 0 + 2 \left[ (4)(0) - (5)(-8) \right] + 0 
+              \amp = 0 - 2 \left[ (4)(0) - (5)(-8) \right] + 0 
             </mrow>
             <mrow>
-              \amp =  2 (40) = 80 
+              \amp =  -2 (40) = -80 
             </mrow>
           </md>
         </p>
@@ -65,7 +65,7 @@
           the cofactor expansion.
           <me>
             \left( \begin{matrix} 
-              0 \amp =2 \amp -2 \\
+              0 \amp -2 \amp -2 \\
               1 \amp -6 \amp 1 \\
               -3 \amp 0 \amp 1 
             \end{matrix} \right) 
@@ -78,7 +78,7 @@
           <md>
             <mrow>
               \amp \left| \begin{matrix} 
-                0 \amp =2 \amp -2 \\
+                0 \amp -2 \amp -2 \\
                 1 \amp -6 \amp 1 \\
                 -3 \amp 0 \amp 1 
               \end{matrix} \right| 
@@ -105,10 +105,10 @@
           <md>
             <mrow>
               \amp = 0 + 2 \left[ (1)(1) - (1)(-3) \right] + 
-              (-2) \left[ (1)(0) - (3)(-6) \right] 
+              (-2) \left[ (1)(0) - (-3)(-6) \right] 
             </mrow>
             <mrow>
-              \amp = 0 + 8 - 36 = -28
+              \amp = 0 + 8 + 36 = 44
             </mrow>
           </md>
         </p>
@@ -136,13 +136,13 @@
             <mrow>
               \amp \left| \begin{matrix} 
                 6 \amp -1 \amp 3 \\
-                -4 \amp -2 \amp 0 \amp 
+                -4 \amp -2 \amp 0 \\
                 -2 \amp -5 \amp 3 
               \end{matrix} \right| 
             </mrow>
             <mrow>
               \amp = 
-              (1)(3) (\left| \begin{matrix}
+              (1)(3) \left| \begin{matrix}
                 -4 \amp -2 \\
                 -2 \amp -5 
               \end{matrix} \right| + 
@@ -153,7 +153,7 @@
               (1)(3) \left| \begin{matrix}
                 6 \amp -1 \\
                 -4 \amp -2 
-              \end{matrix} \right| + 
+              \end{matrix} \right| 
             </mrow>
           </md>
           The term multiplied by zero goes away. For the other two
@@ -165,7 +165,7 @@
               (3) \left[ (6)(-2) - (-1)(-4) \right] 
             </mrow>
             <mrow>
-              \amp = 48 - 24 = 24 
+              \amp = 48 - 48 = 0 
             </mrow>
           </md>
         </p>
@@ -190,7 +190,7 @@
         <p>
           This is a upper triangular matrices. We know for any
           diagonal or triangular matrix, the determinant is just the
-          product of the diagonal entires. 
+          product of the diagonal entries. 
           <me>
             \left| \begin{matrix} 
               6 \amp 2 \amp -1 \amp 3 \\
@@ -219,7 +219,7 @@
       </statement>
       <solution>
         <p>
-          We cofactor expansion along the first column to take
+          We cofactor expand along the first column to take
           advantage of the zero terms. 
           <md>
             <mrow>
@@ -258,7 +258,7 @@
           </md>
           The two terms multiplied by zero go away. We have two
           remaining <m>3 \times 3</m> determinants. We'll do these
-          seperately and then put their determinant values back into
+          separately and then put their determinant values back into
           the original equation. Here is the first one; we do cofactor
           expansion along the third row. 
           <md>
@@ -291,7 +291,7 @@
               \amp = -18 
             </mrow>
           </md>
-          Here is the seoncd one; we do cofactor expansion along the
+          Here is the second one; we cofactor expand along the
           first row. 
           <md>
             <mrow>
@@ -442,8 +442,8 @@
       </statement>
       <solution>
         <p>
-          I can argue this fact using the cofactor expansion. Since
-          cofactor expansions works along rows or columns, if I do
+          I can argue this fact using cofactor expansion. Since
+          cofactor expansions work along rows or columns, if I do
           cofactor expansion along a row of <m>M</m>, that is the same
           as cofactor expansion along the matching column of <m>M</m>
           (since the transpose turns rows into columns). Since both
