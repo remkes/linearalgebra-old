@@ -7,7 +7,9 @@
     <li>
       <p>
         Calculate the determinants of the following matrices using
-        cofactor expansion. Show the steps of the algorithm clearly.
+        cofactor expansion. Show the steps of the algorithm clearly or
+        give a clear reason for  the determinant using some other
+        peroperties.
         (16). 
       </p>
       <ol>
@@ -73,7 +75,7 @@
         n </m> matrices. (Some of these are just one or two lines,
         connecting the relevant properties from different sections of
         the notes. Others are short calculations using the properties.
-        Don't expect any of these to be long arguments.)
+        Don't expect any of these to be long arguments.) (10)
       </p>
       <ol>
         <li><p>
@@ -81,7 +83,7 @@
         </p></li>
         <li><p>
           If <m>A</m> has more than <m>n^2 - n</m> entries which are
-          o, then <m>\det A = 0</m>.
+          0, then <m>\det A = 0</m>.
         </p></li>
         <li><p>
           <m>\det (AA^T)</m> can't be negative. 

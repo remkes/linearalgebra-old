@@ -2,6 +2,5 @@
   xml:id="chapter-week10">
   <title>Week 10</title>
   <xi:include href="eigenvectors.ptx" />
-  <xi:include href="proofs-week10.ptx" />
   <xi:include href="week10-activity.ptx" />
 </chapter>

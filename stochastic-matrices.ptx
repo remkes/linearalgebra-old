@@ -1,7 +1,10 @@
 <section xml:id="section-stochastic">
   <title>Stochastic Matrices and Markov Chains</title>
+  <subsection xml-id="subsection-graph-movement">
+    <title>Graphs and Probability</title>
+  </subsection>
   <subsection xml:id="subsection-stochastic-definitions">
-    <title>Definition</title>
+    <title>Definitions</title>
     <p>
       Markov chains are probabalistic linear dynamical systems. Like
       all dynamical systems, we have a state vector <m>v \in \RR^n</m>.
@@ -55,5 +58,8 @@
       vextex <m>j</m> and ending up in vertex <m>i</m> after <m>k</m>
       timesteps.
     </p>
+  </subsection>
+  <subsection xml-id="subsection-stochastic-examples">
+    <title>Markov Chain Examples</title>
   </subsection>
 </section>

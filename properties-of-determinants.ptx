@@ -35,6 +35,14 @@
         </p>
       </statement>
     </proposition>
+    <proposition>
+      <statement>
+        <p>
+          If <m>A</m> is an <m>n \times n</m> matrix, then
+          <m>\det A^{T} = \det A</m>.
+        </p>
+      </statement>
+    </proposition>
     <p>
       In particular, <m>A</m> invertible means that <m>\det A</m> must
       be non-zero. For <m>A</m> to be invertible, it must have a
