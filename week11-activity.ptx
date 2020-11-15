@@ -249,23 +249,54 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="subsection-activity-predator-prey">
+  <subsection xml:id="subsection-activity-markov">
     <title>Markov Chains for Probability Graphs</title>
-    <!--
     <activity>
       <statement>
         <p>
-          <figure xml-id="figure-markov-activity1">
+          <figure xml:id="figure-markov-activity1">
             <caption>Probability Graph 1</caption>
-            <image xml:id="figure" width="80%">
+            <image xml:id="figure27" width="80%">
               <asymptote>
+                size(12cm); 
+
+                draw(unitcircle);
+                draw(shift((8,0))*unitcircle);
+                draw(shift((4,6))*unitcircle);
+
+                draw((7,0)--(1,0),Arrow);
+                draw((0.7,-0.7){SE}..{NE}(7.3,-0.7),Arrow);
+                draw((-0.7,-0.7){SW}..{E}(-1,0),Arrow);
+
+                draw((0.7,0.7)--(3.3,5.3),Arrow);
+                draw((3,6){W}..{S}(0,1),Arrow);
+                draw((3.5,6.85){NW}..{SW}(4.5,6.85),Arrow);
+
+                draw((4.7,5.3)--(7.3,0.7),Arrow);
+                draw((8,1){N}..{W}(5,6),Arrow);
+                draw((8.7,-0.7){SE}..{W}(9,0),Arrow);
+
+                label("$1$",(0,0));
+                label("$2$",(4,6));
+                label("$3$",(8,0));
+
+                label("$0.2$",(4,-2),N);
+                label("$0.2$",(2,2.9),E);
+                label("$0.6$",(-1.3,-0.6),SW);
+
+                label("$0.4$",(6,2.9),W);
+                label("$0.05$",(1,4.7),E);
+                label("$0.55$",(4,7.5),N);
+
+                label("$0$",(4,0),N);
+                label("$0.7$",(7,4.7),W);
+                label("$0.3$",(9.3,-0.6),SE);
               </asymptote>
             </image>
           </figure>
           <xref ref="figure-markov-activity1" /> shows a probability
           graph. Calculate the long term probability of ending up in
-          each vertex. What is the probability of starting in vertex
-          <m>2</m> and ending up in vertex <m>3</m>?
+          each vertex. 
         </p>
       </statement>
       <solution>
@@ -273,28 +304,418 @@
           First, I need to write down the stochastic matrix. 
           <me>
             \begin{pmatrix}
+              0.6 \amp 0.05 \amp 0 \\
+              0.2 \amp 0.55 \amp 0.7 \\
+              0.2 \amp 0.4 \amp 0.3 
             \end{pmatrix}
           </me>
           Then I calculate (by computer) the dominant eigenvector.
           <me>
             \begin{pmatrix}
+              0.0722 \\ 0.5773 \\ 0.3505
             \end{pmatrix}
           </me>
-          This gives me the long-term probability distribution.
-          Finally, I calculate a high power of the matrix. 
-          <me>
-            \begin{pmatrix}
-            \end{pmatrix}^{50} = 
-            \begin{pmatrix}
-            \end{pmatrix}
-          </me>
-          The entry in the 3rd row and the 2nd column gives the
-          propbability of starting in vertex <m>2</m> and ending in
-          vertex <m>3</m>. That coefficient is approximately 
+          This gives me the long-term probability distribution. There
+          is roughly a <m>7.2\%</m> chance of ending on the first
+          vertex; a <m>57.7\%</m> change of ending on the second
+          vertex; and a <m>35.1\%</m> chance of ending on the third
+          vertex. 
         </p>
       </solution>
     </activity>
-    -->
+    <activity>
+      <statement>
+        <p>
+          <figure xml:id="figure-markov-activity2">
+            <caption>Probability Graph 1</caption>
+            <image xml:id="figure28" width="80%">
+              <asymptote>
+                size(12cm); 
+
+                draw(unitcircle);
+                draw(shift((-6,2))*unitcircle);
+                draw(shift((6,2))*unitcircle);
+                draw(shift((-4,6))*unitcircle);
+                draw(shift((4,6))*unitcircle);
+
+                label("$1$",(0,0));
+                label("$2$",(-6,2));
+                label("$3$",(-4,6));
+                label("$4$",(4,6));
+                label("$5$",(6,2));
+
+                draw((-0.85,0.5)--(-5.15,1.5),Arrow);
+                draw((-0.5,0.85)--(-3.5,5.15),Arrow);
+                draw((0.85,0.5)--(5.15,1.5),Arrow);
+                draw((-0.7,-0.7){SW}..{NW}(0.7,-0.7),Arrow);
+
+                draw((-6.7,1.3){SW}..{SE}(-6.7,2.7),Arrow);
+                draw((-6,1){S}..{E}(-1,0),Arrow);
+                draw((-5,2)--(5,2),Arrow);
+
+                draw((-4.5,5.15)--(-5.5,2.85),Arrow);
+                draw((-3,6)--(3,6),Arrow);
+                draw((-5,6){W}..{S}(-4,7),Arrow);
+
+                draw((3.5,6.85){NW}..{SW}(-3.5,6.85),Arrow);
+                draw((4.5,5.12)--(5.5,2.85),Arrow);
+
+                draw((6,1){S}..{W}(1,0),Arrow);
+                draw((5.15,2.5){NW}..{SW}(-5.15,2.5),Arrow);
+
+                label("$0.3$",(0,-2.4),N);
+                label("$0.1$",(-2,0.7),NE);
+                label("$0.4$",(-2,3),NE);
+                label("$0.2$",(3,1),NW);
+
+                label("$0.1$",(-7.3,2),W);
+                label("$0.2$",(-5,-0.3),S);
+                label("$0.7$",(1,2),N);
+
+                label("$0.4$",(-5,4),NW);
+                label("$0.5$",(0,6),N);
+                label("$0.1$",(-6,7),NW);
+
+                label("$0.8$",(0,7.5),N);
+                label("$0.2$",(5,4),NE);
+
+                label("$0.5$",(5,-0.3),S);
+                label("$0.5$",(-1,4.6),SE);
+              </asymptote>
+            </image>
+          </figure>
+          <xref ref="figure-markov-activity2" /> shows a probability
+          graph. Calculate the long term probability of ending up in
+          each vertex. (Assume any possibile path between vertices
+          that doesn't have an edge in the graph has a probability of
+          zero). 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, I need to write down the stochastic matrix. 
+          <me>
+            \begin{pmatrix}
+              0.3 \amp 0.2 \amp 0 \amp 0 \amp 0.5 \\
+              0.1 \amp 0.1 \amp 0.4 \amp 0 \amp 0.5 \\
+              0.4 \amp 0 \amp 0.1 \amp 0.8 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0.2 \amp 0.7 \amp 0 \amp 0.2 \amp 0 
+            \end{pmatrix}
+          </me>
+          Then I calculate (by computer) the dominant eigenvector.
+          <me>
+            \begin{pmatrix}
+            0.2375 \\ 0.2418 \\ 0.1900 \\ 0.0950 \\ 0.2358
+            \end{pmatrix}
+          </me>
+          This gives me the long-term probability distribution. There
+          is roughly a <m>23.7\%</m> change of ending on vertex
+          <m>1</m>; a <m>24.2\%</m> change of ending on vertex
+          <m>2</m>; a <m>19.0\%</m> change of ending on vertex
+          <m>3</m>; a <m>9.5\%</m> change of ending on vertex
+          <m>4</m>; and a <m>23.6\%</m> change of ending on vertex
+          <m>5</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          <figure xml:id="figure-markov-activity3">
+            <caption>Probability Graph 3</caption>
+            <image xml:id="figure29" width="80%">
+              <asymptote>
+                size(12cm); 
+
+                draw(unitcircle);
+                draw(shift((4,0))*unitcircle);
+                draw(shift((8,0))*unitcircle);
+                draw(shift((12,0))*unitcircle);
+                draw(shift((16,0))*unitcircle);
+
+                label("$1$",(0,0));
+                label("$2$",(4,0));
+                label("$3$",(8,0));
+                label("$4$",(12,0));
+                label("$5$",(16,0));
+
+                draw((-0.7,-0.7){SW}..{SE}(-0.7,0.7),Arrow);
+                draw((0.7,0.7){NE}..{SE}(3.3,0.7),Arrow);
+
+                draw((3.3,-0.7){SW}..{NW}(0.7,-0.7),Arrow);
+                draw((4.7,0.7){NE}..{SE}(7.3,0.7),Arrow);
+
+                draw((7.3,-0.7){SW}..{NW}(4.7,-0.7),Arrow);
+                draw((8.7,0.7){NE}..{SE}(11.3,0.7),Arrow);
+
+                draw((11.3,-0.7){SW}..{NW}(8.7,-0.7),Arrow);
+                draw((12.7,0.7){NE}..{SE}(15.3,0.7),Arrow);
+
+                draw((15.3,-0.7){SW}..{NW}(12.7,-0.7),Arrow);
+                draw((16.7,-0.7){SE}..{SW}(16.7,0.7),Arrow);
+
+                label("$0.7$",(-2.3,0),W);
+                label("$0.3$",(2,1.2),N);
+
+                label("$0.4$",(2,-1.2),S);
+                label("$0.6$",(6,1.2),N);
+
+                label("$0.9$",(6,-1.2),S);
+                label("$0.1$",(10,1.2),N);
+
+                label("$0.2$",(10,-1.2),S);
+                label("$0.8$",(14,1.2),N);
+
+                label("$0.6$",(14,-1.2),S);
+                label("$0.4$",(18.3,0),E);
+              </asymptote>
+            </image>
+          </figure>
+          <xref ref="figure-markov-activity3" /> shows a probability
+          graph. Calculate the long term probability of ending up in
+          each vertex. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, I need to write down the stochastic matrix. 
+          <me>
+            \begin{pmatrix}
+              0.7 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0.3 \amp 0 \amp 0.9 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.2 \amp 0 \\
+              0 \amp 0 \amp 0.1 \amp 0 \amp 0.6 \\
+              0 \amp 0 \amp 0 \amp 0.8 \amp 0.4
+            \end{pmatrix}
+          </me>
+          Then I calculate (by computer) the dominant eigenvector.
+          <me>
+            8.5
+            \begin{pmatrix}
+            0.3529 \\ 0.2647 \\ 0.1764 \\ 0.0882 \\ 0.1176
+            \end{pmatrix}
+          </me>
+          This gives me the long-term probability distribution. There
+          is roughly a <m>35.3\%</m> change of ending on vertex
+          <m>1</m>; a <m>26.5\%</m> change of ending on vertex
+          <m>2</m>; a <m>17.6\%</m> change of ending on vertex
+          <m>3</m>; a <m>8.8\%</m> change of ending on vertex
+          <m>4</m>; and a <m>11.8\%</m> change of ending on vertex
+          <m>5</m>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Here is a model of a game of chance, in the same setup we
+          used at the end of <xref ref="section-stochastic" />.
+          Instead of looking at the long run probability of winning,
+          what is the probability of still playing after 5 rounds when
+          starting from <m>1</m>, <m>2</m> or <m>3</m> statkes. What
+          about after 10 rounds?
+          <figure xml:id="figure-markov-activity4">
+            <caption>Probability Graph 4</caption>
+            <image xml:id="figure30" width="80%">
+              <asymptote>
+                size(12cm); 
+
+                draw(unitcircle);
+                draw(shift((4,0))*unitcircle);
+                draw(shift((8,0))*unitcircle);
+                draw(shift((12,0))*unitcircle);
+                draw(shift((16,0))*unitcircle);
+
+                label("$0$",(0,0));
+                label("$1$",(4,0));
+                label("$2$",(8,0));
+                label("$3$",(12,0));
+                label("$4$",(16,0));
+
+                draw((-0.7,-0.7){SW}..{SE}(-0.7,0.7),Arrow);
+
+                draw((3.3,-0.7){SW}..{NW}(0.7,-0.7),Arrow);
+                draw((4.7,0.7){NE}..{SE}(7.3,0.7),Arrow);
+
+                draw((7.3,-0.7){SW}..{NW}(4.7,-0.7),Arrow);
+                draw((8.7,0.7){NE}..{SE}(11.3,0.7),Arrow);
+
+                draw((11.3,-0.7){SW}..{NW}(8.7,-0.7),Arrow);
+                draw((12.7,0.7){NE}..{SE}(15.3,0.7),Arrow);
+
+                draw((16.7,-0.7){SE}..{SW}(16.7,0.7),Arrow);
+
+                label("$1$",(-1.5,0),W);
+                
+                label("0.4",(2,-1.2),S);
+                label("0.6",(6,1.2),N);
+
+                label("0.5",(6,-1.2),S);
+                label("0.5",(10,1.2),N);
+
+                label("0.7",(10,-1.2),S);
+                label("0.3",(14,1.2),N);
+
+                label("$1$",(17.5,0),E);
+              </asymptote>
+            </image>
+          </figure>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, I need to write down the stochastic matrix. 
+          <me>
+            \begin{pmatrix}
+              1 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.7 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 1 
+            \end{pmatrix}
+          </me>
+        </p>
+        <p>
+          To get the probabilities when starting from <m>1</m> stake
+          after <m>5</m> rounds, I calculate the matrix action five
+          times on the vector that represents <m>1</m> stake.
+          <me>
+            \begin{pmatrix}
+              1 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.7 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 1 
+            \end{pmatrix}^5
+            \begin{pmatrix}
+              0 \\ 1 \\ 0 \\ 0 \\ 0 
+            \end{pmatrix} = 
+            \begin{pmatrix}
+              0.598 \\ 0 \\ 0.2535 \\ 0 \\ 0.1485
+            \end{pmatrix} 
+          </me>
+          The probability of still playing is the sum of the three
+          middle probabilities, since the game stops when we are at
+          <m>0</m> or <m>4</m> stakes. Here that sum is <m>25.4\%</m>.
+        </p>
+        <p>
+          To get the probabilities when starting from <m>2</m> stakes
+          after <m>5</m> rounds, I calculate the matrix action five
+          times on the vector that represents <m>2</m> stakes.
+          <me>
+            \begin{pmatrix}
+              1 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.7 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 1 
+            \end{pmatrix}^5
+            \begin{pmatrix}
+              0 \\ 0 \\ 1 \\ 0 \\ 0 
+            \end{pmatrix} = 
+            \begin{pmatrix}
+              0.33 \\ 0.21125 \\ 0 \\ 0.21125 \\ 0.2475
+            \end{pmatrix} 
+          </me>
+          The probability of still playing is the sum of the three
+          middle probabilities, since the game stops when we are at
+          <m>0</m> or <m>4</m> stakes. Here that sum is <m>42.3\%</m>.
+        </p>
+        <p>
+          To get the probabilities when starting from <m>3</m> stakes
+          after <m>5</m> rounds, I calculate the matrix action five
+          times on the vector that represents <m>3</m> stakes.
+          <me>
+            \begin{pmatrix}
+              1 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.7 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 1 
+            \end{pmatrix}^5
+            \begin{pmatrix}
+              0 \\ 0 \\ 0 \\ 1 \\ 0 
+            \end{pmatrix} = 
+            \begin{pmatrix}
+              0.231 \\ 0 \\ 0.29575 \\ 0 \\ 0.47325 
+            \end{pmatrix} 
+          </me>
+          The probability of still playing is the sum of the three
+          middle probabilities, since the game stops when we are at
+          <m>0</m> or <m>4</m> stakes. Here that sum is <m>29.6\%</m>.
+        </p>
+        <p>
+          To get the probabilities when starting from <m>1</m> stake
+          after <m>10</m> rounds, I calculate the matrix action five
+          times on the vector that represents <m>1</m> stake.
+          <me>
+            \begin{pmatrix}
+              1 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.7 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 1 
+            \end{pmatrix}^{10}
+            \begin{pmatrix}
+              0 \\ 1 \\ 0 \\ 0 \\ 0 
+            \end{pmatrix} = 
+            \begin{pmatrix}
+              0.68165 \\ 0.0535519 \\ 0 \\ 0.0535519 \\ 0.211241
+            \end{pmatrix} 
+          </me>
+          The probability of still playing is the sum of the three
+          middle probabilities, since the game stops when we are at
+          <m>0</m> or <m>4</m> stakes. Here that sum is <m>10.7\%</m>.
+        </p>
+        <p>
+          To get the probabilities when starting from <m>2</m> stakes
+          after <m>10</m> rounds, I calculate the matrix action five
+          times on the vector that represents <m>2</m> stakes.
+          <me>
+            \begin{pmatrix}
+              1 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.7 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 1 
+            \end{pmatrix}^{10}
+            \begin{pmatrix}
+              0 \\ 0 \\ 1 \\ 0 \\ 0 
+            \end{pmatrix} = 
+            \begin{pmatrix}
+              0.505125 \\ 0 \\ 0.116029 \\ 0 \ 0.378845
+            \end{pmatrix} 
+          </me>
+          The probability of still playing is the sum of the three
+          middle probabilities, since the game stops when we are at
+          <m>0</m> or <m>4</m> stakes. Here that sum is <m>11.6\%</m>.
+        </p>
+        <p>
+          To get the probabilities when starting from <m>3</m> stakes
+          after <m>10</m> rounds, I calculate the matrix action five
+          times on the vector that represents <m>3</m> stakes.
+          <me>
+            \begin{pmatrix}
+              1 \amp 0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0.7 \amp 0 \\ 
+              0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 1 
+            \end{pmatrix}^{10}
+            \begin{pmatrix}
+              0 \\ 0 \\ 0 \\ 1 \\ 0 
+            \end{pmatrix} = 
+            \begin{pmatrix}
+              0.328598 \\ 0.0624772 \\ 0 \\ 0.0624772 \\ 0.546448
+            \end{pmatrix} 
+          </me>
+          The probability of still playing is the sum of the three
+          middle probabilities, since the game stops when we are at
+          <m>0</m> or <m>4</m> stakes. Here that sum is <m>12.5\%</m>.
+        </p>
+      </solution>
+    </activity>
   </subsection>
   <subsection xml:id="subsection-week11-concepts">
     <title>Conceptual Review Questions</title>
