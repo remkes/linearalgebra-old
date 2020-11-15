@@ -250,17 +250,51 @@
     </activity>
   </subsection>
   <subsection xml:id="subsection-activity-predator-prey">
-    <title>Graph Probabilites</title>
+    <title>Markov Chains for Probability Graphs</title>
+    <!--
     <activity>
       <statement>
         <p>
+          <figure xml-id="figure-markov-activity1">
+            <caption>Probability Graph 1</caption>
+            <image xml:id="figure" width="80%">
+              <asymptote>
+              </asymptote>
+            </image>
+          </figure>
+          <xref ref="figure-markov-activity1" /> shows a probability
+          graph. Calculate the long term probability of ending up in
+          each vertex. What is the probability of starting in vertex
+          <m>2</m> and ending up in vertex <m>3</m>?
         </p>
       </statement>
       <solution>
         <p>
+          First, I need to write down the stochastic matrix. 
+          <me>
+            \begin{pmatrix}
+            \end{pmatrix}
+          </me>
+          Then I calculate (by computer) the dominant eigenvector.
+          <me>
+            \begin{pmatrix}
+            \end{pmatrix}
+          </me>
+          This gives me the long-term probability distribution.
+          Finally, I calculate a high power of the matrix. 
+          <me>
+            \begin{pmatrix}
+            \end{pmatrix}^{50} = 
+            \begin{pmatrix}
+            \end{pmatrix}
+          </me>
+          The entry in the 3rd row and the 2nd column gives the
+          propbability of starting in vertex <m>2</m> and ending in
+          vertex <m>3</m>. That coefficient is approximately 
         </p>
       </solution>
     </activity>
+    -->
   </subsection>
   <subsection xml:id="subsection-week11-concepts">
     <title>Conceptual Review Questions</title>

@@ -3,27 +3,30 @@
   <subsection xml:id="subsection-ds-theory">
     <title>Theory of Dynamical Systems</title>
     <p>
-      Let's consider an applied mathematics problem where a vector <m>v
+      Consider an applied mathematics problem where a vector <m>v
       \in \RR^n</m> somehow represents the state of the situation under
       consideration. This state could be a position, keeping with the
       geometry of <m>\RR^n</m>, but typically it is just a list of
-      numbers with some other interpretation. Once we have states,
-      which are vectors in <m>\RR^n</m>, assume we can move from one
-      state to the next over a period of time called a timestep. If we
-      are in state <m>v_k</m>, then after the next
-      second/minute/day/year, we are in the next state <m>v_{k+1}</m>.
-      Thus we have a sequence <m>\{v_k\}_{k=1}^\infty</m> of states in
-      <m>\RR^n</m>.
+      numbers with some other interpretation. They could be the
+      statistics of a countries economy, the concentration of a number
+      of different chemicals in the same solutions, or any other list
+      of quantities that are part of the same system. 
+      The state of the system isn't static: it changes over time.
+      Unlike the continuous systems in calculus, sometimes it is
+      convenient to measure the system after some fixed time
+      intervals. This interval is called a timestep. Finally, since
+      the state is a vector in <m>\RR^n</m>, the change over one
+      timestep is a sequences of vectors.
+      If the system is in state <m>v_k</m>, then after the next
+      second/minute/day/year/timestep, in the next state <m>v_{k+1}</m>.
+      The model is essentially a sequence <m>\{v_k\}_{k=1}^\infty</m>
+      of states in <m>\RR^n</m>.
     </p>
     <p>
       How do we move from one state to the next?  If the process is
-      linear, then we can describe the progression as a matrix
-      multiplication. That it, there exists a matrix <m>A</m> such that
-      <m>v_k = A v_{k+1}</m> for all <m>k \in \NN</m>. Notice that this
-      is only a single matrix: the matrix <m>A</m> goes from one state
-      to the next, no matter where we are in the sequence. In this way,
-      these processes have no memory: each state only depends on the
-      previous state, not on any of the states before the previous.
+      linear, its progression can be described by a matrix
+      action. That it, there exists a matrix <m>A</m> such that
+      <m>v_k = A v_{k+1}</m> for all <m>k \in \NN</m>. 
     </p>
     <definition>
       <statement>
@@ -35,22 +38,47 @@
       </statement>
     </definition>
     <p>
-      As a first observation, we need to calculate <m>A^n</m> for large
-      values of <m>n</m>. In general, this is computationally
-      difficult. However, if <m>A</m> is diagonalizable, then <m>A =
-      SDS^{-1}</m> and <m>A^n = SD^nS^{-1}</m>. Higher powers of a
-      diagonal matrix are computationally easy, so diagonalizaing the
-      matrix is often a necessary and natural step.
+      Dynamical systems are powerful and important mathematical
+      models. However, they have some limitations, which are good to
+      state up front. First, obviously, the relationship is linear.
+      Linearity is a good starting point for models, but not all
+      processes in the world are linear. It may be that the
+      relationship between one state and the next state is non-linear,
+      in which case, a matrix would not be able to calculate the state
+      transition.
     </p>
     <p>
-      We can also use the eigenvalue/eigenvector information in our
-      interpretation. A natural question is: what is the long term
-      behaviour of the sequence?  For dynamical systems, we can asnwer
-      this question with eigenvectors. If <m>v</m> is an eigenvector of
-      <m>A</m> with eigenvalue <m>\lambda</m>, then <m>A^n v = \lambda^n
-      v</m>, so the long term behaviour of this state is expressed as
-      multiples of the original state. This behaviour can be broken
-      down into cases depending on the eigenvalue <m>\lambda</m>.
+      Another limitation is that each state of the dynamical system
+      comes directly from the state before it by the matrix action.
+      The matrix is the same for each transition, so the only thing
+      that effects any particular state is the state before it. A
+      dynamical system has no memory: states other than the directly
+      previous state can have no effect on the next state. This again
+      is good for some models, but many systems also build up some
+      kind of memory that needs to be taken into account.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-dynamical-eigenvalues">
+    <title>Long Term Behaviour of Dynamical Systems</title>
+    <p>
+      When we build a dynamical system to model some situation in the
+      world, it's natural to ask about the long term behaviour of the
+      system. From a certain starting value, where will the dynamical
+      system go? This question is mostly answered by eigenvectors and
+      eigenvalues. 
+    </p>
+    <p>
+      Consider a dynamical system described by a matrix <m>A</m>. If
+      <m>v</m> is an eigenvector with eigenvalue <m>/lambda</m>, then
+      <m>A v=  \lambda v</m>. The matrix action is a change of state
+      over a timestep. If the state is an eigenvector, then the only
+      effect of the timestep is to multiply all the quantities in the
+      state vector by the same constant. What does this mean. First,
+      it means that the <em>ratio</em> between the state quantities is
+      fixed. The values are changes, but if the state is an
+      eigenvector, the relative values of the quantities are fixed.
+      This is a kind of stabilization. Second, the long term values
+      are determined by <m>\lambda</m> in six cases.
       <ul>
         <li>
           <p>
@@ -60,14 +88,14 @@
         </li>
         <li>
           <p>
-            If <m>|\lambda| \lt 1</m>, then we have exponential decay.
-            The long term behaviour of <m>A^n v</m> is exponential decay
+            If <m>|\lambda| \lt 1</m>, then I have exponential decay.
+            The long term behaviour of <m>A^k v</m> is exponential decay
             of the original vector.
           </p>
         </li>
         <li>
           <p>
-            If <m>\lambda = -1</m>, then we have a 2-period oscilating
+            If <m>\lambda = -1</m>, then I have a 2-period oscilating
             state. The sequence begins with the state <m>v</m> and
             jumps back and forth between <m>v</m> and <m>-v</m>.
           </p>
@@ -81,21 +109,59 @@
         </li>
         <li>
           <p>
-            If <m>|\lambda| > 1</m>, then we have exponential growth of
-            the original vector. If <m>\lambda \lt -1</m>, this growth
-            comes with <m>\pm</m> oscilations as well.
+            If <m>\lambda > 1</m>, then I have exponential growth.
+            The long term behaviour of <m>A^k v</m> is exponential
+            growth of the original vector.
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>\lambda \lt -1</m>, then I have exponential growth
+            with an oscillation. The sign of the vector with flip back
+            and forth while the absolute value of the state quantities
+            will grow exponentially.
           </p>
         </li>
       </ul>
     </p>
     <p>
-      We could ask what happens for complex eigenvalues, since those
+      I could ask what happens for complex eigenvalues, since those
       will naturally also occur. Since the characteristic polynomial
       will have real coefficients, these complex eigenvalues will come
       in conjugate pairs. As we might learn in other courses, such
       pairs and the exponential behaviour (<m>\lambda^n</m>) give rise
       to sinusoidal behaviour after clever linear combinations. The
-      reasons will have to wait for another course.
+      reasons for this will have to wait for another course.
+    </p>
+    <p>
+      This is all well for eigenvectors, but what is the starting
+      state ins't an eigenvector? Well, the eigenvectors still end up
+      controlling the long term behaviour, but it can get a bit more
+      complicated. Ideally, we have a full set of eigenvectors and we
+      can write any starting state <m>v</m> as a linear combination of
+      eigenvectors <m>v = a_1 v_1 + a_2 v_2 + \ldots + a_n v_n</m>,
+      where each eigenvector <m>v_i</m> has eigenvalue
+      <m>\lambda_i</m>/. Then, the long term behaviour of the system
+      with the starting state <m>v</m> is indeed given by the
+      eigenvalue.
+      <me>
+        A^k v = A^k (a_1 v_1 + a_2 v_2 + \ldots + a_n v_n) = \lambda_1^k
+        a_1 v_1 + \lambda_2^k a_2 v_2 + \ldots + \lambda_n^k a_n v_n 
+      </me>
+      If any of the <m>\lambda_i</m> have absolute value less than
+      one, those terms will decay away. The eigenvalues which have
+      absolute value greater than one will growth. The largest
+      eigenvalue (in absolute value) will lead to the largest growth,
+      to it will dominate.
+    </p>
+    <p>
+      This can still be quite complicated, particular if there are
+      many eigenvalue with absolute value greater than one. For a
+      completely arbitrary matrix <m>A</m>, it's pretty difficult to
+      use this to understand the system. However, the types of
+      matrices which show up in dynmaical systems usually have special
+      properties, which make for more predictable and understandable
+      systems. 
     </p>
     <p>
       In many models, the coefficients of the matrix will be
@@ -119,14 +185,14 @@
       </statement>
     </theorem>
     <p>
-      The stronger version needs an new definition.
+      The stronger version of the theorem needs an new definition.
     </p>
     <definition>
       <statement>
         <p>
           Let <m>A</m> be an <m>n \times n</m> matrix. Then <m>A</m> is
           called <term>irreducible</term> if for all <m>i</m> and
-          <m>j</m> the exists a positive integer <m>m</m> such that the
+          <m>j</m>, there exists a positive integer <m>m</m> such that the
           <m>ij</m>th entry of <m>A^m</m> is non-zero.
         </p>
       </statement>
@@ -153,5 +219,13 @@
         </p>
       </statement>
     </theorem>
+    <p>
+      For dynamical systems with irreducible non-negative matrices,
+      the long term behaviour is really controlled and understood by
+      this unique largest positive eigenvalue and the corresponding
+      eigenvector. You will see this clearly in the next section where
+      I develop the theory of Leslie matrices, a nice example of a
+      dynamical system.
+    </p>
   </subsection>
 </section>
