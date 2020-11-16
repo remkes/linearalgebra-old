@@ -6,6 +6,49 @@
   <p><ol>
     <li>
       <p>
+        Find the (real) eigenvalues and eigenvectors of these
+        matrices. Feel free to use a computer for the row reductions
+        and for the roots of the complicated polynomials, but make
+        sure you clearly indicate all the steps in the process. (12)
+      </p>
+      <ol>
+        <li><me>
+          \begin{pmatrix}
+            2 \amp -1 \\
+            -2 \amp 2 
+          \end{pmatrix}
+        </me></li>
+        <li><me>
+          \begin{pmatrix}
+            6 \amp 2 \amp -2 \\
+            1 \amp 7 \amp -1 \\
+            -1 \amp 1 \amp 5
+          \end{pmatrix}
+        </me></li>
+        <li><me>
+          \begin{pmatrix}
+            0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+            1 \amp 0 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 1 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 1 \amp 0 \\
+            0 \amp 1 \amp 0 \amp 0 \amp 0 
+          \end{pmatrix}
+        </me></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Let <m>A</m> and <m>B</m> be <m>n \times n</m> matrices with
+        <m>B</m> invertible. Assume that <m>\lambda</m> is an
+        eigenvalue of <m>A</m> with eigenvector <m>v</m>. Prove that
+        <m>\lambda</m> is still an eigenvalue of <m>B^{-1}AB</m> with
+        eigenvector <m>B^{-1}v</m>. (4) 
+      </p>
+    </li>
+    <li>
+      <p>
+        Let <m>A</m> be anm orthogonal matrix. Prove that the only
+        possible eigenvalues of <m>A</m> are <m>\pm 1</m>. (4) 
       </p>
     </li>
   </ol></p>

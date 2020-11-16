@@ -6,7 +6,92 @@
   <p><ol>
     <li>
       <p>
+        Consider the following Leslie matrix as a growth model for a
+        population with four age categories. (9)
+        <me>
+          \begin{pmatrix}
+            0 \amp 0.5 \amp 0.9 \amp 0.9 \\
+            0.7 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0.5 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.7 \amp 0 
+          \end{pmatrix}
+        </me>
       </p>
+      <ol>
+        <li><p>
+          Does the species survive in the long run?
+        </p></li>
+        <li><p>
+          What is the eventual age profile?
+        </p></li>
+        <li><p>
+          If we change only the survival from the first to the second
+          age category, when does the total survival of the species
+          change. (Adjusting the coefficient by tenths is fine). 
+        </p></li>
+        <li><p>
+          How does survival change if we are allowed to change both
+          survival from the first to the second age category and the
+          fecundity of the second age category?
+        </p></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Consider the following Leslie matrix as a growth model for a
+        population with six age categories. (9)
+        <me>
+          \begin{pmatrix}
+            0 \amp 0 \amp 40 \amp 90 \amp 70 \amp 0 \\
+            0.17 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\ 
+            0 \amp a \amp 0 \amp 0 \amp 0 \amp 0 \\ 
+            0 \amp 0 \amp 0.45 \amp 0 \amp 0 \amp 0 \\ 
+            0 \amp 0 \amp 0 \amp 0.67 \amp 0 \amp 0 \\ 
+            0 \amp 0 \amp 0 \amp 0 \amp b \amp 0 \\ 
+          \end{pmatrix}
+        </me>
+        Assume this ia model for an invasive species, so the goal is
+        exponential decay. By affecting the environment, you are able
+        to change the coefficients <m>a</m> and <m>b</m>. To the
+        nearest hundredth, how small do you need to set <m>a</m> to
+        make the population start to decay? If you try adjusting
+        <m>b</m>, you will find that it doesn't actually affect the
+        viability of the population at all. Why doesn't <m>b</m>
+        matter for viability? (6) 
+      </p>
+    </li>
+    <li>
+      <figure xml:id="figure-assignment-markov">
+        <caption>Question 3 Probability Graph</caption>
+        <image xml:id="figure31" width="80%">
+          <asymptote>
+          </asymptote>
+        </image>
+      </figure>
+      <p>
+        <xref ref="figure-assignment-markov" /> shows a probability
+        graph with four transition probabilities <m>C_1</m>,
+        <m>C_2</m>, <m>C_3</m> and <m>C_4</m> underemined. (9)
+      </p>
+      <ol>
+        <li><p>
+          Determine values for each of <m>C_1</m>, <m>C_2</m>,
+          <m>C_3</m> and <m>C_4</m> to make this a valid probability
+          graph.
+        </p></li>
+        <li><p>
+          Write the matrix that describes the stochastic system.
+        </p></li>
+        <li><p>
+          Determine the long term probabilities of ending up in each
+          vertex. 
+        </p></li>
+        <li><p>
+          How would you change only three coefficients to make is so
+          that the long term behaviour is to eventually end at vertex
+          $5$ with probability $1$? 
+        </p></li>
+      </ol>
     </li>
   </ol></p>
 </section>
