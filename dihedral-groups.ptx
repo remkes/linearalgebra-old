@@ -5,7 +5,7 @@
     <p>
       The case of regular polygons, such as the hexagon, is a very
       useful place for us to start. Transformations which do not
-      preserve flat objects may not going to preserve the edges of the
+      preserve flat objects may not preserve the edges of the
       polygons. Therefore, we want to know which linear
       transformations preserve the regular polygons.
     </p>
@@ -24,10 +24,10 @@
       </statement>
     </definition>
     <p>
-      You may have noticed that we used the work <sq>group</sq>
+      You may have noticed that we used the word <sq>group</sq>
       instead of <sq>set</sq> to describe this collection.
-      <sq>Group</sq> is a technical word in mathematics, refering to a
-      set with some extra properties. Let me give the definition is
+      <sq>Group</sq> is a technical word in mathematics, referring to a
+      set with some extra properties. Let me give the definition in
       somewhat formal language. (A binary operation is that takes two
       elements and combines them into one. It is a general term that
       includes addition or numbers, multiplication or number, or
@@ -37,7 +37,7 @@
     <definition>
       <p>
       Let <m>G</m> be a set with an (associative) binary operation
-      represented by <m>\cdot</m>. <m>G</m> is a group is it satisfies
+      represented by <m>\cdot</m>. <m>G</m> is a group that satisfies
       these properties.
       </p>
       <ul>
@@ -48,7 +48,7 @@
           anything to any group element). 
         </p></li>
         <li><p>
-          For each element of the group <m>g</m>, there is an
+          For each element of the group <m>g</m>, there is a
           unique element <m>g^{-1}</m> such that <m>gg^{-1} = g^{-1}g =
           e</m>. (Everything in a group has an inverse). 
         </p></li>
@@ -64,10 +64,10 @@
         </p></li>
         <li><p>
           <m>\QQ \setminus \{0\}</m> is a group under multiplication.
-          <m>1</m> is the identity and the inverse of any fraction
+          <m>1</m> is the identity, and the inverse of any fraction
           <m>\frac{a}{b}</m> is <m>\frac{b}{a}</m>. Obviously, we
           needed to exclude <m>0</m> since we cannot divide by
-          <m>0</m> and therefore it wouldn't have an inverse in the
+          <m>0</m>, and therefore it wouldn't have an inverse in the
           group. 
         </p></li>
         <li><p>
@@ -78,19 +78,19 @@
           In <xref ref="section-inversion" />, I defined the general
           linear group <m>GL_n(\RR)</m>. This was all <m>n \times
           n</m> invertible matrices. The identity matrix (of size
-          <m>n</m>) is the identity matrix, composition is the
-          <sq>multiplication</sq>, and the matrix inverse is the
+          <m>n</m>) is the identity matrix; the composition is the
+          <sq>multiplication,</sq> and the matrix inverse is the
           inverse operation. By restriction to only invertible
-          matrices of a fixed size, all element can be composed
-          together and all elements have inverses. 
+          matrices of a fixed size, all elements can be composed
+          together, and all elements have inverses. 
         </p></li>
         <li><p>
-          In <xref ref="section-inversion" /> I defined three more
-          matrix groups: the special linear group <m>SL_n(\RR)</m>;
+          In <xref ref="section-inversion" />, I defined three more
+          matrix groups: the special linear group <m>SL_n(\RR)</m>,
           the orthogonal group <m>O_n(\RR)</m> and the special
           orthogonal group <m>SO_n(\RR)</m>. These are smaller sets of
-          invertible matrices with particular properties. Eeach of
-          them contains the identity matrix and has inverses which are
+          invertible matrices with particular properties. Each of
+          them contains the identity matrix and has inverses, which are
           matrices with the same restricted properties.
         </p></li>
       </ul>
@@ -135,20 +135,20 @@
       </image>
     </figure>
     <p>
-      Let's first consider the symmetries of the square, to more
-      clearly understand this constuction.
+      Let's first consider the symmetries of the square to more
+      clearly understand this construction.
       I assume the origin is at the centre of
-      the square, I can put the vertices of the square at
+      the square, and I can put the vertices of the square at
       <m>(1,1)</m>, <m>(1,-1)</m>, <m>(-1,-1)</m> and
       <m>(-1,1)</m>. Conveniently, the vertices are all we need
       to think about: since linear transformations preserve lines,
       if we know where the vertices go, then we know that the
-      lines connecting them are preserved and hence the shape is
-      preseved. Which transformations preserve the vertices?
+      lines connecting them are preserved, and hence the shape is
+      preserved. Which transformations preserve the vertices?
     </p>
     <p>
       There are two relatively obvious classes that might occur to
-      us. First, there are rotation about the origin. If we
+      us. First, there is rotation about the origin. If we
       rotate by <m>\pi/2</m> radians (a quarter turn), the
       vertices are preserved. Likewise for rotations by
       <m>\pi</m> and <m>3\pi/2</m> radians. If we are really
@@ -164,43 +164,43 @@
     <p>
       I might also think about reflections. Looking at the
       square, I can find four lines of reflection: the
-      <m>x</m>-axs, the <m>y</m>-axis, the line <m>x=y</m> and the
+      <m>x</m>-axis, the <m>y</m>-axis, the line <m>x=y</m> and the
       line <m>x=-y</m>. I'd like to label the reflection by taking
       the lines of reflection in counter-clockwise order starting
       from the <m>x</m>-axis: the reflection over the <m>x</m>-axis
       is <m>F_1</m>; the reflection over <m>y=x</m> is <m>F_2</m>;
-      the refleciton over the <m>y</m>-axis is <m>F_3</m>; and the
+      the reflection over the <m>y</m>-axis is <m>F_3</m>; and the
       reflection over <m>y=-x</m> is <m>F_4</m>. The lines in <xref
-      ref="figure-d4" /> are labeld with these reflection names. 
+      ref="figure-d4" /> are labelled with these reflection names. 
     </p>
     <p>
       That brings the total number of
-      transformation to eight: the identity, three rotations, and
-      four reflections. These eight are, in face, the complete
+      transformations to eight: the identity, three rotations, and
+      four reflections. These eight are, in fact, the complete
       group. 
     </p>
     <p>
       So I've constructed a group of symmetries of the square. I
-      have eight elements, one of which is the identity, and the
-      operation of composition. The abstract quesetion that
+      have eight elements, one of which is the identity and the
+      operation of composition. The abstract question that
       mathematicians ask now is: what is the structure of this
-      group? By <sq>structure</sq>, I mean the elements but, more
+      group? By <sq>structure,</sq> I mean the elements but, more
       importantly, how the elements relate to each other when
       composed. To show this structure, I can build a
       multiplication table for the group. Such a table would
       explicitly show all the compositions. It is structured very much
       like the multiplication tables for numbers that you learned in
-      elementary school <emdash/> we're now just studying a new kind
+      elementary school <emdash/>; we're now just studying a new kind
       of multiplication.
     </p>
     <p>
       To make the multiplication table, I need to know how to easily
       calculate the composition of elements. I could do this by
       writing their matrices and doing the matrix multiplication. That
-      would work, but I want to show you an easier method <emdash/> one
+      would work, but I want to show you an easier method <emdash/>, one
       much more connected to the geometry of the square. I'm going to
       represent each element of the group simply by how it permutes
-      the vertices. In <xref ref="figure-d4" />, I labeled the
+      the vertices. In <xref ref="figure-d4" />, I labelled the
       vertices. By showing where each vertex goes, I can describe each
       transformation. For example, the rotation <m>R_1</m> sends each
       vertex to the next vertex counterclockwise. I can represent this
@@ -237,7 +237,7 @@
         </mrow>
       </md>
       Now I can use these vertex movements to understand composition.
-      Consider <m>R_1 \circ F_2</m>. Since compostion works from right
+      Consider <m>R_1 \circ F_2</m>. Since composition works from right
       to left, this is doing the reflection first, then the rotation.
       I can put the two sets of vertex movements together.
       <md>
@@ -256,9 +256,9 @@
       </md>
       Then I can ask: what is this transformation? This switches
       vertices <m>1</m> and <m>2</m>, and also switches the other two
-      vertices. This must be reflection over the <m>y</m>-axis, which
+      vertices. This must be reflected over the <m>y</m>-axis, which
       is <m>F_3</m>. Therefore, <m>R_1 \circ F_2 = F_3</m>. I've
-      calcluated a multiplication. What happens if I reverse the
+      calculated a multiplication. What happens if I reverse the
       order: <m>F_2 \circ R_1</m>? Now the rotation happens first, but
       I can still calculate the vertex movements by doing the rotation
       then the reflection.
@@ -282,9 +282,9 @@
       Therefore, <m>F_2 \circ R_1 = F_1</m>.
     </p>
     <p>
-      In this way, I can calculate all the composition and put them
+      In this way, I can calculate all the compositions and put them
       into a multiplication table. In this table, each entry is the
-      composition of the row and then the column; therefore the column
+      composition of the row and then the column; therefore, the column
       entry happens first (again, right to left) and the row entry
       second.
     </p>
@@ -396,7 +396,7 @@
       are part of the structure of this group. Even with eight
       elements, there is already a fair bit to talk about. The
       composition of any two rotations is another rotation. Moreover,
-      the rotations commute with each other. The composition of any
+      rotations commute with each other. The composition of any
       two reflections is also a rotation. The composition of any
       rotation and any reflection is some other reflection. The
       rotations and reflections do not commute, nor do reflections

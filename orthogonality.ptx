@@ -4,14 +4,14 @@
     <title>Symmetry, Again</title>
     <p>
       A major theme of this course is symmetry. When I defined linear
-      transformations, I defined them to be transformations which
+      transformations, I defined them to be transformations that
       preserved something. Geometrically, they preserved linear
       subspaces: each linear subspace is sent to another linear
-      subspace. Algebraically, they perserved the linear operations of
-      addition and scalar multiplition: we can do vector addition or
-      scalar multiplication before or after the transformation and the
+      subspace. Algebraically, they preserved the linear operations of
+      addition and scalar multiplication: we can do vector addition or
+      scalar multiplication before or after the transformation, and the
       result is the same. This the general notion of symmetry that I
-      want to develop in this course: transformations which preserve
+      want to develop in this course: transformations that preserve
       something (either algebraic or geometric). 
     </p>
     <p>
@@ -23,7 +23,7 @@
       terms of what they preserve.
     </p>
     <p>
-      Recall the notation we're already established for matrix sets
+      Recall the notation we've already established for matrix sets
       and groups (with real coefficients).
       <ul>
         <li>
@@ -51,7 +51,7 @@
   <subsection xml:id="subsection-determinant-one">
     <title>Transformations that Preserve Size and Orientation</title>
     <p>
-      Determinants measure two geometric properites: size and
+      Determinants measure two geometric properties: size and
       orientation. These are both symmetries. If we have matrices of
       determinant <m>\pm 1</m>, we know that they preserve size. If
       we have matrices of positive determinant, we know that they
@@ -90,7 +90,7 @@
         <p>
           Let <m>i,j</m> be two indices which range from 1 to
           <m>n</m>. The <term>Kronecker delta</term> is a
-          twice-indexed set of numbers <m>\delta_{ij}</m> which
+          twice-indexed set of numbers <m>\delta_{ij}</m>, which
           evaluates to <m>0</m> whenever <m>i \neq j</m> and <m>1</m>
           whenever <m>i=j</m>.
           <me>
@@ -106,7 +106,7 @@
           Let <m>A</m> be an <m>n \times n</m> matrix. Write <m>A =
           (a_1, a_2, \ldots, a_n)</m> where the <m>a_i</m> are column
           vectors. Then the following seven statements are all
-          equivalent and all can be taken as the definition of an
+          equivalent, and all can be taken as the definition of an
           orthogonal matrix.
           <ol>
             <li>
@@ -170,15 +170,15 @@
       or <m>1</m> exactly matching the Kronecker delta.
     </p>
     <p>
-      Orthogonal matrices can be though of as rigid-body
+      Orthogonal matrices can be thought of as rigid-body
       transformations. Since they preserve both lengths and angles,
       they preserve the shape of anything formed of vertices and
-      lines: any polygon, polyhedron, of higher-dimensional analogue.
+      lines: any polygon, polyhedron, or higher-dimensional analogue.
       They may not preserve the position (they may be moved around,
-      rotated, reflected, etc) but they will preserve the shape. This
-      makes orthogonal matrices extremely useful, since many
+      rotated, reflected, etc.), but they will preserve the shape. This
+      makes orthogonal matrices extremely useful since many
       applications want to use transformations that don't destroy
-      polygons or polyhedra. Here is a proposition that gather some
+      polygons or polyhedra. Here is a proposition that gathers some
       other properties of orthogonal matrices. 
     </p>
     <proposition>
@@ -192,7 +192,7 @@
           </li>
           <li>
             <p>
-              If <m>A</m> is an orthogonal matrix, so if <m>A^{-1}</m>.
+              If <m>A</m> is an orthogonal matrix, so is <m>A^{-1}</m>.
             </p>
           </li>
           <li>
@@ -231,10 +231,10 @@
         </p>
         <p>
           This matrix is orthogonal, but it isn't a rotation or
-          relection in <m>\RR^3</m>. It is some kind of <sq>reflection
+          reflection in <m>\RR^3</m>. It is some kind of <sq>reflection
           through the origin</sq> where every point is sent to the
           opposite point with respect to the origin. (The equivalent
-          in <m>\RR^2</m> is rotation by <m>\pi</m> radians). It isn't
+          in <m>\RR^2</m> is a rotation by <m>\pi</m> radians). It isn't
           even a physical transformation: it's not something we can do
           with a physical object without destroying it. However, it
           satisfies the condition of orthogonality.
@@ -260,7 +260,7 @@
         <p>
           To check the orthogonality, I would just take the dot
           products of the columns with each other. I should get
-          <m>0</m> for each of these dot products, to show that the
+          <m>0</m> for each of these dot products to show that the
           columns are perpendicular to each other. Then I would check
           that the length of each column is <m>1</m>.
         </p>
@@ -272,7 +272,7 @@
           The group of orthogonal <m>n \times n</m> matrices is called
           the <term>Orthogonal Group</term> and is written
           <m>O_n(\RR)</m> or <m>O(n)</m>. The group of orthogonal
-          matrices which also preserve orientation (have determinant
+          matrices, which also preserve orientation (have determinant
           one) is called the <term>Special Orthogonal Group</term> and
           is written <m>SO_n(\RR)</m> or <m>SO(n)</m>.
         </p>
