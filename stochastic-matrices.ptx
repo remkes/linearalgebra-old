@@ -1,0 +1,829 @@
+<section xml:id="section-stochastic">
+  <title>Stochastic Matrices and Markov Chains</title>
+  <subsection xml-id="subsection-graph-movement">
+    <title>Graphs and Probability</title>
+    <p>
+      Dynamical systems are good at modelling certainly probability
+      situations. Like all dynamical systems, there is a vector <m>v
+      \in \RR^n</m> of the states of the system. In a probability
+      model, the states represent possibilities of the system and in
+      each time step, the system can transition from one state to
+      another. (This is different from previous examples, where the
+      states represented different but interacting quantities). The
+      action of the matrix <m>A</m> represents the probability of
+      shifting from one state to another in a time step. This is
+      best illustrated by a graph with labelled edges. <xref
+      ref="figure-markov1" /> is an example with three vertices.
+    </p>
+    <figure xml:id="figure-markov1">
+      <caption>Probability Graph 1</caption>
+      <image xml:id="figure23" width="80%">
+        <asymptote>
+          size(12cm); 
+
+          draw(unitcircle);
+          draw(shift((8,0))*unitcircle);
+          draw(shift((4,6))*unitcircle);
+
+          draw((7,0)--(1,0),Arrow);
+          draw((0.7,-0.7){SE}..{NE}(7.3,-0.7),Arrow);
+          draw((-0.7,-0.7){SW}..{E}(-1,0),Arrow);
+
+          draw((0.7,0.7)--(3.3,5.3),Arrow);
+          draw((3,6){W}..{S}(0,1),Arrow);
+          draw((3.5,6.85){NW}..{SW}(4.5,6.85),Arrow);
+
+          draw((4.7,5.3)--(7.3,0.7),Arrow);
+          draw((8,1){N}..{W}(5,6),Arrow);
+          draw((8.7,-0.7){SE}..{W}(9,0),Arrow);
+
+          label("$1$",(0,0));
+          label("$2$",(4,6));
+          label("$3$",(8,0));
+
+          label("$0.4$",(4,-2),N);
+          label("$0.4$",(2,2.9),E);
+          label("$0.2$",(-1.3,-0.6),SW);
+
+          label("$0.3$",(6,2.9),W);
+          label("$0.5$",(1,4.7),E);
+          label("$0.2$",(4,7.5),N);
+
+          label("$0.2$",(4,0),N);
+          label("$0.4$",(7,4.7),W);
+          label("$0.4$",(9.3,-0.6),SE);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      In <xref ref="figure-markov1" />, the arrows are labelled with
+      the transition probabilities. This means that if the system is
+      in vertex
+      <m>1</m>, there is a <m>20\%</m> probability that it stays in
+      vertex <m>1</m> (the arrow pointing from the vertex back to itself);
+      there is a <m>40\%</m> probability that it transitions to vertex
+      <m>2</m> (the arrow pointing from vertex <m>1</m> to vertex <m>2</m>;
+      and a <m>40\%</m> probability that it transition to vertex
+      <m>3</m> (the arror pointing from vertex <m>1</m> to vertex
+      <m>3</m>). The total probability going out of vertex <m>1</m> is
+      <m>100\%</m>. You can check the same it true for the other
+      vertices: the outgoing probabilities always add to <m>1</m>. The
+      ingoing probability do not need to satisfy this.
+    </p>
+    <p>
+      Now let me write this as a matrix action. The vector <m>v_k =
+      \begin{pmatrix} x_k \\ y_k \\ z_k \end{pmatrix}</m> is a
+      probability vector: <m>x_k</m> is the probability that we are
+      currently in vertex <m>1</m>, <m>y_k</m> for vertex <m>2</m> and
+      <m>z_k</m> for vertex <m>3</m>. Since the total probability must be
+      1, the vector entries must satisfy <m>x + y + z = 3</m>.
+      Then the matrix <m>A</m> acts on the vector, taking <m>v_k</m>
+      to <m>v_{k+1}</m> in the next timestep. The entry
+      <m>A_{ij}</m> in the matrix is the probability of transition
+      from vertex <m>j</m> to vertex <m>i</m>, so the number on the
+      arrow from <m>j</m> to <m>i</m>. 
+      <me>
+        \begin{pmatrix}
+          0.2 \amp 0.5 \amp 0.2
+          0.4 \amp 0.2 \amp 0.4
+          0.4 \amp 0.3 \amp 0.4
+        \end{pmatrix} 
+        \begin{pmatrix}
+          x_k \\ y_k \\ z_k 
+        \end{pmatrix} = 
+        \begin{pmatrix}
+          x_{k+1} \\ y_{k+1} \\ z_{k+1} 
+        \end{pmatrix} = 
+      </me>
+      The columns of this matrix add to <m>1</m>. That's the same fact
+      that I mentioned in the previous paragraph, that the outgoing
+      probabilities from any vertex must add to one. The columns are
+      all the outgoing probabilities from a vertex. The rows are all
+      the ingoing probabilities for a vertex. 
+    </p>
+    <p>
+      Let me be even more explicit with this example. Say that we
+      start on vertex <m>2</m> with probability <m>1</m>. That means
+      the starting vector is <m>v_0 = \begin{pmatrix} 0 \\ 1 \\ 0
+      \end{pmatrix}</m>. What happens to this as the system changes over a
+      series of timestep. Calculating the matrix action, here is the
+      sequences of states. (I've not written the matrix actions, which
+      I calculated by computer.)
+      <md>
+        <mrow>
+          \amp v_0 = \begin{pmatrix}
+            0 \\ 1 \\ 0 
+          \end{pmatrix} \amp \amp 
+          v_1 = Av_0 = \begin{pmatrix} 
+            0.5 \\ 0.2 \\ 0.3 
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp v_2 = A^2v_0 = \begin{pmatrix} 
+            0.26 \\ 0.36 \\ 0.38 
+          \end{pmatrix} \amp \amp 
+          v_3 = A^3v_0 = \begin{pmatrix} 
+            0.308 \\ 0.328 \\ 0.364 
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp v_4 = A^4v_0 = \begin{pmatrix} 
+            0.2984 \\ 0.3344 \\ 0.3672
+          \end{pmatrix} \amp \amp 
+          v_5 = A^5v_0 = \begin{pmatrix} 
+            0.30032 \\ 0.33312 \\ 0.36656
+          \end{pmatrix}, \ldots 
+        </mrow>
+      </md>
+      It looks like this might be stabilitizing into a set
+      list of probabilities, with a roughly <m>30\%</m> chance that
+      we end up at vertex <m>1</m>; a roughly <m>33\%</m> change
+      that we end up back at vertext <m>2</m>; and a roughly
+      <m>37\%</m> change that we end up at vertex <m>3</m>
+    </p>
+    <p>
+      Hopefully this example helped to illustrate the idea of
+      modelling probability on graph transitions. I'm going to take
+      this example and turn it into a series of formal definitions. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-stochastic-definitions">
+    <title>Definitions</title>
+    <p>
+      I am going to start with formalizing the type of vector and the
+      type of matrix that I used in the example. 
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A vector <m>v \in \RR^n</m> is a <term>probability
+          vector</term> or a <m>stochastic vector</m> if all it entries
+          <m>v_i</m> are non-negtaive and all these entire sum to
+          <m>1</m>.
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          A non-negative <m>n \times n</m> matrix where all the columns
+          sum to one is called a <term>(left) stochastic matrix</term>.
+          (There is a similar definition of a righ stochastic matrix
+          where all the rows sum to one; it is, in fact, the more common
+          definition. However, it doesn't mesh that well with our
+          conventions of columns vectors and matrix actions, so we will
+          work with left stochastic matrices and surpress the word
+          <sq>left</sq> in what follows.)
+        </p>
+      </statement>
+    </definition>
+    <p>
+      These vectors and matrices are the appropriate matrices for
+      probability models, for the following reason (which I present
+      without proof for now).
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> be a stochastic <m>n \times n</m> matrix
+          and let <m>v \in \RR^n</m> be a stochastic vector. Then
+          <m>Av</m> is also a stochastic vector.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Stochastic vector are those which make sense for probabilities.
+      This proposition tells us that the matrix action of a stochastic
+      matrix preserve this, so the vectors can still be  interpreted as
+      probabilities after the matrix action. With this proposition, 
+      I can define the particular type of dynamical system I am
+      presenting in this section
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A <term>Markov chain</term> is a linear dynamical system
+          where the the matrix <m>A</m> is a stochastic matrix and the
+          starting state <m>v</m> is a stochastic vector. 
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Now that they are defined, I want to understand the dynamics and
+      long term behaviour of Markov chains.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-markov-longterm">
+    <p>
+      The example that we did above, it looked like the probabilities
+      were approaching a stable configuration. Can we know that they
+      are doing so? Can we expect that they are always doing so? The
+      answers to this depend on the long-term behaviour of the Markov
+      chain, which we analyze using eigenvalues and eigenvector. 
+    </p>
+    <p>
+      A stochastic matrix has all non-negative entires, so it
+      satisfies the weak for of Perron-Frobenius. It is not guaranteed
+      to be irreducible. However, for our purposes, we can mostly
+      restrict to only irreducible stochastic matrices. Thinking in terms of
+      probability graphs, like the starting example, the stochastic
+      matrix will be irreducible as long as the graph is connected and
+      has no dead ends: that is, there is a path from any vertex to
+      any other vertex. If the graph is disconnected, there the
+      varioius disconnected pieces are essentially independent
+      probability problems and we could treat them individually. We
+      will have an example later with dead ends, which I'll deal with
+      when we get there. Otherwise, I will assume irreducible
+      matrices.
+    </p>
+    <p>
+      The Perron-Frobenius theorem tells us that an irreducible
+      stochastic matrix will have a unique largest positive eigenvalue
+      with a matching vector with all positive entries. However, since
+      stochastic matrices are a very special matrix form, there is an
+      even stronger result, which I present without proof.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> be an irreducible stochastic matrix. Then the
+          dominant eigenvalue is <m>\lambda = 1</m> and all other
+          eigenvalues (real or complex) have <m>|lambda| \lt 1</m>.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Since we can scale the eigenvector <m>v</m> matching <m>
+      \lambda = 1</m> as we wish, we can choose <m>v</m> such that it
+      is a stochastic vector. Since all other eigenvalues have
+      <m>|lambda| \lt 1</m>, their contributions to the system will
+      decay over time. The long term probability behaviour is given by
+      the coefficients of this vector <m>v</m>. This is
+      <em>independent</em> of the starting situation. Markov chains
+      (at least with connected probability graphs) will stabilize to a
+      fixed probability distribution regardless of the starting state,
+      (though it might take longer to converge depending on where we
+      start). 
+    </p>
+    <p>
+      This is a pretty good description of the long term behaviour of
+      a Markov chain. We just need to calculate the interpret the
+      dominant eigenvector. 
+    </p>
+  </subsection>
+  <subsection xml-id="subsection-stochastic-examples">
+    <title>Markov Chain Examples</title>
+    <example>
+      <statement>
+        <figure xml:id="figure-markov2">
+          <caption>Probability Graph Example 2</caption>
+          <image xml:id="figure24" witdh="80%">
+            <asymptote>
+            </asymptote>
+              size(12cm); 
+
+              draw(unitcircle);
+              draw(shift((8,0))*unitcircle);
+              draw(shift((4,6))*unitcircle);
+
+              draw((7,0)--(1,0),Arrow);
+              draw((0.7,-0.7){SE}..{NE}(7.3,-0.7),Arrow);
+              draw((-0.7,-0.7){SW}..{E}(-1,0),Arrow);
+
+              draw((0.7,0.7)--(3.3,5.3),Arrow);
+              draw((3,6){W}..{S}(0,1),Arrow);
+              draw((3.5,6.85){NW}..{SW}(4.5,6.85),Arrow);
+
+              draw((4.7,5.3)--(7.3,0.7),Arrow);
+              draw((8,1){N}..{W}(5,6),Arrow);
+              draw((8.7,-0.7){SE}..{W}(9,0),Arrow);
+
+              label("$1$",(0,0));
+              label("$2$",(4,6));
+              label("$3$",(8,0));
+
+              label("$0.7$",(4,-2),N);
+              label("$0.3$",(2,2.9),E);
+              label("$0$",(-1.3,-0.6),SW);
+
+              label("$0.1$",(6,2.9),W);
+              label("$0.9$",(1,4.7),E);
+              label("$0.1$",(4,7.5),N);
+
+              label("$0.8$",(4,0),N);
+              label("$0$",(7,4.7),W);
+              label("$0.2$",(9.3,-0.6),SE);
+          </image>
+        </figure>
+        <p>
+          <xref ref="figure-markov2" /> shows a probability graph.
+          Calculate the long term probability of ending up in each
+          vertex. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, I need to write down the stochastic matrix. 
+          <me>
+            \begin{pmatrix}
+              0 \amp 0.9 \amp 0.8 \\
+              0.3 \amp 0 \amp 0 \\
+              0.7 \amp 0.1 \amp 0.2 
+            \end{pmatrix}
+          </me>
+          Then I calculate (by computer) the dominant eigenvector. I
+          scale the result the computer gave me to give a stochastic
+          vector.
+          <me>
+            \begin{pmatrix}
+              1.09589 \\ 0.328786 \\ 1
+            \end{pmatrix} \mapsto 
+            \begin{pmatrix}
+              0.452 \\ 0.136 \\ 0.412
+            \end{pmatrix}
+          </me>
+          This gives me the long-term probability distribution. There
+          is an approximately <m>45.2\%</m> chance of ending up on
+          vertex <m>1</m>, an approximately <m>13.6\%</m> change of
+          ending up on vertext <m>2</m>, and an approximately
+          <m>41.2\%</m> chance of ending up on vertex <m>3</m>.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <figure xml:id="figure-markov3">
+          <caption>Probability Graph Example 2</caption>
+          <image xml:id="figure25" witdh="80%">
+            <asymptote>
+              size(12cm); 
+
+              draw(unitcircle);
+              draw(shift((-6,2))*unitcircle);
+              draw(shift((6,2))*unitcircle);
+              draw(shift((-4,6))*unitcircle);
+              draw(shift((4,6))*unitcircle);
+
+              label("$1$",(0,0));
+              label("$2$",(-6,2));
+              label("$3$",(-4,6));
+              label("$4$",(4,6));
+              label("$5$",(6,2));
+
+              draw((-0.85,0.5)--(-5.15,1.5),Arrow);
+              draw((0.5,0.85)--(3.5,5.15),Arrow);
+              draw((0.85,0.5)--(5.15,1.5),Arrow);
+              draw((-0.7,-0.7){SW}..{NW}(0.7,-0.7),Arrow);
+
+              draw((-6.7,1.3){SW}..{SE}(-6.7,2.7),Arrow);
+              draw((-6,1){S}..{E}(-1,0),Arrow);
+              draw((-5,2)--(5,2),Arrow);
+
+              draw((-4.5,5.15)--(-5.5,2.85),Arrow);
+              draw((-3,6)--(3,6),Arrow);
+
+              draw((3.5,6.85){NW}..{SW}(-3.5,6.85),Arrow);
+              draw((5,6){E}..{S}(4,7),Arrow);
+              draw((4.5,5.12)--(5.5,2.85),Arrow);
+
+              draw((6,1){S}..{W}(1,0),Arrow);
+              draw((6.7,1.3){SE}..{SW}(6.7,2.7),Arrow);
+              draw((5.15,2.5){NW}..{SW}(-5.15,2.5),Arrow);
+
+              label("$0.1$",(0,-2.4),N);
+              label("$0.6$",(-2,0.7),NE);
+              label("$0.1$",(2,3),NW);
+              label("$0.2$",(3,1),NW);
+
+              label("$0.3$",(-7.3,2),W);
+              label("$0.3$",(-5,-0.3),S);
+              label("$0.4$",(-1,2),N);
+
+              label("$0.8$",(-5,4),NW);
+              label("$0.2$",(0,6),N);
+
+              label("$0.3$",(0,7.5),N);
+              label("$0.2$",(6,7),NE);
+              label("$0.5$",(5,4),NE);
+
+              label("$0.1$",(8.4,2),W);
+              label("$0.4$",(5,-0.3),S);
+              label("$0.5$",(-1,4.6),SE);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          <xref ref="figure-markov3" /> shows a probability graph.
+          (Any connections without lines between vertices have
+          probability zero). Calculate the long term probability of
+          ending up in each vertex. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, I need to write down the stochastic matrix. 
+          <me>
+            \begin{pmatrix}
+              0.1 \amp 0.3 \amp 0 \amp 0 \amp 0.4 \\
+              0.6 \amp 0.3 \amp 0.8 \amp 0 \amp 0.5 \\
+              0 \amp 0 \amp 0 \amp 0.3 \amp 0 \\
+              0.1 \amp 0  \amp 0.2 \amp 0.2 \amp 0 \\
+              0.2 \amp 0.4 \amp 0 \amp 0.5 \amp 0.1
+            \end{pmatrix}
+          </me>
+          Then I calculate (by computer) the dominant eigenvector. (I
+          scale the result given to me from the computer to get a
+          stochastic vector.
+          3.7449408
+          <me>
+            \begin{pmatrix}
+              0.976673 \\ 1.59669 \\ 0.0395948 \\ 0.131983, 1
+            \end{pmatrix} \mapsto
+            \begin{pmatrix}
+              0.261 \\ 0.426 \\ 0.011 \\ 0.035 \\ 0.267
+            \end{pmatrix}
+          </me>
+          This gives me the long-term probability distribution. The
+          approximate percentage change of ending at each vertex is,
+          in order, <m>26.1\%</m>, <m>42.6\%</m>, <m>1.1\%</m>,
+          <m>3.5\%</m> and <m>26.7\%</m>. 
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsection-games-of-change">
+    <title>Games of Chance</title>
+    <p>
+      Probablistic modles like Markov chains are common very types
+      of game theory. In this section, I want to look at very simple
+      games of chance (though the theory extends well to more
+      complicated games). I want to build to a useful (and possibly
+      morally interesting) example called the Gambler's Ruin
+    </p>
+    <p>
+      I am going to model a pretty simple game of chance. In this
+      game, there is a set stake that can be won or lost in each
+      round (each timestep, in the model). In each round, there is a
+      winning and losing probability, which doesn't depend on
+      anything else. The player starts with some multiple of the
+      stake, which will give the vertices on our graph. Then there
+      is a stopping condition: the player stops either when they get
+      to zero stakes or they get to some winning number of stakes. 
+    </p>
+    <p>
+      I'll start with a winning condition of <m>4</m> stakes. That
+      gives me a five-stake model: the player can be at <m>0</m>.
+      <m>1</m>, <m>2</m>, <m>3</m> or <m>4</m> stakes. At <m>0</m>
+      and <m>4</m> stakes, the game is finished; in the Markov
+      chain, this is represented by a probability of <m>1</m> for
+      staying at that vertex. For the middle three vertices, there
+      is a probability of winning (going up a stake) and losing
+      (going down a stake). <xref ref="figure-gamblers1" /> shows the
+      probability graph for this game, with <m>W</m> being the
+      winning probability and <m>L</m> being the losing probability. 
+    </p>
+    <figure xml:id="figure-gamblers1">
+      <caption>Probability Graph for a Game of Chance</caption>
+      <image xml:id="figure26" width="80%">
+        <asymptote>
+          size(12cm); 
+
+          draw(unitcircle);
+          draw(shift((4,0))*unitcircle);
+          draw(shift((8,0))*unitcircle);
+          draw(shift((12,0))*unitcircle);
+          draw(shift((16,0))*unitcircle);
+
+          label("$0$",(0,0));
+          label("$1$",(4,0));
+          label("$2$",(8,0));
+          label("$3$",(12,0));
+          label("$4$",(16,0));
+
+          draw((-0.7,-0.7){SW}..{SE}(-0.7,0.7),Arrow);
+
+          draw((3.3,-0.7){SW}..{NW}(0.7,-0.7),Arrow);
+          draw((4.7,0.7){NE}..{SE}(7.3,0.7),Arrow);
+
+          draw((7.3,-0.7){SW}..{NW}(4.7,-0.7),Arrow);
+          draw((8.7,0.7){NE}..{SE}(11.3,0.7),Arrow);
+
+          draw((11.3,-0.7){SW}..{NW}(8.7,-0.7),Arrow);
+          draw((12.7,0.7){NE}..{SE}(15.3,0.7),Arrow);
+
+          draw((16.7,-0.7){SE}..{SW}(16.7,0.7),Arrow);
+
+          label("$1$",(-1.5,0),W);
+
+          label("L",(2,-1.2),S);
+          label("W",(6,1.2),N);
+
+          label("L",(6,-1.2),S);
+          label("W",(10,1.2),N);
+
+          label("L",(10,-1.2),S);
+          label("W",(14,1.2),N);
+
+          label("$1$",(17.5,0),E);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Here is the accompanying stochastic matrix.
+      <me>
+        \begin{pmatrix}
+          1 \amp L \amp 0 \amp 0 \amp 0 \\
+          0 \amp 0 \amp L \amp 0 \amp 0 \\
+          0 \amp W \amp 0 \amp L \amp 0 \\
+          0 \amp 0 \amp W \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0 \amp W \amp 1 \\
+        \end{pmatrix}
+      </me>
+    </p>
+    <p>
+      Now we need to work out the model with actual winning and losing
+      percentages. First, let's start with a complete fair game, so
+      that <m>W = 0.5</m> and <m>L = 0.5</m>. Here is that stochastic
+      matrix.
+      <me>
+        \begin{pmatrix}
+          1 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+          0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \\
+          0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0 \amp 0.5 \amp 1 \\
+        \end{pmatrix}
+      </me>
+      I asked a computer for the dominant eigenvalues.
+      This is a little tricky, since there are
+      actually two linearly independent eigenvalue. (The problem is
+      that this matrix is not actually irreducible, since there is no
+      path from vertex <m>0</m> to vertex <m>4</m> <emdash /> this is a
+      dead end). Here are the two eigenvectors
+      <md>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \\ 0 \\ 0 \\ 0 \\ 0
+          \end{pmatrix}
+          \amp \amp \begin{pmatrix}
+            0 \\ 0 \\ 0 \\ 0 \\ 1
+          \end{pmatrix}
+        </mrow>
+      </md>
+      These make sense. If we are at the final losing or winning
+      state, we stay there. However, what if we start in the middle?
+      The final state will be some linear combination of these
+      eigenvectors: some probability of the final winning and the
+      final losing state. What what linear combination? For this
+      Markov model, we'll have to rely on actually calculating the
+      matrix action. What I'll do is calculate the state after twenty
+      iteration. That won't be a perfect final result, but will give
+      us a pretty good idea of what is going on. 
+    </p>
+    <p>
+      For this fair game, we can start with <m>1</m>, <m>2</m> or
+      <m>3</m> staked. I asked a computer to calculate the
+      probabilities after twenty iterations for each of these starting
+      points. 
+      <md>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+            0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \\
+            0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.5 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 1 \\ 0 \\ 0 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.7495 \\ 0.0005 \\ 0 \\ 0.0005 \\ 0.2495  
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+            0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \\
+            0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.5 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 0 \\ 1 \\ 0 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.4995 \\ 0 \\ 0.0010 \\ 0 \\ 0.4995
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+            0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \\
+            0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.5 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 0 \\ 0 \\ 1 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.2495 \\ 0.0005 \\ 0 \\ 0.0005 \\ 0.7495
+          \end{pmatrix} 
+        </mrow>
+      </md>
+      This is something we can interpret. If we round to whole
+      percentages (or even tenths), the situation is pretty clear.
+      Starting with one stake, we have a <m>25\%</m> chance of winning
+      and a <m>75\%</m> change of losing. Starting with two stakes, we
+      have an equal chance of winning and losing. Starting with three
+      states, we have an a <m>75\%</m> chance of winning and a
+      <m>25\%</m> chance of losing. This seems pretty reasonable. 
+    </p>
+    <p>
+      Now I can ask the interesting question: what is the effect of
+      changing the individual round winning/losing probabilities on
+      the final winning/losing percentages. If I make the game
+      slightly unfair, say <m>W = 0.48</m> and <m>L - 0.52</m>, how
+      much will the other percentages change? I can run the model
+      again. 
+      <md>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.52 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.52 \amp 0 \amp 0 \\
+            0 \amp 0.48 \amp 0 \amp 0.52 \amp 0 \\
+            0 \amp 0 \amp 0.48 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.48 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 1 \\ 0 \\ 0 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.7787 \\ 0.0005 \\ 0 \\ 0.0004 \\ 0.2204
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.52 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.52 \amp 0 \amp 0 \\
+            0 \amp 0.48 \amp 0 \amp 0.52 \amp 0 \\
+            0 \amp 0 \amp 0.48 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.48 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 0 \\ 1 \\ 0 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.5394 \\ 0 \\ 0.0010 \\ 0 \\ 9.4596 
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.52 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.52 \amp 0 \amp 0 \\
+            0 \amp 0.48 \amp 0 \amp 0.52 \amp 0 \\
+            0 \amp 0 \amp 0.48 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.48 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 0 \\ 0 \\ 1 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.2204 \\ 0.0004 \\ 0 \\ 0.0005 \\ 0.7787
+          \end{pmatrix} 
+        </mrow>
+      </md>
+      So we change the fairnes of the game by <m>2\%</m>. The effect
+      on the final winning percentages is about <m>3\%</m> starting
+      with one or three stakes, and <m>4\%</m> for starting with two
+      stakes. The effect is slightly exagerated. 
+    </p>
+    <p>
+      What about if I make the game very unfair. Let me set <m>W =
+      0.35</m> and <m>L = 0.65</m> and run the system again.
+      <md>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.65 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.65 \amp 0 \amp 0 \\
+            0 \amp 0.35 \amp 0 \amp 0.65 \amp 0 \\
+            0 \amp 0 \amp 0.35 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.35 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 1 \\ 0 \\ 0 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.9211 \\ 0.0002 \\ 0 \\ 0.0001 \\ 0.0786 
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.65 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.65 \amp 0 \amp 0 \\
+            0 \amp 0.48 \amp 0 \amp 0.65 \amp 0 \\
+            0 \amp 0 \amp 0.35 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.35 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 0 \\ 1 \\ 0 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.7750 \\ 0 \\ 0.0004 \\ 0 \\ 0.2247 
+          \end{pmatrix} 
+        </mrow>
+        <mrow>
+          \amp \begin{pmatrix}
+            1 \amp 0.65 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0.65 \amp 0 \amp 0 \\
+            0 \amp 0.35 \amp 0 \amp 0.65 \amp 0 \\
+            0 \amp 0 \amp 0.35 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0.35 \amp 1 \\
+          \end{pmatrix}^{20}
+          \begin{pmatrix}
+            0 \\ 0 \\ 0 \\ 1 \\ 0
+          \end{pmatrix} = 
+          \begin{pmatrix}
+            0.0786 \\ 0.0001 \\ 0 \\ 0.0002 \\ 0.9211
+          \end{pmatrix} 
+        </mrow>
+      </md>
+      Again, the result are exagerated. A game that is <m>65\%</m> to
+      lose in each round leads to a <m>78\%</m> chance of losing
+      overall when starting in the middle.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-gamlbers-ruin">
+    <title>The Gambler's Ruin</title>
+    <p>
+      Now I'm am going to return to the fair game, with <m>W = L =
+      0.5</m>. Instead of changing the fairness of the game, I'm not
+      going to change the stopping condition. Let's say we always
+      start with <m>2</m> stakes, but change the numer of stakes at
+      which we stop playing. In the original game, having <m>2</m>
+      lead to a winning percentage of 
+      <m>50\%</m>. Let me increase the stopping condition to five
+      stakes. Here is the new matrix, with the action (with twenty
+      iterations) on the starting vector with <m>w</m> stakes.
+      <me>
+        \begin{pmatrix}
+          1 \amp 0.5 \amp 0 \amp 0 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
+          0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \\
+          0 \amp 0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0 \amp 0 \amp 0.5 \amp 1 
+        \end{pmatrix}^{20}
+        \begin{pmatrix}
+          0 \\ 0 \\ 1 \\ 0 \\ 0 \\ 0
+        \end{pmatrix} = 
+        \begin{pmatrix}
+          0.5924 \\ 0 \\ 0.0104 \\ 0 \\ 0.0065 \\ 0.3907
+        \end{pmatrix} 
+      </me>
+      This hasn't entirely stabilized after twenty iteration, but we
+      can see that the winning percentage has dropped from <m>50\%</m>
+      to somewhere around <m>39\%</m>. Now I will increase the
+      stopping condition to six stakes and rerun the system (I'll need
+      to go to thirty iterations to get it to stabilize to a tenth of
+      a percent).
+      <me>
+        \begin{pmatrix}
+          1 \amp 0.5 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0.5 \amp 0 \amp 0 \amp 0 \amp 0 \\
+          0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0 \amp 0.5 \amp 0 \amp 0.5 \amp 0 \\
+          0 \amp 0 \amp 0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
+          0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0.5 \amp 1 
+        \end{pmatrix}^{30}
+        \begin{pmatrix}
+          0 \\ 0 \\ 1 \\ 0 \\ 0 \\ 0 \\ 0 
+        \end{pmatrix} = 
+        \begin{pmatrix}
+          0.6600 \\ 0 \\ 0.007 \\ 0 \\ 0.007 \\ 0.3267
+        \end{pmatrix} 
+      </me>
+      Now the winning percentage has dropped again to about
+      <m>33\%</m>. 
+    </p>
+    <p>
+      I can continue this process (though doing the calculations, even
+      by computer, becomes pretty tedious. However, I hope this is
+      enough to make the point. If I play a fair game with a fixed
+      starting stakes, as the stopping point increases, the winning
+      chance from the fixed starting point drop. In the the limit (as
+      the stopping condition goes to inifnity) the winning change will
+      drop to zero. If we take the limit and let the stopping
+      condition go to infinity, it actually doesn't matter what the
+      starting number of stakes it -- the winning percentage will
+      still eventually drop to zero.
+    </p>
+    <p>
+      This is called the Gambler's Ruin. It say that even if you play
+      a perfectly fair game indefinitly, you will eventually lose with
+      <m>100\%</m> probability. 
+    </p>
+  </subsection>
+</section>
