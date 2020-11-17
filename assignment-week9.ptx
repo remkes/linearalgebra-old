@@ -14,9 +14,9 @@
               \cdot \\
             \dfrac{1}{\sqrt{3}} \amp \dfrac{1}{\sqrt{3}} \amp 0  \amp
               \cdot \\
-            \dfrac{1}{\sqrt{3}} \amp \dfrac{1}{\sqrt{3}} \amp
-              \dfrac{1}{\sqrt{3}} \amp \cdot \\
-            0 \amp \dfrac{1}{\sqrt{3}} \amp \dfrac{1}{\sqrt{3}} \amp 
+            \dfrac{1}{\sqrt{3}} \amp \dfrac{-1}{\sqrt{3}} \amp
+              \dfrac{-1}{\sqrt{3}} \amp \cdot \\
+            0 \amp \dfrac{1}{\sqrt{3}} \amp \dfrac{-1}{\sqrt{3}} \amp 
               \cdot \\
           \end{pmatrix}
         </me>
