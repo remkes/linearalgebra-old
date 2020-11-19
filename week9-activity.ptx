@@ -763,7 +763,7 @@
         <p>
           The idea I thought to use was acting on the standard basis:
           <m>\{e_1, e_2\}</m>. Since these two vectors span all of
-          <m>\RR62</m>, if we know what happens to these two vector,
+          <m>\RR^2</m>, if we know what happens to these two vector,
           we know the entire transformation. First, the transformation does
           something to <m>e^1</m>, sending it to <m>Me_1</m>. Since
           length is preserved, this is some other unit vector. 

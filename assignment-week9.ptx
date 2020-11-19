@@ -26,7 +26,7 @@
       <p>
         Find a counter example of a matrix that preserve angles but is
         not an orthogonal matrix. Show that your matrix has a
-        determinant not equation to <m>\pm 1</m>. (4) 
+        determinant not equal to <m>\pm 1</m>. (4) 
       </p>
     </li>
     <li>
@@ -35,7 +35,7 @@
         to show all the vertex calculation, but show at least a few
         from different parts of the table to give examples of how you
         did the calculation. Label the identity as <m>\Id</m>. Label
-        the rotation as <m>R_1, R_2, R_3, R_4</m> and <m>R_5</m> as
+        the rotations as <m>R_1, R_2, R_3, R_4</m> and <m>R_5</m> as
         counterclockwise rotation of one-sixth of a turn, two sixths
         of a turn, and so on. Label a reflection through two vertices
         (along the <m>x</m>-axis if you wish) as <m>F_1</m>. The label
@@ -43,7 +43,7 @@
         <m>F_6</m> so that each line reflection is the next line
         moving counterclockwise. In this way, <m>F_1</m>, <m>F_3</m>
         and <m>F_5</m> are relfections over lines through two vertices
-        and <m>F_2</m>, <m>F_4</m> amd <m>F_6</m> are reflections over
+        and <m>F_2</m>, <m>F_4</m> and <m>F_6</m> are reflections over
         lines through the midpoints of two edges. (10)
       </p>
     </li>
