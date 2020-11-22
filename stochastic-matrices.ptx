@@ -84,8 +84,8 @@
       arrow from <m>j</m> to <m>i</m>. 
       <me>
         \begin{pmatrix}
-          0.2 \amp 0.5 \amp 0.2
-          0.4 \amp 0.2 \amp 0.4
+          0.2 \amp 0.5 \amp 0.2 \\
+          0.4 \amp 0.2 \amp 0.4 \\
           0.4 \amp 0.3 \amp 0.4
         \end{pmatrix} 
         \begin{pmatrix}
@@ -93,7 +93,7 @@
         \end{pmatrix} = 
         \begin{pmatrix}
           x_{k+1} \\ y_{k+1} \\ z_{k+1} 
-        \end{pmatrix} = 
+        \end{pmatrix} 
       </me>
       The columns of this matrix add to <m>1</m>. That's the same fact
       that I mentioned in the previous paragraph, that the outgoing
@@ -157,9 +157,9 @@
       <statement>
         <p>
           A vector <m>v \in \RR^n</m> is a <term>probability
-          vector</term> or a <m>stochastic vector</m> if all it entries
-          <m>v_i</m> are non-negtaive and all these entire sum to
-          <m>1</m>.
+          vector</term> or a <term>stochastic vector</term> if all it
+          entries <m>v_i</m> are non-negtaive and all these entire sum
+          to <m>1</m>.
         </p>
       </statement>
     </definition>
@@ -248,7 +248,7 @@
         <p>
           Let <m>A</m> be an irreducible stochastic matrix. Then the
           dominant eigenvalue is <m>\lambda = 1</m> and all other
-          eigenvalues (real or complex) have <m>|lambda| \lt 1</m>.
+          eigenvalues (real or complex) have <m>|\lambda| \lt 1</m>.
         </p>
       </statement>
     </proposition>
@@ -353,7 +353,7 @@
     <example>
       <statement>
         <figure xml:id="figure-markov3">
-          <caption>Probability Graph Example 2</caption>
+          <caption>Probability Graph Example 3</caption>
           <image xml:id="figure25" witdh="80%">
             <asymptote>
               size(12cm); 
@@ -437,7 +437,7 @@
           3.7449408
           <me>
             \begin{pmatrix}
-              0.976673 \\ 1.59669 \\ 0.0395948 \\ 0.131983, 1
+              0.976673 \\ 1.59669 \\ 0.0395948 \\ 0.131983 \\ 1
             \end{pmatrix} \mapsto
             \begin{pmatrix}
               0.261 \\ 0.426 \\ 0.011 \\ 0.035 \\ 0.267
@@ -675,7 +675,7 @@
             0 \\ 0 \\ 1 \\ 0 \\ 0
           \end{pmatrix} = 
           \begin{pmatrix}
-            0.5394 \\ 0 \\ 0.0010 \\ 0 \\ 9.4596 
+            0.5394 \\ 0 \\ 0.0010 \\ 0 \\ 0.4596 
           \end{pmatrix} 
         </mrow>
         <mrow>
@@ -802,7 +802,7 @@
           0 \\ 0 \\ 1 \\ 0 \\ 0 \\ 0 \\ 0 
         \end{pmatrix} = 
         \begin{pmatrix}
-          0.6600 \\ 0 \\ 0.007 \\ 0 \\ 0.007 \\ 0.3267
+          0.6600 \\ 0 \\ 0.007 \\ 0 \\ 0.007 \\ 0 \\ 0.3267
         \end{pmatrix} 
       </me>
       Now the winning percentage has dropped again to about

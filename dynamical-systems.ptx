@@ -69,7 +69,7 @@
     </p>
     <p>
       Consider a dynamical system described by a matrix <m>A</m>. If
-      <m>v</m> is an eigenvector with eigenvalue <m>/lambda</m>, then
+      <m>v</m> is an eigenvector with eigenvalue <m>\lambda</m>, then
       <m>A v=  \lambda v</m>. The matrix action is a change of state
       over a timestep. If the state is an eigenvector, then the only
       effect of the timestep is to multiply all the quantities in the
@@ -95,7 +95,7 @@
         </li>
         <li>
           <p>
-            If <m>\lambda = -1</m>, then I have a 2-period oscilating
+            If <m>\lambda = -1</m>, then I have a 2-period oscillating
             state. The sequence begins with the state <m>v</m> and
             jumps back and forth between <m>v</m> and <m>-v</m>.
           </p>
