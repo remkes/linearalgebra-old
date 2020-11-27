@@ -143,9 +143,9 @@
           <md>
             <mrow>
               \amp \left( \begin{array}{ccc|c}
-                -1 + \sqrt{3} \amp 0 \amp 1 \\
-                0 \amp -1 + \sqrt{3} \amp 1 \\
-                1 \amp 1 \amp 1 + \sqrt{3} 
+                -1 + \sqrt{3} \amp 0 \amp 1 \amp 0  \\
+                0 \amp -1 + \sqrt{3} \amp 1  \amp 0 \\
+                1 \amp 1 \amp 1 + \sqrt{3} \amp 0  
               \end{array} \right)   
             </mrow>
             <mrow>
@@ -153,9 +153,9 @@
             </mrow>
             <mrow>
               \amp \left( \begin{array}{ccc|c}
-                1 \amp 0 \amp \frac{-1}{1 - \sqrt{3}} \\
-                0 \amp 1 \amp \frac{-1}{1 - \sqrt{3}} \\
-                1 \amp 1 \amp 1 + \sqrt{3} 
+                1 \amp 0 \amp \frac{-1}{1 - \sqrt{3}} \amp 0 \\
+                0 \amp 1 \amp \frac{-1}{1 - \sqrt{3}} \amp 0 \\
+                0 \amp 0 \amp 0 \amp 0 
               \end{array} \right)   
             </mrow>
             <mrow>
@@ -164,7 +164,7 @@
                 0 \amp -1 + \sqrt{3} \amp 1 \\
                 1 \amp 1 \amp 1 + \sqrt{3} 
               \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
-                1 \amp 1 \amp 1 - \sqrt{3} 
+                1 \\ 1 \\ 1 - \sqrt{3} 
               \end{matrix} \right) \right\}
             </mrow>
           </md>
@@ -416,8 +416,8 @@
             <mrow>
               \amp \left| \begin{matrix} 
                 2.30 - \lambda \amp -0.29 \amp -0.92 \amp -3.17 \\
-                -1.01 \amp 1.31  - \lambda\amp 3.51 \amp 4.52 \\
-                -3.68 \amp -5.42 \amp 8.54  - \lambda\amp -4.62 \\
+                -1.01 \amp 1.31  - \lambda \amp 3.51 \amp 4.52 \\
+                -3.68 \amp -5.42 \amp 8.54  - \lambda \amp -4.62 \\
                 -9.54 \amp -3.33 \amp -7.54 \amp 2.50 - \lambda 
               \end{matrix} \right| 
             </mrow>
@@ -535,7 +535,7 @@
             \frac{1}{\lambda} v = M^{-1} v
           </me>
           This is the definition of an eigenvalue, fo
-          <m>\frac{1}{\lambda</m> is an eigenvalue of <m>M^{-1}</m>
+          <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>M^{-1}</m>
         </p>
         <p>
           For the reverse implication. I can just reverse the steps.
