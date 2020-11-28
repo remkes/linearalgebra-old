@@ -81,7 +81,7 @@
           </md>
           However, the columns are not unit vectors. The length of the
           first column is <m>\sqrt{2}</m>, the second is
-          <m>\sqrt{3}{</m> and the third if <m>\sqrt{6}</m>. An
+          <m>\sqrt{3}         </m> and the third if <m>\sqrt{6}</m>. An
           orthogonal matrix has to have columns of length one, so this
           is not an orthogonal matrix. 
         </p>
@@ -90,7 +90,7 @@
           that all the dot products are zero. (Not that for these
           checks, we can scale the vectors as we wish, since whether
           or not the dot product is zero doesn't depend on the
-          scaling. I've scale the columns to remove the square roots
+          scaling. I've scaled the columns to remove the square roots
           to make these calculations easier.) 
           <md>
             <mrow>  
@@ -122,7 +122,8 @@
           <md>
             <mrow>
               \left| \begin{matrix} 
-                \frac{1}{sqrt{38}} \\ \frac{1}{\sqrt{38}} \\
+                \frac{1}{\
+                  sqrt{38}} \\ \frac{1}{\sqrt{38}} \\
                 \frac{-6}{\sqrt{38}}
               \end{matrix} \right| \amp = 
               \frac{1}{\sqrt{38}} \left| \begin{matrix} 
@@ -244,7 +245,7 @@
           Since the columns are not orthogonal, this cannot be an
           orthogonal matrix. (We could check that the columns are unit
           vectors, which indeed they are, but we don't need to since
-          we've already show that this cannot match the criteria for
+          we've already shown that this cannot match the criteria for
           othogonality). 
         </p>
       </solution>
@@ -678,8 +679,8 @@
       <solution>
         <p>
           This is relatively easy to argue based on the concept and
-          main definition.  Orthogonal matrices preserve lenghts. If
-          lenghts do not change when we do a transformation forward,
+          main definition.  Orthogonal matrices preserve lengths. If
+          lengths do not change when we do a transformation forward,
           then also can't change when we unto the transformation and
           go backwards.  Undoing no change is still no change.
         </p>
@@ -697,7 +698,7 @@
           Like the previous proof, I can argue this conceptually using
           the basic definition. If two transformations preserve
           lengths, then doing them one after another will also
-          preserve lengths. Lenghts can't change in the first step and
+          preserve lengths. Lengths can't change in the first step and
           can't change in the second step, so they can't change at
           all. Therefore, the composition (doing one transformation
           after the other) must also be orthogonal. 
@@ -745,25 +746,25 @@
         <p>
           Prove that the rotations and the reflections are the only
           orthogonal transformations in <m>\RR^2</m>. (This one is a
-          lot trickiers than the previous proofs. Give is a shot, but
+          lot trickier than the previous proofs. Give it a shot, but
           don't distress too much if the approach is difficult to
           find.)
         </p>
       </statement>
       <solution>
         <p>
-          This proof is substantially more difficult to approach that
-          the three previous one. There are many transformation in
+          This proof is substantially more difficult to approach than
+          the three previous one. There are many transformations in
           <m>\RR^2</m>. We can't even just prove this for the five
           basic types, since there are complicated transformations
           that are combinations of the types and the combination might
           be orthogonal even when the pieces aren't. I need to find a
-          trick or idea that let's me approach this.
+          trick or idea that lets me approach this.
         </p>
         <p>
           The idea I thought to use was acting on the standard basis:
           <m>\{e_1, e_2\}</m>. Since these two vectors span all of
-          <m>\RR^2</m>, if we know what happens to these two vector,
+          <m>\RR^2</m>, if we know what happens to these two vectors,
           we know the entire transformation. First, the transformation does
           something to <m>e^1</m>, sending it to <m>Me_1</m>. Since
           length is preserved, this is some other unit vector. 
@@ -776,7 +777,7 @@
           <m>\frac{\pi}{2}</m> (they are still perpendicular). That
           gives only two choices. If we face in the direction of
           <m>Me_2</m>, then we can have the unit vector pointing in
-          the perpendicular direction to the right or two the left. 
+          the perpendicular direction to the right or to the left. 
         </p>
         <p>
           If <m>Me_2</m> is the perpendicular direction to the left,
@@ -791,7 +792,7 @@
           see, but the line of reflection will be the line halfway
           between <m>e_1</m> and <m>Me_1</m>. That line will flip
           <m>e_1</m> into <m>Me_1</m> by construction. But the flip
-          will take anything perpendicular on the right and flip it so
+          will take anything perpendicular on the right and flip it to
           something perpendicular on the left. So <m>e_2</m>, which
           starts as the perpendicular vector on the right, ends up as
           the perpendicular direction on the left. 

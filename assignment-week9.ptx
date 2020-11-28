@@ -6,7 +6,7 @@
   <p><ol>
     <li>
       <p>
-        For this incomplete matrix, add a fourth column which makes
+        For this incomplete matrix, add a fourth column, which makes
         the matrix orthogonal. (4)
         <me>
           \begin{pmatrix}
@@ -24,7 +24,7 @@
     </li>
     <li>
       <p>
-        Find a counter example of a matrix that preserve angles but is
+        Find a counterexample of a matrix that preserve angles but is
         not an orthogonal matrix. Show that your matrix has a
         determinant not equal to <m>\pm 1</m>. (4) 
       </p>
@@ -32,17 +32,17 @@
     <li>
       <p>
         Create a multiplication table for <m>D_6</m>. (You do not need
-        to show all the vertex calculation, but show at least a few
+        to show all the vertex calculations but show at least a few
         from different parts of the table to give examples of how you
-        did the calculation. Label the identity as <m>\Id</m>. Label
+        did the calculations.) Label the identity as <m>\Id</m>. Label
         the rotations as <m>R_1, R_2, R_3, R_4</m> and <m>R_5</m> as
-        counterclockwise rotation of one-sixth of a turn, two sixths
+        counter-clockwise rotations of one-sixth of a turn, two-sixths
         of a turn, and so on. Label a reflection through two vertices
-        (along the <m>x</m>-axis if you wish) as <m>F_1</m>. The label
+        (along the <m>x</m>-axis if you wish) as <m>F_1</m>. Then label
         the remaining reflections as <m>F_2, F_3, F_4, F_5</m> and
         <m>F_6</m> so that each line reflection is the next line
-        moving counterclockwise. In this way, <m>F_1</m>, <m>F_3</m>
-        and <m>F_5</m> are relfections over lines through two vertices
+        moving counter-clockwise. In this way, <m>F_1</m>, <m>F_3</m>
+        and <m>F_5</m> are reflections over lines through two vertices
         and <m>F_2</m>, <m>F_4</m> and <m>F_6</m> are reflections over
         lines through the midpoints of two edges. (10)
       </p>
