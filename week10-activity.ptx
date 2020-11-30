@@ -371,7 +371,7 @@
               \end{matrix} \right) \right\} 
             </mrow>
           </md>
-          This gives us an eigevalue for <m>\lambda = 1.622</m>. Then
+          This gives us an eigenvalue for <m>\lambda = 1.622</m>. Then
           we do the same for <m>\lambda = -0.049</m>. 
           <md>  
             <mrow>
@@ -446,7 +446,7 @@
               \end{matrix} \right) \right\} 
             </mrow>
           </md>
-          This gives us an eigevalue for <m>\lambda = 12.47</m>. Then
+          This gives us an eigenvalue for <m>\lambda = 12.47</m>. Then
           we do the same for <m>\lambda = 2.26</m>. 
           <md>  
             <mrow>
@@ -484,13 +484,13 @@
           say that invertible matrices have to preserve the dimension
           of the space. They can't have any directions which are
           collapsed to zero. But an eigenvalue of <m>\lambda = 0</m>
-          is precise a direciton which is collapsed to zero. That's
+          is precisely a direction which is collapsed to zero. That's
           what sending <m>v</m> to <m> \lambda v = 0 v = 0 </m> does
           to the eigenvector. Therefore, invertible matrices can't
           have <m>0</m> as an eigenvalue. To prove the other part of
           the implication, a non-invertible matrix must collapse at
-          least one vector to zero. By lineaity, then, the whole line
-          is collased to zero and any vector on that line is an
+          least one vector to zero. By linearity, then, the whole line
+          is collapsed to zero, and any vector on that line is an
           eigenvector with eigenvalue <m>0</m>, showing that an
           invertible matrix must have <m>0</m> as an eigenvalue.
         </p>
@@ -498,7 +498,7 @@
           Alternatively, we could use a property like the fact that
           the determinant of a matrix is the product of the
           eigenvalue. With this fact, the determinant is zero if and
-          only if one of the eigenvalues if zero. But a matrix is
+          only if one of the eigenvalues is zero. But a matrix is
           invertible if and only if its determinant is not zero.
           Putting these together, a matrix is invertible if and only
           if <m>0</m> is not an eigenvalue.
@@ -509,14 +509,14 @@
       <statement>
         <p>
           Let <m>M</m> be an invertible matrix. Prove that
-          <m>\lambda</m> is an eigenvalue of <m>M</m> if and only
+          <m>\lambda</m> is an eigenvalue of <m>M</m> if and only if
           <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>M^{-1}</m>.
         </p>
       </statement>
       <solution>
         <p>
           I have to prove both implications. Let me start with the
-          forward implication. I assme that <m>\lambda</m> is an
+          forward implication. I assume that <m>\lambda</m> is an
           eigenvalue, so there exists a vector <m>v</m> with 
           <me>
             Mv = \lambda v
@@ -525,7 +525,7 @@
           <me>
             M^{-1}Mv = M^{-1} \lambda v
           </me>
-          On the left, the matrices cancel and I just have <m>v</m>.
+          On the left, the matrices cancel, and I just have <m>v</m>.
           on the first I can use linearity.
           <me>
             v = \lambda M^{-1} v
@@ -534,7 +534,7 @@
           <me>
             \frac{1}{\lambda} v = M^{-1} v
           </me>
-          This is the definition of an eigenvalue, fo
+          This is the definition of an eigenvalue, so
           <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>M^{-1}</m>
         </p>
         <p>
@@ -573,12 +573,12 @@
       </statement>
       <solution>
         <p>
-          I could do this algebraically, by applying the algorithm to
+          I could do this algebraically by applying the algorithm to
           the generic rotation matrix. However, this is easier to
           argue conceptually. A rotation takes any direction and moves
           it by some angle <m>\theta</m> in a counter-clockwise
-          direction. Therefore, the direction cannot be preserve.
-          Since this is true for any direction, hence any vector, an
+          direction. Therefore, the direction cannot be preserved.
+          Since this is true for any direction, and thus any vector, an
           eigenvector is impossible. Since an eigenvector is
           impossible, an eigenvalue is likewise impossible.
         </p>
@@ -588,9 +588,9 @@
       <statement>
         <p>
           Prove that reflections in <m>\RR^2</m> have 1 and
-          <m>(-1)</m> as their two eigenvalue and that their
-          eigenvectors are perpendicular. Also argue that these two
-          condition completely describe reflections (i.e., any matrix
+          <m>(-1)</m> as their two eigenvalues and that their
+          eigenvectors are perpendicular. Also, argue that these two
+          conditions completely describe reflections (i.e., any matrix
           with these two properties must be a reflection). 
         </p>
       </statement>
@@ -598,13 +598,13 @@
         <p>
           As with the rotations, this is easier to argue conceptually.
           A reflection in <m>\RR^2</m> is a reflection over a line.
-          Anything on the of reflection doesn't move. Therefore, these
+          Anything on the line of reflection doesn't move. Therefore, these
           vectors are eigenvectors with eigenvalue <m>\lambda = 1</m>.
-          The perpendicular direction to the line it directly flipped.
+          The perpendicular direction to the line is directly flipped.
           Flipping a vector is the same as multiplication by
           <m>-1</m>, so these vectors are eigenvectors with eigenvalue
           <m>\lambda = -1</m>. Since we can have at most two
-          eigenvalue, this finishes the argument. By construction, the
+          eigenvalues, this finishes the argument. By construction, the
           eigenvectors are perpendicular.
         </p>
         <p>
@@ -612,11 +612,10 @@
           eigenvalue <m>\lambda = 1</m> and one with eigenvalue
           <m>\lambda = -1</m>, then we can basically repeat the
           argument to give a reflection. One line is fixed, and the
-          line perpendicualr is flipped. Any other vector can be
+          line perpendicular is flipped. Any other vector can be
           written as a combination of the two eigenvectors: so a piece
-          along the line is preserved and the piece perpendicular to the
-          line is flipped. This is exactly a reflection over the fixed
-          line.
+          along the line is preserved, and the piece perpendicular to the
+          line is flipped. This is exactly a reflection over the fixed-line.
         </p>
       </solution>
     </activity>
@@ -629,7 +628,7 @@
           What are eigenvalues and eigenvectors?
         </li>
         <li>
-          How to determinants help to calculate eigenvalues?
+          How do determinants help to calculate eigenvalues?
         </li>
         <li>
           What is an eigenspace? What is a spectrum?
