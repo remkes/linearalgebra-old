@@ -26,8 +26,10 @@
         </p></li>
         <li><p>
           If we change only the survival from the first to the second
-          age category, when does the total survival of the species
-          change. (Adjusting the coefficient by tenths is fine). 
+          age category, how much do we need to change this coefficient
+          so that the population become viable? (Adjusting the
+          coefficient by tenths is fine, since you may need guess and
+          test the resulting eigenvalue.) 
         </p></li>
         <li><p>
           How does survival change if we are allowed to change both
@@ -89,7 +91,7 @@
         <li><p>
           How would you change only three coefficients to make is so
           that the long term behaviour is to eventually end at vertex
-          $5$ with probability $1$? 
+          <m>5</m> with probability <m>1</m>? 
         </p></li>
       </ol>
     </li>
