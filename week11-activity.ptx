@@ -12,7 +12,7 @@
           viable.
           <me>
             \left( \begin{matrix}
-              0 \amp 0 0.4 \amp 0.9 \amp \\
+              0 \amp 0 \amp 0.4 \amp 0.9 \amp \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.4 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 \\
@@ -33,9 +33,9 @@
             </mrow>
           </md>
           The popluation is not viable, since the eigenvalue is less
-          than one. 
-          The age ratios will approach <m>1.61:1.66:0.85:1</m> from
-          youngest to oldest. 
+          than one.  The age ratios will approach
+          <m>1.61:1.66:0.85:1</m> from youngest to oldest as the
+          population decays. 
         </p>
       </solution>
     </activity>
@@ -53,7 +53,7 @@
           coefficient into <m>0.7</m>
           <me>
             \left( \begin{matrix}
-              0 \amp 0 0.7 \amp 0.9 \amp \\
+              0 \amp 0 \amp 0.7 \amp 0.9 \amp \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.4 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 \\
@@ -63,7 +63,7 @@
           sufficient. Let me change the coefficient into <m>1.0</m>.
           <me>
             \left( \begin{matrix}
-              0 \amp 0 0.7 \amp 0.9 \amp \\
+              0 \amp 0 \amp 1.0 \amp 0.9 \amp \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.4 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 \\
@@ -74,7 +74,7 @@
           <m>2.0</m>.
           <me>
             \left( \begin{matrix}
-              0 \amp 0 2.0 \amp 0.9 \amp \\
+              0 \amp 0 \amp 2.0 \amp 0.9 \amp \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.4 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 \\
@@ -85,7 +85,7 @@
           coefficient into <m>3.0</m>.
           <me>
             \left( \begin{matrix}
-              0 \amp 0 2.0 \amp 0.9 \amp \\
+              0 \amp 0 \amp 3.0 \amp 0.9 \amp \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.4 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 \\
