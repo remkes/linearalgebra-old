@@ -16,7 +16,7 @@
       convenient to measure the system after some fixed time
       intervals. This interval is called a timestep. Finally, since
       the state is a vector in <m>\RR^n</m>, the change over one
-      timestep is a sequences of vectors.
+      timestep is a sequence of vectors.
       If the system is in state <m>v_k</m>, then after the next
       second/minute/day/year/timestep, in the next state <m>v_{k+1}</m>.
       The model is essentially a sequence <m>\{v_k\}_{k=1}^\infty</m>
@@ -25,7 +25,7 @@
     <p>
       How do we move from one state to the next?  If the process is
       linear, its progression can be described by a matrix
-      action. That it, there exists a matrix <m>A</m> such that
+      action. That is, there exists a matrix <m>A</m> such that
       <m>v_k = A v_{k+1}</m> for all <m>k \in \NN</m>. 
     </p>
     <definition>
@@ -51,7 +51,7 @@
       Another limitation is that each state of the dynamical system
       comes directly from the state before it by the matrix action.
       The matrix is the same for each transition, so the only thing
-      that effects any particular state is the state before it. A
+      that affects any particular state is the state before it. A
       dynamical system has no memory: states other than the directly
       previous state can have no effect on the next state. This again
       is good for some models, but many systems also build up some
@@ -62,7 +62,7 @@
     <title>Long Term Behaviour of Dynamical Systems</title>
     <p>
       When we build a dynamical system to model some situation in the
-      world, it's natural to ask about the long term behaviour of the
+      world, it's natural to ask about the long-term behaviour of the
       system. From a certain starting value, where will the dynamical
       system go? This question is mostly answered by eigenvectors and
       eigenvalues. 
@@ -73,9 +73,9 @@
       <m>A v=  \lambda v</m>. The matrix action is a change of state
       over a timestep. If the state is an eigenvector, then the only
       effect of the timestep is to multiply all the quantities in the
-      state vector by the same constant. What does this mean. First,
+      state vector by the same constant. What does this mean? First,
       it means that the <em>ratio</em> between the state quantities is
-      fixed. The values are changes, but if the state is an
+      fixed. The values are changed, but if the state is an
       eigenvector, the relative values of the quantities are fixed.
       This is a kind of stabilization. Second, the long term values
       are determined by <m>\lambda</m> in six cases.
@@ -89,7 +89,7 @@
         <li>
           <p>
             If <m>|\lambda| \lt 1</m>, then I have exponential decay.
-            The long term behaviour of <m>A^k v</m> is exponential decay
+            The long term behaviour of <m>A^k v</m> is an exponential decay
             of the original vector.
           </p>
         </li>
@@ -134,32 +134,32 @@
       reasons for this will have to wait for another course.
     </p>
     <p>
-      This is all well for eigenvectors, but what is the starting
-      state ins't an eigenvector? Well, the eigenvectors still end up
+      This is all well for eigenvectors, but what if the starting
+      state isn't an eigenvector? Well, the eigenvectors still end up
       controlling the long term behaviour, but it can get a bit more
-      complicated. Ideally, we have a full set of eigenvectors and we
+      complicated. Ideally, we have a full set of eigenvectors, and we
       can write any starting state <m>v</m> as a linear combination of
       eigenvectors <m>v = a_1 v_1 + a_2 v_2 + \ldots + a_n v_n</m>,
       where each eigenvector <m>v_i</m> has eigenvalue
-      <m>\lambda_i</m>/. Then, the long term behaviour of the system
+      <m>\lambda_i</m>. Then, the long term behaviour of the system
       with the starting state <m>v</m> is indeed given by the
       eigenvalue.
       <me>
         A^k v = A^k (a_1 v_1 + a_2 v_2 + \ldots + a_n v_n) = \lambda_1^k
         a_1 v_1 + \lambda_2^k a_2 v_2 + \ldots + \lambda_n^k a_n v_n 
       </me>
-      If any of the <m>\lambda_i</m> have absolute value less than
-      one, those terms will decay away. The eigenvalues which have
-      absolute value greater than one will growth. The largest
+      If any of the <m>\lambda_i</m> have an absolute value less than
+      one, those terms will decay away. The eigenvalues which have an
+      absolute value greater than one will grow. The largest
       eigenvalue (in absolute value) will lead to the largest growth,
-      to it will dominate.
+      so it will dominate.
     </p>
     <p>
-      This can still be quite complicated, particular if there are
-      many eigenvalue with absolute value greater than one. For a
+      This can still be quite complicated, particularly if there are
+      many eigenvalue with absolute values greater than one. For a
       completely arbitrary matrix <m>A</m>, it's pretty difficult to
       use this to understand the system. However, the types of
-      matrices which show up in dynmaical systems usually have special
+      matrices which show up in dynamical systems usually have special
       properties, which make for more predictable and understandable
       systems. 
     </p>
@@ -169,16 +169,16 @@
       <em>positive</em> real numbers. <m>A</m> will very often be a
       matrix with all non-negative entries. There is a powerful theorem
       that tells us what to expect for the eigenvalues/eigenvectors of
-      such a matirx: the Perron-Frobenius theorem. There are some
+      such a matrix: the Perron-Frobenius theorem. There are some
       technical details in the assumptions for the theorem; we'll state
       a weak version first.
     </p>
     <theorem>
       <statement>
         <p>
-          Let <m>A</m> be a <m>n\times n</m> matrix with non-negative
+          Let <m>A</m> be an <m>n\times n</m> matrix with non-negative
           coefficients. Then there is a largest non-negative eigenvalue
-          <m>\lambda_1</m> with an eigenvector which has all
+          <m>\lambda_1</m> with an eigenvector that has all
           non-negative entries. All other eigenvalues <m>\lambda</m>
           satisfy <m>|\lambda| \leq |\lambda_1|</m>.
         </p>
@@ -200,17 +200,17 @@
     <p>
       This definition roughly captures the idea that all the
       coefficients in the states are somehow related. Using the
-      defitinion, here is a stronger version of the Perron-Frobenius
+      definition, here is a stronger version of the Perron-Frobenius
       theorem.
     </p>
     <theorem>
       <statement>
         <p>
-          Let <m>A</m> be a <m>n \times n</m> irreducible matrix with
-          non-negative coefficients. There there is a <em>unique</em>
+          Let <m>A</m> be an <m>n \times n</m> irreducible matrix with
+          non-negative coefficients. There is a <em>unique</em>
           largest <em>positive</em> eigenvalue <m>\lambda_1</m> with a
-          1-dimensional eigenspace and an eignevector which has all
-          <em>positive</em> entires. All other eigenvalues
+          1-dimensional eigenspace and an eigenvector that has all
+          <em>positive</em> entries. All other eigenvalues
           <m>\lambda</m> satisfy <m>|\lambda| \lt |\lambda_1|</m>.
           Moreover, if <m>r_i</m> is the sum of the entries of <m>A</m>
           in the <m>i</m>th row, then <m>\lambda</m> is bounded above
@@ -223,7 +223,7 @@
       For dynamical systems with irreducible non-negative matrices,
       the long term behaviour is really controlled and understood by
       this unique largest positive eigenvalue and the corresponding
-      eigenvector. You will see this clearly in the next section where
+      eigenvector. You will see this clearly in the next section, where
       I develop the theory of Leslie matrices, a nice example of a
       dynamical system.
     </p>

@@ -28,7 +28,7 @@
           If we change only the survival from the first to the second
           age category, how much do we need to change this coefficient
           so that the population become viable? (Adjusting the
-          coefficient by tenths is fine, since you may need guess and
+          coefficient by tenths is fine since you may need guess and
           test the resulting eigenvalue.) 
         </p></li>
         <li><p>
@@ -52,7 +52,7 @@
             0 \amp 0 \amp 0 \amp 0 \amp b \amp 0 \\ 
           \end{pmatrix}
         </me>
-        Assume this ia model for an invasive species, so the goal is
+        Assume this is a model for an invasive species, so the goal is
         exponential decay. By affecting the environment, you are able
         to change the coefficients <m>a</m> and <m>b</m>. To the
         nearest hundredth, how small do you need to set <m>a</m> to
@@ -73,7 +73,7 @@
       <p>
         <xref ref="figure-assignment-markov" /> shows a probability
         graph with four transition probabilities <m>C_1</m>,
-        <m>C_2</m>, <m>C_3</m> and <m>C_4</m> underemined. (9)
+        <m>C_2</m>, <m>C_3</m> and <m>C_4</m> undetermined. (9)
       </p>
       <ol>
         <li><p>
@@ -89,7 +89,7 @@
           vertex. 
         </p></li>
         <li><p>
-          How would you change only three coefficients to make is so
+          How would you change only three coefficients to make it so
           that the long term behaviour is to eventually end at vertex
           <m>5</m> with probability <m>1</m>? 
         </p></li>

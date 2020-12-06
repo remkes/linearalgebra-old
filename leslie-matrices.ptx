@@ -3,10 +3,10 @@
   <subsection xml:id="subsection-leslie-introduction">
     <title>Age-Structured Polupations</title>
     <p>
-      One of the starting point of mathematical biology is the study
+      One of the starting points of mathematical biology is the study
       of population growth. Though many of the most interesting
-      systmes involve multiples spieces with various interactions
-      (symbiosic, competition, predator-prey, etc), theory starts with
+      systems involve multiple species with various interactions
+      (symbiotic, competition, predator-prey, etc.), the theory starts with
       single-species dynamics. How does a species grow or decline when
       considered by itself? For those who've taken calculus with me, I
       used population growth as a major motivator for that course,
@@ -14,14 +14,14 @@
       exponential and logistic growth. 
     </p>
     <p>
-      Someimtes we want to know more details about the population than
-      simply the count of it member. One way of describing a
+      Sometimes we want to know more details about the population than
+      simply the count of its members. One way of describing a
       population is by age categories; this is called an
       age-structured population. This is pretty common in human
       geography, where the population of a country (or other human
-      group) is give in ten-year increments. (Usually, these graphs
+      groups) is given in ten-year increments. (Usually, these graphs
       are segregated by sex as well.) This can also be very useful in
-      animal population, since there are often important age-defined
+      animal populations since there are often important age-defined
       subsets that control the growth or decline of a population. In
       conservation biology, resources can be much more carefully used
       if we know we need to focus on a specific age category in a
@@ -30,10 +30,10 @@
     <p>
       In the simplest single-species models, I simply have a birth
       and death rate. For an age-structured population, the situation
-      is more complicated. Instead of just asking for death rate, I
+      is more complicated. Instead of just asking for the death rate, I
       now need to know the survival rate from each age category to the
       next (assuming that no one survives from the oldest age
-      category). If there are <m>n</m> agea categories, that's
+      category). If there are <m>n</m> age categories, that's
       <m>(n-1)</m> survival rates (again, excluding the oldest age
       category). Likewise, instead of a generic birth rate, I need to
       know the birth rate due to each age category. These are called
@@ -50,16 +50,16 @@
   <subsection xml:id="subsection-leslie-definition">
     <title>Leslie Matrices</title>
     <p>
-      Leslie matrices are a dynamical system which model
+      Leslie matrices are a dynamical system that models
       an age-structured population. To demonstrate, I'll
       assume there are four age categories. The state vector
       <m>v_k</m> is the current population in each age category: so
       that <m>v_1</m> is the population of the youngest category,
-      <m>v_2</m> of the next, <m>v_2</m> of the next, and finally
+      <m>v_2</m> of the next, <m>v_3</m> of the next, and finally
       <m>v_4</m> of the oldest category. The matrix <m>C</m>, called a
-      Leslie matrix, is a <m>4 \times 4</m> matrix and the action of a
-      matrix (like for all dynamical systems) take a state vector and
-      move it ahead by one time step. If I use coordinates
+      Leslie matrix, is a <m>4 \times 4</m> matrix, and the action of a
+      matrix (like for all dynamical systems) takes a state vector and
+      moves it ahead by one time step. If I use coordinates
       <m>w,x,y,z</m> in <m>\RR^4</m>, here is the dynamical system.
       <me>
         \begin{pmatrix} 
@@ -79,29 +79,29 @@
     <p>
       Nine of the entries must be set to zero, since they are age
       categories that cannot transfer to other age categories in one
-      time step (i.e., something in age category 1 can't jump directly
+      time step (i.e., something in age category 1 cannot jump directly
       to age category 4, nor can something in the 3rd age category
       suddenly get younger and move into the 2nd age category). I want
-      to interpret the remaining 7 non-zero entire. The first row
+      to interpret the remaining 7 non-zero entries. The first row
       outputs to the first category, representing the creation of new
       members of the population. Each <m>f_i</m> is the
       <em>fecundity</em> of each population state: its rate of
-      producing offspring. Of course, some of these might be zero, if
+      producing offspring. Of course, some of these might be zero if
       only certain age categories produce offspring. The <m>s_i</m>,
       on the other hand, are transitions from one age category to the
       next. These are <em>survival rates</em>: <m>s_1</m> is the rate
-      of survival from cateogry <m>1</m> to category <m>2</m>,
+      of survival from category <m>1</m> to category <m>2</m>,
       <m>s_2</m> from category <m>2</m> to <m>3</m> and <m>s_3</m>
       from category <m>3</m> to <m>4</m>.
     </p>
     <p>
-      These Leslie matrices are irreducible (recall that ireeducible
+      These Leslie matrices are irreducible (recall that irreducible
       meant that each state connects to the other; by survival and
       fertility, it is possible to pass from any age category to another
       over several years). This means that there is a unique largest
       eigenvalue <m>\lambda</m> with a positive eigenvector. This is
       the value I care about: in the long run, the largest eigenvalue
-      dominates and its eigenvector gives the stable age distribution.
+      dominates, and its eigenvector gives the stable age distribution.
       If <m>\lambda = 1</m>, I expect a stable population. If
       <m>\lambda > 1</m>, I expect exponential growth, and if
       <m>\lambda \lt 1</m> I expect exponential decay. In addition,
@@ -175,7 +175,7 @@
             <mrow>
               \amp \lambda = 1.03
               \amp \amp v = \left( \begin{matrix}
-                2.15 \amp 1.68 \amp 1.49 \amp 1
+                2.15 \\ 1.68 \\ 1.49 \\ 1
               \end{matrix} \right) 
             </mrow>
           </md>
@@ -217,7 +217,7 @@
           </md>
           This is a viable population; since the dominant eigenvalue
           is positive, this population will grow. That said, since the
-          dominant eigenvalue is only slighly above 1, the population
+          dominant eigenvalue is only slightly above 1, the population
           growth will be relatively slow. As the population grows, the
           age ratios will approach <m>3.21:1.27:1.16:1</m>. 
         </p>
@@ -285,9 +285,9 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          The poluation is viable, since the dominant eigenvalue is
+          The population is viable, since the dominant eigenvalue is
           greater than 1. The age ratios will approach
-          <m>79.63:1.92:1.38:1</m>. Even with the reduced fecudity
+          <m>79.63:1.92:1.38:1</m>. Even with the reduced fecundity
           coefficient (significantly reduced!), the population is
           still viable. 
         </p>
@@ -320,7 +320,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          The poluation is not viable, since the dominant eigenvalue
+          The population is not viable, since the dominant eigenvalue
           is less than 1. The age ratios will approach
           <m>89.01:0.99:1:1</m>. Compared to the previous example,
           the viable population has now become non-variable. The only

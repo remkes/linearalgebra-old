@@ -6,7 +6,7 @@
       Dynamical systems are good at modelling certainly probability
       situations. Like all dynamical systems, there is a vector <m>v
       \in \RR^n</m> of the states of the system. In a probability
-      model, the states represent possibilities of the system and in
+      model, the states represent possibilities of the system, and in
       each time step, the system can transition from one state to
       another. (This is different from previous examples, where the
       states represented different but interacting quantities). The
@@ -64,11 +64,11 @@
       there is a <m>40\%</m> probability that it transitions to vertex
       <m>2</m> (the arrow pointing from vertex <m>1</m> to vertex <m>2</m>;
       and a <m>40\%</m> probability that it transition to vertex
-      <m>3</m> (the arror pointing from vertex <m>1</m> to vertex
-      <m>3</m>). The total probability going out of vertex <m>1</m> is
-      <m>100\%</m>. You can check the same it true for the other
+      <m>3</m> (the arrow pointing from vertex <m>1</m> to vertex
+      <m>3</m>). The total probability of going out of vertex <m>1</m> is
+      <m>100\%</m>. You can check the same is true for the other
       vertices: the outgoing probabilities always add to <m>1</m>. The
-      ingoing probability do not need to satisfy this.
+      incoming probability does not need to satisfy this.
     </p>
     <p>
       Now let me write this as a matrix action. The vector <m>v_k =
@@ -99,15 +99,15 @@
       that I mentioned in the previous paragraph, that the outgoing
       probabilities from any vertex must add to one. The columns are
       all the outgoing probabilities from a vertex. The rows are all
-      the ingoing probabilities for a vertex. 
+      the incoming probabilities for a vertex. 
     </p>
     <p>
       Let me be even more explicit with this example. Say that we
-      start on vertex <m>2</m> with probability <m>1</m>. That means
+      start on vertex <m>2</m> with probability <m>1</m>. This means
       the starting vector is <m>v_0 = \begin{pmatrix} 0 \\ 1 \\ 0
       \end{pmatrix}</m>. What happens to this as the system changes over a
-      series of timestep. Calculating the matrix action, here is the
-      sequences of states. (I've not written the matrix actions, which
+      series of timesteps. Calculating the matrix action, here is the
+      sequence of states. (I've not written the matrix actions, which
       I calculated by computer.)
       <md>
         <mrow>
@@ -135,11 +135,11 @@
           \end{pmatrix}, \ldots 
         </mrow>
       </md>
-      It looks like this might be stabilitizing into a set
+      It looks like this might be stabilizing into a set
       list of probabilities, with a roughly <m>30\%</m> chance that
-      we end up at vertex <m>1</m>; a roughly <m>33\%</m> change
-      that we end up back at vertext <m>2</m>; and a roughly
-      <m>37\%</m> change that we end up at vertex <m>3</m>
+      we end up at vertex <m>1</m>; a roughly <m>33\%</m> chance
+      that we end up back at vertex <m>2</m>; and a roughly
+      <m>37\%</m> chance that we end up at vertex <m>3</m>
     </p>
     <p>
       Hopefully this example helped to illustrate the idea of
@@ -158,7 +158,7 @@
         <p>
           A vector <m>v \in \RR^n</m> is a <term>probability
           vector</term> or a <term>stochastic vector</term> if all it
-          entries <m>v_i</m> are non-negtaive and all these entire sum
+          entries <m>v_i</m> are non-negative and all these entires sum
           to <m>1</m>.
         </p>
       </statement>
@@ -168,18 +168,18 @@
         <p>
           A non-negative <m>n \times n</m> matrix where all the columns
           sum to one is called a <term>(left) stochastic matrix</term>.
-          (There is a similar definition of a righ stochastic matrix
+          (There is a similar definition of a right stochastic matrix
           where all the rows sum to one; it is, in fact, the more common
           definition. However, it doesn't mesh that well with our
-          conventions of columns vectors and matrix actions, so we will
-          work with left stochastic matrices and surpress the word
+          conventions of column vectors and matrix actions, so we will
+          work with left stochastic matrices and suppress the word
           <sq>left</sq> in what follows.)
         </p>
       </statement>
     </definition>
     <p>
       These vectors and matrices are the appropriate matrices for
-      probability models, for the following reason (which I present
+      probability models for the following reason (which I present
       without proof for now).
     </p>
     <proposition>
@@ -192,9 +192,9 @@
       </statement>
     </proposition>
     <p>
-      Stochastic vector are those which make sense for probabilities.
+      Stochastic vectors are those which make sense for probabilities.
       This proposition tells us that the matrix action of a stochastic
-      matrix preserve this, so the vectors can still be  interpreted as
+      matrix preserves this, so the vectors can still be interpreted as
       probabilities after the matrix action. With this proposition, 
       I can define the particular type of dynamical system I am
       presenting in this section
@@ -203,35 +203,36 @@
       <statement>
         <p>
           A <term>Markov chain</term> is a linear dynamical system
-          where the the matrix <m>A</m> is a stochastic matrix and the
+          where the the matrix <m>A</m> is a stochastic matrix, and the
           starting state <m>v</m> is a stochastic vector. 
         </p>
       </statement>
     </definition>
     <p>
       Now that they are defined, I want to understand the dynamics and
-      long term behaviour of Markov chains.
+      the long term behaviour of Markov chains.
     </p>
   </subsection>
   <subsection xml:id="subsection-markov-longterm">
+    <title>Markov Longterm Behaviour</title>
     <p>
-      The example that we did above, it looked like the probabilities
+      In the example that we did above, it looked like the probabilities
       were approaching a stable configuration. Can we know that they
       are doing so? Can we expect that they are always doing so? The
       answers to this depend on the long-term behaviour of the Markov
-      chain, which we analyze using eigenvalues and eigenvector. 
+      chain, which we analyze using eigenvalues and eigenvectors. 
     </p>
     <p>
-      A stochastic matrix has all non-negative entires, so it
-      satisfies the weak for of Perron-Frobenius. It is not guaranteed
+      A stochastic matrix has all non-negative entries, so it
+      satisfies the weak form of Perron-Frobenius. It is not guaranteed
       to be irreducible. However, for our purposes, we can mostly
       restrict to only irreducible stochastic matrices. Thinking in terms of
       probability graphs, like the starting example, the stochastic
       matrix will be irreducible as long as the graph is connected and
       has no dead ends: that is, there is a path from any vertex to
       any other vertex. If the graph is disconnected, there the
-      varioius disconnected pieces are essentially independent
-      probability problems and we could treat them individually. We
+      various disconnected pieces are essentially independent
+      probability problems, and we could treat them individually. We
       will have an example later with dead ends, which I'll deal with
       when we get there. Otherwise, I will assume irreducible
       matrices.
@@ -241,13 +242,13 @@
       stochastic matrix will have a unique largest positive eigenvalue
       with a matching vector with all positive entries. However, since
       stochastic matrices are a very special matrix form, there is an
-      even stronger result, which I present without proof.
+      even stronger result, which I present here without proof.
     </p>
     <proposition>
       <statement>
         <p>
           Let <m>A</m> be an irreducible stochastic matrix. Then the
-          dominant eigenvalue is <m>\lambda = 1</m> and all other
+          dominant eigenvalue is <m>\lambda = 1</m>, and all other
           eigenvalues (real or complex) have <m>|\lambda| \lt 1</m>.
         </p>
       </statement>
@@ -256,18 +257,18 @@
       Since we can scale the eigenvector <m>v</m> matching <m>
       \lambda = 1</m> as we wish, we can choose <m>v</m> such that it
       is a stochastic vector. Since all other eigenvalues have
-      <m>|lambda| \lt 1</m>, their contributions to the system will
+      <m>|\lambda| \lt 1</m>, their contributions to the system will
       decay over time. The long term probability behaviour is given by
       the coefficients of this vector <m>v</m>. This is
       <em>independent</em> of the starting situation. Markov chains
       (at least with connected probability graphs) will stabilize to a
-      fixed probability distribution regardless of the starting state,
+      fixed probability distribution regardless of the starting state
       (though it might take longer to converge depending on where we
       start). 
     </p>
     <p>
       This is a pretty good description of the long term behaviour of
-      a Markov chain. We just need to calculate the interpret the
+      a Markov chain. We just need to calculate and interpret the
       dominant eigenvector. 
     </p>
   </subsection>
@@ -344,8 +345,8 @@
           </me>
           This gives me the long-term probability distribution. There
           is an approximately <m>45.2\%</m> chance of ending up on
-          vertex <m>1</m>, an approximately <m>13.6\%</m> change of
-          ending up on vertext <m>2</m>, and an approximately
+          vertex <m>1</m>, an approximately <m>13.6\%</m> chance of
+          ending up on vertex <m>2</m>, and an approximately
           <m>41.2\%</m> chance of ending up on vertex <m>3</m>.
         </p>
       </solution>
@@ -415,7 +416,7 @@
         <p>
           <xref ref="figure-markov3" /> shows a probability graph.
           (Any connections without lines between vertices have
-          probability zero). Calculate the long term probability of
+          probability zero). Calculate the long-term probability of
           ending up in each vertex. 
         </p>
       </statement>
@@ -444,7 +445,7 @@
             \end{pmatrix}
           </me>
           This gives me the long-term probability distribution. The
-          approximate percentage change of ending at each vertex is,
+          approximate percentage chance of ending at each vertex is,
           in order, <m>26.1\%</m>, <m>42.6\%</m>, <m>1.1\%</m>,
           <m>3.5\%</m> and <m>26.7\%</m>. 
         </p>
@@ -454,21 +455,21 @@
   <subsection xml:id="subsection-games-of-change">
     <title>Games of Chance</title>
     <p>
-      Probablistic modles like Markov chains are common very types
+      Probablistic models like Markov chains are very common types
       of game theory. In this section, I want to look at very simple
       games of chance (though the theory extends well to more
       complicated games). I want to build to a useful (and possibly
-      morally interesting) example called the Gambler's Ruin
+      morally interesting) example called the Gambler's Ruin.
     </p>
     <p>
       I am going to model a pretty simple game of chance. In this
       game, there is a set stake that can be won or lost in each
-      round (each timestep, in the model). In each round, there is a
+      round (each time step, in the model). In each round, there is a
       winning and losing probability, which doesn't depend on
       anything else. The player starts with some multiple of the
       stake, which will give the vertices on our graph. Then there
       is a stopping condition: the player stops either when they get
-      to zero stakes or they get to some winning number of stakes. 
+      to zero stakes, or they get to some winning number of stakes. 
     </p>
     <p>
       I'll start with a winning condition of <m>4</m> stakes. That
@@ -480,7 +481,7 @@
       is a probability of winning (going up a stake) and losing
       (going down a stake). <xref ref="figure-gamblers1" /> shows the
       probability graph for this game, with <m>W</m> being the
-      winning probability and <m>L</m> being the losing probability. 
+      win probability and <m>L</m> being the loss probability. 
     </p>
     <figure xml:id="figure-gamblers1">
       <caption>Probability Graph for a Game of Chance</caption>
@@ -542,7 +543,7 @@
     </p>
     <p>
       Now we need to work out the model with actual winning and losing
-      percentages. First, let's start with a complete fair game, so
+      percentages. First, let's start with a completly fair game so
       that <m>W = 0.5</m> and <m>L = 0.5</m>. Here is that stochastic
       matrix.
       <me>
@@ -556,10 +557,10 @@
       </me>
       I asked a computer for the dominant eigenvalues.
       This is a little tricky, since there are
-      actually two linearly independent eigenvalue. (The problem is
+      actually two linearly independent eigenvalueS. (The problem is
       that this matrix is not actually irreducible, since there is no
       path from vertex <m>0</m> to vertex <m>4</m> <emdash /> this is a
-      dead end). Here are the two eigenvectors
+      dead-end). Here are the two eigenvectors
       <md>
         <mrow>
           \amp \begin{pmatrix}
@@ -574,15 +575,15 @@
       state, we stay there. However, what if we start in the middle?
       The final state will be some linear combination of these
       eigenvectors: some probability of the final winning and the
-      final losing state. What what linear combination? For this
+      final losing state. What linear combination? For this
       Markov model, we'll have to rely on actually calculating the
       matrix action. What I'll do is calculate the state after twenty
-      iteration. That won't be a perfect final result, but will give
+      iterations. That won't be a perfect final result but will give
       us a pretty good idea of what is going on. 
     </p>
     <p>
       For this fair game, we can start with <m>1</m>, <m>2</m> or
-      <m>3</m> staked. I asked a computer to calculate the
+      <m>3</m> stakes. I asked a computer to calculate the
       probabilities after twenty iterations for each of these starting
       points. 
       <md>
@@ -635,9 +636,9 @@
       This is something we can interpret. If we round to whole
       percentages (or even tenths), the situation is pretty clear.
       Starting with one stake, we have a <m>25\%</m> chance of winning
-      and a <m>75\%</m> change of losing. Starting with two stakes, we
+      and a <m>75\%</m> chance of losing. Starting with two stakes, we
       have an equal chance of winning and losing. Starting with three
-      states, we have an a <m>75\%</m> chance of winning and a
+      stakes, we have a <m>75\%</m> chance of winning and a
       <m>25\%</m> chance of losing. This seems pretty reasonable. 
     </p>
     <p>
@@ -697,7 +698,7 @@
       So we change the fairnes of the game by <m>2\%</m>. The effect
       on the final winning percentages is about <m>3\%</m> starting
       with one or three stakes, and <m>4\%</m> for starting with two
-      stakes. The effect is slightly exagerated. 
+      stakes. The effect is slightly exaggerated. 
     </p>
     <p>
       What about if I make the game very unfair. Let me set <m>W =
@@ -757,12 +758,12 @@
   <subsection xml:id="subsection-gamlbers-ruin">
     <title>The Gambler's Ruin</title>
     <p>
-      Now I'm am going to return to the fair game, with <m>W = L =
-      0.5</m>. Instead of changing the fairness of the game, I'm not
+      Now I am going to return to the fair game, with <m>W = L =
+      0.5</m>. Instead of changing the fairness of the game, I'm 
       going to change the stopping condition. Let's say we always
-      start with <m>2</m> stakes, but change the numer of stakes at
+      start with <m>2</m> stakes but change the number of stakes at
       which we stop playing. In the original game, having <m>2</m>
-      lead to a winning percentage of 
+      led to a winning percentage of 
       <m>50\%</m>. Let me increase the stopping condition to five
       stakes. Here is the new matrix, with the action (with twenty
       iterations) on the starting vector with <m>w</m> stakes.
@@ -782,7 +783,7 @@
           0.5924 \\ 0 \\ 0.0104 \\ 0 \\ 0.0065 \\ 0.3907
         \end{pmatrix} 
       </me>
-      This hasn't entirely stabilized after twenty iteration, but we
+      This hasn't entirely stabilized after twenty iterations, but we
       can see that the winning percentage has dropped from <m>50\%</m>
       to somewhere around <m>39\%</m>. Now I will increase the
       stopping condition to six stakes and rerun the system (I'll need
@@ -810,19 +811,19 @@
     </p>
     <p>
       I can continue this process (though doing the calculations, even
-      by computer, becomes pretty tedious. However, I hope this is
-      enough to make the point. If I play a fair game with a fixed
+      by computer, becomes pretty tedious; however, I hope this is
+      enough to make the point). If I play a fair game with fixed
       starting stakes, as the stopping point increases, the winning
-      chance from the fixed starting point drop. In the the limit (as
-      the stopping condition goes to inifnity) the winning change will
+      chance from the fixed starting point drops. In the limit (as
+      the stopping condition goes to infinity) the winning chance will
       drop to zero. If we take the limit and let the stopping
       condition go to infinity, it actually doesn't matter what the
-      starting number of stakes it -- the winning percentage will
+      starting number of stakes is -- the winning percentage will
       still eventually drop to zero.
     </p>
     <p>
-      This is called the Gambler's Ruin. It say that even if you play
-      a perfectly fair game indefinitly, you will eventually lose with
+      This is called the Gambler's Ruin. It says that even if you play
+      a perfectly fair game indefinitely, you will eventually lose with
       <m>100\%</m> probability. 
     </p>
   </subsection>

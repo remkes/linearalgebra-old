@@ -28,13 +28,13 @@
             <mrow>
               \amp \lambda = 0.77
               \amp \amp v = \left( \begin{matrix}
-                1.61 \\ 1.66 \\ 0.85 \\ 1
+                1.61 \\ 1.66 \\ 0.86 \\ 1
               \end{matrix} \right) 
             </mrow>
           </md>
-          The popluation is not viable, since the eigenvalue is less
+          The population is not viable, since the eigenvalue is less
           than one.  The age ratios will approach
-          <m>1.61:1.66:0.85:1</m> from youngest to oldest as the
+          <m>1.61:1.66:0.86:1</m> from youngest to oldest as the
           population decays. 
         </p>
       </solution>
@@ -127,7 +127,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          The popluation is (not) viable
+          The population is (not) viable
           The age ratios will approach <m>2731.2:113.2:14.1:1</m> from
           youngest to oldest. 
         </p>
@@ -212,7 +212,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          The popluation is not viable, since the dominant eigenvalue
+          The population is not viable, since the dominant eigenvalue
           is less than 1.  The age ratios will approach
           <m>1.12:1.16:1.02:1</m> from youngest to oldest.
         </p>
@@ -491,7 +491,6 @@
           </me>
           Then I calculate (by computer) the dominant eigenvector.
           <me>
-            8.5
             \begin{pmatrix}
             0.3529 \\ 0.2647 \\ 0.1764 \\ 0.0882 \\ 0.1176
             \end{pmatrix}
@@ -513,7 +512,7 @@
           used at the end of <xref ref="section-stochastic" />.
           Instead of looking at the long run probability of winning,
           what is the probability of still playing after 5 rounds when
-          starting from <m>1</m>, <m>2</m> or <m>3</m> statkes. What
+          starting from <m>1</m>, <m>2</m> or <m>3</m> stakes. What
           about after 10 rounds?
           <figure xml:id="figure-markov-activity4">
             <caption>Probability Graph 4</caption>
