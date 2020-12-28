@@ -31,27 +31,27 @@
     </p>
     <proposition>
       <statement>
-        Any two reflections in <m>\RR^2</m> commute. 
+        Any two rotations in <m>\RR^2</m> commute. 
       </statement>
       <proof>
         <p>
           To commute means that if the order of the composition (or
           matrix multiplication) is reversed, the outcome is the same.
           That is, if <m>A</m> and <m>B</m> are the matrix
-          representations of two reflections, then <m>AB = BA</m> is a
+          representations of two rotations, then <m>AB = BA</m> is a
           true statement about matrix multiplication. 
         </p>
         <p>
           I want my proof to be completely general, so I want to work
-          with arbitrary reflections. Let's say that <m>A</m> is a
-          reflection by the angle <m>\theta</m>, so it has the matrix
+          with arbitrary rotations. Let's say that <m>A</m> is a
+          rotations by the angle <m>\theta</m>, so it has the matrix
           <me>
             \begin{pmatrix}
               \cos \theta \amp - \sin \theta \\
               \sin \theta \amp \cos \theta
             \end{pmatrix}
           </me>.
-          Let's also say that <m>B</m> is a reflection by the angle
+          Let's also say that <m>B</m> is a rotations by the angle
           <m>\phi</m>, so it has the matrix. 
           <me>
             \begin{pmatrix}
