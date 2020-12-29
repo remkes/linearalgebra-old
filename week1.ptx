@@ -5,6 +5,6 @@
   <xi:include href="vector-arithmetic.ptx" />
   <xi:include href="higher-dimensions.ptx" />
   <xi:include href="writing-proofs.ptx" />
-  <xi:include href="proofs-week1.ptx" />
+  <xi:include href="week1-proofs.ptx" />
   <xi:include href="week1-activity.ptx" />
 </chapter>

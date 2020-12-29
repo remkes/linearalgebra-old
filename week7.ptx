@@ -4,7 +4,7 @@
   <xi:include href="inversion.ptx" />
   <xi:include href="transformations-of-spans.ptx" />
   <xi:include href="kernels-and-images.ptx" />
-  <xi:include href="proofs-week7.ptx" />
+  <xi:include href="week7-proofs.ptx" />
   <xi:include href="week7-activity.ptx" />
 </chapter>
 

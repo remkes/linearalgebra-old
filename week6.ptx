@@ -5,6 +5,6 @@
   <xi:include href="matrices-and-transformations.ptx" />
   <xi:include href="r2-examples.ptx" />
   <xi:include href="r3-examples.ptx" />
-  <xi:include href="proofs-week6.ptx" />
+  <xi:include href="week6-proofs.ptx" />
   <xi:include href="week6-activity.ptx" />
 </chapter>

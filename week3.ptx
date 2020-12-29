@@ -4,6 +4,6 @@
   <xi:include href="spans.ptx" />
   <xi:include href="loci.ptx" />
   <xi:include href="equations-of-planes.ptx" />
-  <xi:include href="proofs-week3.ptx" />
+  <xi:include href="week3-proofs.ptx" />
   <xi:include href="week3-activity.ptx" />
 </chapter>
