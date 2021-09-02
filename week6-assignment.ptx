@@ -1,6 +1,15 @@
 <!--
-  This assignment was used for the Fall 2020 term.
+  This assignment was used for the Fall 2021 term.
 -->
+<section xml:id="section-assignment-week6">
+  <title>Week 6 Assignment</title>
+  <p><ol>
+    <li>
+    </li>
+  </ol></p>
+</section>
+
+<!-- Previous Assignment
 <section xml:id="section-assignment-week6">
   <title>Week 6 Assignment</title>
   <p><ol>
@@ -8,7 +17,7 @@
       <p>
         Find a linear transformation of <m>\RR^2</m> for each of the
         following conditions. (Give evidence or reasons for your
-        choice -- just writing down a matrix is not sufficient.) (15)
+        choice; just writing down a matrix is not sufficient.) (15)
         <ol>
           <li><p>
             A transformation that exchanges <m>\begin{pmatrix} -1 \\0
@@ -61,3 +70,4 @@
     </li>
   </ol></p>
 </section>
+-->

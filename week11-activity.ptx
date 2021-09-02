@@ -716,10 +716,47 @@
       </solution>
     </activity>
   </subsection>
+  <subsection xml:id="subsection-activity-linear-recurrence">
+    <title>Linear Recurrence Relations</title>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear recurrence relation with starting values
+          <m>a_1 = 1</m> and <m>a_2 = 3</m>. 
+          <me>
+            a_{n+2} = 4a_{n+1} - 2a_n
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Solve this linear recurrence relation with starting values
+          <m>a_1 = 1</m> and <m>a_2 = 1</m>. 
+          <me>
+            a_{n+2} = \frac{1}{5} a_{n+1} + \frac{1}{3} a_n
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
   <subsection xml:id="subsection-week11-concepts">
     <title>Conceptual Review Questions</title>
     <p>
       <ul>
+        <li>
+          What is a recurrence relation and how it is translated into
+          a matrix?
+        </li>
         <li>
           What is a dynamical system? What does it mean for such a
           system to be discrete and linear?
@@ -736,6 +773,10 @@
         </li>
         <li>
           What is a Markov chain and how does it model probability?
+        </li>
+        <li>
+          What is a recurrence relation and how it is translated into
+          a matrix?
         </li>
       </ul>
     </p>
