@@ -131,9 +131,12 @@
       to the right, and the <m>y</m> axis vertically, with a positive
       direction upwards. For <m>\RR^3</m>, the <m>x</m> and <m>y</m>
       axes form a flat plane, and the <m>z</m> axis extends vertically
-      from that plane, as shown in <xref
-      ref="figure-points-in-three-space" />. 
+      from that plane. 
+      <!-- 
+        as shown in <xref ref="figure-points-in-three-space" />. 
+      -->
     </p>
+    <!--
     <figure xml:id="figure-points-in-three-space">
       <caption>Points in <m>\RR^3</m></caption>
       <image xml:id="figure02" width="80%">
@@ -155,6 +158,7 @@
         </asymptote>
       </image>
     </figure>
+    -->
     <definition>
       <statement>
         <p>

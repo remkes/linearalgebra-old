@@ -5,48 +5,36 @@
   <title>Week 1 Assignment</title>
   <p><ol>
     <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week1">
-  <title>Week 1 Assignment</title>
-  <p><ol>
-    <li>
       <p>
-        An ellipse is determined by a centre point, a greatest
-        distance to the edge <m>a</m> in some direction and a least
-        distance to the edge <m>b</m> in the perpendicular direction
-        to the first. This produces an oval shape <mdash /> a circle
-        if the two distances are the same. If the centre is the
-        origin, the large distance is along the <m>x</m> axis, and the
-        small distance is along the <m>y</m> axis, then the equation
-        of the ellipse is 
-        <me>
-          \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 
-        </me>.
-        How does the ellipse generalize to <m>\RR^3</m>, <m>\RR^4</m>
-        and higher-dimensional spaces? How much information is needed
-        to determine the object (how many constants like the numbers
-        <m>a</m> and <m>b</m>)? (4)
+        A <m>n</m>-cross polytope contains lower dimensional
+        cross-polytopes as facets, the same way that the cube contains
+        the lower dimensional square as faces. One way to identify
+        these facets is through vertex diagrams. Draw three copies of
+        the vertex diagram for the <m>5</m>-cross polytope. In each
+        copy, using a highlighter or thicker pen, identify an
+        octahedron by finding a copy of the octahedron vertex diagram
+        in the larger vertex diagram. (Obviously, find three different
+        octahedra <mdash /> don't just repeat the same drawing). Even
+        though you can't see the six dimensional object, this is still
+        a consistent and valid way to find a three-dimensional object
+        that forms part of the <sq>edge</sq> of the six dimensional
+        object. (6) 
       </p>
     </li>
     <li>
       <p>
-        How many vertices does the <m>n</m>-dimensional cube have?
+        How many faces does the <m>n</m>-dimensional cube have?
         (Make sure you give your reasoning based on the construction
         of these cubes described in the videos and notes.) (4)
       </p>
     </li>
     <li>
       <p>
-        Prove that vector addition is associative. (I said in the
-        notes that this is very similar to the proof for
-        commutativity. You can follow the structure of that proof).
-        (6) 
+        Prove that scalar multiplication distributes over vector
+        subtraction. (Note notes that this is very similar to the
+        proof for commutativity. You can follow the structure of that
+        proof). (6) 
       </p>
     </li>
   </ol></p>
 </section>
--->

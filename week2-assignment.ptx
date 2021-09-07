@@ -5,41 +5,31 @@
   <title>Week 2 Assignment</title>
   <p><ol>
     <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week2">
-  <title>Week 2 Assignment</title>
-  <p><ol>
-    <li>
       <p>
-        Prove that all vectors <m>\begin{pmatrix} w \\ x \\ y \\ z
-        \end{pmatrix} \in \RR^4</m> which satisfy <m>4w - 2x + 6y + 2z
-        = 0 </m> are orthogonal to the vector <m>\frac{1}{2}
-        \begin{pmatrix} -2 \\ 1 \\ -3 \\ -1 \end{pmatrix} </m>. (4)
+        Let <m>a</m> and <m>b</m> be any real numbers. Prove that all
+        vectors <m>\begin{pmatrix} 2 \\ 1 \\ a \\ 1 \\ -3 
+        \end{pmatrix} \in \RR^5</m> are perpendicular to all vectors
+        <m>\frac{1}{7} \begin{pmatrix} 6 \\ b \\ 0 \\ -b \\ 4
+        \end{pmatrix} </m>. (4)
       </p>
     </li>
     <li>
       <p>
-        If <m>u</m> and <m>v</m> are vectors in <m>\RR^3</m>, prove
-        that 
+        If <m>u</m> and <m>v</m> are vectors in <m>\RR^3</m> with <m>u
+        \cdot v = 0</m>, prove that 
         <me>
-          (u + v) \cdot (u - v) = |u|^2 - |v|^2 
+          |u + v|^2 = |u|^2 + |v|^2 
         </me>.
-        (4)
+        This is, of course, not true in general, but it is nice to
+        prove a condition under which this convenient calculation
+        works. (4) 
       </p>
     </li>
     <li>
       <p>
-        The cross product of <m>u</m> and <m>v</m> in <m>\RR^3</m> is
-        a new vector which is perpendicular to both <m>u</m> and
-        <m>v</m>. Explain why this description of the cross-product can
-        only work in three dimensions. If you have to generalize the
-        cross-product to higher dimensions, based on this idea of
-        generating a new vector perpendicular to the two previous, how
-        would you do it? (4)
+        Let <m>u</m> and <m>v</m> be vectors in <m>\RR^3</m>. Prove
+        that if either <m>u</m> or <m>v</m> are multiplied by any
+        positive scalars, the angle between them is preserved. 
       </p>
     </li>
     <li>
@@ -50,34 +40,33 @@
         <ol>
           <li><md><mrow>
             \amp \begin{pmatrix}
-              4 \\ -1 
+              6 \\ 2 
             \end{pmatrix},
             \amp \amp 
             \begin{pmatrix}
-              2 \\ 2 
+              -3 \\ -4 
             \end{pmatrix}
           </mrow></md></li>
           <li><md><mrow>
             \amp \begin{pmatrix}
-              0 \\ -7 \\ 3 
+              2 \\ 1 \\ -9 
             \end{pmatrix},
             \amp \amp 
             \begin{pmatrix}
-              -1 \\ -9 \\ 2 
+              3 \\ -2 \\ -1 
             \end{pmatrix}
           </mrow></md></li>
           <li><md><mrow>
             \amp \begin{pmatrix}
-              -4 \\ 3 \\ 0 \\ 2 \\ -5 
+              7 \\ -3 \\ 4 \\ 0 \\ 0 
             \end{pmatrix},
             \amp \amp 
             \begin{pmatrix}
-              4 \\ 0 \\ -2 \\ -11 \\ 3
-            \end{pmatrix}
+              -1 \\ -1 \\ -2 \\ 4 \\ 5
+            \end{pmatrix
           </mrow></md></li>
         </ol>
       </p>
     </li>
   </ol></p>
 </section>
--->
