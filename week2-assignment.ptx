@@ -38,33 +38,39 @@
         answers in approximate values. Show the steps in your
         calculation using the definitions from the course.) (9)
         <ol>
-          <li><md><mrow>
-            \amp \begin{pmatrix}
-              6 \\ 2 
-            \end{pmatrix},
-            \amp \amp 
-            \begin{pmatrix}
-              -3 \\ -4 
-            \end{pmatrix}
-          </mrow></md></li>
-          <li><md><mrow>
-            \amp \begin{pmatrix}
-              2 \\ 1 \\ -9 
-            \end{pmatrix},
-            \amp \amp 
-            \begin{pmatrix}
-              3 \\ -2 \\ -1 
-            \end{pmatrix}
-          </mrow></md></li>
-          <li><md><mrow>
-            \amp \begin{pmatrix}
-              7 \\ -3 \\ 4 \\ 0 \\ 0 
-            \end{pmatrix},
-            \amp \amp 
-            \begin{pmatrix}
-              -1 \\ -1 \\ -2 \\ 4 \\ 5
-            \end{pmatrix
-          </mrow></md></li>
+          <li><md>
+            <mrow>
+              \amp \begin{pmatrix}
+                6 \\ 2 
+              \end{pmatrix}
+              \amp \amp 
+              \begin{pmatrix}
+                -3 \\ -4 
+              \end{pmatrix}
+            </mrow>
+          </md></li>
+          <li><md>
+            <mrow>
+              \amp \begin{pmatrix}
+                2 \\ 1 \\ -9 
+              \end{pmatrix}
+              \amp \amp 
+              \begin{pmatrix}
+                3 \\ -2 \\ -1 
+              \end{pmatrix}
+            </mrow>
+          </md></li>
+          <li><md>
+            <mrow>
+              \amp \begin{pmatrix}
+                7 \\ -3 \\ 4 \\ 0 \\ 0 
+              \end{pmatrix}
+              \amp \amp 
+              \begin{pmatrix}
+                -1 \\ -1 \\ -2 \\ 4 \\ 5
+              \end{pmatrix}
+            </mrow>
+          </md></li>
         </ol>
       </p>
     </li>

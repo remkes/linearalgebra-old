@@ -16,7 +16,7 @@
           A <term>vector</term> is a finite ordered list of scalars.
           Vectors can be written either as columns or rows. If a
           vector is a list of the numbers <m>4</m>, <m>15</m>,
-          <m>\pi</m> and <m>-e</m> (in that order), we write the
+          <m>\pi</m> and <m>-e</m> (in that order), I write the
           vector in one of two ways:
           <md>
            <mrow>
@@ -28,7 +28,7 @@
       </statement>
     </definition>
     <p>
-      In this course, we will exclusively use column vectors. In many
+      In this course, I will exclusively use column vectors. In many
       other places, row vectors are common.
     </p>
     <definition>
@@ -37,15 +37,15 @@
           Let <m>n</m> be a positive integer. <term>Real Euclidean
           Space</term> or <term>Cartesian Space</term>, written
           <m>\RR^n</m>, is the set of all vectors of length <m>n</m>
-          with real number entries. We write an arbitrary vector with
-          coefficients <m>x_i</m>:
+          with real number entries. I write an arbitrary vector with
+          coefficients <m>x_i</m> as follows. 
           <me>
             \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
           </me>.
         </p>
         <p>
-          We say that <m>\RR^n</m> has <term>dimension</term>
-          <m>n</m>.
+          Since there are <m>n</m> coefficieint in its vectors, the
+          space <m>\RR^n</m> has <term>dimension</term> <m>n</m>.
         </p>
       </statement>
     </definition>
@@ -57,7 +57,7 @@
           <term>components</term> of that vector. Specifically,
           <m>x_1</m> is the first coordinate, <m>x_2</m> is the second
           coordinate, and so on. For <m>\RR^2</m>, <m>\RR^3</m> and
-          <m>\RR^4</m>, we use the letters <m>w,x,y,z</m> instead of
+          <m>\RR^4</m>, I use the letters <m>w,x,y,z</m> instead of
           <m>x_i</m>.
           <md>
             <mrow>
@@ -84,13 +84,13 @@
       </statement>
     </definition>
     <p>
-      Euclidean space, particularly the plane, is a familiar
-      object from high-school mathematics. We usually visualize
-      Euclidean space by drawing axes, one in each independent
+      Euclidean space, particularly the plane, is a familiar object
+      from high-school mathematics. Euclidean space is usually
+      visualized by drawing axes, one in each independent
       perpendicular direction. In this visualization, the vector
       <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> corresponds to the
-      unique point we get moving <m>a</m> units in the direction of
-      the <m>x</m> axis and <m>b</m> units in the direction of the
+      unique point I get moving <m>a</m> units in the direction of the
+      <m>x</m> axis and <m>b</m> units in the direction of the
       <m>y</m> axis. <xref ref="figure-points-in-the-cartesian-plane"
       /> shows the location of several points in <m>\RR^2</m>.
     </p>
@@ -123,11 +123,11 @@
     </figure>
     <p>
       As with <m>\RR^2</m>, the point <m> \begin{pmatrix} a \\ b \\ c
-      \end{pmatrix} \in \RR^3</m> is the unique point we find by
+      \end{pmatrix} \in \RR^3</m> is the unique point I find by
       moving <m>a</m> units in the <m>x</m> direction, <m>b</m> units
       in the <m>y</m> direction and <m>c</m> units in the <m>z</m>
-      direction. When we visualize <m>\RR^2</m>, we conventionally
-      write the <m>x</m> axis horizontally, with a positive direction
+      direction. When visualizing <m>\RR^2</m>, the convention is to 
+      draw the <m>x</m> axis horizontally, with a positive direction
       to the right, and the <m>y</m> axis vertically, with a positive
       direction upwards. For <m>\RR^3</m>, the <m>x</m> and <m>y</m>
       axes form a flat plane, and the <m>z</m> axis extends vertically
@@ -162,27 +162,27 @@
     <definition>
       <statement>
         <p>
-          Note that we needed to choose directions for the axes in
+          Note that I needed to choose directions for the axes in
           both <m>\RR^2</m> and <m>\RR^3</m>. In a visualization of
           Euclidean space, there are no predetermined directions for
-          axes. We have to make a choice. This choice of axis
+          axes. I have to make a choice. This choice of axis
           directions in the visualization of <m>\RR^n</m> is called 
           <term>orientation</term>.
         </p>
       </statement>
     </definition>
     <p>
-      While we can visualize <m>\RR^2</m> and <m>\RR^3</m> relatively
-      easily and efficiently, we can't visualize any higher
-      <m>\RR^n</m>. However, this doesn't prevent us from working in
-      higher dimensions. We need to rely on the algebraic
+      While I can visualize <m>\RR^2</m> and <m>\RR^3</m> relatively
+      easily and efficiently, I can't visualize any higher
+      <m>\RR^n</m>. However, this doesn't prevent me from working in
+      higher dimensions. I need to rely on the algebraic
       descriptions of vectors instead of the drawings and
       visualizations of <m>\RR^2</m> and <m>\RR^3</m>.
     </p>
     <p>
-      In our visualizations of <m>\RR^2</m> and <m>\RR^3</m>, we see
+      In the visualizations of <m>\RR^2</m> and <m>\RR^3</m>, I see
       the different axes as fundamentally different perpendicular
-      directions. We can think of <m>\RR^2</m> as the space with two
+      directions. I can think of <m>\RR^2</m> as the space with two
       independent directions and <m>\RR^3</m> as the space with three
       independent directions. Similarly, <m>\RR^4</m> is the space
       with four perpendicular, independent directions, even though it
@@ -193,13 +193,13 @@
   <subsection xml:id="subsection-point-or-directions">
     <title>Points or Directions?</title>
     <p>
-      We can think of an element of <m>\RR^2</m>, say
+      I can think of an element of <m>\RR^2</m>, say
       <m>\begin{pmatrix} 1 \\ 4 \end{pmatrix}</m> , as both the point
       located at <m>\begin{pmatrix} 1 \\ 4 \end{pmatrix}</m> and the
       vector drawn from the origin to the point <m>\begin{pmatrix} 1
       \\ 4 \end{pmatrix}</m> , as shown in <xref
       ref="figure-points-and-directions" />. Though these two ideas
-      are distinct, we will frequently switch between them, often
+      are distinct, I will frequently switch between them, often
       without explicitly saying so. Part of becoming proficient in
       vector geometry is becoming accustomed to the switch between the
       perspectives of points and directions.
@@ -238,12 +238,12 @@
   <subsection xml:id="subsection-local-direction-vectors">
     <title>Local Direction Vectors</title>
     <p>
-      We've already spoken about the distinction between elements of
+      I've already spoken about the distinction between elements of
       <m>\RR^n</m> as points and vectors. There is another important
       subtlety that shows up all throughout vector geometry. In
       addition to thinking of vectors as directions starting at the
-      origin, we can think of them as directions starting anywhere in
-      <m>\RR^n</m>. We call these local direction vectors.
+      origin, I can think of them as directions starting anywhere in
+      <m>\RR^n</m>. I call these <term>local direction vectors</term>.
     </p>
     <figure xml:id="figure-local-direction-vectors">
       <caption>Local Direction Vectors</caption>
@@ -281,17 +281,17 @@
       as if that were their origin.
     </p>
     <p>
-      Using vectors to define local directions is a 
-      useful tool. A standard example is a camera in a three-dimensional 
-      virtual environment. First, you need to know the
-      location of the camera, which is an ordinary vector starting
-      from the origin. Second, you need to know what direction the
-      camera is pointing, which is a local direction vector which
-      treats the camera location as the current origin.
+      Using vectors to define local directions is a useful tool. A
+      standard example is a camera in a three-dimensional virtual
+      environment. First, I need to know the location of the camera,
+      which is an ordinary vector starting from the origin. Second, I
+      need to know what direction the camera is pointing, which is a
+      local direction vector which treats the camera location as the
+      current origin.
     </p>
     <p>
       One of the most difficult things about learning vector geometry
-      is becoming accustomed to local direction vectors. We don't
+      is becoming accustomed to local direction vectors. I won't
       always carefully distinguish between vectors at the origin and
       local direction vectors; often, the difference is implied, and it
       is up to the reader/student to figure out how the vectors are

@@ -23,7 +23,7 @@
         In academic mathematics, algebra has a much broader and deeper
         sense. It is a whole branch of mathematics, with many
         subdisciplines: linear algebra, abstract algebra, homological
-        algebra, etc. To build a concept of what we mean by the term
+        algebra, etc. To build a concept of what I mean by the term
         <sq>algebra</sq> is a central goal of the course. I'll
         give a definition right now, at the start, but it's a difficult
         definition to understand; hopefully, the course will provide the
@@ -37,7 +37,7 @@
             obeyed by those structures, and the interaction of various
             structures. (This definition is a little vague, since not
             all structures on sets are <term>algebraic</term>
-            structures, but it will suit our purposes for this course.)
+            structures, but it will suit the purposes of this course.)
           </p>
         </statement>
       </definition>
@@ -47,11 +47,12 @@
       <p>
         The definition of algebra just stated is an immensely abstract
         definition. I haven't specified what sets or what structures
-        I'm talking about. (I could say that we are looking at
-        <em>algebraic structures</em>, but that doesn't actually add any
-        insight; it just delays the question.) The definition is very
-        broad and  applies to a huge variety of sets and structures.
-        Abstraction is built into the very nature of algebra.
+        I'm talking about. (As noted in paranthesis in the definition,
+        I could say that the course looks at algebraic structures, but
+        that doesn't actually add any insight; it just delays the
+        question.) The definition is very broad and  applies to a huge
+        variety of sets and structures. Abstraction is built into the
+        very nature of algebra.
       </p>
       <p>
         In the calculus courses, I often motivate the material by its
@@ -77,58 +78,58 @@
       <p>
         Though the subject is called <sq>algebra,</sq> linear algebra is
         a very geometric discipline, and my approach to this course will
-        emphasize the geometry. We will start with vectors, a geometric
+        emphasize the geometry. I will start with vectors, a geometric
         topic (though with rich algebraic structure). Throughout the
-        course, we will play geometry and algebra against each other and
+        course, I will play geometry and algebra against each other and
         use each to understand the other better. This interplay drives
         the discpline. In many ways, this will be a geomety course
         hiding under the title of an algebra course.
       </p>
       <p>
-        In our geometry, we will not restrict ourselves for conventional
-        two and three dimensional geometry. The definitions of this
-        course are very general, so we will try to do geometry in any
-        (finite) dimension. A major challenge of the course is going
-        from familiar, visible three dimensions to un-visualizable
-        higher-dimensional geometry.
+        In geometry, I will not restrict my attention to the
+        conventional two and three dimensional geometry. The
+        definitions of this course are very general, so I will try to
+        do geometry in any (finite) dimension. A major challenge of
+        the course is going from familiar, visible three dimensions to
+        un-visualizable higher-dimensional geometry.
       </p>
     </li>
     <li>
       <title>Flatness</title>
       <p>
-        While a geometry course, the geometry we are considering will be
-        very restricted. The <sq>linear</sq> in linear algebra refers
-        to lines, so we will start with the geometry of lines. However,
-        the important property of a line, in our context, is the fact
-        that it is straight: it doesn't curve. Linear algebra is the
-        geomtery of straight or flat things.
+        While a geometry course, the geometry I will be presenting
+        will be very restricted. The <sq>linear</sq> in linear algebra
+        refers to lines, so I will start with the geometry of lines.
+        However, the important property of a line, in this context, is
+        the fact that it is straight: it doesn't curve. Linear algebra
+        is the geomtery of straight or flat things.
       </p>
       <p>
-        Therefore, curved, bent and broken objects are off-limits. We
+        Therefore, curved, bent and broken objects are off-limits. I
         will investigate the geometry of flat objects: points, lines,
         planes and higher-dimensional analogues. A great advantage of
         this restriction is that flat things are very
         accessable. The geometry of curved objects is an immensely
         complicated and difficult subject. By restricting to flat
-        objects, our mathematical tools and constructions are much
+        objects, the mathematical tools and constructions become much
         more accessible.
       </p>
     </li>
     <li>
       <title>Symmetry</title>
       <p>
-        Other than flatness, our other major geometric theme is
+        Other than flatness, the other major geometric theme is
         symmetry. Many of the definitions and propositions produced in
         this course can be stated in terms of some kind of symmetry.
         Speaking broadly, I want to think of symmetry as preservation:
         the symmetry of a shape is some kind of operation which keeps
-        the shape intact, preserves it. Throughout linear algebra, we
+        the shape intact, preserves it. Throughout linear algebra, I
         will be talking about the preservation of various kinds of
         shapes and flat objects.
       </p>
       <p>
         With the interplay between algebra and geometry mentioned above,
-        we will also translate this idea of symmetry back to algebra to
+        I will also translate this idea of symmetry back to algebra to
         give a understanding of algebraic symmetry.
      </p>
     </li>
@@ -139,12 +140,13 @@
         understanding of algebra and the academic sense of the word.
         Algebra is originally introduced to solve problems involving
         unknown quantities, usually by solving equations. Algebra is a
-        problem-solving technique. In academic mathematics, we are
-        usually more concerned with conjectures about mathematical
-        objects and the proofs of those conjectures. In this course,
-        we'll introduce the idea of conjectures, propositions, theorems
-        and proofs. We'll do a small amount of proving on the
-        assignments to build a flavour for proof-based mathematics.
+        problem-solving technique. In academic mathematics,
+        mathematicians are usually more concerned with conjectures
+        about mathematical objects and the proofs of those
+        conjectures. In this course, I'll introduce the idea of
+        conjectures, propositions, theorems and proofs. I'll ask for a
+        small amount of proving on the assignments to build a flavour
+        for proof-based mathematics.
       </p>
     </li>
   </dl>

@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-what-is-a-proof">
     <title>What Is A Proof</title>
     <p>
-      In the sequence of math courses that we offer at King's, 
+      In the sequence of math courses that are offered at King's, 
       linear algebra is the most natural place to start talking about
       mathematical proofs. The material lends itself to a number of
       accessible proof examples and have a level of abstraction that
@@ -49,11 +49,11 @@
           Proofs are accepted by the mathematical community when a
           sufficient number of qualified readers are convinced by the
           mathematical formality and logical sequence. In this course,
-          when we study proof, I will try to repeatedly ask if you are
-          convinced by the proof. If you are not, either the proof is
-          flawed, or your understanding of the argument is weak, and you
-          need to go back and study the assumptions, notations and
-          structure more carefully.
+          when I present a proof, I will try to repeatedly ask if you
+          are convinced by the proof. If you are not, either the proof
+          is flawed, or your understanding of the argument is weak
+          and you need to go back and study the assumptions,
+          notations, and structure more carefully.
         </li>
       </ul>
     </p>
@@ -67,16 +67,16 @@
         that would always produce good proofs.
         Unfortunately, no such thing exists. Writing proofs is the
         most difficult skill in mathematics. Writing a good proof is
-        comparable to writing a good essay. We learn by reading good
-        examples, practicing our own, and being patient with the long
+        comparable to writing a good essay. I learn by reading good
+        examples, practicing my own, and being patient with the long
         process.
       </p>
       <p>
         In this course, I'm not going to give you any short, easy
         method for writing proofs (since, as I just said, no such
         method exists). Instead, I'm going to try to start the process
-        of exposing you to proofs. In many ways, we learn to write
-        proofs by example <mdash /> by reading lots of proofs and
+        of exposing you to proofs. In many ways, learning to write
+        proofs is done by example <mdash /> by reading lots of proofs and
         seeing how they work. I'll show you a bunch of short proofs in
         this course and ask you to try to emulate them in 
         the activities and assignments.
@@ -107,10 +107,10 @@
         <li>
           There is a huge difference between the rough work that goes
           into sketching a proof and the final proof. In the rough
-          work, we do often start with the conclusion and make various 
-          attempts to see how we might get there. We try things, play
-          around with ideas, do test cases. But when we write up a
-          proof, we take all this rough work and try to put it into
+          work, I will often start with the conclusion and make various 
+          attempts to see how I might get there. I try things, play
+          around with ideas, do test cases. But when I write up a
+          proof, I take all this rough work and try to put it into
           a formal logical chain with the desired statement coming at
           the end, as a conclusion.
         </li>
@@ -136,50 +136,51 @@
       I'm going to share with you two of the most common techniques.
       The first is proof by contradiction. This technique relies on the
       assumption that any (well-formed) statement in mathematics is
-      either true or false. To prove a statement is true, we can
+      either true or false. To prove a statement is true, I can
       equivalently show that it is impossible for the statement to be
       false. 
     </p>
     <p>
-      To prove by contradiction, we assume the statement we want to
-      prove is false. Then, starting from that assumption, we make
-      logical conclusions. These logical conclusions lead us to an
+      To prove by contradiction, I assume the statement I want to
+      prove is false. Then, starting from that assumption, I make
+      logical conclusions. These logical conclusions lead me to an
       impossible situation <mdash /> a contradiction. This
       contradiction can take many forms: a contradiction of some 
-      statement we know is true, an impossibility of a statement
+      statement I know is true, an impossibility of a statement
       being both true and false, or some other situation which cannot
-      make sense. Since we end up with this contradiction, our
-      original assumption must have been wrong. Since we assumed
+      make sense. Since I end up with this contradiction, my
+      original assumption must have been wrong. Since I assumed
       the statement was false, the statement must therefore be true.
     </p>
     <p>
       This is perhaps easier to see in an example. I'll do two
-      examples, both of which are classic proof examples. First, let's
+      examples, both of which are classic proof examples. First, I'll
       prove that there are infinitely many prime numbers. 
     </p>
     <ul>
       <li>
         Step 1: Assume the statement is false. The statement
         says there are infinitely many prime numbers. If that is
-        false, there must be only finitely many prime numbers. So our
+        false, there must be only finitely many prime numbers. So my
         assumption is that there are finitely many prime numbers.
       </li>
       <li>
         Step 2: Work from the assumption to build a contradiction. The
         assumption says that there are finitely many prime numbers.
-        Let's index them: <m>p_1, p_2, p_3, \ldots p_k</m>. Since
-        there are only finitely many, this is a finite list of some
-        length <m>k</m>. Then consider this very large number
+        Since there are only finitely many, I can index them: <m>p_1,
+        p_2, p_3, \ldots p_k</m>. This is a finite list of some
+        length <m>k</m>. Then consider a very large number formed by
+        multiplying these all together and adding 1. 
         <me>
           m = p_1p_2 \ldots p_k + 1 
-        </me>.
-        What are the prime factors of this number? We know that all
-        numbers break down uniquely into prime factors, so it must have
-        prime factors. However, every prime number <m>p_i</m> in our
-        list (which, by assumption, is all prime numbers) is a
-        factor of <m>m-1</m>. A prime number can't be the factor of
-        two consecutive numbers, so none of the prime numbers are
-        factors of <m>m</m>.
+        </me>
+        What are the prime factors of this number <m>m</m>? I know
+        that all numbers break down uniquely into prime factors, so it
+        must have prime factors. However, every prime number
+        <m>p_i</m> in my list (which, by assumption, is all prime
+        numbers) is a factor of <m>m-1</m>. A prime number can't be
+        the factor of two consecutive numbers, so none of the prime
+        numbers are factors of <m>m</m>.
       </li>
       <li>
         Step 3: State the contradiction. The number <m>m</m> must have
@@ -191,34 +192,34 @@
         Step 4: Conclude that the original statement was false, which
         finishes the proof. The assumption that there were only
         finitely many prime numbers led to a contradiction. Therefore,
-        by contradiction, we have proved that there are infinitely
+        by contradiction, I have proved that there are infinitely
         many prime numbers. 
       </li>
     </ul>
     <p>
-      This proof is <em>non-constructive</em>. It tells us that there
-      are infinitely many prime numbers, but it doesn't tell us
+      This proof is <em>non-constructive</em>. It tells me that there
+      are infinitely many prime numbers, but it doesn't tell me 
       anything about them: what they are, how to find them, how they
       are distributed on the number line, etc. This is often a major
-      weakness of proofs by contradiction: they may not give us
+      weakness of proofs by contradiction: they may not give 
       concrete information about the objects in the proposition.
     </p>
     <p>
       Another classic example is the proof that <m>\sqrt{2}</m> is
-      irrational. Let's also prove this by contradiction.
+      irrational. I will also prove this by contradiction.
     </p>
     <ul>
       <li>
         Step 1: Assume the statement is false. The statement says that
         <m>\sqrt{2}</m> is irrational. If that is false, then
-        <m>\sqrt{2}</m> must be rational. Therefore, our assumption is
+        <m>\sqrt{2}</m> must be rational. Therefore, my assumption is
         that <m>\sqrt{2}</m> is rational. 
       </li>
       <li>
         Step 2: Work from the assumption to build a contradiction. If
         <m>\sqrt{2}</m> is rational, then there are integers <m>a</m>
         and <m>b</m> such that <m>\sqrt{2} = \frac{a}{b}</m>. Since
-        any fraction can be written in the simplest terms, we can assume
+        any fraction can be written in the simplest terms, I can assume
         that <m>a</m> and <m>b</m> have no common factors. Then I can
         do some arithmetic with this equation.
         <md>
@@ -235,7 +236,7 @@
         <m>2</m> divides the left side of the equation, so it must
         divide the right side as well, meaning that <m>a^2</m> must be
         even. But the squares of odd numbers are odd, and the squares
-        of even numbers are even. Therefore, <m>a</m> must be even. We
+        of even numbers are even. Therefore, <m>a</m> must be even. I
         can write <m>a = 2c</m> for some integer <m>c</m>. Then I'll
         replace <m>a</m> by <m>2c</m> in the equation and do a bit more
         arithmetic. 
@@ -258,9 +259,9 @@
         even, so <m>b</m> must be even.
       </li>
       <li>
-        Step 3: State the contradiction. We assumed that <m>a</m>
-        and <m>b</m> have no common factors since we wrote the
-        fraction in the simplest terms. Now we have proved that both
+        Step 3: State the contradiction. I assumed that <m>a</m>
+        and <m>b</m> have no common factors since I wrote the
+        fraction in the simplest terms. Now I have proved that both
         numbers are even, so <m>2</m> is a factor of both. This is a
         contradiction: <m>a</m> and <m>b</m> have no common factors,
         but <m>2</m> is a common factor.
@@ -268,7 +269,7 @@
       <li>
         Step 4: Conclude that the original statement was false, which
         finishes the proof. The assumption that <m>\sqrt{2}</m> was
-        rational lead to a contradiction, so we have proven that
+        rational produced to a contradiction, so I have proved that
         <m>\sqrt{2}</m> must be irrational. 
       </li>
     </ul>
@@ -296,7 +297,7 @@
       </p>
       <ul>
         <li>
-          Prove a base case. Usually, we prove that the statement
+          Prove a base case. Usually, I prove that the statement
           holds for <m>n=0</m> or <m>n=1</m>, but the base case could
           be any starting natural number. 
         </li>
@@ -310,7 +311,7 @@
         </li>
         <li>
           Conclude that the statement is true for all natural numbers
-          <m>n</m>. (Or all numbers past the base case, if we started
+          <m>n</m>. (Or all numbers past the base case, if I started
           at a larger number.)
         </li>
       </ul>
@@ -321,13 +322,13 @@
         really messes with the conventional use of the term
         <qt>induction</qt> in logic). Mathematical induction  is
         something like bootstrapping all the way up the natural
-        numbers. We prove the statement is true for <m>1</m>. Then we
+        numbers. I prove the statement is true for <m>1</m>. Then I
         have a general way of proving that if it is true for a number,
         it is also true for the next number. Since it is true for
         <m>1</m>, it must be true for <m>2</m>. If it is true for
         <m>2</m>, it must be true for <m>3</m>. If it is true for
         <m>3</m>, it must be true for <m>4</m>. This just keeps going,
-        so we conclude that it is true for all natural numbers.
+        so I conclude that it is true for all natural numbers.
       </p>
       <p>
         Again, this is probably best demonstrated by example. I claim
@@ -335,7 +336,7 @@
         <me>
           1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}
         </me>.
-        This is a nice identity giving us a way to quickly calculate
+        This is a nice identity giving me a way to quickly calculate
         the sum of the first <m>n</m> numbers. For example
         <me>
           1 + 2 + 3 + 4 + \ldots + 703 = \frac{703\cdot704}{2} = 703
@@ -354,7 +355,7 @@
           side and the right side are the same, the base case holds. 
         </li>
         <li>
-          Step 2: Assume the statements is true for some number
+          Step 2: Assume the statement is true for some number
           <m>k</m>. I assume that 
           <me>
             1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
@@ -377,8 +378,7 @@
           with a common denominator. 
           <me>
             \frac{k(k+1)}{2} + (k+1) = \frac{k^2 + k + 2(k + 1)}{2} =
-            \frac{k^2 + 3k + 2}{2} = \frac{(k+1)(k+2)}{2} =
-            \frac{(k+1)(k+1+1)}{2}
+            \frac{k^2 + 3k + 2}{2} = \frac{(k+1)(k+2)}{2}
           </me>
           Now I'll replace the right side with this last expression.
           <me>

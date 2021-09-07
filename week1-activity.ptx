@@ -9,36 +9,36 @@
           space into two pieces: one cannot pass from one side of the
           line to the other without crossing the line. In
           3-dimensional space, however, an infinitely long line does
-          not do this; we can go around the line, and there isn't a
+          not do this; I can go around the line, and there isn't a
           division of space into two halves.
         </p>
         <p>
-          In 3-dimensional space, an infinitely extended plane does
-          divide space into two pieces, and it is impossible to pass
+          In 3-dimensional space, an infinitely extended plane also
+          divides space into two pieces, and it is impossible to pass
           from one side to the other without going across the plane.
           In 4-dimensional space, does an infinitely extended plane
-          still divide it into two pieces, or can we go around it,
-          like we go around the line in 3-dimensional space?
+          still divide it into two pieces, or can I go around it,
+          like I go around the line in 3-dimensional space?
         </p>
       </statement>
       <solution>
         <p>
           This is a tricky thing to try to visualize (being that
-          4-dimensional space is not visualizable). However, we can
-          argue by analogy. How do we get around the line in
-          3-dimensions? We move to the side, then move past the line,
-          instead of running into it. We can do this because we have
+          4-dimensional space is not visualizable). However, I can
+          argue by analogy. How do I get around the line in
+          3-dimensions? I move to the side, then move past the line,
+          instead of running into it. I can do this because I have
           two degrees of freedom in directions other than the direction
           of the line.
         </p>
         <p>
           The same thing works for a plane in 4-dimensional space.
-          While in 3-dimensional space, we only have one dimension of
+          While in 3-dimensional space, I only have one dimension of
           movement apart from the plane. To get to the other side,
-          moving in this one degree of freedom, we have to cross the
-          plane. In 4-dimensional space, we have two other degrees of
+          moving in this one degree of freedom, I have to cross the
+          plane. In 4-dimensional space, I have two other degrees of
           freedom. Like getting around the line in 3-dimensional
-          space, we can move to the side, then move past the plane to
+          space, I can move to the side, then move past the plane to
           reach <q>the other side.</q> There really isn't another
           side, much like a line in 3-dimensional space doesn't really
           create two sides of space. 
@@ -51,19 +51,19 @@
          In 2-dimensional space, a square or rectangle is enough to
          trap or contain something that lives in the plane. In
          3-dimensional space, a cube (or other box) is enough to trap
-         or contain something. What do we need to contain something in
+         or contain something. What do I need to contain something in
          4-dimensional space? In 5-dimensional space?
         </p>
       </statement>
       <solution>
         <p>
-          To contain something in 4-dimensional space, we need a 
-          four-dimensional box. Since we have four independent and free
-          directions of movement, we have to close of movement in all
+          To contain something in 4-dimensional space, I need a 
+          four-dimensional box. Since I have four independent and free
+          directions of movement, I have to close of movement in all
           four of these directions. This box will have a front/back, a
           top/bottom, a left/right, and then an additional pair of
           sides which block in the fourth direction of movement. In
-          five dimensional space, we need a five-dimensional box: it
+          five dimensional space, I need a five-dimensional box: it
           will have a front/back, top/bottom, left/right, and two
           other independent boundary pairs.
         </p>
@@ -80,12 +80,12 @@
       </statement>
       <solution>
         <p>
-          By a <q>slice,</q> it seems we are referring to a piece of
+          By a <q>slice,</q> it seems I am referring to a piece of
           the object of one smaller dimension. Therefore, the slices
           of this four-dimensional box must be three-dimensional
-          boxes. In this way, we can think of a four-dimensional box
+          boxes. In this way, I can think of a four-dimensional box
           as an infinite stack of three-dimensional boxes, all stacked
-          in some new direction of movement. (The same way we can
+          in some new direction of movement. (The same way I can
           think of a cube as an infinite stack of squares moving in a
           direction perpendicular to the squares themselves).
           Likewise, the slices of a five-dimensional box are
@@ -173,8 +173,8 @@
       </statement>
       <solution>
         <p>
-          We'll do the arithmetic one by one. Then, at the end, all
-          the vector will be drawn in
+          I'll do the arithmetic one by one. Then, at the end, all
+          the vectors will be drawn in
           <xref ref="figure-vector-arithmetic" />.
           <md>
             <mrow>
@@ -247,9 +247,11 @@
               \right) 
             </mrow>
           </md>
-          <figure xml:id="figure-vector-arithmetic">
-            <caption>Vector Arithmetic</caption>
-            <image width="80%" source="images/figure10" />
+        </p>
+        <figure xml:id="figure-vector-arithmetic">
+          <caption>Vector Arithmetic</caption>
+          <image xml:id="figure10" width="80%">
+            <asymptote>
               size(12cm,8cm);
               import graph;
 
@@ -279,7 +281,7 @@
               draw((1,-1)--(5,-4),dotted);
               draw((-3,0)--(-5,-3),dotted);
               draw((0,2)--(0.5,3),dotted);
-              
+            
               label("$u$",(5,3),E);
               label("$v$",(-2,-1),SW);
               label("$w$",(-3,2),NW);
@@ -295,7 +297,10 @@
               label("$w-u$",(-6,2),W);
               label("$v-w$",(1.8,-3),S);
               label("$w-v$",(-1,3),NW);
-          </figure>
+            </asymptote>
+          </image>
+        </figure>
+        <p>
           In addition, calcluate these lengths. 
           <md>
             <mrow>
@@ -338,7 +343,7 @@
             </mrow>
           </md>
           Calculate the following vectors and length. (Since this is
-          in <m>\RR^5</m>, drawing these is no longer an option. 
+          in <m>\RR^5</m>, drawing these is no longer an option.)
           <md>
             <mrow>
               \amp -u 
@@ -399,7 +404,7 @@
       </statement>
       <solution>
         <p>
-          We'll do the calculation one by one. 
+          I'll do the calculation one by one. 
           <md>
             <mrow>
               \amp -u = - \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\
@@ -581,7 +586,7 @@
       </statement>
       <solution>
         <p>
-          We will write <m>u</m> and <m>v</m> in components, take
+          I will write <m>u</m> and <m>v</m> in components, take
           their difference and then apply the length operation. I will
           start with the left side and try to produce the right. 
           <me>
@@ -597,7 +602,7 @@
             \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
             - v_3 \end{matrix} \right) \right| 
           </me>
-          Then we use the square root definition of the length.
+          Then I use the square root definition of the length.
           <me>
             \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
             - v_3 \end{matrix} \right) \right| = \sqrt{(u_1-v_1)^2 +
@@ -605,14 +610,14 @@
           </me>
           Now, each of the three terms is square. Since they are
           square, any positive or negative will become positive since
-          squares are always positive. Therefore, we could multiply by
+          squares are always positive. Therefore, I could multiply by
           <m>(-1)</m> inside the square root to no effect. This
           will interchange the order of the difference in each term.
           <me>
             \sqrt{(u_1-v_1)^2 + (u_2-v_2)^2 + (u_3-v_3)^2} = 
             \sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 + (v_3-u_3)^2} 
           </me>
-          Then we repeat the steps from before in reverse. This is the
+          Then I repeat the steps from before in reverse. This is the
           definition of the length of a vector with the terms in the
           squares as components. 
           <me>
@@ -620,7 +625,7 @@
             \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3 - u_3 
             \end{matrix} \right) \right|
           </me>
-          Since each term is a difference, we can write this as the
+          Since each term is a difference, I can write this as the
           difference of two vectors. 
           <me>
             \left| \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3
@@ -636,14 +641,14 @@
             \end{matrix} \right) - \left( \begin{matrix} u_1 \\ u_2 \\
             u_3 \end{matrix} \right) \right| = |v-u|
           </me>
-          We have started from the left and produced the right in a
-          string of equality, so we have proven the desired result. 
+          I have started from the left and produced the right in a
+          string of equality, so I have proven the desired result. 
         </p>
         <p>
-          If we wanted to adapt this to a more general proof for
+          If I wanted to adapt this to a more general proof for
           <m>\RR^n</m>, the steps of the proof would be identical, but
-          we would have vectors with <m>n</m> components instead of
-          just three components. We would use ellipses to indicate the
+          I would have vectors with <m>n</m> components instead of
+          just three components. I would use ellipses to indicate the
           list of components. The proof would start like this.
           <me>
             |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots
@@ -678,32 +683,33 @@
       <solution>
         <p>
           Let <m>u</m> be an arbitrary vector in <m>\RR^n</m> of
-          length 0. We will start by writing <m>u</m> in components and
-          use the definition of length. Note we need ellipses to show
-          all the components of <m>u</m>, since we are working in an
+          length 0. I will start by writing <m>u</m> in components and
+          use the definition of length. Note I need ellipses to show
+          all the components of <m>u</m>, since I am working in an
           arbitrary dimension <m>n</m>. 
           <me>
             |u| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\
             u_n \end{matrix} \right) \right|
           </me>
-          Then we use the definition of length. By assumption, we set
+          Then I use the definition of length. By assumption, I set
           this length equal to zero. 
           <me>
             |u| = \sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2} = 0 
           </me>
-          We can square both sides of the equation.
+          I can square both sides of the equation.
           <me>
-            (\sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2})^2 = 0^2 
+            \left( \sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2}
+            \right)^2 = 0^2 
           </me>
           The square root and squaring cancel each other out. 
           <me>
             (u_1)^2 + (u_2)^2 + \ldots + (u_n)^2 = 0
           </me>
-          On the left, we have the sum of a bunch of non-negative
+          On the left, I have the sum of a bunch of non-negative
           numbers (since the square of any real number must be zero or
-          postive). On the right we have zero. The only way that a
+          postive). On the right I have zero. The only way that a
           bunch of non-negative numbers add up to zero is if they are
-          all zero to begin with. Therefore, we see that for each
+          all zero to begin with. Therefore, I see that for each
           index <m>i</m>, the component <m>u_i</m> must be zero. But
           that means that 
           <me>
@@ -714,7 +720,7 @@
           </me>
           This is precisely the definition of the zero vector: the
           vector where all components are zero. Therefore, <m>u</m>
-          must be the zero vector. To conclude, we assumed that
+          must be the zero vector. To conclude, I assumed that
           <m>u</m> had length zero and thus concluded that it must be the
           zero vector. This proved that the zero vector is the only
           vector with length zero. 
@@ -727,7 +733,8 @@
     <p>
       <ul>
         <li>
-          How can we talk about higher-dimensional geometric spaces?
+          How is it reasonable to talk about higher-dimensional
+          geometric spaces?
         </li>
         <li>
           What is cartesian or euclidean space? What are coordinates?

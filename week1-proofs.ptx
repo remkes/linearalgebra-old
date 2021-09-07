@@ -5,9 +5,9 @@
     <p>
       In the themes of the course, I said that algebra was the study
       of structures on sets. I'll talk in more detail about this 
-      in <xref ref="section-sets-with-structure" />, but we've already
-      seen our first important example.  In <xref
-      ref="section-vector-arithmetic" />, we introduced three
+      in <xref ref="section-sets-with-structure" />, but I've already
+      introduced the first important example.  In <xref
+      ref="section-vector-arithmetic" />, I introduced three
       structures on <m>\RR^n</m>: vector addition, scalar
       multiplication, and vector length. The abstract algebraic
       question that mathematicians ask at this point is: what are the
@@ -16,22 +16,22 @@
       it differ? How does scalar multiplication resemble normal
       multiplication (which is it named after), and how does it differ?
       How does the length differ from the absolute value (which shares the
-      same notation?
+      same notation)?
     </p>
     <p>
       These are abstract questions, but they are also practically
-      useful. If we are in a situation where we need to use linear
-      algebra (of which there are many), we need to know how to
-      manipulate the objects. We have a whole collection of a habits
-      with addition and multiplication, but we can't assume that all
+      useful. If I am in a situation where I need to use linear
+      algebra (of which there are many), I need to know how to
+      manipulate the objects. I have a whole collection of a habits
+      with addition and multiplication, but I can't assume that all
       those habits immediately transfer to these new structures. If
-      the new structures resemble the old, we have to prove it to be
-      sure. If they don't, we have to adjust our habits. We'll see
-      both cases happen in this course. In this section, we'll mostly
+      the new structures resemble the old, I have to prove it to be
+      sure. If they don't, I have to adjust my habits. Both 
+      situation happen in this course. In this section, I'll mostly
       be proving that the properties of ordinary addition and
       multiplication carry over to these new structures. Later in the
-      course, we'll have new structures which have properties that are
-      different from what we expect for conventional arithmetic. 
+      course, I'll have new structures which have properties that are
+      different from what I expect for conventional arithmetic. 
     </p>
     <p>
       In the notes, I'm going to address three properties of scalar
@@ -43,11 +43,11 @@
     <title>Commutativity</title>
     <p>
       Addition and multiplication of numbers are commutative binary
-      operations. This means that we can interchange the order: <m>4 +
+      operations. This means that I can interchange the order: <m>4 +
       5</m> is the same as <m>5 + 4</m>, and <m>7 \times 2</m> is the
-      same as <m>2 \times 7</m>. We've defined a new addition and a
-      new multiplication, but we can't just assume that these new
-      structures are commutative. We have to prove it. 
+      same as <m>2 \times 7</m>. I've defined a new addition and a
+      new multiplication, but I can't just assume that these new
+      structures are commutative. I have to prove it. 
     </p>
     <proposition>
       <statement>
@@ -63,7 +63,7 @@
         <p>
           When approaching a proof, it is often very useful to return
           to the definition. Let me first work in <m>\RR^2</m> to
-          illustrate; I'll generalize to <m>\RR^n</m> afterwards. We
+          illustrate; I'll generalize to <m>\RR^n</m> afterwards. I
           have two vectors <m>u,v \in \RR^n</m>. I write them as
           components.
           <md>
@@ -87,7 +87,7 @@
           </md>
           That's the definition. Now each addition in the components
           (<m>u_1 + v_1</m> and <m>u_2 + v_2</m>) is the addition of
-          ordinary numbers, so we can reverse the order of this
+          ordinary numbers, so I can reverse the order of this
           addition. 
           <md>
             <mrow>
@@ -101,7 +101,7 @@
               \amp = v + u
             </mrow>
           </md>
-          We started on the left side of the desired equation and
+          I started on the left side of the desired equation and
           ended up with the right side, thus proving the identity.
           This was for <m>\RR^2</m>, so I still need to do the general
           case for <m>\RR^n</m>. Luckily for me, the steps are exactly
@@ -128,14 +128,14 @@
               \amp = v + u
             </mrow>
           </md>
-          That is the proof for the general case, so we are done.
+          That is the proof for the general case, so I am done.
         </p>
       </proof>
     </proposition>
     <p>
       I want to point out a couple of things about this proof. First,
       it is general. I didn't try to prove by choosing specific
-      vectors and checking. We can't prove by examples. That said, often
+      vectors and checking. I can't prove by example. That said, often
       working through some examples is extremely valuable. When
       starting a proof, I'll often try some examples to get a sense of
       what is going on. But, in the end, the argument needs to be
@@ -156,24 +156,24 @@
     </p>
     <p>
       This proof establishes the commutativity of vector addition. What
-      about scalar multiplication? For real numbers, we know <m>ab =
+      about scalar multiplication? For real numbers, I know <m>ab =
       ba</m>. However, scalar multiplication is something quite
       different. If <m>a</m> is a scalar and <m>u</m> is a vector,
       then <m>au</m> produces another vector. In defining scalar
-      multiplication, we wrote the scalar on the left and the vector
+      multiplication, I wrote the scalar on the left and the vector
       on the right. Right now, the expression <m>ua</m> doesn't even
-      mean anything. We could define it to mean the same thing so
-      that we could do scalar multiplication on either side, but our
+      mean anything. e could define it to mean the same thing so
+      that I could do scalar multiplication on either side, but our
       convention is to always write the scalar on the left and the
       vector on the right.  In this way, scalar multiplication isn't
-      commutative because of our choice of notation. 
+      commutative because of my choice of notation. 
     </p>
   </subsection>
   <subsection xml-id="subsection-vector-arithmetic-associativity">
     <title>Associativity</title>
     <p>
       Another property of ordinary addition and multiplication is
-      associativity. This property states that we can bracket a
+      associativity. This property states that I can bracket a
       three-fold addition or multiplication either way, and the result
       is the same. For addition, this is
       <me>
@@ -183,15 +183,15 @@
       <me>
         a(bc) = (ab)c
       </me>.
-      To be more explicit, consider the sum <m>6 + 4 + 9</m>. We can
-      add this in two ways. If we start with the left sum, we get
-      <m>10 + 9 = 19</m>. If we start with the right sum, we get <m>6
+      To be more explicit, consider the sum <m>6 + 4 + 9</m>. I can
+      add this in two ways. If I start with the left sum, I get
+      <m>10 + 9 = 19</m>. If I start with the right sum, I get <m>6
       + 13 = 19</m>. Both ways produce <m>19</m>; associativity says
       that this works for all sums of numbers. Associativity is a
-      property that we very rarely think about. It is naturally built
-      into our number sense, and when doing arithmetic, we use it
+      property that I very rarely think about. It is naturally built
+      into my number sense, and when doing arithmetic, I use it
       implicitly and subconsciously all the time. However, it is a
-      property we have to worry about for new operations. There are
+      property I have to worry about for new operations. There are
       (strangely enough!) non-associative operations in mathematics. 
     </p>
     <p>
@@ -209,13 +209,13 @@
       </statement>
     </proposition>
     <p>
-      The proof is nearly identical to the proof of commutativity. We
+      The proof is nearly identical to the proof of commutativity. I
       write the vectors with components and then use the associativity
       of ordinary addition in each component. 
     </p>
     <p>
       For scalar multiplication, since there are vectors and scalars
-      involved, we have to be careful how we even state associativity. 
+      involved, I have to be careful how I even state associativity. 
     </p>
     <proposition>
       <statement>
@@ -228,13 +228,13 @@
       </statement>
     </proposition>
     <p>
-      This is the only statement of associativity that makes sense. We
-      can't multiply vectors, but we can do successive
+      This is the only statement of associativity that makes sense. I
+      can't multiply vectors, but I can do successive
       multiplication by different scalars. The property here says that
-      we can do two scalar multiplications with the vector u, or we
-      can first multiply the scalars normally then do one scalar
+      I can do two scalar multiplications with the vector <m>u</m>, 
+      or I can first multiply the scalars normally then do one scalar
       multiplication. The proof is also like the proof for
-      commutativity: we write everything in components and use the
+      commutativity: I write everything in components and use the
       associativity of ordinary multiplication. 
     </p>
   </subsection>
