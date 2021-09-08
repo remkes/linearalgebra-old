@@ -213,7 +213,7 @@
           form is just fine. If I wanted an approximate value, I
           could ask a computer (WA): <m>\sqrt{14} +
           4 \pi^2 \doteq 217.78</m>. (When you write approximate
-          values, please use this equal with a dot to indicate that
+          values, please use this equals with a dot to indicate that
           this is approximately equal to, not exactly equal to.) 
         </p>
       </solution>
@@ -227,7 +227,7 @@
               0 \\ 0 \\ 0 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
-              \sqrt{\pi} \ \frac{1}{e^2+6} \\
+              \sqrt{\pi} \\ \frac{1}{e^2+6} \\
             \sqrt{1 + \sqrt{8}}
             \end{matrix} \right) 
           </me>
@@ -400,7 +400,7 @@
               \cos \theta \amp = \frac{14}{5 \sqrt{29}}
             </mrow>
           </md>
-          Then I can ask a computer (WA) to give us the inverse
+          Then I can ask a computer (WA) to give me the inverse
           cosine to get an approximation for the angle. (All angles
           are given in radians. The inverse cosine function will give
           an angle between 0 and <m>\pi</m>, which is good since the
@@ -456,7 +456,7 @@
               \frac{22}{10\sqrt{5}} = \frac{11}{5\sqrt{5}}
             </mrow>
           </md>
-          Then I can ask a computer (WA) to give us the inverse
+          Then I can ask a computer (WA) to give me the inverse
           cosine to get an approximation for the angle.
           <me>
             \theta = \arccos \frac{11}{5\sqrt{5}}
@@ -507,7 +507,7 @@
               \cos \theta \amp = \frac{-6}{3\sqrt{5}}
             </mrow>
           </md>
-          Then I can ask a computer (WA) to give us the inverse
+          Then I can ask a computer (WA) to give me the inverse
           cosine to get an approximation for the angle.
           <me>
             \theta = \arccos \frac{-6}{3\sqrt{5}}
@@ -583,7 +583,7 @@
       </statement>
       <solution>
         <p>
-          The cross product is calculated by the slightly complicated
+          The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
           <me>
@@ -619,7 +619,7 @@
       </statement>
       <solution>
         <p>
-          The cross product is calculated by the slightly complicated
+          The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
           <me>
@@ -656,7 +656,7 @@
       </statement>
       <solution>
         <p>
-          The cross product is calculated by the slightly complicated
+          The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
           <me>
@@ -692,7 +692,7 @@
       </statement>
       <solution>
         <p>
-          The cross product is calculated by the slightly complicated
+          The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
           <me>
@@ -742,18 +742,12 @@
           another example, <m>5 \times 4 = 8</m> is also proper
           arithmetic for this set, since <m>20 - 12 = 8</m>. Note that
           <m>12</m> is the same thing as <m>0</m> in this set; even
-          though on a clock, we would often write <m>12</m>, in this
-          set, we usually just write <m>0</m>. So, for example, we
+          though on a clock, I would often write <m>12</m>, in this
+          set, I usually just write <m>0</m>. So, for example, I
           would write <m>5 + 7 = 0</m> in this set. Finally, this is
-          just integers modulo 12, so we only consider the whole
-          numbers of the clock <mdash /> we don't have minutes or any
+          just integers modulo 12, so I only consider the whole
+          numbers of the clock <mdash /> I don't have minutes or any
           other subdivisions, only hours. 
-        </p>
-        <p>
-          The last term in the table, zero divisors, may not be
-          familiar to you. A set has zero divisors if there are two
-          non-zero elements <m>a</m> and <m>b</m> which multiply to
-          zero.
         </p>
         <table>
           <title>Table for Sets with Structure</title>
@@ -952,15 +946,15 @@
               themselves, they are zero divisors. 
             </li>
             <li>
-              Whether or not we have an order relation on the integers
+              Whether or not there is an order relation on the integers
               modulo 12 is also tricky. I can impose an order, saying
               that <m>0 \lt 1 \lt 2 \lt 3 \lt \ldots \lt 11</m>.
               However, since the numbers loop around, if I keep going
               from 12 back to 1, this seems intuitively problematic
               with this order. So, even though I could impose such an
-              order, I think it makes more sense not to. So I conclude that
-              the integer modulo 12 is not ordered. If we think about
-              time on a clock, I think we can justify this decision.
+              order, I think it makes more sense not to. I conclude that
+              the integer modulo 12 is not ordered. If I think about
+              time on a clock, I think I can justify this decision.
               If it is currently 10 o'clock, then there is a time
               before that was 5 o'clock as well as a time in the
               future, which will also be 5 o'clock. Therefore, putting
@@ -973,10 +967,10 @@
     <activity>
       <statement>
         <p>
-          The structures we've included so far have mostly been binary
+          The structures I've included so far have mostly been binary
           operations (the conventional four of arithmetic) and some
           other familiar things like order and absolute value.
-          However, structures can be as complicated as we like. Here
+          However, structures can be as complicated as I like. Here
           are some more involved structures. For each structure, give
           an example of a number set that has the structure. (Some of
           these are a bit tricky: you are allowed to restrict the
@@ -1029,9 +1023,9 @@
               The ability to do long division with a remainder: this
               works in <m>\NN</m>. Note that the remainder is important
               here: division is not exact in <m>\NN</m>, since we
-              don't have fractions. However, we can say that 7 goes
-              into 40 five times, with a remainder of 5 <mdash /> that still
-              just uses whole numbers. 
+              don't have fractions. However, I can say that 7 goes
+              into 40 five times, with a remainder of 5 <mdash /> that
+              still just uses whole numbers. 
             </li>
             <li>
               You can get the whole set just by starting with 1 and
@@ -1044,7 +1038,7 @@
             </li>
             <li>
               All numbers have square roots. This is a bit tricky,
-              since none of our conventional number sets have this
+              since none of the conventional number sets have this
               property. I have to make a restriction. I certainly
               want to work with real numbers, since I know that
               <m>\sqrt{2}</m> is already irrational. I'm not going to
@@ -1060,7 +1054,7 @@
               set which is larger than all other numbers). Again, no
               standard number set will have this structure, since they
               are all unbounded and keep getting larger forever.
-              However, we can make a restriction and take a bounded
+              However, I can make a restriction and take a bounded
               subset. Consider, for example, all natural numbers less
               than 40 (as I suggested in the statement of the
               problem). This set has a maximal element of 39, since
@@ -1085,7 +1079,8 @@
             |u+v| \leq |u| + |v|
           </me>.
           I'm going to give you several small steps which fit together
-          into a complete proof.
+          into a complete proof. I want you to write out the details
+          of each step and make it fit together into a whole argument. 
           <ol>
             <li>
               Write <m>|u+v|^2</m> as a dot product.
@@ -1117,7 +1112,7 @@
       </statement>
       <solution>
         <p>
-          I'll follow the guided steps for this proof. First, let's
+          I'll follow the guided steps for this proof. First, I'll
           write <m>|u+v|^2</m> as a dot product. I use the fact that
           the square of the length of a vector is the same as the dot
           product of a vector with itself. 
@@ -1126,17 +1121,19 @@
           </me>
           The next step is to distribute the right side. The dot
           product distributes over vector addition like ordinary
-          multipliction. 
+          multipliction. Since the dot product is commutative, <m>u
+          \cdot v</m> is the same as <m>v \cdot u</m>, so I can
+          combine the two term when I distribute the dot product. 
           <me>
             |u+v|^2 = u \cdot u + 2 u \cdot v + v \cdot v 
           </me>
           The middle term has the dot product which I can replace as
-          instructed.
+          instructed in the third step. 
           <me>
             |u+v|^2 = u \cdot u + 2 |u||v| \cos \theta + v \cdot v 
           </me>
           The cosine term is at most <m>1</m>, so the maximum for the
-          right side happens when we replace the cosine with 1. 
+          right side happens when I replace the cosine with 1. 
           <me>
             |u+v|^2 \leq u \cdot u + 2 |u||v| + v \cdot v 
           </me>
@@ -1150,7 +1147,11 @@
           <me>
             |u+v|^2 \leq \left( |u| + |v| \right)^2 
           </me>
-          Finally, I take the square root of both sides. 
+          Finally, I take the square root of both sides. The square
+          root of positive numbers preserves inequalities (<m>a \leq
+          b</m> if an only if <m>\sqrt{a}\leq \sqrt{b}</m>), so
+          applying the square root is a valid operations for sovling
+          an inequality like this.
           <me>
             |u+v| \leq |u| + |v| 
           </me>
@@ -1198,8 +1199,8 @@
             </mrow>
           </md>
           Now I just write each component in the other order,
-          interchage the order of each multiplication, and
-          recognize the definition of the cross product. 
+          interchaging the order of each multiplication, and
+          recognize the definition of the cross product in the result.
           <me>
             = \left( \left( \begin{matrix}
               v_3 u_2 - v_2 u_3 \\
@@ -1212,8 +1213,8 @@
               u_1 v_2 - u_2 v_1 
             \end{matrix} \right) \right) = u \times v
           </me>
-          I start with the right side and made a chain of equality to
-          the left side, thus proving the identity. 
+          I started with the right side and made a chain of equality
+          to the left side, thus proving the identity. 
         </p>
       </solution>
     </activity>

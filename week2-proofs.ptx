@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-dot-product-proofs">
     <title>Prooving the Dot Product Properties</title>
     <p>
-      In <xref ref="proposition-dot-product-properties" />, we listed
+      In <xref ref="proposition-dot-product-properties" />, I listed
       four properties of the dot product. In this section, I'll
       demonstrate how to prove some of these properties. 
     </p>
@@ -14,19 +14,21 @@
           \RR^n</m>, 
           <me>
             u \cdot v = v \cdot u
-          </me>
+          </me>.
         </p>
       </statement>
       <proof>
         <p>
-          I first write the vector in coordinates. 
+          I first write the vector in coordinates. This is the full
+          generality of <m>\RR^n</m>, so I write vectors with <m>n</m>
+          coordinates using ellipses 
           <md>
             <mrow>
               \amp u = \begin{pmatrix}
-                u_1 \\ u_2 \\ u_3 \\ \ldots \\ u_n
+                u_1 \\ u_2 \\ u_3 \\ \vdots \\ u_n
               \end{pmatrix}
               \amp \amp v = \begin{pmatrix}
-                v_1 \\ v_2 \\ v_3 \\ \ldots \\ v_n
+                v_1 \\ v_2 \\ v_3 \\ \vdots \\ v_n
               \end{pmatrix}
             </mrow>
           </md>
@@ -50,9 +52,8 @@
             u \cdot v = v \cdot u
           </me>
           That is the desired equality, so I have finished the proof.
-          Notice, as with previous proofs, that the desired equation
-          only shows up at the end of the proof. I never start with
-          what I want to prove.
+          Notice that the desired equation only shows up at the end of
+          the proof. I never start with what I want to prove.
         </p>
       </proof>
     </proposition>
@@ -85,12 +86,13 @@
           Since the right side is a sum of squares, it is a positive
           number (or possibly zero if all the <m>u_i</m> are zero). As
           a positive number or zero, I can square root it and then
-          square it.
+          square it without effect: <m>\alpha = (\sqrt{\alpha})^2</m>
+          for any non-negative <m>\alpha</m>.
           <me>
             u \cdot u = \left( \sqrt{u_1^2 + u_2^2 + u_3^2 + \ldots +
             u_n^2} \right)^2 
           </me>
-          Then the thing inside the brackets is, by definition, the
+          Then the expression inside the brackets is, by definition, the
           length of the vector <m>u</m>.
           <me>
             u \cdot u = \left( |u| \right)^2 = |u|^2 

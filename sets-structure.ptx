@@ -3,33 +3,32 @@
   <subsection xml:id="subsection-sets">
     <title>Sets</title>
     <p>
-      Before we talk about properties of dot/cross products and proof,
-      I want to step back to take a much more abstract look at what we
-      are accomplishing. I said in <xref
-      ref="section-themes" /> that algebra was the study of
-      sets with (algebraic) structures. I want to use this section to
-      explain that idea. 
+      Before I talk about properties of dot/cross products and proof,
+      I want to step back to take a much more abstract look at what I
+      am accomplishing. I said in <xref ref="section-themes" /> that
+      algebra was the study of sets with (algebraic) structures. I
+      want to use this section to explain that idea. 
     </p>
     <p>
       I should start with sets, very briefly. Set theory is a whole
       branch of mathematics itself, but I'm not going into the
-      details. It is enough for us to know that a set is a collection
+      details. It is enough for to know that a set is a collection
       of things. In many places in mathematics, sets are collections
       of numbers. In other courses, you may have seen some of these:
       the set of natural numbers (<m>\NN</m>); the set of integers
       (<m>\ZZ</m>); the set of rational numbers (<m>\QQ</m>); the set
       of real numbers (<m>\RR</m>); or intervals on the number line
-      (such as <m>(1,4]</m>). However, sets can contain anything we
-      want. In this course, we'll have sets of vectors and sets of
+      (such as <m>(1,4]</m>). However, sets can contain anything I
+      want. In this course, I'll have sets of vectors and sets of
       matrices. 
     </p>
   </subsection>
   <subsection xml:id="subsection-sets-structure">
     <title>Sets with Structure</title>
     <p>
-      So what do I mean when I say <qt>sets with structure</qt>? What
+      So what do I mean when I say <sq>sets with structure</sq>? What
       is a structure? A structure is a mathematical construction on a
-      set <mdash /> something that we can do, mathematically, with the
+      set <mdash /> something that I can do, mathematically, with the
       elements of the set. This is best illustrated by some very
       familiar examples.
     </p>
@@ -48,11 +47,11 @@
       </li>
       <li>
         Division by non-zero elements is a structure on many number
-        sets. Note that we have to make sure to exclude zero, since
-        for sets that have zero, division by zero is undefined.
-        Division is not a structure on <m>\NN</m>; like with
-        subtraction, even though <m>4</m> and <m>7</m> are natural
-        numbers, <m>\frac{4}{7}</m> is not a natural number.
+        sets. Note that zero must be excluded, since for sets that
+        have zero, division by zero is undefined.  Division is not a
+        structure on <m>\NN</m>; like with subtraction, even though
+        <m>4</m> and <m>7</m> are natural numbers, <m>\frac{4}{7}</m>
+        is not a natural number.
       </li>
       <li>
         The four previous examples are all types of <em>binary
@@ -79,10 +78,10 @@
     </ul>
     <p>
       This list is just the start of many, many kinds of algebraic
-      structures that we can consider on sets. When we think about
-      linear algebra abstractly, we are building new structures on
+      structures that I can consider on sets. When I think about
+      linear algebra abstractly, I am building new structures on
       sets of vectors and analyzing their properties. The dot product
-      and the cross product are the new structures we've introduced in
+      and the cross product are the new structures I've introduced in
       Week 2; there will be more to come.
     </p>
     <p>

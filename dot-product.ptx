@@ -3,12 +3,13 @@
   <subsection xml:id="subsection-dot-product-definition">
     <title>Definition</title>
     <p>
-      Earlier, we said that we ccouldn't multiply two vectors together.
-      That's mostly true, in the sense that there is no general
-      product of two vectors <m>uv</m>, which is still a vector.
-      However, there are other kinds of <sq>multiplication</sq> which
-      combine two vectors. The operation defined in this lecture
-      multiplies two vectors, but the result is a scalar.
+      Earlier, I said that I couldn't multiply two vectors together.
+      That's mostly true: there is no general product of two vectors
+      <m>uv</m>, which is still a vector, as least none that has any
+      useful or reasonable geometric meaning.  However, there are
+      other kinds of <sq>multiplication</sq> which combine two
+      vectors. The operation defined in this lecture multiplies two
+      vectors, but the result is a scalar.
     </p>
     <definition>
       <statement>
@@ -26,21 +27,22 @@
       </statement>
     </definition>
     <p>
-      We can think of the dot product as a scalar measure of the
+      I can think of the dot product as a scalar measure of the
       similarity of direction between the two vectors. If the two
       vectors point in a similar direction, their dot product is
       large, but if they point in very different directions, their dot
-      product is small. However, we already have a measure, at least
-      in <m>\RR^2</m>, of this difference: the angle between two
-      vectors. Thankfully, the two measures of difference agree, and
-      the dot product can be expressed in terms of angles.
+      product is small. This is a bit strange, since there already is
+      a measure, at least in <m>\RR^2</m>, of this difference: the
+      angle between two vectors. Thankfully, the two measures of
+      difference agree, and the dot product can be expressed in terms
+      of angles.
     </p>
     <definition>
       <statement>
         <p>
           The <term>angle</term> <m>\theta</m> between two non-zero
           vectors <m>u</m> and <m>v</m> in <m>\RR^n</m> is given by
-          the equation 
+          the follow equation.
           <me>
             \cos \theta = \frac{u \cdot v}{|u||v|}
           </me>
@@ -49,14 +51,15 @@
     </definition>
     <p>
       This definition agrees with the angles in <m>\RR^2</m> and
-      <m>\RR^3</m>, which we can visualize. However, this serves as a
-      new definition for angles between vectors in all <m>\RR^n</m>
-      when <m>n \geq 4</m>. Since we can't visualize those spaces, we
-      don't have a way of drawing angles and calculating them with
-      conventional trigonometry. This definition allows us to extend
-      angles in a completely algebraic way. Notes that <m>\theta \in
-      [0, \pi]</m>, since we always take the smallest possible angle
-      between two vectors.
+      <m>\RR^3</m>, which I can visualize. However, this serves as a
+      new <em>definition</em> for angles between vectors in all
+      <m>\RR^n</m> when <m>n \geq 4</m>. Since I can't visualize those
+      spaces, I don't have a way of drawing angles and calculating
+      them with conventional trigonometry. This definition allows me
+      to extend angles in a completely algebraic way. Notes that
+      this angle <m>\theta \in [0, \pi]</m>, since I can always choose
+      the smallest possible angle between two vectors. This means that
+      the inverse cosine is unique for this calculation. 
     </p>
     <definition>
       <statement>
@@ -72,37 +75,38 @@
     <title>Properties of the Dot Product</title>
     <p>
       There are many pairs of orthogonal vectors. Thinking of the dot
-      product as a multiplication, we have uncovered a serious
+      product as a multiplication, I have uncovered a serious
       difference between the dot product and the conventional
       multiplication of numbers. If <m>a,b\in \RR</m>, then
       <m>ab=0</m> implies that one of <m>a</m> or <m>b</m> must be
-      zero. For vectors, we can have <m>\begin{pmatrix} 1 \\ 0
+      zero. For vectors, it can be true that <m>\begin{pmatrix} 1 \\ 0
       \end{pmatrix} \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix} 
-      = 0</m> even though neither factor in the
-      product is the zero vector. We have a definition to keep track
-      of this new property.
+      = 0</m> even though neither factor in the product is the zero
+      vector. Here is a definition to keep track of this new
+      property.
     </p>
     <definition>
       <statement>
         <p>
           Assume <m>A</m> is a set with addition and some kind of
-          multiplication and that <m>0 \in A</m>. If <m>u \neq 0</m>
-          and <m>v \neq 0</m> but <m>uv =0</m>, we say that <m>u</m> and
-          <m>v</m> are <term>zero divisors</term>.
+          multiplication. Also assume that <m>0 \in A</m>. If <m>u
+          \neq 0</m> and <m>v \neq 0</m> but <m>uv =0</m>, then
+          <m>u</m> and <m>v</m> are called <term>zero
+          divisors</term>.
         </p>
       </statement>
     </definition>
     <p>
-      An important property of ordinary numbers, as we just noted, is
+      An important property of ordinary numbers, as I just noted, is
       that there are no zero divisors. Other algebraic structures,
       such as vectors with the dot product, may have many zero
       divisors.
     </p>
     <p>
-      Now that we have a new operation, it is useful to see how it
-      interacts with previously defined structures. We'll take up the
-      proofs of these in <xref ref="section-proofs-week2" /> and in the
-      activity for this week. 
+      Now that I have defined a new operation, it is useful to see how
+      it interacts with previously defined structures. I'll take up
+      the proofs of these in <xref ref="section-proofs-week2" /> and
+      in the activity for this week. 
     </p>
     <proposition xml:id="proposition-dot-product-properties">>
       <statement>
@@ -129,11 +133,12 @@
       </statement>
     </proposition>
     <p>
-      In <m>\RR^2</m>, norms and dot products allow us to recreate
+      In <m>\RR^2</m>, norms and dot products allow me to recreate
       some well-known geometric constructions. For example, now that
-      we have lengths and angles, we can state the cosine law in terms
-      of vectors. The visualization of the vector relationships of
-      the cosine law is shown in <xref ref="figure-the-cosine-law" />.
+      I have defined lengths and angles, I can state the cosine law in
+      terms of vectors. The visualization of the vector relationships
+      of the cosine law is shown in <xref ref="figure-the-cosine-law"
+      />.
     </p>
     <figure xml:id="figure-the-cosine-law">
       <caption>The Cosine Law</caption>
