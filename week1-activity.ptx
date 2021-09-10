@@ -450,27 +450,27 @@
             <mrow>
               \amp v-u = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
               \end{matrix} \right) - \left( \begin{matrix} 6 \\ 0 \\
-              -1 \\ -1 \\ 1 \end{matrix} \right) + \left(
+              -1 \\ -1 \\ 1 \end{matrix} \right) = \left(
               \begin{matrix} -3 \\ -3 \\ 2 \\ -2 \\ 0 \end{matrix}
               \right) 
             </mrow>
             <mrow>
               \amp u-w = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
               \end{matrix} \right) - \left( \begin{matrix} 0 \\ -1 \\
-              0 \\ 3 \\ 5 \end{matrix} \right) + \left( \begin{matrix}
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
               6 \\ 1 \\ -1 \\ -4 \\ -4 \end{matrix} \right) 
             </mrow>
             <mrow>
               \amp w-u = \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
               \end{matrix} \right) - \left( \begin{matrix} 6 \\ 0 \\
-              -1 \\ -1 \\ 1 \end{matrix} \right) + \left(
+              -1 \\ -1 \\ 1 \end{matrix} \right) = \left(
               \begin{matrix} -6 \\ -1 \\ 1 \\ 4 \\ 4 \end{matrix}
               \right)
             </mrow>
             <mrow>
               \amp v-w = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
               \end{matrix} \right) - \left( \begin{matrix} 0 \\ -1 \\
-              0 \\ 3 \\ 5 \end{matrix} \right) + \left( \begin{matrix}
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
               3 \\ -2 \\ 1 \\ -6 \\ -4 \end{matrix} \right)
             </mrow>
             <mrow>
@@ -478,7 +478,7 @@
               \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
               \end{matrix} \right) - 
               \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1 
-              \end{matrix} \right) +
+              \end{matrix} \right) =
               \left( \begin{matrix} -3 \\ 2 \\ -1 \\ 6 \\ 4
               \end{matrix} \right) 
             </mrow>
