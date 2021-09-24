@@ -5,15 +5,6 @@
   <title>Week 4 Assignment</title>
   <p><ol>
     <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week4">
-  <title>Week 4 Assignment</title>
-  <p><ol>
-    <li>
       <p>
         For each of the following systems of equations, write the
         corresponding matrix, solve the system by row-reduction, give
@@ -22,31 +13,31 @@
         <ol>
           <li><me>
             \begin{array}{rcl}
-            -x+2y+2z \amp = 0 \\
-            4x-2y+z \amp = 3 \\
-            3x-y-z \amp = -2 \\
-            y+z \amp = -2
+            x + y - 3z  \amp = -2 \\
+            -x - y - z \amp = 0 \\
+            2x  - 2y + 2z \amp = 4 
             \end{array}
           </me></li>
           <li><me>
             \begin{array}{rcl}
-            2w-z \amp = 0 \\
-            2w+x-2z \amp = 3 \\
-            w+x+y-z \amp = -2 
+            -w - 3x + 4y \amp = 1 \\
+            w + z \amp = 1 \\
+            3x - z \amp = 1 
             \end{array}
           </me></li>
           <li><me>
             \begin{array}{rcl}
-            4x-4y \amp = 0 \\
-            3x-y-z \amp = 3 \\
-            x+y+z \amp = 0 
+            x \amp = 0 \\
+            y + z  \amp = 1 \\
+            y - z  \amp = 1 
             \end{array}
           </me></li>
           <li><me>
             \begin{array}{rcl}
-            x-y \amp = 2 \\
-            4x - 4y \amp = 8 \\
-            8x - 8y \amp = 16 
+            x - z \amp = 0 \\
+            2x - 2y \amp = 1 \\
+            3x - 3z \amp = 0 \\
+            4x - 4y \amp = 2 
             \end{array}
           </me></li>
         </ol>
@@ -54,15 +45,28 @@
     </li>
     <li>
       <p>
-        How many linear equations do you need in <m>\RR^3</m> to lead
-        to a matrix row that translates to <m>0=1</m> (hence a system
-        with no solutions)? What is the maximum number of equations you
-        can have in <m>\RR^3</m> and still have a unique solution?
-        Answer both questions for <m>\RR^n</m> as well and give
-        reasons for how you generalize the special case of three
-        dimensions to the general case of <m>n</m> dimension. (6) 
+        For each of the following, give an example of a matrix that
+        satisfied or give an argument that such a matrix is
+        impossible. (12)
       </p>
+      <p><ol>
+        <li>
+          A system with five equations in five variables that has
+          three free parameters. 
+        </li>
+        <li>
+          A system with two equations in five variables that has no
+          solutions.
+        </li>
+        <li>
+          A system with three equations in three variables that has
+          four free parameters. 
+        </li>
+        <li>
+          A system with six equations in four variables that has
+          infinitely many solutions. 
+        </li>
+      </ol></p>
     </li>
   </ol></p>
 </section>
--->

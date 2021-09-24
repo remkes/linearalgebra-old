@@ -3,10 +3,10 @@
   <subsection xml:id="subsection-span-definitions">
     <title>Definitions</title>
     <p>
-      In addition to presenting the second description of linear
-      subspaces, this chapter also introduces linear combinations,
-      span and linear (in)dependence. These are some of the most
-      important and central definitions in linear algebra.
+      This chapter also introduces linear combinations, spans and
+      linear (in)dependence. These are some of the most important and
+      central definitions in linear algebra. Let me start by defining
+      the these three important terms. 
     </p>
     <definition>
       <statement>
@@ -23,63 +23,15 @@
         <p>
           The <term>span</term> of a set of vectors <m>\{v_1, v_2,
           \ldots, v_k\}</m>, written <m>\Span \{v_1, v_2, \ldots,
-          v_k\}</m>, is the set of <term>all</term> linear
-          combinations of the vectors.
+          v_k\}</m>, is the set of all possible linear combinations of
+          the vectors. 
         </p>
       </statement>
     </definition>
     <p>
-      After loci, spans are the second way of defining linear
-      subspaces. Spans are never affine: since linear combinations
-      allow for all the coefficients <m>a_i</m> to be zero, spans
-      always include the origin. To use spans to define affine
-      subspaces, we have to add an offset vector.
+      Spans have an important geometric interpretation, but I'll get
+      to that in the next section. 
     </p>
-    <definition>
-      <statement>
-        <p>
-          An <term>offset span</term> is an affine subspace formed by
-          adding a fixed vector <m>u</m>, called the <term>offset
-          vector</term>, to the span of some set of vectors.
-        </p>
-      </statement>
-    </definition>
-    <p>
-      Loci are built top-down, by starting with the ambient space and
-      reducing the number of points by imposing restrictions in the
-      form of linear equations. Their dimensions, at least ideally, are
-      the dimensions of the ambient space minus the number of equations
-      or restrictions. Spans, on the other hand, are built bottom-up.
-      They start with a number of vectors and take all linear
-      combinations: more starting vectors leads to more independent
-      directions and a larger dimension.
-    </p>
-    <p>
-      In particular, the span of one non-zero vector is the line
-      (through the origin) consisting of all multiples of that vector.
-      Similarly, we expect the span of two vectors to be a plane.
-      However, here we have the same problem as we had with loci: we
-      may have redundant information. For example, in <m>\RR^2</m>,
-      we could consider the <m>\Span \left\{ \begin{pmatrix} 1 \\
-      2 \end{pmatrix}, \begin{pmatrix} 2 \\ 4 \end{pmatrix}
-      \right\}</m>. We would hope the span of two vectors would be the
-      entire plane, but this is just the line in the direction
-      <m>\begin{pmatrix} 1 \\ 2 \end{pmatrix}</m>. The vector
-      <m>\begin{pmatrix} 2 \\ 4 \end{pmatrix}</m>, since it is
-      already a multiple of <m>\begin{pmatrix} 1 \\ 2
-      \end{pmatrix}</m>, is redundant.
-    </p>
-    <p>
-      The problem is magnified in higher dimensions. If we have the
-      span of a large number of vectors in <m>\RR^n</m>, it is nearly
-      impossible to tell, at a glance, whether any of the vectors are
-      redundant. We would like to have tools to determine this
-      redundancy. As with the tools for dimensions of loci, we have
-      to wait until a later section of these notes.
-    </p>
-  </subsection>
-  <subsection xml:id="subsection-independence">
-    <title>Linear Independence</title>
     <definition>
       <statement>
         <p>
@@ -105,16 +57,16 @@
       remove any vectors, the span of the set gets smaller.
     </p>
     <p>
-      In order for a set like this to be linearly independent, we need
+      In order for a set like this to be linearly independent, I need
       <m>k \leq n</m>. <m>\RR^n</m> has only <m>n</m> independent
       directions, so it is impossible to have more than <m>n</m>
-      linearly independent vectors in <m>\RR^n</m>.
+      linearly independent vectors in <m>\RR^n</m>. 
     </p>
   </subsection>
   <subsection xml:id="subsection-subspaces">
     <title>Linear and Affine Subspaces</title>
     <p>
-      Using the language of linear combinations and spans, we can
+      Using the language of linear combinations and spans, I can
       define the major objects that live in Euclidean space. 
     </p>
     <definition>
@@ -123,34 +75,34 @@
           A <term>linear subspace</term> of <m>\RR^n</m> is a
           non-empty set of vectors <m>L</m> which satisfies the
           following two properties.
-          <ul>
-            <li>
-              <p>
-                If <m>u,v \in L</m> then <m>u+v \in L</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                If <m>u \in L</m> and <m>a \in \RR</m> then <m>au \in
-                L</m>.
-              </p>
-            </li>
-          </ul>
         </p>
+        <p><ul>
+          <li>
+            If <m>u,v \in L</m> then <m>u+v \in L</m>. The term for
+            this property is: <term>closed under vector
+            addition</term>.
+          </li>
+          <li>
+            If <m>u \in L</m> and <m>a \in \RR</m> then <m>au \in
+            L</m>. The term for this property is: <term>closed under
+            scalar multiplication</term>.
+          </li>
+        </ul></p>
       </statement>
     </definition>
     <p>
-      There are two basic operations on <m>\RR^n</m>: we can add
-      vectors, and we can multiply by scalars. Linear subspaces are
-      just subsets where we can still perform both operations and
-      remain in the subset.
+      There are two basic operations on <m>\RR^n</m>: adding
+      vectors and multipling vectdors by scalars. Linear subspaces are
+      just subsets where both operations stay within the subset.
     </p>
     <p>
       Geometrically, vector addition and scalar multiplication produce
       flat objects: lines, planes, and their higher-dimensional
-      analogues. Also, since we can take <m>a=0</m>, we must have
-      <m>0 \in L</m>. So linear subspaces can be informally defined
-      as flat subsets, which include the origin.
+      analogues. Also, since <m>a=0</m> is possible, it must be true
+      that <m>0 \in L</m>. So linear subspaces can be informally defined
+      as <sq>flat</sq> subsets which include the origin. If I relax
+      the definition slighlty to consider <sq>flat</sq> subsets which
+      do not contain the origin, I get a related definition.
     </p>
     <definition>
       <statement>
@@ -159,33 +111,98 @@
           non-empty set of vectors <m>A</m> which can be described as
           a sum <m>v+u</m> where <m>v</m> is a fixed vector and
           <m>u</m> is any vector in some fixed linear subspace
-          <m>L</m>. With some abuse of notation, we write this as a
-          sum of a fixed vector and a linear subspace.
+          <m>L</m>. With some abuse of notation, this sum of a fixed
+          vector and a linear subspace is often written
           <me>
             A = v + L
-          </me>
+          </me>.
         </p>
         <p>
-          We think of affine subspaces as flat spaces that may be
-          offset from the origin. The vector <m>v</m> is called the
-          <term>offset vector</term>. Affine spaces include linear
-          spaces since we can also take <m>u</m> to be the zero
-          vector and have <m>A=L</m>. Affine objects are the lines,
-          planes and higher-dimensional flat objects that may or may
-          not pass through the origin.
+          Affine subspaces are flat spaces that may be offset from the
+          origin. The vector <m>v</m> is called the <term>offset
+          vector</term>. Affine spaces include linear spaces since
+          <m>v = 0 </m> is always possible, leading to <m>A=L</m>.
+          Affine objects are the lines, planes and higher-dimensional
+          flat objects that may or may not pass through the origin.
         </p>
       </statement>
     </definition>
     <p>
-      Notice that we defined both affine and linear subspaces to be
+      Notice that I defined both affine and linear subspaces to be
       non-empty. The empty set <m>\emptyset</m> is <em>not</em> a
       linear or affine subspace. The smallest linear subspace is
       <m>\{0\}</m>: just the origin. The smallest affine subspace is
       any isolated point.
     </p>
+    <p>
+      Now let me connect the two idea presented so far in this
+      section. 
+    </p>
+    <proposition xml:id="proposition-spans-subspaces">
+      <statement>
+        Any span is a linear subspace. Conversely, any linear subspace
+        can be written as a span. 
+      </statement>
+    </proposition>
+    <p>
+      By this proposition, spans provide an algebraic description of
+      the geometric notion of a linear subspace. Since <sq> any linear
+      combination</sq> can include the trivial linear combination
+      where all the real constants are zero, spans always go through
+      the origin.  To use spans to define affine
+      subspaces, I have to add an offset vector.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          An <term>offset span</term> is an affine subspace formed by
+          adding a fixed vector <m>u</m>, called the <term>offset
+          vector</term>, to the span of some set of vectors.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Let me talk about spans of small numbers of vectors. First, the
+      span of one non-zero vector is the line (through the origin)
+      consisting of all multiples of that vector.  Similarly, I expect
+      the span of two vectors to be a plane.  However, here I have a
+      problem: there may be redundant information. For example, in
+      <m>\RR^2</m>, we could consider this span.
+      <me>
+        \Span \left\{ \begin{pmatrix} 
+          1 \\ 2 
+        \end{pmatrix}, \begin{pmatrix} 
+          2 \\ 4 
+        \end{pmatrix} \right\}
+      </me> 
+      I would hope the span of two vectors would be the
+      entire plane, but this is just the line in the direction
+      <m>\begin{pmatrix} 1 \\ 2 \end{pmatrix}</m>. The vector
+      <m>\begin{pmatrix} 2 \\ 4 \end{pmatrix}</m>, since it is
+      already a multiple of <m>\begin{pmatrix} 1 \\ 2
+      \end{pmatrix}</m>, is redundant.
+    </p>
+    <p>
+      The problem is magnified in higher dimensions. If I have the
+      span of a large number of vectors in <m>\RR^n</m>, it is nearly
+      impossible to tell, at a glance, whether any of the vectors are
+      redundant. I would like to have tools to determine this
+      redundancy. I'm going to define the keys ideas behind this
+      redundancy in the next part of this section, but the calculation
+      tools for checking redundancy have to wait until <xref
+      ref="section-dimensions-spans" />. 
+    </p>
   </subsection>
   <subsection xml:id="subsection-dimension-and-basis">
     <title>Dimension and Basis</title>
+    <p>
+      I've already casually assumed some intuition about dimensions
+      for linear subspaces. A line through the origin should have
+      dimensions one. A plane through the origin should have
+      dimensions two. However, I can't rely on intuition for
+      mathematical definition: I have to formalize. This second
+      formally defines dimension and related ideas. 
+    </p>
     <definition>
       <statement>
         <p>
@@ -212,7 +229,8 @@
       and affine spaces. It solves the problem of redundant
       information (either redundant equations for loci or redundant
       vectors for spans) by insisting on a linearly independent
-      spanning set.
+      spanning set. It insists that the vectors defining a span are a
+      minimal set. There is a name for such a minimal set. 
     </p>
     <definition>
       <statement>
@@ -225,11 +243,11 @@
       </statement>
     </definition>
     <p>
-      Since a span is the set of all linear combinations, we can think
+      Since a span is the set of all linear combinations, I can think
       of a basis as a way of writing the vectors of <m>L</m>: every
-      vector in <m>L</m> can be written as a linear combination of the
-      basis vectors. A basis gives a nice way to account for all the
-      vectors in <m>L</m>.
+      vector in <m>L</m> can be written as a <em>unique</em> linear
+      combination of the basis vectors. A basis gives a nice way to
+      account for all the vectors in <m>L</m>.
     </p>
     <p>
       Linear subspaces have many (infinitely many) different bases.
@@ -240,7 +258,7 @@
         <p>
           The <term>standard basis</term> of <m>\RR^2</m> is composed
           of the two-unit vectors in the positive <m>x</m> and
-          <m>y</m> directions. We can write any vector as a linear
+          <m>y</m> directions. I can write any vector as a linear
           combination of the basis vectors.
           <md>
             <mrow>
@@ -253,7 +271,7 @@
         <p>
           The <term>standard basis</term> of <m>\RR^3</m> is composed
           of the three-unit vectors in the positive <m>x</m>, <m>y</m>
-          and <m>z</m> directions. We can again write any vector as a
+          and <m>z</m> directions. I can again write any vector as a
           linear combination of the basis vectors.
           <md>
             <mrow>

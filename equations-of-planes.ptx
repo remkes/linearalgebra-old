@@ -3,20 +3,21 @@
   <subsection xml:id="subsection-dot-product-and-loci">
     <title>Dot Products and Loci</title>
     <p>
-      Having discussed spans, let's return to loci. By re-examining the
-      linear equations, we can define loci via dot products. Consider,
-      again, the general linear equation in <m>\RR^n</m>.
+      Loci are the solutions to one of more linear equations. These
+      linear equation can be re-interpreted and expressed via via dot
+      products. Consider, again, the general linear equation in
+      <m>\RR^n</m>.
       <me>
         a_1 u_1 + a_2 u_2 + \ldots + a_n u_n = c
       </me>
     </p>
     <p>
-      Let's think of the variables <m>u_i</m> as the components of a
-      vector <m>u \in \RR^n</m>. We also have <m>n</m> scalars
-      <m>a_i</m>, which we likewise treat as components of the vector
-      <m>a \in \RR^n</m>. The vector <m>u</m> is variable; the
-      vector <m>a</m> is constant. Then we can re-write the linear
-      equation using these two vectors.
+      Think of the variables <m>u_i</m> as the components of a vector
+      <m>u \in \RR^n</m>. There also are <m>n</m> scalars <m>a_i</m>,
+      which I can likewise treat as components of the vector <m>a \in
+      \RR^n</m>. The vector <m>u</m> is variable; the vector <m>a</m>
+      is constant. Then I can re-write the linear equation using these
+      two vectors.
       <me>
         a_1 u_1 + a_2 u_2 + \ldots + a_n u_n = \begin{pmatrix} a_1 \\
         a_2 \\ \vdots \\ a_n \end{pmatrix} \cdot \begin{pmatrix} u_1
@@ -28,31 +29,50 @@
       result of a variable vector <m>u</m> with a fixed vector
       <m>a</m> must have the result <m>c</m>. In this light, an
       affine plane in <m>\RR^3</m> is given by the equation
-      <m>\begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot
-      \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = c</m>. This
-      plane is precisely all vectors whose dot product with the vector
-      <m>\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}</m> is the
-      fixed number <m>c</m>. If <m>c=0</m>, then we get
-      <m>\begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot
-      \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = 0</m> . A
-      linear plane is the set of all vectors which are perpendicular
-      to a fixed vector <m>\begin{pmatrix} a_1 \\ a_2 \\ a_3
-      \end{pmatrix}</m>.
+      <me>
+        \begin{pmatrix} 
+          x \\ y \\ z 
+        \end{pmatrix} \cdot \begin{pmatrix} 
+          a_1 \\ a_2 \\ a_3 
+        \end{pmatrix} = c
+      </me>. 
+      This plane is precisely all vectors whose dot product with the
+      vector <m>\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}</m> is
+      the fixed number <m>c</m>. If <m>c=0</m>, the equation become 
+      <me>
+        \begin{pmatrix} 
+          x \\ y \\ z 
+        \end{pmatrix} \cdot \begin{pmatrix} 
+          a_1 \\ a_2 \\ a_3 
+        \end{pmatrix} = 0
+      </me>. 
+      A dot product of zero indicates that the two inputs to the dot
+      product are perpendicular. Therefore, a plane through the origin
+      is the set of all vectors which are perpendicular to a fixed
+      vector <m>\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}</m>.
     </p>
     <definition>
       <statement>
         <p>
           Let <m>P</m> be a plane in <m>\RR^3</m> determined by the
-          equation <m>\begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot
-          \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = c</m> .
+          equation 
+          <me>
+            \begin{pmatrix} 
+              x \\ y \\ z 
+            \end{pmatrix} \cdot \begin{pmatrix} 
+              a_1 \\ a_2 \\ a_3 
+            \end{pmatrix} = c
+          </me>.
           The vector <m>\begin{pmatrix} a_1 \\ a_2 \\ a_3
           \end{pmatrix}</m> is called the <term>normal to the
           plane</term>. Let <m>H</m> be a hyperplane in <m>\RR^n</m>
           determined by the equivalent equation in <m>\RR^n</m>.
           <me>
-            u \cdot a = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
-            \end{pmatrix} \cdot \begin{pmatrix} a_1 \\ a_2 \\ \vdots
-            \\ a_n \end{pmatrix} = c
+            u \cdot a = \begin{pmatrix} 
+              u_1 \\ u_2 \\ \vdots \\ u_n
+            \end{pmatrix} \cdot \begin{pmatrix} 
+              a_1 \\ a_2 \\ \vdots \\ a_n 
+            \end{pmatrix} = c
           </me>
         </p>
         <p>
@@ -74,24 +94,24 @@
   <subsection xml:id="subsection-planes-algorithm">
     <title>An Algorithm for Equations of Planes</title>
     <p>
-      Now we can build a general process for finding the equation of a
-      plane in <m>\RR^3</m>. Any time we have a point <m>p</m> on the
+      Now I can build a general process for finding the equation of a
+      plane in <m>\RR^3</m>. Any time I have a point <m>p</m> on the
       plane and two <em>local direction vectors</em> <m>u</m> and
-      <m>v</m> which remain on the plane, we can find a normal to the
-      plane by taking <m>u \times v</m>. Then we can find the
-      equation of the plane by taking the dot product <m>p \cdot (u
-      \times v)</m> to find the constant <m>c</m>.
+      <m>v</m> which remain on the plane, I can find a normal to the
+      plane by calculating <m>u \times v</m>. Then I can find the
+      equation of the plane by calculating the dot product <m>p \cdot
+      (u \times v)</m> to find the constant <m>c</m>.
       <me>
         \begin{pmatrix} x \\ y \\ z \end{pmatrix} \cdot (u \times v) =
         c
       </me>
     </p>
     <p>
-      If we are given three points on a plane (<m>p</m>, <m>q</m> and
-      <m>r</m>), then we can use <m>p</m> as the local origin and
+      If I am given three points on a plane (<m>p</m>, <m>q</m> and
+      <m>r</m>), then I can use <m>p</m> as the local origin and
       construct the local direction vectors as <m>q-p</m> and
       <m>r-p</m>. The normal is <m>(q-p) \times (r-p)</m>. In this
-      way, we can construct the equation of a plane given three points
+      way, I can construct the equation of a plane given three points
       or a single point and two local directions.
     </p>
   </subsection>

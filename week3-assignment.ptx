@@ -5,15 +5,6 @@
   <title>Week 3 Assignment</title>
   <p><ol>
     <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week3">
-  <title>Week 3 Assignment</title>
-  <p><ol>
-    <li>
       <p>
         Write the first vector as a linear combination of the second
         and third vectors or show that it cannot be done.(8)
@@ -21,26 +12,26 @@
           <li>
             <me>
               \begin{pmatrix}
-                4 \\ 3 
+                2 \\ 7 
               \end{pmatrix},
               \begin{pmatrix}
-                0 \\ 9 
+                -1 \\ 1 
               \end{pmatrix},
               \begin{pmatrix}
-                3  \\ -5 
+                4  \\ 3 
               \end{pmatrix}
             </me>
           </li>
           <li>
             <me>
               \begin{pmatrix}
-                0 \\ 4 \\ 11 
+                1 \\ 5 \\ 1
               \end{pmatrix},
               \begin{pmatrix}
-                -1 \\ -2 \\ 1 
+                5 \\ -3 \\ -1 
               \end{pmatrix},
               \begin{pmatrix}
-                0 \\ 5 \\ -2 
+                -2 \\ 4 \\ 1 
               \end{pmatrix}
             </me>
           </li>
@@ -56,20 +47,20 @@
           <li>
             <me>
               \begin{pmatrix}
-                0 \\ -4 \\ -4  
+                1 \\ -6 \\ -2  
               \end{pmatrix},
               \begin{pmatrix}
-                3 \\ 0 \\ 0 
+                4 \\ 2 \\ 0 
               \end{pmatrix}
             </me>
           </li>
           <li>
             <me>
               \begin{pmatrix}
-                1 \\ 1 \\ -4 
+                -8 \\ -2 \\ 1 
               \end{pmatrix},
               \begin{pmatrix}
-                2 \\ -3 \\ 1 
+                -4 \\ -4 \\ -4 
               \end{pmatrix}
             </me>
           </li>
@@ -83,23 +74,23 @@
           <li>
             The plane with normal 
             <m>\begin{pmatrix}
-              -7 \\ -1 \\ -1 
+              -4 \\ 3 \\ 9 
             \end{pmatrix}</m>
             containing the point
             <m>\begin{pmatrix}
-              4 \\ 0 \\ 2 
+              0 \\ -4 \\ -2 
             \end{pmatrix}</m>.
           </li>
           <li>
             The plane containing the points 
             <m>\begin{pmatrix}
-              4 \\ 8 \\ 0 
+              0 \\ 3 \\ -6 
             \end{pmatrix}, </m>
             <m>\begin{pmatrix}
-              1 \\ -5 \\ -5 
+              4 \\ -2 \\ -1 
             \end{pmatrix}</m> and 
             <m>\begin{pmatrix}
-              -3 \\ 10 \\ 2 
+              -3 \\ -2 \\ 1 
             \end{pmatrix}</m>.
           </li>
         </ol>
@@ -107,10 +98,11 @@
     </li>
     <li>
       <p>
-        Prove that any three vectors in <m>\RR^2</m> must be linearly
-        dependent. (3)
+        Consider an affine subspace in <m>\RR^3</m>. Assume that the
+        subspace does not include the origin. Prove that the sum of
+        any two vectors in the subspace cannot also be in the
+        subspace. (One way to do this is by contradiction.) (6) 
       </p>
     </li>
   </ol></p>
 </section>
--->

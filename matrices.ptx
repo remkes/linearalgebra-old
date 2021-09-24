@@ -6,10 +6,10 @@
       <statement>
         <p>
           A <term>matrix</term> is a rectangular array of scalars. If
-          the matrix has <m>m</m> rows and <m>n</m> columns, we say it
-          is an <m>m \times n</m> matrix. The scalars in the matrix
-          are called the <term>entries</term>, <term>components</term>
-          or <term>coefficients</term>.
+          the matrix has <m>m</m> rows and <m>n</m> columns, it is
+          called an <m>m \times n</m> matrix. The scalars in the
+          matrix are called the <term>entries</term>,
+          <term>components</term> or <term>coefficients</term>.
         </p>
       </statement>
     </definition>
@@ -23,8 +23,8 @@
       </statement>
     </definition>
     <p>
-      A matrix is a rectangular array of numbers, enclosed either in
-      square or round brackets. Here are two ways of writing a
+      The array of numbers is written in rows and columns, enclosed in
+      either square or round brackets. Here are two ways of writing a
       particular <m>3\times 2</m> matrix with integer coefficients.
       <md>
         <mrow>
@@ -71,15 +71,15 @@
       </me>
     </p>
     <p>
-      By convention, in an arbitrary matrix entry
-      <m>a_{ij}</m> the first subscript tells us the row and the
-      second subscript tells us the column. For example,
-      <m>a_{64}</m> is the entry in the sixth row and the fourth
-      column. In the rare occurrence that we have matrices with more
-      than 10 rows or columns, I can separate the indices by commas:
-      <m>a_{12,15}</m> would be in the twelfth row and the fifteenth
-      column. Sometimes I write <m>A = a_{ij}</m> as short-hand for
-      the entire matrix when the size is understood or undetermined.
+      By convention, in an arbitrary matrix entry <m>a_{ij}</m> the
+      first subscript tells us the row and the second subscript tells
+      us the column. For example, <m>a_{64}</m> is the entry in the
+      sixth row and the fourth column. In the rare occurrence where
+      matrices with more than 10 rows or columns are used, I can
+      separate the indices by commas: <m>a_{12,15}</m> would be in the
+      twelfth row and the fifteenth column. Sometimes I write <m>A =
+      a_{ij}</m> as short-hand for the entire matrix when the size is
+      understood or undetermined.
     </p>
     <definition>
       <statement>
@@ -209,10 +209,10 @@
         <p>
           The set of all <m>n \times m</m> matrices with real
           coefficients is written <m>M_{n,m}(\RR)</m>. For square
-          matrices (<m>n \times n</m>), we simply write
-          <m>M_n(\RR)</m>. If we wanted to change the set of scalars
+          matrices (<m>n \times n</m>), I simply write
+          <m>M_n(\RR)</m>. If I wanted to change the set of scalars
           to some other number set <m>S</m>, we would write
-          <m>M_{n,m}(S)</m> or <m>M_n(S)</m>.
+          <m>M_{n,m}(S)</m> or <m>M_n(S)</m>
         </p>
       </statement>
     </definition>

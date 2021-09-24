@@ -4,16 +4,16 @@
     <title>Definition of a Locus</title>
     <p>
       Spans were the first way to define linear and affine subspaces.
-      There is another approach to describe these object, which we
-      describe in this section. Let's start with the definition.
+      There is another approach to describe these object, which I
+      describe in this section. I'll start with the main definition.
     </p>
     <definition>
       <statement>
         <p>
-          Consider any set of linear equations in the variables
+          Consider any set of equations in the variables
           <m>x_1, x_2, \ldots, x_n</m>. The <term>locus</term> in
           <m>\RR^n</m> of this set of equations is the set of vectors
-          that satisfy <term>all</term> of the equations. The plural
+          that satisfy <em>all</em> of the equations. The plural
           of a locus is <term>loci</term>.
         </p>
       </statement>
@@ -22,11 +22,14 @@
       In general, the equations can be of any sort. The unit circle
       in <m>\RR^2</m> is most commonly defined as the locus of the
       equation <m>x^2 + y^2 = 1</m>. The graph of a function is the
-      locus of the equation <m>y = f(x)</m>. However, in linear
-      algebra, we exclude curved objects. We're concerned with
-      linear/affine objects: things that are straight and flat.
+      locus of the equation <m>y = f(x)</m>. However, linear
+      algebra excludes curved objects. The subset is concerned with 
+      linear/affine objects: things that are straight and flat. So, I
+      don't want loci of just any kind of equation: I want loci of
+      linear equations. The idea is likely familiar, but let me
+      formally define it anyway. 
     </p>
-    <definition>
+    <definition xml:id="definition-linear-equation">
       <statement>
         <p>
           Let <m>a_i</m> and <m>c</m> be real numbers. A <term>linear
@@ -38,6 +41,13 @@
         </p>
       </statement>
     </definition>
+    <p>
+      <xref ref="proposition-spans-subspaces" /> claimed that all
+      linear subspaces were described by spans. Shortly afterward, I
+      showed that all affine subspaces were described by offset spans.
+      In addition to spans, I can also use loci to describe any affine
+      or linear subspace. 
+    </p>
     <proposition>
       <statement>
         <p>
@@ -49,28 +59,62 @@
       </statement>
     </proposition>
     <p>
-      The best way to think about loci is in terms of restrictions.
-      We start with all of <m>\RR^n</m> as the locus of no equations,
-      or of the equation <m>0=0</m>. There are no restrictions. Then
-      we introduce equations. Each equation is a restriction on the
-      available points. If we work in <m>\RR^2</m>, adding the
-      equation <m>x=3</m> restricts us to a vertical line passing
-      through the <m>x</m>-axis at <m>\begin{pmatrix} 3 \\ 0
-      \end{pmatrix}</m>. Likewise, if we were to use the equation
-      <m>y=4</m>, we would have a horizontal line passing through the
-      <m>y</m>-axis at <m>\begin{pmatrix} 0 \\ 4 \end{pmatrix}</m>.
-      If we consider the locus of <em>both</em> equations, we have
-      only one point remaining: <m>\begin{pmatrix} 3 \\ 4
-      \end{pmatrix}</m> is the only point that satisfies both
+      It is quite valuable to have these two different descriptions of
+      linear and affine subspaces. Each description (spans or loci)
+      has strengths and weaknesses. Depending on what calculations I
+      want to do, using either a span or a locus description may help
+      a great deal.
+    </p>
+    <p>
+      There is also a nice contrast in the constructions of spans and
+      loci. Spans are essentially built up by adding more and more
+      vectors, more and more directions. The span of no vectors is the
+      origin. The span of one vector is a line. The span of two
+      linearly independent vectors is a plane. This process continues
+      (if the ambient dimension is large enough) to make object of
+      higher and higher dimensions as more linearly independent
+      vectors are added to the span. 
+    </p>
+      In contrast, loci are built top-down, by starting with the
+      ambient space and reducing the number of points by imposing
+      restrictions in the form of linear equations. The locus of no
+      equations is the entire space, since all points trivially
+      satisfy no equations. The locus of one equation should be
+      something of one dimension less that the ambient space, as one
+      restriction is imposed. The locus of two equations should be
+      something of two dimensions less than the ambient space, as two
+      restrictions are imposed. This continues: the dimension of a
+      locus, at least ideally, is the dimensions of the ambient space
+      minus the number of equations or restrictions. 
+    <p>
+      To be more specific, in <m>\RR^2</m>, adding the equation
+      <m>x=3</m> restricts to a vertical line passing through the
+      <m>x</m>-axis at <m>\begin{pmatrix} 3 \\ 0 \end{pmatrix}</m>.
+      Likewise, the equation <m>y=4</m> restricts to a horizontal line
+      passing through the <m>y</m>-axis at <m>\begin{pmatrix} 0 \\ 4
+      \end{pmatrix}</m>.  If I consider the locus of <em>both</em>
+      equations, there is only one point remaining: <m>\begin{pmatrix}
+      3 \\ 4 \end{pmatrix}</m> is the only point that satisfies both
       equations. In this way, each additional equation potentially
       adds an additional restriction and leads to a smaller linear or
-      affine subspaces. 
+      affine subspaces.
+    </p>
+    <p>
+      As with spans, there can be the problem of redundant
+      information. In <m>\RR^3</m>, the locus of the equation <m>x + y
+      + z = 1</m> is a plane. If I also add the equation <m>2x + 2y +
+      2z = 2</m>, however, I don't get a line. The second equation is
+      a multiple of the first, and any points that satisfy the first
+      equation also satisfy the second. The second equation is
+      redundant and unnecessary. Determining what is redundant (and
+      determining the dimension of a locus) will rely on calculation
+      tools introduced in <xref ref="section-dimensions-loci" />.
     </p>
   </subsection>
   <subsection xml:id="subsection-familiar-loci">
     <title>Familiar Loci</title>
     <p>
-      We can define some familiar objects which are presented as the
+      I can define some familiar objects which are presented as the
       locus of one linear equation. 
     </p>
     <definition>
@@ -103,47 +147,11 @@
         <p>
           A <term>hyperplane</term> in <m>\RR^n</m> is the locus of
           one linear equation: <m>a_1 x_1 + a_2 x_2 + \ldots + a_n x_n
-          = c</m>. It has <m>n-1</m> dimensions. It is, in general,
+          = c</m>. It has dimension <m>n-1</m>. It is, in general,
           affine. The hyperplane is linear if <m>c=0</m>.
         </p>
       </statement>
     </definition>
-    <p>
-      All this discussion is pointing towards the notion of dimension.
-      The dimension of <m>\RR^n</m> is <m>n</m>; it is the number of
-      independent directions or degrees of freedom of movement. For
-      linear or affice subspaces, we also want a well-defined notion
-      of dimension. So far, it looks good: the restriction of a linear
-      equation should drop the dimension by one. A line in
-      <m>\RR^3</m>, which is one-dimensional in a three-dimensional
-      space, should be the locus of two different linear equations.
-    </p>
-    <p>
-      We would like the dimension of a locus to be simply determined
-      by the dimension of the ambient space minus the number of
-      equations. However, there is a problem with the naïve
-      approach to dimension. In <m>\RR^2</m>, adding two linear
-      equations should drop the dimension by two, giving a dimension
-      zero subspace: a point. However, consider the equations <m>3x +
-      4y = 0</m> and <m>6x + 8y = 0</m>. We have two equations, but
-      the second is redundant. All points on the line <m>3x + 4y =
-      0</m> are already satisfied by the second equation. So, the
-      locus of the two equations only drops the dimension by one.
-    </p>
-    <p>
-      In <m>\RR^3</m> the equations <m>y=0</m>, <m>z=0</m> and
-      <m>y+z=0</m> have a locus, which is the <m>x</m> axis. This is
-      one dimensional in a three-dimensional space, so the dimension
-      from the three equations has only dropped by two. One of the
-      equations is redundant.
-    </p>
-    <p>
-      This problem scales into higher dimensions. In <m>\RR^n</m>, if
-      we have several equations, it is almost impossible to see, at a
-      glance, whether any of the equations are redundant. We need
-      methods to calculate dimensions. Unfortunately, those methods
-      will have to wait until later in these notes.
-    </p>
   </subsection>
   <subsection xml:id="subsection-intersection">
     <title>Intersection</title>
@@ -161,12 +169,13 @@
     <example>
       <statement>
         <p>
-          Loci can easily be understood as intersections. Consider
-          the locus of two equations, say the example we have from
+          Loci of more than one equation can be understood as
+          intersections. Consider
+          the locus of two equations, say the example I used from
           <m>\RR^2</m> before: the locus of <m>x=3</m> and <m>y=4</m>.
-          We defined this directly as a single locus. However, we
+          I defined this directly as a single locus. However, I
           could just as easily think of this as the intersection of
-          the two lines given by <m>x=3</m> and <m>y=4</m> sepa rately.
+          the two lines given by <m>x=3</m> and <m>y=4</m> separately.
           In this way, it is the intersection of two loci. Similarly,
           all loci are the intersection of the planes or hyperplanes
           defined by each individual linear equation.
@@ -175,3 +184,5 @@
     </example>
   </subsection>
 </section>
+
+

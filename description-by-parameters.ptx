@@ -5,15 +5,25 @@
     <definition>
       <statement>
         <p>
-          If we have a system of equations in the variables <m>x_1,
+          If I have a system of equations in the variables <m>x_1,
           x_2, \ldots, x_n</m>, the set of values for these variables
           which satisfy all the equations is called the
           <term>solution space</term> of the system. Since each set
-          of values is a vector, we think of the solution space as a
+          of values is a vector, I think of the solution space as a
           subset of <m>\RR^n</m>. For linear equations, the solution
-          space will always be an affine subspace. If we have encoded
+          space will always be an affine subspace. If I have encoded
           the system of equations in an extended matrix, we can refer
           to the solution space of the matrix instead of the system.
+        </p>
+        <p>
+          The term <sq>solution space</sq> is a conventional term in
+          algebra, since it refers to the solution of some equations.
+          However, geometrically, I haven't actually done anything
+          knew. The set of points that satisfy some number of equation
+          is the locus of those equations. So solutions spaces are
+          just another name for loci. The description of solutions
+          spaces in this section can also be understood as
+          descriptions of loci.
         </p>
       </statement>
     </definition>
@@ -24,7 +34,7 @@
           <m>u + L</m> where <m>u</m> is a fixed offset vector, and
           <m>L</m> is a linear space. Since <m>L</m> is linear, it
           has a basis <m>v_1, v_2, \ldots v_k</m>, and any vector in
-          <m>L</m> is a linear combination of the <m>v_i</m>. We can
+          <m>L</m> is a linear combination of the <m>v_i</m>. I can
           write any and all solutions to the system in the following
           fashion (where <m>a_i \in \RR</m>).
           <me>
@@ -32,38 +42,41 @@
           </me>
         </p>
         <p>
-          In such a description of the solution space, we call the
-          <m>a_i</m> <term>free parameters</term>. One of our goals
+          In such a description of the solution space, I call the
+          <m>a_i</m> <term>free parameters</term>. One of the goals
           in solving systems is to determine the number of free
           parameters for each solution space.
         </p>
       </statement>
     </definition>
+    <p>
+      I want to show how to go from reduced row echelon matrices to
+      descriptions of solutions spaces by parameters. This is best to
+      do with a series of examples showing all the various
+      posibilities. 
+    </p>
     <example>
       <statement>
         <p>
-          Let's return to the example at the start of this section to
-          understand how we read solutions from reduced row-echelon
-          matrices.
+          Let me start with a matrix that encodes a unique solution. 
           <me>
             \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
             0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8
             \end{array} \right)
           </me>
-        </p>
-        <p>
-          This example is the easiest case: we have a leading one in
-          each row and column left of the horizontal line, and we just
+          This example is the easiest case: there is a leading one in
+          each row and column left of the horizontal line, and I just
           read off the solution, <m>x=-3</m>, <m>y=-2</m> and
-          <m>z=8</m>. Several other things can happen, though, which
-          we will also explain by examples.
+          <m>z=8</m>. There are no parameters, since the solution is
+          unique. The <sq>description by parameters</sq> is just the
+          statement of the unique solution.
         </p>
       </statement>
     </example>
     <example>
       <statement>
         <p>
-          We might have a row of zeros in the reduced row-echelon
+          I might have a row of zeros in the reduced row-echelon
           form.
           <me>
             \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
@@ -77,14 +90,15 @@
           The last line just corresponds to an equation that says
           <m>0x + 0y + 0z = 0</m> or just <m>0=0</m>, which is always
           true. Rows of zeros arise from redundant equations in the
-          original system.
+          original system. This still have a unique solution and no
+          free parameters.
         </p>
       </statement>
     </example>
     <example>
       <statement>
         <p>
-          We might have a column of zeros. Consider something similar
+          There might be a column of zeros. Consider something similar
           to the previous examples, but now in four variables
           <m>w,x,y,z</m>. (In that order, so that the first column is
           the <m>w</m> column, the second is the <m>x</m> column, and
@@ -100,7 +114,15 @@
           <m>y=8</m>, but the matrix says nothing about <m>z</m>. A
           column of zeros corresponds to a free variable: any value of
           <m>z</m> solves the system as long as the other variables
-          are set.
+          are set. This system has one free paramter. A description of
+          the solution by parameters here would show that the first
+          three coefficients are constant, but <m>z</m> can be
+          anything. I can express this as a sum of vectors. 
+          <me>
+            \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
+            \begin{pmatrix} -3 \\ -2 \\ 8 \\ 0 \end{pmatrix} + z
+            \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
+          </me>
         </p>
       </statement>
     </example>
@@ -136,7 +158,7 @@
           </md>
         </p>
         <p>
-          Let's move the <m>z</m> terms to the right side.
+          I move the <m>z</m> terms to the right side.
           <md>
             <mrow>
               w \amp  = - 2z - 3
@@ -153,10 +175,11 @@
           </md>
         </p>
         <p>
-          We've added the last equation, which is trivial to satisfy,
-          to show how all the terms depend on <m>z</m>. This makes it
-          clear that <m>z</m> is a free variable since we can write
-          the solution as follows:
+          I have included the last equation, which is trivial to
+          satisfy, to show how all the terms depend on <m>z</m>. This
+          makes it clear that <m>z</m> is a free parameter. I can
+          write the solution as follows in terms of that free
+          parameter.
           <me>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
             \begin{pmatrix} -3 \\ -2 \\ 8 \\ 0 \end{pmatrix} + z
@@ -164,22 +187,25 @@
           </me>
         </p>
         <p>
-          Any choice of <m>z</m> will solve this system. If we want
-          specific solutions, we take specific values of <m>z</m>.
+          Any choice of <m>z</m> will solve this system. If I want
+          a specific solution, I take specific values of <m>z</m>.
           For example, if <m>z=1</m>, these equations give <m>w=-5,
-          x=-1</m> and <m>y=9</m>. Moreover, this solution is
-          explicitly given as an offset span, where the columns of
-          constants is the offset, and the free variable gives the
-          span.
+          x=-1</m> and <m>y=9</m>.
+        </p>
+        <p>
+          Moreover, this description by parameters describes the
+          solutions as an offset span. The columns of
+          constants is the offset and the free variable gives the
+          span, in this case, just the span of one vector.
         </p>
       </statement>
     </example>
     <example xml:id="example-description-by-parameters">
       <statement>
         <p>
-          We can go further. The following matrix is also in reduced
-          row-echelon form (again, using <m>w</m>, <m>x</m>, <m>y</m>
-          and <m>z</m> as variables in that order).
+          The following matrix is also in reduced row-echelon form
+          (again, using <m>w</m>, <m>x</m>, <m>y</m> and <m>z</m> as
+          variables in that order).
           <me>
             \left( \begin{array}{cccc|c} 1 \amp 0 \amp 3 \amp 2
             \amp -3 \\ 0 \amp 1 \amp -1 \amp -1 \amp -2
@@ -189,7 +215,7 @@
         <p>
           Here, both the third and the fourth columns have no leading
           one; therefore, both <m>y</m> and <m>z</m> are free
-          variables. We translate the matrix back into a linear
+          variables. I translate the matrix back into a linear
           system.
           <md>
             <mrow>
@@ -205,6 +231,11 @@
               z \amp  = z
             </mrow>
           </md>
+          Then I can write the solution using the free parameters. 
+          I can express the four equations as one equation of vectors;
+          each equation is the equation of one of the four components
+          of the vectors, filling in zeros for anything not mentioned
+          in the equations. 
           <me>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
             \begin{pmatrix} -3 \\ 2 \\ 0 \\ 0 \end{pmatrix} + y
@@ -215,16 +246,14 @@
         <p>
           Any choice of <m>y</m> and <m>z</m> gives a solution. For
           example, if <m>y=0</m> and <m>z=1</m> then <m>w=-5</m> and
-          <m>x=-1</m> complete a solution. Since we have all these
-          choices, any system with a free variable has infinitely many
-          solutions.
+          <m>x=-1</m> complete a solution. 
         </p>
       </statement>
     </example>
     <example>
       <statement>
         <p>
-          Finally, we can also have a reduced row-echelon matrix of
+          I can also have a reduced row-echelon matrix of
           the following form. 
           <me>
             \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
@@ -233,17 +262,17 @@
           </me>
         </p>
         <p>
-          The first three rows translate well. However, the fourth
-          row translates to <m>0x+0y+0z = 1</m> or <m>0=1</m>.
-          Obviously, this can never be satisfied. Any row which
-          translates to <m>0=1</m> leads to a contradiction: this
-          means that the system has no solutions, since we can never
-          satisfy an equation like <m>0=1</m>.
+          The first three rows translate into equations without issue.
+          However, the fourth row translates to <m>0x+0y+0z = 1</m> or
+          <m>0=1</m>.  Obviously, this can never be satisfied. Any row
+          which translates to <m>0=1</m> leads to a contradiction.
+          A contradition means that the system has no solutions, since
+          the <m>0=1</m> can never be satisfied. 
         </p>
       </statement>
     </example>
     <p>
-      We summarize the three possible situations for reduced
+      I will  summarize the three possible situations for reduced
       row-echelon matrices.
       <ul>
         <li>
@@ -260,8 +289,8 @@
             If there are no <m>0=1</m> rows and all columns left of
             the vertical line have leading ones; then there is a
             unique solution. There are no columns representing free
-            variables, and each variable has a specific value that we
-            can read directly from the matrix.
+            variables, and each variable has a specific value that can
+            be ead directly from the matrix.
           </p>
         </li>
         <li>
@@ -289,11 +318,11 @@
       <statement>
         <p>
           The dimension of a solution space of a linear system of
-          equations is the number of free variables.
+          equations is the number of free variables. Equivalently, the
+          dimension of a locus is the number of free varialbes in its
+          solution when expressed as a system of equations. 
         </p>
       </statement>
     </proposition>
   </subsection>
 </section>
-
-
