@@ -7,9 +7,10 @@
     <li>
       <p>
         For each of the following systems of equations, write the
-        corresponding matrix, solve the system by row-reduction, give
-        the dimension of the solution space and write a description by
-        parameters. Show the steps in your row-reductions. (20)
+        corresponding matrix, state the rank of the matrix, solve the
+        system by row-reduction, give the dimension of the solution
+        space and write a description by parameters. Show the steps in
+        your row-reductions. (20)
         <ol>
           <li><me>
             \begin{array}{rcl}
@@ -20,9 +21,9 @@
           </me></li>
           <li><me>
             \begin{array}{rcl}
-            -w - 3x + 4y \amp = 1 \\
-            w + z \amp = 1 \\
-            3x - z \amp = 1 
+            -3w + 4x - z \amp = 1 \\
+            y + z \amp = 1 \\
+            3w - y \amp = 1 
             \end{array}
           </me></li>
           <li><me>
@@ -45,8 +46,8 @@
     </li>
     <li>
       <p>
-        For each of the following, give an example of a matrix that
-        satisfied or give an argument that such a matrix is
+        For each of the following, give an example of a system that
+        satisfies or give an argument that such a system is
         impossible. (12)
       </p>
       <p><ol>

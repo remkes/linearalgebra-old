@@ -98,10 +98,11 @@
     </li>
     <li>
       <p>
-        Consider an affine subspace in <m>\RR^3</m>. Assume that the
-        subspace does not include the origin. Prove that the sum of
-        any two vectors in the subspace cannot also be in the
-        subspace. (One way to do this is by contradiction.) (6) 
+        Let <m>L</m> be a linear subspace. Prove that the set of all
+        vectors perpendicular to <m>L</m> is also a linear subspace.
+        (Perpendicular to <m>L</m> means perpendicular to all vectors
+        in <m>L</m>).
+        (6)
       </p>
     </li>
   </ol></p>
