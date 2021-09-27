@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Process images for pdf 
+asy -f pdf figure01.asy
+asy -f pdf figure02.asy
+asy -f pdf figure03.asy
+asy -f pdf figure04.asy
+asy -f pdf figure05.asy
+asy -f pdf figure06.asy
+asy -f pdf figure07.asy
+asy -f pdf figure08.asy
+asy -f pdf figure09.asy
+asy -f pdf figure10.asy
+asy -f pdf figure11.asy
+asy -f pdf figure12.asy
+asy -f pdf figure13.asy
+asy -f pdf figure14.asy
+asy -f pdf figure15.asy
+asy -f pdf figure16.asy
+asy -f pdf figure17.asy
+asy -f pdf figure18.asy
+asy -f pdf figure19.asy
+asy -f pdf figure20.asy
+asy -f pdf figure21.asy
+asy -f pdf figure22.asy
+asy -f pdf figure23.asy
+asy -f pdf figure24.asy
+asy -f pdf figure25.asy
+asy -f pdf figure26.asy
+asy -f pdf figure27.asy
+asy -f pdf figure28.asy
+asy -f pdf figure29.asy
+asy -f pdf figure30.asy
+asy -f pdf figure31.asy
+
+# Copy and move files
+mv *.pdf ../images/

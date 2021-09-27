@@ -28,7 +28,7 @@
     </p>
     <p>
       Given some vectors <m>\{v_1, v_2, \ldots, v_k\}</m>, what is the
-      dimension of <m>\Span \{ v_1, v_2, \ldots, v_k\}</m>?  By
+      dimension of their span?  By
       definition, it is the number of linearly independent vectors in
       the set. Now we can test for linearly independent vectors.
     </p>

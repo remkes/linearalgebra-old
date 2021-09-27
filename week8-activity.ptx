@@ -319,7 +319,9 @@
             <mrow>
               \amp = (-1) \left[ (3)(-2) - (1)(-2) \right] 
               + (1) \left[ (-3)(-2) - (1)(-2) \right] 
-              + (6) \left[ (-3)(1) - (1)(3) \right] 
+            </mrow>
+            <mrow>
+              \amp + (6) \left[ (-3)(1) - (1)(3) \right] 
             </mrow>
             <mrow>
               \amp = 4 + 8 - 36 = -24 

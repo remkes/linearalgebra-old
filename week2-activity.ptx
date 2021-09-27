@@ -785,8 +785,7 @@
               <cell right="minor"></cell>
             </row>
             <row bottom="minor">
-              <cell left="minor" right="minor">Division by Non-Zero
-              Elements</cell>
+              <cell left="minor" right="minor">Division</cell>
               <cell right="minor"></cell>
               <cell right="minor"></cell>
               <cell right="minor"></cell>
@@ -794,8 +793,7 @@
               <cell right="minor"></cell>
             </row>
             <row bottom="minor">
-              <cell left="minor" right="minor">Multiplication
-              Distributes Over Addition</cell>
+              <cell left="minor" right="minor">Distribution </cell>
               <cell right="minor"></cell>
               <cell right="minor"></cell>
               <cell right="minor"></cell>
@@ -811,8 +809,7 @@
               <cell right="minor"></cell>
             </row>
             <row bottom="minor">
-              <cell left="minor" right="minor">Order (Greater Than,
-              Less Than)</cell>
+              <cell left="minor" right="minor">Order</cell>
               <cell right="minor"></cell>
               <cell right="minor"></cell>
               <cell right="minor"></cell>
