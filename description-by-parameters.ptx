@@ -264,7 +264,7 @@
         <p>
           The first three rows translate into equations without issue.
           However, the fourth row translates to <m>0x+0y+0z = 1</m> or
-          <m>0=1</m>.  Obviously, this can never be satisfied. Any row
+          <m>0=1</m>. Obviously, this can never be satisfied. Any row
           which translates to <m>0=1</m> leads to a contradiction.
           A contradition means that the system has no solutions, since
           the <m>0=1</m> can never be satisfied. 

@@ -21,9 +21,9 @@
       </statement>
       <solution>
         <p>
-          We need to determine if there are any redundancies in the
-          span. To do this, we put the vectors in the span as
-          <emph>rows</emph> of a matrix. 
+          I need to determine if there are any redundancies in the
+          span. To do this, I put the vectors in the span as
+          <em>rows</em> of a matrix. 
           <me>
             \left( \begin{matrix}
               -3 \amp -6 \amp  1 \\
@@ -31,9 +31,9 @@
               1 \amp 4 \amp -5 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix. We either row reduce without
+          I row reduce this matrix. I will either row reduce without
           interchanging rows or keeping track of row exchanges. (If
-          done by computer, as is our practice, we'll have to be
+          done by computer, as is the usual practice, I'll have to be
           careful choosing a basis. Because of this, I'll recheck the
           bases after I find them.)
           <me>
@@ -45,9 +45,9 @@
           </me>
           Every row that has a leading one is a row that is necessary
           for the span; every row without a leading one is redundant.
-          Here, there is one vector that is redundant, since we have a
+          Here, there is one vector that is redundant, since there is a
           row of zeros. There are two leading ones, so the dimension of
-          this span is 2. We can take the vectors that corresponded
+          this span is 2. I can take the vectors that corresponded
           to rows with leading ones as a basis.
           <me>
             \left\{ \left( \begin{matrix}
@@ -58,8 +58,8 @@
             \end{matrix} \right) \right\}
           </me>
         </p>
-        We can check with a matrix that these four are independent
-        using the same steps as before (I've not shown that work). We
+        I can check with a matrix that these four are independent
+        using the same steps as before (I've not shown that work). I
         need this check to make sure rows weren't exchanged during row
         reduction. 
       </solution>
@@ -86,9 +86,9 @@
       </statement>
       <solution>
         <p>
-          We need to determine if there are any redundancies in the
-          span. To do this, we put the vectors in the span as
-          <emph>rows</emph> of a matrix. 
+          I need to determine if there are any redundancies in the
+          span. To do this, I put the vectors in the span as
+          <em>rows</em> of a matrix. 
           <me>
             \left( \begin{matrix}
               1 \amp 1 \amp 0 \\
@@ -97,9 +97,9 @@
               -1 \amp -1 \amp -1
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix. We either row reduce without
+          I row reduce this matrix. I will either row reduce without
           interchanging rows or keeping track of row exchanges. (If
-          done by computer, as is our practice, we'll have to be
+          done by computer, as is the usual practice, I'll have to be
           careful choosing a basis. Because of this, I'll recheck the
           bases after I find them.)
           <me>
@@ -113,10 +113,9 @@
           Every row that has a leading one is a row that is necessary
           for the span; every row without a leading one is redundant.
           Here, the fourth vector is all zeros, so there is a
-          redundant vector. There are three
-          leading ones, so the dimension of this span is 3.
-          We can take the vectors that corresponded to rows with
-          leading ones as a basis.
+          redundant vector. There are three leading ones, so the
+          dimension of this span is 3.  I can take the vectors that
+          corresponded to rows with leading ones as a basis.
           <me>
             \left\{ \left( \begin{matrix}
               1 \\ 1 \\ 0 
@@ -128,9 +127,9 @@
               0 \\ 0 \\ 6 
             \end{matrix} \right) \right\}
           </me>
-          We can check with a matrix that these four are independent
+          I can check with a matrix that these four are independent
           using the same steps as before (I've not shown that work).
-          We need this check to make sure rows weren't exchanged
+          I need this check to make sure rows weren't exchanged
           during row reduction. 
         </p>
       </solution>
@@ -154,9 +153,9 @@
       </statement>
       <solution>
         <p>
-          We need to determine if there are any redundancies in the
-          span. To do this, we put the vectors in the span as
-          <emph>rows</emph> of a matrix. 
+          I need to determine if there are any redundancies in the
+          span. To do this, I put the vectors in the span as
+          <em>rows</em> of a matrix. 
           <me>
             \left( \begin{matrix}
               7 \amp 0 \amp -5 \amp -5 \\
@@ -164,9 +163,9 @@
               7 \amp -3 \amp -8 \amp -1 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix. We either row reduce without
+          I row reduce this matrix. I will either row reduce without
           interchanging rows or keeping track of row exchanges. (If
-          done by computer, as is our practice, we'll have to be
+          done by computer, as is the usual practice, I'll have to be
           careful choosing a basis. Because of this, I'll recheck the
           bases after I find them.)
           <me>
@@ -178,9 +177,9 @@
           </me>
           Every row that has a leading one is a row that is necessary
           for the span; every row without a leading one is redundant.
-          Here we see that there is a row of zeros, so there is a
+          Here I see that there is a row of zeros, so there is a
           redundant vector. There are two leading ones, to the
-          dimension of this span is We can take the vectors that
+          dimension of this span is I can take the vectors that
           corresponded to rows with leading ones as a basis.
           <me>
             \left\{ \left( \begin{matrix}
@@ -190,9 +189,9 @@
               0 \\ -3 \\ -3 \\ 4 
             \end{matrix} \right) \right\}
           </me>
-          We can check with a matrix that these four are independent
+          I can check with a matrix that these four are independent
           using the same steps as before (I've not shown that work).
-          We need this check to make sure rows weren't exchanged
+          I need this check to make sure rows weren't exchanged
           during row reduction. 
         </p>
       </solution>
@@ -222,9 +221,9 @@
       </statement>
       <solution>
         <p>
-          We need to determine if there are any redundancies in the
-          span. To do this, we put the vectors in the span as
-          <emph>rows</emph> of a matrix. 
+          I need to determine if there are any redundancies in the
+          span. To do this, I put the vectors in the span as
+          <em>rows</em> of a matrix. 
           <me>
             \left( \begin{matrix}
               6 \amp -1 \amp -1 \amp 4 \amp 7 \\
@@ -234,9 +233,9 @@
               -6 \amp 7 \amp 7 \amp 3 \amp -6 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix. We either row reduce without
+          I row reduce this matrix. I will either row reduce without
           interchanging rows or keeping track of row exchanges. (If
-          done by computer, as is our practice, we'll have to be
+          done by computer, as is the usual practice, I'll have to be
           careful choosing a basis. Because of this, I'll recheck the
           bases after I find them.)
           <me>
@@ -250,9 +249,9 @@
           </me>
           Every row that has a leading one is a row that is necessary
           for the span; every row without a leading one is redundant.
-          Here we see that the fifth row is a row of zeros, so one
+          Here I see that the fifth row is a row of zeros, so one
           vector is redundant.  There are four leading ones, so the
-          dimension of this span is 4.  We can take the vectors that
+          dimension of this span is 4.  I can take the vectors that
           corresponded to rows with leading ones as a basis.
           <me>
             \left\{ \left( \begin{matrix}
@@ -268,9 +267,9 @@
               -8 \\ -6 \\ 3 \\ 4 \\ 0
             \end{matrix} \right) \right\}
           </me>
-          We can check with a matrix that these four are independent
+          I can check with a matrix that these four are independent
           using the same steps as before (I've not shown that work).
-          We need this check to make sure rows weren't exchanged
+          I need this check to make sure rows weren't exchanged
           during row reduction. 
         </p>
       </solution>
@@ -297,9 +296,9 @@
       </statement>
       <solution>
         <p>
-          We need to determine if there are any redundancies in the
-          span. To do this, we put the vectors in the span as
-          <emph>rows</emph> of a matrix. 
+          I need to determine if there are any redundancies in the
+          span. To do this, I put the vectors in the span as
+          <em>rows</em> of a matrix. 
           <me>
             \left( \begin{matrix}
               4 \amp 0 \amp -3 \amp -3 \\
@@ -308,9 +307,9 @@
               8 \amp 0 \amp -7 \amp 1 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix. We either row reduce without
+          I row reduce this matrix. I will either row reduce without
           interchanging rows or keeping track of row exchanges. (If
-          done by computer, as is our practice, we'll have to be
+          done by computer, as is the usual practice, I'll have to be
           careful choosing a basis. Because of this, I'll recheck the
           bases after I find them.)
           <me>
@@ -323,9 +322,9 @@
           </me>
           Every row that has a leading one is a row that is necessary
           for the span; every row without a leading one is redundant.
-          We see that we have a row of zeros, so one vector is
+          I see that there is a row of zeros, so one vector is
           redundant. There are three leading ones, so the dimension of
-          this span is 3. We can take the vectors that corresponded to
+          this span is 3. I can take the vectors that corresponded to
           rows with leading ones as a basis.
           <me>
             \left\{ \left( \begin{matrix}
@@ -338,11 +337,11 @@
               -3 \\ 2 \\ 5 \\ 3
             \end{matrix} \right) \right\}
           </me>
-          If we check, however, we find that this is still redundant.
+          If I check, however, I find that this is still redundant.
           This is not a basis, so one of these rows must have been
           redundant and the row reduction must have involved some
-          exchange of rows. If we take the fourth vector instead of
-          the third, we get this basis. 
+          exchange of rows. If I take the fourth vector instead of
+          the third, I get this basis. 
           <me>
             \left\{ \left( \begin{matrix}
               4 \\ 0 \\ -3 \\ -3 
@@ -354,7 +353,7 @@
               8 \\ 0 \\ -7 \\ 1 
             \end{matrix} \right) \right\}
           </me>
-          If we check, we will find that there are no redundancies
+          If I check, I will find that there are no redundancies
           now, so this is a basis. 
         </p>
       </solution>
@@ -381,7 +380,7 @@
       </statement>
       <solution>
         <p>
-          We change the locus into a matrix. 
+          I change the locus into a matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               4 \amp -1 \amp 7 \amp 3 \\
@@ -389,7 +388,7 @@
               2 \amp -1 \amp 6 \amp 3 
             \end{array} \right)
           </me>
-          We row reduce this matrix. 
+          I row reduce this matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp 0 \amp \frac{1}{2} \amp 0 \\
@@ -423,7 +422,7 @@
       </statement>
       <solution>
         <p>
-          We change the locus into a matrix. 
+          I change the locus into a matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp -1 \amp -1 \amp 7 \\
@@ -431,7 +430,7 @@
               3 \amp 4 \amp -4 \amp 4
             \end{array} \right)
           </me>
-          We row reduce this matrix. 
+          I row reduce this matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp 0 \amp \frac{-8}{7} \amp 0 \\
@@ -452,7 +451,7 @@
       <statement>
         <p>
           Calculate the dimension of this locus. (In this course, the
-          order of the variables in <m>\RR^4</m> is <m>w,x,y,z</m>.( 
+          order of the variables in <m>\RR^4</m> is <m>w,x,y,z</m>.) 
           <md>
             <mrow>
               9w - 3x + 5y - z \amp = 0 
@@ -468,7 +467,7 @@
       </statement>
       <solution>
         <p>
-          We change the locus into a matrix. 
+          I change the locus into a matrix. 
           <me>
             \left( \begin{array}{cccc|c}
               9 \amp -3 \amp 5 \amp -1 \amp 0 \\
@@ -476,7 +475,7 @@
               3 \amp 21 \amp -3 \amp -1 \amp 0
             \end{array} \right)
           </me>
-          We row reduce this matrix. 
+          I row reduce this matrix. 
           <me>
             \left( \begin{array}{cccc|c}
               1 \amp 0 \amp \frac{16}{33} \amp \frac{-4}{33} \amp 0 \\
@@ -495,7 +494,7 @@
       <statement>
         <p>
           Calculate the dimension of this locus. (In this course, the
-          order of the variables in <m>\RR^4</m> is <m>w,x,y,z</m>.
+          order of the variables in <m>\RR^4</m> is <m>w,x,y,z</m>.)
           <md>
             <mrow>
               w - 2x + y - 3z \amp = 0 
@@ -511,7 +510,7 @@
       </statement>
       <solution>
         <p>
-          We change the locus into a matrix. 
+          I change the locus into a matrix. 
           <me>
             \left( \begin{array}{cccc|c}
               1 \amp -2 \amp 1 \amp -3 \amp 0 \\
@@ -519,7 +518,7 @@
               3 \amp -6 \amp 3 \amp -9 \amp 0
             \end{array} \right)
           </me>
-          We row reduce this matrix. 
+          I row reduce this matrix. 
           <me>
             \left( \begin{array}{cccc|c}
               1 \amp -2 \amp 1 \amp -3 \amp 0 \\
@@ -559,7 +558,7 @@
       </statement>
       <solution>
         <p>
-          We can convert into an equation with unknowns by writing out
+          I can convert into an equation with unknowns by writing out
           the definition of a linear combination.
           <me>
             \left( \begin{matrix}
@@ -572,7 +571,7 @@
               -3 \\ 12 
             \end{matrix} \right) 
           </me>
-          Then we can translate this into a system of equation in the
+          Then I can translate this into a system of equation in the
           unknowns <m>a,b</m>. 
           <md>
             <mrow>
@@ -582,22 +581,22 @@
               -2 \amp = 9a + 12 b
             </mrow>
           </md>
-          Then we can translate this into a matrix. 
+          Then I can translate this into a matrix. 
           <me>
             \left( \begin{array}{cc|c}
               4 \amp -3 \amp 2 \\
               9 \amp 12 \amp -2 
             \end{array} \right)
           </me>
-          Then we row reduce this matrix. 
+          Then I row reduce this matrix. 
           <me>
             \left( \begin{array}{cc|c}
               1 \amp 0 \amp \frac{6}{25} \\
               0 \amp 1 \amp \frac{-26}{75}
             \end{array} \right)
           </me>
-          This has a unique solution, which gives us the coefficient
-          of the linear combination. Finally, we can write the
+          This has a unique solution, which gives me the coefficient
+          of the linear combination. Finally, I can write the
           original vector as a linear combination of the spanning
           vectors. 
           <me>
@@ -639,7 +638,7 @@
       </statement>
       <solution>
         <p>
-          We can convert into an equation with unknown by writing out
+          I can convert into an equation with unknown by writing out
           the definition of a linear combination.
           <me>
             \left( \begin{matrix}
@@ -655,7 +654,7 @@
               0 \\ -5 \\ 4 
             \end{matrix} \right) 
           </me>
-          Then we can translate this into a system of equation in the
+          Then I can translate this into a system of equation in the
           unknowns <m>a,b</m>. 
           <md>
             <mrow>
@@ -668,7 +667,7 @@
               4 \amp = 13a + 3b + 4c 
             </mrow>
           </md>
-          Then we can translate this into a matrix. 
+          Then I can translate this into a matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               4 \amp -1 \amp 0 \amp 1 \\
@@ -676,7 +675,7 @@
               13 \amp 3 \amp 4 \amp 4 
             \end{array} \right)
           </me>
-          Then we row reduce this matrix. 
+          Then I row reduce this matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp 0 \amp 0 \amp \frac{31}{109} \\
@@ -684,8 +683,8 @@
               0 \amp 0 \amp 1 \amp \frac{-3}{109} 
             \end{array} \right)
           </me>
-          This has a unique solution, which gives us the coefficient
-          of the linear combination. Finally, we can write the
+          This has a unique solution, which gives me the coefficient
+          of the linear combination. Finally, I can write the
           original vector as a linear combination of the spanning
           vectors. 
           <me>
@@ -730,7 +729,7 @@
       </statement>
       <solution>
         <p>
-          We can convert into an equation with unknown by writing out
+          I can convert into an equation with unknown by writing out
           the definition of a linear combination.
           <me>
             \left( \begin{matrix}
@@ -746,7 +745,7 @@
               -5 \\ -5 \\ 0 \\ 2
             \end{matrix} \right) 
           </me>
-          Then we can translate this into a system of equation in the
+          Then I can translate this into a system of equation in the
           unknowns <m>a,b</m>. 
           <md>
             <mrow>
@@ -762,7 +761,7 @@
               16 \amp = 8a + 3b + 2c 
             </mrow>
           </md>
-          Then we can translate this into a matrix. 
+          Then I can translate this into a matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               0 \amp -1 \amp -5 \amp -6 \\
@@ -771,7 +770,7 @@
               8 \amp 3 \amp 2 \amp 16
             \end{array} \right)
           </me>
-          Then we row reduce this matrix. 
+          Then I row reduce this matrix. 
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp 0 \amp 0 \amp 3 \\
@@ -780,8 +779,8 @@
               0 \amp 0 \amp 0 \amp 0
             \end{array} \right)
           </me>
-          This has a unique solution, which gives us the coefficient
-          of the linear combination. Finally, we can write the
+          This has a unique solution, which gives me the coefficient
+          of the linear combination. Finally, I can write the
           original vector as a linear combination of the spanning
           vectors. 
           <me>

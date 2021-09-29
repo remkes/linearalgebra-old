@@ -1,10 +1,10 @@
 <section xml:id="section-dimensions-loci">
   <title>Dimensions of Loci</title>
     <p>
-      Similarly, we can use row-reduction of matrices to find the
-      dimensions of a locus. In particular, we will be able to
+      As with spans, I can use row-reduction of matrices to find the
+      dimensions of a locus. In particular, I will be able to
       determine if any of the equations were redundant. Recall that
-      we described any affine or linear subspace of <m>\RR^n</m> as
+      I described any affine or linear subspace of <m>\RR^n</m> as
       the locus of some finite number of linear equations: the set of
       points that satisfy a list of equations.
       <md>
@@ -40,8 +40,10 @@
       linear equations. Loci and solution spaces are exactly the
       same things; only loci are geometry, and solution spaces are
       algebra. The dimension of a locus is the same dimension as a
-      solution space of a system. Fortunately, we already know how to
-      figure that out.
+      solution space of a system. In <xref
+      ref="section-description-by-parameters" />, the dimension of a
+      solution space was determined by the free variables in the
+      reduced form of the matrix. Let me restate the result. 
     </p>
     <proposition>
       <statement>
@@ -56,10 +58,10 @@
       </statement>
     </proposition>
     <p>
-      To understand a locus, we just solve the associated system. If
-      it has solutions, we count the free variables: that's the
-      dimension of the locus. We can get even more information from
-      this process.  When we row reduce the matrix <m>A</m>
+      To understand a locus, I just solve the associated system. If
+      it has solutions, I count the free variables: that's the
+      dimension of the locus. I can get even more information from
+      this process.  When I row reduce the matrix <m>A</m>
       corresponding to the linear system, the equations corresponding
       to rows with leading ones (keeping track of exchanging rows, if
       necessary) are equations that are necessary to define the
@@ -68,7 +70,7 @@
       removed.
     </p>
     <p>
-      If the ambient space is <m>\RR^n</m>, then our equations have
+      If the ambient space is <m>\RR^n</m>, then the equations have
       <m>n</m> variables. That is, there are <m>n</m> columns to the
       left of the vertical line in the extended matrix. If the rank
       of <m>A</m> is <m>k</m>, and there are no rows that reduce to
@@ -78,7 +80,7 @@
       the matrix <m>k</m>.
     </p>
     <p>
-      This fits our intuition for spans and loci. Spans are built up:
+      This fits the intuition for spans and loci. Spans are built up:
       their dimension is equal to the rank of an associated matrix
       since each leading one corresponds to a unique direction in the
       span, adding to the dimension by one. Loci are restrictions down
@@ -91,9 +93,9 @@
     <example>
       <statement>
         <p>
-          I'm going to repeat <xref
+          I'm going to repeat material <xref
           ref="example-description-by-parameters" /> to make the point
-          that nothing new is happening here: we're just treating
+          that nothing new is happening here: I'm just treating
           loci as linear systems and looking at their solutions
           spaces. Consider a locus in <m>\RR^4</m> defined by two
           equations.

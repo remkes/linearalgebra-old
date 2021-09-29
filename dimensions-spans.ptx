@@ -12,7 +12,7 @@
         <p>
           Let <m>A</m> be an <m>m \times n</m> matrix. The
           <term>rank</term> of <m>A</m> is the number of leading ones
-          in its reduced row-echelon form. 
+          in its reduced row-echelon form.
         </p>
       </statement>
     </definition>
@@ -22,23 +22,26 @@
     <p>
       I can now present techniques to solve the dimension
       problems presented in <xref ref="section-spans" /> and <xref
-      ref="section-loci" />.  For loci and spans, we
-      didn't have a way of determining what information was redundant.
-      Row-reduction of matrices solves this problem for us. 
+      ref="section-loci" />. For loci and spans, I didn't have a way
+      of determining what information was redundant, hence what the
+      dimensions of the objects should be.  Row-reduction of
+      matrices solves this problem. 
     </p>
     <p>
-      Given some vectors <m>\{v_1, v_2, \ldots, v_k\}</m>, what is the
-      dimension of their span?  By
-      definition, it is the number of linearly independent vectors in
-      the set. Now we can test for linearly independent vectors.
+      In this section, I'll present the solution for spans; details f
+      or loci follow in <xref ref="section-dimensions-loci" />. Given
+      some vectors <m>\{v_1, v_2, \ldots, v_k\}</m>, what is the
+      dimension of the span?  By definition, it is the number of
+      linearly independent vectors in the set. Now I can test for
+      linearly independent vectors.
     </p>
     <proposition>
       <statement>
         <p>
           Let <m>\{v_1, v_2, \ldots, v_k\}</m> be a set of vectors in
-          <m>\RR^n</m>. If we make these vectors the rows of a matrix
+          <m>\RR^n</m>. If I make these vectors the rows of a matrix
           <m>A</m>, then the rank of the matrix <m>A</m> is the number
-          of linearly independent vectors in the set. Moreover, if we
+          of linearly independent vectors in the set. Moreover, if I
           do the row reduction without exchanging rows (which is
           always possible), then the vectors which correspond to rows
           with leading ones in the reduced row-echelon will form a
@@ -74,7 +77,7 @@
           </me>
         </p>
         <p>
-          To find the dimensions of the span, we put the vectors of the
+          To find the dimensions of the span, I put the vectors of the
           span into a matrix (as rows, not columns). 
           <me>
             \begin{pmatrix}
@@ -116,7 +119,7 @@
           </me>
         </p>
         <p>
-          To find the dimension of the span, we put the vectors of the
+          To find the dimension of the span, I put the vectors of the
           span into a matrix (as rows, not columns). 
           <me>
             \begin{pmatrix}
@@ -166,7 +169,7 @@
           </me>
         </p>
         <p>
-          To find the dimensions of the span, we put the vectors of the
+          To find the dimensions of the span, I put the vectors of the
           span into a matrix (as rows, not columns). 
           <me>
             \begin{pmatrix}
