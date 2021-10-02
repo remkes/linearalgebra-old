@@ -5,93 +5,81 @@
   <title>Week 5 Assignment</title>
   <p><ol>
     <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week5">
-  <title>Week 5 Assignment</title>
-  <p><ol>
-    <li>
       <p>
         Calculate the dimensions of these spans. (12)
-        <ol>
-          <li><me>
-            \Span \left \{
-              \begin{pmatrix}
-                -1 \\ -2 \\ 3 
-              \end{pmatrix},
-              \begin{pmatrix}
-                -2 \\ 0 \\ 6
-              \end{pmatrix},
-              \begin{pmatrix}
-                5 \\ 1 \\ 1
-              \end{pmatrix}
-            \right\}
-          </me></li>
-          <li><me>
-            \Span \left \{
-              \begin{pmatrix}
-                -3 \\ 1 \\ 1 
-              \end{pmatrix},
-              \begin{pmatrix}
-                -2 \\ 0 \\ 1
-              \end{pmatrix},
-              \begin{pmatrix}
-                1 \\ 1 \\ -1
-              \end{pmatrix}
-            \right\}
-          </me></li>
-          <li><me>
-            \Span \left \{
-              \begin{pmatrix}
-                -1 \\ 0 \\ 1 \\ 0 
-              \end{pmatrix},
-              \begin{pmatrix}
-                0 \\ 1 \\ 0 \\ -1
-              \end{pmatrix},
-              \begin{pmatrix}
-                -2 \\ -2 \\ -2 \\ -2 
-              \end{pmatrix},
-              \begin{pmatrix}
-                1 \\ -1 \\ 2 \\ -2
-              \end{pmatrix}
-            \right\}
-          </me></li>
-        </ol>
       </p>
+      <p><ol>
+        <li><me>
+          \Span \left \{
+            \begin{pmatrix}
+              0 \\ 2 \\ 5 
+            \end{pmatrix},
+            \begin{pmatrix}
+              1 \\ 1 \\ -36
+            \end{pmatrix},
+            \begin{pmatrix}
+              -2 \\ 0 \\ 1
+            \end{pmatrix}
+          \right\}
+        </me></li>
+        <li><me>
+          \Span \left \{
+            \begin{pmatrix}
+              -8 \\ 0 \\ 2 
+            \end{pmatrix},
+            \begin{pmatrix}
+              -4 \\ 0 \\ 1
+            \end{pmatrix},
+            \begin{pmatrix}
+              -2 \\ -2 \\ -2
+            \end{pmatrix}
+          \right\}
+        </me></li>
+        <li><me>
+          \Span \left \{
+            \begin{pmatrix}
+              0 \\ 1 \\ -1 \\ 0 
+            \end{pmatrix},
+            \begin{pmatrix}
+              1 \\ -1 \\ 0 \\ -1
+            \end{pmatrix},
+            \begin{pmatrix}
+              1 \\ 2 \\ -1 \\ -2 
+            \end{pmatrix},
+            \begin{pmatrix}
+              -2 \\ -2 \\ 3 \\ -2
+            \end{pmatrix}
+          \right\}
+        </me></li>
+      </ol></p>
     </li>
     <li>
       <p>
         Calculate the dimension of these loci. (12)
-        <ol>
-          <li>
-            The locus of the equations <m>x-z=1</m> and <m>y-z=1</m>
-            in <m>\RR^3</m>.
-          </li>
-          <li>
-            The locus of the equations <m>2x-y-z=0</m>, <m>z=4</m>,
-            and <m>x=6</m> in <m>\RR^3</m>.
-          </li>
-          <li>
-            The locus of the equations <m>2x-z=1</m>, <m>2x-y=0</m>,
-            <m>w+y-z=4</m> and <m>w+x-y=3</m> in <m>\RR^4</m>.
-          </li>
-        </ol>
       </p>
+      <p><ol>
+        <li>
+          The locus of the equations <m>x + 4y + z = 0</m> and
+          <m>y + z = 4</m> in <m>\RR^3</m>.
+        </li>
+        <li>
+          The locus of the equations <m>x - 2y - 3z = 0</m>, <m>y =
+          3</m>, and <m>z = -5</m> in <m>\RR^3</m>.
+        </li>
+        <li>
+          The locus of the equations <m>w + y = -1</m>, <m>2x + 3y +
+          z = 2</m>, and <m>4w + 2x - 3y = 0</m> in <m>\RR^4</m>.
+        </li>
+      </ol></p>
     </li>
     <li>
-      <p>
-        Let <m>L_1</m> and <m>L_2</m> be two linear loci in
-        <m>\RR^n</m> with dimensions <m>d_1</m> and <m>d_2</m>,
-        respectively. What are the possible dimensions of the
-        intersection <m>L_1 \cap L_2</m>? What are the possible
-        dimensions of the union <m>L_1 \cup L_2</m>? What are the
-        possible problems with determining the dimension of the union?
-        (6) 
-      </p>
+      Let <m>L_1 = \Span \{ s,t\} </m> and <m>L_2 = \Span \{ u,v\}
+      </m> be spans in <m>\RR^4</m> (so that <m>s,t,u,v</m> are all
+      vectors in <m>\RR^4</m>). Assume that <m>L_1</m> and <m>L_2</m>
+      both have dimension 2. What are the possible dimensions of
+      <m>\Span \{ s,t,u,v\}</m>? (You can give a general argument or
+      you can construct examples by choosing specific vectors to
+      show the possibilities.) (4) 
     </li>
   </ol></p>
 </section>
--->
