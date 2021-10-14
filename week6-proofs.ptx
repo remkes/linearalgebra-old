@@ -9,16 +9,16 @@
       obviously, perhaps, I could prove that the matrix action is
       actually a linear transformation, as I stated in <xref
       ref="section-matrices-and-transformations" />, and the converse
-      that all linear transformations can be represented as matrices. 
+      that all linear transformations can be represented as matrices.
       I could also prove the two properties in <xref
       ref="proposition-matrix-multiplication" />. I am opting not to
       present these general proofs. They are not conceptually
-      difficult, but to do them, in general, is notationally difficult.
-      It involves a lot of matrix coefficients, vector coefficients
-      and many subscripts. I thought to include those proofs here
-      wasn't useful for building up our experience with proofs (other
-      than perhaps to show that notation is a major challenge in
-      writing mathematical proof).
+      difficult, but to do them, in general, is notationally
+      difficult.  It involves a lot of matrix coefficients, vector
+      coefficients and many subscripts. To include those proofs wasn't
+      useful for building up experience with proofs (other than
+      perhaps to show that notation is a major challenge in writing
+      mathematical proof).
     </p>
   </subsection>
   <subsection xml:id="subsection-transformations-r2-proofs">
@@ -44,15 +44,15 @@
         <p>
           I want my proof to be completely general, so I want to work
           with arbitrary rotations. Let's say that <m>A</m> is a
-          rotations by the angle <m>\theta</m>, so it has the matrix
+          rotation by the angle <m>\theta</m>, so it has the matrix
           <me>
             \begin{pmatrix}
               \cos \theta \amp - \sin \theta \\
               \sin \theta \amp \cos \theta
             \end{pmatrix}
           </me>.
-          Let's also say that <m>B</m> is a rotations by the angle
-          <m>\phi</m>, so it has the matrix. 
+          Let's also say that <m>B</m> is a rotation by the angle
+          <m>\phi</m>, so it has the matrix
           <me>
             \begin{pmatrix}
               \cos \phi \amp - \sin \phi \\
@@ -150,7 +150,7 @@
         <m>A</m>, <m>AA = A</m>
       </statement>
       <proof>
-        All we need to do for this proof is take the general matrix
+        All I need to do for this proof is take the general matrix
         for a projection and multiply it by itself. The general matrix
         is
         <me>
@@ -159,10 +159,10 @@
             ab \amp b^2 
           \end{pmatrix} 
         </me>,
-        remembering that this is for a unit vector direction. Since we
-        have a unit vector direction, <m>a^2 + b^2 = 1</m>, which we
-        will need for this proof. Now let's take this matrix and
-        multiply it by itself.
+        remembering that the vector defining the line is a unit vector
+        direction. Since it is a unit vector direction, I know that
+        <m>a^2 + b^2 = 1</m>, which I will need for this proof. Now
+        I'll take this matrix and multiply it by itself.
         <me>
           A^2 = \begin{pmatrix}
             a^2 \amp ab \\

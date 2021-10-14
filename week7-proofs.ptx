@@ -3,13 +3,11 @@
   <subsection xml:id="subsection-interactions-definitions">
     <title>Interactions between Definitions</title>
     <p>
-      In this section, we defined a bunch of different terms:
-      rowspace, columnspace, kernel, image and preimage. In <xref
-      ref="section-kernels-and-images" />, I already stated and proved
-      a couple of propositions about these new terms. I want to continue
-      that work in this section. All these terms, along with the
-      matrix rank, fit togther very tightly. We'll explore that
-      connection in a few proofs in this section.
+      In <xref ref="section-kernels-and-images" />, I defined a number
+      of term: rowspace, columnspace, kernel, image and preimage.  In
+      this section, I want to prove some properties of these new
+      definition.  All these terms, along with the matrix rank, fit
+      togther very tightly.
     </p>
     <proposition>
       <statement>
@@ -22,8 +20,8 @@
       </statement>
       <proof>
         <p>
-          We know the dimension of the image is the rank, which is the
-          number of leading ones in the reduced row echelon form. We
+          I know the dimension of the image is the rank, which is the
+          number of leading ones in the reduced row echelon form. I
           also know that the dimension of the kernel is the dimension
           of the system of equations represented by the extended
           matrix <m>(M|0)</m>. The dimension of a solution space to a
@@ -53,25 +51,27 @@
       </statement>
       <proof>
         <p>
-          For this <qt>if and only if</qt> statement, we need to prove in
-          both directions. Let's start with the forward implication.
-          For this, we assume the matrix is invertible.
+          For this <qt>if and only if</qt> statement, I need to prove
+          in both directions. I'll start with the forward
+          implication. For this directionof the proof, I msut assume
+          the matrix is invertible.
         </p>
         <p>
           Since the matrix is invertible, it row reduces to the
-          identity matrix. (We know this from the inversion algorithm,
+          identity matrix. (I know this from the inversion algorithm,
           where we have to row reduce the left side of the extended
           matrix to the identity.) That means it has rank <m>n</m>,
           since each row has a leading one. This means that the image
-          has dimension <m>n</m>. Using the previous proposition, this
-          implies the kernel has dimension <m>0</m>. The only thing
+          has dimension <m>n</m> since the dimension of the image is
+          equal to the rank. Using the previous proposition, this fact 
+          implies that the kernel has dimension <m>0</m>. The only thing
           with dimension zero is a point, so the kernel is a point.
           The kernel always includes zero, since zero is also always
-          sent to zero, so the kernel is zero.
+          sent to zero, so the kernel must just be the zero vector.
         </p>
         <p>
-          We have to prove the reverse implication as well. Luckily in
-          this case, we can essentially reverse the same logic. A zero
+          I have to prove the reverse implication as well. Luckily in
+          this case, I can essentially reverse the same logic. A zero
           kernel has dimension zero. Therefore the image has to have
           dimension <m>n</m>. Therefore, there must be <m>n</m> leading
           ones. Therefore, the matrix must reduce to the identity

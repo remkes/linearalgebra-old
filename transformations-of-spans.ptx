@@ -3,11 +3,12 @@
   <subsection xml:id="subsection-transformations-of-spans">
     <title>Transformations of Spans</title>
     <p>
-      Now that we have matrices to describe transformations, we want
-      to know how transformations affect linear subspaces. We know
-      that they preserve them, but we want to be more specific: given
-      a particular linear subspace, can we determine where it goes
-      under a transformation?
+      Now that I understand how matrices describe transformations, I want
+      to know how transformations affect linear subspaces. I know
+      that they preserve them (and each linear subspaces is sent to
+      some other linear subspace), but I want to be more specific: given
+      a particular linear subspace, can I determine exactly where it
+      goes under a transformation?
     </p>
     <definition>
       <statement>
@@ -40,12 +41,12 @@
       </md>
     </p>
     <p>
-      We see that the image of a linear combination is still a linear
-      combination, just in the vectors <m>Mv_i</m> instead of
-      <m>v_i</m>. Since all elements of a span are linear
-      combinations, we can say that everything in the span of the
-      <m>v_i</m> is sent to the span of the vectors <m>Mv_i</m>. We
-      can summarize these observations in a proposition.
+      This calculation shows that the image of a linear combination is
+      still a linear combination, just in the vectors <m>Mv_i</m>
+      instead of <m>v_i</m>. Since all elements of a span are linear
+      combinations, everything in the span of the <m>v_i</m> is sent
+      to the span of the vectors <m>Mv_i</m>. I can summarize these
+      observations in a proposition.
     </p>
     <proposition>
       <statement>
@@ -58,18 +59,17 @@
       </statement>
     </proposition>
     <p>
-      Matrices acting on spans are easy: we just figure out where the
+      Matrices acting on spans are easy: I just figure out where the
       individual vectors go and the span of those vectors will be
       transformed into the span of their images. Offset spans are
       almost as easy: consider an affine subspace <m>u + \Span \{ v_1,
       v_2, \ldots, v_k\}</m>. Any element of this looks like <m>u +
-      a_1v_1 + a_2v_2 + \ldots a_kv_k</m>. Under <m>M</m>, we have:
+      a_1v_1 + a_2v_2 + \ldots a_kv_k</m>. I can calculate where this
+      linear combination goes under the action of <m>M</m>. 
       <me>
         M(u + a_1v_1 + a_2v_2 + \ldots + a_kv_k) = Mu + a_1 Mv_1 +
         a_2Mv_2 + \ldots + a_kMv_k
       </me>
-    </p>
-    <p>
       The offset span is still sent to an offset span, with offset
       <m>Mu</m> and spanning vectors <m>Mv_i</m>.
     </p>
@@ -78,7 +78,8 @@
       the span. Even if the <m>v_i</m> are linearly independent and
       form a basis for the span, the vectors <m>Mv_i</m> need not be
       linearly independent. The dimension of the new span might be
-      smaller.
+      smaller. Linear combinations are sent to linear combinations,
+      but linear independence need not be preserved. 
     </p>
   </subsection>
   <subsection xml:id="subsection-transformations-of-loci">
@@ -86,12 +87,12 @@
     <p>
       For loci, the picture is much more complicated. Equations do
       not transform nearly as pleasantly as spans. Planes in
-      <m>\RR^3</m> are defined by a normal; we might hope that the new
+      <m>\RR^3</m> are defined by a normal; I might hope that the new
       plane is defined by the image of the normal. Unfortunately,
       since the matrix may not preserve orthogonality, this will
       usually not happen. To determine the image of a locus, the best
-      solution is to describe the locus as a span or offset span to find
-      the image of that span.
+      approach is to describe the locus as a span or offset span to
+      find the image of that span.
     </p>
   </subsection>
 </section>

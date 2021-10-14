@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-r3-examples">
     <title>Examples in <m>\RR^3</m></title>
     <p>
-      We can also specialize the transformations of <m>\RR^3</m>,
+      I would also like to talk about transformations of <m>\RR^3</m>,
       though it is not as easy to give a complete account of the basic
       types. However, all of the types listed for <m>\RR^2</m>
       generalize.
@@ -11,8 +11,8 @@
         <li>
           <p>
             Rotations in <m>\RR^3</m> are no longer about the origin.
-            Instead, we have to choose an axis.  Any line through the
-            origin will do for an axis of rotation.  Any rotation in
+            Instead, I have to choose an axis. Any line through the
+            origin will do for an axis of rotation. Any rotation in
             <m>\RR^3</m> is determined by an axis of rotation and an
             angle of rotation about that axis.
           </p>
@@ -20,7 +20,7 @@
         <li>
           <p>
             Reflections are also altered: instead of reflecting over a
-            line, we have to reflect over a plane through the origin.
+            line, I have to reflect over a plane through the origin.
             Any plane through the origin determines a reflection.
           </p>
         </li>
@@ -32,16 +32,16 @@
         </li>
         <li>
           <p>
-            Dilations are also similar, though we have three possible
+            Dilations are also similar, though there are three 
             axis directions in which to stretch or compress.
           </p>
         </li>
         <li>
           <p>
-            Like <m>\RR^2</m>, we can project onto the origin, sending
+            Like <m>\RR^2</m>, I can project onto the origin, sending
             everything to zero, or onto a line, sending every point to
             the closest point on a line. Examples include projection
-            onto the axes. However, we can also project onto planes.
+            onto the axes. However, I can also project onto planes.
             Sending <m>(a,b,c)</m> to <m>(a,b,0)</m>, for example,
             removes the <m>z</m> coordinate; this is projection onto
             the <m>xy</m> plane.
@@ -49,7 +49,7 @@
         </li>
       </ul>
       In addition, other types of transformations exist. One example
-      is the reflection through the origin: this transformation
+      is the <sq>reflection through the origin</sq>: this transformation
       multiplies all vectors by <m>(-1)</m>, sending them to the
       opposite point on the other side of the origin. In <m>\RR^2</m>,
       this turned out to be the same as the rotation by half a turn.

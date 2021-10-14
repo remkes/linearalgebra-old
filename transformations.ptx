@@ -6,14 +6,14 @@
       After a good definition of the environment (<m>\RR^n</m>) and
       its objects (lines, planes, hyperplanes, etc.), the next
       mathematical step is to understand the functions that live in
-      the environment and affect its objects. First, we need to
-      generalize the simple notion of a function to linear spaces. In
-      algebra and calculus, we worked with functions of real numbers.
+      the environment and affect its objects. First, I need to
+      generalize the simple notion of a function to linear spaces. 
+      Algebra and calculus are concerned with functions of real numbers.
       These functions are rules <m>f: A \rightarrow B</m> which go
-      between subsets of real numbers  The function <m>f</m> assigns
+      between subsets of real numbers. The function <m>f</m> assigns
       to each <em>number</em> in <m>A</m> a unique <em>number</em> in
-      <m>B</m>  They include the very familiar <m>f(x) = x^2</m>,
-      <m>f(x) = \sin (x)</m>, <m>f(x) = e^x</m> and many others.
+      <m>B</m>.  These functions include the very familiar <m>f(x) =
+      x^2</m>, <m>f(x) = \sin (x)</m>, <m>f(x) = e^x</m> and many others.
     </p>
     <definition>
       <statement>
@@ -26,16 +26,16 @@
         </p>
       </statement>
     </definition>
-    <example>
+    <example xml:id="example-function1">
       <statement>
         <p>
-          We can define a function <m>f: \RR^3 \rightarrow \RR^3</m>
+          I can define a function <m>f: \RR^3 \rightarrow \RR^3</m>
           by <m>f\begin{pmatrix}x\\y\\z \end{pmatrix} =
           \begin{pmatrix}x^2\\y^2\\z^2 \end{pmatrix}</m>.
         </p>
       </statement>
     </example>
-    <example>
+    <example xml:id="example-function2">
       <statement>
         <p>
           Another function <m>f: \RR^3 \rightarrow \RR^2</m> could be
@@ -58,24 +58,26 @@
           </md>
         </p>
         <p>
-          Informally, we say that the function <term>respects</term>
+          Often I will say that the function <term>respects</term>
           the two main operations on linear spaces: addition of
-          vectors and multiplication by scalars. If we perform
-          addition before or after the function, we get the same
+          vectors and multiplication by scalars. If I perform
+          addition before or after the function, I get the same
           result. Likewise for scalar multiplication.
         </p>
       </statement>
     </definition>
     <p>
-      By inspection and testing, one could determine that the first
-      example above fails these two rules, but the second example
-      satisfies them.
+      By inspection and testing, I could determine that <xref
+      ref="example-function1" /> example above fails these two rules,
+      but <xref ref="example-function2" /> satisfies them. Therefore,
+      the later is a linear transformation but the former is not. 
     </p>
     <p>
       This definition creates a restrictive but important class
-      of linear functions. We could easily define linear algebra as a
-      study of these transformations. There is an alternative and
-      equivalent definition of a linear transformation.
+      of linear functions. I could easily define linear algebra as a
+      study of these transformations. The defintiion gives so far is
+      an algebraic definition; however, there is also an elegant
+      geometric description of these functions.
     </p>
     <proposition>
       <statement>
@@ -86,22 +88,22 @@
       </statement>
     </proposition>
     <p>
-      Under a linear transformation, points, lines, planes and etc. are changed
-      to other points, lines, planes and etc. A line can't be bent into
-      an arc or broken into two different lines. Hopefully, some of
-      the major ideas of the course are starting to fit together: the
-      two basic operations of addition and scalar multiplication give
-      rise to spans, which are flat objects. Linear transformations
-      preserve those operations, so they preserve flat objects.
-      Exactly <em>how</em> they change these objects can be tricky to
-      determine.
+      Under a linear transformation, points, lines, planes and etc.
+      are changed to other points, lines, planes and etc. A line can't
+      be bent into an arc or broken into two different lines.
+      Hopefully, some of the major ideas of the course are starting to
+      fit together: the two basic operations of addition and scalar
+      multiplication give rise to spans, which are flat objects.
+      Linear transformations preserve those operations, so they
+      preserve flat objects.  Exactly <em>how</em> they change these
+      objects can be tricky to determine.
     </p>
     <p>
-      Lastly, because of scalar multiplication, if we take <m>a =
+      Lastly, because of scalar multiplication, if I take <m>a =
       0</m> we get that <m>f(0) = 0</m>. Under a linear
       transformation, the origin is always sent to the origin. So, in
       addition to preserving flat objects, linear transformations can't
-      move the origin. We could drop this condition of preserving the
+      move the origin. I could drop this condition of preserving the
       origin to get another class of functions.
     </p>
     <definition>
@@ -115,19 +117,20 @@
       </statement>
     </definition>
     <p>
-      Though they are interesting, we don't spend much time with
+      Though they are interesting, I don't spend much time with
       affine transformations. They can always be realized as a linear
       transformation combined with a shift or displacement of the
       entire space by a fixed vector. Since shifts are relatively
-      simple, we can usually reduce problems of affine transformations
+      simple, I can usually reduce problems of affine transformations
       to problems of linear transformations.
     </p>
   </subsection>
   <subsection xml:id="subsection-composition">
     <title>Composition</title>
     <p>
-      Once we understood the functions of real numbers, we learned to
-      compose them. We do the same for linear transformations.
+      Composition is a very important idea for the study of
+      real-valued functions in calculus. It likewise is very important
+      for linear transformations.
     </p>
     <definition>
       <statement>
@@ -149,16 +152,16 @@
   <subsection xml:id="subsection-transformations-symmetry">
     <title>Symmetry</title>
     <p>
-      Notice that we've defined linear functions by the objects and/or
+      Notice that I've defined linear functions by the objects and/or
       properties they preserve. This is a very general technique in
       mathematics. Very frequently, functions are classified by what
-      they preserve. As discussed in the very first chapter, we use
+      they preserve. As discussed in the very first chapter, I use
       the word <sq>symmetry</sq> to describe this perspective: the
       symmetries of a function are the objects or algebraic properties
       preserved by the function. A function exhibits more symmetry if
       it preserves more objects or more properties. The conventional
       use of symmetry in English relates more to a shape than a
-      function: what are the symmetries of a hexagon?  We can connect
+      function: what are the symmetries of a hexagon?  I can connect
       the two ideas: asking for the symmetries of the hexagon can be
       thought of as asking for the transformations of <m>\RR^2</m>
       that preserve a hexagon. This is a bit of a reverse: the

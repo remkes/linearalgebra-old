@@ -5,9 +5,10 @@
     <activity>
       <statement>
         <p>
-          In the notes, we gave matrices for rotations by
+          In <xref ref="subsection-matrix-types-in-r2" />, I gave
+          the matrices for rotations by
           <m>\frac{\pi}{2}</m> radians, <m>\pi</m> radians, and
-          <m>\frac{3\pi}{2}</m> radians. We also defined reflections over the
+          <m>\frac{3\pi}{2}</m> radians. I also defined reflections over the
           <m>x</m>-axis, <m>y</m>-axs, the line <m>y=x</m>, and the
           line <m>y=-x</m>. For all seven of these transformations,
           check that the matrix action acts as expected on the vectors
@@ -20,8 +21,8 @@
       </statement>
       <solution>
         <p>
-          We have seven matrices, each of which acts on the four given
-          vectors. We'll go through the actions one by one. Let's start
+          I have seven matrices, each of which acts on the four given
+          vectors. I'll go through the actions one by one, starting
           with rotation by <m>\frac{\pi}{2}</m>.
           <md>
             <mrow>
@@ -204,7 +205,7 @@
             </mrow>
           </md>
           All of these vectors are sent to their rotation by three
-          quarters of a turn. Notice we could also interpret this a
+          quarters of a turn. Notice that I  could also interpret this a
           rotation by a quarter turn clockwise. Now look at reflection
           over the <m>x</m>-axis. 
           <md>
@@ -266,7 +267,7 @@
             </mrow>
           </md>
           The sign of the <m>y</m> coordinate of each vector is
-          changes, which is exactly what we expect for reflection over
+          changes, which is exactly what I expect for reflection over
           the <m>x</m>-axis. Now look at reflection over the
           <m>y</m>-axis. 
           <md>
@@ -388,7 +389,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          The two coordinates are exchanged, which is exactly what we
+          The two coordinates are exchanged, which is exactly what I
           would expect for this reflection. Finally, look at the
           reflection over the line <m>y=-x</m>. 
           <md>
@@ -450,7 +451,7 @@
             </mrow>
           </md>
           The coordinates are switched and the signs are changed,
-          which is what we would expect with this reflection.
+          which is what I would expect with this reflection.
         </p>
       </solution>
     </activity>
@@ -472,7 +473,7 @@
       </statement>
       <solution>
         <p>
-          We apply the matrix action algorithm: going along the rows
+          I apply the matrix action algorithm: going along the rows
           of the matrix and down the column vector, multiplying paired
           terms and adding the products together.
           <md>
@@ -519,7 +520,7 @@
       </statement>
       <solution>
         <p>
-          We apply the matrix action algorithm: going along the rows
+          I apply the matrix action algorithm: going along the rows
           of the matrix and down the column vector, multiplying paired
           terms and adding the products together.
           <md>
@@ -566,7 +567,7 @@
       </statement>
       <solution>
         <p>
-          We apply the matrix action algorithm: going along the rows
+          I apply the matrix action algorithm: going along the rows
           of the matrix and down the column vector, multiplying paired
           terms and adding the products together.
           <md>
@@ -618,7 +619,7 @@
       </statement>
       <solution>
         <p>
-          We apply the matrix action algorithm: going along the rows
+          I apply the matrix action algorithm: going along the rows
           of the matrix and down the column vector, multiplying paired
           terms and adding the products together.
           <md>
@@ -673,7 +674,7 @@
       </statement>
       <solution>
         <p>
-          We use the algorithm, going across the rows of the first
+          I use the algorithm, going across the rows of the first
           matrix and down the rows of the second.
           <me>
             \left( \begin{matrix}
@@ -715,7 +716,7 @@
       </statement>
       <solution>
         <p>
-          We use the algorithm, going across the rows of the first
+          I use the algorithm, going across the rows of the first
           matrix and down the rows of the second.
           <me>
             \left( \begin{matrix}
@@ -756,7 +757,7 @@
             \end{matrix} \right) 
           </me>
           To compose transformations we multiply matrices. To compose
-          this transformation with itselt, we mutiply the matrix with
+          this transformation with itself, I mutiply the matrix with
           itself. 
           <me>
             \left( \begin{matrix}
@@ -771,7 +772,7 @@
           </me>
           The result of the matrix multiplication is indeed the
           rotation matrix for rotation by <m>\pi</m> radians. To see
-          what happens after a third rotation by a quarter turn, we
+          what happens after a third rotation by a quarter turn, I
           multiply this matrix by the original quarter turn matrix. 
           <me>
             \left( \begin{matrix}
@@ -796,7 +797,7 @@
       <statement>
         <p>
           Consider two rotations in <m>\RR^2</m>, by angles
-          <m>\theta</m> and <m>\phi</m>. Use the general form of a
+          <m>\theta</m> and <m>\phi</m>. Using the general form of a
           matrix for a rotation, prove that the composition of these
           two rotations is the rotation by the angle <m>(\theta +
           \phi)</m>. (You will need to use some trigonometric
@@ -812,14 +813,14 @@
               \sin \theta \amp \cos \theta
             \end{matrix} \right) 
           </me>.
-          We can make the same matrix for the angle <m>\phi</m>.
+          I can make the same matrix for the angle <m>\phi</m>.
           <me>
             \left( \begin{matrix}
               \cos \phi \amp - \sin \phi \\
               \sin \phi \amp \cos \phi
             \end{matrix} \right) 
           </me>.
-          We compose these two matrices. 
+          I compose these two matrices. 
           <md>
             <mrow>
               \amp \left( \begin{matrix}
@@ -833,17 +834,19 @@
             </mrow>
             <mrow>
               \amp = \left( \begin{matrix}
-                (\cos \theta) (\cos \phi) - (\sin \theta)(\sin \phi) \amp
-                -(\cos \theta) (\sin \phi) - (\sin \theta)(\cos \phi) \\
-                (\sin \theta) (\cos \phi) + (\cos \theta)(\sin \phi) \amp
-                -(\sin \theta) (\sin \phi) + (\cos \theta)(\cos \phi) 
+                (\cos \theta) (\cos \phi) - (\sin \theta)(\sin \phi)
+                \amp -(\cos \theta) (\sin \phi) - (\sin \theta)(\cos
+                \phi) \\
+                (\sin \theta) (\cos \phi) + (\cos \theta)(\sin \phi)
+                \amp -(\sin \theta) (\sin \phi) + (\cos \theta)(\cos
+                \phi) 
               \end{matrix} \right) 
             </mrow>
           </md>
           Now we need trig identities. Each of these four matrix
           entries is a sum identity. Replacing those according to
-          identities drawn from some formula sheet or other reference,
-          we get this matrix.
+          identities drawn from the reference material,
+          I get this matrix.
           <me>
             \left( \begin{matrix}
               \cos (\theta + \phi) \amp -\sin (\theta + \phi) \\
@@ -851,7 +854,7 @@
             \end{matrix} \right) 
           </me>
           This is precisely the matrix form for rotation by the angle
-          <m>(\theta + \phi)</m>. Therefore, we have proven that the
+          <m>(\theta + \phi)</m>. Therefore, I have proven that the
           matrix multiplication, and hence the composition, of two
           rotations produces the rotation by the sum of the two
           angles.
@@ -877,10 +880,11 @@
               2ab \amp b^2 - a^2 
             \end{matrix} \right)  
           </me>.
-          Since we have a unit vector, we know <m>a^2 + b^2 =
-          1</m>. This fact will be important to the proof. How we take
+          Since the vector defining the line is a unit vector, I know
+          <m>a^2 + b^2 =
+          1</m>. This fact will be important to the proof. Now I take
           this matrix and multiply it by itself to do the composition
-          of the reflection with itself. We'll have to do some algebra
+          of the reflection with itself. I'll have to do some algebra
           with the resulting terms in the new matrix. 
           <md>
             <mrow>
@@ -929,7 +933,7 @@
             </mrow>
           </md>
           In the last step, we use the important fact about the unit
-          vector. We end up with the identity matrix, which is what we
+          vector. I end up with the identity matrix, which is what I
           wanted, so the proof is finished. 
         </p>
       </solution>

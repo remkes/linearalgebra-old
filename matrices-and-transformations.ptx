@@ -3,10 +3,10 @@
   <subsection xml:id="subsection-matrix-representation">
     <title>Matrix Representation of Linear Transformations</title>
     <p>
-      Now we come to the second major application of matrices. In
-      addition to succinctly encoding linear systems, matrices can also
-      be used very efficiently to encode linear transformations. This
-      is done by defining how a matrix can act on a vector.
+      Now I come to the second major application of matrices. In
+      addition to succinctly encoding linear systems, matrices can
+      also be used very efficiently to encode linear transformations.
+      This is done by defining how a matrix can act on a vector.
     </p>
     <definition>
       <statement>
@@ -29,7 +29,7 @@
           </me>
         </p>
         <p>
-          This is a bit troubling to work out in general. Let's see
+          This is a bit troubling to work out in general. Let me show
           what it looks like slightly more concretely in <m>\RR^2</m>
           and <m>\RR^3</m>.
           <md>
@@ -84,16 +84,17 @@
       \rightarrow \RR^m</m> is <em>exactly</em> the same as the set of
       <m>m \times n</m> matrices. This is a very powerful result: in
       order to understand linear transformations of Euclidean space,
-      we only have to understand matrices and their properties.
+      I only have to understand matrices and their properties.
     </p>
     <p>
-      Let's see what certain special matrices mean as transformations.
-      We'll look at <m>3 \times 3</m> matrices for these examples.
+      I'll start with some important examples, using <m>3 \times 3</m>
+      matrices for transformations from <m>\RR^3</m> to itself.
     </p>
     <example>
       <statement>
         <p>
-          First, we had the zero matrix: all coefficient are zero.
+          Let me interpret the matrix action of the zero matrix (all
+          coefficient are zero).
           <me>
             \begin{pmatrix} 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \\ 0
             \amp 0 \amp 0 \end{pmatrix} \begin{pmatrix} x \\ y \\ z
@@ -111,8 +112,8 @@
     <example>
       <statement>
         <p>
-          We also had the identity matrix: ones on the diagonal and
-          zeros elsewhere.
+          Let me also interpret the matrix action of the identity
+          matrix.
           <me>
             \begin{pmatrix} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0
             \amp 0 \amp 1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z
@@ -131,7 +132,8 @@
     <example>
       <statement>
         <p>
-          Diagonal matrices only have non-zero entries on the diagonal.
+          I can also interpret a more general diagonal matrix. Let
+          <m>a,b,c \in \RR</m> be scalars. 
           <me>
             \begin{pmatrix} a \amp 0 \amp 0 \\ 0 \amp b \amp 0 \\ 0
             \amp 0 \amp c \end{pmatrix} \begin{pmatrix} x \\ y \\ z
@@ -144,7 +146,10 @@
           This is a dilation: the <m>x</m> direction is stretched by
           the factor <m>a</m>, the <m>y</m> direction by the factor
           <m>b</m> and the <m>z</m> direction by the factor <m>c</m>.
-          Diagonal matrices are dilations.
+          (If any of the three constants are zero, that entire axis
+          direction is collapsed). Diagonal matrices are dilations in
+          the axis directions, with the possibility of completely
+          collapsing an axis as well. 
         </p>
       </statement>
     </example>
@@ -152,23 +157,24 @@
   <subsection xml:id="subsection-matrix-multiplication">
     <title>Composition and Matrix Multiplication</title>
     <p>
-      We previously defined the composition of a linear transformation.
-      Composition allows us to combine transformations: we can ask what
-      happens if we first rotate and then reflect in <m>\RR^2</m>.
+      In <xref ref="subsection-composition" />, I defined the
+      composition of linear transformations.
+      Composition allows me to combine transformations.
       However, since matrices represent transformations, this
       composition should somehow be accounted for in the matrix
-      representation. If <m>A</m> is the matrix of <m>S</m> and
-      <m>B</m> is the matrix of <m>T</m>, what is the matrix of <m>S
-      \circ T</m>?  The answer is given by matrix multiplication.
+      representation. If <m>A</m> is the matrix of the transformation
+      <m>S</m> and <m>B</m> is the matrix of the transformation
+      <m>T</m>, what is the matrix of <m>S \circ T</m>? The answer is
+      given by matrix multiplication.
     </p>
     <definition>
       <statement>
         <p>
           Let <m>A</m> be a <m>k \times m</m> matrix and <m>B</m> an
-          <m>m \times n</m> matrix. We can think of the
+          <m>m \times n</m> matrix. I can think of the
           <term>rows</term> of <m>A</m> as vectors in <m>\RR^m</m>,
           and the <term>columns</term> of <m>B</m> as vectors in
-          <m>\RR^m</m> as well. To emphasize this perspective, we
+          <m>\RR^m</m> as well. To emphasize this perspective, I
           write the following, using <m>u_i</m> for the rows of
           <m>A</m> and <m>v_i</m> for the columns of <m>B</m>.
           <md>
@@ -204,21 +210,21 @@
     </definition>
     <p>
       This operation has the desired property: the product of the
-      matrices repesent the composition of the transformations.
+      matrices repesents the composition of the transformations.
       (This remarkable fact is presented here without proof; I'll
       leave it to you to wonder why this weird combination of dot
       products has the desired geometric interpretation.) Remember
       that the composition still works from right to left so that the
       matrix multiplication <m>AB</m> represents the transformation
       associated with <m>B</m> first, followed by the transformation
-      associated with <m>A</m>. When we think of matrices acting on
-      vectors, we wrote the action on the right: <m>Av</m>. Now when
+      associated with <m>A</m>. When I defined matrices acting on
+      vectors, I wrote the action on the right: <m>Av</m>. Now when
       a composition acts, as in <m>ABv</m>, the closest matrix
       gets to act first.
     </p>
     <p>
-      We have defined a new algebraic operation. As with the new
-      products for vectors (dot and cross), we want to know the
+      I have defined a new algebraic operation. As with the new
+      products for vectors (dot and cross), I want to know the
       properties of this new operation.
     </p>
     <proposition xml:id="proposition-matrix-multiplication">
@@ -242,13 +248,14 @@
       </statement>
     </proposition>
     <p>
-      Note the lack of commutativity: <m>AB \neq BA</m>. In fact, if
-      <m>A</m> and <m>B</m> are not square matrices, if <m>AB</m> is
-      defined then <m>BA</m> will not be, the indices will not match.
-      Not only are we unable to exchange the order of matrix
-      multiplication, sometimes that multiplication doesn't even make
-      sense as an operation. Matrix multiplication is a very
-      important example of a non-commutative product.
+      Note that commutativity is not on this idea. In general, <m>AB
+      \neq BA</m>. In fact, if <m>A</m> and <m>B</m> are not square
+      matrices, if <m>AB</m> is defined then <m>BA</m> will not be,
+      since the indices will not match.  Not only am I unable to
+      exchange the order of matrix multiplication, sometimes that
+      multiplication doesn't even make sense as an operation. Matrix
+      multiplication is a very important example of a non-commutative
+      product.
     </p>
   </subsection>
 </section>

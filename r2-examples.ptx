@@ -3,11 +3,11 @@
   <subsection xml:id="subsection-r2-examples">
     <title>Five Types</title>
     <p>
-      It is useful for us to specialize the transformations <m>\RR^2
-      \rightarrow \RR^2</m>, in order to build experience and
-      intuition. As we noted above, linear transformations preserve
-      flat objects. What can we do to <m>\RR^2</m> that preserves
-      lines and preserves the origin?
+      It is useful to look at transformations <m>\RR^2 \rightarrow
+      \RR^2</m> in order to build experience and intuition. As I
+      described earlier, linear transformations preserve flat objects.
+      What can be done to <m>\RR^2</m> that preserves lines and
+      preserves the origin?
     </p>
     <proposition>
       <statement>
@@ -21,12 +21,12 @@
       <li>
         <p>
           <em>Rotations</em> about the origin (either clockwise or
-          counter-clockwise) preserve lines. We can't rotate around
-          any other point since that would move the origin. Since we
+          counter-clockwise) preserve lines. I can't rotate around
+          any other point since that would move the origin. Since I
           can choose any angle, there are infinitely many such
           rotations. Also, since rotating by <m>\theta</m> radians
           clockwise is the same as <m>2\pi - \theta</m> radians
-          counter-clockwise, we typically choose to only deal with
+          counter-clockwise, I typically choose to only deal with
           counter-clockwise rotations. Counter-clockwise rotations
           are considered positive and clockwise rotations are
           considered negative.
@@ -60,20 +60,20 @@
         <p>
           <em>Projections</em> are transformations that collapse
           <m>\RR^2</m> down to a line through the origin. Two
-          important examples are projection onto either axis.
+          important examples are the projections onto either axis.
           Projection onto the <m>x</m> axis sends a point <m>(a,b)</m>
-          to <m>(a,0)</m>, removing the <m>y</m> component  Likewise,
-          projection onto the <m>y</m> axis sends a point <m>(a,b)</m>
-          to <m>(0,b)</m>, removing the <m>x</m> component  In a
-          similar manner, we can project onto any line through the
-          origin by sending each point to the closest point on the
-          line. Finally, there is the projection to the origin which
-          sends all points to the origin.
+          to <m>(a,0)</m>, removing the <m>y</m> component entirely.
+          Likewise, projection onto the <m>y</m> axis sends a point
+          <m>(a,b)</m> to <m>(0,b)</m>, removing the <m>x</m>
+          component. In a similar manner, I can project onto any line
+          through the origin by sending each point to the closest
+          point on the line. Finally, there is the projection to the
+          origin which sends all points to the origin.
         </p>
       </li>
     </ul>
     <p>
-      We present the following interesting theorem without proof.
+      I present the following interesting theorem without proof.
     </p>
     <theorem>
       <statement>
@@ -128,7 +128,7 @@
           2ab \amp b^2 - a^2
         \end{pmatrix}
       </me>
-      For some examples, reflection over the <m>x</m> axis is 
+      Reflection over the <m>x</m> axis is 
       <me>
         \begin{pmatrix}
           1 \amp 0 \\
@@ -159,7 +159,7 @@
     </p>
     <p>
       There isn't necessarily an easily describable form for all
-      skews. However, we can give some examples. A horizontal skew
+      skews. However, I can still give some examples. A horizontal skew
       that moves the positive <m>y</m> axis in the positive <m>x</m>
       direction is
       <me>
@@ -189,8 +189,9 @@
     </p>
     <p>
       Again, let <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> be a
-      <em>unit</em> vector. The projection only to line in the
-      direction of this unit vector is given by the matrix
+      <em>unit</em> vector. This unit vector defines a line through
+      the origin by taking all multiples of this vector. The
+      projection onto this line is given by the matrix
       <me>
         \begin{pmatrix}
           a^2 \amp ab \\

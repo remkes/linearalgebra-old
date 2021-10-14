@@ -2,11 +2,15 @@
   <title>Week 7 Activity</title>
   <subsection xml:id="subsection-activity-inversion">
     <title>Inversion</title>
+    <p>
+      All row reductions in these activity were done with Wolfram
+      Alpha. 
+    </p>
     <activity>
       <statement>
         <p>
-          Calculate the inverse of these matrices. Check by matrix
-          multiplication that the product of the matrices and its
+          Calculate the inverse of this matrix. Check by matrix
+          multiplication that the product of the matrix and its
           inverse (in both orders!) is the identity.
           <me>
             \left( \begin{matrix}
@@ -18,7 +22,7 @@
       </statement>
       <solution>
         <p>
-          We write an extended matrix with the original matrix and the
+          I write the extended matrix with the original matrix and the
           identity.
           <me>
             \left( \begin{array}{cc|cc}
@@ -26,7 +30,7 @@
               -5 \amp 4 \amp 0 \amp 1 \\
             \end{array} \right)
           </me>
-          We row reduce this extended matrix.
+          I row reduce this extended matrix.
           <me>
             \left( \begin{array}{cc|cc}
               1 \amp 0 \amp \frac{4}{28} \amp 0 \\
@@ -35,7 +39,7 @@
           </me>
           The left side of the extended matrix reduces to the
           identity, so the right side is the inverse matrix.
-          Then we check the two products. 
+          Then I check the two products. 
           <md>
             <mrow>
               \frac{1}{28} \left( \begin{matrix}
@@ -74,8 +78,8 @@
     <activity>
       <statement>
         <p>
-          Calculate the inverse of these matrices. Check by matrix
-          multiplication that the product of the matrices and its
+          Calculate the inverse of this matrix. Check by matrix
+          multiplication that the product of the matrix and its
           inverse (in both orders!) is the identity.
           <me>
             \left( \begin{matrix} 
@@ -88,7 +92,7 @@
       </statement>
       <solution>
         <p>
-          We write an extended matrix with the original matrix and the
+          I write the extended matrix with the original matrix and the
           identity.
           <me>
             \left( \begin{array}{ccc|ccc}
@@ -97,7 +101,7 @@
               2 \amp 1 \amp -4 \amp 0 \amp 0 \amp 1 
             \end{array} \right)
           </me>
-          We row reduce this extended matrix.
+          I row reduce this extended matrix.
           <me>
             \left( \begin{array}{ccc|ccc}
               1 \amp 0 \amp 0 \amp \frac{4}{11} \amp \frac{1}{11} \amp
@@ -109,7 +113,7 @@
             \end{array} \right)
           </me>
           The left side reduces to the identity matrix, so the right
-          side is the inverse matrix.  Then we check the two products. 
+          side is the inverse matrix.  Then I check the two products. 
           <md>
             <mrow>
               \frac{1}{11} \left( \begin{matrix}
@@ -154,8 +158,8 @@
     <activity>
       <statement>
         <p>
-          Calculate the inverse of these matrices. Check by matrix
-          multiplication that the product of the matrices and its
+          Calculate the inverse of this matrix. Check by matrix
+          multiplication that the product of the matrix and its
           inverse (in both orders!) is the identity.
           <me>
             \left( \begin{matrix}
@@ -168,7 +172,7 @@
       </statement>
       <solution>
         <p>
-          We write an extended matrix with the original matrix and the
+          I write the extended matrix with the original matrix and the
           identity.
           <me>
             \left( \begin{array}{ccc|ccc}
@@ -177,7 +181,7 @@
               0 \amp -4 \amp 1 \amp 0 \amp 0 \amp 1 
             \end{array} \right)
           </me>
-          We row reduce this extended matrix.
+          I row reduce this extended matrix.
           <me>
             \left( \begin{array}{ccc|ccc}
               1 \amp 0 \amp 0 \amp \frac{-4}{9} \amp \frac{3}{9} \amp
@@ -189,7 +193,7 @@
             \end{array} \right)
           </me>
           The left side reduces to the identity matrix, so the right
-          side is the inverse matrix.  Then we check the two products.
+          side is the inverse matrix.  Then I check the two products.
           <md>
             <mrow>
               \frac{1}{9} \left( \begin{matrix}
@@ -234,8 +238,8 @@
     <activity>
       <statement>
         <p>
-          Calculate the inverse of these matrices. Check by matrix
-          multiplication that the product of the matrices and its
+          Calculate the inverse of this matrix. Check by matrix
+          multiplication that the product of the matrix and its
           inverse (in both orders!) is the identity.
           <me>
             \left( \begin{matrix}
@@ -248,7 +252,7 @@
       </statement>
       <solution>
         <p>
-          We write an extended matrix with the original matrix and the
+          I write the extended matrix with the original matrix and the
           identity.
           <me>
             \left( \begin{array}{ccc|ccc}
@@ -257,7 +261,7 @@
               -5 \amp 2 \amp 4 \amp 0 \amp 0 \amp 1 
             \end{array} \right)
           </me>
-          We row reduce this extended matrix.
+          I row reduce this extended matrix.
           <me>
             \left( \begin{array}{ccc|ccc}
               1 \amp 0 \amp -1 \amp 0 \amp \frac{2}{14} \amp
@@ -295,7 +299,7 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, we apply the matrix to
+          To calculate the image of a span, I apply the matrix to
           each of the individual vectors. 
           <md>
             <mrow>
@@ -348,7 +352,7 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, we apply the matrix to
+          To calculate the image of a span, I apply the matrix to
           each of the individual vectors. 
           <md>
             <mrow>
@@ -406,7 +410,7 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, we apply the matrix to
+          To calculate the image of a span, I apply the matrix to
           each of the individual vectors. 
           <md>
             <mrow>
@@ -486,7 +490,7 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, we apply the matrix to
+          To calculate the image of a span, I apply the matrix to
           each of the individual vectors. 
           <md>
             <mrow>
@@ -592,7 +596,7 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, we apply the matrix to
+          To calculate the image of a span, I apply the matrix to
           each of the individual vectors. 
           <md>
             <mrow>
@@ -712,7 +716,7 @@
               -3 \amp 2 \amp 0 
             \end{array} \right) 
           </me>
-          We row reduce this system. 
+          I row reduce this system. 
           <me>
             \left( \begin{array}{cc|c}
               1 \amp 0 \amp 0 \\
@@ -728,7 +732,7 @@
               0 \\ 0 
             \end{matrix} \right) \right\}
           </me>
-          The image is the span of the columns. We put the columns as
+          The image is the span of the columns. I put the columns as
           rows in a matrix and row reduce (without exchanging rows). 
           <me>
             \left( \begin{matrix}
@@ -736,14 +740,14 @@
               3 \amp 2 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix.
+          I row reduce this matrix.
           <me>
             \left( \begin{matrix}
               1 \amp 0 \\
               0 \amp 1 
             \end{matrix} \right)
           </me>
-          We see that all of these are linearly independent. We
+          I see that all of these are linearly independent. I
           write the image as the span of the linearly independent
           columns. 
           <me>
@@ -757,7 +761,7 @@
               3 \\ 2
             \end{matrix} \right) \right\} 
           </me>
-          Alternatively, we could simply say that the image is all of
+          Alternatively, I could simply say that the image is all of
           <m>\RR^2</m>, since these two vectors span the whole space.  
         </p>
       </solution>
@@ -784,15 +788,15 @@
               -4 \amp -10 \amp 0  
             \end{array} \right) 
           </me>
-          We row reduce this system. 
+          I row reduce this system. 
           <me>
             \left( \begin{array}{cc|c}
               1 \amp \frac{5}{2} \amp 0 \\
               0 \amp 0 \amp 0 
             \end{array} \right) 
           </me>
-          We interpret the solution as a span. In the solution, we
-          have <m>x + \frac{5}{2} y = 0</m>. If we take <m>y = 2</m>
+          I interpret the solution as a span. In the solution,
+          <m>x + \frac{5}{2} y = 0</m>. If I take <m>y = 2</m>
           then <m>x = -5</m> gives us a vector to describe the span.
           <me>
             \Ker \left( \begin{matrix}
@@ -802,7 +806,7 @@
               -5 \\ 2
             \end{matrix} \right) \right\}
           </me>
-          The image is the span of the columns. We put the columns as
+          The image is the span of the columns. I put the columns as
           rows in a matrix and row reduce (without exchanging rows). 
           <me>
             \left( \begin{matrix}
@@ -810,14 +814,14 @@
               5 \amp -10 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix.
+          I row reduce this matrix.
           <me>
             \left( \begin{matrix}
               1 \amp -2 \\
               0 \amp 0 
             \end{matrix} \right)
           </me>
-          We see that only one of these is linearly independent. We
+          I see that only one of these is linearly independent. I
           write the image as the span of the linearly independent
           columns. 
           <me>
@@ -855,7 +859,7 @@
               -1 \amp 0 \amp 3 \amp 0  
             \end{array} \right) 
           </me>
-          We row reduce this system. 
+          I row reduce this system. 
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp 0 \amp 0 \amp 0 \\
@@ -874,7 +878,7 @@
               0 \\ 0 \\ 0 
             \end{matrix} \right) \right\} 
           </me>
-          The image is the span of the columns. We put the columns as
+          The image is the span of the columns. I put the columns as
           rows in a matrix and row reduce (without exchanging rows). 
           <me>
             \left( \begin{matrix}
@@ -883,7 +887,7 @@
               -1 \amp -2 \amp 3
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix.
+          I row reduce this matrix.
           <me>
             \left( \begin{matrix}
               1 \amp 0 \amp 0 \\
@@ -891,7 +895,7 @@
               0 \amp 0 \amp 1 \\
             \end{matrix} \right)
           </me>
-          We see that all of these are linearly independent. We
+          I see that all of these are linearly independent. I
           write the image as the span of the linearly independent
           columns. 
           <me>
@@ -909,7 +913,7 @@
               -1 \\ -2 \\ 3
             \end{matrix} \right) \right\} 
           </me>
-          Alternatively, we can just saw that the image is
+          Alternatively, I can just saw that the image is
           <m>\RR^3</m>, since these three vectors span the entire
           space. 
         </p>
@@ -939,7 +943,7 @@
               -3 \amp -1 \amp 1 \amp 0
             \end{array} \right) 
           </me>
-          We row reduce this system. 
+          I row reduce this system. 
           <me>
             \left( \begin{array}{ccc|c}
               1 \amp 0 \amp \frac{-1}{5} \amp 0 \\
@@ -947,8 +951,8 @@
               0 \amp 0 \amp 0 \amp 0
             \end{array} \right) 
           </me>
-          We interpret the solution as a span. There is one free
-          variable. If we set <m>z = 5</m> then <m>x = 1</m> and
+          I interpret the solution as a span. There is one free
+          variable. If I set <m>z = 5</m> then <m>x = 1</m> and
           <m>y=2</m> give us a vector to describe the plan.
           <me>
             \Ker \left( \begin{matrix}
@@ -959,7 +963,7 @@
               1 \\ 2 \\ 5
             \end{matrix} \right) \right\} 
           </me>
-          The image is the span of the columns. We put the columns as
+          The image is the span of the columns. I put the columns as
           rows in a matrix and row reduce (without exchanging rows). 
           <me>
             \left( \begin{matrix}
@@ -968,7 +972,7 @@
               2 \amp 1 \amp 1 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix.
+          I row reduce this matrix.
           <me>
             \left( \begin{matrix}
               1 \amp 0 \amp 1 \\
@@ -976,7 +980,7 @@
               0 \amp 0 \amp 0 
             \end{matrix} \right)
           </me>
-          We see that two of these are linearly independent. We
+          I see that two of these are linearly independent. I
           write the image as the span of the linearly independent
           columns. 
           <me>
@@ -1016,18 +1020,18 @@
               -1 \amp -2 \amp 0 \amp 1 \amp 0
             \end{array} \right) 
           </me>
-          We row reduce this system. 
+          I row reduce this system. 
           <me>
             \left( \begin{array}{cccc|c}
               1 \amp 0 \amp 0 \amp -5 \amp 0 \\
               0 \amp 1 \amp 0 \amp 2 \amp 0
             \end{array} \right) 
           </me>
-          We interpret the solution as a span. There are two free
-          variables (we take the variables for <m>\RR^4</m> as
+          I interpret the solution as a span. There are two free
+          variables (I take the variables for <m>\RR^4</m> as
           <m>w,x,y,z</m> in that order). The other variables don't
           depend at all on <m>y</m>, which gives us one spanning
-          vector. Otherwise, if we set <m>y=0</m> and <m>z=1</m> then
+          vector. Otherwise, if I set <m>y=0</m> and <m>z=1</m> then
           <m>w=5</m> and <m>x=-2</m> gives another vector.
           <me>
             \Ker \left( \begin{matrix}
@@ -1040,7 +1044,7 @@
               5 \\ -2 \\ 0 \\ 1 
             \end{matrix} \right) \right\} 
           </me>
-          The image is the span of the columns. We put the columns as
+          The image is the span of the columns. I put the columns as
           rows in a matrix and row reduce (without exchanging rows). 
           <me>
             \left( \begin{matrix}
@@ -1050,7 +1054,7 @@
               1 \amp 1 
             \end{matrix} \right) 
           </me>
-          We row reduce this matrix.
+          I row reduce this matrix.
           <me>
             \left( \begin{matrix}
               1 \amp 0 \\
@@ -1059,7 +1063,7 @@
               0 \amp 0 
             \end{matrix} \right)
           </me>
-          We see that two of these are linearly independent. We
+          I see that two of these are linearly independent. I
           write the image as the span of the linearly independent
           columns. 
           <me>
