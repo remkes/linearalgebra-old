@@ -35,7 +35,7 @@
       <li>
         <p>
           <em>Reflections</em> over lines through the origin preserve
-          lines. The line of reflection must passthrough the origin
+          lines. The line of reflection must pass through the origin
           or else the reflection will move the origin. Since there
           are infinitely many different lines through the origin,
           there are infinitely many such reflections.
@@ -53,7 +53,7 @@
       <li>
         <p>
           <em>Dilations</em> are transformations which stretch or
-          shink in various directions.
+          shrink in various directions.
         </p>
       </li>
       <li>

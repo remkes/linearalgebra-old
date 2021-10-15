@@ -28,8 +28,8 @@
       matrices solves this problem. 
     </p>
     <p>
-      In this section, I'll present the solution for spans; details f
-      or loci follow in <xref ref="section-dimensions-loci" />. Given
+      In this section, I'll present the solution for spans; details 
+      for loci follow in <xref ref="section-dimensions-loci" />. Given
       some vectors <m>\{v_1, v_2, \ldots, v_k\}</m>, what is the
       dimension of the span?  By definition, it is the number of
       linearly independent vectors in the set. Now I can test for
@@ -103,7 +103,7 @@
     <example>
       <statement>
         <p>
-          Find the dimensions of this span.
+          Find the dimension of this span.
           <me>
             \Span \left\{ 
             \begin{pmatrix}
@@ -128,6 +128,7 @@
               1 \amp 4 \amp -12 
             \end{pmatrix} 
           </me>
+          This row reduces to the following matrix.
           <me>
             \begin{pmatrix}
               1 \amp 0 \amp \frac{-2}{5} \\
@@ -144,7 +145,7 @@
     <example>
       <statement>
         <p>
-          Find the dimensions of this span.
+          Find the dimension of this span.
           <me>
             \Span \left\{ 
             \begin{pmatrix}
@@ -169,7 +170,7 @@
           </me>
         </p>
         <p>
-          To find the dimensions of the span, I put the vectors of the
+          To find the dimension of the span, I put the vectors of the
           span into a matrix (as rows, not columns). 
           <me>
             \begin{pmatrix}
@@ -181,6 +182,7 @@
               8 \amp 8 \amp -4 \amp 0 \amp -44 \amp 12
             \end{pmatrix} 
           </me>
+          This row reduces to the following matrix.
           <me>
             \begin{pmatrix}
               1 \amp 0 \amp 0 \amp \frac{-3}{2} \amp 0 \amp 7 \\

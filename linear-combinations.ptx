@@ -24,7 +24,7 @@
     </p>
     <p>
       If <m>\{v_1, v_2, v_3\}</m> are a basis for a three-dimensional
-      subspace in <m>\RR^3</m>, then the vectors in this subspace are
+      subspace in <m>\RR^n</m>, then the vectors in this subspace are
       precisely all the vectors of the form <m>av_1 + bv_2 + cv_3</m>
       where <m>a</m>, <m>b</m> and <m>c</m> are any real constants. To
       talk about a specific vector in a subspace, I need to specify

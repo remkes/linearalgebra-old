@@ -104,7 +104,7 @@
             </mrow>
           </md>.
           I  can take this second result and switch the order of all the
-          multiplications (which is valid since there are just
+          multiplications (which is valid since these are just
           multiplications of ordinary numbers). I can also reorder a
           couple of the additions/subtractions.
           <me>
@@ -124,7 +124,7 @@
     <p>
       You might wonder, at this point, about the structure of this
       proof. I've tried to say several times that to prove an
-      equality, we need to start at one side and end at the other.
+      equality, I need to start at one side and end at the other.
       However, here I've tried to prove <m>AB=BA</m> and done so by
       reducing to a common form. Am I disobeying my own rules?
     </p>
@@ -147,7 +147,7 @@
       <statement>
         Prove that a projection in <m>\RR^2</m> composed with itself
         is just the same projection. (That is, for any projection
-        <m>A</m>, <m>AA = A</m>
+        <m>A</m>, <m>AA = A</m>.) 
       </statement>
       <proof>
         All I need to do for this proof is take the general matrix
@@ -185,7 +185,7 @@
           = \begin{pmatrix}
             a^2(a^2 + b^2) \amp 
             ab(a^2 + b^2) \\
-            ab(a^2) + b^2) \amp
+            ab(a^2 + b^2) \amp
             b^2(a^2 + b^2)
           \end{pmatrix}
         </me>

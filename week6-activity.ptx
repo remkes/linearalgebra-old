@@ -267,7 +267,7 @@
             </mrow>
           </md>
           The sign of the <m>y</m> coordinate of each vector is
-          changes, which is exactly what I expect for reflection over
+          changed, which is exactly what I expect for reflection over
           the <m>x</m>-axis. Now look at reflection over the
           <m>y</m>-axis. 
           <md>
@@ -843,7 +843,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          Now we need trig identities. Each of these four matrix
+          Now I need trig identities. Each of these four matrix
           entries is a sum identity. Replacing those according to
           identities drawn from the reference material,
           I get this matrix.
@@ -932,7 +932,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          In the last step, we use the important fact about the unit
+          In the last step, I use the important fact about the unit
           vector. I end up with the identity matrix, which is what I
           wanted, so the proof is finished. 
         </p>

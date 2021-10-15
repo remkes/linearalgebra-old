@@ -2,8 +2,8 @@
   <title>Dimensions of Loci</title>
     <p>
       As with spans, I can use row-reduction of matrices to find the
-      dimensions of a locus. In particular, I will be able to
-      determine if any of the equations were redundant. Recall that
+      dimension of a locus. In particular, I will be able to
+      determine if any of the equations are redundant. Recall that
       I described any affine or linear subspace of <m>\RR^n</m> as
       the locus of some finite number of linear equations: the set of
       points that satisfy a list of equations.
@@ -53,7 +53,7 @@
           in the solution space of the matrix corresponding to the
           system of the equations. If the matrix contains a row that
           leads to a contradiction <m>0=1</m>, then the locus is
-          empty.
+          empty (and the dimension is not defined).
         </p>
       </statement>
     </proposition>
@@ -93,12 +93,11 @@
     <example>
       <statement>
         <p>
-          I'm going to repeat material <xref
+          I'm going to repeat <xref
           ref="example-description-by-parameters" /> to make the point
-          that nothing new is happening here: I'm just treating
-          loci as linear systems and looking at their solutions
-          spaces. Consider a locus in <m>\RR^4</m> defined by two
-          equations.
+          that nothing new is happening here: I'm just treating loci
+          as linear systems and looking at their solutions spaces.
+          Consider a locus in <m>\RR^4</m> defined by two equations.
           <md>
             <mrow>
               w + 3y + 2z \amp = -3 
