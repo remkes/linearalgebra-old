@@ -70,7 +70,7 @@
               \end{matrix} \right)
             </mrow>
           </md>
-          Both products are the identity of the matrix, so this is the
+          Both products are the identity matrix, so this is the
           correct inverse. 
         </p>
       </solution>
@@ -150,7 +150,7 @@
               \end{matrix} \right)
             </mrow>
           </md>
-          Both products are the identity of the matrix, so this is the
+          Both products are the identity matrix, so this is the
           correct inverse. 
         </p>
       </solution>
@@ -230,7 +230,7 @@
               \end{matrix} \right)
             </mrow>
           </md>
-          Both products are the identity of the matrix, so this is the
+          Both products are the identity matrix, so this is the
           correct inverse. 
         </p>
       </solution>
@@ -299,8 +299,8 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, I apply the matrix to
-          each of the individual vectors. 
+          To calculate the image of the span, I apply the matrix to
+          the vector. 
           <md>
             <mrow>
               \left( \begin{matrix}
@@ -315,7 +315,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          Then the image of the span is the span of the new vectors. 
+          Then the image of the span is the span of the new vector. 
           <me>
             \left( \begin{matrix}
               1 \amp -4 \\
@@ -352,8 +352,8 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, I apply the matrix to
-          each of the individual vectors. 
+          To calculate the image of the span, I apply the matrix to
+          the vector. 
           <md>
             <mrow>
               \left( \begin{matrix}
@@ -369,7 +369,7 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          Then the image of the span is the span of the new vectors. 
+          Then the image of the span is the span of the new vector. 
           <me>
             \left( \begin{matrix}
               -1 \amp -1 \amp 4 \\
@@ -410,8 +410,8 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, I apply the matrix to
-          each of the individual vectors. 
+          To calculate the image of the span, I apply the matrix to
+          both vectors.
           <md>
             <mrow>
               \left( \begin{matrix}
@@ -466,8 +466,8 @@
     <activity>
       <statement>
         <p>
-          Calculate the image of the given span under the given
-          matrix. 
+          Calculate the image of the given offset span under the given
+          matrix.
           <md>
             <mrow>
               \left( \begin{matrix} 
@@ -490,8 +490,8 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, I apply the matrix to
-          each of the individual vectors. 
+          To calculate the image of the offset span, I apply the
+          matrix to all three vectors.
           <md>
             <mrow>
               \left( \begin{matrix}
@@ -533,7 +533,8 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          Then the image of the span is the span of the new vectors. 
+          Then the image of the offset span is the offset span of the
+          new vectors. 
           <md>
             <mrow>
               \amp \left( \begin{matrix}
@@ -569,7 +570,7 @@
     <activity>
       <statement>
         <p>
-          Calculate the image of the given span under the given
+          Calculate the image of the given offset span under the given
           matrix. 
           <md>
             <mrow>
@@ -596,8 +597,8 @@
       </statement>
       <solution>
         <p>
-          To calculate the image of a span, I apply the matrix to
-          each of the individual vectors. 
+          To calculate the image of the offset span, I apply the
+          matrix to all four vectors. 
           <md>
             <mrow>
               \left( \begin{matrix}
@@ -652,7 +653,8 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          Then the image of the span is the span of the new vectors. 
+          Then the image of the offset span is the offset span of the
+          new vector.
           <md>
             <mrow>
               \amp \left( \begin{matrix}
@@ -953,7 +955,7 @@
           </me>
           I interpret the solution as a span. There is one free
           variable. If I set <m>z = 5</m> then <m>x = 1</m> and
-          <m>y=2</m> give us a vector to describe the plan.
+          <m>y=2</m> gives a vector to describe the span.
           <me>
             \Ker \left( \begin{matrix}
               0 \amp -5 \amp 2 \\
@@ -1030,9 +1032,9 @@
           I interpret the solution as a span. There are two free
           variables (I take the variables for <m>\RR^4</m> as
           <m>w,x,y,z</m> in that order). The other variables don't
-          depend at all on <m>y</m>, which gives us one spanning
+          depend at all on <m>y</m>, which gives one spanning
           vector. Otherwise, if I set <m>y=0</m> and <m>z=1</m> then
-          <m>w=5</m> and <m>x=-2</m> gives another vector.
+          <m>w=5</m> and <m>x=-2</m> produces another vector.
           <me>
             \Ker \left( \begin{matrix}
               1 \amp 3 \amp 0 \amp 1 \\
@@ -1137,9 +1139,7 @@
           image must be <m>1</m>. But I also know that the image is
           the span of the columns. Since the image has dimension 1,
           the span of the columns has dimension 1. This means that
-          there is only one linearly independent column since all the
-          other columns are in the same line and thus multiples of the
-          chosen column. 
+          there is only one linearly independent column.
         </p>
       </solution>
     </activity>

@@ -4,9 +4,9 @@
     <title>Interactions between Definitions</title>
     <p>
       In <xref ref="section-kernels-and-images" />, I defined a number
-      of term: rowspace, columnspace, kernel, image and preimage.  In
+      of terms: rowspace, columnspace, kernel, image and preimage.  In
       this section, I want to prove some properties of these new
-      definition.  All these terms, along with the matrix rank, fit
+      definitions. All these terms, along with the matrix rank, fit
       togther very tightly.
     </p>
     <proposition>
@@ -53,13 +53,13 @@
         <p>
           For this <qt>if and only if</qt> statement, I need to prove
           in both directions. I'll start with the forward
-          implication. For this directionof the proof, I msut assume
+          implication. For this direction of the proof, I must assume
           the matrix is invertible.
         </p>
         <p>
           Since the matrix is invertible, it row reduces to the
           identity matrix. (I know this from the inversion algorithm,
-          where we have to row reduce the left side of the extended
+          where I must row reduce the left side of the extended
           matrix to the identity.) That means it has rank <m>n</m>,
           since each row has a leading one. This means that the image
           has dimension <m>n</m> since the dimension of the image is

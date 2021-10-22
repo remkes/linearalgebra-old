@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-inverse-transforms">
     <title>Inverse Transforms</title>
     <p>
-      I've now defined linear transformations. As functions, it is
+      I've now defined linear transformations. It is
       possible that a linear transformation is invertible, much like a
       function of numbers. Let me give the definition. 
     </p>
@@ -30,31 +30,30 @@
     <title>Inverse Matrices</title>
     <p>
       Before returning to inverse transformations, I'm going to talk
-      about the algebraic idea of inversion and reciprocals. 
-      In number systems, when there is 
-      an identity, there usually is a way of getting back to that
-      identity. Zero is the identity for addition. For any number
-      <m>a</m>, there exists a number <m>(-a)</m> so that <m>a + (-a)
-      = 0</m> gets back to the identity (this obviously works in
-      numbers systems that allow negatives, such as <m>\ZZ</m>). One is
-      the identity in multiplication.
-      For any <em>non-zero</em> number <m>a</m>, there is thee number
-      <m>\frac{1}{a}</m> so that <m>a \frac{1}{a} = 1</m> gets back
-      to the identity (this obviously works in numbers systems that
-      allow reciprocals). For matrices, I have already defined the
-      identity matrix, which is the identity for matrix
-      multiplication. If <m>A</m> is a <m>k \times l</m> matrix, then
-      <m>AI_l = I_k A = A</m>. For matrices, multiplying by the
-      identity doesn't change the matrix. 
+      about the algebraic idea of inversion and reciprocals.  In
+      number systems, when there is an identity, there usually is a
+      way of getting back to that identity. Zero is the identity for
+      addition. For any number <m>a</m>, there exists a number
+      <m>(-a)</m> so that <m>a + (-a) = 0</m> gets back to the
+      identity (this obviously works in numbers systems that allow
+      negatives, such as <m>\ZZ</m>). One is the identity in
+      multiplication.  For any <em>non-zero</em> number <m>a</m>,
+      there is the number <m>\frac{1}{a}</m> so that <m>a \frac{1}{a}
+      = 1</m> gets back to the identity (this obviously works in
+      numbers systems that allow reciprocals). For matrices, I have
+      already defined the identity matrix, which is the identity for
+      matrix multiplication. If <m>A</m> is a <m>k \times l</m>
+      matrix, then <m>AI_l = I_k A = A</m>. For matrices, multiplying
+      by the identity doesn't change the matrix.
     </p>
     <p>
       For matrices, I have the same question as I had for numbers
       systems. For any matrix <m>M</m>, is there another matrix
       <m>N</m> such that <m>MN = I</m>? Is there a way to get back to
       the identity?  Multiplication of numbers already showed that no
-      such number need exist, with the property that I cannot divide
-      by zero. For matrices, I have to be even more cautious. For now,
-      here is the formal definition.
+      such number need exist, since I cannot divide by zero. For
+      matrices, I have to be even more cautious. For now, here is the
+      formal definition.
     </p>
     <definition>
       <statement>

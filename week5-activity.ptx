@@ -480,7 +480,7 @@
             \left( \begin{array}{cccc|c}
               1 \amp 0 \amp \frac{16}{33} \amp \frac{-4}{33} \amp 0 \\
               0 \amp 1 \amp \frac{-7}{33} \amp \frac{-1}{33} \amp 0 \\
-              0 \amp 0 \amp 0 \amp 0 \amp 9
+              0 \amp 0 \amp 0 \amp 0 \amp 0
             \end{array} \right)
           </me>
           Then the dimension is determined by the number of free

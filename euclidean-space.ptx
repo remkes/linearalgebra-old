@@ -41,7 +41,7 @@
           coefficients <m>x_i</m> as follows. 
           <me>
             \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
-          </me>.
+          </me>
         </p>
         <p>
           Since there are <m>n</m> coefficieint in its vectors, the

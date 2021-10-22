@@ -6,12 +6,12 @@
       <statement>
         <p>
           Let <m>M</m> be an <m>m \times n</m> matrix. The
-          <term>rowspace</term> of the matrix is the span of the row
+          <term>rowspace</term> of the matrix is the span of the rows
           of the matrix (considered as vectors in <m>\RR^n</m>). It is
           a subspace of <m>\RR^n</m>. The <term>columnspace</term> of
-          the matrix is the span of the columns of the matrix thought
-          of as vectors in <m>\RR^m</m>. It is a subspace of
-          <m>\RR^m</m>.
+          the matrix is the span of the columns of the matrix,
+          considering those columns as vectors in <m>\RR^m</m>. It is
+          a subspace of <m>\RR^m</m>.
         </p>
       </statement>
     </definition>
@@ -56,7 +56,7 @@
     <example>
       <statement>
         <p>
-          Here is a <m>3 \times 3</m> vector acting on the standard
+          Here is a <m>3 \times 3</m> matrix acting on the standard
           basis of <m>\RR^3</m>. I can demonstrate how the images of
           the basis vectors are exactly the columns of the matrix.
           <md>
@@ -170,7 +170,7 @@
       points that satisfy some equations (linear equations in this
       course). So a locus is just the solution of a system, seen
       geometrically. A locus is a solution space. I made this
-      connection before when we calculated the dimension of loci: the
+      connection before when I calculated the dimension of loci: the
       dimension was the number of free parameters in the solution of
       the associated system.
     </p>
@@ -199,7 +199,7 @@
       <m>(M|u)</m>.
     </p>
     <p>
-      Specifically, the kernel is the linear space of all vector
+      Specifically, the kernel is the linear space of all vectors
       <m>v</m> with <m>Mv = 0</m>. This is a solution space for the
       linear system with matrix <m>(M|0)</m>, where the column after
       the dividing line is all zeroes. To calculate a kernel, I have

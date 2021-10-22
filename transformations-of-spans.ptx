@@ -5,7 +5,7 @@
     <p>
       Now that I understand how matrices describe transformations, I want
       to know how transformations affect linear subspaces. I know
-      that they preserve them (and each linear subspaces is sent to
+      that they preserve them (and each linear subspace is sent to
       some other linear subspace), but I want to be more specific: given
       a particular linear subspace, can I determine exactly where it
       goes under a transformation?
@@ -14,13 +14,14 @@
       <statement>
         <p>
           If <m>M: \RR^n \rightarrow \RR^m</m> is a transformation
-          (represented by a <m>m \times n</m>and <m>L</m> is a linear
-          or affine subspace of <m>\RR^n</m>, then the result of the
-          matrix <m>M</m> acting on all vectors in <m>L</m> will be a
-          linear or affine subspace of <m>\RR^m</m> called the
-          <term>image of <m>L</m> under <m>M</m></term>. The image of
-          all of <m>\RR^n</m> under <m>M</m> is simply called the
-          <term>image of <m>M</m></term>.
+          (represented by a <m>m \times n</m> matrix <m>M</m>) and
+          <m>L</m> is a linear or affine subspace of <m>\RR^n</m>,
+          then the result of the matrix <m>M</m> acting on all vectors
+          in <m>L</m> will be a linear or affine subspace of
+          <m>\RR^m</m> called the <term>image of <m>L</m> under
+          <m>M</m></term>. The image of all of <m>\RR^n</m> under
+          <m>M</m> is simply called the <term>image of
+          <m>M</m></term>.
         </p>
       </statement>
     </definition>
@@ -76,10 +77,10 @@
     <p>
       Be careful that the matrix need not preserve the dimension of
       the span. Even if the <m>v_i</m> are linearly independent and
-      form a basis for the span, the vectors <m>Mv_i</m> need not be
+      form a basis for the span, the vectors <m>Mv_i</m> may not be
       linearly independent. The dimension of the new span might be
       smaller. Linear combinations are sent to linear combinations,
-      but linear independence need not be preserved. 
+      but linear independence may not be preserved. 
     </p>
   </subsection>
   <subsection xml:id="subsection-transformations-of-loci">

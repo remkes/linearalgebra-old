@@ -46,7 +46,7 @@
           </me>
           has only the trivial solution: for all <m>i</m>, <m>a_i =
           0</m>. If a set of vectors isn't linearly independent, it
-          is called <term>linearly dependant</term>.
+          is called <term>linearly dependent</term>.
         </p>
       </statement>
     </definition>

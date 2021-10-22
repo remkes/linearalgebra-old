@@ -144,7 +144,11 @@
           The <term>identity matrix</term> is the unique <m>n \times
           n</m> matrix (one for each <m>n</m>) where the diagonal
           entries are all <m>1</m>, and all other entries are <m>0</m>.
-          It is often written as I or Id.
+          There are several notations for the identity. When the size
+          <m>n</m> is understood, it can be written as <m>I</m> or
+          <m>Id</m>. When I want to clarify the size of the matrix, I
+          will write <m>I_n</m> for the <m>n \times n</m> identity
+          matrix. 
           <md>
             <mrow>
               \amp \begin{pmatrix} 1 \amp 0 \\ 0 \amp 1 \end{pmatrix}
