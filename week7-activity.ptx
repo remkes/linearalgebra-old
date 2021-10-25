@@ -15,7 +15,7 @@
           <me>
             \left( \begin{matrix}
               7 \amp 0 \\
-              -5 \amp 4 
+              -5 \amp -4 
             \end{matrix} \right)
           </me>
         </p>
@@ -27,14 +27,14 @@
           <me>
             \left( \begin{array}{cc|cc}
               7 \amp 0 \amp 1 \amp 0 \\
-              -5 \amp 4 \amp 0 \amp 1 \\
+              -5 \amp -4 \amp 0 \amp 1 \\
             \end{array} \right)
           </me>
           I row reduce this extended matrix.
           <me>
             \left( \begin{array}{cc|cc}
               1 \amp 0 \amp \frac{4}{28} \amp 0 \\
-              0 \amp 1 \amp \frac{5}{28} \amp \frac{1}{4} \\
+              0 \amp 1 \amp \frac{-5}{28} \amp \frac{-1}{4} \\
             \end{array} \right)
           </me>
           The left side of the extended matrix reduces to the
