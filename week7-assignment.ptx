@@ -3,34 +3,25 @@
 -->
 <section xml:id="section-assignment-week7">
   <title>Week 7 Assignment</title>
-  <p><ol>
-    <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week7">
-  <title>Week 7 Assignment</title>
   <ol>
     <li>
       <p>
         Invert these matrices. (Show the steps of your process, though
         you don't need to show every row operation in the row
-        recursion.) (6)
+        reduction.) (6)
         <ol>
           <li><me>
             \begin{pmatrix}
-              2 \amp -2 \amp 2 \\
               1 \amp -1 \amp -1 \\
-              3 \amp 1 \amp 1
+              0 \amp 2 \amp 1 \\
+              2 \amp -2 \amp 3
             \end{pmatrix}
           </me></li>
           <li><me>
             \begin{pmatrix}
-              0 \amp 4 \amp -3 \\
-              3 \amp -1 \amp 0 \\
-              1 \amp -2 \amp -1
+              -3 \amp 0 \amp -1 \\
+              0 \amp -1 \amp 0 \\
+              4 \amp 2 \amp 2
             \end{pmatrix}
           </me></li>
         </ol>
@@ -41,9 +32,9 @@
         Consider the transformation defined by this matrix. (6)
         <me>
           \begin{pmatrix}
-            0 \amp 2 \amp 0 \\
-            1 \amp 1 \amp 0 \\
-            0 \amp -1 \amp 1
+            -1 \amp 0 \amp -1 \\
+            0 \amp 1 \amp 2 \\
+            3 \amp -1 \amp -1
           \end{pmatrix}
         </me>
       </p>
@@ -69,9 +60,9 @@
         Consider this matrix and its associated transformation. (8) 
         <me>
           \begin{pmatrix}
-            1 \amp 1 \amp -1 \\
-            0 \amp 1 \amp 3 \\
-            2 \amp 4 \amp -1
+            -3 \amp -1 \amp 0 \\
+            -1 \amp 0 \amp 1 \\
+            1 \amp 1 \amp 1
           \end{pmatrix}
         </me>
       </p>
@@ -96,8 +87,9 @@
         Consider this matrix and its associated transformation. (8) 
         <me>
           \begin{pmatrix}
-            1 \amp 1 \amp 1 \amp 0 \amp 0 \\
-            0 \amp 0 \amp 1 \amp 1 \amp 1
+            1 \amp 0 \amp 0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 1 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \amp 0 \amp 1 
           \end{pmatrix}
         </me>
       </p>
@@ -119,14 +111,11 @@
     </li>
     <li>
       <p>
-        If <m>m \gt n</m> and we have a matrix representing a
-        transformation <m>\RR^n \rightarrow \RR^m</m>, what are the
-        maximum and minimum dimensions of the column and rowspaces of
-        the matrix? What are the maximum and minimum dimensions of
-        the kernel and image of the transformation? (Give reasons for
-        your maxima and minima.) (6) 
+        How many <m>4 \times 4</m> matrices have a one-dimensional
+        rowspace. What do these matrices look like. Can you think of a
+        way of classifying or indexing them. What is the dimension of
+        this space of matrices? (6) 
       </p>
     </li>
   </ol>
 </section>
--->
