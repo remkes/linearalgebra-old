@@ -5,107 +5,99 @@
   <title>Week 8 Assignment</title>
   <p><ol>
     <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week8">
-  <title>Week 8 Assignment</title>
-  <p><ol>
-    <li>
       <p>
-        Calculate the determinants of the following matrices using
-        cofactor expansion. Show the steps of the algorithm clearly or
-        give a clear reason for  the determinant using some other
-        peroperties.
-        (16). 
+        Calculate the determinants of the following matrices.  Show
+        the steps of the algorithm clearly or give a clear reason for
+        the determinant using some other properties. (16). 
       </p>
-      <ol>
+      <p><ol>
         <li><me>
           \begin{pmatrix}
-            7 \amp 0 \amp -3 \\
-            -4 \amp -1 \amp -4 \\
-            0 \amp 6 \amp 9
+            3 \amp -2 \amp 1 \\
+            -2 \amp 1 \amp 6 \\
+            -1 \amp 1 \amp 7
           \end{pmatrix} 
         </me></li>
         <li><me>
           \begin{pmatrix}
-            1 \amp -9 \amp -9 \\
-            2 \amp -3 \amp -3 \\
-            4 \amp -7 \amp -7
+            -4 \amp \frac{1}{2} \amp 3 \\
+            \frac{1}{3} \amp \frac{-1}{3} \amp 6 \\
+            2 \amp 0 \amp -7
           \end{pmatrix} 
         </me></li>
         <li><me>
           \begin{pmatrix}
-            1 \amp -396 \amp 212 \\
-            0 \amp 4 \amp -716 \\
-            0 \amp 0 \amp 3 
+            -7 \amp 0 \amp 0 \\
+            95 \amp \frac{1}{7} \amp 0 \\
+            317 \amp -219 \amp 4 
           \end{pmatrix} 
         </me></li>
         <li><me>
           \begin{pmatrix}
-            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
-            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
-            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
-            -1 \amp -1 \amp -1 \amp -1 \amp -1 \\
-            -1 \amp -1 \amp -1 \amp -1 \amp -1 
+            2 \amp 0 \amp 2 \amp 0 \amp 2 \\
+            0 \amp 2 \amp 0 \amp 2 \amp 0 \\
+            2 \amp 0 \amp 2 \amp 0 \amp 2 \\
+            0 \amp 2 \amp 0 \amp 2 \amp 0 \\
+            2 \amp 0 \amp 2 \amp 0 \amp 2 
           \end{pmatrix} 
         </me></li>
-      </ol>
+      </ol></p>
     </li>
     <li>
       <p>
         Under what conditions for <m>a</m> and <m>b</m> are the
         following matrices invertible? (6) 
       </p>
-      <ol>
+      <p><ol>
         <li><me>
           \begin{pmatrix}
-            a \amp 2 \amp -1 \\
-            b \amp 2 \amp -1 \\
-            0 \amp 1 \amp 0 
-          \end{pmatrix} 
-        </me></li>
-        <li><me>
-          \begin{pmatrix}
-            a \amp a \amp a \\
+            a \amp 3 \amp 0 \\
             0 \amp b \amp 0 \\
-            0 \amp 0 \amp b 
+            -1 \amp -1 \amp -1 
           \end{pmatrix} 
         </me></li>
-      </ol>
+        <li><me>
+          \begin{pmatrix}
+            a \amp 0 \amp a \\
+            b \amp 0 \amp -b \\
+            0 \amp 4 \amp 0 
+          \end{pmatrix} 
+        </me></li>
+      </ol></p>
     </li>
     <li>
       <p>
         Using the definition and properties of the determinant from
-        the video and the notes, prove the following statements.
-        Assume, throughout, that <m>A</m> and <m>B</m> are <m>n \times
-        n </m> matrices. (Some of these are just one or two lines,
-        connecting the relevant properties from different sections of
-        the notes. Others are short calculations using the properties.
-        Don't expect any of these to be long arguments.) (10)
+        the videos and the notes, prove the following statements. 
+        Assume, throughout, that <m>A</m> and <m>B</m> are
+        <m>n \times n </m> matrices. (Some of these proofs are just
+        one or two lines, connecting the relevant properties from
+        different sections of the notes. Others are short calculations
+        using the properties. Don't expect any of these to be long
+        arguments. The long list of equivalent properties of
+        invertible matrices will be useful.) (15)
       </p>
-      <ol>
-        <li><p>
-          If <m>\Ker A = \{0\}</m>, then <m>\det A \neq 0</m>.
-        </p></li>
-        <li><p>
-          If <m>A</m> has more than <m>n^2 - n</m> entries which are
-          0, then <m>\det A = 0</m>.
-        </p></li>
-        <li><p>
-          <m>\det (AA^T)</m> can't be negative. 
-        </p></li>
-        <li><p>
-          If <m>A</m> is invertible, then <m>\det (ABA^{-1}) = \det
-          B</m>. 
-        </p></li>
-        <li><p>
-          <m>A^{-1}</m> cannot have a row of zeroes. 
-        </p></li>
-      </ol>
+      <p><ol>
+        <li>
+          If <m>\Image A = \{0\}</m>, then <m>\det A = 0</m>.
+        </li>
+        <li>
+          If <m>AA^TA</m> is invertible, then <m>A</m> is invertible.
+        </li>
+        <li>
+          <m>ABA^{-1}</m> has the same rank as <m>B</m>, assuming that
+          <m>A</m> is invertible. 
+        </li>
+        <li>
+          If <m>A</m> is invertible, then the kernel of <m>A^{-1}</m>
+          must be <m>\{0\}</m>. 
+        </li>
+        <li>
+          There exist matrices <m>A</m> and <m>B</m> such that neither
+          has kernel equal to <m>\RR^2</m>, but <m>\Ker (AB) =
+          \RR^n</m>. 
+        </li>
+      </ol></p>
     </li>
   </ol></p>
 </section>
--->

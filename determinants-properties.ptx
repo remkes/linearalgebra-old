@@ -1,15 +1,15 @@
-<section xml:id="section-properties-of-determinants">
+<section xml:id="section-determinants-properties">
   <title>Properties of Determinants</title>
   <subsection xml:id="subsection-determinant-composition">
     <title>Determinants and Composition</title>
     <p>
       Algebra considers sets with structure. On the sets <m>M_n(\RR)</m>
       of <m>n \times n</m> matrices, the determinant is a new algebraic
-      structure. We would like to investigate how it interacts with
+      structure. I would like to investigate how it interacts with
       existing structures, starting with matrix multiplication.
     </p>
     <p>
-      To compose two transformations, we multiply the matrices. In this
+      To compose two transformations, I multiply the matrices. In this
       composition, the effects on size should compound. If the first
       transformation doubles size and the second triples it, the
       composition should multiply the size by a factor of <m>6</m>.
@@ -17,7 +17,7 @@
       composition should as well. If both reverse orientation,
       reversing twice should return us to the normal orientation. So,
       two positive or two negatives should result in a positive, and one
-      positive and one negative should result in a negative.
+      positive and one negative should result in a negative. 
     </p>
     <proposition>
       <statement>
@@ -44,13 +44,12 @@
       </statement>
     </proposition>
     <p>
-      In particular, <m>A</m> invertible means that <m>\det A</m> must
-      be non-zero. For <m>A</m> to be invertible, it must have a
-      non-zero determinant. It turns out this property is sufficient as
-      well as necessary. A non-zero determinant preserves the
+      In particular, for <m>A</m> to be invertible, it must have a
+      non-zero determinant. It turns out this property is sufficient
+      as well as necessary. A non-zero determinant preserves the
       dimension: it may increase or decrease size, but it doesn't
-      entirely destroy it. Therefore, there is always a way to go back and
-      to reverse the process.
+      entirely destroy it. Therefore, there is always a way to go back
+      and to reverse the process.
     </p>
     <proposition>
       <statement>
@@ -61,8 +60,10 @@
       </statement>
     </proposition>
     <p>
-      We can make a list of criteria for invertibility, including this
-      new determinant condition.
+      I can expand the list of criteria for invertibility by including
+      this new determinant condition. I'll add a few other criteria to
+      this list as well, since I last stated it in <xref
+      ref="section-proofs-week7" />. 
     </p>
     <proposition>
       <statement>
@@ -160,35 +161,27 @@
     <proposition>
       <statement>
         <p>
-          Let <m>A</m> be an <m>n \times n</m> matrix. If we exchange
-          two rows of <m>A</m>, the determinant changes sign (positive
-          to negative, negative to positive). If we multiply a row by a
+          Let <m>A</m> be an <m>n \times n</m> matrix. If two rows are
+          exchanges, the determinant changes sign (positive to
+          negative, negative to positive). If a row is multiplied by a
           constant <m>\alpha</m>, the determinant is multiplied by the
-          same constant <m>\alpha</m>. If we add a multiple of one row
-          to another, the determinant is unchanged.
+          same constant <m>\alpha</m>. If a multiple of one row is
+          added to another, the determinant is (surprisingly) 
+          unchanged.
         </p>
       </statement>
     </proposition>
     <p>
-      This last property is perhaps surprising: adding one row to
-      another, even with a multiple, doesn't change the determinant.
-      This also gives us another algorithm for calculating determinants:
-      we can row reduce the matrix to a triangular matrix and calculate
-      the determinant of the triangular matrix by multiplying the
-      diagonal elements. If we kept track of the multiplication by
-      constants and the row exchanges, we could use these rules to
-      calculate the determinant of the original matrix.
-    </p>
-    <p>
       All of the properties of determinant listed so far have been
       multiplicative. The situation for matrix addition and
-      determinants is less elegant: <m>\det (A + B)</m> has no pleasant
-      identity. This is an interesting contrast from many of the other things
-      in this course: determinants are not linear functions <m>M_n(\RR)
-      \rightarrow \RR</m> since they do not act nicely with addition.
-      Instead, they act nicely with multiplication. On sets with
-      various algebraic structures, it is common for an operation to
-      interact well with one structure but poorly with the others.
+      determinants is less elegant: <m>\det (A + B)</m> has no
+      pleasant identity. This is an interesting contrast from many of
+      the other things in this course: determinants are not linear
+      functions <m>M_n(\RR) \rightarrow \RR</m> since they do not act
+      nicely with addition.  Instead, they act nicely with
+      multiplication. On sets with various algebraic structures, it is
+      common for an operation to interact well with one structure but
+      poorly with the others.
     </p>
   </subsection>
 </section>

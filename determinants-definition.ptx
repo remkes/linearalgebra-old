@@ -4,49 +4,50 @@
     <title>Concept of the Determinant</title>
     <p>
       Linear transformations are defined by their symmetries: they
-      preserve linear subspaces and linear operations. We use
-      associated matrices to understand these transformations. Matrices
-      are an algebraic description so that questions of transformations
-      can be turned into algebraic problems. To figure out which points
-      went to zero under a transformation, we had an algebraic method of
-      calculating the kernel as a solution space. Now that we have the
-      algebraic description of transformations as matrices, we want to
-      investigate what else the matrix can tell us about the
-      transformation. In this section, we are asking two questions in
-      particular.
+      preserve linear subspaces and linear operations. The associated
+      matrices are used to understand these transformations. Matrices
+      are an algebraic description; via matrices questions of
+      transformations can be turned into algebraic problems. To figure
+      out which points went to zero under a transformation, I showed
+      an algebraic method of calculating the kernel as a solution
+      space. Now that I know the algebraic description of
+      transformations as matrices, I want to investigate what else the
+      matrix can tell me about the transformation. In this section, I
+      am asking two questions in particular.
     </p>
     <p>
-      First, what does the transformation do to the size of objects?  I
-      choose the vague word <sq>size</sq> intentionally because we work
-      in various dimensions. In one dimension, size is the length. In two
-      dimensions, size is area. In three dimensions, size is volume.
-      And in higher dimensions, we have some extended notion of volume
-      that fits that dimension; we can call this hyper-volume. It is
-      important to note that size depends on the ambient dimension. A
-      square in <m>\RR^2</m> has some area, some non-zero size. But if
-      we have a flat square somewhere in <m>\RR^3</m>, it has no volume,
-      therefore no substantial size in that space.
+      First, what does the transformation do to the size of objects?
+      I choose the vague word <sq>size</sq> intentionally because I
+      will work in various dimensions. In one dimension, size is the
+      length. In two dimensions, size is area. In three dimensions,
+      size is volume.  And in higher dimensions, there is some
+      extended notion of volume that fits that dimension; I can call
+      this hyper-volume. It is important to note that size depends on
+      the ambient dimension. A square in <m>\RR^2</m> has some area,
+      some non-zero size. But if there is a flat square somewhere in
+      <m>\RR^3</m>, it has no volume, therefore no substantial size in
+      that space.
     </p>
     <p>
       Second, what does the transformation do to the orientation of an
-      object?  We defined orientation as a choice of axis directions
+      object? I defined orientation as a choice of axis directions
       relative to each other, but that isn't the most enlightening
-      direction. To help, we will describe orientation for each
-      dimension. In <m>\RR</m>, orientation is a direction: moving in the
-      positive or negative direction along the number line. There are
-      only two directions of movement, so two orientations. If we have
-      a transformation of <m>\RR</m>, we can ask if it changes or
-      preserves these directions. In <m>\RR^2</m>, instead of moving in a
-      line, we think of moving in closed loops or paths. These paths
-      can be clockwise or counter-clockwise. Then we can ask if a
-      transformation changes clockwise loops into other clockwise loops
-      or into counter-clockwise loops. The axis system in <m>\RR^3</m>
-      is, conventionally, given by a right-hand-rule. If we know the
-      <m>x</m> and <m>y</m> directions, the right-hand-rule indicates
-      the positive <m>z</m> direction. Then we can ask where these
-      three directions go under a transformation and if a
-      right-hand-rule still applies. If it does, we preserve the
-      orientation. If it doesn't, and a left-hand-rule would work
+      direction. To help, I will describe orientation for each
+      dimension. In <m>\RR</m>, orientation is a direction: moving in
+      the positive or negative direction along the number line. There
+      are only two directions of movement, so two orientations. If I
+      have a transformation of <m>\RR</m>, I can ask if it changes or
+      preserves these directions. In <m>\RR^2</m>, instead of moving
+      in a line, I think of moving in closed loops or paths. These
+      paths can be clockwise or counter-clockwise. Then I can ask if a
+      transformation changes clockwise loops into other clockwise
+      loops or into counter-clockwise loops. The axis system in
+      <m>\RR^3</m> is, conventionally, given by a right-hand-rule. If
+      I know the <m>x</m> and <m>y</m> directions, the right-hand-rule
+      indicates the positive <m>z</m> direction. Then I can ask where
+      these three directions go under a transformation and if a
+      right-hand-rule still applies. If it does, the orientation is
+      preserved.  If it doesn't, and a left-hand-rule would work
       instead, the transformation reverses orientation. In higher
       dimensions, there are other extensions of the notion of
       orientation. In each case, the question is binary: a
@@ -60,25 +61,28 @@
         <p>
           Let <m>M</m> be a square <m>n \times n</m> matrix. The
           <term>determinant</term> of <m>M</m> is a real number, written
-          <m>\det M</m>, with two properties. Its absolute value,
-          <m>|\det M|</m>, measures the effect that <m>M</m> has on size
-          (length, area, volume, hyper-volume). Its sign (positive or
-          negative) measures the effect on orientation; if the sign is
-          positive, orientation is preserved, and if the sign is
-          negative, orientation is reversed. For a succinct notation,
-          we replace the curved braces with straight lines to indicate
-          the determinant of a matrix.
+          <m>\det M</m> or just <m>|M|</m>, with two properties. Its
+          absolute value, <m>|\det M|</m>, measures the effect that
+          <m>M</m> has on size (length, area, volume, hyper-volume).
+          Its sign (positive or negative) measures the effect on
+          orientation; if the sign is positive, orientation is
+          preserved, and if the sign is negative, orientation is
+          reversed. The notation <m>|M|</m> is a little mislead, since
+          the determinant can be a negative number; this is not an
+          absolute value. However, this notation is convenient for
+          actual matrices, where the conventional paranetheses are
+          replaces with straight lines to indicate the determinant. 
         </p>
       </statement>
     </definition>
     <p>
-      That definition is all well and good, but we need to show that
-      such a thing can be constructed. The next section gives an
-      algorithm for building determinants.
+      That definition is all well and good, but I need to show that
+      such a thing can be constructed. <xref ref="section-cofactor" />
+      shows an algorithm for building determinants.
     </p>
     <p>
-      The following definition will be used in the activity associated with
-      this lecture.
+      The following definition will be used in <xref
+      ref="section-week8-activity" />.
     </p>
     <definition>
       <statement>
@@ -90,10 +94,17 @@
           triangular matrices.
           <md>
             <mrow>
-            \amp \begin{pmatrix} -1 \amp 3 \amp 5 \\ 0 \amp 2 \amp -9 \\
-            0 \amp 0 \amp 1 \end{pmatrix} \amp \amp \begin{pmatrix} 0
-            \amp 0 \amp 2 \amp 2 \\ 0 \amp -7 \amp 4 \amp 0 \\ 0 \amp 0
-            \amp 9 \amp -4 \\ 0 \amp 0 \amp 0 \amp -4 \end{pmatrix} 
+              \amp \begin{pmatrix} 
+                -1 \amp 3 \amp 5 \\ 
+                0 \amp 2 \amp -9 \\
+                0 \amp 0 \amp 1 
+              \end{pmatrix} \amp \amp 
+              \begin{pmatrix} 
+                0 \amp 0 \amp 2 \amp 2 \\ 
+                0 \amp -7 \amp 4 \amp 0 \\ 
+                0 \amp 0 \amp 9 \amp -4 \\ 
+                0 \amp 0 \amp 0 \amp -4 
+              \end{pmatrix} 
             </mrow>
           </md>
         </p>

@@ -18,7 +18,7 @@
       </statement>
       <solution>
         <p>
-          We cofactor expansion along the second column to take
+          I do cofactor expansion along the second column to take
           advantage of the zeros in that column. 
           <md>
             <mrow>
@@ -45,7 +45,7 @@
             </mrow>
           </md>
           The terms multiplied by zero are obviously zero. For the
-          middle term, we use the formula for a <m>2 \times 2</m>
+          middle term, I use the formula for a <m>2 \times 2</m>
           determinant. 
           <md>
             <mrow>
@@ -74,7 +74,7 @@
       </statement>
       <solution>
         <p>
-          We cofactor expansion along the first row
+          I do cofactor expansion along the first row.
           <md>
             <mrow>
               \amp \left| \begin{matrix} 
@@ -100,7 +100,7 @@
             </mrow>
           </md>
           The term multiplied by zero goes away. For the other two
-          terms, we use the formula for <m>2 \times 2</m>
+          terms, I use the formula for <m>2 \times 2</m>
           determinants. 
           <md>
             <mrow>
@@ -130,7 +130,7 @@
       </statement>
       <solution>
         <p>
-          We cofactor expansion along the third column, to take
+          I do cofactor expansion along the third column, to take
           advantage of the zero term. 
           <md>
             <mrow>
@@ -157,7 +157,7 @@
             </mrow>
           </md>
           The term multiplied by zero goes away. For the other two
-          terms, we use the formula for the determinant of a <m>2
+          terms, I use the formula for the determinant of a <m>2
           \times 2</m> matrix. 
           <md>
             <mrow>
@@ -188,9 +188,10 @@
       </statement>
       <solution>
         <p>
-          This is a upper triangular matrices. We know for any
+          This is a upper triangular matrix. I know for any
           diagonal or triangular matrix, the determinant is just the
-          product of the diagonal entries. 
+          product of the diagonal entries. I don't need to do cofactor
+          expansion.
           <me>
             \left| \begin{matrix} 
               6 \amp 2 \amp -1 \amp 3 \\
@@ -219,7 +220,7 @@
       </statement>
       <solution>
         <p>
-          We cofactor expand along the first column to take
+          I do cofactor expand along the first column to take
           advantage of the zero terms. 
           <md>
             <mrow>
@@ -256,10 +257,10 @@
               \end{matrix} \right| 
             </mrow>
           </md>
-          The two terms multiplied by zero go away. We have two
-          remaining <m>3 \times 3</m> determinants. We'll do these
+          The two terms multiplied by zero go away. There are two
+          remaining <m>3 \times 3</m> determinants. I'll do these
           separately and then put their determinant values back into
-          the original equation. Here is the first one; we do cofactor
+          the original equation. Here is the first one; I do cofactor
           expansion along the third row. 
           <md>
             <mrow>
@@ -291,7 +292,7 @@
               \amp = -18 
             </mrow>
           </md>
-          Here is the second one; we cofactor expand along the
+          Here is the second one; I do cofactor expansion along the
           first row. 
           <md>
             <mrow>
@@ -327,7 +328,7 @@
               \amp = 4 + 8 - 36 = -24 
             </mrow>
           </md>
-          Now we put these back into the full expression.
+          Now I put these back into the full expression.
           <md>
             <mrow>
               \amp \left| \begin{matrix} 
