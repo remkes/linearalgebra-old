@@ -5,37 +5,26 @@
   <title>Week 9 Assignment</title>
   <p><ol>
     <li>
-    </li>
-  </ol></p>
-</section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week9">
-  <title>Week 9 Assignment</title>
-  <p><ol>
-    <li>
-      <p>
-        For this incomplete matrix, add a fourth column, which makes
-        the matrix orthogonal. (4)
-        <me>
-          \begin{pmatrix}
-            \dfrac{1}{\sqrt{3}} \amp 0 \amp \dfrac{1}{\sqrt{3}} \amp
-              \cdot \\
-            \dfrac{1}{\sqrt{3}} \amp \dfrac{1}{\sqrt{3}} \amp 0  \amp
-              \cdot \\
-            \dfrac{1}{\sqrt{3}} \amp \dfrac{-1}{\sqrt{3}} \amp
-              \dfrac{-1}{\sqrt{3}} \amp \cdot \\
-            0 \amp \dfrac{1}{\sqrt{3}} \amp \dfrac{-1}{\sqrt{3}} \amp 
-              \cdot \\
-          \end{pmatrix}
-        </me>
-      </p>
+      For this incomplete matrix, add a fourth column, which makes
+      the matrix orthogonal. (4)
+      <me>
+        \begin{pmatrix}
+          \dfrac{3}{\sqrt{14}} \amp \dfrac{2}{\sqrt{56}} \amp 0 \amp
+          \cdot \\
+          \dfrac{-2}{\sqrt{14}} \amp 0 \amp \dfrac{1}{\sqrt{14}} \amp
+          \cdot \\
+          0 \amp \dfrac{4}{\sqrt{56}} \amp \dfrac{3}{\sqrt{14}} \amp
+          \cdot \\
+          \dfrac{1}{\sqrt{14}} \amp \dfrac{-6}{\sqrt{56}} \amp
+          \dfrac{2}{\sqrt{14}} \amp \cdot 
+        \end{pmatrix}
+      </me>
     </li>
     <li>
       <p>
-        Find a counterexample of a matrix that preserve angles but is
-        not an orthogonal matrix. Show that your matrix has a
-        determinant not equal to <m>\pm 1</m>. (4) 
+        Let <m>R</m> be some rectangle in <m>\RR^2</m>. Prove that any
+        orthogonal transformation in <m>\RR^2</m> preserves the area
+        of the rectangle. (6) 
       </p>
     </li>
     <li>
@@ -58,4 +47,3 @@
     </li>
   </ol></p>
 </section>
--->

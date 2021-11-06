@@ -51,7 +51,7 @@
       </statement>
       <solution>
         <p>
-          In a), the columns are pairwise orthogonal; we can check
+          In a), the columns are pairwise orthogonal; I can check
           that all the dot products are zero.
           <md>
             <mrow>  
@@ -86,9 +86,9 @@
           is not an orthogonal matrix. 
         </p>
         <p>
-          In b), the columns are pairwise orthogonal; we can check
+          In b), the columns are pairwise orthogonal; I can check
           that all the dot products are zero. (Not that for these
-          checks, we can scale the vectors as we wish, since whether
+          checks, I can scale the vectors as I wish, since whether
           or not the dot product is zero doesn't depend on the
           scaling. I've scaled the columns to remove the square roots
           to make these calculations easier.) 
@@ -156,9 +156,9 @@
           </md>
         </p>
         <p>
-          In c), the columns are pairwise orthogonal; we can check
+          In c), the columns are pairwise orthogonal; I can check
           that all the dot products are zero. (Not that for these
-          checks, we can scale the vectors as we wish, since whether
+          checks, I can scale the vectors as I wish, since whether
           or not the dot product is zero doesn't depend on the
           scaling. I've scale the columns to remove the square roots
           to make these calculations easier.) 
@@ -226,7 +226,7 @@
           </md>
         </p>
         <p>
-          In d), the columns are not pairwise orthogonal; we can check
+          In d), the columns are not pairwise orthogonal; I can check
           to see that this fails with the first and third columns.
           <md>
             <mrow>  
@@ -243,8 +243,8 @@
             </mrow>
           </md>
           Since the columns are not orthogonal, this cannot be an
-          orthogonal matrix. (We could check that the columns are unit
-          vectors, which indeed they are, but we don't need to since
+          orthogonal matrix. (I could check that the columns are unit
+          vectors, which indeed they are, but I don't need to since
           we've already shown that this cannot match the criteria for
           othogonality). 
         </p>
@@ -265,9 +265,9 @@
       </statement>
       <solution>
         <p>
-          We simply need to add a vector of length one which is
-          perpendicular to the given column. If we switch the terms in
-          the vector and make one of them negative, we can accomplish
+          I simply need to add a vector of length one which is
+          perpendicular to the given column. If I switch the terms in
+          the vector and make one of them negative, I can accomplish
           this. (This isn't an algorithmic solution; this is
           essentially by inspection. I'm looking at the matrix and
           making a guess based on my familiarity with vectors in
@@ -278,7 +278,7 @@
               \frac{4}{\sqrt{41}} \amp \frac{5}{\sqrt{41}}  \\
             \end{matrix} \right) 
           </me>
-          Note there are two possible answers; if we choose to make
+          Note there are two possible answers; if I choose to make
           the other component negative, the following is another
           option. 
           <me>
@@ -310,7 +310,7 @@
       <solution>
         <p>
           Unlike the previous matrix, this is much harder to do by
-          inspection. Fortunately, we have an algorithmic approach. We
+          inspection. Fortunately, I have an algorithmic approach. I
           want a new vector in <m>\RR^3</m> which is orthogonal to two
           given vector (the two columns). In <m>\RR^3</m>, the cross
           product gives exactly this desired vector. Let's take the
@@ -332,7 +332,7 @@
           This produces a vector othogonal to both columns. Now we
           want to scale it so that it is unit vector. The length of
           this vector is <m>\sqrt{(-2)^2 + 2^2 + 6^2} =
-          \sqrt{44}</m>, so we divide by this to make a unit vector.
+          \sqrt{44}</m>, so I divide by this to make a unit vector.
           That produces this orthogonal matrix. 
           <me>
             \left( \begin{matrix}
@@ -343,8 +343,8 @@
               0 \amp \frac{-2}{\sqrt{2}} \amp \frac{6}{\sqrt{44}}
             \end{matrix} \right) 
           </me>
-          Note, again, that there are two possible answers. If we did
-          the cross-product in the other order, we would get the same
+          Note, again, that there are two possible answers. If I did
+          the cross-product in the other order, I would get the same
           vector multiplied by <m>(-1)</m>. That produces this other
           answer. 
           <me>
@@ -356,7 +356,7 @@
               0 \amp \frac{-2}{\sqrt{2}} \amp \frac{-6}{\sqrt{44}}
             \end{matrix} \right) 
           </me>
-          These are the only two solution.
+          These are the only two solutions.
         </p>
       </solution>
     </activity>
@@ -379,15 +379,15 @@
       </statement>
       <solution>
         <p>
-          Now we again lack an algorithmic approach, since we don't
-          have a cross product in <m>\RR^4</m>. So we have to try to
+          Now I again lack an algorithmic approach, since I don't
+          have a cross product in <m>\RR^4</m>. So I have to try to
           work by inspection again, which is tricky. Looking at the
           first and third columns, these are only non-zero in the
           first and third coordinates. The second column is non-zero
-          only in the second and fourth coordinate. We might try to
+          only in the second and fourth coordinate. I might try to
           match the second column and take zeros in the first and
           third components; that guarantees orthogonality with the
-          first and third vector. Then we need to choose components to
+          first and third vector. Then I need to choose components to
           be orthogonal to the second column; that can be done by
           copying the second colum and setting one of the components
           to be negative. That gives the following answer. 
@@ -423,7 +423,7 @@
       <solution>
         <p>
           There are many multiplications to calculate. I recommend
-          calculating matrices by vertex operations. If we number the
+          calculating matrices by vertex operations. If I number the
           vertices of the pentagon counterclockwise from 1 to 5, then
           <m>R_2</m> (rotation by <m>\frac{2}{5}</m> of a turn) can be
           represented by this movement of vertices.
@@ -464,12 +464,12 @@
               5 \amp \mapsto 1
             </mrow>
           </md>
-          To calculate <m>R_2 \circ F_3</m>, we can use these vertex
-          changes. In composition, we do the right transformation
+          To calculate <m>R_2 \circ F_3</m>, I can use these vertex
+          changes. In composition, I do the right transformation
           first. Therefore, starting at vertex 1, <m>F_3</m> send it
           to vertex 5, and then <m>R_2</m> sends vertex 5 to vertex 2.
           Therefore, the whole composition sends vertex 1 to vertex 2.
-          We calculate the movement of the other four vertices
+          I calculate the movement of the other four vertices
           similarly. 
           <md>
             <mrow>
@@ -488,12 +488,12 @@
               5 \amp \mapsto 3
             </mrow>
           </md>
-          Then we have to identify this transformation, since is still
+          Then I have to identify this transformation, since is still
           should be something in the group. It cannot be a rotation,
           since vertex 4 is fixed. The only rotation that fixes vertex
-          4 is <m>F_4</m>. Therefore, we have <m>R_2 \circ F_3 =
+          4 is <m>F_4</m>. Therefore, I have <m>R_2 \circ F_3 =
           F_4</m>. Note that the multiplication is not commutative. If
-          we did <m>F_3 \circ R_2</m>, we would have these vertex
+          I did <m>F_3 \circ R_2</m>, the result would be these vertex
           transformations.
           <md>
             <mrow>
@@ -512,9 +512,10 @@
               5 \amp \mapsto 4
             </mrow>
           </md>
-          This is the reflection <m>F_2</m>, so <m>F_3 \circ R_2</m>.
-          Using similar vertex calcluation for all the entries, we
-          produce the following multiplication table for <m>D_5</m>.
+          This is the reflection <m>F_2</m>, so <m>F_3 \circ R_2 =
+          F_2</m>.  Using similar vertex calcluation for all the
+          entries, I produce the following multiplication table for
+          <m>D_5</m>.
           <table>
             <tabular bottom="minor" top="minor" left="minor"
               right="minor">
@@ -680,8 +681,8 @@
         <p>
           This is relatively easy to argue based on the concept and
           main definition.  Orthogonal matrices preserve lengths. If
-          lengths do not change when we do a transformation forward,
-          then also can't change when we unto the transformation and
+          lengths do not change when I do a transformation forward,
+          then also can't change when I unto the transformation and
           go backwards.  Undoing no change is still no change.
         </p>
       </solution>
@@ -755,7 +756,7 @@
         <p>
           This proof is substantially more difficult to approach than
           the three previous one. There are many transformations in
-          <m>\RR^2</m>. We can't even just prove this for the five
+          <m>\RR^2</m>. I can't even just prove this for the five
           basic types, since there are complicated transformations
           that are combinations of the types and the combination might
           be orthogonal even when the pieces aren't. I need to find a
@@ -764,8 +765,8 @@
         <p>
           The idea I thought to use was acting on the standard basis:
           <m>\{e_1, e_2\}</m>. Since these two vectors span all of
-          <m>\RR^2</m>, if we know what happens to these two vectors,
-          we know the entire transformation. First, the transformation does
+          <m>\RR^2</m>, if I know what happens to these two vectors,
+          I know the entire transformation. First, the transformation does
           something to <m>e^1</m>, sending it to <m>Me_1</m>. Since
           length is preserved, this is some other unit vector. 
         </p>
@@ -775,8 +776,8 @@
           lengths are preserved. Also, angles are preserved, so the
           angle between the <m>Me_1</m> and <m>Me_2</m> must still be
           <m>\frac{\pi}{2}</m> (they are still perpendicular). That
-          gives only two choices. If we face in the direction of
-          <m>Me_2</m>, then we can have the unit vector pointing in
+          gives only two choices. If I face in the direction of
+          <m>Me_2</m>, then I can have the unit vector pointing in
           the perpendicular direction to the right or to the left. 
         </p>
         <p>
@@ -787,7 +788,7 @@
           between <m>e_1</m> and <m>Me_1</m>.
         </p>
         <p>
-          If <m>ME_2</m> is the perpendicular direction to the right,
+          If <m>Me_2</m> is the perpendicular direction to the right,
           then <m>M</m> is a reflection. This is a bit trickier to
           see, but the line of reflection will be the line halfway
           between <m>e_1</m> and <m>Me_1</m>. That line will flip

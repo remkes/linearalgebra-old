@@ -8,22 +8,22 @@
       preserved something. Geometrically, they preserved linear
       subspaces: each linear subspace is sent to another linear
       subspace. Algebraically, they preserved the linear operations of
-      addition and scalar multiplication: we can do vector addition or
+      addition and scalar multiplication: I can do vector addition or
       scalar multiplication before or after the transformation, and the
       result is the same. This the general notion of symmetry that I
       want to develop in this course: transformations that preserve
       something (either algebraic or geometric). 
     </p>
     <p>
-      This general idea of symmetry continues to develop as we get
-      deeper into the discipline of linear algebra. Our classification
-      of matrices, at least geometrically, is almost always a question
-      of symmetry.  In this section, we're going to define some new
-      classes of matrices in terms of their symmetries <emdash/> in
-      terms of what they preserve.
+      This general idea of symmetry continues to develop as the course
+      moves deeper into the discipline of linear algebra. The
+      classification of matrices, at least geometrically, is almost
+      always a question of symmetry.  In this section, I'm going to
+      define some new classes of matrices in terms of their symmetries
+      <emdash/> in terms of what they preserve.
     </p>
     <p>
-      Recall the notation we've already established for matrix sets
+      Recall the notation I've already established for matrix sets
       and groups (with real coefficients).
       <ul>
         <li>
@@ -52,11 +52,11 @@
     <title>Transformations that Preserve Size and Orientation</title>
     <p>
       Determinants measure two geometric properties: size and
-      orientation. These are both symmetries. If we have matrices of
-      determinant <m>\pm 1</m>, we know that they preserve size. If
-      we have matrices of positive determinant, we know that they
-      preserve orientation. If we have matrices of determinant one,
-      they preserve both.
+      orientation. These are both potential symmetries. If a matrix
+      has determinant <m>\pm 1</m>, I know that it preserves size. If
+      a matrix has positive determinant, I know that it
+      preserves orientation. If a matrix has determinant one,
+      it preserves both.
     </p>
     <definition>
       <statement>
@@ -100,14 +100,23 @@
         </p>
       </statement>
     </definition>
+    <p>
+      The Kronecker delta is a convenient short-hand to indicate that
+      matching indices are important. The expressions
+      <m>\delta_{5,6}</m>, <m>\delta_{4,10}</m> and
+      <m>\delta_{9,3}</m> all evaluate to <m>0</m> since the indices
+      do not match.  The expressions <m>\delta_{4,4}</m>,
+      <m>\delta_{17,17}</m> and <m>\delta_{1,1}</m> all evaluate to
+      <m>1</m> since the indices do match. 
+    </p>
     <proposition>
       <statement>
         <p>
           Let <m>A</m> be an <m>n \times n</m> matrix. Write <m>A =
           (a_1, a_2, \ldots, a_n)</m> where the <m>a_i</m> are column
-          vectors. Then the following seven statements are all
-          equivalent, and all can be taken as the definition of an
-          orthogonal matrix.
+          vectors (for each <m>a_i</m> is a vector in<m>\RR^n</m>.
+          Then the following seven statements are all equivalent, and
+          all can be taken as the definition of an orthogonal matrix.
           <ol>
             <li>
               <p>
@@ -161,10 +170,10 @@
       (preserving angles needs the additional determinant condition).
       This is a little odd; there isn't a strong intuition that
       exactly the same transformations should preserve both
-      properties. Second, we have a convenient algebraic method of
-      identifying orthogonal matrices in property d). We can multiply
-      by the transpose: if we get the identity, we have an orthogonal
-      matrix. The equivalence of property d) and property f) is seen
+      properties. Second, there is a convenient algebraic method of
+      identifying orthogonal matrices in property d): I can multiply
+      by the transpose: if I get the identity, I know the matrix is 
+      orthogonal. The equivalence of property d) and property f) is seen
       in simply calculating the matrix multiplication; it involves the
       dot products of all the columns, which must evaluate to <m>0</m>
       or <m>1</m> exactly matching the Kronecker delta.
@@ -235,9 +244,13 @@
           through the origin</sq> where every point is sent to the
           opposite point with respect to the origin. (The equivalent
           in <m>\RR^2</m> is a rotation by <m>\pi</m> radians). It isn't
-          even a physical transformation: it's not something we can do
-          with a physical object without destroying it. However, it
-          satisfies the condition of orthogonality.
+          even a physical transformation: it's not something I can do
+          with a physical object without destroying it. (If the object
+          were, say, an inflatable beach-ball, this transformation
+          would be equivalent to collasping the ball, turning it
+          inside-out, and reinflating it that way). However, the
+          transformations still satisfies the condition of
+          orthogonality.
         </p>
       </statement>
     </example>
