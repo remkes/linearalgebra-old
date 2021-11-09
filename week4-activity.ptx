@@ -502,10 +502,10 @@
           description by free parameters. 
           <md>
             <mrow>
-              -x - y + 1 \amp = 2 
+              -x - y + z \amp = 2 
             </mrow>
             <mrow>
-              2x + 3 \amp = 1 
+              2x + 3z \amp = 1 
             </mrow>
             <mrow>
               -4y + 7z \amp = 6 

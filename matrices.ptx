@@ -163,6 +163,27 @@
       </statement>
     </definition>
     <p>
+      When I defined vectors, I also defined addition term-by-term. I
+      can do the same for matrices.
+    </p>
+    <definition>  
+      <statement>
+        If <m>A</m> and <m>B</m> are both <m>n \times m</m> matrices,
+        then the sum <m>A + B</m> is the <m>n \times m</m> matrix
+        formed by simply adding the entries of the two matrices in
+        their apporpriate position. 
+      </statement>
+    </definition>
+    <p>
+      The definition of vector addition is extremely important to the
+      geometry of vectors. It turns out that matrix addition is less
+      central to the geometry presented in this course. This operation
+      will show up in a couple of places, but it is much less
+      important that the operation of matrix multiplication, which
+      will be presented later in <xref
+      ref="section-matrices-and-transformations" />, 
+    </p>
+    <p>
       Sometimes it is useful add separation to the organization of the
       matrix.
     </p>

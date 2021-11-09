@@ -178,7 +178,7 @@
       So what about pre-images? Conisider a <m>m \times n</m> matrix
       <m>M</m>, representing a transformation <m>\RR^m \rightarrow
       \RR^n</m>. For a vector <m>u</m> in <m>\RR^n</m>, I can ask for
-      the pre-image <m>M^{-1}( \{ u\} )</m>. This is all the vectors in
+      the pre-image <m>M^{-1}\{ u\}</m>. This is all the vectors in
       <m>\RR^m</m> which the matrix sends to <m>u</m> (this could
       possibly be empty if none of the vectors are sent to <m>u</m>).
       I can express this as a matrix equation: <m>v</m> is in the

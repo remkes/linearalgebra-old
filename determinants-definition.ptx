@@ -30,16 +30,17 @@
     </p>
     <p>
       Second, what does the transformation do to the orientation of an
-      object? I defined orientation as a choice of axis directions
-      relative to each other, but that isn't the most enlightening
-      direction. To help, I will describe orientation for each
-      dimension. In <m>\RR</m>, orientation is a direction: moving in
-      the positive or negative direction along the number line. There
-      are only two directions of movement, so two orientations. If I
-      have a transformation of <m>\RR</m>, I can ask if it changes or
-      preserves these directions. In <m>\RR^2</m>, instead of moving
-      in a line, I think of moving in closed loops or paths. These
-      paths can be clockwise or counter-clockwise. Then I can ask if a
+      object? In <xref ref="section-euclidean-space" />, I defined
+      orientation as a choice of axis directions relative to each
+      other, but that isn't the most enlightening direction. To help,
+      I will describe orientation for each dimension. In <m>\RR</m>,
+      orientation is a direction: moving in the positive or negative
+      direction along the number line. There are only two directions
+      of movement, so two orientations. If I have a transformation of
+      <m>\RR</m>, I can ask if it changes or preserves these
+      directions. In <m>\RR^2</m>, instead of moving in a line, I
+      think of moving in closed loops or paths. These paths can be
+      clockwise or counter-clockwise. Then I can ask if a
       transformation changes clockwise loops into other clockwise
       loops or into counter-clockwise loops. The axis system in
       <m>\RR^3</m> is, conventionally, given by a right-hand-rule. If
@@ -67,11 +68,11 @@
           Its sign (positive or negative) measures the effect on
           orientation; if the sign is positive, orientation is
           preserved, and if the sign is negative, orientation is
-          reversed. The notation <m>|M|</m> is a little mislead, since
+          reversed. The notation <m>|M|</m> is a little misleading, since
           the determinant can be a negative number; this is not an
           absolute value. However, this notation is convenient for
-          actual matrices, where the conventional paranetheses are
-          replaces with straight lines to indicate the determinant. 
+          actual matrices, where the conventional parantheses are
+          replaced with straight lines to indicate the determinant. 
         </p>
       </statement>
     </definition>
@@ -81,8 +82,8 @@
       shows an algorithm for building determinants.
     </p>
     <p>
-      The following definition will be used in <xref
-      ref="section-week8-activity" />.
+      The following definition will be used in the activities in 
+      <xref ref="section-week8-activity" />.
     </p>
     <definition>
       <statement>

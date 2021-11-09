@@ -298,8 +298,8 @@
             <mrow>
               \amp \left| \begin{matrix} 
                 -1 \amp -1 \amp 6 \\
-                -3 \amp 3 \amp -2 
-                1 \amp 1 \amp -2 \\
+                -3 \amp 3 \amp -2 \\ 
+                1 \amp 1 \amp -2 
               \end{matrix} \right| 
             </mrow>
             <mrow>
@@ -446,7 +446,7 @@
       <solution>
         <p>
           I can argue this fact using cofactor expansion. Since
-          cofactor expansions work along rows or columns, if I do
+          cofactor expansions works along rows or columns, if I do
           cofactor expansion along a row of <m>M</m>, that is the same
           as cofactor expansion along the matching column of <m>M</m>
           (since the transpose turns rows into columns). Since both

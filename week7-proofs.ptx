@@ -84,27 +84,43 @@
       It turns out that there will be many ways to describe an
       invertible matrix. I'll start a list of equivalent properties of
       invertible matrices, which will be extended throughout the
-      course. Assume <m>M</m> is an <m>n \times n</m> matrix. The
+      course. Assume <m>A</m> is an <m>n \times n</m> matrix. The
       following properties are equivalent (each implies all the rest).
       <ul>
         <li>
-          <m>M</m> is invertible.
+          <m>A</m> is invertible.
         </li>
         <li>
-          <m>M</m> row reduces to the identity matrix.
+          <m>A</m> row reduces to the identity matrix.
         </li>
         <li>
-          <m>M</m> has rank <m>n</m>.
+          <m>A</m> has rank <m>n</m>.
         </li>
         <li>
-          The image of <m>M</m> is <m>\RR^n</m>.
+          The image of <m>A</m> is <m>\RR^n</m>.
         </li>
         <li>
-          The kernel of <m>M</m> is zero.
+          The columnspace of <m>A</m> is <m>\RR^n</m>.
         </li>
         <li>
-          <m>M</m> preserves the dimension of any (linear or affine)
+          The columns of <m>A</m> are linearly independent. 
+        </li>
+        <li>
+          The rowspace of <m>A</m> is <m>\RR^n</m>.
+        </li>
+        <li>
+          The rows of <m>A</m> are linearly independent. 
+        </li>
+        <li>
+          The kernel of <m>A</m> is zero.
+        </li>
+        <li>
+          <m>A</m> preserves the dimension of any (linear or affine)
           object it acts upon
+        </li>
+        <li>
+          <m>Au = v</m> has a unique solution <m>u</m> for any choice
+          of vector <m> v \in \RR^n</m>.
         </li>
       </ul>
     </p>

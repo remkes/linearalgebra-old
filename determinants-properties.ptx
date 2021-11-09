@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-determinant-composition">
     <title>Determinants and Composition</title>
     <p>
-      Algebra considers sets with structure. On the sets <m>M_n(\RR)</m>
+      Algebra considers sets with structure. On the set <m>M_n(\RR)</m>
       of <m>n \times n</m> matrices, the determinant is a new algebraic
       structure. I would like to investigate how it interacts with
       existing structures, starting with matrix multiplication.
@@ -15,9 +15,11 @@
       composition should multiply the size by a factor of <m>6</m>.
       Similarly, with orientation: if both preserve orientation, the
       composition should as well. If both reverse orientation,
-      reversing twice should return us to the normal orientation. So,
+      reversing twice should return to the normal orientation. So,
       two positive or two negatives should result in a positive, and one
-      positive and one negative should result in a negative. 
+      positive and one negative should result in a negative. These two
+      observations (compounding effect on sze, reversing orientation)
+      are captured in this proposition.
     </p>
     <proposition>
       <statement>
@@ -27,6 +29,10 @@
         </p>
       </statement>
     </proposition>
+    <p>
+      Here are a couple of similar propositions about the properties
+      of determinants. 
+    </p>
     <proposition>
       <statement>
         <p>
@@ -61,9 +67,9 @@
     </proposition>
     <p>
       I can expand the list of criteria for invertibility by including
-      this new determinant condition. I'll add a few other criteria to
-      this list as well, since I last stated it in <xref
-      ref="section-proofs-week7" />. 
+      this new determinant condition. Here is the list that I
+      previously presented in <xref ref="section-proofs-week7" /> with
+      the new condition added at the end. 
     </p>
     <proposition>
       <statement>
@@ -72,60 +78,38 @@
           following properties are equivalent.
           <ul>
             <li>
-              <p>
-                <m>A</m> is invertible.
-              </p>
+              <m>A</m> is invertible.
             </li>
             <li>
-              <p>
-                <m>A</m> has rank <m>n</m>.
-              </p>
+              <m>A</m> has rank <m>n</m>.
             </li>
             <li>
-              <p>
-                <m>A</m> row reduces to the identity matrix.
-              </p>
+              <m>A</m> row reduces to the identity matrix.
             </li>
             <li>
-              <p>
-                <m>\Ker(A) = \{0\}</m>.
-              </p>
+              <m>\Ker(A) = \{0\}</m>.
             </li>
             <li>
-              <p>
-                <m>\Image(A) = \RR^n</m>.
-              </p>
+              <m>\Image(A) = \RR^n</m>.
             </li>
             <li>
-              <p>
-                The columnspace of <m>A</m> is <m>\RR^n</m>.
-              </p>
+              The columnspace of <m>A</m> is <m>\RR^n</m>.
             </li>
             <li>
-              <p>
-                The columns of <m>A</m> are linearly independent.
-              </p>
+              The columns of <m>A</m> are linearly independent.
             </li>
             <li>
-              <p>
-                The rowspace of <m>A</m> is <m>\RR^n</m>.
-              </p>
+              The rowspace of <m>A</m> is <m>\RR^n</m>.
             </li>
             <li>
-              <p>
-                The rows of <m>A</m> are linearly independent.
-              </p>
+              The rows of <m>A</m> are linearly independent.
             </li>
             <li>
-              <p>
-                <m>Au = v</m> has a unique solution <m>u</m> for any
-                choice of <m>v \in \RR^n</m>.
-              </p>
+              <m>Au = v</m> has a unique solution <m>u</m> for any
+              choice of <m>v \in \RR^n</m>.
             </li>
             <li>
-              <p>
-                <m>\det A \neq 0</m>.
-              </p>
+              <m>\det A \neq 0</m>.
             </li>
           </ul>
         </p>
@@ -162,7 +146,7 @@
       <statement>
         <p>
           Let <m>A</m> be an <m>n \times n</m> matrix. If two rows are
-          exchanges, the determinant changes sign (positive to
+          exchanged, the determinant changes sign (positive to
           negative, negative to positive). If a row is multiplied by a
           constant <m>\alpha</m>, the determinant is multiplied by the
           same constant <m>\alpha</m>. If a multiple of one row is
@@ -181,7 +165,13 @@
       nicely with addition.  Instead, they act nicely with
       multiplication. On sets with various algebraic structures, it is
       common for an operation to interact well with one structure but
-      poorly with the others.
+      poorly with the others. It is not surprisingly that the
+      determinant doesn't work well with matrix multiplication based
+      on the original observation that matrix multiplication doesn't
+      have a clear geometric meaning. The determinant is a very
+      geometric definition, so an operation that is simply algebraic
+      without a geometric meaning is unlikely to easily cooperate with
+      a strongly geometric construction. 
     </p>
   </subsection>
 </section>

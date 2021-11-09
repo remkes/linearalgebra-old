@@ -42,9 +42,10 @@
             everything to zero, or onto a line, sending every point to
             the closest point on a line. Examples include projection
             onto the axes. However, I can also project onto planes.
-            Sending <m>(a,b,c)</m> to <m>(a,b,0)</m>, for example,
-            removes the <m>z</m> coordinate; this is projection onto
-            the <m>xy</m> plane.
+            Sending <m>\begin{pmatrix} a \\ b \\ c \end{pmatrix}</m>
+            to <m>\begin{pmatrix} a \\ b \\ 0 \end{pmatrix}</m>, for
+            example, removes the <m>z</m> coordinate; this is
+            projection onto the <m>xy</m> plane.
           </p>
         </li>
       </ul>

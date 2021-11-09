@@ -130,15 +130,15 @@
     </p>
     <p>
       I am not contradicting myself, though it is a very good
-      question. To understand why look at the statement of the
-      proposition. The composition of the transformation is a process where
-      two transformations combine into one new one. There are two ways
-      to do this: <m>AB</m> or <m>BA</m>. The proposition says that the
-      outcome of both orders is the same. Therefore, I can calculate
-      the outcome of both orders and compare them. This is different
-      from a proposition that simply states an equation; for these
-      propositions, reducing each side of the equation to a common
-      expression can result in a false proof (for example, by
+      question. To understand why, look at the statement of the
+      proposition. The composition of the transformation is a process
+      where two transformations combine into one new one. There are
+      two ways to do this: <m>AB</m> or <m>BA</m>. The proposition
+      says that the outcome of both orders is the same. Therefore, I
+      can calculate the outcome of both orders and compare them. This
+      is different from a proposition that simply states an equation;
+      for these propositions, reducing each side of the equation to a
+      common expression can result in a false proof (for example, by
       multiplying both sides by zero). Here, I'm not reducing an
       equation to a common form but doing two processes and comparing
       the result. 

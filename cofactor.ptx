@@ -32,7 +32,7 @@
         <p>
           The algorithm for calculating determinants is called
           <term>Co-Factor Expansion</term>. It is a recursive algorithm
-          that reduces determinant calculation to determinants of
+          that reduces determinant calculations to determinants of
           smaller square matrices, eventually down to <m>2 \times 2</m>
           matrices whose determinants have already been defined. 
         </p>
@@ -100,7 +100,7 @@
     </p>
     <p>
       I could use this formula for <m>3 \times 3</m> matrices if I
-      wished. We could do the same for larger matrices, but it starts
+      wished. I could do the same for larger matrices, but it starts
       to get quite complicated. The computational complexity of the
       recursive determinant algorithm grows very quickly. For a <m>3
       \times 3</m> matrix, I had 3 recursions to <m>2 \times 2</m>

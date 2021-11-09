@@ -9,7 +9,7 @@
       subspaces: each linear subspace is sent to another linear
       subspace. Algebraically, they preserved the linear operations of
       addition and scalar multiplication: I can do vector addition or
-      scalar multiplication before or after the transformation, and the
+      scalar multiplication before or after the transformation and the
       result is the same. This the general notion of symmetry that I
       want to develop in this course: transformations that preserve
       something (either algebraic or geometric). 
@@ -19,8 +19,8 @@
       moves deeper into the discipline of linear algebra. The
       classification of matrices, at least geometrically, is almost
       always a question of symmetry.  In this section, I'm going to
-      define some new classes of matrices in terms of their symmetries
-      <emdash/> in terms of what they preserve.
+      define some new classes of matrices in terms of their
+      symmetries: <emdash/> in terms of what they preserve.
     </p>
     <p>
       Recall the notation I've already established for matrix sets
@@ -114,7 +114,7 @@
         <p>
           Let <m>A</m> be an <m>n \times n</m> matrix. Write <m>A =
           (a_1, a_2, \ldots, a_n)</m> where the <m>a_i</m> are column
-          vectors (for each <m>a_i</m> is a vector in<m>\RR^n</m>.
+          vectors (for each <m>a_i</m> is a vector in <m>\RR^n</m>.
           Then the following seven statements are all equivalent, and
           all can be taken as the definition of an orthogonal matrix.
           <ol>
@@ -262,9 +262,9 @@
           <me> 
             \begin{pmatrix} 
               \dfrac{5}{\sqrt{38}} \amp \dfrac{-3}{\sqrt{67}} 
-                \dfrac{-23}{\sqrt{2546}} \\
+                \dfrac{-23}{\sqrt{2546}} \\[1em]
               \dfrac{-3}{\sqrt{38}} \amp \dfrac{-7}{\sqrt{67}} 
-                \dfrac{-9}{\sqrt{2546}} \\
+                \dfrac{-9}{\sqrt{2546}} \\[1em]
               \dfrac{-2}{\sqrt{38}} \amp \dfrac{3}{\sqrt{67}} 
                 \dfrac{-44}{\sqrt{2546}} \\
             \end{pmatrix}
