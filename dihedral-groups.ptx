@@ -31,9 +31,9 @@
       <sq>Group</sq> is a technical word in mathematics, referring to a
       set with some extra properties. Let me give the definition in
       somewhat formal language. (In this definition, a binary
-      operation is that takes two elements and combines them into one.
-      It is a general term that includes addition or numbers,
-      multiplication or number, or composition of transformations: in
+      operation is a process that takes two elements and combines them
+      into one.  It is a general term that includes addition of numbers,
+      multiplication of numbers, or composition of transformations: in
       each operation, two things are combined together). 
     </p>
     <definition>
@@ -102,7 +102,7 @@
       In this course, I will primarily discuss dihedral groups to
       understand what groups are all about. In other institutions with
       larger mathematics programs, courses are devoted exclusively to
-      Group Theory, which is an active and important area of
+      group theory, which is an active and important area of
       mathematical research. 
     </p>
   </subsection>
@@ -138,16 +138,15 @@
       </image>
     </figure>
     <p>
-      First consider the symmetries of the square to more
-      clearly understand this construction.
-      I assume the origin is at the centre of
-      the square, and I can put the vertices of the square at
-      <m>(1,1)</m>, <m>(1,-1)</m>, <m>(-1,-1)</m> and
-      <m>(-1,1)</m>. Conveniently, the vertices are all I need
-      to think about: since linear transformations preserve lines,
-      if I know where the vertices go, then I know that the
-      lines connecting them are preserved, and hence the shape is
-      preserved. Which transformations preserve the vertices?
+      Consider the symmetries of the square to more clearly understand
+      this construction.  I assume the origin is at the centre of the
+      square, and I can put the vertices of the square at
+      <m>(1,1)</m>, <m>(1,-1)</m>, <m>(-1,-1)</m> and <m>(-1,1)</m>.
+      Conveniently, the vertices are all I need to think about: since
+      linear transformations preserve lines, if I know where the
+      vertices go, then I know that the lines connecting them are
+      preserved, and hence the shape is preserved. Which
+      transformations preserve the vertices?
     </p>
     <p>
       There are two relatively obvious classes that might occur.
@@ -192,11 +191,11 @@
       multiplication table for the group. Such a table would
       explicitly show all the compositions. It is structured very much
       like the multiplication tables for numbers that you learned in
-      elementary school <emdash/>; you are now just studying a new kind
+      elementary school <mdash/> you are now just studying a new kind
       of multiplication.
     </p>
     <p>
-      To make the multiplication table, I need to know how to easily
+      To make the multiplication table, I need to know how to 
       calculate the composition of elements. I could do this by
       writing their matrices and doing the matrix multiplication. That
       would work, but I want to show you an easier method <emdash/> one

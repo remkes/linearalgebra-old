@@ -10,41 +10,41 @@
           fail the orthogonality criteria. 
           <md>
             <mrow>
-              a) \amp \left( \begin{matrix}
+              a) \amp \begin{pmatrix}
                 1 \amp 1 \amp -1 \\
                 -1 \amp 1 \amp -1 \\
                 0 \amp 1 \amp 2 
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
             <mrow>
-              b) \amp \left( \begin{matrix}
-                \frac{1}{\sqrt{38}} \amp \frac{3}{\sqrt{19}} \amp
-                  \frac{1}{\sqrt{2}} \\
-                \frac{1}{\sqrt{38}} \amp \frac{3}{\sqrt{19}} \amp 
-                  \frac{-1}{\sqrt{2}} \\
-                \frac{-6}{\sqrt{38}} \amp \frac{1}{\sqrt{19}} \amp 
-                  0 \\
-              \end{matrix} \right) 
+              b) \amp \begin{pmatrix}
+                \dfrac{1}{\sqrt{38}} \amp \dfrac{3}{\sqrt{19}} \amp
+                  \dfrac{1}{\sqrt{2}} \\[0.5em]
+                \dfrac{1}{\sqrt{38}} \amp \dfrac{3}{\sqrt{19}} \amp 
+                  \dfrac{-1}{\sqrt{2}} \\[0.5em]
+                \dfrac{-6}{\sqrt{38}} \amp \dfrac{1}{\sqrt{19}} \amp 
+                  0 
+              \end{pmatrix} 
             </mrow>
             <mrow>
-              c) \amp \left( \begin{matrix}
-                \frac{2}{\sqrt{6}} \amp \frac{3}{\sqrt{29}} \amp 
-                  \frac{-2}{\sqrt{174}} \\
-                \frac{-1}{\sqrt{6}} \amp \frac{4}{\sqrt{29}} \amp 
-                  \frac{7}{\sqrt{174}} \\
-                \frac{1}{\sqrt{6}} \amp \frac{-2}{\sqrt{29}} \amp 
-                  \frac{11}{\sqrt{174}} 
-              \end{matrix} \right) 
+              c) \amp \begin{pmatrix}
+                \dfrac{2}{\sqrt{6}} \amp \dfrac{3}{\sqrt{29}} \amp 
+                  \dfrac{-2}{\sqrt{174}} \\[0.5em]
+                \dfrac{-1}{\sqrt{6}} \amp \dfrac{4}{\sqrt{29}} \amp 
+                  \dfrac{7}{\sqrt{174}} \\[0.5em]
+                \dfrac{1}{\sqrt{6}} \amp \dfrac{-2}{\sqrt{29}} \amp 
+                  \dfrac{11}{\sqrt{174}} 
+              \end{pmatrix} 
             </mrow>
             <mrow>
-              d) \amp \left( \begin{matrix}
-                \frac{3}{\sqrt{17}} \amp \frac{-2}{\sqrt{13}} \amp 
-                  \frac{-6}{\sqrt{173}} \\
-                \frac{-2}{\sqrt{17}} \amp 0 \amp 
-                  \frac{-11}{\sqrt{173}} \\
-                \frac{-2}{\sqrt{17}} \amp \frac{3}{\sqrt{13}} \amp 
-                  \frac{4}{\sqrt{173}} 
-              \end{matrix} \right) 
+              d) \amp \begin{pmatrix}
+                \dfrac{3}{\sqrt{17}} \amp \dfrac{-2}{\sqrt{13}} \amp 
+                  \dfrac{-6}{\sqrt{173}} \\[0.5em]
+                \dfrac{-2}{\sqrt{17}} \amp 0 \amp 
+                  \dfrac{-11}{\sqrt{173}} \\[0.5em]
+                \dfrac{-2}{\sqrt{17}} \amp \dfrac{3}{\sqrt{13}} \amp 
+                  \dfrac{4}{\sqrt{173}} 
+              \end{pmatrix} 
             </mrow>
           </md>
         </p>
@@ -55,28 +55,28 @@
           that all the dot products are zero.
           <md>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 1 \\ -1 \\ 0 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 1 \\ 1 \\ 1
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 1 \\ -1 \\  0 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 -1 \\ -1 \\ 2 
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 1 \\ 1 \\ 1
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 -1 \\ -1 \\ 2
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
           </md>
           However, the columns are not unit vectors. The length of the
@@ -94,134 +94,146 @@
           to make these calculations easier.) 
           <md>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 1 \\ 1 \\ -6 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 3 \\ 3 \\ 1 
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 1 \\ 1 \\ -6 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 1 \\ -1 \\ 0 
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 3 \\ 3 \\ 1 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 1 \\ -1 \\ 0 
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
           </md>
           In addition, the column vectors all have length one. 
           <md>
             <mrow>
-              \left| \begin{matrix} 
-                \frac{1}{\
-                  sqrt{38}} \\ \frac{1}{\sqrt{38}} \\
-                \frac{-6}{\sqrt{38}}
-              \end{matrix} \right| \amp = 
-              \frac{1}{\sqrt{38}} \left| \begin{matrix} 
-                1 \\ 1 \\ -6 
-              \end{matrix} \right| = 
-              \frac{1}{\sqrt{38}} \sqrt{1^2 + 1^2 + (-6)^2} =
-              \frac{\sqrt{38}}{\sqrt{38}} = 1 
+              \begin{vmatrix} 
+                \dfrac{1}{\sqrt{38}} \\[0.5em]
+                \dfrac{1}{\sqrt{38}} \[0.5em]
+                \dfrac{-6}{\sqrt{38}}
+              \end{vmatrix} \amp = 
+              \dfrac{1}{\sqrt{38}} \begin{vmatrix} 
+                1 \\ 
+                1 \\ 
+                -6 
+              \end{vmatrix} = \dfrac{1}{\sqrt{38}} \sqrt{1^2 + 1^2 +
+              (-6)^2} = \dfrac{\sqrt{38}}{\sqrt{38}} = 1 
             </mrow>
             <mrow>
-              \left| \begin{matrix} 
-                \frac{3}{\sqrt{19}} \\ \frac{3}{\sqrt{19}} \\
-                \frac{1}{\sqrt{19}}
-              \end{matrix} \right| \amp = 
-              \frac{1}{\sqrt{19}} \left| \begin{matrix} 
-                3 \\ 3 \\ 1 
-              \end{matrix} \right| = 
-              \frac{1}{\sqrt{19}} \sqrt{3^2 + 3^2 + 1^2} =
-              \frac{\sqrt{19}}{\sqrt{19}} = 1 
+              \begin{vmatrix} 
+                \dfrac{3}{\sqrt{19}} \\[0.5em]
+                \dfrac{3}{\sqrt{19}} \[0.5em]
+                \dfrac{1}{\sqrt{19}}
+              \end{vmatrix} \amp = \dfrac{1}{\sqrt{19}}
+              \begin{vmatrix}
+                3 \\ 
+                3 \\ 
+                1 
+              \end{vmatrix} = \dfrac{1}{\sqrt{19}} \sqrt{3^2 + 3^2 +
+              1^2} = \dfrac{\sqrt{19}}{\sqrt{19}} = 1
             </mrow>
             <mrow>
-              \left| \begin{matrix} 
-                \frac{1}{\sqrt{2}} \\ \frac{-1}{\sqrt{2}} \\ 0 
-              \end{matrix} \right| \amp = 
-              \frac{1}{\sqrt{2}} \left| \begin{matrix} 
-                1 \\ -1 \\ 0
-              \end{matrix} \right| = 
-              \frac{1}{\sqrt{2}} \sqrt{1^2 + (-1)^2 + 0^2} =
-              \frac{\sqrt{2}}{\sqrt{2}} = 1 
+              \begin{vmatrix}
+                \dfrac{1}{\sqrt{2}} \\[0.5em]
+                \dfrac{-1}{\sqrt{2}} \\[0.5em]
+                0 
+              \end{vmatrix} \amp = 
+              \dfrac{1}{\sqrt{2}} \begin{vmatrix}
+                1 \\ 
+                -1 \\ 
+                0
+              \end{vmatrix} = \dfrac{1}{\sqrt{2}} \sqrt{1^2 + (-1)^2 +
+              0^2} = \dfrac{\sqrt{2}}{\sqrt{2}} = 1 
             </mrow>
           </md>
         </p>
         <p>
           In c), the columns are pairwise orthogonal; I can check
-          that all the dot products are zero. (Not that for these
+          that all the dot products are zero. (Note that for these
           checks, I can scale the vectors as I wish, since whether
           or not the dot product is zero doesn't depend on the
-          scaling. I've scale the columns to remove the square roots
+          scaling. I've scaled the columns to remove the square roots
           to make these calculations easier.) 
           <md>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 2 \\ -1 \\ 1 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 3 \\ 4 \\ -2 
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 2 \\ -1 \\ 1 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 -2 \\ 7 \\ 11 
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
             <mrow>  
-              \left( \begin{matrix}
+              \begin{pmatrix}
                 3 \\ 4 \\ -2 
-              \end{matrix} \right) \cdot 
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
                 -2 \\ 7 \\ 11
-              \end{matrix} \right) = 0 
+              \end{pmatrix} = 0 
             </mrow>
           </md>
           In addition, the column vectors all have length one. 
           <md>
             <mrow>
-              \left| \begin{matrix} 
-                \sqrt{2}{\sqrt{6}} \\ \frac{-1}{\sqrt{6}} \\ 
-                \frac{1}{\sqrt{6}}
-              \end{matrix} \right| \amp = 
-              \frac{1}{\sqrt{6}} \left| \begin{matrix} 
-                2 \\ -1 \\ 1 
-              \end{matrix} \right| = 
-              \frac{1}{\sqrt{6}} \sqrt{2^2 + (-1)^2 + 1^2} =
-              \frac{\sqrt{6}}{\sqrt{6}} = 1 
+              \begin{vmatrix} 
+                dfrac{\sqrt{2}}{\sqrt{6}} \\[0.5em]
+                \dfrac{-1}{\sqrt{6}} \\[0.5em]
+                \dfrac{1}{\sqrt{6}}
+              \end{vmatrix} \amp = 
+              \dfrac{1}{\sqrt{6}} \begin{vmatrix} 
+                2 \\ 
+                -1 \\ 
+                1 
+              \end{pmatrix} = \dfrac{1}{\sqrt{6}} \sqrt{2^2 + (-1)^2 +
+              1^2} = \dfrac{\sqrt{6}}{\sqrt{6}} = 1
             </mrow>
             <mrow>
-              \left| \begin{matrix} 
-                \frac{3}{\sqrt{29}} \\ \frac{4}{\sqrt{29}} \\
-                \frac{-2}{\sqrt{29}}
-              \end{matrix} \right| \amp = 
-              \frac{1}{\sqrt{29}} \left| \begin{matrix} 
-                3 \\ 4 \\ -2 
-              \end{matrix} \right| = 
-              \frac{1}{\sqrt{29}} \sqrt{3^2 + 4^2 + (-2)^2} =
-              \frac{\sqrt{29}}{\sqrt{29}} = 1 
+              \begin{vmatrix} 
+                \dfrac{3}{\sqrt{29}} \\[0.5em]
+                \dfrac{4}{\sqrt{29}} \\[0.5em]
+                \dfrac{-2}{\sqrt{29}}
+              \end{vmatrix} \amp = 
+              \dfrac{1}{\sqrt{29}} \begin{vmatrix} 
+                3 \\ 
+                4 \\ 
+                -2 
+              \end{vmatrix} = \dfrac{1}{\sqrt{29}} \sqrt{3^2 + 4^2 +
+              (-2)^2} = \dfrac{\sqrt{29}}{\sqrt{29}} = 1
             </mrow>
             <mrow>
-              \left| \begin{matrix} 
-                \frac{-2}{\sqrt{174}} \\ \frac{7}{sqrt{174}} \\
-                \frac{11}{\sqrt{174}} 
-              \end{matrix} \right| \amp = 
-              \frac{1}{\sqrt{174}} \left| \begin{matrix} 
-                -2 \\ 7 \\ 11 
-              \end{matrix} \right| = 
-              \frac{1}{\sqrt{174}} \sqrt{(-2)^2 + 7^2 + (11)^2} =
-              \frac{\sqrt{174}}{\sqrt{174}} = 1 
+              \begin{vmatrix} 
+                \dfrac{-2}{\sqrt{174}} \\[0.5em]
+                \dfrac{7}{sqrt{174}} \\[0.5em]
+                \dfrac{11}{\sqrt{174}} 
+              \end{vmatrix} \amp = 
+              \dfrac{1}{\sqrt{174}} \begin{vmatrix} 
+                -2 \\ 
+                7 \\ 
+                11 
+              \end{vmatrix} = \dfrac{1}{\sqrt{174}} \sqrt{(-2)^2 + 7^2
+              + (11)^2} = \dfrac{\sqrt{174}}{\sqrt{174}} = 1
             </mrow>
           </md>
         </p>
@@ -230,12 +242,12 @@
           to see that this fails with the first and third columns.
           <md>
             <mrow>  
-              \amp \left( \begin{matrix}
+              \amp \begin{pmatrix}
                 3 \\ -2 \\ -2 
-              \end{matrix} \right) \cdot
-              \left( \begin{matrix}
+              \end{pmatrix} \cdot
+              \begin{pmatrix}
                 -6 \\ -11 \\ 4 
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
             <mrow>
               \amp = (3)(-6) + (-2)(-11) + (-2)(-4) = -18 + 22 + 8 =
@@ -245,7 +257,7 @@
           Since the columns are not orthogonal, this cannot be an
           orthogonal matrix. (I could check that the columns are unit
           vectors, which indeed they are, but I don't need to since
-          we've already shown that this cannot match the criteria for
+          I've already shown that this cannot match the criteria for
           othogonality). 
         </p>
       </solution>
@@ -256,10 +268,10 @@
           For this incomplete matrix, add a final column which
           produces an orthogonal matrix.
           <me>
-            \left( \begin{matrix}
-              \frac{5}{\sqrt{41}} \amp \cdot \\
-              \frac{4}{\sqrt{41}} \amp \cdot \\
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{5}{\sqrt{41}} \amp \cdot \\[0.5em]
+              \dfrac{4}{\sqrt{41}} \amp \cdot \\
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -273,19 +285,20 @@
           making a guess based on my familiarity with vectors in
           <m>\RR^2</m>.)
           <me>
-            \left( \begin{matrix}
-              \frac{5}{\sqrt{41}} \amp \frac{-4}{\sqrt{41}} \\
-              \frac{4}{\sqrt{41}} \amp \frac{5}{\sqrt{41}}  \\
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{5}{\sqrt{41}} \amp \dfrac{-4}{\sqrt{41}}
+              \\[0.5em]
+              \dfrac{4}{\sqrt{41}} \amp \dfrac{5}{\sqrt{41}}  \\
+            \end{pmatrix} 
           </me>
           Note there are two possible answers; if I choose to make
           the other component negative, the following is another
           option. 
           <me>
-            \left( \begin{matrix}
-              \frac{5}{\sqrt{41}} \amp \frac{4}{\sqrt{41}} \\
-              \frac{4}{\sqrt{41}} \amp \frac{-5}{\sqrt{41}}  \\
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{5}{\sqrt{41}} \amp \dfrac{4}{\sqrt{41}} \\[0.5em]
+              \dfrac{4}{\sqrt{41}} \amp \dfrac{-5}{\sqrt{41}}  \\
+            \end{pmatrix} 
           </me>
           These are, however, the only two possible solutions. 
         </p>
@@ -297,13 +310,13 @@
           For this incomplete matrix, add a final column which
           produces an orthogonal matrix.
           <me>
-            \left( \begin{matrix}
-              \frac{1}{\sqrt{2}} \amp \frac{-3}{\sqrt{22}} \amp 
-                \cdot \\
-              \frac{1}{\sqrt{2}} \amp \frac{3}{\sqrt{22}} \amp 
-                \cdot \\
-              0 \amp \frac{-2}{\sqrt{22}} \amp \cdot 
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{1}{\sqrt{2}} \amp \dfrac{-3}{\sqrt{22}} \amp 
+                \cdot \\[0.5em]
+              \dfrac{1}{\sqrt{2}} \amp \dfrac{3}{\sqrt{22}} \amp 
+                \cdot \\[0.5em]
+              0 \amp \dfrac{-2}{\sqrt{22}} \amp \cdot 
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -319,42 +332,42 @@
           this third vector, since all I care about at this point is
           orthogonality. 
           <me>
-            \left( \begin{matrix}
+            \begin{pmatrix}
               1 \\ 1 \\ 0 
-            \end{matrix} \right) \times
-            \left( \begin{matrix}
+            \end{pmatrix} \times
+            \begin{pmatrix}
               -3 \\ 3 \\ -2 
-            \end{matrix} \right) = 
-            \left( \begin{matrix}
+            \end{pmatrix} = 
+            \begin{pmatrix}
               -2 \\ 2 \\ 6 
-            \end{matrix} \right) 
+            \end{pmatrix} 
           </me>
-          This produces a vector othogonal to both columns. Now we
+          This produces a vector othogonal to both columns. Now I
           want to scale it so that it is unit vector. The length of
           this vector is <m>\sqrt{(-2)^2 + 2^2 + 6^2} =
           \sqrt{44}</m>, so I divide by this to make a unit vector.
           That produces this orthogonal matrix. 
           <me>
-            \left( \begin{matrix}
-              \frac{1}{\sqrt{2}} \amp \frac{-3}{\sqrt{22}} \amp 
-                \frac{-2}{\sqrt{44}}  \\
-              \frac{1}{\sqrt{2}} \amp \frac{3}{\sqrt{22}} \amp 
-                \frac{2}{\sqrt{44}}  \\
-              0 \amp \frac{-2}{\sqrt{2}} \amp \frac{6}{\sqrt{44}}
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{1}{\sqrt{2}} \amp \dfrac{-3}{\sqrt{22}} \amp 
+                \dfrac{-2}{\sqrt{44}}  \\[0.5em]
+              \dfrac{1}{\sqrt{2}} \amp \dfrac{3}{\sqrt{22}} \amp 
+                \dfrac{2}{\sqrt{44}}  \\[0.5em]
+              0 \amp \dfrac{-2}{\sqrt{2}} \amp \dfrac{6}{\sqrt{44}}
+            \end{pmatrix} 
           </me>
           Note, again, that there are two possible answers. If I did
           the cross-product in the other order, I would get the same
           vector multiplied by <m>(-1)</m>. That produces this other
           answer. 
           <me>
-            \left( \begin{matrix}
-              \frac{1}{\sqrt{2}} \amp \frac{-3}{\sqrt{22}} \amp 
-                \frac{2}{\sqrt{44}}  \\
-              \frac{1}{\sqrt{2}} \amp \frac{3}{\sqrt{22}} \amp 
-                \frac{-2}{\sqrt{44}}  \\
-              0 \amp \frac{-2}{\sqrt{2}} \amp \frac{-6}{\sqrt{44}}
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{1}{\sqrt{2}} \amp \dfrac{-3}{\sqrt{22}} \amp 
+                \dfrac{2}{\sqrt{44}}  \\[0.5em]
+              \dfrac{1}{\sqrt{2}} \amp \dfrac{3}{\sqrt{22}} \amp 
+                \dfrac{-2}{\sqrt{44}}  \\[0.5em]
+              0 \amp \dfrac{-2}{\sqrt{2}} \amp \dfrac{-6}{\sqrt{44}}
+            \end{pmatrix} 
           </me>
           These are the only two solutions.
         </p>
@@ -366,14 +379,14 @@
           For this incomplete matrix, add a final column which
           produces an orthogonal matrix.
           <me>
-            \left( \begin{matrix}
-              \frac{1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
-                \cdot \\
-              0 \amp \frac{1}{\sqrt{2}} \amp 0 \amp \cdot \\
-              \frac{-1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
-                \cdot \\
-              0 \amp \frac{-1}{\sqrt{2}} \amp 0 \amp \cdot \\
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{1}{\sqrt{2}} \amp 0 \amp \dfrac{1}{\sqrt{2}} \amp
+                \cdot \\[0.5em]
+              0 \amp \dfrac{1}{\sqrt{2}} \amp 0 \amp \cdot \\
+              \dfrac{-1}{\sqrt{2}} \amp 0 \amp \dfrac{1}{\sqrt{2}} \amp
+                \cdot \\[0.5em]
+              0 \amp \dfrac{-1}{\sqrt{2}} \amp 0 \amp \cdot \\
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -392,16 +405,16 @@
           copying the second colum and setting one of the components
           to be negative. That gives the following answer. 
           <me>
-            \left( \begin{matrix}
-              \frac{1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
-                0  \\
-              0 \amp \frac{1}{\sqrt{2}} \amp 0 \amp 
-                \frac{1}{\sqrt{2}} \\
-              \frac{-1}{\sqrt{2}} \amp 0 \amp \frac{1}{\sqrt{2}} \amp
-                0 \\
-              0 \amp \frac{-1}{\sqrt{2}} \amp 0 \amp
-                \frac{1}{\sqrt{2}} \\
-            \end{matrix} \right) 
+            \begin{pmatrix}
+              \dfrac{1}{\sqrt{2}} \amp 0 \amp \dfrac{1}{\sqrt{2}} \amp
+                0  \\[0.5em]
+              0 \amp \dfrac{1}{\sqrt{2}} \amp 0 \amp 
+                \dfrac{1}{\s[0.5em]qrt{2}} \\
+              \dfrac{-1}{\sqrt{2}} \amp 0 \amp \dfrac{1}{\sqrt{2}} \amp
+                0 \\[0.5em]
+              0 \amp \dfrac{-1}{\sqrt{2}} \amp 0 \amp
+                \dfrac{1}{\sqrt{2}} \\
+            \end{pmatrix} 
           </me>
         </p>
       </solution>
@@ -682,7 +695,7 @@
           This is relatively easy to argue based on the concept and
           main definition.  Orthogonal matrices preserve lengths. If
           lengths do not change when I do a transformation forward,
-          then also can't change when I unto the transformation and
+          they also can't change when I unto the transformation and
           go backwards.  Undoing no change is still no change.
         </p>
       </solution>
