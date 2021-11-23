@@ -54,7 +54,7 @@
     </li>
     <li>
       <p>
-        Consider a propability model with four states. Here is a
+        Consider a probability model with four states. Here is a
         description of the transition probabilities. (8) 
       </p>
       <p><ul>
@@ -101,7 +101,7 @@
           Draw the probability graph. 
         </li>
         <li>
-          Write dowwn the appropriate probability matrix.
+          Write down the appropriate probability matrix.
         </li>
         <li>
           Determine the long term behaviour of the system and the long
