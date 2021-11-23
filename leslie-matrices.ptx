@@ -6,15 +6,15 @@
       One of the starting points of mathematical biology is the study
       of population growth. Though many of the most interesting
       systems involve multiple species with various interactions
-      (symbiotic, competition, predator-prey, etc.), the theory starts with
-      single-species dynamics. How does a species grow or decline when
-      considered by itself? For those who've taken calculus with me, I
-      used population growth as a major motivator for that course,
-      working with the differential equations that describe
+      (symbiotic, competition, predator-prey, etc.), the theory starts
+      with single-species dynamics. How does a species grow or decline
+      when considered by itself? For those who've taken calculus with
+      me, I used population growth as a major motivator for that
+      course, working with the differential equations that describe
       exponential and logistic growth. 
     </p>
     <p>
-      Sometimes we want to know more details about the population than
+      Sometimes I want to know more details about the population than
       simply the count of its members. One way of describing a
       population is by age categories; this is called an
       age-structured population. This is pretty common in human
@@ -24,11 +24,11 @@
       animal populations since there are often important age-defined
       subsets that control the growth or decline of a population. In
       conservation biology, resources can be much more carefully used
-      if we know we need to focus on a specific age category in a
+      if a model can focus on a specific age category in a
       population.
     </p>
     <p>
-      In the simplest single-species models, I simply have a birth
+      In the simplest single-species models, there is a birth
       and death rate. For an age-structured population, the situation
       is more complicated. Instead of just asking for the death rate, I
       now need to know the survival rate from each age category to the
@@ -123,12 +123,12 @@
       <statement>
         <p>
           <me>
-            \left( \begin{matrix}
+            \begin{pmatrix}
               0 \amp 0 \amp 0.7 \amp 0.6 \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.6 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.7 \amp 0 \\
-            \end{matrix} \right) 
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -139,9 +139,9 @@
           <md>
             <mrow>
               \amp \lambda = 0.83 
-              \amp \amp v = \left( \begin{matrix}
+              \amp \amp v = \begin{pmatrix}
                 1.72 \\ 1.65 \\ 1.19 \\ 1
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
           </md>
           The popluation is not viable, since the dominant eigenvalue
@@ -155,15 +155,15 @@
       <statement>
         <p>
           This example has only changed one fecundity coefficient and
-          one survival coefficient from the previous example. What is the
-          effect?
+          one survival coefficient from the previous example. What is
+          the effect?
           <me>
-            \left( \begin{matrix}
+            \begin{pmatrix}
               0 \amp 0 \amp 1.1 \amp 0.6 \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.7 \amp 0
-            \end{matrix} \right) 
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -174,9 +174,9 @@
           <md>
             <mrow>
               \amp \lambda = 1.03
-              \amp \amp v = \left( \begin{matrix}
+              \amp \amp v = \begin{pmatrix}
                 2.15 \\ 1.68 \\ 1.49 \\ 1
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
           </md>
           The population is viable; since the dominant eigenvalue is
@@ -194,12 +194,12 @@
       <statement>
         <p>
           <me>
-            \left( \begin{matrix}
+            \begin{pmatrix}
               0 \amp 0 \amp 2 \amp 1 \\
               0.4 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
-            \end{matrix} \right) 
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -210,9 +210,9 @@
           <md>
             <mrow>
               \amp \lambda = 1.01
-              \amp \amp v = \left( \begin{matrix}
+              \amp \amp v = \begin{pmatrix}
                 3.21 \\ 1.27 \\ 1.16 \\ 1 
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
           </md>
           This is a viable population; since the dominant eigenvalue
@@ -227,12 +227,12 @@
       <statement>
         <p>
           <me>
-            \left( \begin{matrix}
+            \begin{pmatrix}
               0 \amp 0 \amp 150 \amp 50 \\
               0.03 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
-            \end{matrix} \right) 
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -243,9 +243,9 @@
           <md>
             <mrow>
               \amp \lambda = 1.63
-              \amp \amp v = \left( \begin{matrix}
+              \amp \amp v = \begin{pmatrix}
                 196.37 \\ 3.50 \\ 1.87 \\ 1
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
           </md>
           The population is viable, since the dominant eigenvalue is
@@ -264,12 +264,12 @@
           This question has reduced the fecundity compared with the
           previous example. 
           <me>
-            \left( \begin{matrix}
+            \begin{pmatrix}
               0 \amp 0 \amp 50 \amp 30 \\
               0.03 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
-            \end{matrix} \right) 
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -280,9 +280,9 @@
           <md>
             <mrow>
               \amp \lambda = 1.25 
-              \amp \amp v = \left( \begin{matrix}
+              \amp \amp v = \begin{pmatrix}
                 79.63 \\ 1.92 \\ 1.38 \\ 1
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
           </md>
           The population is viable, since the dominant eigenvalue is
@@ -299,12 +299,12 @@
           This example has reduced the first survival coefficient
           compared to the previous example. What is the effect?
           <me>
-            \left( \begin{matrix}
+            \begin{pmatrix}
               0 \amp 0 \amp 50 \amp 30 \\
               0.01 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
-            \end{matrix} \right) 
+            \end{pmatrix} 
           </me>
         </p>
       </statement>
@@ -315,9 +315,9 @@
           <md>
             <mrow>
               \amp \lambda = 0.90
-              \amp \amp v = \left( \begin{matrix}
+              \amp \amp v = \begin{pmatrix}
                 89.01 \\ 0.99 \\ 1.00 \\ 1
-              \end{matrix} \right) 
+              \end{pmatrix} 
             </mrow>
           </md>
           The population is not viable, since the dominant eigenvalue

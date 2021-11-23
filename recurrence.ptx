@@ -1,10 +1,14 @@
+<!--
+  This section was excluded in Fall 2021, but should be put back in at
+  some point.
+-->
 <section xml:id="section-recurrence">
   <title>Linear Recurrence Relations</title>
   <subsection xml:id="subsection-recurrence-definition">
     <title>Definition of Recurrence Relations</title>
     <p>
-    The first use of iterated processes is understanding linear
-      recurrence relations.
+    An important use of iterated processes (such as those in dynamical
+    systems) is understanding linear recurrence relations.
     </p>
     <definition>
       <statement>
@@ -19,7 +23,7 @@
       </statement>
     </definition>
     <p>
-      If we write <m>a_n = c_1a_{n-1} + c_2 a_{n-2} + \ldots + c_k
+      If I write <m>a_n = c_1a_{n-1} + c_2 a_{n-2} + \ldots + c_k
       a_{n-k}</m>, then we can re-interpret this as a matrix and a
       dynamical system. We do this by writing a <m>k</m>-vector with
       entries <m>a_{n+k}, \ldots, a_{n+1}</m>. Then the recurrence

@@ -5,105 +5,109 @@
   <title>Week 11 Assignment</title>
   <p><ol>
     <li>
+      <p>
+        Consider the following Leslie matrices as a growth model for a
+        population with four age categories. (10)
+        <md>
+          <mrow>
+            \amp \begin{pmatrix}
+              0 \amp 0.8 \amp 0.6 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.8 \amp 0 
+            \end{pmatrix}
+            \amp \amp \begin{pmatrix}
+              0 \amp 0.6 \amp 0.4 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.8 \amp 0 
+            \end{pmatrix}
+          </mrow>
+          <mrow>
+            \amp \begin{pmatrix}
+              0 \amp 0.8 \amp 0.6 \amp 0.4 \\
+              0.2 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.8 \amp 0 
+            \end{pmatrix}
+            \amp \amp \begin{pmatrix}
+              0 \amp 5 \amp 3 \amp 1 \\
+              0.2 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.2 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.2 \amp 0 
+            \end{pmatrix}
+          </mrow>
+        </md>
+      </p>
+      <p><ol>
+        <li>
+          Determine the long term behaviour for each of the four
+          Leslie matrices. State the long term age profiles. 
+        </li>
+        <li>
+          The three later matrices can be interpreted as changes to
+          the first matrix. What is the result of those changes? How
+          do the structure and viability of the population change
+          going from one matrix to the next? 
+        </li>
+      </ol></p>
+    </li>
+    <li>
+      <p>
+        Consider a propability model with four states. Here is a
+        description of the transition probabilities. (8) 
+      </p>
+      <p><ul>
+        <li>
+          There is a <m>0.4</m> probability of transition from state 1 to
+          state 2. 
+        </li>
+        <li>
+          There is a <m>0.2</m> probability of transition from state 1 to
+          state 3. 
+        </li>
+        <li>
+          There is a <m>0.4</m> probability of transition from state 1 to
+          state 4. 
+        </li>
+        <li>
+          There is a <m>1</m> probability of transition from state 2 to
+          state 3. 
+        </li>
+        <li>
+          There is a <m>0.2</m> probability of transition from state 3 to
+          state 2. 
+        </li>
+        <li>
+          There is a <m>0.8</m>  probability of transition from state 3 to
+          state 4. 
+        </li>
+        <li>
+          There is a <m>0.4</m> probability of transition from state 4 to
+          state 1. 
+        </li>
+        <li>
+          There is a <m>0.6</m>  probability of transition from state 4 to
+          state 2. 
+        </li>
+        <li>
+          All other probabilities are zero. (This includes the fact
+          that there is zero probability of staying in any of the four
+          states.)  
+        </li>
+      </ul></p>
+      <p><ol>
+        <li>
+          Draw the probability graph. 
+        </li>
+        <li>
+          Write dowwn the appropriate probability matrix.
+        </li>
+        <li>
+          Determine the long term behaviour of the system and the long
+          term probability of ending up in each state. 
+        </li>
+      </ol></p>
     </li>
   </ol></p>
 </section>
-
-<!-- Previous Assignment
-<section xml:id="section-assignment-week11">
-  <title>Week 11 Assignment</title>
-  <p><ol>
-    <li>
-      <p>
-        Consider the following Leslie matrix as a growth model for a
-        population with four age categories. (9)
-        <me>
-          \begin{pmatrix}
-            0 \amp 0.5 \amp 0.9 \amp 0.9 \\
-            0.7 \amp 0 \amp 0 \amp 0 \\
-            0 \amp 0.5 \amp 0 \amp 0 \\
-            0 \amp 0 \amp 0.7 \amp 0 
-          \end{pmatrix}
-        </me>
-      </p>
-      <ol>
-        <li><p>
-          Does the species survive in the long run?
-        </p></li>
-        <li><p>
-          What is the eventual age profile?
-        </p></li>
-        <li><p>
-          If we change only the survival from the first to the second
-          age category, how much do we need to change this coefficient
-          so that the population become viable? (Adjusting the
-          coefficient by tenths is fine since you may need guess and
-          test the resulting eigenvalue.) 
-        </p></li>
-        <li><p>
-          How does survival change if we are allowed to change both
-          survival from the first to the second age category and the
-          fecundity of the second age category?
-        </p></li>
-      </ol>
-    </li>
-    <li>
-      <p>
-        Consider the following Leslie matrix as a growth model for a
-        population with six age categories. (6)
-        <me>
-          \begin{pmatrix}
-            0 \amp 0 \amp 40 \amp 90 \amp 70 \amp 0 \\
-            0.17 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\ 
-            0 \amp a \amp 0 \amp 0 \amp 0 \amp 0 \\ 
-            0 \amp 0 \amp 0.45 \amp 0 \amp 0 \amp 0 \\ 
-            0 \amp 0 \amp 0 \amp 0.67 \amp 0 \amp 0 \\ 
-            0 \amp 0 \amp 0 \amp 0 \amp b \amp 0 \\ 
-          \end{pmatrix}
-        </me>
-        Assume this is a model for an invasive species, so the goal is
-        exponential decay. By affecting the environment, you are able
-        to change the coefficients <m>a</m> and <m>b</m>. To the
-        nearest hundredth, how small do you need to set <m>a</m> to
-        make the population start to decay? If you try adjusting
-        <m>b</m>, you will find that it doesn't actually affect the
-        viability of the population at all. Why doesn't <m>b</m>
-        matter for viability? 
-      </p>
-    </li>
-    <li>
-      <figure xml:id="figure-assignment-markov">
-        <caption>Question 3 Probability Graph</caption>
-        <image xml:id="figure31" width="80%">
-          <asymptote>
-          </asymptote>
-        </image>
-      </figure>
-      <p>
-        <xref ref="figure-assignment-markov" /> shows a probability
-        graph with four transition probabilities <m>C_1</m>,
-        <m>C_2</m>, <m>C_3</m> and <m>C_4</m> undetermined. (9)
-      </p>
-      <ol>
-        <li><p>
-          Determine values for each of <m>C_1</m>, <m>C_2</m>,
-          <m>C_3</m> and <m>C_4</m> to make this a valid probability
-          graph.
-        </p></li>
-        <li><p>
-          Write the matrix that describes the stochastic system.
-        </p></li>
-        <li><p>
-          Determine the long term probabilities of ending up in each
-          vertex. 
-        </p></li>
-        <li><p>
-          How would you change only three coefficients to make it so
-          that the long term behaviour is to eventually end at vertex
-          <m>5</m> with probability <m>1</m>? 
-        </p></li>
-      </ol>
-    </li>
-  </ol></p>
-</section>
--->

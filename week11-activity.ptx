@@ -716,6 +716,9 @@
       </solution>
     </activity>
   </subsection>
+  <!--
+    This section was excluded in Fall 2021, but should be reincluded
+    eventually.
   <subsection xml:id="subsection-activity-linear-recurrence">
     <title>Linear Recurrence Relations</title>
     <activity>
@@ -749,6 +752,7 @@
       </solution>
     </activity>
   </subsection>
+  -->
   <subsection xml:id="subsection-week11-concepts">
     <title>Conceptual Review Questions</title>
     <p>
@@ -774,10 +778,12 @@
         <li>
           What is a Markov chain and how does it model probability?
         </li>
+        <!--
         <li>
           What is a recurrence relation and how it is translated into
           a matrix?
         </li>
+        -->
       </ul>
     </p>
   </subsection>

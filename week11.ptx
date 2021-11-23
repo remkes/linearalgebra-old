@@ -4,6 +4,8 @@
   <xi:include href="dynamical-systems.ptx" />
   <xi:include href="leslie-matrices.ptx" />
   <xi:include href="stochastic-matrices.ptx" />
+  <!--
   <xi:include href="recurrence.ptx" />
+  -->
   <xi:include href="week11-activity.ptx" />
 </chapter>
