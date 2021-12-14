@@ -138,13 +138,14 @@
           Consider a reflection in <m>\RR^2</m>. A vector along the
           line of reflection is unchanged, so it would be an
           eigenvector with eigenvalue one. A vector perpendicular to
-          the line of reflection is fliped exactly, so it would be an
+          the line of reflection is flipped exactly, so it would be an
           eigenvector with eigenvalue <m>-1</m>. In <m>\RR^3</m>, 
-          reflect over a plane through the origin. Any vector in the
-          plane of reflection is unchanged so that vector is an
-          eigenvector with eigenvalue one. Any vector perpendicular
-          to the plane of reflection is precisely flipped, so that
-          vector is an eigenvector with eigenvalue <m>-1</m>.
+          reflection happens over a plane through the origin. Any
+          vector in the plane of reflection is unchanged so that
+          vector is an eigenvector with eigenvalue one. Any vector
+          perpendicular to the plane of reflection is precisely
+          flipped, so that vector is an eigenvector with eigenvalue
+          <m>-1</m>.
         </p>
       </statement>
     </example>
@@ -163,7 +164,7 @@
     </example>
   </subsection>
   <subsection xml:id="subsection-eigenvectors-calculation">
-    <title>Calculation of Eigenvalue and Eigenvectors</title>
+    <title>Calculation of Eigenvalues and Eigenvectors</title>
     <p>
       I would like to demonstrate an algorithm for finding eigenvectors and
       eigenvalues. Remember the definition: <m>v</m> is an
@@ -204,7 +205,7 @@
       </statement>
     </definition>
     <p>
-      I need an important definition of the roots of polynomials.
+      I need an important definition concerning the roots of polynomials.
       Recall that <m>\alpha</m> is a root of a polynomial
       <m>p(\lambda)</m> if and only if <m>(\lambda - \alpha)</m> is a
       factor of the polynomial. However, it may be true that
@@ -277,7 +278,7 @@
       Not all matrices have the maximum number of
       eigenvalues or eigenvectors. However, there is a special class of
       matrices that always achieves this maximum number. I defined the
-      transpose of a matrix in the chapter on orthogonal matrices. The
+      transpose of a matrix in <xref ref="section-matrices" />. The
       transpose leads to a new definition in this chapter.
     </p>
     <definition>

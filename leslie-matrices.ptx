@@ -39,7 +39,7 @@
       know the birth rate due to each age category. These are called
       fecundity rates. There may be fewer of these (or, rather, some
       might be set to zero) since only certain age categories may be
-      fertile, But again, in theory, I have up to <m>(n-1)</m> new
+      fertile, But again, in theory, I have up to <m>n</m> new
       rates.
     </p>
     <p>
@@ -50,7 +50,7 @@
   <subsection xml:id="subsection-leslie-definition">
     <title>Leslie Matrices</title>
     <p>
-      Leslie matrices are a dynamical system that models
+      A Leslie matrices is a dynamical system that models
       an age-structured population. To demonstrate, I'll
       assume there are four age categories. The state vector
       <m>v_k</m> is the current population in each age category: so
@@ -182,7 +182,7 @@
           The population is viable; since the dominant eigenvalue is
           larger than one, the population will grow. The age ratios
           will approach <m>2.15: 1.68:1.49:1</m>. Compared with the
-          previous example, two coefficients have been changes: the
+          previous example, two coefficients have been changed: the
           fecundity coefficient of the 3rd age category and the
           survival coefficient from the 2nd to the 3rd age category.
           These were both increased sufficiently to change the non-viable
@@ -316,13 +316,13 @@
             <mrow>
               \amp \lambda = 0.90
               \amp \amp v = \begin{pmatrix}
-                89.01 \\ 0.99 \\ 1.00 \\ 1
+                89.012 \\ 0.993 \\ 0.996 \\ 1
               \end{pmatrix} 
             </mrow>
           </md>
           The population is not viable, since the dominant eigenvalue
           is less than 1. The age ratios will approach
-          <m>89.01:0.99:1:1</m>. Compared to the previous example,
+          <m>89.012:0.993:0.993:1</m>. Compared to the previous example,
           the viable population has now become non-variable. The only
           coefficient that has changed is the survival coefficient
           from the 1st to the 2nd age category. Previously, 3% of the

@@ -23,10 +23,10 @@
       of states in <m>\RR^n</m>.
     </p>
     <p>
-      How does the modelmove from one state to the next?  If the process is
+      How does the model move from one state to the next?  If the process is
       linear, its progression can be described by a matrix
       action. That is, there exists a matrix <m>A</m> such that
-      <m>v_k = A v_{k+1}</m> for all <m>k \in \NN</m>. 
+      <m>v_{k+1} = A v_k</m> for all <m>k \in \NN</m>. 
     </p>
     <definition>
       <statement>
@@ -88,7 +88,7 @@
         </li>
         <li>
           <p>
-            If <m>|\lambda| \lt 1</m>, then the sequence of states
+            If <m>0 \lt |\lambda| \lt 1</m>, then the sequence of states
             displays exponential decay.  The long term behaviour of
             <m>A^k v</m> is an exponential decay of the original
             vector.
@@ -110,7 +110,7 @@
         </li>
         <li>
           <p>
-            If <m>\lambda > 1</m>, then the states diplay exponential
+            If <m>\lambda > 1</m>, then the states display exponential
             growth.  The long term behaviour of <m>A^k v</m> is
             exponential growth of the original vector.
           </p>
@@ -126,13 +126,14 @@
       </ul>
     </p>
     <p>
-      I could ask what happens for complex eigenvalues, since those
-      will naturally also occur. Since the characteristic polynomial
-      will have real coefficients, these complex eigenvalues will come
-      in conjugate pairs. As you might learn in other courses, such
-      pairs and the exponential behaviour (<m>\lambda^n</m>) give rise
-      to sinusoidal behaviour after clever linear combinations. The
-      reasons for this will have to wait for another course.
+      As an aside, I could ask what happens for complex eigenvalues,
+      since those will naturally also occur. Since the characteristic
+      polynomial will have real coefficients, these complex
+      eigenvalues will come in conjugate pairs. As you might learn in
+      other courses, such pairs and the exponential behaviour
+      (<m>\lambda^n</m>) give rise to sinusoidal behaviour after
+      clever linear combinations. The reasons for this will have to
+      wait for another course.
     </p>
     <p>
       This is all well for eigenvectors, but what if the starting
@@ -144,7 +145,7 @@
       where each eigenvector <m>v_i</m> has eigenvalue
       <m>\lambda_i</m>. Then, the long term behaviour of the system
       with the starting state <m>v</m> is indeed given by the
-      eigenvalue.
+      eigenvalues.
       <me>
         A^k v = A^k (a_1 v_1 + a_2 v_2 + \ldots + a_n v_n) = \lambda_1^k
         a_1 v_1 + \lambda_2^k a_2 v_2 + \ldots + \lambda_n^k a_n v_n 
@@ -167,12 +168,12 @@
     <p>
       In many models, the coefficients of the matrix will be
       probabilities, transition terms, growth rates or other
-      <em>positive</em> real numbers. <m>A</m> will very often be a
-      matrix with all non-negative entries. There is a powerful theorem
-      that tells us what to expect for the eigenvalues/eigenvectors of
-      such a matrix: the Perron-Frobenius theorem. There are some
-      technical details in the assumptions for the theorem; I'll state
-      a weak version first.
+      <em>positive</em> real numbers. The matrix <m>A</m> will very
+      often be a matrix with all non-negative entries. There is a
+      powerful theorem that tells us what to expect for the
+      eigenvalues/eigenvectors of such a matrix: the Perron-Frobenius
+      theorem. There are some technical details in the assumptions for
+      the theorem; I'll state a weak version first.
     </p>
     <theorem>
       <statement>
@@ -208,7 +209,7 @@
       <statement>
         <p>
           Let <m>A</m> be an <m>n \times n</m> irreducible matrix with
-          non-negative coefficients. There is a <em>unique</em>
+          non-negative coefficients. Then there is a <em>unique</em>
           largest <em>positive</em> eigenvalue <m>\lambda_1</m> with a
           1-dimensional eigenspace and an eigenvector that has all
           <em>positive</em> entries. All other eigenvalues

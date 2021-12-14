@@ -19,7 +19,7 @@
       <solution>
         <p>
           I follow the algorithm for eigenvalue and eigenvectors. The
-          first step is writing the matrix <m>M - \lambda \Id</m>. 
+          first step is writing the matrix <m>A - \lambda \Id</m>. 
           <me>
             \left( \begin{matrix}
               -2 - \lambda \amp 0 \amp 1 \\
@@ -77,7 +77,7 @@
           </me>
           The quadratic piece does not factor into integer roots. The
           quadratic formula gives the other roots as <m>\lambda = -1
-          \pm \sqrt{3}</m>. Now I calculate the kernel of each <m>M -
+          \pm \sqrt{3}</m>. Now I calculate the kernel of each <m>A -
           \lambda Id</m> to find the matching eigenvectors. I'll
           start with <m>\lambda = -2</m>.
           <md>
@@ -89,7 +89,7 @@
               \end{array} \right)   
             </mrow>
           </md>
-            I row reduce to find the kernel.
+          I row reduce to find the kernel.
           <md>
             <mrow>
               \amp \left( \begin{array}{ccc|c}
@@ -98,6 +98,17 @@
                 0 \amp 0 \amp 0 \amp 0
               \end{array} \right)   
             </mrow>
+          </md>
+          To show the kernel, I need to express the solution indicated
+          by this matrix in terms of parameters. <m>y</m> is free and
+          I can interpret the row of the matrix as expressions for
+          <m>x</m> and <m>z</m> in terms of <m>y</m>. (Though, in this
+          matrix, the second line simply indicatres that <m>z =
+          0</m>.) By choosing a specific value of <m>y</m>, I can get
+          specific values of <m>x</m>, and thus a specific
+          eigenvector. I choose <m>y = -1</m> for this particular
+          system.
+          <md>
             <mrow>
               \amp \Ker \left( \begin{matrix}
                 0 \amp 0 \amp 1 \\
@@ -128,6 +139,16 @@
                 0 \amp 0 \amp 0 \amp 0  
               \end{array} \right)   
             </mrow>
+          </md>
+          To show the kernel, I need to express the solution indicated
+          by this matrix in terms of parameters. <m>z</m> is free and
+          I can interpret the row of the matrix as expressions for
+          <m>x</m> and <m>y</m> in terms of <m>z</m>. By choosing a
+          specific value of <m>z</m>, I can get specific values of
+          <m>x</m> and <m>y</m>, and thus a specific eigenvector. I
+          choose <m>z = 1 + \sqrt{3}</m> for this particular system,
+          to clear the denominator. 
+          <md>
             <mrow>
               \amp \Ker \left( \begin{matrix}
                 -1 - \sqrt{3} \amp 0 \amp 1 \\
@@ -158,6 +179,16 @@
                 0 \amp 0 \amp 0 \amp 0 
               \end{array} \right)   
             </mrow>
+          </md>
+          To show the kernel, I need to express the solution indicated
+          by this matrix in terms of parameters. <m>z</m> is free and
+          I can interpret the row of the matrix as expressions for
+          <m>x</m> and <m>y</m> in terms of <m>z</m>. By choosing a
+          specific value of <m>z</m>, I can get specific values of
+          <m>x</m> and <m>y</m>, and thus a specific eigenvector. I
+          choose <m>z = -1 - \sqrt{3}</m> for this particular system,
+          to clear the denominator. 
+          <md>
             <mrow>
               \amp \Ker \left( \begin{matrix}
                 -1 + \sqrt{3} \amp 0 \amp 1 \\
@@ -168,7 +199,8 @@
               \end{matrix} \right) \right\}
             </mrow>
           </md>
-          This gives me an eigenvector for <m>\lambda = -1 - \sqrt{3}</m>. 
+          The spanning vector is an eigenvector for  <m>\lambda = -1 -
+          \sqrt{3}</m>. 
         </p>
       </solution>
     </activity>
@@ -190,7 +222,7 @@
       <solution>
         <p>
           I follow the algorithm for eigenvalue and eigenvectors. The
-          first step is writing the matrix <m>M - \lambda \Id</m>. 
+          first step is writing the matrix <m>A - \lambda \Id</m>. 
           <me>
             \left( \begin{matrix}
               -\lambda \amp -6 \amp 0 \amp 6 \\
@@ -213,7 +245,7 @@
           </me>
           This already in factored form, so I see that the eigenvalue
           are <m>\lambda = 0</m>, <m>\lambda = 2</m> and <m>\lambda =
-          -2</m>. For each eigenvalue, I calculate the kernel of <m>M -
+          -2</m>. For each eigenvalue, I calculate the kernel of <m>A -
           \lambda \Id</m> to find the eigenvalues. I'll start
           with <m>\lambda = 0</m>.
           <md>
@@ -236,6 +268,13 @@
                 0 \amp 0 \amp 0 \amp 0 \amp 0 
               \end{array} \right)   
             </mrow>
+          </md>
+          To show the kernel, I need to express the solution indicated
+          by this matrix in terms of parameters. In this matrix,
+          <m>w</m> is free, but all other coordinates are zero. 
+          I choose <m>w = 1</m> for this particular system to get a
+          unique eigenvector. 
+          <md>
             <mrow>
               \amp \Ker \left( \begin{matrix}
                 0 \amp -6 \amp 0 \amp 6 \\
@@ -269,6 +308,13 @@
                 0 \amp 0 \amp 0 \amp 0 \amp 0 
               \end{array} \right)   
             </mrow>
+          </md>
+          To show the kernel, I need to express the solution indicated
+          by this matrix in terms of parameters. In this matrix,
+          <m>y</m> is free and all the other variables are zero. 
+          I choose <m>y = 1 </m> for this particular system to get a
+          unique eigenvector. 
+          <md>
             <mrow>
               \amp \Ker \left( \begin{matrix}
                 -2 \amp -6 \amp 0 \amp 6 \\
@@ -302,6 +348,15 @@
                 0 \amp 0 \amp 0 \amp 0 \amp 0 
               \end{array} \right)   
             </mrow>
+          </md>
+          To show the kernel, I need to express the solution indicated
+          by this matrix in terms of parameters. <m>x</m> is free and
+          I can interpret the row of the matrix as expressions for the
+          other variables in terms of <m>x</m>. However, two of the
+          lines simply indicate that <m>y</m> and <m>z</m> are zero,
+          so only <m>w</m> depends on <m>x</m>
+          I choose <m>x = 1 </m> for this particular system.
+          <md>
             <mrow>
               \amp \Ker \left( \begin{matrix}
                 2 \amp -6 \amp 0 \amp 6 \\
@@ -309,11 +364,12 @@
                 0 \amp 0 \amp 4 \amp 2 \\
                 0 \amp 0 \amp 0 \amp 4 
               \end{matrix} \right) = \Span \left\{ \left( \begin{matrix}
-                -3 \\ 1 \\ 0 \\ 0 
+                3 \\ 1 \\ 0 \\ 0 
               \end{matrix} \right) \right\}
             </mrow>
           </md>
-          This gives me an eigenvector for <m>\lambda = -2</m>. 
+          The spanning vector is an eigenvector for  <m>\lambda =
+          -2</m>. 
         </p>
       </solution>
     </activity>
@@ -335,7 +391,7 @@
       </statement>
       <solution>
         <p>
-          I ask a computer for the determinant of <m>M - \lambda
+          I ask a computer for the determinant of <m>A - \lambda
           Id</m>.
           <md>
             <mrow>
@@ -353,7 +409,7 @@
           </md>
           I ask a computer for the roots of this polynomial. There
           are two real roots: <m>\lambda = 1.622</m> and <m>\lambda =
-          -0.049</m>. I calculate the kernel of <m>M - \lambda
+          -0.049</m>. I calculate the kernel of <m>A - \lambda
           \Id</m> for both eigenvalues. I start with <m>\lambda =
           1.622</m>
           <md>  
@@ -371,8 +427,8 @@
               \end{matrix} \right) \right\} 
             </mrow>
           </md>
-          This gives me an eigenvalue for <m>\lambda = 1.622</m>. Then
-          I do the same for <m>\lambda = -0.049</m>. 
+          The spanning vector is an eigenvector for  <m>\lambda =
+          1.622</m>. Then I do the same for <m>\lambda = -0.049</m>. 
           <md>  
             <mrow>
               \amp \Ker \left( \begin{matrix}
@@ -410,7 +466,7 @@
       </statement>
       <solution>
         <p>
-          I ask a computer for the determinant of <m>M - \lambda
+          I ask a computer for the determinant of <m>A - \lambda
           Id</m>.
           <md>
             <mrow>
@@ -428,7 +484,7 @@
           </md>
           I ask a computer for the roots of this polynomial. There
           are two real roots: <m>\lambda = 12.47</m> and <m>\lambda =
-          2.26</m>. I calculate the kernel of <m>M - \lambda
+          2.26</m>. I calculate the kernel of <m>A - \lambda
           \Id</m> for both eigenvalues. I start with <m>\lambda =
           12.47</m>
           <md>  
@@ -446,8 +502,8 @@
               \end{matrix} \right) \right\} 
             </mrow>
           </md>
-          This gives me an eigenvalue for <m>\lambda = 12.47</m>. Then
-          I do the same for <m>\lambda = 2.26</m>. 
+          The spanning vector is an eigenvector for  <m>\lambda =
+          12.47</m>. Then I do the same for <m>\lambda = 2.26</m>. 
           <md>  
             <mrow>
               \amp \Ker \left( \begin{matrix}
@@ -473,9 +529,9 @@
     <activity>
       <statement>
         <p>
-          Prove that a square matrix <m>M</m> is invertible if and
+          Prove that a square matrix <m>A</m> is invertible if and
           only if <m>\lambda = 0</m> is <emph>not</emph> an eigenvalue
-          of <m>M</m>.
+          of <m>A</m>.
         </p>
       </statement>
       <solution>
@@ -508,9 +564,9 @@
     <activity>
       <statement>
         <p>
-          Let <m>M</m> be an invertible matrix. Prove that
-          <m>\lambda</m> is an eigenvalue of <m>M</m> if and only if
-          <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>M^{-1}</m>.
+          Let <m>A</m> be an invertible matrix. Prove that
+          <m>\lambda</m> is an eigenvalue of <m>A</m> if and only if
+          <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>A^{-1}</m>.
         </p>
       </statement>
       <solution>
@@ -519,23 +575,23 @@
           forward implication. I assume that <m>\lambda</m> is an
           eigenvalue, so there exists a vector <m>v</m> with 
           <me>
-            Mv = \lambda v
+            Av = \lambda v
           </me>
-          Now I apply <m>M^{-1}</m> to the equation.
+          Now I apply <m>A^{-1}</m> to the equation.
           <me>
-            M^{-1}Mv = M^{-1} \lambda v
+            A^{-1}Av = A^{-1} \lambda v
           </me>
           On the left, the matrices cancel, and I just have <m>v</m>.
           on the first I can use linearity.
           <me>
-            v = \lambda M^{-1} v
+            v = \lambda A^{-1} v
           </me>
           Then I can divide by <m>\lambda</m>.
           <me>
-            \frac{1}{\lambda} v = M^{-1} v
+            \frac{1}{\lambda} v = A^{-1} v
           </me>
           This is the definition of an eigenvalue, so
-          <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>M^{-1}</m>
+          <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>A^{-1}</m>
         </p>
         <p>
           For the reverse implication. I can just reverse the steps.
@@ -546,8 +602,8 @@
     <activity>
       <statement>
         <p>
-          Let <m>M</m> be a <m>3 \times 3</m> matrix. Prove that
-          <m>M</m> has at least one real eigenvalue. 
+          Let <m>A</m> be a <m>3 \times 3</m> matrix. Prove that
+          <m>A</m> has at least one real eigenvalue. 
         </p>
       </statement>
       <solution>
