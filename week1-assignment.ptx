@@ -1,39 +1,38 @@
 <!--
-  This assignment was used for the Fall 2021 term.
+  This assignment was used for the Fall 2022 term.
 -->
 <section xml:id="section-assignment-week1">
   <title>Week 1 Assignment</title>
   <p><ol>
     <li>
       <p>
-        A <m>n</m>-cross polytope contains lower dimensional
-        cross-polytopes as facets, the same way that the cube contains
-        the lower dimensional square as faces. One way to identify
-        these facets is through vertex diagrams. Draw three copies of
-        the vertex diagram for the <m>5</m>-cross polytope. In each
-        copy, using a highlighter or thicker pen, identify an
-        octahedron by finding a copy of the octahedron vertex diagram
-        in the larger vertex diagram. (Obviously, find three different
-        octahedra <mdash /> don't just repeat the same drawing). Even
-        though you can't see the six dimensional object, this is still
-        a consistent and valid way to find a three-dimensional object
-        that forms part of the <sq>edge</sq> of the six dimensional
-        object. (6) 
+        Consider three vectors in <m>\RR^2</m>. 
+        <md>
+          <mrow>
+            \amp \begin{pmatrix} 2 \\ -1 \\ 3  \end{pmatrix} 
+            \amp \amp \begin{pmatrix} 2 \\ -3 \\ -4 \end{pmatrix} 
+            \amp \amp \begin{pmatrix} 2 \\ 6 \\ 1  \end{pmatrix}
+          </mrow>
+        </md>
+        Check that the addition of all three vectors is independent of
+        any re-ordering. Draw all six vectors additions on the same
+        graph. How many paths are there from <m>\begin{pmatrix} 2 \\ 0
+        \\ 0 \end{pmatrix}</m> to the final sum through each vertex? (6)  
       </p>
     </li>
     <li>
       <p>
-        How many faces does the <m>7</m>-dimensional cube have?
-        (Make sure you give your reasoning based on the construction
-        of these cubes described in the videos and notes.) (4)
+        How many unit 4-cubes in <m>\RR^4</m> fill a 4-cube with side
+        length <m>2</m>?  How many unit 5-cubes in <m>\RR^5</m> fill a
+        5-cube with side length <m>2</m>?  What about <m>\RR^n</m>?
+        (Give reasons for your answers). (4)
       </p>
     </li>
     <li>
       <p>
-        Prove that scalar multiplication distributes over vector
-        subtraction. (Note notes that this is very similar to the
-        proof for commutativity. You can follow the structure of that
-        proof). (6) 
+        Explain the difference between Propositions 1.5.4 and 1.5.5 in
+        the course notes. Why is it necessary to have both
+        propositions? (4) 
       </p>
     </li>
   </ol></p>
