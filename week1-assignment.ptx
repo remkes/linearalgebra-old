@@ -9,14 +9,14 @@
         Consider three vectors in <m>\RR^2</m>. 
         <md>
           <mrow>
-            \amp \begin{pmatrix} 2 \\ -1 \\ 3  \end{pmatrix} 
-            \amp \amp \begin{pmatrix} 2 \\ -3 \\ -4 \end{pmatrix} 
-            \amp \amp \begin{pmatrix} 2 \\ 6 \\ 1  \end{pmatrix}
+            \amp \begin{pmatrix} -1 \\ 3  \end{pmatrix} 
+            \amp \amp \begin{pmatrix} -3 \\ -4 \end{pmatrix} 
+            \amp \amp \begin{pmatrix} 6 \\ 1  \end{pmatrix}
           </mrow>
         </md>
         Check that the addition of all three vectors is independent of
         any re-ordering. Draw all six vectors additions on the same
-        graph. How many paths are there from <m>\begin{pmatrix} 2 \\ 0
+        graph. How many paths are there from <m>\begin{pmatrix} 0
         \\ 0 \end{pmatrix}</m> to the final sum through each vertex? (6)  
       </p>
     </li>
