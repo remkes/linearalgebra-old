@@ -3,34 +3,24 @@
 -->
 <section xml:id="section-assignment-week2">
   <title>Week 2 Assignment</title>
-  <!--
   <p><ol>
     <li>
       <p>
-        Let <m>a</m> and <m>b</m> be any real numbers. Prove that all
-        vectors <m>\begin{pmatrix} 2 \\ 1 \\ a \\ 1 \\ -3 
-        \end{pmatrix} \in \RR^5</m> are perpendicular to all vectors
-        <m>\frac{1}{7} \begin{pmatrix} 6 \\ b \\ 0 \\ -b \\ 4
-        \end{pmatrix} </m>. (4)
+        Let <m>u</m> and <m>v</m> be vectors in <m>\RR^n</m>. Prove that
+        <m>|u|^2 + |v|^2 = |u+v|^2</m> if and only if <m>v \perp u</m>.
+        (Since this is an `if an only if' proof, make sure that the
+        proof works in both directions.) (8) 
       </p>
     </li>
     <li>
       <p>
-        If <m>u</m> and <m>v</m> are vectors in <m>\RR^3</m> with <m>u
-        \cdot v = 0</m>, prove that 
-        <me>
-          |u + v|^2 = |u|^2 + |v|^2 
-        </me>.
-        This is, of course, not true in general, but it is nice to
-        prove a condition under which this convenient calculation
-        works. (4) 
-      </p>
-    </li>
-    <li>
-      <p>
-        Let <m>u</m> and <m>v</m> be vectors in <m>\RR^3</m>. Prove
-        that if either <m>u</m> or <m>v</m> are multiplied by any
-        positive scalars, the angle between them is preserved. 
+        Let <m>u</m> and <m>v</m> be nonzero vectors in <m>\RR^3</m>.
+        Assume that <m>u</m> is not a multiple of <m>v</m>. Let
+        <m>w</m> be another vector in <m>\RR^3</m> such that both <m>u
+        \times w = 0</m> and <m>v \times w = 0</m>. Prove that
+        <m>w</m> must be the zero vector. (Hint: first prove that the
+        cross product ofa ny two vectors is zero only if they are
+        multiples of each other.) (6) 
       </p>
     </li>
     <li>
@@ -42,33 +32,33 @@
           <li><md>
             <mrow>
               \amp \begin{pmatrix}
-                6 \\ 2 
+                -5 \\ -7 
               \end{pmatrix}
               \amp \amp 
               \begin{pmatrix}
-                -3 \\ -4 
+                0 \\ 4 
               \end{pmatrix}
             </mrow>
           </md></li>
           <li><md>
             <mrow>
               \amp \begin{pmatrix}
-                2 \\ 1 \\ -9 
+                0 \\ 2 \\ 2 
               \end{pmatrix}
               \amp \amp 
               \begin{pmatrix}
-                3 \\ -2 \\ -1 
+                -5 \\ -1 \\ -8 
               \end{pmatrix}
             </mrow>
           </md></li>
           <li><md>
             <mrow>
               \amp \begin{pmatrix}
-                7 \\ -3 \\ 4 \\ 0 \\ 0 
+                0 \\ 1 \\ -4 \\ -2 \\ -5
               \end{pmatrix}
               \amp \amp 
               \begin{pmatrix}
-                -1 \\ -1 \\ -2 \\ 4 \\ 5
+                3 \\ 3 \\ 0 \\ -2 \\ -5
               \end{pmatrix}
             </mrow>
           </md></li>
@@ -76,5 +66,4 @@
       </p>
     </li>
   </ol></p>
-  -->
 </section>
