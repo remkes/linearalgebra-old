@@ -3,7 +3,6 @@
 -->
 <section xml:id="section-assignment-week3">
   <title>Week 3 Assignment</title>
-  <!--
   <p><ol>
     <li>
       <p>
@@ -13,26 +12,26 @@
           <li>
             <me>
               \begin{pmatrix}
-                2 \\ 7 
+                9 \\ 0 
               \end{pmatrix},
               \begin{pmatrix}
-                -1 \\ 1 
+                -2 \\ 0 
               \end{pmatrix},
               \begin{pmatrix}
-                4  \\ 3 
+                1  \\ 1 
               \end{pmatrix}
             </me>
           </li>
           <li>
             <me>
               \begin{pmatrix}
-                1 \\ 5 \\ 1
+                6 \\ -8 \\ 2
               \end{pmatrix},
               \begin{pmatrix}
-                5 \\ -3 \\ -1 
+                1 \\ -4 \\ -3 
               \end{pmatrix},
               \begin{pmatrix}
-                -2 \\ 4 \\ 1 
+                -1 \\ 0 \\ -2 
               \end{pmatrix}
             </me>
           </li>
@@ -48,20 +47,20 @@
           <li>
             <me>
               \begin{pmatrix}
-                1 \\ -6 \\ -2  
+                -7 \\ -1 \\ -3  
               \end{pmatrix},
               \begin{pmatrix}
-                4 \\ 2 \\ 0 
+                3 \\ 0 \\ -4 
               \end{pmatrix}
             </me>
           </li>
           <li>
             <me>
               \begin{pmatrix}
-                -8 \\ -2 \\ 1 
+                5 \\ 5 \\ 5 
               \end{pmatrix},
               \begin{pmatrix}
-                -4 \\ -4 \\ -4 
+                -3 \\ -2 \\ -7 
               \end{pmatrix}
             </me>
           </li>
@@ -75,37 +74,27 @@
           <li>
             The plane with normal 
             <m>\begin{pmatrix}
-              -4 \\ 3 \\ 9 
+              -4 \\ -6 \\ -7 
             \end{pmatrix}</m>
             containing the point
             <m>\begin{pmatrix}
-              0 \\ -4 \\ -2 
+              0 \\ 1 \\ -1 
             \end{pmatrix}</m>.
           </li>
           <li>
             The plane containing the points 
             <m>\begin{pmatrix}
-              0 \\ 3 \\ -6 
+              2 \\ 1 \\ -2 
             \end{pmatrix}, </m>
             <m>\begin{pmatrix}
-              4 \\ -2 \\ -1 
+              3 \\ -1 \\ -2 
             \end{pmatrix}</m> and 
             <m>\begin{pmatrix}
-              -3 \\ -2 \\ 1 
+              3 \\ -5 \\ 3 
             \end{pmatrix}</m>.
           </li>
         </ol>
       </p>
     </li>
-    <li>
-      <p>
-        Let <m>L</m> be a linear subspace. Prove that the set of all
-        vectors perpendicular to <m>L</m> is also a linear subspace.
-        (Perpendicular to <m>L</m> means perpendicular to all vectors
-        in <m>L</m>).
-        (6)
-      </p>
-    </li>
   </ol></p>
-  -->
 </section>
