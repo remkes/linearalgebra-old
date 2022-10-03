@@ -3,7 +3,6 @@
 -->
 <section xml:id="section-assignment-week4">
   <title>Week 4 Assignment</title>
-  <!--
   <p><ol>
     <li>
       <p>
@@ -15,31 +14,32 @@
         <ol>
           <li><me>
             \begin{array}{rcl}
-            x + y - 3z  \amp = -2 \\
-            -x - y - z \amp = 0 \\
-            2x  - 2y + 2z \amp = 4 
+              x + 5y - z \amp = 0 \\
+              2x + y + z \amp = 1 \\
+              x - 3y - 3z \amp = 0 
             \end{array}
           </me></li>
           <li><me>
             \begin{array}{rcl}
-            -3w + 4x - z \amp = 1 \\
-            y + z \amp = 1 \\
-            3w - y \amp = 1 
+              -w + x + y \amp = 0 \\
+              2 + x + z  \amp = 1 \\
+              -w + y + z \amp = 0 
             \end{array}
           </me></li>
           <li><me>
             \begin{array}{rcl}
-            x \amp = 0 \\
-            y + z  \amp = 1 \\
-            y - z  \amp = 1 
+              3x + y \amp = 2 \\
+              x - 2y + z \amp = 1 \\
+              x + 5y - 2z  \amp = 0 
             \end{array}
           </me></li>
           <li><me>
             \begin{array}{rcl}
-            x - z \amp = 0 \\
-            2x - 2y \amp = 1 \\
-            3x - 3z \amp = 0 \\
-            4x - 4y \amp = 2 
+              x + y \amp = 2 \\
+              w - z \amp = 1 \\
+              3x + 3y  \amp = 6 \\
+              2w - 2z  \amp = 2 \\
+              5x + 5y \amp = 10 
             \end{array}
           </me></li>
         </ol>
@@ -53,23 +53,29 @@
       </p>
       <p><ol>
         <li>
-          A system with five equations in five variables that has
-          three free parameters. 
+          A system with four equations in four variables that has
+          two free parameters. 
         </li>
         <li>
-          A system with two equations in five variables that has no
+          A system with two equations in three variables that has no
           solutions.
         </li>
         <li>
-          A system with three equations in three variables that has
-          four free parameters. 
+          A system with seven equations in two variables that has
+          a free parameter. 
         </li>
         <li>
-          A system with six equations in four variables that has
-          infinitely many solutions. 
+          A system with one equation in four variables that has
+          four free parameters. 
         </li>
       </ol></p>
     </li>
+    <li>
+      <p>
+        How many different reduced row echelon forms can a <m>4
+        \times 4</m> matrix have if the rank of the matrix is
+        <m>1</m>? Can you make a catalogue of all these forms? (6) 
+      </p>
+    </li>
   </ol></p>
-  -->
 </section>
