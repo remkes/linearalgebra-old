@@ -1039,7 +1039,7 @@
     <activity>
       <statement>
         <p>
-          Prove that any linear subspace has a basis of vectors, which
+          Prove that any linear subspace has a basis of vector which
           all have length 1.
         </p>
       </statement>
@@ -1082,6 +1082,14 @@
         <li>
           What does it mean if geometrically a set of vectors is
           linearly independent?  
+        </li>
+        <li>
+          What is a normal vector to a plane or hyperplane? Why are 
+          planes and hyperplanes determined by normals?
+        </li>
+        <li>
+          Why do cross products help calculate normals to planes in 
+          three dimensions?
         </li>
       </ul>
     </p>

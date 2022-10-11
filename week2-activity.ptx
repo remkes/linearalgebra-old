@@ -922,7 +922,10 @@
               absolute value of a positive number is itself, so the
               structure is very boring: all numbers are unchanged.
               This is why I wrote <q>trivially</q>, to indicate that
-              the structure doesn't do anything.
+              the structure doesn't do anything. You could argue that
+              this answer should be no; I'd be willing to accept that
+              a trivial absolute value doesn't really count as a 
+              structure. 
             </li>
             <li>
               Division for the integers modulo 12 is tricky. I might
@@ -947,15 +950,15 @@
               modulo 12 is also tricky. I can impose an order, saying
               that <m>0 \lt 1 \lt 2 \lt 3 \lt \ldots \lt 11</m>.
               However, since the numbers loop around, if I keep going
-              from 12 back to 1, this seems intuitively problematic
-              with this order. So, even though I could impose such an
-              order, I think it makes more sense not to. I conclude that
-              the integer modulo 12 is not ordered. If I think about
-              time on a clock, I think I can justify this decision.
-              If it is currently 10 o'clock, then there is a time
-              before that was 5 o'clock as well as a time in the
-              future, which will also be 5 o'clock. Therefore, putting
-              an order seems unreasonable. 
+              from 12 back to 1, this seems intuitively problematic.
+              So, even though I could impose such an order, I think it 
+              makes more sense not to. I conclude that the integers 
+              modulo 12 is not ordered. If I think about time on a 
+              clock, I think I can justify this decision.  If it is 
+              currently 10 o'clock, then there is a time before that was 
+              5 o'clock as well as a time in the future, which will also 
+              be 5 o'clock. Therefore, putting an order seems 
+              unreasonable. 
             </li>
           </ul>
         </p>
@@ -1196,7 +1199,7 @@
             </mrow>
           </md>
           Now I just write each component in the other order,
-          interchaging the order of each multiplication, and
+          interchanging the order of each multiplication, and
           recognize the definition of the cross product in the result.
           <me>
             = \left( \left( \begin{matrix}
@@ -1225,14 +1228,6 @@
         </li>
         <li>
           What is a cross product? Why is it only in three dimensions?
-        </li>
-        <li>
-          What is a normal vector to a plane or hyperplane? Why are
-          planes and hyperplanes determined by normals?
-        </li>
-        <li>
-          Why do cross products help calculate normals to planes in
-          three dimensions?
         </li>
         <li>
           What is a binary operation? 

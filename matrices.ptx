@@ -236,8 +236,8 @@
           coefficients is written <m>M_{n,m}(\RR)</m>. For square
           matrices (<m>n \times n</m>), I simply write
           <m>M_n(\RR)</m>. If I wanted to change the set of scalars
-          to some other number set <m>S</m>, we would write
-          <m>M_{n,m}(S)</m> or <m>M_n(S)</m>
+          to some other number set <m>S</m> (such as <m>\ZZ</m>), we 
+          would write <m>M_{n,m}(S)</m> or <m>M_n(S)</m>.
         </p>
       </statement>
     </definition>

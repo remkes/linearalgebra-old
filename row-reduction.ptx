@@ -285,7 +285,7 @@
         <p>
           The system has three columns before its vertical line;
           therefore it corresponds to a system of equations in
-          <m>x,y,z</m>. If I translate this back into equations, we
+          <m>x,y,z</m>. If I translate this back into equations, I
           get the following system.
           <md>
             <mrow>
@@ -360,7 +360,7 @@
               <p>
                 Choose a row that has a non-zero entry in the first
                 column. (Often, I exchange this row with the first so
-                that we are working on the first row).
+                that I am working on the first row).
               </p>
             </li>
             <li>

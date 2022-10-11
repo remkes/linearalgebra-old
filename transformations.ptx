@@ -100,7 +100,7 @@
     </p>
     <p>
       Lastly, because of scalar multiplication, if I take <m>a =
-      0</m> I find that <m>f(0) = 0</m>. Under a linear
+      0</m>, I find that <m>f(0) = 0</m>. Under a linear
       transformation, the origin is always sent to the origin. So, in
       addition to preserving flat objects, linear transformations can't
       move the origin. I could drop this condition of preserving the

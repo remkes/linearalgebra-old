@@ -550,7 +550,7 @@
           </me>
           Now I need to do some algebra with the square root. I can
           distribute the exponent, using the exponent rule <m>(xy)^a =
-          x^ay^2</m>.
+          x^ay^a</m>.
           <me>
             \sqrt{(au_1)^2 + (au_2)^2 + (au_3)^2} = \sqrt{a^2 u_1^2 +
             a^2 u_2^2 + a_2u_3^2}
