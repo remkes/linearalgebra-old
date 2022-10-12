@@ -22,7 +22,7 @@
           <li><me>
             \begin{array}{rcl}
               -w + x + y \amp = 0 \\
-              2 + x + z  \amp = 1 \\
+              2w + x + z  \amp = 1 \\
               -w + y + z \amp = 0 
             \end{array}
           </me></li>

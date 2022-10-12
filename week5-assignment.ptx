@@ -50,7 +50,7 @@
               0 \\ 1 \\ -1 \\ -1 \\ -1
             \end{pmatrix},
             \begin{pmatrix}
-              0 \\ - \\ 1 \\ -1 \\ -1 
+              0 \\ 0 \\ 1 \\ -1 \\ -1 
             \end{pmatrix}
           \right\}
         </me></li>
