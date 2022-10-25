@@ -3,7 +3,6 @@
 -->
 <section xml:id="section-assignment-week6">
   <title>Week 6 Assignment</title>
-  <!--
   <p><ol>
     <li>
       <p>
@@ -13,39 +12,40 @@
       </p>
       <p><ol>
         <li>
-          A transformation sends a circle of radius <m>4</m> to a
-          circle of radius <m>7</m>.
+          A transformation which changes the unit circle into an
+          ellipse with major axis <m>4</m> and minor axis <m>2</m>. 
         </li>
         <li>
-          A transformation that preserves both axes.
+          A transformation which exchanges the first and third
+          quadrants.
         </li>
         <li>
-          A transformation that sends <m>\begin{pmatrix} -1 \\ -3
-          \end{pmatrix}</m> to the origin.
+          A transformation that sends <m>\begin{pmatrix} 3 \\ 4
+          \end{pmatrix}</m> to <m>\begin{pmatrix} -1 \\ 2
+          \end{pmatrix}</m>. 
         </li>
         <li>
-          A transformation that preserves an octagon but is
-          non-trivial.
+          A transformation that turns squares into line segments.
         </li>
         <li>
-          A transformation that exchanges <m>\begin{pmatrix} -1 \\ 
-          1 \end{pmatrix}</m> and <m>\begin{pmatrix} 1 \\ -1 
-          \end{pmatrix}</m>.
+          A transformation that makes the parallelogram with vertices
+          <m>\begin{pmatrix} 0 \\ 0 \end{pmatrix}</m>,
+          <m>\begin{pmatrix} 1 \\ 0 \end{pmatrix}</m>,
+          <m>\begin{pmatrix} 1 \\ 1 \end{pmatrix}</m>, and
+          <m>\begin{pmatrix} 2 \\ 1 \end{pmatrix}</m> into a square. 
         </li>
       </ol></p>
     </li>
     <li>
-      In <m>\RR^4</m> with variable order <m>w, x, y, z</m>, write a
-      matrix which represents rotation by <m>\frac{\pi}{4}</m>
-      radians in the <m>xy</m> plane, scalaing by <m>4</m> in the
-      <m>w</m> axis and scaling by <m>\frac{1}{2}</m> in the
-      <m>z</m> axis. (4) 
-    </li>
-    <li>
-      Write the matrices for projection onto each axis in
-      <m>\RR^3</m>. Show that any two of these compose to make the
-      zero matrix. (6) 
+      Write the six matrices that exchange any two coordinates in 
+      <m>\RR^4</m>. (The standard coordinate names are, of course,
+      <m>\{w,x,y,z\}</m>.) Either prove that any two of these matrices
+      commute or provide a counter exmaple to show that they do not
+      commute. (You do not need to do all 60 possible matrix
+      calculations. If you are finding a counter example, just one
+      counter example is sufficient. If you are supplying a proof, you
+      can make an conceptual argument based on what the
+      transformations do and how that interacts with composition.) (6) 
     </li>
   </ol></p>
-  -->
 </section>
