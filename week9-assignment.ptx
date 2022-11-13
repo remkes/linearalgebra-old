@@ -3,29 +3,63 @@
 -->
 <section xml:id="section-assignment-week9">
   <title>Week 9 Assignment</title>
-  <!--
   <p><ol>
     <li>
-      For this incomplete matrix, add a fourth column, which makes
+      For this incomplete matrix, add a last column which makes
       the matrix orthogonal. (4)
       <me>
         \begin{pmatrix}
-          \dfrac{3}{\sqrt{14}} \amp \dfrac{2}{\sqrt{56}} \amp 0 \amp
-          \cdot \\
-          \dfrac{-2}{\sqrt{14}} \amp 0 \amp \dfrac{1}{\sqrt{14}} \amp
-          \cdot \\
-          0 \amp \dfrac{4}{\sqrt{56}} \amp \dfrac{3}{\sqrt{14}} \amp
-          \cdot \\
-          \dfrac{1}{\sqrt{14}} \amp \dfrac{-6}{\sqrt{56}} \amp
-          \dfrac{2}{\sqrt{14}} \amp \cdot 
+          \dfrac{2}{\sqrt{13}} \amp \dfrac{-3}{\sqrt{14}} \amp \cdot \\
+          0 \amp \dfrac{1}{\sqrt{14}} \amp \cdot \\
+          \dfrac{3}{\sqrt{13}} \amp \dfrac{2}{\sqrt{14}} \amp \cdot 
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      For this incomplete matrix, add a last column which makes
+      the matrix orthogonal. (4)
+      <me>
+        \begin{pmatrix}
+          \dfrac{1}{\sqrt{3}} \amp \dfrac{-4}{\sqrt{24}} \amp \cdot \\
+          \dfrac{1}{\sqrt{3}} \amp \dfrac{2}{\sqrt{24}} \amp \cdot \\
+          \dfrac{1}{\sqrt{3}} \amp \dfrac{2}{\sqrt{24}} \amp \cdot 
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      For this incomplete matrix, add a last row which makes
+      the matrix orthogonal. (4)
+      <me>
+        \begin{pmatrix}
+          \dfrac{-3}{\sqrt{14}} \amp \dfrac{-1}{\sqrt{6}} \amp
+          \dfrac{2}{\sqrt{21}} \\
+          \dfrac{2}{\sqrt{14}} \amp \dfrac{-2}{\sqrt{6}} \amp
+          \dfrac{1}{\sqrt{21}} \\
+          \cdot \amp \cdot \amp \cdot 
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      For this incomplete matrix, add a last column which makes
+      the matrix orthogonal. (4)
+      <me>
+        \begin{pmatrix}
+          \dfrac{1}{2} \amp \dfrac{1}{2} \amp \dfrac{1}{2} \amp \cdot
+          \\
+          \dfrac{1}{2} \amp \dfrac{1}{2} \amp \dfrac{-1}{2} \amp \cdot
+          \\
+          \dfrac{1}{2} \amp \dfrac{-1}{2} \amp \dfrac{1}{2} \amp \cdot
+          \\
+          \dfrac{1}{2} \amp \dfrac{-1}{2} \amp \dfrac{-1}{2} \amp \cdot
         \end{pmatrix}
       </me>
     </li>
     <li>
       <p>
-        Let <m>R</m> be some rectangle in <m>\RR^2</m>. Prove that any
-        orthogonal transformation in <m>\RR^2</m> preserves the area
-        of the rectangle. (6) 
+        Determine an orthogonal transformation of <m>\RR^3</m> which
+        reflects over the plane <m>x + y = 0</m>. Write the matrix and
+        check that it satisfies the properties of orthogonal matrices.
+        (4) 
       </p>
     </li>
     <li>
@@ -47,5 +81,4 @@
       </p>
     </li>
   </ol></p>
-  -->
 </section>
