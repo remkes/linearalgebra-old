@@ -3,52 +3,64 @@
 -->
 <section xml:id="section-assignment-week10">
   <title>Week 10 Assignment</title>
-  <!--
   <p><ol>
     <li>
       <p>
-        Find the (real) eigenvalues and eigenvectors of these
+        Find the (real) eigenvalues and eigenvectors of this
         matrices. Feel free to use a computer for the row reductions
         and for the roots of the complicated polynomials, but make
-        sure you clearly indicate all the steps in the process. (12)
+        sure you clearly indicate all the steps in the process. When
+        there are square root, give you answer in exact values (that
+        is, in terms of square roots, not decimal expansions.) (6)
       </p>
-      <p><ol>
-        <li><me>
-          \begin{pmatrix}
-            0 \amp -1 \amp -1 \\
-            -1 \amp 0 \amp 5 \\
-            -1 \amp 5 \amp 3 
-          \end{pmatrix}
-        </me></li>
-        <li><me>
-          \begin{pmatrix}
-            -12 \amp -6 \amp -6 \\
-            13 \amp 7 \amp 7 \\
-            2 \amp 2 \amp 2 
-          \end{pmatrix}
-        </me></li>
-      </ol></p>
+      <me>
+        \begin{pmatrix}
+          3 \amp -4 \\
+          0 \amp -2 
+        \end{pmatrix}
+      </me>
     </li>
     <li>
       <p>
-        How much can you determine about the eigenvalues of these
-        three types of matrices? (For each, try to see if you can
-        exactly determine the eigenvalues from the definitions and
-        properties. Otherwise, state what partial information can be
-        concluded.) (9) 
+        Find the (real) eigenvalues and eigenvectors of this
+        matrices. Feel free to use a computer for the row reductions
+        and for the roots of the complicated polynomials, but make
+        sure you clearly indicate all the steps in the process. When
+        there are square root, give you answer in exact values (that
+        is, in terms of square roots, not decimal expansions.) (8)
       </p>
-      <p><ol>
-        <li>
-          A matrix with determinant zero.
-        </li>
-        <li>
-          An orthogonal matrix. 
-        </li>
-        <li>
-          A special orthogonal matrix. 
-        </li>
-      </ol></p>
+      <me>
+        \begin{pmatrix}
+          1 \amp -2 \amp 0 \\
+          -1 \amp 0 \amp 0 \\
+          0 \amp 2 \amp 2 
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      <p>
+        Find the (real) eigenvalues and eigenvectors of this
+        matrices. Feel free to use a computer for the row reductions
+        and for the roots of the complicated polynomials, but make
+        sure you clearly indicate all the steps in the process. When
+        there are square root, give you answer in exact values (that
+        is, in terms of square roots, not decimal expansions.) (8)
+      </p>
+      <me>
+        \begin{pmatrix}
+          -3 \amp 0 \amp -1 \\
+          0 \amp 2 \amp 0 \\
+          1 \amp -2 \amp 4
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      <p>
+        What are the eigenvectors and eigenvalues of a dialation
+        matrix in <m>\RR^n</m>? (In particular, consider the special
+        case where several of the dialation coefficients are the same.
+        (6)
+      </p>
     </li>
   </ol></p>
-  -->
 </section>
