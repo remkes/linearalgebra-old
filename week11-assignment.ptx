@@ -3,7 +3,6 @@
 -->
 <section xml:id="section-assignment-week11">
   <title>Week 11 Assignment</title>
-  <!--
   <p><ol>
     <li>
       <p>
@@ -12,30 +11,30 @@
         <md>
           <mrow>
             \amp \begin{pmatrix}
-              0 \amp 0.8 \amp 0.6 \amp 0.4 \\
-              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0.8 \amp 0.8 \\
+              1.2 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.8 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.8 \amp 0 
+              0 \amp 0 \amp 0.4 \amp 0 
             \end{pmatrix}
-            \amp \amp \begin{pmatrix}
-              0 \amp 0.6 \amp 0.4 \amp 0.4 \\
-              0.8 \amp 0 \amp 0 \amp 0 \\
+            \amp \begin{pmatrix}
+              0 \amp 0.8 \amp 0.6 \amp 0.6 \\
+              1.2 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.8 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.8 \amp 0 
+              0 \amp 0 \amp 0.4 \amp 0 
             \end{pmatrix}
           </mrow>
           <mrow>
             \amp \begin{pmatrix}
-              0 \amp 0.8 \amp 0.6 \amp 0.4 \\
-              0.2 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0.8 \amp 0.8 \\
+              1.6 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.8 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.8 \amp 0 
+              0 \amp 0 \amp 0.4 \amp 0 
             \end{pmatrix}
-            \amp \amp \begin{pmatrix}
-              0 \amp 5 \amp 3 \amp 1 \\
-              0.2 \amp 0 \amp 0 \amp 0 \\
-              0 \amp 0.2 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.2 \amp 0 
+            \amp \begin{pmatrix}
+              0 \amp 0.2 \amp 0.8 \amp 0.8 \\
+              1.2 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.4 \amp 0 
             \end{pmatrix}
           </mrow>
         </md>
@@ -56,45 +55,56 @@
     <li>
       <p>
         Consider a probability model with four states. Here is a
-        description of the transition probabilities. (8) 
+        description of the transition probabilities. (10) 
       </p>
       <p><ul>
         <li>
-          There is a <m>0.4</m> probability of transition from state 1 to
+          There is a <m>0.8</m> probability of transition from state 1 to
           state 2. 
         </li>
         <li>
-          There is a <m>0.2</m> probability of transition from state 1 to
+          There is a <m>0.1</m> probability of transition from state 1 to
           state 3. 
         </li>
         <li>
-          There is a <m>0.4</m> probability of transition from state 1 to
+          There is a <m>0.1</m> probability of transition from state 1 to
           state 4. 
         </li>
         <li>
-          There is a <m>1</m> probability of transition from state 2 to
+          There is a <m>0.8</m> probability of transition from state 2 to
           state 3. 
         </li>
         <li>
-          There is a <m>0.2</m> probability of transition from state 3 to
-          state 2. 
-        </li>
-        <li>
-          There is a <m>0.8</m>  probability of transition from state 3 to
+          There is a <m>0.1</m> probability of transition from state 2 to
           state 4. 
         </li>
         <li>
-          There is a <m>0.4</m> probability of transition from state 4 to
+          There is a <m>0.1</m> probability of transition from state 2 to
           state 1. 
         </li>
         <li>
-          There is a <m>0.6</m>  probability of transition from state 4 to
+          There is a <m>0.8</m> probability of transition from state 3 to
+          state 4. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 4 to
+          state 1. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 4 to
           state 2. 
         </li>
         <li>
-          All other probabilities are zero. (This includes the fact
-          that there is zero probability of staying in any of the four
-          states.)  
+          There is a <m>0.6</m> probability of transition from state 4 to
+          state 1. 
+        </li>
+        <li>
+          There is a <m>0.2</m> probability of transition from state 4 to
+          state 2. 
+        </li>
+        <li>
+          There is a <m>0.2</m> probability of transition from state 4 to
+          state 3. 
         </li>
       </ul></p>
       <p><ol>
@@ -108,8 +118,13 @@
           Determine the long term behaviour of the system and the long
           term probability of ending up in each state. 
         </li>
+        <li>
+          Describe the typical behaviour in this probability system.
+          The transition probabilities from vertex 4 are different
+          from the others: how does this affect the long term
+          probabilities? 
+        </li>
       </ol></p>
     </li>
   </ol></p>
-  -->
 </section>
