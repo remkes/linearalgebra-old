@@ -11,30 +11,30 @@
         <md>
           <mrow>
             \amp \begin{pmatrix}
-              0 \amp 0.8 \amp 0.8 \amp 0.8 \\
-              1.2 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 1.2 \amp 0.8 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.8 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.4 \amp 0 
+              0 \amp 0 \amp 0.8 \amp 0 
             \end{pmatrix}
             \amp \begin{pmatrix}
-              0 \amp 0.8 \amp 0.6 \amp 0.6 \\
-              1.2 \amp 0 \amp 0 \amp 0 \\
-              0 \amp 0.8 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.4 \amp 0 
+              0 \amp 1.2 \amp 0.8 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.6 \amp 0 
             \end{pmatrix}
           </mrow>
           <mrow>
             \amp \begin{pmatrix}
-              0 \amp 0.8 \amp 0.8 \amp 0.8 \\
-              1.6 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 1.6 \amp 1.2 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.8 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.4 \amp 0 
+              0 \amp 0 \amp 0.8 \amp 0 
             \end{pmatrix}
             \amp \begin{pmatrix}
-              0 \amp 0.2 \amp 0.8 \amp 0.8 \\
-              1.2 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 1.2 \amp 0.8 \amp 0.4 \\
+              0.4 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.8 \amp 0 \amp 0 \\
-              0 \amp 0 \amp 0.4 \amp 0 
+              0 \amp 0 \amp 0.8 \amp 0 
             \end{pmatrix}
           </mrow>
         </md>
@@ -87,11 +87,11 @@
           state 4. 
         </li>
         <li>
-          There is a <m>0.1</m> probability of transition from state 4 to
+          There is a <m>0.1</m> probability of transition from state 3 to
           state 1. 
         </li>
         <li>
-          There is a <m>0.1</m> probability of transition from state 4 to
+          There is a <m>0.1</m> probability of transition from state 3 to
           state 2. 
         </li>
         <li>
@@ -105,6 +105,9 @@
         <li>
           There is a <m>0.2</m> probability of transition from state 4 to
           state 3. 
+        </li>
+        <li>
+          The probability of any state staying at itself is zero. 
         </li>
       </ul></p>
       <p><ol>
