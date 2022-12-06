@@ -108,7 +108,7 @@
         </p>
       </statement>
     </proposition>
-    <definition>
+    <definition xml:id="definition-general-linear">
       <statement>
         <p>
           The set of all intervible <m>n \times n</m> matrices with

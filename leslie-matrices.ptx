@@ -1,7 +1,7 @@
 <section xml:id="section-leslie-matrices">
   <title>Leslie Matrices</title>
   <subsection xml:id="subsection-leslie-introduction">
-    <title>Age-Structured Polupations</title>
+    <title>Age-Structured Populations</title>
     <p>
       One of the starting points of mathematical biology is the study
       of population growth. Though many of the most interesting
@@ -104,7 +104,7 @@
       dominates, and its eigenvector gives the stable age distribution.
       If <m>\lambda = 1</m>, I expect a stable population. If
       <m>\lambda > 1</m>, I expect exponential growth, and if
-      <m>\lambda \lt 1</m> I expect exponential decay. In addition,
+      <m>\lambda \lt 1</m>, I expect exponential decay. In addition,
       I can look for the limit of the ratios between the age
       categories. As the population either grows or decays, those
       ratios will approach fixed values, which are represented by the

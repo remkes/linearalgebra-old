@@ -220,7 +220,7 @@
       were approaching a stable configuration. Can I know that they
       are doing so? Can I expect that they are always doing so? The
       answers to this depend on the long-term behaviour of the Markov
-      chain, which we analyze using eigenvalues and eigenvectors. 
+      chain, which I analyze using eigenvalues and eigenvectors. 
     </p>
     <p>
       A stochastic matrix has all non-negative entries, so it
@@ -234,7 +234,7 @@
       graph is disconnected, there the various disconnected pieces are
       essentially independent probability problems, and I could treat
       them individually. I will have an example later with dead ends,
-      which I'll deal with when we get there. Otherwise, I will assume
+      which I'll deal with when I get there. Otherwise, I will assume
       irreducible matrices.
     </p>
     <p>
@@ -268,7 +268,7 @@
     </p>
     <p>
       This is a pretty good description of the long term behaviour of
-      a Markov chain. We just need to calculate and interpret the
+      a Markov chain. I just need to calculate and interpret the
       dominant eigenvector. 
     </p>
   </subsection>

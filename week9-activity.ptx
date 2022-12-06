@@ -198,7 +198,7 @@
           <md>
             <mrow>
               \begin{vmatrix} 
-                dfrac{\sqrt{2}}{\sqrt{6}} \\[0.5em]
+                \dfrac{\sqrt{2}}{\sqrt{6}} \\[0.5em]
                 \dfrac{-1}{\sqrt{6}} \\[0.5em]
                 \dfrac{1}{\sqrt{6}}
               \end{vmatrix} \amp = 
@@ -225,7 +225,7 @@
             <mrow>
               \begin{vmatrix} 
                 \dfrac{-2}{\sqrt{174}} \\[0.5em]
-                \dfrac{7}{sqrt{174}} \\[0.5em]
+                \dfrac{7}{\sqrt{174}} \\[0.5em]
                 \dfrac{11}{\sqrt{174}} 
               \end{vmatrix} \amp = 
               \dfrac{1}{\sqrt{174}} \begin{vmatrix} 
@@ -326,7 +326,7 @@
           inspection. Fortunately, I have an algorithmic approach. I
           want a new vector in <m>\RR^3</m> which is orthogonal to two
           given vector (the two columns). In <m>\RR^3</m>, the cross
-          product gives exactly this desired vector. Let's take the
+          product gives exactly this desired vector. I'll take the
           cross product of the two columns. For ease of calculation,
           I'll scale the vectors to remove the denominators to find
           this third vector, since all I care about at this point is
@@ -780,7 +780,7 @@
           <m>\{e_1, e_2\}</m>. Since these two vectors span all of
           <m>\RR^2</m>, if I know what happens to these two vectors,
           I know the entire transformation. First, the transformation does
-          something to <m>e^1</m>, sending it to <m>Me_1</m>. Since
+          something to <m>e_1</m>, sending it to <m>Me_1</m>. Since
           length is preserved, this is some other unit vector. 
         </p>
         <p>

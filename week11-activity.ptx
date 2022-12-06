@@ -127,9 +127,8 @@
               \end{matrix} \right) 
             </mrow>
           </md>
-          The population is (not) viable
-          The age ratios will approach <m>2731.2:113.2:14.1:1</m> from
-          youngest to oldest. 
+          The population is viable.  The age ratios will approach
+          <m>2731.2:113.2:14.1:1</m> from youngest to oldest. 
         </p>
       </solution>
     </activity>

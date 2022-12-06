@@ -4,7 +4,7 @@
     <title>Dihedral Groups</title>
     <p>
       The case of regular polygons, such as the hexagon, is a very
-      useful place to talk about symmetry.  I want to know which
+      useful place to talk about symmetry. I want to know which
       linear transformations preserve the regular polygons. By
       <sq>preserve</sq>, in this section I mean that the new shape is
       precisely the same as the old: same size and same positions.
@@ -32,16 +32,16 @@
       set with some extra properties. Let me give the definition in
       somewhat formal language. (In this definition, a binary
       operation is a process that takes two elements and combines them
-      into one.  It is a general term that includes addition of numbers,
+      into one. It is a general term that includes addition of numbers,
       multiplication of numbers, or composition of transformations: in
       each operation, two things are combined together). 
     </p>
     <definition>
       <p>
-      Let <m>G</m> be a set with an (associative) binary operation
-      represented by writing two elements next to each other (as is
-      common with multiplication of variables). <m>G</m> is a group
-      if it satisfies these properties.
+      Let <m>G</m> be a set with an (associative) binary operation. I 
+      represent the operation by writing two elements next to each
+      other (as is common with multiplication of variables). <m>G</m>
+      is a group if it satisfies these properties.
       </p>
       <ul>
         <li><p>
@@ -78,23 +78,29 @@
           multiplication.
         </p></li>
         <li><p>
-          In <xref ref="section-inversion" />, I defined the general
-          linear group <m>GL_n(\RR)</m>. This was all <m>n \times
-          n</m> invertible matrices. The identity matrix (of size
-          <m>n</m>) is the identity element; the composition is the
-          <sq>multiplication,</sq> and the matrix inverse is the
+          In <xref ref="definition-general-linear" />, I defined the
+          general linear group <m>GL_n(\RR)</m>. This was all <m>n
+          \times n</m> invertible matrices. The identity matrix (of
+          size <m>n</m>) is the identity element; the composition is
+          the <sq>multiplication,</sq> and the matrix inverse is the
           inverse operation. By restriction to only invertible
           matrices of a fixed size, all elements can be composed
-          together, and all elements have inverses. 
+          together, and all elements have inverses.
         </p></li>
         <li><p>
-          In <xref ref="section-inversion" />, I defined three more
-          matrix groups: the special linear group <m>SL_n(\RR)</m>,
-          the orthogonal group <m>O_n(\RR)</m> and the special
-          orthogonal group <m>SO_n(\RR)</m>. These are smaller sets of
-          invertible matrices with particular properties. Each of
-          them contains the identity matrix and has inverses, which are
-          matrices with the same restricted properties.
+          In <xref ref="definition-special-linear" />, I defined
+          another matrix group: the special linear group
+          <m>SL_n(\RR)</m>. This was like the general linear group,
+          but with the added restriction of determinant 1. 
+        </p></li>
+        <li><p>
+          In <xref ref="definition-special-orthogonal" />, I defined
+          two more matrix groups: the orthogonal group <m>O_n(\RR)</m>
+          and the special orthogonal group <m>SO_n(\RR)</m>. These are
+          smaller sets of invertible matrices with particular
+          properties. Each of them contains the identity matrix and
+          has inverses, which are matrices with the same restricted
+          properties.
         </p></li>
       </ul>
     </p>
@@ -138,15 +144,14 @@
       </image>
     </figure>
     <p>
-      Consider the symmetries of the square to more clearly understand
-      this construction.  I assume the origin is at the centre of the
-      square, and I can put the vertices of the square at
-      <m>(1,1)</m>, <m>(1,-1)</m>, <m>(-1,-1)</m> and <m>(-1,1)</m>.
-      Conveniently, the vertices are all I need to think about: since
-      linear transformations preserve lines, if I know where the
-      vertices go, then I know that the lines connecting them are
-      preserved, and hence the shape is preserved. Which
-      transformations preserve the vertices?
+      Consider the symmetries of the square. I assume the origin is
+      at the centre of the square, and I can put the vertices of the
+      square at <m>(1,1)</m>, <m>(1,-1)</m>, <m>(-1,-1)</m> and
+      <m>(-1,1)</m>. Conveniently, the vertices are all I need to
+      think about: since linear transformations preserve lines, if I
+      know where the vertices go, then I know that the lines
+      connecting them are preserved, and hence the shape is preserved.
+      Which transformations preserve the vertices?
     </p>
     <p>
       There are two relatively obvious classes that might occur.
@@ -198,7 +203,7 @@
       To make the multiplication table, I need to know how to 
       calculate the composition of elements. I could do this by
       writing their matrices and doing the matrix multiplication. That
-      would work, but I want to show you an easier method <emdash/> one
+      would work, but I want to show you an easier method <mdash/> one
       much more connected to the geometry of the square. I'm going to
       represent each element of the group simply by how it permutes
       the vertices. In <xref ref="figure-d4" />, I labelled the

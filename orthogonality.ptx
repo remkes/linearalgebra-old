@@ -58,7 +58,7 @@
       preserves orientation. If a matrix has determinant one,
       it preserves both.
     </p>
-    <definition>
+    <definition xml:id="definition-special-linear">
       <statement>
         <p>
           The group of matrices of determinant one with real
@@ -114,7 +114,7 @@
         <p>
           Let <m>A</m> be an <m>n \times n</m> matrix. Write <m>A =
           (a_1, a_2, \ldots, a_n)</m> where the <m>a_i</m> are column
-          vectors (for each <m>a_i</m> is a vector in <m>\RR^n</m>.
+          vectors (for each <m>a_i</m> is a vector in <m>\RR^n</m>).
           Then the following seven statements are all equivalent, and
           all can be taken as the definition of an orthogonal matrix.
           <ol>
@@ -279,7 +279,7 @@
         </p>
       </statement>
     </example>
-    <definition>
+    <definition xml:id="definition-special-orthogonal">
       <statement>
         <p>
           The group of orthogonal <m>n \times n</m> matrices is called
