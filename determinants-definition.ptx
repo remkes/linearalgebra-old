@@ -32,7 +32,7 @@
       Second, what does the transformation do to the orientation of an
       object? In <xref ref="section-euclidean-space" />, I defined
       orientation as a choice of axis directions relative to each
-      other, but that isn't the most enlightening direction. To help,
+      other, but that isn't the most enlightening definition. To help,
       I will describe orientation for each dimension. In <m>\RR</m>,
       orientation is a direction: moving in the positive or negative
       direction along the number line. There are only two directions

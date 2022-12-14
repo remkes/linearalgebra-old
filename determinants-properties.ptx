@@ -3,10 +3,24 @@
   <subsection xml:id="subsection-determinant-composition">
     <title>Determinants and Composition</title>
     <p>
-      Algebra considers sets with structure. On the set <m>M_n(\RR)</m>
-      of <m>n \times n</m> matrices, the determinant is a new algebraic
-      structure. I would like to investigate how it interacts with
-      existing structures, starting with matrix multiplication.
+      Before talking about composition, there is a property of
+      determinant that follows from the cofactor expansion. I'll just
+      state it here. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          If <m>A</m> is an <m>n \times n</m> matrix, then
+          <m>\det A^{T} = \det A</m>.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Now I can talk about composition.  Algebra considers sets with
+      structure. On the set <m>M_n(\RR)</m> of <m>n \times n</m>
+      matrices, the determinant is a new algebraic structure. I would
+      like to investigate how it interacts with existing structures,
+      starting with matrix multiplication.
     </p>
     <p>
       To compose two transformations, I multiply the matrices. In this
@@ -30,7 +44,7 @@
       </statement>
     </proposition>
     <p>
-      Here are a couple of similar propositions about the properties
+      Here is a similar proposition about the properties
       of determinants. 
     </p>
     <proposition>
@@ -38,14 +52,6 @@
         <p>
           If <m>A</m> is an invertible <m>n \times n</m> matrix, then
           <m>\det A^{-1} = \frac{1}{\det A}</m>.
-        </p>
-      </statement>
-    </proposition>
-    <proposition>
-      <statement>
-        <p>
-          If <m>A</m> is an <m>n \times n</m> matrix, then
-          <m>\det A^{T} = \det A</m>.
         </p>
       </statement>
     </proposition>
